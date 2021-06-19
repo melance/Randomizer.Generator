@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <ApplicationIcon>TheRandomizer.ico</ApplicationIcon>
+    <Configurations>Debug;Release;Beta</Configurations>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Attributes\EnumValueNameAttribute.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CoreCLR-NCalc" Version="2.2.92" />
+    <PackageReference Include="Hjson" Version="3.0.0" />
+    <PackageReference Include="NLua" Version="1.5.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Attributes\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\.editorconfig" Link=".editorconfig" />
+  </ItemGroup>
+
+</Project>

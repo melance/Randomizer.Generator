@@ -1,0 +1,19 @@
+{
+	"Name": "Phonotactic Test",
+	"Author": "Lance Boudreaux",
+	"Description": "Test for the Phonotactic definition",
+	"Version": null,
+	"URL": null,
+	"Tags": null,
+	"GeneratorType": "Phonotactics",
+	"OutputFormat": "Text",
+	"Definitions": {
+		"C" : [ "B","C","D","F","G","H","J","K","L","M","N","P","Q","R","S","T","V","W","X","Y","Z" ],
+		"V" : [ "A","E","I","O","U" ]
+	},
+	"Patterns": {
+		"CVC" : 1,
+		"VCC" : 1,
+		"CVCC" : 1
+	}
+}

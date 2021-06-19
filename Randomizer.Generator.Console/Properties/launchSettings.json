@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Randomizer.Generator.CmdLine": {
+      "commandName": "Project",
+      "commandLineArgs": "--path \"C:\\Users\\me_la\\source\\repos\\Randomizer.Generator\\Randomizer.Generator.Console\\bin\\Debug\\net5.0\\PhonotacticsTest.rgen.hjson\" --repeat 20 --gender:male"
+    }
+  }
+}

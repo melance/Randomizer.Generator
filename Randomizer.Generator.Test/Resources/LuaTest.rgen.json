@@ -1,0 +1,11 @@
+{
+	"Name": "LUA Test",
+	"Author": "Lance Boudreaux",
+	"Description": "Test for the LUA definition",
+	"Version": null,
+	"URL": null,
+	"Tags": null,
+	"GeneratorType": "LUA",
+	"OutputFormat": "Text",
+	"Script": ""
+}
