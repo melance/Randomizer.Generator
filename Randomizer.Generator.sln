@@ -7,14 +7,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Randomizer.Generator", "Ran
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Randomizer.Generator.Test", "Randomizer.Generator.Test\Randomizer.Generator.Test.csproj", "{E6AD6045-C8EB-44E1-A077-8D9B7EB76689}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Randomizer.Generator.CmdLine", "Randomizer.Generator.Console\Randomizer.Generator.CmdLine.csproj", "{05526CDF-3328-47CB-9BD2-339FDEB42698}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Randomizer.Generator.CmdLine", "Randomizer.Generator.CmdLine\Randomizer.Generator.CmdLine.csproj", "{05526CDF-3328-47CB-9BD2-339FDEB42698}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1D7F3FA7-5F35-4231-AF30-E27A53CC3E39}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Randomizer.Generator.UITerminal", "Randomizer.Generator.Terminal\Randomizer.Generator.UITerminal.csproj", "{39AB0551-D656-43D7-80D7-91AD7A87B0BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Randomizer.Generator.UITerminal", "Randomizer.Generator.UITerminal\Randomizer.Generator.UITerminal.csproj", "{39AB0551-D656-43D7-80D7-91AD7A87B0BE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
