@@ -5,7 +5,9 @@ The infinitely customizable random content generator.
 ---
 * The Randomizer is the Infinitely Customizeable Random Content Generator.  It was designed with role playing game players and writers in mind though it is far from limited to those folks.
 * There are several different components to The Randomizer:
-  * **TheRandomizer.Generators** is the engine behind The Randomizer.  It contains a number of classes for generating content using different types of generators.
+  * **Randomizer.Generator** is the engine behind The Randomizer.  It contains a number of classes for generating content using different types of generators.
+  * **Randomizer.Generator.CmdLine** a command line tool to generate content.
+  * **Randomizer.Generator.UITerminal** a terminal gui to generate content.  Designed to work on Windows, Mac, Unix, and Linux.
 
 ### Community ###
 ---
