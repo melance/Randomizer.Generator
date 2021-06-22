@@ -46,116 +46,116 @@
 			{ Content: "A(n) [Settlement] suffering from a plague say they were cursed." }
 			{ Content: "The adventurers awaken with short term memory loss." }
 			{ Content: "A [Person] claiming to have information about a recent murder turns up dead." }
-			{ Content: "A ship of undead arrive at the docks but do not disembark." }],
+			{ Content: "A ship of undead arrive at the docks but do not disembark." }]
 		NaturalDisaster: [
-			{ Content: tornado }
-			{ Content: hurricane }
-			{ Content: earthquake }
-			{ Content: storm }
-			{ Content: sandstorm }
-			{ Content: blizzard }
-			{ Content: locust swarm }
-			{ Content: fire }
-			{ Content: tsunami }
-			{ Content: wildfire }
-			{ Content: disease }
-			{ Content: plague }
-			{ Content: hail }
-			{ Content: sinkhole }
-			{ Content: drought }
-			{ Content: crop blight }
-			{ Content: cattle plague }],
+			{ Content: "tornado" }
+			{ Content: "hurricane" }
+			{ Content: "earthquake" }
+			{ Content: "storm" }
+			{ Content: "sandstorm" }
+			{ Content: "blizzard" }
+			{ Content: "locust swarm" }
+			{ Content: "fire" }
+			{ Content: "tsunami" }
+			{ Content: "wildfire" }
+			{ Content: "disease" }
+			{ Content: "plague" }
+			{ Content: "hail" }
+			{ Content: "sinkhole" }
+			{ Content: "drought" }
+			{ Content: "crop blight" }
+			{ Content: "cattle plague" }]
 		LargeMonster: [
-			{ Content: Large }
-			{ Content: Huge }
-			{ Content: Gargantuan }
-			{ Content: Colossal }],
+			{ Content: "Large" }
+			{ Content: "Huge" }
+			{ Content: "Gargantuan" }
+			{ Content: "Colossal" }]
 		Mineral: [
-			{ Content: copper }
-			{ Content: silver }
-			{ Content: gold }
-			{ Content: platinum }
-			{ Content: iron }
-			{ Content: lead }
-			{ Content: tin }
-			{ Content: mercury }
-			{ Content: adamantine }
-			{ Content: mithril }
-			{ Content: obsidian }
-			{ Content: orichalcum }],
+			{ Content: "copper" }
+			{ Content: "silver" }
+			{ Content: "gold" }
+			{ Content: "platinum" }
+			{ Content: "iron" }
+			{ Content: "lead" }
+			{ Content: "tin" }
+			{ Content: "mercury" }
+			{ Content: "adamantine" }
+			{ Content: "mithril" }
+			{ Content: "obsidian" }
+			{ Content: "orichalcum" }]
 		Action: [
-			{ Content: attack }
-			{ Content: terrorize }
-			{ Content: stalk }
-			{ Content: threaten }
-			{ Content: inhabit }
-			{ Content: leave }],
+			{ Content: "attack" }
+			{ Content: "terrorize" }
+			{ Content: "stalk" }
+			{ Content: "threaten" }
+			{ Content: "inhabit" }
+			{ Content: "leave" }]
 		Settlement: [
-			{ Content: town }
-			{ Content: city }
-			{ Content: hamlet }
-			{ Content: kingdom }
-			{ Content: settlement }
-			{ Content: castle }],
+			{ Content: "town" }
+			{ Content: "city" }
+			{ Content: "hamlet" }
+			{ Content: "kingdom" }
+			{ Content: "settlement" }
+			{ Content: "castle" }]
 		DangerousLocation: [
-			{ Content: ruin }
-			{ Content: dungeon }
-			{ Content: abandoned castle }
-			{ Content: abandoned mine }
-			{ Content: wizard's tower }
-			{ Content: haunted woods }],
+			{ Content: "ruin" }
+			{ Content: "dungeon" }
+			{ Content: "abandoned castle" }
+			{ Content: "abandoned mine" }
+			{ Content: "wizard's tower" }
+			{ Content: "haunted woods" }]
 		Person: [
-			{ Content: adventurer }
-			{ Content: archer }
-			{ Content: bandit }
-			{ Content: barbarian }
-			{ Content: baron }
-			{ Content: beggar }
-			{ Content: bishop }
-			{ Content: blacksmith }
-			{ Content: cardinal }
-			{ Content: champion }
-			{ Content: cleric }
-			{ Content: cooper }
-			{ Content: courier }
-			{ Content: druid }
-			{ Content: dwarf }
-			{ Content: elf }
-			{ Content: farmer }
-			{ Content: fool }
-			{ Content: gypsy }
-			{ Content: hangman }
-			{ Content: henchman }
-			{ Content: hunter }
-			{ Content: jester }
-			{ Content: knave }
-			{ Content: king }
-			{ Content: knight }
-			{ Content: lady }
-			{ Content: lord }
-			{ Content: maiden }
-			{ Content: mariner }
-			{ Content: mercenary }
-			{ Content: merchant }
-			{ Content: messenger }
-			{ Content: noble }
-			{ Content: nobleman }
-			{ Content: paladin }
-			{ Content: pedlar }
-			{ Content: potter }
-			{ Content: priest }
-			{ Content: prince }
-			{ Content: ranger }
-			{ Content: rogue }
-			{ Content: queen }
-			{ Content: sailer }
-			{ Content: scoundrel }
-			{ Content: soldier }
-			{ Content: sorcerer }
-			{ Content: thief }
-			{ Content: undertaker }
-			{ Content: vagabond }
-			{ Content: warrior }
-			{ Content: wizard}]
+			{ Content: "adventurer" }
+			{ Content: "archer" }
+			{ Content: "bandit" }
+			{ Content: "barbarian" }
+			{ Content: "baron" }
+			{ Content: "beggar" }
+			{ Content: "bishop" }
+			{ Content: "blacksmith" }
+			{ Content: "cardinal" }
+			{ Content: "champion" }
+			{ Content: "cleric" }
+			{ Content: "cooper" }
+			{ Content: "courier" }
+			{ Content: "druid" }
+			{ Content: "dwarf" }
+			{ Content: "elf" }
+			{ Content: "farmer" }
+			{ Content: "fool" }
+			{ Content: "gypsy" }
+			{ Content: "hangman" }
+			{ Content: "henchman" }
+			{ Content: "hunter" }
+			{ Content: "jester" }
+			{ Content: "knave" }
+			{ Content: "king" }
+			{ Content: "knight" }
+			{ Content: "lady" }
+			{ Content: "lord" }
+			{ Content: "maiden" }
+			{ Content: "mariner" }
+			{ Content: "mercenary" }
+			{ Content: "merchant" }
+			{ Content: "messenger" }
+			{ Content: "noble" }
+			{ Content: "nobleman" }
+			{ Content: "paladin" }
+			{ Content: "pedlar" }
+			{ Content: "potter" }
+			{ Content: "priest" }
+			{ Content: "prince" }
+			{ Content: "ranger" }
+			{ Content: "rogue" }
+			{ Content: "queen" }
+			{ Content: "sailer" }
+			{ Content: "scoundrel" }
+			{ Content: "soldier" }
+			{ Content: "sorcerer" }
+			{ Content: "thief" }
+			{ Content: "undertaker" }
+			{ Content: "vagabond" }
+			{ Content: "warrior" }
+			{ Content: "wizard" }]
 	}
 }

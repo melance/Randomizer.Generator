@@ -10,10 +10,11 @@ namespace Randomizer.Generator.Utility
     {
         private static System.Random _random;
 
-        public static Int32 RandomNumber(Int32 minValue, Int32 maxValue)
-        {
-            return Randomizer.Next(minValue, maxValue);
-        }
+		public static Int32 RandomNumber() => Randomizer.Next();
+
+		public static Int32 RandomNumber(Int32 maxValue) => Randomizer.Next(maxValue);
+
+        public static Int32 RandomNumber(Int32 minValue, Int32 maxValue) => Randomizer.Next(minValue, maxValue);
 
         protected static System.Random Randomizer
         {

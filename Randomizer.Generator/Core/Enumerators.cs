@@ -15,9 +15,11 @@ namespace Randomizer.Generator.Core
     public enum GeneratorTypes
     {
         Unknown,
-        List,
         Assignment,
-        Phonotactics
+        List,
+		Lua,
+        Phonotactics,
+		Table
     }
 
     /// <summary>

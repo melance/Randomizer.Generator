@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
+using NCalc;
 using Randomizer.Generator.Core;
 using Randomizer.Generator.Utility;
 
@@ -28,7 +29,10 @@ namespace Randomizer.Generator.List
             return string.Empty;
         }
 
-        public static implicit operator ListDefinition(string json) => Deserialize<ListDefinition>(json);
+		protected override void EvaluateFunction(String name, FunctionArgs e) => throw new NotImplementedException();
+		protected override void EvaluateParameter(String name, ParameterArgs e) => throw new NotImplementedException();
+
+		public static implicit operator ListDefinition(string json) => (ListDefinition)Deserialize(json);
         public static implicit operator string(ListDefinition definition) => Serialize(definition);
 
     }

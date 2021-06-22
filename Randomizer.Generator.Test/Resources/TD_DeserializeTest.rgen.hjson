@@ -1,0 +1,29 @@
+{
+      Tables:
+      {
+        LoopTable:
+        {
+          KeyColumn: Key
+          Repeat: "1"
+          SkipTable: null
+          Value:
+            '''
+            Key | Value
+			1   | Test
+            '''
+          RepeatJoin: null
+          TableType: Loop
+        }
+      }
+      Output: null
+      Values: {}
+      Name: Table Test
+      Author: null
+      Description: null
+      Version: null
+      URL: null
+      Tags: null
+      GeneratorType: Table
+      OutputFormat: Text
+      Parameters: {}
+}

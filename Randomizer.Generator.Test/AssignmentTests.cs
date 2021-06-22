@@ -17,9 +17,13 @@ namespace Randomizer.Generator.Test
         public TestContext TestContext { get; set; }
 
         [TestMethod]
-        public void SerializeTest()
+		[TestCategory("Serialization")]
+		public void AssignmentSerialize()
         {
-            var generator = new AssignmentDefinition();
+			var generator = new AssignmentDefinition()
+			{
+				Version = new Version(1, 2, 3, 4)
+			};
             generator.LineItems.Add("Start", new LineItemList()
             {
                 new LineItem() { Content = "Test", Next = "One" }
@@ -46,9 +50,10 @@ namespace Randomizer.Generator.Test
         }
 
         [TestMethod]
-        public void DeserializeTest()
+		[TestCategory("Serialization")]
+		public void AssignmentDeserialize()
         {
-            var generator = BaseDefinition.Deserialize<AssignmentDefinition>(Properties.Resources.AssignmentDefinition1);
+            var generator = BaseDefinition.Deserialize(Properties.Resources.AD_DeserializeTest_rgen);
             var value = generator.Generate();
             TestContext.WriteLine($"Value = {value}");
             Assert.AreNotEqual(String.Empty, value);
@@ -57,7 +62,7 @@ namespace Randomizer.Generator.Test
         [TestMethod]
         public void OneItemTest()
         {
-            var generator = BaseDefinition.Deserialize<AssignmentDefinition>(Properties.Resources.Assignment1ItemTest);
+            var generator = BaseDefinition.Deserialize(Properties.Resources.AD_OneItemTest_rgen);
             var value = generator.Generate();
             Assert.AreEqual("One item", value);
         }
@@ -65,7 +70,7 @@ namespace Randomizer.Generator.Test
         [TestMethod]
         public void AdventureHookTest()
         {
-            var generator = BaseDefinition.Deserialize<AssignmentDefinition>(Properties.Resources.Adventure_Hooks_Fantasy_rgen);
+            var generator = BaseDefinition.Deserialize(Properties.Resources.Adventure_Hooks_Fantasy_rgen);
             var value = generator.Generate();
             TestContext.WriteLine(value);
             Assert.AreNotEqual(String.Empty, value);

@@ -1,0 +1,19 @@
+{
+      Script: print("Hello World")
+      ScriptPath: null
+      Result:
+      {
+        Capacity: 16
+        MaxCapacity: 2147483647
+        Length: 0
+      }
+      Name: Lua Test
+      Author: null
+      Description: Lua Test
+      Version: null
+      URL: null
+      Tags: null
+      GeneratorType: Lua
+      OutputFormat: Text
+      Parameters: {}
+}

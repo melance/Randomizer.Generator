@@ -67,7 +67,8 @@ namespace Randomizer.Generator.Test
         }
 
         [TestMethod]
-        public void Serialize()
+		[TestCategory("Serialization")]
+        public void ListSerialize()
         {
             var items = new List<string>() { "Item One", "Item Two", "Item Three" };
             var generator = new ListDefinition()
@@ -75,7 +76,6 @@ namespace Randomizer.Generator.Test
                 Name = "Test",
                 Author = "Lance",
                 Description = "Testing Serialization",
-                GeneratorType = GeneratorTypes.List,
                 KeepWhitespace = false,
                 OutputFormat = OutputFormats.Text,
                 Tags = new List<string>() { "Test" },
@@ -87,11 +87,11 @@ namespace Randomizer.Generator.Test
         }
 
         [TestMethod]
-        public void Deserialize()
+		[TestCategory("Serialization")]
+		public void ListDeserialize()
         {
-            var items = new List<string>() { "Item One", "Item Two", "Item Three" };
-            var json = "{\"Items\":[\"Item One\",\"Item Two\",\"Item Three\"],\"KeepWhitespace\":false,\"Name\":\"Test\",\"Author\":\"Lance\",\"Description\":\"Testing Serialization\",\"Version\":{\"Major\":1,\"Minor\":0,\"Build\":0,\"Revision\":0,\"MajorRevision\":0,\"MinorRevision\":0},\"URL\":\"https://www.google.com\",\"Tags\":[\"Test\"],\"GeneratorType\":\"List\",\"OutputFormat\":\"Text\"}";
-            var generator = (ListDefinition)json;
+			var items = new List<string>() { "Item One", "Item Two", "Item Three" };
+            var generator = BaseDefinition.Deserialize(Properties.Resources.LD_DeserializeTest_rgen);
             var result = generator.Generate();
             Assert.IsTrue(items.Contains(result));
         }

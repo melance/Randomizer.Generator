@@ -7,6 +7,7 @@ using NCalc;
 using Randomizer.Generator.Core;
 using Randomizer.Generator.Exceptions;
 using Randomizer.Generator.Utility;
+using System.IO;
 
 namespace Randomizer.Generator.Assignment
 {
@@ -14,9 +15,9 @@ namespace Randomizer.Generator.Assignment
     /// Using a series of line items containing line item references, equations, and variables generates random content
     /// </summary>
     public class AssignmentDefinition : BaseDefinition
-    {
-        #region Constants
-        private const string START_ITEM = "Start"; 
+    {		
+		#region Constants
+		private const string START_ITEM = "Start"; 
         private const Int32 MAX_RECURSION_DEPTH = 1000;
         private const Int32 MAX_LOOP_COUNT = 10000000;
         #endregion
@@ -24,25 +25,27 @@ namespace Randomizer.Generator.Assignment
         #region Members
         private Int32 _loopCount;
         private Int32 _recursionDepth;
-        #endregion
+		private Boolean _importComplete = false;
+		#endregion
 
-        #region Properties
-        /// <summary>
-        /// List of line items used in the generator
-        /// </summary>
-        public LineItemDictionary LineItems { get; set; } = new();
-        private InsensitiveDictionary<String> Variables { get; set; } = new();
-        #endregion
+		#region Properties
+		/// <summary>List of line items used in the generator</summary>
+		public LineItemDictionary LineItems { get; set; } = new();
+		/// <summary>List of imported assignment generators</summary>
+		public List<String> Imports { get; set; } = new();
+		private InsensitiveDictionary<String> Variables { get; set; } = new();
+		#endregion
 
-        #region Public Methods
-        /// <summary>
-        /// Generates random content
-        /// </summary>
-        public override string Generate()
+		#region Public Methods
+		/// <summary>
+		/// Generates random content
+		/// </summary>
+		public override string Generate()
         {
             var value = string.Empty;
             var next = START_ITEM;
             LineItem item;
+			LoadImports();
 
             _loopCount = 0;
             _recursionDepth = 0;
@@ -56,11 +59,39 @@ namespace Randomizer.Generator.Assignment
 
             return value;
         }
+		#endregion
 
+		#region Protected Methods
+		protected virtual AssignmentDefinition LoadImport(String importPath)
+		{
+			return (AssignmentDefinition)Deserialize(File.ReadAllText(importPath));
+		}
 
-        #endregion
+		protected virtual void LoadImports()
+		{
+			if (!_importComplete)
+			{
+				foreach (var import in Imports)
+				{
+					var definition = LoadImport(import);
+					if (definition != null)
+					{
+						foreach (var item in definition.LineItems)
+						{
+							if (LineItems.ContainsKey(item.Key))
+								LineItems[item.Key].AddRange(item.Value);
+							else
+								LineItems.Add(item.Key, item.Value);
+						}
+					}
+				}
+				_importComplete = true;
+			}
+		}
+		#endregion
 
-        #region Private Methods
+		#region Private Methods
+
         private string EvaluateLineItem(LineItem item)
         {
             var result = new StringBuilder();

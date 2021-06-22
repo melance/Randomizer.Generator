@@ -121,71 +121,22 @@
   <data name="Adventure_Hooks_Fantasy_rgen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Adventure Hooks Fantasy.rgen.hjson;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Assignment1ItemTest" xml:space="preserve">
-    <value>{  
-  "KeepWhitespace": false,
-  "Name": "Test",
-  "Author": "Lance",
-  "Description": "Testing Serialization",
-  "Version": {
-    "Major": 1,
-    "Minor": 0,
-    "Build": 0,
-    "Revision": 0,
-    "MajorRevision": 0,
-    "MinorRevision": 0
-  },
-  "URL": "https://www.google.com",
-  "Tags": [
-    "Test"
-  ],
-  "GeneratorType": "Assignment",
-  "OutputFormat": "Text",
-  "LineItems": {
-    "Start": [
-      {"Next": "", "Weight": 1, "Content": "One item"}
-    ] 
-  }
-}</value>
+  <data name="AD_DeserializeTest_rgen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\ad_deserializetest.rgen.hjson;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="AssignmentDefinition1" xml:space="preserve">
-    <value>{
-  "Items": [
-    "Item One",
-    "Item Two",
-    "Item Three"
-  ],
-  "KeepWhitespace": false,
-  "Name": "Test",
-  "Author": "Lance",
-  "Description": "Testing Serialization",
-  "Version": {
-    "Major": 1,
-    "Minor": 0,
-    "Build": 0,
-    "Revision": 0,
-    "MajorRevision": 0,
-    "MinorRevision": 0
-  },
-  "URL": "https://www.google.com",
-  "Tags": [
-    "Test"
-  ],
-  "GeneratorType": "Assignment",
-  "OutputFormat": "Text",
-  "LineItems": {
-    "Start": [
-      {"Next": "Second", "Weight": 1, "Content": "This is the first start item\n"},
-      {"Next": "Second", "Weight": 1, "Content": "This is the second start item\n"}      
-    ],
-    "Second": [
-      {"Weight": 75, "Content": "This is Second 1"},
-      {"Weight": 25, "Content": "This is Second 2"}
-    ]        
-  }
-}</value>
+  <data name="AD_OneItemTest_rgen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OneItemTest.rgen.hjson;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LD_DeserializeTest_rgen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\ld_deserializetest.rgen.hjson;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Lua_Deserialize_rgen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\lua_deserialize.rgen.hjson;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="PhonotacticsTest_rgen" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PhonotacticsTest.rgen.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>..\resources\phonotacticstest.rgen.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TD_DeserializeTest_rgen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\td_deserializetest.rgen.hjson;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

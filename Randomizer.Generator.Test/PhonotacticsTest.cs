@@ -29,7 +29,8 @@ namespace Randomizer.Generator.Test
         }
 
         [TestMethod]
-        public void SerializeTest()
+		[TestCategory("Serialization")]
+		public void PhonotacticsSerialize()
         {
             var generator = new PhonotacticsDefinition();
             generator.Definitions.Add('C', new DefinitionList() { "B", "C", "D", "F", "G", "H", "J", "K", "L", "M", "N", "P", "Q", "R", "S", "T", "V", "W", "X", "Y", "Z" });
@@ -39,9 +40,10 @@ namespace Randomizer.Generator.Test
         }
 
         [TestMethod]
-        public void DeserializeTest()
+		[TestCategory("Serialization")]
+		public void PhonotacticsDeserialize()
         {
-            var generator = BaseDefinition.Deserialize<PhonotacticsDefinition>(Properties.Resources.PhonotacticsTest_rgen);
+            var generator = BaseDefinition.Deserialize(Properties.Resources.PhonotacticsTest_rgen);
             var value = generator.Generate();
             TestContext.WriteLine($"Value = {value}");
             Assert.AreNotEqual(String.Empty, value);

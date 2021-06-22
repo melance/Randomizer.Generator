@@ -1,89 +1,87 @@
-﻿using NCalc;
+﻿using Hjson;
+using System.IO;
+using JsonSubTypes;
+using NCalc;
+using Randomizer.Generator.Converters;
+using Randomizer.Generator.Exceptions;
+using Randomizer.Generator.Utility;
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Runtime.CompilerServices;
-using System.Text.Json;
-using System.Text.Json.Serialization;
-using Randomizer.Generator.Utility;
-using Randomizer.Generator.Converters;
-using System.Linq;
-using Hjson;
-using Randomizer.Generator.Exceptions;
-using System.ComponentModel;
+using Newtonsoft.Json.Serialization;
+using Newtonsoft.Json;
+using System.Text;
+using Newtonsoft.Json.Converters;
 
 [assembly: InternalsVisibleTo("Randomizer.Generator.Test")]
 
 namespace Randomizer.Generator.Core
-{    
-    public abstract class BaseDefinition
+{	
+	public abstract class BaseDefinition
     {
         private CalculationEngine _calculator;
 
-        #region Public Static Methods
-        public static T Deserialize<T>(Byte[] value) where T : BaseDefinition
-        {
-            return Deserialize<T>(System.Text.Encoding.Default.GetString(value));
-        }
+		#region Public Static Methods
+		public static BaseDefinition Deserialize(Byte[] value) 
+		{
+			return Deserialize(Encoding.Default.GetString(value));
+		}
 
-        /// <summary>
-        /// Deserializes an HJSON string into a definition
-        /// </summary>
-        public static T Deserialize<T>(String value) where T : BaseDefinition
+		/// <summary>
+		/// Deserializes an HJSON string into a definition
+		/// </summary>
+		public static BaseDefinition Deserialize(String value) 
         {
             var json = HjsonValue.Parse(value).ToString();
-
-            return JsonSerializer.Deserialize<T>(json, SerializerOptions);
+			var serializer = JsonSerializer.Create(SerializerSettings);
+			using var sReader = new StringReader(json);
+			using var reader = new JsonTextReader(sReader);
+            return serializer.Deserialize<BaseDefinition>(reader);
         }
 
         /// <summary>
         /// Serializes a definition into HJSON
         /// </summary>
-        public static String Serialize<T>(T value, Boolean hjsonFormat = true) where T : BaseDefinition
+        public static String Serialize(BaseDefinition value, Boolean hjsonFormat = true)
         {
-            var hjson = HjsonValue.Parse(JsonSerializer.Serialize(value, SerializerOptions));
+			var builder = new StringBuilder();
+			using var sWriter = new StringWriter(builder);
+			using var writer = new JsonTextWriter(sWriter);
+			var serializer = JsonSerializer.Create(SerializerSettings);
+			serializer.Serialize(writer, value);
+			var hjson = HjsonValue.Parse(builder.ToString());
             return hjson.ToString(hjsonFormat ? Stringify.Hjson : Stringify.Formatted);
         }
+		#endregion
 
-        /// <summary>
-        /// Returns the type of the given hjson definition
-        /// </summary>
-        public static GeneratorTypes GetGeneratorType(String value)
-        {
-            var json = HjsonValue.Parse(value).Qo();
-            if (json[nameof(GeneratorType)] != null)
-            {
-                var typeName = json[nameof(GeneratorType)].Qs();
-                if (Enum.TryParse<GeneratorTypes>(typeName, out var result))
-                {
-                    return result;
-                }
-                else
-                {
-                    throw new UnrecognizedGeneratorException(typeName);
-                }
-            }
-            else throw new DefinitionException("GeneratorType not found.");
-        }
-        #endregion
+		#region Properties
+		protected static JsonSerializerSettings SerializerSettings => new()
+		{
+			Formatting = Formatting.Indented,
+			Converters =
+					{
+						new StringEnumConverter(),
+						new JsonVersionConverter(),
+						new JsonListOptionConverter(),
+						JsonSubtypesConverterBuilder.Of(typeof(BaseDefinition), "GeneratorType")
+													.RegisterSubtype<Assignment.AssignmentDefinition>(GeneratorTypes.Assignment)
+													.RegisterSubtype<List.ListDefinition>(GeneratorTypes.List)
+													.RegisterSubtype<Lua.LuaDefinition>(GeneratorTypes.Lua)
+													.RegisterSubtype<Phonotactics.PhonotacticsDefinition>(GeneratorTypes.Phonotactics)
+													.RegisterSubtype<Table.TableDefinition>(GeneratorTypes.Table)
+													.SerializeDiscriminatorProperty() // ask to serialize the type property
+													.Build(),
+						JsonSubtypesConverterBuilder.Of(typeof(Table.BaseTable), "TableType")
+													.RegisterSubtype<Table.LoopTable>(Table.TableTypes.Loop)
+													.RegisterSubtype<Table.RandomTable>(Table.TableTypes.Random)
+													.RegisterSubtype<Table.SelectTable>(Table.TableTypes.Select)
+													.SerializeDiscriminatorProperty() // ask to serialize the type property
+													.Build()
+					}
+		};
 
-        #region Properties
-        protected static JsonSerializerOptions SerializerOptions
-        {
-            get => new()
-			{
-                WriteIndented = true,
-                Converters =
-                    {
-                        new JsonStringEnumConverter(),
-                        new JsonVersionConverter(),
-                        new JsonListOptionConverter()
-                    }
-            };
-        }
-
-        /// <summary>Name of the generator definition</summary>
-        public String Name { get; set; }
+		/// <summary>Name of the generator definition</summary>
+		public String Name { get; set; }
         /// <summary>Author of the generator definition</summary>
         public String Author { get; set; }
         /// <summary>Description of the generator definition</summary>
@@ -94,8 +92,6 @@ namespace Randomizer.Generator.Core
         public String URL { get; set; }
         /// <summary>A list of tags for the generator definition</summary>
         public List<String> Tags { get; set; }
-        /// <summary>The type of generator in the definition</summary>
-        public GeneratorTypes GeneratorType { get; set; }
         /// <summary>The format that the generator outputs</summary>
         public OutputFormats OutputFormat { get; set; }
         /// <summary>Parameters for the generator definition</summary>
@@ -111,23 +107,37 @@ namespace Randomizer.Generator.Core
         {
             Object value;
             _calculator = new CalculationEngine(expression);
-            _calculator.EvaluateFunction += EvaluateFunction;
-            _calculator.EvaluateParameter += EvaluateParameter;
+            _calculator.EvaluateFunction += OnEvaluateFunction;
+            _calculator.EvaluateParameter += OnEvaluateParameter;
             value = _calculator.Evaluate();
-            _calculator.EvaluateFunction -= EvaluateFunction;
-            _calculator.EvaluateParameter -= EvaluateParameter;
+            _calculator.EvaluateFunction -= OnEvaluateFunction;
+            _calculator.EvaluateParameter -= OnEvaluateParameter;
             return value.ToString();
         }
 
         /// <summary>
         /// Called when the base generator doesn't isn't aware of the function named
         /// </summary>
-        protected virtual void EvaluateFunction(String name, FunctionArgs e) { }
+        protected virtual void OnEvaluateFunction(String name, FunctionArgs e) 
+		{
+			EvaluateFunction(name, e);
+		}
 
         /// <summary>
         /// Called when the base generator isn't aware of the parameter named
         /// </summary>
-        protected virtual void EvaluateParameter(String name, ParameterArgs e) { }
+        protected virtual void OnEvaluateParameter(String name, ParameterArgs e) 
+		{
+			if (Parameters != null && Parameters.ContainsKey(name))
+				e.Result = Parameters[name];
+			else
+				EvaluateParameter(name, e);
+		}
+
+		protected abstract void EvaluateFunction(String name, FunctionArgs e);
+		protected abstract void EvaluateParameter(String name, ParameterArgs e);
+
+
         #endregion
 
     }

@@ -63,6 +63,26 @@ namespace Randomizer.Generator.Test.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] AD_DeserializeTest_rgen {
+            get {
+                object obj = ResourceManager.GetObject("AD_DeserializeTest_rgen", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] AD_OneItemTest_rgen {
+            get {
+                object obj = ResourceManager.GetObject("AD_OneItemTest_rgen", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] Adventure_Hooks_Fantasy_rgen {
             get {
                 object obj = ResourceManager.GetObject("Adventure_Hooks_Fantasy_rgen", resourceCulture);
@@ -71,70 +91,22 @@ namespace Randomizer.Generator.Test.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to {  
-        ///  &quot;KeepWhitespace&quot;: false,
-        ///  &quot;Name&quot;: &quot;Test&quot;,
-        ///  &quot;Author&quot;: &quot;Lance&quot;,
-        ///  &quot;Description&quot;: &quot;Testing Serialization&quot;,
-        ///  &quot;Version&quot;: {
-        ///    &quot;Major&quot;: 1,
-        ///    &quot;Minor&quot;: 0,
-        ///    &quot;Build&quot;: 0,
-        ///    &quot;Revision&quot;: 0,
-        ///    &quot;MajorRevision&quot;: 0,
-        ///    &quot;MinorRevision&quot;: 0
-        ///  },
-        ///  &quot;URL&quot;: &quot;https://www.google.com&quot;,
-        ///  &quot;Tags&quot;: [
-        ///    &quot;Test&quot;
-        ///  ],
-        ///  &quot;GeneratorType&quot;: &quot;Assignment&quot;,
-        ///  &quot;OutputFormat&quot;: &quot;Text&quot;,
-        ///  &quot;LineItems&quot;: {
-        ///    &quot;Start&quot;: [
-        ///      {&quot;Next&quot;: &quot;&quot;, &quot;Weight&quot;: 1, &quot;Content&quot;: &quot;One item&quot;}
-        ///    ] 
-        ///  }
-        ///}.
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static string Assignment1ItemTest {
+        internal static byte[] LD_DeserializeTest_rgen {
             get {
-                return ResourceManager.GetString("Assignment1ItemTest", resourceCulture);
+                object obj = ResourceManager.GetObject("LD_DeserializeTest_rgen", resourceCulture);
+                return ((byte[])(obj));
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to {
-        ///  &quot;Items&quot;: [
-        ///    &quot;Item One&quot;,
-        ///    &quot;Item Two&quot;,
-        ///    &quot;Item Three&quot;
-        ///  ],
-        ///  &quot;KeepWhitespace&quot;: false,
-        ///  &quot;Name&quot;: &quot;Test&quot;,
-        ///  &quot;Author&quot;: &quot;Lance&quot;,
-        ///  &quot;Description&quot;: &quot;Testing Serialization&quot;,
-        ///  &quot;Version&quot;: {
-        ///    &quot;Major&quot;: 1,
-        ///    &quot;Minor&quot;: 0,
-        ///    &quot;Build&quot;: 0,
-        ///    &quot;Revision&quot;: 0,
-        ///    &quot;MajorRevision&quot;: 0,
-        ///    &quot;MinorRevision&quot;: 0
-        ///  },
-        ///  &quot;URL&quot;: &quot;https://www.google.com&quot;,
-        ///  &quot;Tags&quot;: [
-        ///    &quot;Test&quot;
-        ///  ],
-        ///  &quot;GeneratorType&quot;: &quot;Assignment&quot;,
-        ///  &quot;OutputFormat&quot;: &quot;Text&quot;,
-        ///  &quot;LineItems&quot;: {
-        ///    &quot;Start&quot;: [
-        ///      {&quot;Next&quot;: &quot;Secon [rest of string was truncated]&quot;;.
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static string AssignmentDefinition1 {
+        internal static byte[] Lua_Deserialize_rgen {
             get {
-                return ResourceManager.GetString("AssignmentDefinition1", resourceCulture);
+                object obj = ResourceManager.GetObject("Lua_Deserialize_rgen", resourceCulture);
+                return ((byte[])(obj));
             }
         }
         
@@ -144,6 +116,16 @@ namespace Randomizer.Generator.Test.Properties {
         internal static byte[] PhonotacticsTest_rgen {
             get {
                 object obj = ResourceManager.GetObject("PhonotacticsTest_rgen", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] TD_DeserializeTest_rgen {
+            get {
+                object obj = ResourceManager.GetObject("TD_DeserializeTest_rgen", resourceCulture);
                 return ((byte[])(obj));
             }
         }

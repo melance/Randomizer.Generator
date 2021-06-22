@@ -10,6 +10,7 @@ using Spectre.Console;
 using Randomizer.Generator.CmdLine.Classes;
 using Spectre.Console.Rendering;
 using System.Linq;
+using System.Text;
 
 namespace Randomizer.Generator.CmdLine
 {
@@ -44,21 +45,7 @@ namespace Randomizer.Generator.CmdLine
                 WriteError($"File not found: {fullPath}");
             else
             {
-                var generatorType = BaseDefinition.GetGeneratorType(File.ReadAllText(fullPath));
-                BaseDefinition generator = null;
-
-                switch (generatorType)
-                {
-                    case GeneratorTypes.List:
-                        generator = BaseDefinition.Deserialize<List.ListDefinition>(File.ReadAllText(path));
-                        break;
-                    case GeneratorTypes.Assignment:
-                        generator = BaseDefinition.Deserialize<Assignment.AssignmentDefinition>(File.ReadAllText(path));
-                        break;
-                    case GeneratorTypes.Phonotactics:
-                        generator = BaseDefinition.Deserialize<Phonotactics.PhonotacticsDefinition>(File.ReadAllText(path));
-                        break;
-                }
+                BaseDefinition generator = BaseDefinition.Deserialize(File.ReadAllText(fullPath));
 
                 if (!TextOnly)
                 {
@@ -100,7 +87,7 @@ namespace Randomizer.Generator.CmdLine
             Console.WriteLine(generator.Description);
             Console.WriteLine();
           
-            Console.WriteLine($"Generator Type:   {generator.GeneratorType}");
+            Console.WriteLine($"Generator Type:   {generator.GetType().Name}");
             Console.WriteLine($"Tags:             {String.Join(", ", generator.Tags)}");
             Console.WriteLine($"Output Format:    {generator.OutputFormat}");
             if (!String.IsNullOrWhiteSpace(generator.URL)) Console.WriteLine($"URL:              {generator.URL}");
@@ -110,6 +97,14 @@ namespace Randomizer.Generator.CmdLine
                 var ad = (Assignment.AssignmentDefinition)generator;
                 Console.WriteLine($"Category Count:   {ad.LineItems.Count:#,##0}");
                 Console.WriteLine($"Line Item Count:  {ad.LineItems.Sum(kvp => kvp.Value.Count):#,##0}");
+				if (ad.Imports.Any())
+				{
+					Console.WriteLine("Imports:");
+					foreach (var import in ad.Imports)
+					{
+						Console.WriteLine($"\t{import}");
+					}
+				}
             }
             if (generator.GetType() == typeof(Phonotactics.PhonotacticsDefinition))
             {
@@ -160,12 +155,12 @@ namespace Randomizer.Generator.CmdLine
             AnsiConsole.WriteLine();
 
             // Property table
-            var propertyTable = new Table() { ShowHeaders = false, Border = TableBorder.None };
+            var propertyTable = new Spectre.Console.Table() { ShowHeaders = false, Border = TableBorder.None };
 
             propertyTable.AddColumn("Property");
             propertyTable.AddColumn("Value");
 
-            propertyTable.AddRow("Generator Type:", generator.GeneratorType.ToString());
+            propertyTable.AddRow("Generator Type:", generator.GetType().Name);
             propertyTable.AddRow("Tags:", String.Join(", ", generator.Tags));
             propertyTable.AddRow("Output Format:", generator.OutputFormat.ToString());
             if (!String.IsNullOrWhiteSpace(generator.URL)) propertyTable.AddRow("URL:", generator.URL);
@@ -175,6 +170,16 @@ namespace Randomizer.Generator.CmdLine
                 var ad = (Assignment.AssignmentDefinition)generator;
                 propertyTable.AddRow("Category Count:", ad.LineItems.Count.ToString("#,##0"));
                 propertyTable.AddRow("Line Item Count:", ad.LineItems.Sum(kvp => kvp.Value.Count).ToString("#,##0"));
+				if (ad.Imports.Any())
+				{
+					var importList = new StringBuilder();
+
+					foreach (var import in ad.Imports)
+					{
+						importList.AppendLine(import);
+					}
+					propertyTable.AddRow("Imports:", importList.ToString());					
+				}
             }
             if (generator.GetType() == typeof(Phonotactics.PhonotacticsDefinition))
             {
@@ -194,7 +199,7 @@ namespace Randomizer.Generator.CmdLine
             {
                 AnsiConsole.WriteLine();
                 AnsiConsole.MarkupLine("[Bold]Parameters[/]");
-                var parameterTable = new Table() { ShowHeaders = true, Border = new CustomTableBorder() };
+                var parameterTable = new Spectre.Console.Table() { ShowHeaders = true, Border = new CustomTableBorder() };
 
                 parameterTable.AddColumn("Name");
                 parameterTable.AddColumn("Display");
@@ -211,7 +216,7 @@ namespace Randomizer.Generator.CmdLine
                         { new Text(parameter.Value.Type.ToString()) },
                         { new Text(parameter.Value.Value) }
                     };
-                    var optionTable = new Table() { ShowHeaders = false, Border = TableBorder.None };
+                    var optionTable = new Spectre.Console.Table() { ShowHeaders = false, Border = TableBorder.None };
                     if (parameter.Value.Options?.Count > 0)
                     {
                         optionTable.AddColumn("Value");

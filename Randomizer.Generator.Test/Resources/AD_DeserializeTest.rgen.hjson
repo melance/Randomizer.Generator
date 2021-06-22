@@ -1,0 +1,57 @@
+{
+    LineItems:
+    {
+        Start:
+        [
+            {
+            Content: Test
+            Next: One
+            Repeat: 0
+            Variable: null
+            Weight: 1
+            }
+        ]
+        One:
+        [
+            {
+            Content: One Test
+            Next: null
+            Repeat: 2
+            Variable: Var
+            Weight: 10
+            }
+            {
+            Content: Two Test
+            Next: null
+            Repeat: 2
+            Variable: Var
+            Weight: 20
+            }
+        ]
+    }
+    Imports: []
+    Name: AD Test
+    Author: null
+    Description: null
+    Version: 1.2.3.4
+    URL: null
+    Tags: null
+    OutputFormat: Text
+    Parameters:
+    {
+        Gender:
+        {
+            Value: Any
+            Display: Gender
+            Aliases: []
+            Type: List
+            Options:
+            [
+                Any
+                Male
+                Female
+            ]
+        }
+    }
+    GeneratorType: Assignment
+}

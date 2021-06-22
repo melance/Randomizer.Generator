@@ -1,0 +1,18 @@
+{
+	"Items": [
+		"Item One",
+		"Item Two",
+		"Item Three"
+	],
+	"KeepWhitespace": false,
+	"Name": "Test",
+	"Author": "Lance",
+	"Description": "Testing Serialization",
+	"Version": "1.2.3.4",
+	"URL": "https://www.google.com",
+	"Tags": [
+		"Test"
+	],
+	"GeneratorType": "List",
+	"OutputFormat": "Text"
+}

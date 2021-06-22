@@ -1,0 +1,18 @@
+{  
+  Name: Test
+  Author: Lance
+  Description: Testing Serialization
+  Version: "1.2.3.4"
+  URL: https://www.google.com
+  Tags: [
+    Test
+  ]
+  GeneratorType: Assignment
+  OutputFormat: Text
+  LineItems: 
+  {
+    Start: [
+      {"Next": "", "Weight": 1, "Content": "One item"}
+    ] 
+  }
+}

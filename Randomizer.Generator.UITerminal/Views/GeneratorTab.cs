@@ -28,20 +28,8 @@ namespace Randomizer.Generator.UITerminal.Views
 		#region Private Methods
 		private void LoadTheGenerator()
 		{
-			var hjson = File.ReadAllText(_filePath);
-						
-			switch (BaseDefinition.GetGeneratorType(hjson))
-			{
-				case GeneratorTypes.List:
-					_generator = BaseDefinition.Deserialize<List.ListDefinition>(hjson);
-					break;
-				case GeneratorTypes.Assignment:
-					_generator = BaseDefinition.Deserialize<Assignment.AssignmentDefinition>(hjson);
-					break;
-				case GeneratorTypes.Phonotactics:
-					_generator = BaseDefinition.Deserialize<Phonotactics.PhonotacticsDefinition>(hjson);
-					break;
-			}
+			var hjson = File.ReadAllText(_filePath);			
+			_generator = BaseDefinition.Deserialize(hjson);
 			Text = _generator.Name;
 		}
 
@@ -128,6 +116,17 @@ namespace Randomizer.Generator.UITerminal.Views
 				}
 			}
 		}
+
+		private void Generate()
+		{
+			var results = new StringBuilder();
+			GetParameterValues();
+
+			for (Int32 i = 1; i <= intRepeat.Value; i++)
+				results.AppendLine(_generator.Generate());
+
+			txtResults.Text = results.ToString();
+		}
 		#endregion
 
 		#region Protected Methods
@@ -155,13 +154,7 @@ namespace Randomizer.Generator.UITerminal.Views
 
 		private void btnGenerate_Clicked()
 		{
-			var results = new StringBuilder();
-			GetParameterValues();
-
-			for (Int32 i = 1; i <= intRepeat.Value; i++)
-				results.AppendLine(_generator.Generate());
-
-			txtResults.Text = results.ToString();
+			Generate();
 		}
 
 		private void btnCopyAll_Clicked()

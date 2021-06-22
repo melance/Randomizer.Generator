@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
+using NCalc;
 using Randomizer.Generator.Core;
 using Randomizer.Generator.Utility;
 
@@ -53,6 +54,9 @@ namespace Randomizer.Generator.Phonotactics
             }
             return result.ToString().ToCase(TextCase);
         }
-        #endregion
-    }
+
+		protected override void EvaluateFunction(String name, FunctionArgs e) => throw new NotImplementedException();
+		protected override void EvaluateParameter(String name, ParameterArgs e) => throw new NotImplementedException();
+		#endregion
+	}
 }
