@@ -7,6 +7,9 @@ using NCalc;
 
 namespace Randomizer.Generator.Utility
 {
+	/// <summary>
+	/// Handles rolling dice
+	/// </summary>
     class DiceRoller
     {
         #region Constants

@@ -15,7 +15,8 @@ namespace Randomizer.Generator.Test
         public TestContext TestContext { get; set; }
 
         [TestMethod]
-        public void ZeroItemGenerator()
+		[TestCategory("List")]
+		public void ZeroItemGenerator()
         {
             var generator = new ListDefinition()
             {
@@ -26,7 +27,8 @@ namespace Randomizer.Generator.Test
         }
 
         [TestMethod]
-        public void OneItemGenerator()
+		[TestCategory("List")]
+		public void OneItemGenerator()
         {
             const string ITEM_ONE = "Item One";
             var generator = new ListDefinition()
@@ -39,7 +41,8 @@ namespace Randomizer.Generator.Test
         }
 
         [TestMethod]
-        public void KeepWhitespace()
+		[TestCategory("List")]
+		public void KeepWhitespace()
         {
             const string ITEM_ONE = "Item One ";
             var generator = new ListDefinition()
@@ -53,7 +56,8 @@ namespace Randomizer.Generator.Test
         }
 
         [TestMethod]
-        public void MultiItemGenerator()
+		[TestCategory("List")]
+		public void MultiItemGenerator()
         {
             var items = new List<string>() { "Item One", "Item Two", "Item Three" };
             var generator = new ListDefinition()
@@ -83,7 +87,7 @@ namespace Randomizer.Generator.Test
                 Version = new System.Version(1,0,0,0),
                 Items = items
             };
-            TestContext.WriteLine(generator);
+            TestContext.WriteLine(BaseDefinition.Serialize(generator));
         }
 
         [TestMethod]

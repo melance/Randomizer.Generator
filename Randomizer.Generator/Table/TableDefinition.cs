@@ -65,8 +65,6 @@ namespace Randomizer.Generator.Table
 			return result.ToString();
 		}
 
-		protected override void EvaluateFunction(String name, FunctionArgs e)  => throw new NotImplementedException();
-
 		protected override void EvaluateParameter(String name, ParameterArgs e)
 		{
 			if (Values.ContainsKey(name))

@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Randomizer.Generator.Table
 {
+	/// <summary>
+	/// The types of tables
+	/// </summary>
 	public enum TableTypes
 	{
 		Loop,

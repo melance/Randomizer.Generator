@@ -1,38 +1,46 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using NCalc;
+﻿using NCalc;
+using Newtonsoft.Json;
 using Randomizer.Generator.Core;
 using Randomizer.Generator.Exceptions;
 using Randomizer.Generator.Utility;
+using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Text;
 
 namespace Randomizer.Generator.Assignment
 {
-    /// <summary>
-    /// Using a series of line items containing line item references, equations, and variables generates random content
-    /// </summary>
-    public class AssignmentDefinition : BaseDefinition
+	/// <summary>
+	/// Using a series of line items containing line item references, equations, and variables generates random content
+	/// </summary>
+	public class AssignmentDefinition : BaseDefinition
     {		
 		#region Constants
+		/// <summary>The starting lineitem for generation</summary>
 		private const string START_ITEM = "Start"; 
+		/// <summary>The maximum level of recursion to allow before aborting the generation process</summary>
         private const Int32 MAX_RECURSION_DEPTH = 1000;
-        private const Int32 MAX_LOOP_COUNT = 10000000;
+		/// <summary>The maximum number of loops to allow before aborting the generation process</summary>
+		private const Int32 MAX_LOOP_COUNT = 10000000;
         #endregion
 
         #region Members
+		/// <summary>Tracks the number of loops that have occured during generation</summary>
         private Int32 _loopCount;
+		/// <summary>Tracks the recursion depth during generation</summary>
         private Int32 _recursionDepth;
+		/// <summary>Is set to true when importing of <see cref="Imports"/> is complete</summary>
 		private Boolean _importComplete = false;
 		#endregion
 
 		#region Properties
 		/// <summary>List of line items used in the generator</summary>
+		[JsonProperty(Order = 101)]
 		public LineItemDictionary LineItems { get; set; } = new();
 		/// <summary>List of imported assignment generators</summary>
+		[JsonProperty(Order = 100)]
 		public List<String> Imports { get; set; } = new();
+		/// <summary>Variables added during generation</summary>
 		private InsensitiveDictionary<String> Variables { get; set; } = new();
 		#endregion
 
@@ -40,6 +48,7 @@ namespace Randomizer.Generator.Assignment
 		/// <summary>
 		/// Generates random content
 		/// </summary>
+		/// <returns>The generated content</returns>
 		public override string Generate()
         {
             var value = string.Empty;
@@ -62,11 +71,19 @@ namespace Randomizer.Generator.Assignment
 		#endregion
 
 		#region Protected Methods
+		/// <summary>
+		/// Loads a definition from the list of <see cref="Imports"/>
+		/// </summary>
+		/// <param name="importPath">The path to the definition to import</param>
+		/// <returns>The <see cref="AssignmentDefinition"/> requested</returns>
 		protected virtual AssignmentDefinition LoadImport(String importPath)
 		{
 			return (AssignmentDefinition)Deserialize(File.ReadAllText(importPath));
 		}
 
+		/// <summary>
+		/// Loads all definitions in the <see cref="Imports"/> list
+		/// </summary>
 		protected virtual void LoadImports()
 		{
 			if (!_importComplete)
@@ -91,7 +108,11 @@ namespace Randomizer.Generator.Assignment
 		#endregion
 
 		#region Private Methods
-
+		/// <summary>
+		/// Evaluates a <see cref="LineItem"/>
+		/// </summary>
+		/// <param name="item">The <see cref="LineItem"/> to evaluate</param>
+		/// <returns>The result of the evaluation</returns>
         private string EvaluateLineItem(LineItem item)
         {
             var result = new StringBuilder();
@@ -120,6 +141,11 @@ namespace Randomizer.Generator.Assignment
             return result.ToString();
         }
 
+		/// <summary>
+		/// Processes <see cref="LineItem.Content"/>
+		/// </summary>
+		/// <param name="content">The content to process</param>
+		/// <returns>The result of the evaluation</returns>
         private string EvaluateContent(String content)
         {
             var result = new StringBuilder();
@@ -162,11 +188,11 @@ namespace Randomizer.Generator.Assignment
             return result.ToString();
         }
 
-        protected override void EvaluateFunction(String name, FunctionArgs args)
-        {
-
-        }
-
+		/// <summary>
+		/// Handles providing values for parameters requested by the <see cref="CalculationEngine"/>
+		/// </summary>
+		/// <param name="name">The name of the parameter</param>
+		/// <param name="args">The result of the parameter request</param>
         protected override void EvaluateParameter(String name, ParameterArgs args)
         {
             if (Variables.ContainsKey(name))

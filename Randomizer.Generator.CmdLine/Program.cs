@@ -250,7 +250,7 @@ namespace Randomizer.Generator.CmdLine
                 {
                     foreach (var parameter in ParseParameters(args))
                     {
-                        generator.Parameters.SetParameterValue(parameter.Key, parameter.Value);
+						generator.Parameters[parameter.Key].Value = parameter.Value;
                     }
 
                     for (var i = 0; i < repeat; i++)

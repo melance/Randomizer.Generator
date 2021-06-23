@@ -10,11 +10,11 @@ using Randomizer.Generator.Utility;
 
 namespace Randomizer.Generator.Phonotactics
 {
-    /// <summary>
-    /// Generates a value based on a phonotactics definition
-    /// </summary>
-    /// <remarks>https://en.wikipedia.org/wiki/Phonotactics</remarks>
-    public class PhonotacticsDefinition : BaseDefinition
+	/// <summary>
+	/// Generates a value based on a phonotactics definition
+	/// </summary>
+	/// <remarks><a href="https://en.wikipedia.org/wiki/Phonotactics">https://en.wikipedia.org/wiki/Phonotactics</a></remarks>
+	public class PhonotacticsDefinition : BaseDefinition
     {
 
         #region Properties
@@ -22,6 +22,7 @@ namespace Randomizer.Generator.Phonotactics
         public DefinitionDictionary Definitions { get; set; } = new();
         /// <summary>The patterns used to construct content</summary>
         public PatternDictionary Patterns { get; set; } = new();
+		/// <summary>The case to apply to the result</summary>
         public TextCases TextCase { get; set; } = TextCases.None;
         #endregion
 
@@ -29,9 +30,10 @@ namespace Randomizer.Generator.Phonotactics
         /// <summary>
         /// Generates content based on the definitions and patterns
         /// </summary>
+		/// <returns>The generated content</returns>
         public override String Generate()
         {
-            var key = Parameters.Any() ? Parameters[0].Value.Value : String.Empty;
+            var key = Parameters.Any() ? Parameters.First().Value.Value : String.Empty;
             var pattern = Patterns.SelectRandomPattern(key);
             var tokens = Tokenizer.Tokenize(pattern);
             var result = new StringBuilder();
@@ -54,9 +56,6 @@ namespace Randomizer.Generator.Phonotactics
             }
             return result.ToString().ToCase(TextCase);
         }
-
-		protected override void EvaluateFunction(String name, FunctionArgs e) => throw new NotImplementedException();
-		protected override void EvaluateParameter(String name, ParameterArgs e) => throw new NotImplementedException();
 		#endregion
 	}
 }

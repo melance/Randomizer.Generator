@@ -18,11 +18,11 @@ namespace Randomizer.Generator.Assignment
         /// <summary>The next item key to seek after processing this one</summary>
         public String Next { get; set; }
         /// <summary>How many times to repeat this line item</summary>
-        public Int32 Repeat { get; set; }
+        public UInt32 Repeat { get; set; }
         /// <summary>If given a value, the outcome of this line is stored in a variable instead of being output</summary>
         public String Variable { get; set; }
         /// <summary>A weight given to the random selection of this line item</summary>
-        public Int32 Weight { get; set; } = 1;
+        public UInt32 Weight { get; set; } = 1;
         #endregion
     }
 }

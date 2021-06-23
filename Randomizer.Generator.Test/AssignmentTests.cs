@@ -60,6 +60,7 @@ namespace Randomizer.Generator.Test
         }
 
         [TestMethod]
+		[TestCategory("Assignment")]
         public void OneItemTest()
         {
             var generator = BaseDefinition.Deserialize(Properties.Resources.AD_OneItemTest_rgen);
@@ -68,7 +69,8 @@ namespace Randomizer.Generator.Test
         }
 
         [TestMethod]
-        public void AdventureHookTest()
+		[TestCategory("Assignment")]
+		public void AdventureHookTest()
         {
             var generator = BaseDefinition.Deserialize(Properties.Resources.Adventure_Hooks_Fantasy_rgen);
             var value = generator.Generate();
@@ -77,7 +79,8 @@ namespace Randomizer.Generator.Test
         }
 
         [TestMethod]
-        public void TokenizeTest()
+		[TestCategory("Assignment")]
+		public void TokenizeTest()
         {
             var tokens = Tokenizer.Tokenize("This [is] a [@string][=1+1]!");
             var parsed = String.Empty;

@@ -23,8 +23,7 @@ namespace Randomizer.Generator.Converters
 
 		public override void WriteJson(JsonWriter writer, Object value, JsonSerializer serializer)
 		{
-			var list = value as ListOption;
-			if (list != null)
+			if (value is ListOption list)
 			{
 				if (!String.IsNullOrEmpty(list.Display))
 					writer.WriteValue($"{list.Value}:{list.Display}");

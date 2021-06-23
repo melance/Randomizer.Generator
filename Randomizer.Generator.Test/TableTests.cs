@@ -19,6 +19,7 @@ namespace Randomizer.Generator.Test
 		public TestContext TestContext { get; set; }
 
 		[TestMethod]
+		[TestCategory("Table")]
 		public void BuildTableTest()
 		{
 			var table = new Table.Table();

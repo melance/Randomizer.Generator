@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,6 +12,9 @@ namespace Randomizer.Generator.Utility
     internal static class Extensions
     {
         #region Members
+		/// <summary>
+		/// List of Roman Numerals for the <see cref="ToRomanNumerals(int)"/> method
+		/// </summary>
         private static readonly List<Tuple<Int32, String>> _romanNumerals = new()
         {
             { Tuple.Create(1000, "M") },
@@ -196,13 +200,60 @@ namespace Randomizer.Generator.Utility
             if (extended.Length < characters) return extended;
             return extended[^characters..];
         }
-        #endregion
 
-        #region Generic Extensions
-        /// <summary>
-        /// Checks to see if the extended item is in the list
-        /// </summary>
-        public static Boolean In<T>(this T extended, params T[] list)
+		/// <summary>
+		/// Converts the case of the <paramref name="extended"/> to the case defined by <paramref name="textCase"/>
+		/// </summary>
+		/// <param name="extended">The string to convert</param>
+		/// <param name="textCase">The case to convert the string to</param>
+		/// <returns>The converted string</returns>
+		public static String ToCase(this String extended, TextCases textCase)
+		{
+			return textCase switch
+			{
+				TextCases.Lower => CultureInfo.CurrentCulture.TextInfo.ToLower(extended),
+				TextCases.Upper => CultureInfo.CurrentCulture.TextInfo.ToUpper(extended),
+				TextCases.Title => CultureInfo.CurrentCulture.TextInfo.ToTitleCase(extended),
+				_ => extended,
+			};
+		}
+
+		/// <summary>
+		/// Converts a string to lower case
+		/// </summary>
+		/// <param name="extended">The string to convert</param>
+		/// <returns>The converted string</returns>
+		public static String LCase(this String extended)
+		{
+			return extended.ToCase(TextCases.Lower);
+		}
+
+		/// <summary>
+		/// Converts a string to UPPER CASE
+		/// </summary>
+		/// <param name="extended">The string to convert</param>
+		/// <returns>The converted string</returns>
+		public static String UCase(this String extended)
+		{
+			return extended.ToCase(TextCases.Upper);
+		}
+
+		/// <summary>
+		/// Converts a string to Title Case
+		/// </summary>
+		/// <param name="extended">The string to convert</param>
+		/// <returns>The converted string</returns>
+		public static String TCase(this String extended)
+		{
+			return extended.ToCase(TextCases.Title);
+		}
+		#endregion
+
+		#region Generic Extensions
+		/// <summary>
+		/// Checks to see if the extended item is in the list
+		/// </summary>
+		public static Boolean In<T>(this T extended, params T[] list)
         {
             foreach (var item in list)
             {

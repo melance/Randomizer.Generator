@@ -8,6 +8,9 @@ using Randomizer.Generator.Utility;
 
 namespace Randomizer.Generator.Phonotactics
 {
+	/// <summary>
+	/// A dictionary of Phonotactic Patterns
+	/// </summary>
     public class PatternDictionary : InsensitiveDictionary<PatternList>
     {
         /// <summary>
@@ -24,7 +27,7 @@ namespace Randomizer.Generator.Phonotactics
         public String SelectRandomPattern(String key)
         {
             var selectedPatterns = String.IsNullOrEmpty(key) ? this.First().Value : this[key];
-            var totalWeight = selectedPatterns.Sum(kvp => kvp.Weight);
+            var totalWeight = (Int32)selectedPatterns.Sum(kvp => kvp.Weight);
             var patternValue = String.Empty;
             var keyValue = String.Empty;
 
@@ -40,7 +43,7 @@ namespace Randomizer.Generator.Phonotactics
             else
             {
                 var value = Utility.Random.RandomNumber(0, totalWeight);
-                var sum = 0;
+                var sum = 0u;
                 var values = this.AsEnumerable().ToList();
                 var i = 0;
 

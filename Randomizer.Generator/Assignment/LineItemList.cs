@@ -12,20 +12,20 @@ namespace Randomizer.Generator.Assignment
     public class LineItemList : List<LineItem>
     {
         #region Members
-        private Int32? _totalWeight;
+        private UInt32? _totalWeight;
         #endregion
 
         #region Properties
         /// <summary>
         /// The total weight of all line items in this list
         /// </summary>
-        public Int32 TotalWeight
+        public UInt32 TotalWeight
         {
             get
             {
                 if (!_totalWeight.HasValue)
                 {
-                    _totalWeight = this.Sum(i => i.Weight);
+                    _totalWeight = (UInt32?)this.Sum(i => i.Weight);
                 }
                 return _totalWeight.GetValueOrDefault(1);
             }
@@ -42,8 +42,8 @@ namespace Randomizer.Generator.Assignment
             }
             else
             {
-                var value = Utility.Random.RandomNumber(1, TotalWeight);
-                var sum = 0;
+                var value = Utility.Random.RandomNumber(1, (Int32)TotalWeight);
+                var sum = 0u;
 
                 foreach (var item in this)
                 {

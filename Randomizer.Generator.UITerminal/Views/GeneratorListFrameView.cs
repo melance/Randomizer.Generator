@@ -17,38 +17,15 @@ namespace Randomizer.Generator.UITerminal.Views
 		#endregion
 
 		#region Properties
-		public String CurrentDirectory
-		{
-			get => Directory.GetCurrentDirectory();
-			set
-			{
-				Directory.SetCurrentDirectory(value);
-				Program.stsCurrentDirectory.Title = CurrentDirectory;
-				RefreshGeneratorList();
-			}
-		}
+		
 		#endregion
 
 		#region Public Methods
-		public void ChangeDirectory()
-		{
-			var dlg = new OpenDialog(String.Empty, "Choose a directory to view all of the generator definitions contained within.")
-			{
-				DirectoryPath = CurrentDirectory,
-				CanChooseDirectories = true,
-				CanChooseFiles = false
-			};
-			
-			Application.Run(dlg);
-			if (!dlg.Canceled)
-				CurrentDirectory = dlg.FilePath.ToString();
-		}
-
 		public void RefreshGeneratorList()
 		{
 			var source = new List<GeneratorListViewItem>();
 
-			foreach (var filePath in Directory.GetFiles(CurrentDirectory, "*.rgen.*"))
+			foreach (var filePath in Directory.GetFiles(Program.CurrentDirectory, "*.rgen.?json"))
 			{
 				source.Add(new(filePath));
 			}
@@ -65,6 +42,11 @@ namespace Randomizer.Generator.UITerminal.Views
 		#endregion
 
 		#region Event Handlers
+		private void CurrentDirectoryChanged(String directoryPath)
+		{
+			RefreshGeneratorList();
+		}
+
 		private void lstGenerators_OpenSelectedItem(ListViewItemEventArgs e)			
 		{
 			OnGeneratorSelected(((GeneratorListViewItem)e.Value).Path);

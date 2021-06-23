@@ -37,6 +37,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Randomizer.Generator.DefinitionConverter\Randomizer.Generator.DefinitionConverter.csproj" />
     <ProjectReference Include="..\Randomizer.Generator\Randomizer.Generator.csproj" />
   </ItemGroup>
 
@@ -59,6 +60,15 @@
     <DebugType>none</DebugType>
     <DefineConstants>BETA;</DefineConstants>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="TheRandomizer.Generators">
+      <HintPath>E:\Dropbox\Development\Source Code\TheRandomizer\TheRandomizer.Generators\bin\debug\TheRandomizer.Generators.dll</HintPath>
+    </Reference>
+    <Reference Include="TheRandomizer.Utility">
+      <HintPath>E:\Dropbox\Development\Source Code\TheRandomizer\TheRandomizer.Generators\bin\debug\TheRandomizer.Utility.dll</HintPath>
+    </Reference>
+  </ItemGroup>
     
   <ItemGroup>
     <None Update="AssemblyInfo.tt">

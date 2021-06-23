@@ -175,7 +175,7 @@ namespace Randomizer.Generator.UITerminal.Views
 
 			do
 			{
-				if (String.IsNullOrEmpty(_saveFilePath)) _saveFilePath = Path.Combine(Program.stsCurrentDirectory.Title.ToString(), $"{_generator.Name}.txt");
+				if (String.IsNullOrEmpty(_saveFilePath)) _saveFilePath = Path.Combine(Program.CurrentDirectory, $"{_generator.Name}.txt");
 				var dialog = new SaveDialog("Save Results", String.Empty)
 				{
 					CanCreateDirectories = true,

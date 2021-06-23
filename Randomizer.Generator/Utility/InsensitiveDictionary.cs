@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Randomizer.Generator.Utility
 {
-    public class InsensitiveDictionary<VType> : Dictionary<String, VType>
+	/// <summary>
+	/// A dictionary of <see cref="KeyValuePair[String, VType]"/> that is case insensitive
+	/// </summary>
+	public class InsensitiveDictionary<VType> : Dictionary<String, VType>
     {
         public InsensitiveDictionary() : base(StringComparer.CurrentCultureIgnoreCase) { }
     }

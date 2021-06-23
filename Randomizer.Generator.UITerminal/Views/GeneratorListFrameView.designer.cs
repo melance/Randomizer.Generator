@@ -33,6 +33,7 @@ namespace Randomizer.Generator.UITerminal.Views
 
 			var lstGeneratorsScrollBar = new ScrollBarView(lstGenerators, true)
 			{
+				IsVertical = true,
 				AutoHideScrollBars = true
 			};
 
@@ -54,11 +55,13 @@ namespace Randomizer.Generator.UITerminal.Views
 				lstGenerators.SetNeedsDisplay();
 			};
 
+			Program.CurrentDirectoryChanged += CurrentDirectoryChanged;
+			Program.RefreshGeneratorList += RefreshGeneratorList;
+
 			// Load the generator list
 			RefreshGeneratorList();
 		}
 		#endregion
-
 
 		#region Controls
 		private readonly ListView lstGenerators;

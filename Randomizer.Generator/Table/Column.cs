@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace Randomizer.Generator.Table
 {
+	/// <summary>
+	/// A column in a <see cref="Table"/>
+	/// </summary>
 	public class Column : List<Object>
 	{
+		/// <summary>The column name</summary>
 		public String Name { get; set; }
 
 		public Column(String name) => Name = name;

@@ -10,10 +10,16 @@ namespace Randomizer.Generator.Table
 	{
 
 		#region Properties
+		/// <summary>An expression that evaluates to an <see cref="Int32"/> that modifies the dice roll</summary>
 		public String Modifier { get; set; } 
+		/// <summary>The column used to calculate the row of the roll</summary>
 		public String RollColumn { get; set; }
 		#endregion
 
+		/// <summary>
+		/// Selects a row in the table using the <see cref="RollColumn"/>
+		/// </summary>
+		/// <returns>The results of the process</returns>
 		protected override Dictionary<String, String> ProcessTableInternal()
 		{
 			var max = Table.Columns[RollColumn].Max(r => Int32.Parse(r.ToString()));

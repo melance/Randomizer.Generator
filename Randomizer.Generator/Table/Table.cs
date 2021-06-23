@@ -69,7 +69,7 @@ namespace Randomizer.Generator.Table
 
 		public void AddRow(params Object[] values)
 		{
-			if (values != null && values.Length != Columns.Count) throw new ArgumentException($"Expected {Columns.Count} values for new row received {values.Count()}");
+			if (values != null && values.Length != Columns.Count) throw new ArgumentException($"Expected {Columns.Count} values for new row received {values.Length}");
 			
 			if (values != null)
 			{

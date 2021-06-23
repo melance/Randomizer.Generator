@@ -34,8 +34,9 @@ namespace Randomizer.Generator.UITerminal
 			{
 				new MenuBarItem("_File", new MenuItem[]
 				{
-					new MenuItem("_Change Directory", "", fvGeneratorList.ChangeDirectory, null, null),
-					new MenuItem("_Refresh Generator List", "", fvGeneratorList.RefreshGeneratorList, null, null)
+					new MenuItem("_Change Directory", "", Program.ChangeDirectory, null, null),
+					new MenuItem("_Refresh Generator List", "", Program.RefreshGeneratorList, null, null),
+					new MenuItem("Con_vert Old Grammar File", "", () => Application.Run(new ConvertGrammar() {Width = Dim.Percent(75), Height = Dim.Percent(75), X = Pos.Center(), Y = Pos.Center() }))
 				}),
 				new MenuBarItem("_Help", new MenuItem[]
 				{

@@ -19,7 +19,8 @@ namespace Randomizer.Generator.Test
         public TestContext TestContext { get; set; }
 
         [TestMethod]
-        public void SimpleTest()
+		[TestCategory("Phonotactics")]
+		public void SimpleTest()
         {
             var generator = new PhonotacticsDefinition();
             generator.Definitions.Add('C', new DefinitionList() { "TEST" });
@@ -50,7 +51,8 @@ namespace Randomizer.Generator.Test
         }
 
         [TestMethod]
-        public void TokenizerTest()
+		[TestCategory("Phonotactics")]
+		public void TokenizerTest()
         {
             var tokens = Tokenizer.Tokenize("AB^CD");
             Assert.AreEqual(TokenTypes.Key, tokens[0].TokenType);

@@ -1,34 +1,30 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Randomizer.Generator.Core
 {
-    public class ListOption
+	/// <summary>
+	/// A class that holds a single option to include for a list type parameter
+	/// </summary>
+	public class ListOption
     {
-        private const char DELIMITER = ':';
-
+		/// <summary>The value of the option used by the definition</summary>
         public String Value { get; set; }
+		/// <summary>The text to display to the user of the definition</summary>
         public String Display { get; set; }
 
+		/// <summary>Construct a <see cref="ListOption"/> with a <see cref="String.Empty"/> <see cref="Value"/> and <see cref="Display"/></summary>
         public ListOption() { }
-        public ListOption(String value, String display) => (Value, Display) = (value, display);
+		/// <summary>
+		/// Contructs a <see cref="ListOption"/> with values for the Value and Display properties
+		/// </summary>
+		/// <param name="value">The value of the option used by the definition</param>
+		/// <param name="display">The text to display to the user of the definition</param>
+		public ListOption(String value, String display) => (Value, Display) = (value, display);
 
-        public static explicit operator ListOption(String value)
-        {
-            var parts = value.Split(DELIMITER);
-            if (parts.Length == 2)
-            {
-                return new ListOption(parts[0].Trim(), parts[1].Trim());
-            }
-            else
-            {
-                throw new InvalidCastException($"Could not convert string {value} to type {typeof(ListOption).FullName}");
-            }
-        }
-
+		/// <summary>
+		/// Returns a string that represents the <see cref="ListOption"/>
+		/// </summary>
+		/// <returns>The <see cref="Display"/> of the <see cref="ListOption"/></returns>
         public override String ToString()
         {
             return Display;

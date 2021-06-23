@@ -6,10 +6,18 @@ using System.Threading.Tasks;
 
 namespace Randomizer.Generator.Table
 {
+	/// <summary>
+	/// A table that returns a result for each row in the table
+	/// </summary>
 	public class LoopTable : BaseTable
 	{
+		/// <summary>The column used as the name for the result</summary>
 		public String KeyColumn { get; set; }
 
+		/// <summary>
+		/// Loops through each row in the table and constructs a result with the name "KeyColumnValue.ColumnName"
+		/// </summary>
+		/// <returns></returns>
 		protected override Dictionary<String, String> ProcessTableInternal()
 		{
 			var results = new Dictionary<String, String>();

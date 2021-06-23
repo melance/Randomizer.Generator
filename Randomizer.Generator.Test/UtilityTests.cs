@@ -20,6 +20,7 @@ namespace Randomizer.Generator.Test
         private readonly DiceRoller _roller = new();
 
         [TestMethod]
+		[TestCategory("Dice")]
         public void RollD2()
         {
             var result = _roller.Roll(2);
@@ -28,7 +29,8 @@ namespace Randomizer.Generator.Test
         }
 
         [TestMethod]
-        public void Roll2D2()
+		[TestCategory("Dice")]
+		public void Roll2D2()
         {
             var result = _roller.Roll(2, 2);
             Assert.AreEqual(2, _roller.Rolls.Count);
@@ -36,7 +38,8 @@ namespace Randomizer.Generator.Test
         }
 
         [TestMethod]
-        public void Roll2d2KeepHighest()
+		[TestCategory("Dice")]
+		public void Roll2d2KeepHighest()
         {
             var result = _roller.Roll(2, 2, "KH");
             Assert.AreEqual(1, _roller.KeepHighest);
@@ -45,7 +48,8 @@ namespace Randomizer.Generator.Test
         }
 
         [TestMethod]
-        public void Roll4d2KeepHighest2()
+		[TestCategory("Dice")]
+		public void Roll4d2KeepHighest2()
         {
             var result = _roller.Roll(4, 2, "KH(2)");
             Assert.AreEqual(2, _roller.KeepHighest);
@@ -54,7 +58,8 @@ namespace Randomizer.Generator.Test
         }
 
         [TestMethod]
-        public void Roll1d2Exploding()
+		[TestCategory("Dice")]
+		public void Roll1d2Exploding()
         {
             var result = _roller.Roll(1, 2, "EX");
             Assert.IsTrue(_roller.Exploding);
@@ -63,7 +68,8 @@ namespace Randomizer.Generator.Test
         }
 
         [TestMethod]
-        public void Roll1d2CompoundExploding()
+		[TestCategory("Dice")]
+		public void Roll1d2CompoundExploding()
         {
             var result = _roller.Roll(1, 2, "CEX");
             Assert.IsTrue(_roller.CompoundExploding);
@@ -72,7 +78,8 @@ namespace Randomizer.Generator.Test
         }
 
         [TestMethod]
-        public void Roll10d20GreaterThanExploding()
+		[TestCategory("Dice")]
+		public void Roll10d20GreaterThanExploding()
         {
             var result = _roller.Roll(10, 20, "GT(10), EX");
             Assert.IsTrue(_roller.Exploding);
@@ -81,6 +88,7 @@ namespace Randomizer.Generator.Test
         }
 
         [TestMethod]
+		[TestCategory("String Conversion")]
         public void ToOrdinalTest()
         {
             Assert.AreEqual("1st", 1.ToOrdinal());
@@ -91,7 +99,8 @@ namespace Randomizer.Generator.Test
         }
 
         [TestMethod]
-        public void ToRomanNumeralTest()
+		[TestCategory("String Conversion")]
+		public void ToRomanNumeralTest()
         {            
             Assert.AreEqual("MM", 2000.ToRomanNumerals());
             Assert.AreEqual("CM", 900.ToRomanNumerals());
@@ -102,7 +111,8 @@ namespace Randomizer.Generator.Test
         }
 
         [TestMethod]
-        public void ToTextTest()
+		[TestCategory("String Conversion")]
+		public void ToTextTest()
         {
             Assert.AreEqual("one", 1.ToText());
             Assert.AreEqual("Two", 2.ToText(Core.TextCases.Title));

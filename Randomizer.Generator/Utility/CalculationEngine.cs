@@ -11,16 +11,7 @@ namespace Randomizer.Generator.Utility
     class CalculationEngine : Expression
     {
         #region Constants
-        private const String DICE_SHORT = "D";
-        private const String DICE_LONG = "DICE";
-        private const String RANDOM_SHORT = "RAND";
-        private const String RANDOM_LONG = "RANDOM";
-        private const String PICK_ITEM = "PICK";
-        private const String TO_UPPER_CASE = "UCASE";
-        private const String TO_LOWER_CASE = "LCASE";
-        private const String TO_TITLE_CASE = "TCASE";
-        private const String TO_ORDINAL = "ORDINAL";
-        private const String TO_TEXT = "TOTEXT";
+        
 		#endregion
 
 		#region Constructor
@@ -154,7 +145,7 @@ namespace Randomizer.Generator.Utility
 		/// Converts a number to an ordinal
 		/// </summary>
 		[NCalcFunction]
-		private static String ToOrdinal(Int32 value)
+		public static String ToOrdinal(Int32 value)
         {
             return value.ToOrdinal();            
         }
@@ -163,7 +154,7 @@ namespace Randomizer.Generator.Utility
         /// Converts a number to a text string
         /// </summary>
 		[NCalcFunction]
-        private static String ToText(Int32 value)
+        public static String ToText(Int32 value)
         {
             return value.ToText();            
         }
@@ -172,7 +163,7 @@ namespace Randomizer.Generator.Utility
         /// Converts a string to lower case
         /// </summary>
 		[NCalcFunction]
-        private static String LCase(String value)
+        public static String LCase(String value)
         {
 			return value.LCase();
         }
@@ -181,7 +172,7 @@ namespace Randomizer.Generator.Utility
         /// Converts a string to Title Case
         /// </summary>
 		[NCalcFunction]
-        private static String TCase(String value)
+        public static String TCase(String value)
         {            
             return value.TCase();
          }
@@ -190,7 +181,7 @@ namespace Randomizer.Generator.Utility
         /// Converts a string to UPPER CASE
         /// </summary>
 		[NCalcFunction]
-        private static String UCase(String value)
+        public static String UCase(String value)
         {
             return value.UCase();
         }        

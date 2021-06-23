@@ -6,24 +6,38 @@ using Newtonsoft.Json;
 
 namespace Randomizer.Generator.Table
 {
+	/// <summary>
+	/// Base class for all table types
+	/// </summary>
 	public abstract class BaseTable 
 	{
 		#region Constants
+		/// <summary>Denotes the token is an NCalc expression</summary>
 		private const String EXPRESSION_TOKEN = "=";
-		private const String COMMENT_TOKEN = "#";
+		/// <summary>Denotes the row in the table is a comment and should be ignored</summary>
+		private const String COMMENT_TOKEN = "//";
+		/// <summary>Delimiter used to separate table columns</summary>
 		private const String DELIMITER_TOKEN = "|";
 		#endregion
 
 		#region Delegates
+		/// <summary>
+		/// Implemented in child classes to Evaluate the table
+		/// </summary>
 		[JsonIgnore]
 		public Func<String, Object> Evaluate;
 		#endregion
 
 		#region Properties
+		/// <summary>An expression that determines the number of times to repeat the table evaluation.  Default is 1</summary>
 		public String Repeat { get; set; } = "1";
+		/// <summary>An expression that denotes if the table should be skipped</summary>
 		public String SkipTable { get; set; }
+		/// <summary>The formatted table string</summary>
 		public String Value { get; set; }
+		/// <summary>The string to use between values when repeat is greater than 1</summary>
 		public String RepeatJoin { get; set ; }
+		/// <summary>The parsed table</summary>
 		protected Table Table { get; set; }
 		#endregion
 
@@ -51,7 +65,8 @@ namespace Randomizer.Generator.Table
 
 		/// <summary>
 		/// Evaluates the provided expression 
-		/// </summary>    
+		/// </summary>
+		/// <param name="expression">The expression to evaluate</param>
 		protected T OnEvaluate<T>(object expression)
 		{
 			var isString = expression.GetType() == typeof(string);
@@ -72,6 +87,11 @@ namespace Randomizer.Generator.Table
 			}
 		}
 
+		/// <summary>
+		/// Processes a row and set puts the result into the <paramref name="result"/> 
+		/// </summary>
+		/// <param name="result">The results of the process</param>
+		/// <param name="row">The index of the row to process</param>
 		protected virtual void ProcessRow(Dictionary<String, String> result, Int32 row)
 		{
 			if (row >= 0 && row < Table.RowCount)

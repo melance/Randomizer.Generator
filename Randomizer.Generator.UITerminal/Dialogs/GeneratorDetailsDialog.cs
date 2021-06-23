@@ -8,6 +8,6 @@ using Terminal.Gui;
 namespace Randomizer.Generator.UITerminal.Dialogs
 {
 	partial class GeneratorDetailsDialog : Dialog
-	{
+	{		
 	}
 }

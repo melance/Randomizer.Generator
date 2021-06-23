@@ -11,6 +11,7 @@ namespace Randomizer.Generator.Test
 	public class CalculationTests
 	{
 		[TestMethod]
+		[TestCategory("Calculation Engine")]
 		public void TestCustomFunction()
 		{
 			var expression = "Roll(6)";
@@ -18,6 +19,7 @@ namespace Randomizer.Generator.Test
 			var result = engine.Evaluate<Int32>();
 
 			Assertions.IsBetween(1, 6, result);
+
 		}
 	}
 }

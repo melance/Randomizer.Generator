@@ -6,13 +6,18 @@ using System.Threading.Tasks;
 
 namespace Randomizer.Generator.Phonotactics
 {
+	/// <summary>
+	/// A Phonotactic Pattern
+	/// </summary>
     public class PhonotacticPattern
     {
         public PhonotacticPattern() { }
-        public PhonotacticPattern(String pattern, Int32 weight) => (Pattern, Weight) = (pattern, weight);
+        public PhonotacticPattern(String pattern, UInt32 weight) => (Pattern, Weight) = (pattern, weight);
 
+		/// <summary>The Phonotactic Pattern</summary>
         public String Pattern { get; set; }
         public String Key { get; set; }
-        public Int32 Weight { get; set; } = 1;
+		/// <summary>The weight this pattern carries when selecting a pattern at random</summary>
+        public UInt32 Weight { get; set; } = 1;
     }
 }

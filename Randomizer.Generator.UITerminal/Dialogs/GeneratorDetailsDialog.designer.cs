@@ -39,7 +39,7 @@ namespace Randomizer.Generator.UITerminal.Dialogs
 				labelY += lblVersion.Bounds.Height;
 			}
 
-			var lblGeneratorType = new Label($"{"Type:".PadRight(labelWidth)}{generator.GeneratorType}") { X = 0, Y = labelY, Width = Dim.Fill(), Height = 1 };
+			var lblGeneratorType = new Label($"{"Type:".PadRight(labelWidth)}{generator.GetType().Name}") { X = 0, Y = labelY, Width = Dim.Fill(), Height = 1 };
 			Add(lblGeneratorType);
 			labelY += lblGeneratorType.Bounds.Height;
 
@@ -62,25 +62,25 @@ namespace Randomizer.Generator.UITerminal.Dialogs
 				labelY += lblTags.Bounds.Height;
 			}
 
-			switch (generator.GeneratorType)
-			{
-				case GeneratorTypes.List:
-					Add(new Label($"{"List Items:".PadRight(labelWidth)}{((List.ListDefinition)generator).Items.Count}"));
-					break;
-				case GeneratorTypes.Assignment:
-					var lblKeys = new Label($"{"Keys:".PadRight(labelWidth)}{((Assignment.AssignmentDefinition)generator).LineItems.Count:#,##0}") { X = 0, Y = labelY, Width = Dim.Fill() };
-					Add(lblKeys);
-					labelY += lblKeys.Bounds.Height;
-					Add(new Label($"{"Items:".PadRight(labelWidth)}{((Assignment.AssignmentDefinition)generator).LineItems.Sum(li => li.Value.Count):#,##0}") { X = 0, Y = labelY, Width = Dim.Fill() });
-					break;
-				case GeneratorTypes.Phonotactics:
-					var lblDefinitions = new Label($"{"Definitions:".PadRight(labelWidth)}{((Phonotactics.PhonotacticsDefinition)generator).Definitions.Count:#,##0}") { X = 0, Y = labelY, Width = Dim.Fill() };
-					Add(lblDefinitions);
-					labelY += lblDefinitions.Bounds.Height;
-					Add(new Label($"{"Patterns:".PadRight(labelWidth)}{((Phonotactics.PhonotacticsDefinition)generator).Patterns.Count:#,##0}") { X = 0, Y = labelY, Width = Dim.Fill() });
-					break;
-			}
-			
+			var @switch = new Dictionary<Type, Action> {
+							{ typeof(List.ListDefinition), () => Add(new Label($"{"List Items:".PadRight(labelWidth)}{((List.ListDefinition)generator).Items.Count}")) },
+							{ typeof(Assignment.AssignmentDefinition), () => {
+																var lblKeys = new Label($"{"Keys:".PadRight(labelWidth)}{((Assignment.AssignmentDefinition)generator).LineItems.Count:#,##0}") { X = 0, Y = labelY, Width = Dim.Fill() };
+																Add(lblKeys);
+																labelY += lblKeys.Bounds.Height;
+																Add(new Label($"{"Items:".PadRight(labelWidth)}{((Assignment.AssignmentDefinition)generator).LineItems.Sum(li => li.Value.Count):#,##0}") { X = 0, Y = labelY, Width = Dim.Fill() });} },
+							{ typeof(Phonotactics.PhonotacticsDefinition), () => {
+																var lblDefinitions = new Label($"{"Definitions:".PadRight(labelWidth)}{((Phonotactics.PhonotacticsDefinition)generator).Definitions.Count:#,##0}") { X = 0, Y = labelY, Width = Dim.Fill() };
+																Add(lblDefinitions);
+																labelY += lblDefinitions.Bounds.Height;
+																Add(new Label($"{"Patterns:".PadRight(labelWidth)}{((Phonotactics.PhonotacticsDefinition)generator).Patterns.Count:#,##0}") { X = 0, Y = labelY, Width = Dim.Fill() });
+							} },
+							{ typeof(Lua.LuaDefinition), () => { } },
+							{ typeof(Table.TableDefinition), () => { } }
+						};
+
+			@switch[generator.GetType()]();
+						
 			// Register Event Handlers
 			btnClose.Clicked += () => Application.RequestStop();
 

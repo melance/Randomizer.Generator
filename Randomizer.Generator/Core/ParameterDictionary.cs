@@ -8,45 +8,33 @@ using Randomizer.Generator.Utility;
 
 namespace Randomizer.Generator.Core
 {
-    public class ParameterDictionary : InsensitiveDictionary<Parameter>, IReadOnlyList<KeyValuePair<String, Parameter>>
+	/// <summary>
+	/// A dictionary containing the name of a parameter and it's details
+	/// </summary>
+    public class ParameterDictionary : InsensitiveDictionary<Parameter>
     {
-        private List<KeyValuePair<String, Parameter>> _list;
-
-        public KeyValuePair<String, Parameter> this[Int32 index]
+		/// <summary>
+		/// Returns the <see cref="Parameter"/> for the given <paramref name="name"/>
+		/// </summary>
+		/// <param name="name">The name of the <see cref="Parameter"/> to find</param>
+		/// <returns>The <see cref="Parameter"/> for the given <paramref name="name"/></returns>
+		/// <exception cref="KeyNotFoundException">Thrown when the <paramref name="name"/> does not exist in the dictionary</exception>
+		public new Parameter this[String name]
         {
             get
-            {
-                if (_list == null)
-                {
-                    _list = new List<KeyValuePair<String, Parameter>>();
-                    foreach (var kvp in this)
-                    {
-                        _list.Add(kvp);
-                    }
-                }
-                return _list[index];
-            }
-        }
-
-        public new Parameter this[String name]
-        {
-            get
-            {
-                if (Count == 0)
-                    throw new Exception($"Generator does not have any parameters.");
-
+            {                
                 if (ParameterExists(name))
                     return GetParameter(name);
                 else
-                    throw new KeyNotFoundException($"Could not find parameter \"{name}\".");
+                    throw new KeyNotFoundException($"Could not find parameter: \"{name}\".");
             }
         }
 
         /// <summary>
         /// Returns true if the parameter exists
         /// </summary>
-        /// <param name="name"></param>
-        /// <returns></returns>
+        /// <param name="name">Looks for a parameter with the name <paramref name="name"/></param>
+        /// <returns><see cref="true"/> if the parameter exists, otherwise <see cref="false"/></returns>
         public Boolean ParameterExists(String name)
         {
             return this.Any(kvp =>
@@ -54,24 +42,6 @@ namespace Randomizer.Generator.Core
                 return kvp.Key.Equals(name, StringComparison.CurrentCultureIgnoreCase) ||
                        kvp.Value.Aliases.Contains(name, StringComparer.CurrentCultureIgnoreCase);
             });
-        }
-
-        /// <summary>
-        /// Returns the value of a parameter
-        /// </summary>
-        public String GetParameterValue(String name)
-        {
-            return this[name].Value;
-        }
-
-        /// <summary>
-        /// Sets the value of a parameter
-        /// </summary>
-        /// <param name="name"></param>
-        /// <param name="value"></param>
-        public void SetParameterValue(String name, String value)
-        {
-            this[name].Value = value;
         }
 
         /// <summary>

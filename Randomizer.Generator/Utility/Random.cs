@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Randomizer.Generator.Utility
 {
-    class Random 
+	/// <summary>
+	/// Static methods for <see cref="System.Random"/> that allows a single instance of the class because if we recreate the 
+	/// instance too quickly we continuously get the same results
+	/// </summary>
+    static class Random 
     {
         private static System.Random _random;
 
@@ -16,7 +20,7 @@ namespace Randomizer.Generator.Utility
 
         public static Int32 RandomNumber(Int32 minValue, Int32 maxValue) => Randomizer.Next(minValue, maxValue);
 
-        protected static System.Random Randomizer
+        static System.Random Randomizer
         {
             get
             {

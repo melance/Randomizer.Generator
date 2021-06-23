@@ -11,14 +11,26 @@ using NCalc;
 
 namespace Randomizer.Generator.Lua
 {
+	/// <summary>
+	/// Generates content via a Lua script
+	/// </summary>
 	public class LuaDefinition : BaseDefinition
 	{
+		/// <summary>The lua interpreter .NET wrapper</summary>
 		private readonly NLua.Lua _lua = new();
 
+		/// <summary>The Lua script to be run.</summary>
+		/// <remarks>If <see cref="ScriptPath"/> is set, this property is ignored</remarks>
 		public String Script { get; set; }
+		/// <summary>The path to the Lua script to be run.</summary>
 		public String ScriptPath { get; set; }
-		public StringBuilder Result { get; private set; } = new();
+		/// <summary>Keeps the results that are printed as the generator is run.</summary>
+		private StringBuilder Result { get; set; } = new();
 
+		/// <summary>
+		/// Generates random content
+		/// </summary>
+		/// <returns>The content generated</returns>
 		public override String Generate()
 		{
 			foreach (var parameter in Parameters)
@@ -139,20 +151,35 @@ namespace Randomizer.Generator.Lua
 			return Calculate(expression);
 		}
 
+		/// <summary>
+		/// Returns a non-negative random <see cref="Int32"/>.
+		/// </summary>
+		/// <returns>A non-negative random <see cref="Int32"/>.</returns>
 		[LuaGlobal(Name = "rnd", Description = "Returns a non-negative random integer.")]
-		public int GetRandomNumber()
+		public static Int32 GetRandomNumber()
 		{
 			return Utility.Random.RandomNumber();
 		}
 
+		/// <summary>
+		/// Returns a non-negative random <see cref="Int32"/> that is less than the specified maximum.
+		/// </summary>
+		/// <param name="maxValue">The maxiumum <see cref="Int32"/> to be generated</param>
+		/// <returns>A non-negative random <see cref="Int32"/> that is less than the specified maximum.</returns>
 		[LuaGlobal(Name = "rnd", Description = "Returns a non-negative random integer that is less than the specified maximum.")]
-		public int GetRandomNumber(int maxValue)
+		public static Int32 GetRandomNumber(int maxValue)
 		{
 			return Utility.Random.RandomNumber(maxValue);
 		}
 
+		/// <summary>
+		/// Returns a random <see cref="Int32"/> that is within a specified range.
+		/// </summary>
+		/// <param name="minValue">The minimum <see cref="Int32"/> to be generated</param>
+		/// <param name="maxValue">The maximum <see cref="Int32"/> to be generated</param>
+		/// <returns>A random <see cref="Int32"/> that is within a specified range.</returns>
 		[LuaGlobal(Name = "rnd", Description = "Returns a random integer that is within a specified range.")]
-		public int GetRandomNumber(int minValue, int maxValue)
+		public static Int32 GetRandomNumber(int minValue, int maxValue)
 		{
 			return Utility.Random.RandomNumber(minValue, maxValue);
 		}
@@ -162,7 +189,7 @@ namespace Randomizer.Generator.Lua
 		/// </summary>
 		/// <param name="table">The table to select from, must have an integer index</param>
 		[LuaGlobal(Name = "selectFromTable", Description = "Selects a single item from the provided table.")]
-		public string SelectFromTable(LuaTable table)
+		public static String SelectFromTable(LuaTable table)
 		{
 			var selected = GetRandomNumber(1, table.Keys.Count);
 			foreach (KeyValuePair<object, object> value in table)
@@ -175,8 +202,5 @@ namespace Randomizer.Generator.Lua
 			}
 			return string.Empty;
 		}
-
-		protected override void EvaluateFunction(String name, FunctionArgs e) => throw new NotImplementedException();
-		protected override void EvaluateParameter(String name, ParameterArgs e) => throw new NotImplementedException();
 	}
 }
