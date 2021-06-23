@@ -29,5 +29,3 @@ I love seeing custom grammars and libraries written by users to add to the growi
 **Translators**
 Planned for the future.
 
-**Developers**
-I'm always looking for new developers to contribute to the cause.  I have a number of grand ideas on the horizon for the project that can always use help if you are interested.
