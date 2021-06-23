@@ -9,6 +9,7 @@ The infinitely customizable random content generator.
   * **Randomizer.Generator.Test** unit tests for the Randomizer.Generator project
   * **Randomizer.Generator.CmdLine** a command line tool to generate content.
   * **Randomizer.Generator.UITerminal** a terminal gui to generate content.  Designed to work on Windows, Mac, Unix, and Linux.
+  * **Randomizer.Generator.DefinitionConverter** a command line tool to convert old grammar files to the new dictionary format
 
 ### Community ###
 ---
