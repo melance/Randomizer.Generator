@@ -1,9 +1,22 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <ApplicationIcon>TheRandomizer.ico</ApplicationIcon>
     <Configurations>Debug;Release;Beta</Configurations>
+    <VersionSuffix>3.0.$([System.DateTime]::Now.ToString(MMdd)).$([System.DateTime]::Now.ToString(mmff))</VersionSuffix>
+    <AssemblyVersion Condition=" '$(VersionSuffix)' == '' ">0.0.0.1</AssemblyVersion>
+    <AssemblyVersion Condition=" '$(VersionSuffix)' != '' ">$(VersionSuffix)</AssemblyVersion>
+    <Version Condition=" '$(VersionSuffix)' == '' ">0.0.0.1</Version>
+    <Version Condition=" '$(VersionSuffix)' != '' ">$(VersionSuffix)</Version>
+    <PackageLicenseFile>License.md</PackageLicenseFile>
+    <PackageIcon>TheRandomizer.png</PackageIcon>
+    <PackageIconUrl />
+    <RepositoryUrl>https://github.com/melance/Randomizer.Generator</RepositoryUrl>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <Description>The infinitely customizable random content generator.</Description>
+    <Copyright>Lance Boudreaux 2021</Copyright>
+    <AssemblyName>Rnd.Gen</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
@@ -19,6 +32,14 @@
 
   <ItemGroup>
     <None Include="..\.editorconfig" Link=".editorconfig" />
+    <None Include="..\License.md">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="..\TheRandomizer.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>

@@ -5,6 +5,16 @@
     <TargetFramework>net5.0</TargetFramework>
     <AssemblyName>Rnd.Gen.Conv</AssemblyName>
     <ApplicationIcon>TheRandomizer.ico</ApplicationIcon>
+    <Authors>Lance Boudreaux</Authors>
+    <Product>The Randomizer</Product>
+    <PackageLicenseFile>License.md</PackageLicenseFile>
+    <PackageIcon>TheRandomizer.png</PackageIcon>
+    <PackageIconUrl />
+    <VersionSuffix>1.0.$([System.DateTime]::Now.ToString(MMdd)).$([System.DateTime]::Now.ToString(mmff))</VersionSuffix>
+    <AssemblyVersion Condition=" '$(VersionSuffix)' == '' ">0.0.0.1</AssemblyVersion>
+    <AssemblyVersion Condition=" '$(VersionSuffix)' != '' ">$(VersionSuffix)</AssemblyVersion>
+    <Version Condition=" '$(VersionSuffix)' == '' ">0.0.0.1</Version>
+    <Version Condition=" '$(VersionSuffix)' != '' ">$(VersionSuffix)</Version>
   </PropertyGroup>
 
   <ItemGroup>
@@ -16,11 +26,22 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="..\License.md">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="..\TheRandomizer.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="TheRandomizer.Generators">
-      <HintPath>E:\Dropbox\Development\Source Code\TheRandomizer\TheRandomizer.Generators\bin\debug\TheRandomizer.Generators.dll</HintPath>
+      <HintPath>..\TheRandomizer.Generators.dll</HintPath>
     </Reference>
     <Reference Include="TheRandomizer.Utility">
-      <HintPath>E:\Dropbox\Development\Source Code\TheRandomizer\TheRandomizer.Generators\bin\debug\TheRandomizer.Utility.dll</HintPath>
+      <HintPath>..\TheRandomizer.Utility.dll</HintPath>
     </Reference>
   </ItemGroup>
 

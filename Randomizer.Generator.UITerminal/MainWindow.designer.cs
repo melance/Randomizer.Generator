@@ -1,5 +1,6 @@
 ﻿using Randomizer.Generator.UITerminal.Dialogs;
 using Randomizer.Generator.UITerminal.Views;
+using Randomizer.Generator.UITerminal.Utility;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -40,6 +41,8 @@ namespace Randomizer.Generator.UITerminal
 				}),
 				new MenuBarItem("_Help", new MenuItem[]
 				{
+					new MenuItem("Open Online _Help", "F1", () => HelperMethods.OpenURL(Properties.Resources.HelpURL)) { Shortcut = Key.F1 },
+					new MenuItem("Goto Project _GitHub", "", () => HelperMethods.OpenURL(Properties.Resources.GITURL)),
 					new MenuItem("_About", "", () => Application.Run(new About() { Width = Dim.Percent(75), Height = Dim.Percent(75), X = Pos.Center(), Y = Pos.Center() }))
 				})
 			});

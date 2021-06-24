@@ -31,6 +31,7 @@ namespace Randomizer.Generator.UITerminal
 			{
 				Title = AssemblyInfo.ProductName
 			};
+			
 			stsCurrentDirectory = new(Key.Null, System.IO.Directory.GetCurrentDirectory(), null);
 			TopLevelObject.Add(new StatusBar(new[] { stsCurrentDirectory }));
 			TopLevelObject.Add(MainWindow);	

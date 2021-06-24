@@ -69,5 +69,46 @@ namespace Randomizer.Generator.UITerminal.Properties {
                 return ((byte[])(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to https://github.com/melance/Randomizer.Generator.
+        /// </summary>
+        internal static string GITURL {
+            get {
+                return ResourceManager.GetString("GITURL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to https://github.com/melance/Randomizer.Generator.
+        /// </summary>
+        internal static string HelpURL {
+            get {
+                return ResourceManager.GetString("HelpURL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
+        ///
+        ///	* This is a human - readable summary of (and not a substitute for) the license
+        ///	* https://creativecommons.org/licenses/by-nc/4.0/legalcode
+        ///
+        ///You are free to:
+        ///
+        ///	* Share — copy and redistribute the material in any medium or format
+        ///	* Adapt — remix, transform, and build upon the material
+        ///	
+        ///	* The licensor cannot revoke these freedoms as long as you follow the license terms.
+        ///
+        ///Under the following terms:
+        ///
+        ///	* Attribution — You must give appr [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string License {
+            get {
+                return ResourceManager.GetString("License", resourceCulture);
+            }
+        }
     }
 }

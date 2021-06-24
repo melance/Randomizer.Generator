@@ -3,8 +3,17 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net5.0</TargetFramework>
-    <AssemblyName>Randomizer</AssemblyName>
+    <AssemblyName>Rnd.Gen.CLI</AssemblyName>
     <Configurations>Debug;Release;Beta</Configurations>
+    <PackageLicenseFile>License.md</PackageLicenseFile>
+    <ApplicationIcon>TheRandomizer.ico</ApplicationIcon>
+    <PackageIcon>TheRandomizer.png</PackageIcon>
+    <PackageIconUrl />
+    <VersionSuffix>1.0.$([System.DateTime]::Now.ToString(MMdd)).$([System.DateTime]::Now.ToString(mmff))</VersionSuffix>
+    <AssemblyVersion Condition=" '$(VersionSuffix)' == '' ">0.0.0.1</AssemblyVersion>
+    <AssemblyVersion Condition=" '$(VersionSuffix)' != '' ">$(VersionSuffix)</AssemblyVersion>
+    <Version Condition=" '$(VersionSuffix)' == '' ">0.0.0.1</Version>
+    <Version Condition=" '$(VersionSuffix)' != '' ">$(VersionSuffix)</Version>
   </PropertyGroup>
 
   <ItemGroup>
@@ -29,6 +38,17 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\License.md">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="..\TheRandomizer.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>

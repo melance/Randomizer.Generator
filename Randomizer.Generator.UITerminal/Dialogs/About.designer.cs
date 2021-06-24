@@ -7,6 +7,7 @@ using Terminal.Gui;
 using WenceyWang.FIGlet;
 using Randomizer.Generator.UITerminal.Extensions;
 using System.IO;
+using Randomizer.Generator.UITerminal.Views;
 
 namespace Randomizer.Generator.UITerminal.Dialogs
 {
@@ -14,10 +15,8 @@ namespace Randomizer.Generator.UITerminal.Dialogs
 	{
 		public About() : base()
 		{
-			ColorScheme.Normal = new Terminal.Gui.Attribute(Color.Green, Color.Blue);
-
 			const Int32 LABEL_WIDTH = 10;
-
+						
 			var assembly = System.Reflection.Assembly.GetExecutingAssembly();
 
 			Title = $"About {AssemblyInfo.ProductName}";
@@ -29,23 +28,61 @@ namespace Randomizer.Generator.UITerminal.Dialogs
 			details.AppendLine($"{"Version:".PadRight(LABEL_WIDTH)}{assembly.GetName().Version.ToString(true)} {AssemblyInfo.ReleaseType}");
 			details.AppendLine($"{"Author:".PadRight(LABEL_WIDTH)}Lance Boudreaux");
 			details.AppendLine($"{"Built:".PadRight(LABEL_WIDTH)}{Randomizer.Generator.UITerminal.AssemblyInfo.CompilationTimestampUtc.ToLocalTime():yyyy.MM.dd hh:mm}");
-						
-			Add(new Label(String.Join('\n', titleArt.Result)) { X = 0, Y = 0, Width = Dim.Fill(), TextAlignment = TextAlignment.Centered, ColorScheme = new ColorScheme() { Normal = new Terminal.Gui.Attribute(Color.Green, Color.Black) } });
 
-			Add(new Label(details.ToString()) { X = 1, Y = titleArt.Height, Width = Dim.Fill(), Height = Dim.Fill() });
+			var lblTitleArt = new Label(String.Join('\n', titleArt.Result))
+			{ 
+				X = 0, 
+				Y = 0, 
+				Width = Dim.Fill(), 
+				TextAlignment = TextAlignment.Centered
+			};
 
-			btnClose = new("Close");
-			btnClose.ColorScheme = new ColorScheme()
+			var lblDetails = new Label(details.ToString())
 			{
-				HotNormal = new Terminal.Gui.Attribute(Color.Green, Color.Black),
-				HotFocus = new Terminal.Gui.Attribute(Color.Green, Color.Black),
-				Focus = new Terminal.Gui.Attribute(Color.Green, Color.Black),
-				Disabled = new Terminal.Gui.Attribute(Color.Gray, Color.Black),
-				Normal = new Terminal.Gui.Attribute(Color.Green, Color.Black)
+				X = 2,
+				Y = Pos.Bottom(lblTitleArt),
+				AutoSize = true
+
+			};
+			var licenseFrame = new FrameView("License")
+			{
+				X = 1,
+				Y = Pos.Bottom(lblDetails),
+				Width = Dim.Fill(2),
+				Height = Dim.Fill(2)
+			};
+			var licenseView = new ScrollView(new Rect(0, 0, 82, 6))
+			{
+				ContentSize = new Size(80, 40),
+				ShowHorizontalScrollIndicator = true,
+				ShowVerticalScrollIndicator = true
+			};
+			var licenseText = new Label(Properties.Resources.License)
+			{
+				X = 0,
+				Y = 0,
+				Height = Dim.Fill(),
+				Width = Dim.Fill()
+			};
+			
+			licenseView.Add(licenseText);
+			licenseFrame.Add(licenseView);
+			
+			btnClose = new("Close")
+			{
+				X = Pos.Center(),
+				Y = Pos.Bottom(this) - 7,
+				Height = 1,
+				Width = 9
 			};
 			btnClose.Clicked += () => Application.RequestStop();
+
+			Add(lblTitleArt);
+			Add(lblDetails);
+			Add(licenseFrame);
+			//Add(btnClose);
 			AddButton(btnClose);
-		}
+		}		
 
 		private readonly Button btnClose;
 	}

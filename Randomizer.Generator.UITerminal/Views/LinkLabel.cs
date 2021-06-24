@@ -1,19 +1,20 @@
 ﻿using NStack;
+using Randomizer.Generator.UITerminal.Utility;
 using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Terminal.Gui;
 
 namespace Randomizer.Generator.UITerminal.Views
 {
 	class LinkLabel : Label
 	{
-		public LinkLabel() : base() { }
-		public LinkLabel(ustring text) : base(text) { }
-		public LinkLabel(ustring text, ustring url) : base(text) => (URL) = (url);
+		public LinkLabel() : this(String.Empty, String.Empty) { }
+
+		public LinkLabel(ustring text) : this(text, String.Empty) { }
+		public LinkLabel(ustring text, ustring url) : base(text)
+		{
+			URL = url;
+			this.ColorScheme = new ColorScheme() { Normal = Colors.Dialog.HotNormal };
+		}
 
 		public ustring URL { get; set; }
 
@@ -23,11 +24,7 @@ namespace Randomizer.Generator.UITerminal.Views
 			{
 				if (e.Flags == MouseFlags.Button1Clicked)
 				{
-					Process.Start(new ProcessStartInfo()
-					{
-						UseShellExecute = true,
-						FileName = URL.ToString()
-					});
+					HelperMethods.OpenURL(URL.ToString());					
 					return true;
 				}
 			}
