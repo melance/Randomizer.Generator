@@ -65,6 +65,10 @@
     <DebugType>none</DebugType>
     <DefineConstants>BETA;</DefineConstants>
   </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath></OutputPath>
+  </PropertyGroup>
     
   <ItemGroup>
     <None Update="AssemblyInfo.tt">
@@ -113,4 +117,8 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="powershell.exe $(SolutionDir)\PostBuild.ps1" />
+  </Target>
 </Project>
