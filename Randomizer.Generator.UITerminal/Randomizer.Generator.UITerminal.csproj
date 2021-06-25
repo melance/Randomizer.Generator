@@ -35,6 +35,8 @@
 
   <ItemGroup>
     <PackageReference Include="FIGlet.Net" Version="1.1.2" />
+    <PackageReference Include="Hjson" Version="3.0.0" />
+    <PackageReference Include="System.CommandLine.DragonFruit" Version="0.3.0-alpha.21216.1" />
     <PackageReference Include="Terminal.Gui" Version="1.1.1" />
     <PackageReference Include="TextCopy" Version="4.3.1" />
   </ItemGroup>
@@ -110,9 +112,5 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Resources\" />
   </ItemGroup>
 </Project>

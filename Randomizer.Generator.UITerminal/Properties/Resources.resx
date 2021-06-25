@@ -118,8 +118,8 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="abountFont" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\rectangles.flf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="bulbhead" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\bulbhead.flf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="GITURL" xml:space="preserve">
     <value>https://github.com/melance/Randomizer.Generator</value>
