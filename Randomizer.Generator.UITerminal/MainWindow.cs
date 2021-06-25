@@ -20,7 +20,7 @@ namespace Randomizer.Generator.UITerminal
 		#endregion
 
 		#region Event Handlers
-		private void fvGeneratorList_GeneratorSelected(Object sender, EventArgs.GeneratorSelectedEventArgs e)
+		private void GeneratorList_GeneratorSelected(Object sender, EventArgs.GeneratorSelectedEventArgs e)
 		{
 			tabGenerators.AddGenerator(e.FilePath);
 		}

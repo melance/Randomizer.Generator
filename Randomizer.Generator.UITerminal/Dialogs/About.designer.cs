@@ -15,6 +15,7 @@ namespace Randomizer.Generator.UITerminal.Dialogs
 	{
 		public About() : base()
 		{
+			this.KeyUp += HandleKeyDown; 
 			const Int32 LABEL_WIDTH = 10;
 						
 			var assembly = System.Reflection.Assembly.GetExecutingAssembly();
@@ -22,7 +23,7 @@ namespace Randomizer.Generator.UITerminal.Dialogs
 			Title = $"About {AssemblyInfo.ProductName}";
 			
 			var details = new StringBuilder();
-			var figletFont = new WenceyWang.FIGlet.FIGletFont(new MemoryStream(Properties.Resources.abountFont));
+			var figletFont = new WenceyWang.FIGlet.FIGletFont(new MemoryStream(Properties.Resources.bulbhead));
 			var titleArt = new AsciiArt(AssemblyInfo.ProductName, figletFont);
 
 			details.AppendLine($"{"Version:".PadRight(LABEL_WIDTH)}{assembly.GetName().Version.ToString(true)} {AssemblyInfo.ReleaseType}");
@@ -40,7 +41,7 @@ namespace Randomizer.Generator.UITerminal.Dialogs
 			var lblDetails = new Label(details.ToString())
 			{
 				X = 2,
-				Y = Pos.Bottom(lblTitleArt),
+				Y = Pos.Bottom(lblTitleArt) + 1,
 				AutoSize = true
 
 			};
@@ -80,7 +81,6 @@ namespace Randomizer.Generator.UITerminal.Dialogs
 			Add(lblTitleArt);
 			Add(lblDetails);
 			Add(licenseFrame);
-			//Add(btnClose);
 			AddButton(btnClose);
 		}		
 

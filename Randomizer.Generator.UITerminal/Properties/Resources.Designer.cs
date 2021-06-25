@@ -63,9 +63,9 @@ namespace Randomizer.Generator.UITerminal.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] abountFont {
+        internal static byte[] bulbhead {
             get {
-                object obj = ResourceManager.GetObject("abountFont", resourceCulture);
+                object obj = ResourceManager.GetObject("bulbhead", resourceCulture);
                 return ((byte[])(obj));
             }
         }

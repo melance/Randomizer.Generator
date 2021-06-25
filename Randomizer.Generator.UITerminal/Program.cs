@@ -1,5 +1,9 @@
-﻿using System;
+﻿using Randomizer.Generator.UITerminal.Utility;
+using System;
 using Terminal.Gui;
+using NStack;
+using Randomizer.Generator.UITerminal.Models;
+using System.Collections.Generic;
 
 namespace Randomizer.Generator.UITerminal
 {
@@ -12,6 +16,9 @@ namespace Randomizer.Generator.UITerminal
 
 		public static Toplevel TopLevelObject { get; private set; }
 		public static MainWindow MainWindow { get; private set; }
+
+		public static List<Tag> TagList { get; set; } = new();
+
 		public static String CurrentDirectory
 		{
 			get => System.IO.Directory.GetCurrentDirectory();
@@ -19,11 +26,12 @@ namespace Randomizer.Generator.UITerminal
 			{
 				System.IO.Directory.SetCurrentDirectory(value);
 				stsCurrentDirectory.Title = CurrentDirectory;
+				TagList = new();
 				CurrentDirectoryChanged?.Invoke(value);
 			}
 		}
 
-		static void Main()
+		static void Main(String settingsPath)
         {
 			Application.Init();
 			TopLevelObject = Application.Top;
@@ -31,8 +39,16 @@ namespace Randomizer.Generator.UITerminal
 			{
 				Title = AssemblyInfo.ProductName
 			};
+
+			if (!String.IsNullOrEmpty(settingsPath))
+			{
+				UserSettings.Instance.SettingPath = settingsPath;
+				UserSettings.Instance.Load();
+			}
+
+			stsCurrentDirectory = new(Key.Null, ustring.Empty, null);
+			CurrentDirectory = UserSettings.Instance.WorkingDirectory;
 			
-			stsCurrentDirectory = new(Key.Null, System.IO.Directory.GetCurrentDirectory(), null);
 			TopLevelObject.Add(new StatusBar(new[] { stsCurrentDirectory }));
 			TopLevelObject.Add(MainWindow);	
 			Application.Run();
@@ -42,14 +58,14 @@ namespace Randomizer.Generator.UITerminal
 		{
 			var dlg = new OpenDialog(String.Empty, "Choose a directory to view all of the generator definitions contained within.")
 			{
-				DirectoryPath = Program.CurrentDirectory,
+				DirectoryPath = CurrentDirectory,
 				CanChooseDirectories = true,
 				CanChooseFiles = false
 			};
 
 			Application.Run(dlg);
 			if (!dlg.Canceled)
-				Program.CurrentDirectory = dlg.FilePath.ToString();
+				CurrentDirectory = dlg.FilePath.ToString();
 		}
 	}
 }
