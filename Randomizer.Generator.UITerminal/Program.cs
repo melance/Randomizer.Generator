@@ -1,5 +1,6 @@
 ﻿using Randomizer.Generator.UITerminal.Utility;
 using System;
+using System.IO;
 using Terminal.Gui;
 using NStack;
 using Randomizer.Generator.UITerminal.Models;
@@ -21,10 +22,11 @@ namespace Randomizer.Generator.UITerminal
 
 		public static String CurrentDirectory
 		{
-			get => System.IO.Directory.GetCurrentDirectory();
+			get => Directory.GetCurrentDirectory();
 			set
 			{
-				System.IO.Directory.SetCurrentDirectory(value);
+				value ??= Directory.GetCurrentDirectory();
+				Directory.SetCurrentDirectory(value);
 				stsCurrentDirectory.Title = CurrentDirectory;
 				TagList = new();
 				CurrentDirectoryChanged?.Invoke(value);
