@@ -12,6 +12,9 @@ namespace Randomizer.Generator.UITerminal.Views
 		#region Constructor
 		public GeneratorListFrameView()
 		{
+			const String REFRESH_TEXT = "Refresh";
+			const String TAGS_TEXT = "Tags";
+
 			Title = "Generator List";
 
 			// Construct controls
@@ -21,15 +24,29 @@ namespace Randomizer.Generator.UITerminal.Views
 				X = 0,
 				Y = 0,
 				Width = Dim.Fill(),
-				Height = Dim.Fill(),
+				Height = Dim.Fill(1),
 				AllowsMultipleSelection = false
-			};			
+			};
+			btnRefresh = new(REFRESH_TEXT)
+			{
+				X = Pos.Right(this) - (REFRESH_TEXT.Length + 6),
+				Y = Pos.Bottom(lstGenerators)
+			};
+			btnTags = new(TAGS_TEXT)
+			{
+				X = Pos.Left(btnRefresh) - (TAGS_TEXT.Length + 5),
+				Y = Pos.Top(btnRefresh)
+			};
+			btnTags.Clicked += TagSelection_Clicked;
 
 			// Register events
 			lstGenerators.OpenSelectedItem += lstGenerators_OpenSelectedItem;
+			btnRefresh.Clicked += RefreshGeneratorList;
 
 			// Add controls
 			Add(lstGenerators);
+			Add(btnRefresh);
+			Add(btnTags);
 
 			var lstGeneratorsScrollBar = new ScrollBarView(lstGenerators, true)
 			{
@@ -65,6 +82,8 @@ namespace Randomizer.Generator.UITerminal.Views
 
 		#region Controls
 		private readonly ListView lstGenerators;
+		private readonly Button btnRefresh;
+		private readonly Button btnTags;
 		#endregion
 	}
 }

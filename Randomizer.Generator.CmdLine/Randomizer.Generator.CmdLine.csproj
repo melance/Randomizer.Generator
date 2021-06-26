@@ -16,8 +16,20 @@
     <Version Condition=" '$(VersionSuffix)' != '' ">$(VersionSuffix)</Version>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath></OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>C:\Users\me_la\source\repos\Randomizer.Generator\Bin\Release</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Beta|AnyCPU'">
+    <OutputPath>C:\Users\me_la\source\repos\Randomizer.Generator\Bin\Beta</OutputPath>
+  </PropertyGroup>
+
   <ItemGroup>
-    <PackageReference Include="Spectre.Console" Version="0.40.0" />
+    <PackageReference Include="Spectre.Console" Version="0.40.1-preview.0.11" />
     <PackageReference Include="System.CommandLine.DragonFruit" Version="0.3.0-alpha.21216.1" />
   </ItemGroup>
 

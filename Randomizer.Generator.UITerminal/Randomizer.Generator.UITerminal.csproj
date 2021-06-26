@@ -35,6 +35,8 @@
 
   <ItemGroup>
     <PackageReference Include="FIGlet.Net" Version="1.1.2" />
+    <PackageReference Include="Hjson" Version="3.0.0" />
+    <PackageReference Include="System.CommandLine.DragonFruit" Version="0.3.0-alpha.21216.1" />
     <PackageReference Include="Terminal.Gui" Version="1.1.1" />
     <PackageReference Include="TextCopy" Version="4.3.1" />
   </ItemGroup>
@@ -62,6 +64,10 @@
   <PropertyGroup Condition="'$(Configuration)'=='Beta'">
     <DebugType>none</DebugType>
     <DefineConstants>BETA;</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath></OutputPath>
   </PropertyGroup>
     
   <ItemGroup>
@@ -112,7 +118,7 @@
     </EmbeddedResource>
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Resources\" />
-  </ItemGroup>
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="powershell.exe $(SolutionDir)\PostBuild.ps1" />
+  </Target>
 </Project>

@@ -24,7 +24,7 @@ namespace Randomizer.Generator.UITerminal
 			tabGenerators = new() { LayoutStyle = LayoutStyle.Computed, X = Pos.Percent(25) + 1, Y = 0, Width = Dim.Fill(), Height = Dim.Fill() };
 
 			// Register Events
-			fvGeneratorList.GeneratorSelected += fvGeneratorList_GeneratorSelected;
+			fvGeneratorList.GeneratorSelected += GeneratorList_GeneratorSelected;
 
 			// Add controls
 			Add(fvGeneratorList);
@@ -37,11 +37,15 @@ namespace Randomizer.Generator.UITerminal
 				{
 					new MenuItem("_Change Directory", "", Program.ChangeDirectory, null, null),
 					new MenuItem("_Refresh Generator List", "", Program.RefreshGeneratorList, null, null),
-					new MenuItem("Con_vert Old Grammar File", "", () => Application.Run(new ConvertGrammar() {Width = Dim.Percent(75), Height = Dim.Percent(75), X = Pos.Center(), Y = Pos.Center() }))
+					new MenuItem("_Settings", "", () => Application.Run(new Settings() { Width = Dim.Percent(75), Height = Dim.Percent(75), X = Pos.Center(), Y = Pos.Center() }))
+				}),
+				new MenuBarItem("_Tools", new MenuItem[]
+				{
+					new MenuItem("Con_vert Old Grammar File", "", () => Application.Run(new ConvertGrammar() {Width = Dim.Percent(75), Height = Dim.Percent(75), X = Pos.Center(), Y = Pos.Center() })),
 				}),
 				new MenuBarItem("_Help", new MenuItem[]
 				{
-					new MenuItem("Open Online _Help", "F1", () => HelperMethods.OpenURL(Properties.Resources.HelpURL)) { Shortcut = Key.F1 },
+					new MenuItem("Open Online _Help", "", () => HelperMethods.OpenURL(Properties.Resources.HelpURL)) { Shortcut = Key.F1 },
 					new MenuItem("Goto Project _GitHub", "", () => HelperMethods.OpenURL(Properties.Resources.GITURL)),
 					new MenuItem("_About", "", () => Application.Run(new About() { Width = Dim.Percent(75), Height = Dim.Percent(75), X = Pos.Center(), Y = Pos.Center() }))
 				})
