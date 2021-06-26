@@ -29,11 +29,8 @@ namespace Randomizer.Generator.UITerminal.Utility
 		private String _workingDirectory;
 
 		public String WorkingDirectory { get; set; }
-		//{ 
-		//	get => _workingDirectory; 
-		//	set => _workingDirectory = value; 
-		//}
 		public Boolean ShowFileNameInList { get; set; } = true;
+		[JsonIgnore]
 		public String SettingPath { get; set; } = Path.Combine(Directory.GetCurrentDirectory(), "settings.hjson");
 
 		public void Save()
@@ -51,13 +48,25 @@ namespace Randomizer.Generator.UITerminal.Utility
 		{
 			if (File.Exists(SettingPath))
 			{
-				var json = HjsonValue.Parse(File.ReadAllText(SettingPath)).ToString();
-				var serializer = JsonSerializer.Create(SerializerSettings);
-				using var sReader = new StringReader(json);
-				using var reader = new JsonTextReader(sReader);
-				var value = serializer.Deserialize<UserSettings>(reader);
-				WorkingDirectory = value.WorkingDirectory;
-				ShowFileNameInList = value.ShowFileNameInList;
+				try
+				{
+					var json = HjsonValue.Parse(File.ReadAllText(SettingPath)).ToString();
+					var serializer = JsonSerializer.Create(SerializerSettings);
+					using var sReader = new StringReader(json);
+					using var reader = new JsonTextReader(sReader);
+					var value = serializer.Deserialize<UserSettings>(reader);
+					WorkingDirectory = value.WorkingDirectory;
+					ShowFileNameInList = value.ShowFileNameInList;
+				}
+				catch
+				{
+					WorkingDirectory = Program.DefaultDirectory;
+				}
+			}
+			else
+			{
+				WorkingDirectory = Program.DefaultDirectory;
+				Save();
 			}
 		}
 

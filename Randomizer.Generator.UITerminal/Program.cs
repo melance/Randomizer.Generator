@@ -10,6 +10,10 @@ namespace Randomizer.Generator.UITerminal
 {
     class Program
     {
+		private const String DEFAULT_DIRECTORY = @"%AppData%\Randomizer.Generator";
+
+		internal static String DefaultDirectory { get => Environment.ExpandEnvironmentVariables(DEFAULT_DIRECTORY); }
+
 		public static Action<String> CurrentDirectoryChanged;
 		public static Action RefreshGeneratorList;
 
@@ -36,6 +40,9 @@ namespace Randomizer.Generator.UITerminal
 		static void Main(String settingsPath)
         {
 			Application.Init();
+			Directory.CreateDirectory(DefaultDirectory);
+			Directory.SetCurrentDirectory(DefaultDirectory);
+			
 			TopLevelObject = Application.Top;
 			MainWindow = new()
 			{
