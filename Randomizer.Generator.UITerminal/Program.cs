@@ -5,6 +5,8 @@ namespace Randomizer.Generator.UITerminal
 {
     class Program
     {
+		private const String Default_Working_Directory = @"%APPDATA%\Randomizer.Generator\";
+
 		public static Action<String> CurrentDirectoryChanged;
 		public static Action RefreshGeneratorList;
 
@@ -42,14 +44,14 @@ namespace Randomizer.Generator.UITerminal
 		{
 			var dlg = new OpenDialog(String.Empty, "Choose a directory to view all of the generator definitions contained within.")
 			{
-				DirectoryPath = Program.CurrentDirectory,
+				DirectoryPath = CurrentDirectory,
 				CanChooseDirectories = true,
 				CanChooseFiles = false
 			};
 
 			Application.Run(dlg);
 			if (!dlg.Canceled)
-				Program.CurrentDirectory = dlg.FilePath.ToString();
+				CurrentDirectory = dlg.FilePath.ToString();
 		}
 	}
 }
