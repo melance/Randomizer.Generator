@@ -63,6 +63,11 @@ namespace Randomizer.Generator.UITerminal
 			TopLevelObject.Add(new StatusBar(new[] { stsCurrentDirectory }));
 			TopLevelObject.Add(MainWindow);	
 			Application.Run();
+			if (UserSettings.Instance.RememberLastDirectory)
+			{
+				UserSettings.Instance.WorkingDirectory = CurrentDirectory;
+				UserSettings.Instance.Save();
+			}
 		}
 
 		public static void ChangeDirectory()

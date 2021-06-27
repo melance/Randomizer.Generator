@@ -24,5 +24,11 @@ namespace Randomizer.Generator.UITerminal.Dialogs
 			if (!dlg.Canceled)
 				txtWorkingDirectory.Text = dlg.FilePath;
 		}
+
+		private void RememberLastDirectory_Toggled(Boolean selected)
+		{
+			txtWorkingDirectory.ReadOnly = chkRememberLastDirectory.Checked;
+			btnWorkingDirectory.Visible = !chkRememberLastDirectory.Checked;
+		}
 	}
 }

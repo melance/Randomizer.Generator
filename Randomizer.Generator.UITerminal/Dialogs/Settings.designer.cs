@@ -31,14 +31,23 @@ namespace Randomizer.Generator.UITerminal.Dialogs
 				X = Pos.Right(txtWorkingDirectory) + 1,
 				Y = Pos.Y(txtWorkingDirectory)
 			};
-			chkShowFileNames = new("Show File Names in List")
+			chkRememberLastDirectory = new("Remember Last Working Directory")
 			{
 				X = 1,
 				Y = Pos.Bottom(lblWorkingDirectory) + 1,
+				Checked = UserSettings.Instance.RememberLastDirectory
+			};
+			chkShowFileNames = new("Show File Names in List")
+			{
+				X = 1,
+				Y = Pos.Bottom(chkRememberLastDirectory) + 1,
 				Checked = UserSettings.Instance.ShowFileNameInList
 			};
 
 			btnWorkingDirectory.Clicked += SelectDirectory;
+			chkRememberLastDirectory.Toggled += RememberLastDirectory_Toggled;
+
+			RememberLastDirectory_Toggled(chkRememberLastDirectory.Checked);
 
 			var btnCancel = new Button("Cancel");
 			btnCancel.Clicked += () => Application.RequestStop();
@@ -55,6 +64,7 @@ namespace Randomizer.Generator.UITerminal.Dialogs
 			Add(lblWorkingDirectory);
 			Add(txtWorkingDirectory);
 			Add(btnWorkingDirectory);
+			Add(chkRememberLastDirectory);
 			Add(chkShowFileNames);
 			AddButton(btnOk);
 			AddButton(btnCancel);
@@ -63,6 +73,7 @@ namespace Randomizer.Generator.UITerminal.Dialogs
 		private readonly Label lblWorkingDirectory;
 		private readonly TextField txtWorkingDirectory;
 		private readonly Button btnWorkingDirectory;
+		private readonly CheckBox chkRememberLastDirectory;
 		private readonly CheckBox chkShowFileNames;
 	}
 }
