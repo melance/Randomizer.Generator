@@ -28,6 +28,8 @@ namespace Randomizer.Generator.UITerminal.Utility
 
 		public String WorkingDirectory { get; set; }
 		public Boolean ShowFileNameInList { get; set; } = true;
+		public Boolean RememberLastDirectory { get; set; } = false;
+
 		[JsonIgnore]
 		public String SettingPath { get; set; } = Program.SettingsDirectory;
 
