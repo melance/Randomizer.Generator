@@ -19,7 +19,7 @@ There is a small but great community on reddit that I personally moderate under 
 ---
 Customizations can be found in the following repository:
 
-[The Randomizer Customizations](https://github.com/melance/TheRandomizerWPFCustomizations)
+*Coming Soon*
 
 ### Contributing ###
 ---
