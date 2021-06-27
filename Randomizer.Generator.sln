@@ -23,7 +23,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Randomizer.Generator.Defini
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NSIS", "NSIS", "{BAB97826-EEEC-4C45-88E9-6EDCA7B8C0FF}"
 	ProjectSection(SolutionItems) = preProject
-		Randomizer.Generator.nsi = Randomizer.Generator.nsi
+		Installer\Randomizer.Generator.nsi = Installer\Randomizer.Generator.nsi
 	EndProjectSection
 EndProject
 Global

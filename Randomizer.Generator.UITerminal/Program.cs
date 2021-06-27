@@ -11,8 +11,10 @@ namespace Randomizer.Generator.UITerminal
     class Program
     {
 		private const String DEFAULT_DIRECTORY = @"%AppData%\Randomizer.Generator";
+		private const String SETTINGS_DIRECTORY = @"%AppData%\Randomizer.Generator\settings.hjson";
 
 		internal static String DefaultDirectory { get => Environment.ExpandEnvironmentVariables(DEFAULT_DIRECTORY); }
+		internal static String SettingsDirectory { get => Environment.ExpandEnvironmentVariables(SETTINGS_DIRECTORY); }
 
 		public static Action<String> CurrentDirectoryChanged;
 		public static Action RefreshGeneratorList;
@@ -52,8 +54,8 @@ namespace Randomizer.Generator.UITerminal
 			if (!String.IsNullOrEmpty(settingsPath))
 			{
 				UserSettings.Instance.SettingPath = settingsPath;
-				UserSettings.Instance.Load();
 			}
+			UserSettings.Instance.Load();
 
 			stsCurrentDirectory = new(Key.Null, ustring.Empty, null);
 			CurrentDirectory = UserSettings.Instance.WorkingDirectory;

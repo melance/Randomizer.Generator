@@ -26,12 +26,10 @@ namespace Randomizer.Generator.UITerminal.Utility
 			}
 		}
 
-		private String _workingDirectory;
-
 		public String WorkingDirectory { get; set; }
 		public Boolean ShowFileNameInList { get; set; } = true;
 		[JsonIgnore]
-		public String SettingPath { get; set; } = Path.Combine(Directory.GetCurrentDirectory(), "settings.hjson");
+		public String SettingPath { get; set; } = Program.SettingsDirectory;
 
 		public void Save()
 		{
