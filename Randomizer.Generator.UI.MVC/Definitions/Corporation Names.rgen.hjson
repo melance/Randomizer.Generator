@@ -1,0 +1,954 @@
+{
+  Name: Corporation Names
+  Author: Lance Boudreaux
+  Description: Generates corporation names.
+  Version: "2.0"
+  URL: null
+  Tags:
+  [
+    Name
+  ]
+  OutputFormat: Html
+  Parameters: {}
+  TextCase: None
+  Imports:
+  [
+    LettersAndDigits.rgen
+    USNames.rgen
+  ]
+  LineItems:
+  {
+    Start:
+    [
+      {
+        Content: "[Adjective] [Noun] [Type]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[Noun] [Adjective] [Type]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[Name] [Noun] [Type]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[Name] [Type]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[Noun] [TechnoPrefix][TechnoSuffix]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[Name] [TechnoPrefix][TechnoSuffix]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[TechnoPrefix][TechnoSuffix] [Type]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[TechnoPrefix][TechnoSuffix] [Noun] [Type]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    Type:
+    [
+      {
+        Content: Inc.
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Corporation
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: LLC
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Unlimited
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Corp.
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Partners
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: LLP
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ltd.
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Company
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Association
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Incorporated
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Society
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Foundation
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Institution
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Union
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Syndicate
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Services
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Specialties
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    Noun:
+    [
+      {
+        Content: Agriculture
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Apex
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Application
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Automation
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Automotive
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Biology
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Computer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Data
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Development
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Engineering
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Entertainment
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Equipment
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Exploration
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Fuel
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Gas
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Gene
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Group
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Hardware
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Health
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Horizon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Information
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Instrument
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Logistic
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Machine
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Manufacturing
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Mechanics
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Media
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Mining
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Motor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Network
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Photographic
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Radio
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Science
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Service
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Software
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Space
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Spark
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Sport
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: System
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Terraforming
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Tools
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Training
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Vista
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: World
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    Adjective:
+    [
+      {
+        Content: Air
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Alternative
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: American
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Atomic
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: British
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Brown
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Calibrated
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Canadian
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Chemical
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Digital
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Earth
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Eastern
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Electric
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Electronic
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Financial
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Foreign
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Future
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: General
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Genetic
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Imperial
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Integrated
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Liquid
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Medical
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Mexican
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Mutual
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Networked
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Northern
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Official
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Open
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Royal
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Solar
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Southern
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Space
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Tactical
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Technological
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Western
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Wholesale
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    TechnoPrefix:
+    [
+      {
+        Content: Psycho
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Cyber
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Chemo
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Dyno
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Atonomo
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Techno
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Gene
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Geo
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Astro
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Aero
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Auto
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    TechnoSuffix:
+    [
+      {
+        Content: tronics
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: nautics
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: graphic
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: dynamics
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: soft
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: mantics
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: logistics
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: netics
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: mation
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    Name:
+    [
+      {
+        Content: "[USLastName]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 80
+      }
+      {
+        Content: "[UpperCase][UpperCase]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 10
+      }
+      {
+        Content: "[UpperCase][UpperCase][UpperCase]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 10
+      }
+    ]
+  }
+  GeneratorType: Assignment
+}

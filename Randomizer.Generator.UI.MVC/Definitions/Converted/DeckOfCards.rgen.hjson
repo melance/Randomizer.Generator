@@ -1,0 +1,1298 @@
+{
+  Version: "2.0"
+  Tags: []
+  OutputFormat: Html
+  Parameters: {}
+  TextCase: None
+  Imports: []
+  LineItems:
+  {
+    CTHeaderStyle:
+    [
+      {
+        Content:
+          '''
+
+          		font-family: Consolas, Courier, Monospace; font-size: 0.75em; background: white; cell-padding: 0; cell-spacing: 0; margin: 1em 0 0 1em; display: inline; border:1px solid black; border-collapse: collapse;		
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    CTHeaderBlack:
+    [
+      {
+        Content:
+          '''
+
+          		<table style="[CTHeaderStyle] color:black;">
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    CTHeaderRed:
+    [
+      {
+        Content:
+          '''
+
+          		<table style="[CTHeaderStyle] color:red;">
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    CTFooter:
+    [
+      {
+        Content:
+          '''
+
+          		</table>
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    CTRowOpen:
+    [
+      {
+        Content:
+          '''
+
+          		<tr style="height:1em;">
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    CTRowClose:
+    [
+      {
+        Content:
+          '''
+
+          		</tr>
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    CTCellStyle:
+    [
+      {
+        Content:
+          '''
+
+          		width:1.5em; text-align:center; vertical-align:center;
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    CT□:
+    [
+      {
+        Content:
+          '''
+
+          		<td style="[CTCellStyle]">&#xA0;</td>
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    CT♠:
+    [
+      {
+        Content:
+          '''
+
+          		<td style="[CTCellStyle]">♠</td>
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    CT♣:
+    [
+      {
+        Content:
+          '''
+
+          		<td style="[CTCellStyle]">♣</td>
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    CT♥:
+    [
+      {
+        Content:
+          '''
+
+          		<td style="[CTCellStyle]">♥</td>
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    CT♦:
+    [
+      {
+        Content:
+          '''
+
+          		<td style="[CTCellStyle]">♦</td>
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    CTJ:
+    [
+      {
+        Content:
+          '''
+
+          		<td style="[CTCellStyle]">J</td>
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    CTQ:
+    [
+      {
+        Content:
+          '''
+
+          		<td style="[CTCellStyle]">Q</td>
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    CTK:
+    [
+      {
+        Content:
+          '''
+
+          		<td style="[CTCellStyle]">K</td>
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    CTO:
+    [
+      {
+        Content:
+          '''
+
+          		<td style="[CTCellStyle]">O</td>
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    CTC:
+    [
+      {
+        Content:
+          '''
+
+          		<td style="[CTCellStyle]">C</td>
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    CTE:
+    [
+      {
+        Content:
+          '''
+
+          		<td style="[CTCellStyle]">E</td>
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    CTR:
+    [
+      {
+        Content:
+          '''
+
+          		<td style="[CTCellStyle]">R</td>
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    CTA:
+    [
+      {
+        Content:
+          '''
+
+          		<td style="[CTCellStyle]">A</td>
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    2ofSpades:
+    [
+      {
+        Content:
+          '''
+
+          				 [CTHeaderBlack]
+          				 [CTRowOpen][CT□][CT♠][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]				 
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT♠][CT□][CTRowClose]
+          				 [CTFooter]
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    2ofClubs:
+    [
+      {
+        Content:
+          '''
+
+          				 [CTHeaderBlack]
+          				 [CTRowOpen][CT□][CT♣][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT♣][CT□][CTRowClose]
+          				 [CTFooter]
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    2ofHearts:
+    [
+      {
+        Content:
+          '''
+
+          				 [CTHeaderRed]
+          				 [CTRowOpen][CT□][CT♥][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT♥][CT□][CTRowClose]
+          				 [CTFooter]
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    2ofDiamonds:
+    [
+      {
+        Content:
+          '''
+
+          				 [CTHeaderRed]
+          				 [CTRowOpen][CT□][CT♦][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT♦][CT□][CTRowClose]
+          				 [CTFooter]
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    3ofSpades:
+    [
+      {
+        Content:
+          '''
+
+          				 [CTHeaderBlack]
+          				 [CTRowOpen][CT□][CT♠][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT♠][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT♠][CT□][CTRowClose]
+          				 [CTFooter]
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    3ofClubs:
+    [
+      {
+        Content:
+          '''
+
+          				 [CTHeaderBlack]
+          				 [CTRowOpen][CT□][CT♣][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT♣][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT♣][CT□][CTRowClose]
+          				 [CTFooter]
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    3ofHearts:
+    [
+      {
+        Content:
+          '''
+
+          				 [CTHeaderBlack]
+          				 [CTRowOpen][CT□][CT♥][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT♥][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT♥][CT□][CTRowClose]
+          				 [CTFooter]
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    3ofDiamonds:
+    [
+      {
+        Content:
+          '''
+
+          				 [CTHeaderBlack]
+          				 [CTRowOpen][CT□][CT♦][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT♦][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT♦][CT□][CTRowClose]
+          				 [CTFooter]
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    4ofSpades:
+    [
+      {
+        Content:
+          '''
+
+          				 [CTHeaderBlack]
+          				 [CTRowOpen][CT♠][CT□][CT♠][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT♠][CT□][CT♠][CTRowClose]
+          				 [CTFooter]
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    4ofClubs:
+    [
+      {
+        Content:
+          '''
+
+          				 [CTHeaderBlack]
+          				 [CTRowOpen][CT♣][CT□][CT♣][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]				 
+          				 [CTRowOpen][CT♣][CT□][CT♣][CTRowClose]
+          				 [CTFooter]
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    4ofHearts:
+    [
+      {
+        Content:
+          '''
+
+          				 [CTHeaderRed]
+          				 [CTRowOpen][CT♥][CT□][CT♥][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT♥][CT□][CT♥][CTRowClose]
+          				 [CTFooter]
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    4ofDiamonds:
+    [
+      {
+        Content:
+          '''
+
+          				 [CTHeaderRed]
+          				 [CTRowOpen][CT♦][CT□][CT♦][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT♦][CT□][CT♦][CTRowClose]
+          				 [CTFooter]
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    5ofSpades:
+    [
+      {
+        Content:
+          '''
+
+          				 [CTHeaderBlack]
+          				 [CTRowOpen][CT♠][CT□][CT♠][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT♠][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT♠][CT□][CT♠][CTRowClose]
+          				 [CTFooter]
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    5ofClubs:
+    [
+      {
+        Content:
+          '''
+
+          				 [CTHeaderBlack]
+          				 [CTRowOpen][CT♣][CT□][CT♣][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT♣][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT♣][CT□][CT♣][CTRowClose]
+          				 [CTFooter]
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    5ofHearts:
+    [
+      {
+        Content:
+          '''
+
+          				 [CTHeaderRed]
+          				 [CTRowOpen][CT♥][CT□][CT♥][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT♥][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT♥][CT□][CT♥][CTRowClose]
+          				 [CTFooter]
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    5ofDiamonds:
+    [
+      {
+        Content:
+          '''
+
+          				 [CTHeaderRed]
+          				 [CTRowOpen][CT♦][CT□][CT♦][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT♦][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT♦][CT□][CT♦][CTRowClose]
+          				 [CTFooter]
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    6ofSpades:
+    [
+      {
+        Content:
+          '''
+
+          				 [CTHeaderBlack]
+          				 [CTRowOpen][CT♠][CT□][CT♠][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT♠][CT□][CT♠][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT♠][CT□][CT♠][CTRowClose]
+          				 [CTFooter]
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    6ofClubs:
+    [
+      {
+        Content:
+          '''
+
+          				 [CTHeaderBlack]
+          				 [CTRowOpen][CT♣][CT□][CT♣][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT♣][CT□][CT♣][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT♣][CT□][CT♣][CTRowClose]
+          				 [CTFooter]
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    6ofHearts:
+    [
+      {
+        Content:
+          '''
+
+          				 [CTHeaderRed]
+          				 [CTRowOpen][CT♥][CT□][CT♥][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT♥][CT□][CT♥][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT♥][CT□][CT♥][CTRowClose]
+          				 [CTFooter]
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    6ofDiamonds:
+    [
+      {
+        Content:
+          '''
+
+          				 [CTHeaderRed]
+          				 [CTRowOpen][CT♦][CT□][CT♦][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT♦][CT□][CT♦][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT♦][CT□][CT♦][CTRowClose]
+          				 [CTFooter]
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    7ofSpades:
+    [
+      {
+        Content:
+          '''
+
+          				 [CTHeaderBlack]
+          				 [CTRowOpen][CT♠][CT□][CT♠][CTRowClose]
+          				 [CTRowOpen][CT□][CT♠][CT□][CTRowClose]
+          				 [CTRowOpen][CT♠][CT□][CT♠][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT♠][CT□][CT♠][CTRowClose]
+          				 [CTFooter]
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    7ofClubs:
+    [
+      {
+        Content:
+          '''
+
+          				 [CTHeaderBlack]
+          				 [CTRowOpen][CT♣][CT□][CT♣][CTRowClose]
+          				 [CTRowOpen][CT□][CT♣][CT□][CTRowClose]
+          				 [CTRowOpen][CT♣][CT□][CT♣][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT♣][CT□][CT♣][CTRowClose]
+          				 [CTFooter]
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    7ofHearts:
+    [
+      {
+        Content:
+          '''
+
+          				 [CTHeaderRed]
+          				 [CTRowOpen][CT♥][CT□][CT♥][CTRowClose]
+          				 [CTRowOpen][CT□][CT♥][CT□][CTRowClose]
+          				 [CTRowOpen][CT♥][CT□][CT♥][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT♥][CT□][CT♥][CTRowClose]
+          				 [CTFooter]
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    7ofDiamonds:
+    [
+      {
+        Content:
+          '''
+
+          				 [CTHeaderRed]
+          				 [CTRowOpen][CT♦][CT□][CT♦][CTRowClose]
+          				 [CTRowOpen][CT□][CT♦][CT□][CTRowClose]
+          				 [CTRowOpen][CT♦][CT□][CT♦][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT♦][CT□][CT♦][CTRowClose]
+          				 [CTFooter]
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    8ofSpades:
+    [
+      {
+        Content:
+          '''
+
+          				 [CTHeaderBlack]
+          				 [CTRowOpen][CT♠][CT□][CT♠][CTRowClose]
+          				 [CTRowOpen][CT□][CT♠][CT□][CTRowClose]
+          				 [CTRowOpen][CT♠][CT□][CT♠][CTRowClose]
+          				 [CTRowOpen][CT□][CT♠][CT□][CTRowClose]
+          				 [CTRowOpen][CT♠][CT□][CT♠][CTRowClose]
+          				 [CTFooter]
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    8ofClubs:
+    [
+      {
+        Content:
+          '''
+
+          				 [CTHeaderBlack]
+          				 [CTRowOpen][CT♣][CT□][CT♣][CTRowClose]
+          				 [CTRowOpen][CT□][CT♣][CT□][CTRowClose]
+          				 [CTRowOpen][CT♣][CT□][CT♣][CTRowClose]
+          				 [CTRowOpen][CT□][CT♣][CT□][CTRowClose]
+          				 [CTRowOpen][CT♣][CT□][CT♣][CTRowClose]
+          				 [CTFooter]
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    8ofHearts:
+    [
+      {
+        Content:
+          '''
+
+          				 [CTHeaderRed]
+          				 [CTRowOpen][CT♥][CT□][CT♥][CTRowClose]
+          				 [CTRowOpen][CT□][CT♥][CT□][CTRowClose]
+          				 [CTRowOpen][CT♥][CT□][CT♥][CTRowClose]
+          				 [CTRowOpen][CT□][CT♥][CT□][CTRowClose]
+          				 [CTRowOpen][CT♥][CT□][CT♥][CTRowClose]
+          				 [CTFooter]
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    8ofDiamonds:
+    [
+      {
+        Content:
+          '''
+
+          				 [CTHeaderRed]
+          				 [CTRowOpen][CT♦][CT□][CT♦][CTRowClose]
+          				 [CTRowOpen][CT□][CT♦][CT□][CTRowClose]
+          				 [CTRowOpen][CT♦][CT□][CT♦][CTRowClose]
+          				 [CTRowOpen][CT□][CT♦][CT□][CTRowClose]
+          				 [CTRowOpen][CT♦][CT□][CT♦][CTRowClose]
+          				 [CTFooter]
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    9ofSpades:
+    [
+      {
+        Content:
+          '''
+
+          				 [CTHeaderBlack]
+          				 [CTRowOpen][CT♠][CT□][CT♠][CTRowClose]
+          				 [CTRowOpen][CT♠][CT□][CT♠][CTRowClose]
+          				 [CTRowOpen][CT♠][CT♠][CT♠][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT♠][CT□][CT♠][CTRowClose]
+          				 [CTFooter]
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    9ofClubs:
+    [
+      {
+        Content:
+          '''
+
+          				 [CTHeaderBlack]
+          				 [CTRowOpen][CT♣][CT□][CT♣][CTRowClose]
+          				 [CTRowOpen][CT♣][CT□][CT♣][CTRowClose]
+          				 [CTRowOpen][CT♣][CT♣][CT♣][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT♣][CT□][CT♣][CTRowClose]
+          				 [CTFooter]
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    9ofHearts:
+    [
+      {
+        Content:
+          '''
+
+          				 [CTHeaderRed]
+          				 [CTRowOpen][CT♥][CT□][CT♥][CTRowClose]
+          				 [CTRowOpen][CT♥][CT□][CT♥][CTRowClose]
+          				 [CTRowOpen][CT♥][CT♥][CT♥][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT♥][CT□][CT♥][CTRowClose]
+          				 [CTFooter]
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    9ofDiamonds:
+    [
+      {
+        Content:
+          '''
+
+          				 [CTHeaderRed]
+          				 [CTRowOpen][CT♦][CT□][CT♦][CTRowClose]
+          				 [CTRowOpen][CT♦][CT□][CT♦][CTRowClose]
+          				 [CTRowOpen][CT♦][CT♦][CT♦][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT♦][CT□][CT♦][CTRowClose]
+          				 [CTFooter]
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    10ofSpades:
+    [
+      {
+        Content:
+          '''
+
+          				 [CTHeaderBlack]
+          				 [CTRowOpen][CT♠][CT□][CT♠][CTRowClose]
+          				 [CTRowOpen][CT♠][CT♠][CT♠][CTRowClose]
+          				 [CTRowOpen][CT♠][CT□][CT♠][CTRowClose]
+          				 [CTRowOpen][CT□][CT♠][CT□][CTRowClose]
+          				 [CTRowOpen][CT♠][CT□][CT♠][CTRowClose]
+          				 [CTFooter]
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    10ofClubs:
+    [
+      {
+        Content:
+          '''
+
+          				 [CTHeaderBlack]
+          				 [CTRowOpen][CT♣][CT□][CT♣][CTRowClose]
+          				 [CTRowOpen][CT♣][CT♣][CT♣][CTRowClose]
+          				 [CTRowOpen][CT♣][CT□][CT♣][CTRowClose]
+          				 [CTRowOpen][CT□][CT♣][CT□][CTRowClose]
+          				 [CTRowOpen][CT♣][CT□][CT♣][CTRowClose]
+          				 [CTFooter]
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    10ofHearts:
+    [
+      {
+        Content:
+          '''
+
+          				 [CTHeaderRed]
+          				 [CTRowOpen][CT♥][CT□][CT♥][CTRowClose]
+          				 [CTRowOpen][CT♥][CT♥][CT♥][CTRowClose]
+          				 [CTRowOpen][CT♥][CT□][CT♥][CTRowClose]
+          				 [CTRowOpen][CT□][CT♥][CT□][CTRowClose]
+          				 [CTRowOpen][CT♥][CT□][CT♥][CTRowClose]
+          				 [CTFooter]
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    10ofDiamonds:
+    [
+      {
+        Content:
+          '''
+
+          				 [CTHeaderRed]
+          				 [CTRowOpen][CT♦][CT□][CT♦][CTRowClose]
+          				 [CTRowOpen][CT♦][CT♦][CT♦][CTRowClose]
+          				 [CTRowOpen][CT♦][CT□][CT♦][CTRowClose]
+          				 [CTRowOpen][CT□][CT♦][CT□][CTRowClose]
+          				 [CTRowOpen][CT♦][CT□][CT♦][CTRowClose]
+          				 [CTFooter]
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    JofSpades:
+    [
+      {
+        Content:
+          '''
+
+          				 [CTHeaderBlack]
+          				 [CTRowOpen][CTJ][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT♠][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT♠][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CTJ][CTRowClose]
+          				 [CTFooter]
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    JofClubs:
+    [
+      {
+        Content:
+          '''
+
+          				 [CTHeaderBlack]
+          				 [CTRowOpen][CTJ][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT♣][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT♣][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CTJ][CTRowClose]
+          				 [CTFooter]
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    JofHearts:
+    [
+      {
+        Content:
+          '''
+
+          				 [CTHeaderRed]
+          				 [CTRowOpen][CTJ][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT♥][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT♥][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CTJ][CTRowClose]
+          				 [CTFooter]
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    JofDiamonds:
+    [
+      {
+        Content:
+          '''
+
+          				 [CTHeaderRed]
+          				 [CTRowOpen][CTJ][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT♦][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT♦][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CTJ][CTRowClose]
+          				 [CTFooter]
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    QofSpades:
+    [
+      {
+        Content:
+          '''
+
+          				 [CTHeaderBlack]
+          				 [CTRowOpen][CTQ][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT♠][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT♠][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CTQ][CTRowClose]
+          				 [CTFooter]
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    QofClubs:
+    [
+      {
+        Content:
+          '''
+
+          				 [CTHeaderBlack]
+          				 [CTRowOpen][CTQ][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT♣][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT♣][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CTQ][CTRowClose]
+          				 [CTFooter]
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    QofHearts:
+    [
+      {
+        Content:
+          '''
+
+          				 [CTHeaderRed]
+          				 [CTRowOpen][CTQ][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT♥][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT♥][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CTQ][CTRowClose]
+          				 [CTFooter]
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    QofDiamonds:
+    [
+      {
+        Content:
+          '''
+
+          				 [CTHeaderRed]
+          				 [CTRowOpen][CTQ][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT♦][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT♦][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CTQ][CTRowClose]
+          				 [CTFooter]
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    KofSpades:
+    [
+      {
+        Content:
+          '''
+
+          				 [CTHeaderBlack]
+          				 [CTRowOpen][CTK][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT♠][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT♠][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CTK][CTRowClose]
+          				 [CTFooter]
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    KofClubs:
+    [
+      {
+        Content:
+          '''
+
+          				 [CTHeaderBlack]
+          				 [CTRowOpen][CTK][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT♣][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT♣][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CTK][CTRowClose]
+          				 [CTFooter]
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    KofHearts:
+    [
+      {
+        Content:
+          '''
+
+          				 [CTHeaderRed]
+          				 [CTRowOpen][CTK][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT♥][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT♥][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CTK][CTRowClose]
+          				 [CTFooter]
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    KofDiamonds:
+    [
+      {
+        Content:
+          '''
+
+          				 [CTHeaderRed]
+          				 [CTRowOpen][CTK][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT♦][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT♦][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CTK][CTRowClose]
+          				 [CTFooter]
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    AofSpades:
+    [
+      {
+        Content:
+          '''
+
+          				 [CTHeaderBlack]
+          				 [CTRowOpen][CTA][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT♠][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CTA][CTRowClose]
+          				 [CTFooter]
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    AofClubs:
+    [
+      {
+        Content:
+          '''
+
+          				 [CTHeaderBlack]
+          				 [CTRowOpen][CTA][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT♣][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CTA][CTRowClose]
+          				 [CTFooter]
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    AofHearts:
+    [
+      {
+        Content:
+          '''
+
+          				 [CTHeaderRed]
+          				 [CTRowOpen][CTA][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT♥][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CTA][CTRowClose]
+          				 [CTFooter]
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    AofDiamonds:
+    [
+      {
+        Content:
+          '''
+
+          		[CTHeaderRed]
+          				 [CTRowOpen][CTA][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT♦][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CT□][CTRowClose]
+          				 [CTRowOpen][CT□][CT□][CTA][CTRowClose]
+          				 [CTFooter]
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    JokerBlack:
+    [
+      {
+        Content:
+          '''
+
+          				 [CTHeaderBlack]
+          				 [CTRowOpen][CTJ][CT□][CTR][CTRowClose]
+          				 [CTRowOpen][CTO][CT□][CTE][CTRowClose]
+          				 [CTRowOpen][CTK][CT□][CTK][CTRowClose]
+          				 [CTRowOpen][CTE][CT□][CTO][CTRowClose]
+          				 [CTRowOpen][CTR][CT□][CTJ][CTRowClose]
+          				 [CTFooter]
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    JokerRed:
+    [
+      {
+        Content:
+          '''
+
+          				 [CTHeaderRed]
+          				 [CTRowOpen][CTJ][CT□][CTR][CTRowClose]
+          				 [CTRowOpen][CTO][CT□][CTE][CTRowClose]
+          				 [CTRowOpen][CTK][CT□][CTK][CTRowClose]
+          				 [CTRowOpen][CTE][CT□][CTO][CTRowClose]
+          				 [CTRowOpen][CTR][CT□][CTJ][CTRowClose]
+          				 [CTFooter]
+          	
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+  }
+  GeneratorType: Assignment
+}

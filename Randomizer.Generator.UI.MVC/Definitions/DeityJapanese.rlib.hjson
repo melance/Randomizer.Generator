@@ -1,0 +1,4667 @@
+{
+  Name: Japanese Deity Name
+  Author: Lance Boudreaux
+  Description: Generates a Japanese style deity name
+  Version: "2.0"
+  URL: null
+  Tags:
+  [
+    Name
+    Deity
+  ]
+  OutputFormat: Html
+  Parameters: {}
+  TextCase: None
+  Imports: []
+  LineItems:
+  {
+    JapaneseDeity:
+    [
+      {
+        Content: "[Ad]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[Mi]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 3
+      }
+      {
+        Content: "[Mo]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 4
+      }
+      {
+        Content: "[Mu]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[Na]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: "[Ch]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 4
+      }
+      {
+        Content: "[Ni]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 4
+      }
+      {
+        Content: "[Ny]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[Bo]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: "[Oa]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[Oh]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[Ok]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: "[On]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[Ot]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[Ra]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 3
+      }
+      {
+        Content: "[Ry]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[Bi]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 3
+      }
+      {
+        Content: "[Sa]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 5
+      }
+      {
+        Content: "[Be]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: "[Se]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[Ma]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: "[Ba]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: "[Kw]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[Da]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 4
+      }
+      {
+        Content: "[Ha]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 3
+      }
+      {
+        Content: "[He]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 3
+      }
+      {
+        Content: "[Ga]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 3
+      }
+      {
+        Content: "[Hi]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: "[Ho]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 12
+      }
+      {
+        Content: "[Id]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: "[Ik]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[In]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: "[Iz]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 3
+      }
+      {
+        Content: "[Fu]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 7
+      }
+      {
+        Content: "[Ji]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 3
+      }
+      {
+        Content: "[Em]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[Jo]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[Ju]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[Ka]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 12
+      }
+      {
+        Content: "[Ek]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[Eb]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[Ki]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: "[Ko]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 12
+      }
+      {
+        Content: "[Ku]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 4
+      }
+      {
+        Content: "[Sh]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 7
+      }
+      {
+        Content: "[Ge]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[Ub]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[Ta]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: "[Uz]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[Aj]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[Am]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 4
+      }
+      {
+        Content: "[Ak]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[Um]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: "[Ai]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[Te]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: "[To]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: "[Yo]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[Uk]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[Ya]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 4
+      }
+      {
+        Content: "[Za]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[Ze]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[Zo]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[Su]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 10
+      }
+      {
+        Content: "[Ts]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 3
+      }
+    ]
+    " B":
+    [
+      {
+        Content: " B"
+        Next: ik
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: " B"
+        Next: os
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+    ]
+    " D":
+    [
+      {
+        Content: " D"
+        Next: ai
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    " F":
+    [
+      {
+        Content: " F"
+        Next: uk
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+    ]
+    " H":
+    [
+      {
+        Content: " H"
+        Next: oh
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: " H"
+        Next: im
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: " H"
+        Next: an
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    " K":
+    [
+      {
+        Content: " K"
+        Next: am
+        Repeat: 1
+        Variable: null
+        Weight: 6
+      }
+      {
+        Content: " K"
+        Next: az
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: " K"
+        Next: on
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    " M":
+    [
+      {
+        Content: " M"
+        Next: "i "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: " M"
+        Next: us
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: " M"
+        Next: ik
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: " M"
+        Next: in
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    " N":
+    [
+      {
+        Content: " N"
+        Next: "o "
+        Repeat: 1
+        Variable: null
+        Weight: 8
+      }
+      {
+        Content: " N"
+        Next: yo
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    " O":
+    [
+      {
+        Content: " O"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: " O"
+        Next: hk
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: " O"
+        Next: ri
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    " R":
+    [
+      {
+        Content: " R"
+        Next: ok
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    " S":
+    [
+      {
+        Content: " S"
+        Next: ak
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: " S"
+        Next: am
+        Repeat: 1
+        Variable: null
+        Weight: 3
+      }
+    ]
+    " T":
+    [
+      {
+        Content: " T"
+        Next: en
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    " W":
+    [
+      {
+        Content: " W"
+        Next: "u "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: " W"
+        Next: "o "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    " Y":
+    [
+      {
+        Content: " Y"
+        Next: am
+        Repeat: 1
+        Variable: null
+        Weight: 3
+      }
+    ]
+    "a ":
+    [
+      {
+        Content: "a "
+        Next: Sa
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "a "
+        Next: Hi
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "a "
+        Next: No
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: "a "
+        Next: Zu
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "a "
+        Next: Te
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: "a "
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 7
+      }
+      {
+        Content: "a "
+        Next: Nu
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "a "
+        Next: Ts
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "a "
+        Next: "O "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    ac:
+    [
+      {
+        Content: ac
+        Next: hi
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+    ]
+    Ad:
+    [
+      {
+        Content: Ad
+        Next: ac
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    ag:
+    [
+      {
+        Content: ag
+        Next: "i "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    ai:
+    [
+      {
+        Content: ai
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 3
+      }
+      {
+        Content: ai
+        Next: " S"
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ai
+        Next: sh
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ai
+        Next: ze
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    Aj:
+    [
+      {
+        Content: Aj
+        Next: is
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    ak:
+    [
+      {
+        Content: ak
+        Next: uy
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ak
+        Next: "a "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ak
+        Next: um
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    am:
+    [
+      {
+        Content: am
+        Next: at
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: am
+        Next: "i "
+        Repeat: 1
+        Variable: null
+        Weight: 8
+      }
+      {
+        Content: am
+        Next: "o "
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: am
+        Next: ui
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: am
+        Next: on
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: am
+        Next: "a "
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: Am
+        Next: at
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: Am
+        Next: id
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Am
+        Next: "a "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    an:
+    [
+      {
+        Content: an
+        Next: ag
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: an
+        Next: "i "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: an
+        Next: am
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: an
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: an
+        Next: "a "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: an
+        Next: "o "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: an
+        Next: no
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    ar:
+    [
+      {
+        Content: ar
+        Next: "i "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ar
+        Next: "e "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    as:
+    [
+      {
+        Content: as
+        Next: "u "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: as
+        Next: hi
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+    ]
+    at:
+    [
+      {
+        Content: at
+        Next: su
+        Repeat: 1
+        Variable: null
+        Weight: 4
+      }
+      {
+        Content: at
+        Next: er
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: at
+        Next: "o "
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: at
+        Next: an
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    az:
+    [
+      {
+        Content: az
+        Next: "e "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    Ba:
+    [
+      {
+        Content: Ba
+        Next: ke
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ba
+        Next: ku
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    Be:
+    [
+      {
+        Content: Be
+        Next: nz
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Be
+        Next: nt
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    bi:
+    [
+      {
+        Content: bi
+        Next: to
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: bi
+        Next: hi
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: bi
+        Next: ko
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: bi
+        Next: " N"
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Bi
+        Next: sh
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: Bi
+        Next: mb
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    bo:
+    [
+      {
+        Content: bo
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: bo
+        Next: " D"
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Bo
+        Next: mm
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Bo
+        Next: sa
+        Repeat: 1
+        Variable: null
+        Weight: 3
+      }
+    ]
+    Bu:
+    [
+      {
+        Content: Bu
+        Next: sh
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    ch:
+    [
+      {
+        Content: ch
+        Next: ih
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ch
+        Next: im
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ch
+        Next: ir
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ch
+        Next: ep
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ch
+        Next: "i "
+        Repeat: 1
+        Variable: null
+        Weight: 5
+      }
+      {
+        Content: ch
+        Next: in
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ch
+        Next: "o "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ch
+        Next: im
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ch
+        Next: uj
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: Ch
+        Next: "i "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ch
+        Next: up
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    Da:
+    [
+      {
+        Content: Da
+        Next: ib
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Da
+        Next: ik
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Da
+        Next: in
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+    ]
+    de:
+    [
+      {
+        Content: de
+        Next: mi
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: de
+        Next: ri
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+    ]
+    do:
+    [
+      {
+        Content: do
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    "e ":
+    [
+      {
+        Content: "e "
+        Next: Ta
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "e "
+        Next: Nu
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "e "
+        Next: Hi
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "e "
+        Next: No
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "e "
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 6
+      }
+      {
+        Content: "e "
+        Next: Mo
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "e "
+        Next: Ga
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    Eb:
+    [
+      {
+        Content: Eb
+        Next: is
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    eg:
+    [
+      {
+        Content: eg
+        Next: an
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    ei:
+    [
+      {
+        Content: ei
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+    ]
+    Ek:
+    [
+      {
+        Content: Ek
+        Next: ib
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    em:
+    [
+      {
+        Content: em
+        Next: "i "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Em
+        Next: ma
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    en:
+    [
+      {
+        Content: en
+        Next: "o "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: en
+        Next: " S"
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: en
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 7
+      }
+    ]
+    eo:
+    [
+      {
+        Content: eo
+        Next: "n "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    ep:
+    [
+      {
+        Content: ep
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    er:
+    [
+      {
+        Content: er
+        Next: as
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    fu:
+    [
+      {
+        Content: fu
+        Next: ku
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Fu
+        Next: ge
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: Fu
+        Next: do
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Fu
+        Next: ji
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Fu
+        Next: te
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Fu
+        Next: ku
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+    ]
+    ga:
+    [
+      {
+        Content: ga
+        Next: ma
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ga
+        Next: ha
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ga
+        Next: ma
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: Ga
+        Next: ni
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ga
+        Next: ki
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    ge:
+    [
+      {
+        Content: ge
+        Next: "n "
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: Ge
+        Next: kk
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    gi:
+    [
+      {
+        Content: gi
+        Next: " N"
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: gi
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+    ]
+    Go:
+    [
+      {
+        Content: Go
+        Next: ng
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+    ]
+    gu:
+    [
+      {
+        Content: gu
+        Next: ts
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Gu
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    ha:
+    [
+      {
+        Content: ha
+        Next: ra
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ha
+        Next: na
+        Repeat: 1
+        Variable: null
+        Weight: 3
+      }
+      {
+        Content: ha
+        Next: ch
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ha
+        Next: nn
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ha
+        Next: mo
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ha
+        Next: ch
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    He:
+    [
+      {
+        Content: He
+        Next: ik
+        Repeat: 1
+        Variable: null
+        Weight: 3
+      }
+    ]
+    hi:
+    [
+      {
+        Content: hi
+        Next: hi
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: hi
+        Next: " N"
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: hi
+        Next: " F"
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: hi
+        Next: fu
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: hi
+        Next: ka
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: hi
+        Next: ga
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: hi
+        Next: as
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: hi
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 3
+      }
+      {
+        Content: hi
+        Next: ko
+        Repeat: 1
+        Variable: null
+        Weight: 4
+      }
+      {
+        Content: Hi
+        Next: ko
+        Repeat: 1
+        Variable: null
+        Weight: 3
+      }
+      {
+        Content: Hi
+        Next: me
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: Hi
+        Next: ne
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    hk:
+    [
+      {
+        Content: hk
+        Next: am
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    ho:
+    [
+      {
+        Content: ho
+        Next: de
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ho
+        Next: ho
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ho
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ho
+        Next: to
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ho
+        Next: or
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ho
+        Next: so
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ho
+        Next: no
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ho
+        Next: " O"
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ho
+        Next: te
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: Ho
+        Next: ta
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ho
+        Next: ji
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ho
+        Next: de
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: Ho
+        Next: su
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    "i ":
+    [
+      {
+        Content: "i "
+        Next: No
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: "i "
+        Next: Bu
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "i "
+        Next: Ny
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "i "
+        Next: Os
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "i "
+        Next: Mo
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "i "
+        Next: Yo
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "i "
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 29
+      }
+    ]
+    ib:
+    [
+      {
+        Content: ib
+        Next: io
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ib
+        Next: ut
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    ic:
+    [
+      {
+        Content: ic
+        Next: hi
+        Repeat: 1
+        Variable: null
+        Weight: 5
+      }
+    ]
+    id:
+    [
+      {
+        Content: id
+        Next: en
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: id
+        Next: "a "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Id
+        Next: zu
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Id
+        Next: "a "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    ih:
+    [
+      {
+        Content: ih
+        Next: ik
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    ii:
+    [
+      {
+        Content: ii
+        Next: kk
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    ij:
+    [
+      {
+        Content: ij
+        Next: in
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ij
+        Next: ot
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ij
+        Next: "u "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    ik:
+    [
+      {
+        Content: ik
+        Next: ok
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ik
+        Next: "o "
+        Repeat: 1
+        Variable: null
+        Weight: 4
+      }
+      {
+        Content: ik
+        Next: eg
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ik
+        Next: ot
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ik
+        Next: "e "
+        Repeat: 1
+        Variable: null
+        Weight: 3
+      }
+      {
+        Content: Ik
+        Next: "a "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    im:
+    [
+      {
+        Content: im
+        Next: "e "
+        Repeat: 1
+        Variable: null
+        Weight: 4
+      }
+      {
+        Content: im
+        Next: "o "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: im
+        Next: at
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: im
+        Next: an
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    in:
+    [
+      {
+        Content: in
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 3
+      }
+      {
+        Content: in
+        Next: "a "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: in
+        Next: ak
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: in
+        Next: oh
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: in
+        Next: us
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: in
+        Next: ic
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: In
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: In
+        Next: ar
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    io:
+    [
+      {
+        Content: io
+        Next: ga
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    ir:
+    [
+      {
+        Content: ir
+        Next: ii
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ir
+        Next: en
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    is:
+    [
+      {
+        Content: is
+        Next: "u "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: is
+        Next: ac
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: is
+        Next: uk
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    iw:
+    [
+      {
+        Content: iw
+        Next: "a "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Iw
+        Next: ar
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    iy:
+    [
+      {
+        Content: iy
+        Next: om
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    Iz:
+    [
+      {
+        Content: Iz
+        Next: an
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: Iz
+        Next: "u "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    ji:
+    [
+      {
+        Content: ji
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: ji
+        Next: "n "
+        Repeat: 1
+        Variable: null
+        Weight: 5
+      }
+      {
+        Content: ji
+        Next: ki
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ji
+        Next: "n "
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: Ji
+        Next: zo
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ji
+        Next: mm
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ji
+        Next: ko
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    Jo:
+    [
+      {
+        Content: Jo
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    ju:
+    [
+      {
+        Content: ju
+        Next: ha
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ju
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ju
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ju
+        Next: ro
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    ka:
+    [
+      {
+        Content: ka
+        Next: " Y"
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ka
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ka
+        Next: mi
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ka
+        Next: hi
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ka
+        Next: bi
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ka
+        Next: mi
+        Repeat: 1
+        Variable: null
+        Weight: 6
+      }
+      {
+        Content: Ka
+        Next: nz
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ka
+        Next: mu
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: Ka
+        Next: nn
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: Ka
+        Next: sh
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: Ka
+        Next: pp
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ka
+        Next: gu
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ka
+        Next: ri
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    ke:
+    [
+      {
+        Content: ke
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ke
+        Next: mo
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    ki:
+    [
+      {
+        Content: ki
+        Next: " T"
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ki
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: Ki
+        Next: sh
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+    ]
+    kk:
+    [
+      {
+        Content: kk
+        Next: we
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: kk
+        Next: "a "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    ko:
+    [
+      {
+        Content: ko
+        Next: ne
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ko
+        Next: na
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ko
+        Next: ta
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ko
+        Next: ku
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ko
+        Next: ji
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ko
+        Next: to
+        Repeat: 1
+        Variable: null
+        Weight: 3
+      }
+      {
+        Content: ko
+        Next: ho
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ko
+        Next: " O"
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ko
+        Next: " H"
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ko
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 3
+      }
+      {
+        Content: Ko
+        Next: no
+        Repeat: 1
+        Variable: null
+        Weight: 4
+      }
+      {
+        Content: Ko
+        Next: ki
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ko
+        Next: se
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ko
+        Next: ya
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ko
+        Next: ji
+        Repeat: 1
+        Variable: null
+        Weight: 3
+      }
+      {
+        Content: Ko
+        Next: bo
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: Ko
+        Next: ng
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    ku:
+    [
+      {
+        Content: ku
+        Next: ji
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ku
+        Next: sh
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: ku
+        Next: " N"
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ku
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 3
+      }
+      {
+        Content: ku
+        Next: ro
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ku
+        Next: " R"
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ku
+        Next: ya
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: ku
+        Next: na
+        Repeat: 1
+        Variable: null
+        Weight: 4
+      }
+      {
+        Content: ku
+        Next: ju
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ku
+        Next: " B"
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ku
+        Next: sa
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ku
+        Next: ni
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: Ku
+        Next: ku
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    Kw:
+    [
+      {
+        Content: Kw
+        Next: an
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    ma:
+    [
+      {
+        Content: ma
+        Next: " O"
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ma
+        Next: yo
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ma
+        Next: sa
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: ma
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 4
+      }
+      {
+        Content: ma
+        Next: " K"
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ma
+        Next: ri
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ma
+        Next: wa
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    mb:
+    [
+      {
+        Content: mb
+        Next: "o "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: mb
+        Next: og
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    me:
+    [
+      {
+        Content: me
+        Next: bi
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: me
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+    ]
+    mi:
+    [
+      {
+        Content: mi
+        Next: " M"
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: mi
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 7
+      }
+      {
+        Content: mi
+        Next: " K"
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Mi
+        Next: ro
+        Repeat: 1
+        Variable: null
+        Weight: 3
+      }
+      {
+        Content: Mi
+        Next: ko
+        Repeat: 1
+        Variable: null
+        Weight: 3
+      }
+    ]
+    mm:
+    [
+      {
+        Content: mm
+        Next: "u "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: mm
+        Next: at
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    mo:
+    [
+      {
+        Content: mo
+        Next: ch
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: mo
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: mo
+        Next: ta
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: mo
+        Next: no
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: mo
+        Next: ri
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Mo
+        Next: sh
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Mo
+        Next: mo
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Mo
+        Next: nj
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: Mo
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Mo
+        Next: ch
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    mu:
+    [
+      {
+        Content: mu
+        Next: " Y"
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: Mu
+        Next: su
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    My:
+    [
+      {
+        Content: My
+        Next: oo
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: My
+        Next: oi
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    "n ":
+    [
+      {
+        Content: "n "
+        Next: Hi
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "n "
+        Next: Go
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "n "
+        Next: My
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "n "
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 15
+      }
+      {
+        Content: "n "
+        Next: Bo
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "n "
+        Next: Gu
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    na:
+    [
+      {
+        Content: na
+        Next: gi
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: na
+        Next: sa
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: na
+        Next: bi
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: na
+        Next: " S"
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: na
+        Next: " B"
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: na
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: Na
+        Next: ka
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Na
+        Next: "i "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Na
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    nb:
+    [
+      {
+        Content: nb
+        Next: ai
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    ne:
+    [
+      {
+        Content: ne
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+    ]
+    ng:
+    [
+      {
+        Content: ng
+        Next: en
+        Repeat: 1
+        Variable: null
+        Weight: 4
+      }
+      {
+        Content: ng
+        Next: "u "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ng
+        Next: "o "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    ni:
+    [
+      {
+        Content: ni
+        Next: gi
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: ni
+        Next: to
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ni
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ni
+        Next: ts
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ni
+        Next: ch
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ni
+        Next: ju
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ni
+        Next: ni
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+    ]
+    nj:
+    [
+      {
+        Content: nj
+        Next: "u "
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+    ]
+    nm:
+    [
+      {
+        Content: nm
+        Next: yo
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    nn:
+    [
+      {
+        Content: nn
+        Next: on
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: nn
+        Next: ya
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    no:
+    [
+      {
+        Content: no
+        Next: mo
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: no
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 3
+      }
+      {
+        Content: no
+        Next: su
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: no
+        Next: ha
+        Repeat: 1
+        Variable: null
+        Weight: 3
+      }
+      {
+        Content: no
+        Next: " H"
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: no
+        Next: "o "
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: no
+        Next: "n "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: no
+        Next: " W"
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: no
+        Next: " O"
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: No
+        Next: " K"
+        Repeat: 1
+        Variable: null
+        Weight: 4
+      }
+      {
+        Content: No
+        Next: " M"
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+    ]
+    ns:
+    [
+      {
+        Content: ns
+        Next: ei
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+    ]
+    nt:
+    [
+      {
+        Content: nt
+        Next: en
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    Nu:
+    [
+      {
+        Content: Nu
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Nu
+        Next: sh
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    Ny:
+    [
+      {
+        Content: Ny
+        Next: or
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+    ]
+    nz:
+    [
+      {
+        Content: nz
+        Next: eo
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: nz
+        Next: ai
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    "o ":
+    [
+      {
+        Content: "o "
+        Next: Iw
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "o "
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 14
+      }
+      {
+        Content: "o "
+        Next: Na
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "o "
+        Next: Mi
+        Repeat: 1
+        Variable: null
+        Weight: 3
+      }
+      {
+        Content: "o "
+        Next: Ko
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "o "
+        Next: Go
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "o "
+        Next: Ka
+        Repeat: 1
+        Variable: null
+        Weight: 3
+      }
+      {
+        Content: "o "
+        Next: Ya
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "o "
+        Next: Ji
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "o "
+        Next: Hi
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "o "
+        Next: No
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "o "
+        Next: "O "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "o "
+        Next: My
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "o "
+        Next: Ch
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "O "
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+    ]
+    Oa:
+    [
+      {
+        Content: Oa
+        Next: no
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    od:
+    [
+      {
+        Content: od
+        Next: em
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    og:
+    [
+      {
+        Content: og
+        Next: am
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    oh:
+    [
+      {
+        Content: oh
+        Next: od
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: oh
+        Next: im
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: oh
+        Next: ik
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Oh
+        Next: "o "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    oi:
+    [
+      {
+        Content: oi
+        Next: "n "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    oj:
+    [
+      {
+        Content: oj
+        Next: "o "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    ok:
+    [
+      {
+        Content: ok
+        Next: "u "
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: ok
+        Next: "i "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ok
+        Next: "o "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ok
+        Next: un
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ok
+        Next: in
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    om:
+    [
+      {
+        Content: om
+        Next: "i "
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+    ]
+    on:
+    [
+      {
+        Content: on
+        Next: te
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: on
+        Next: se
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: on
+        Next: " B"
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: on
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: On
+        Next: "i "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    oo:
+    [
+      {
+        Content: oo
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    or:
+    [
+      {
+        Content: or
+        Next: "i "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: or
+        Next: ai
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+    ]
+    os:
+    [
+      {
+        Content: os
+        Next: at
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: Os
+        Next: ho
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    ot:
+    [
+      {
+        Content: ot
+        Next: en
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: ot
+        Next: "o "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ot
+        Next: oh
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    pp:
+    [
+      {
+        Content: pp
+        Next: "a "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    ra:
+    [
+      {
+        Content: ra
+        Next: "i "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ra
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ra
+        Next: id
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ra
+        Next: ij
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+    ]
+    ri:
+    [
+      {
+        Content: ri
+        Next: sh
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ri
+        Next: te
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ri
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 5
+      }
+      {
+        Content: ri
+        Next: " N"
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+    ]
+    ro:
+    [
+      {
+        Content: ro
+        Next: ji
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ro
+        Next: ku
+        Repeat: 1
+        Variable: null
+        Weight: 3
+      }
+      {
+        Content: ro
+        Next: ka
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ro
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    ru:
+    [
+      {
+        Content: ru
+        Next: ta
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    Ry:
+    [
+      {
+        Content: Ry
+        Next: uj
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    sa:
+    [
+      {
+        Content: sa
+        Next: ch
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: sa
+        Next: ts
+        Repeat: 1
+        Variable: null
+        Weight: 3
+      }
+      {
+        Content: sa
+        Next: ku
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: sa
+        Next: na
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: sa
+        Next: no
+        Repeat: 1
+        Variable: null
+        Weight: 6
+      }
+      {
+        Content: Sa
+        Next: ng
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Sa
+        Next: "n "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Sa
+        Next: nb
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Sa
+        Next: ku
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Sa
+        Next: mb
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Sa
+        Next: me
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Sa
+        Next: ru
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    se:
+    [
+      {
+        Content: se
+        Next: ns
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: se
+        Next: ri
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: Se
+        Next: ng
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    sh:
+    [
+      {
+        Content: sh
+        Next: "a "
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: sh
+        Next: iw
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: sh
+        Next: ij
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: sh
+        Next: im
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: sh
+        Next: am
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: sh
+        Next: "i "
+        Repeat: 1
+        Variable: null
+        Weight: 4
+      }
+      {
+        Content: sh
+        Next: ir
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: sh
+        Next: "u "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Sh
+        Next: oj
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Sh
+        Next: ot
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Sh
+        Next: ic
+        Repeat: 1
+        Variable: null
+        Weight: 3
+      }
+      {
+        Content: Sh
+        Next: ok
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+    ]
+    so:
+    [
+      {
+        Content: so
+        Next: " N"
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    su:
+    [
+      {
+        Content: su
+        Next: ri
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: su
+        Next: " K"
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: su
+        Next: bi
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: su
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 3
+      }
+      {
+        Content: su
+        Next: se
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: Su
+        Next: ku
+        Repeat: 1
+        Variable: null
+        Weight: 4
+      }
+      {
+        Content: Su
+        Next: sa
+        Repeat: 1
+        Variable: null
+        Weight: 6
+      }
+    ]
+    ta:
+    [
+      {
+        Content: ta
+        Next: ch
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ta
+        Next: ma
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ta
+        Next: ro
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ta
+        Next: "i "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ta
+        Next: hi
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ta
+        Next: ka
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: Ta
+        Next: ma
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    te:
+    [
+      {
+        Content: te
+        Next: "n "
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: te
+        Next: "i "
+        Repeat: 1
+        Variable: null
+        Weight: 3
+      }
+      {
+        Content: Te
+        Next: "n "
+        Repeat: 1
+        Variable: null
+        Weight: 3
+      }
+      {
+        Content: Te
+        Next: ng
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Te
+        Next: no
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    to:
+    [
+      {
+        Content: to
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 4
+      }
+      {
+        Content: to
+        Next: ko
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: to
+        Next: ke
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: To
+        Next: yo
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+    ]
+    ts:
+    [
+      {
+        Content: ts
+        Next: uc
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ts
+        Next: "u "
+        Repeat: 1
+        Variable: null
+        Weight: 4
+      }
+      {
+        Content: Ts
+        Next: uk
+        Repeat: 1
+        Variable: null
+        Weight: 3
+      }
+      {
+        Content: Ts
+        Next: ui
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    "u ":
+    [
+      {
+        Content: "u "
+        Next: Bo
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "u "
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 11
+      }
+      {
+        Content: "u "
+        Next: Ka
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "u "
+        Next: Sa
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "u "
+        Next: Ji
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "u "
+        Next: Te
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "u "
+        Next: Ju
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    ub:
+    [
+      {
+        Content: ub
+        Next: "i "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ub
+        Next: "a "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    uc:
+    [
+      {
+        Content: uc
+        Next: hi
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    ui:
+    [
+      {
+        Content: ui
+        Next: " M"
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ui
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    uj:
+    [
+      {
+        Content: uj
+        Next: in
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: uj
+        Next: oh
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: uj
+        Next: "o "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    uk:
+    [
+      {
+        Content: uk
+        Next: "i "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: uk
+        Next: uy
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: uk
+        Next: iy
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: uk
+        Next: "e "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: uk
+        Next: uj
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: uk
+        Next: "u "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Uk
+        Next: "e "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    um:
+    [
+      {
+        Content: um
+        Next: "a "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: um
+        Next: "e "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Um
+        Next: as
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Um
+        Next: is
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    un:
+    [
+      {
+        Content: un
+        Next: in
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    up:
+    [
+      {
+        Content: up
+        Next: " K"
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    us:
+    [
+      {
+        Content: us
+        Next: hi
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: us
+        Next: ub
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    ut:
+    [
+      {
+        Content: ut
+        Next: su
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    uy:
+    [
+      {
+        Content: uy
+        Next: om
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: uy
+        Next: "a "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    Uz:
+    [
+      {
+        Content: Uz
+        Next: um
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    wa:
+    [
+      {
+        Content: wa
+        Next: ya
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    we:
+    [
+      {
+        Content: we
+        Next: ch
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    ya:
+    [
+      {
+        Content: ya
+        Next: " N"
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: ya
+        Next: " H"
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: ya
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ya
+        Next: ku
+        Repeat: 1
+        Variable: null
+        Weight: 2
+      }
+      {
+        Content: Ya
+        Next: ma
+        Repeat: 1
+        Variable: null
+        Weight: 3
+      }
+    ]
+    yo:
+    [
+      {
+        Content: yo
+        Next: ra
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: yo
+        Next: ta
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: yo
+        Next: " M"
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: yo
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: yo
+        Next: "n "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Yo
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Yo
+        Next: mi
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    Za:
+    [
+      {
+        Content: Za
+        Next: "o "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    ze:
+    [
+      {
+        Content: ze
+        Next: "n "
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ze
+        Next: nm
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    zo:
+    [
+      {
+        Content: zo
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Zo
+        Next: ch
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    zu:
+    [
+      {
+        Content: zu
+        Next: mo
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Zu
+        Next: ch
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+  }
+  GeneratorType: Assignment
+}

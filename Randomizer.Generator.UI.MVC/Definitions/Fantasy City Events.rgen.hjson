@@ -1,0 +1,81 @@
+{
+  Name: City Daily Events (Fantasy)
+  Author: Lance Boudreaux
+  Description: Generates interesting events in a city that might be news worthy, intended to make the city feel more alive.
+  Version: "2.1"
+  Tags:
+  [
+    Fantasy
+	Event
+  ]
+  OutputFormat: Html
+  LineItems:
+  {
+    Start:
+    [
+      { Content: "[=Pick('A criminal','A political rival of the local ruler','An enemy of the city','A witch')] is to be public executed by [=Pick('hanging','beheading','burning at the stake','archers','stoning','pressing','the wheel','quartering','impalement')]."}
+      { Content: "[=Pick('A criminal','A political rival of the local ruler')] is to be [=Pick('tarred and feathered','placed in the stocks','flogged')] in public."}
+      { Content: "[=Pick('A market fair','A parade','A street fair','A tournament')] is being held in honor of [CelebrationReason]."}
+      { Content: "A [=Pick('rash of burglaries','flood in one of the districts','fire in one of the districts')] has been reported."}
+      { Content: "[=Pick('Rats','Spiders','Giant Rats','Giant Spiders','Snakes','Giant Snakes')] are spewing forth from the sewers."}
+      { Content: "A [=Pick('royal','noble','local','merchant')] [=Pick('child','man','woman')] has gone missing."}
+      { Content: "[ImportantPerson] is visiting the market."}
+      { Content: "The funeral of [ImportantPerson] is today."}
+      { Content: "The death of [ImportantPerson] is bringing [=Pick('joy','sadness')] to the city."}
+      { Content: "The [District] is under quarantine after a breakout of a [=Pick('bubonic','pneumatic','septicemic')] plague."}
+      { Content: "The local water supply has [=Pick('dried up','been diverted','been poisoned','become septic','overflowed')]."}
+      { Content: "Food supplies are running low and being rationed."}
+      { Content: "A bountiful supply of food has arrived and caused celebrations in the streets."}
+      { Content: "[ImportantPerson] has taken a large portion of the food supply."}
+      { Content: "Taxes on the citizens has been [=Pick('lowered','raised')]"}
+      { Content: "[Entertainers] have arrived in the city to [=Pick('great fanfare','little notice','general ire')]."}
+      { Content: "The [District] has been [=Pick('partially destroyed by','finished being rebuilt after the')] [=Pick('insect infestation','fire','flooding','an explosion','magic')]."}
+      { Content: "[=Pick('Orcs','Kobolds','Bugbears','Treants','Lizardfolk','Enemy forces')] attacked the city but were driven back by [=Pick('a group of local heroes','the city guards','the local army')]."}
+      { Content: "[=Pick('The city guards','The fisherman&rsquo;s guild','The merchant&rsquo;s guild','The local army')] has gone on strike."}
+      { Content: "[ImportantPerson] has taken ill leading to [=Pick('riots','celebration','mourning')] in the streets."}
+      { Content: "A political coupe has taken control of the government leading to [=Pick('riots','celebration')] in the streets."}
+      { Content: "The thieve's guild's hideout has been found and several prominent members have been arrested."}
+      { Content: "A missing [=Pick('royal','noble','local','merchant')] [=Pick('child','man','woman')] has been found [=Pick('in the sewers','in the forest','outside the city walls')] in a daze."}
+      { Content: "[ImportantPerson] is throwing an elaborate feast for the [=Pick('citizens','nobles')]."}
+      { Content: "No notable news on this fine day."}
+    ]
+    CelebrationReason:
+    [
+      { Content: "a [=Pick('royal','noble','local','merchant')] [=Pick('wedding','engagement','birth')]"}
+      { Content: "a bountiful harvest"}
+      { Content: "a military victory"}
+      { Content: "the local [=Pick('sun','moon','harvest','wine','hunting')] deity"}
+      { Content: "the end of [=Pick('winter','summer','spring','fall')]"}
+    ]
+    ImportantPerson:
+    [
+      { Content: "the king"}
+      { Content: "the governor"}
+      { Content: "the lord of the region"}
+      { Content: "the baron"}
+      { Content: "the clergy"}
+      { Content: "the high priest"}
+      { Content: "a guild leader"}
+      { Content: "an important merchant"}
+    ]
+    District:
+    [
+      { Content: "artisan district"}
+      { Content: "fishing docks"}
+      { Content: "royal district"}
+      { Content: "noble district"}
+      { Content: "slums"}
+      { Content: "marketplace"}
+      { Content: "merchant district"}
+      { Content: "guild district"}
+      { Content: "religious district"}
+    ]
+    Entertainers:
+    [
+      { Content: "a troupe of [=Pick('dancers','actors','jugglers','singers','musicians','jesters')]"}
+      { Content: "a circus"}
+      { Content: "gladiators"}
+    ]
+  }
+  GeneratorType: Assignment
+}

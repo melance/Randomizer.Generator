@@ -1,0 +1,391 @@
+{
+  Version: "2.0"
+  Tags: []
+  OutputFormat: Html
+  Parameters: {}
+  TextCase: None
+  Imports: []
+  LineItems:
+  {
+    AnyLetter:
+    [
+      {
+        Content: "[UpperConsonant]"
+        Repeat: 1
+        Weight: 21
+      }
+      {
+        Content: "[LowerConsonant]"
+        Repeat: 1
+        Weight: 21
+      }
+      {
+        Content: "[UpperVowel]"
+        Repeat: 1
+        Weight: 5
+      }
+      {
+        Content: "[LowerVowel]"
+        Repeat: 1
+        Weight: 5
+      }
+    ]
+    UpperCase:
+    [
+      {
+        Content: "[UpperConsonant]"
+        Repeat: 1
+        Weight: 21
+      }
+      {
+        Content: "[UpperVowel]"
+        Repeat: 1
+        Weight: 5
+      }
+    ]
+    LowerCase:
+    [
+      {
+        Content: "[LowerConsonant]"
+        Repeat: 1
+        Weight: 21
+      }
+      {
+        Content: "[LowerVowel]"
+        Repeat: 1
+        Weight: 5
+      }
+    ]
+    Digit:
+    [
+      {
+        Content: "0"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "1"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "2"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "3"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "4"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "5"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "6"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "7"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "8"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "9"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    UpperConsonant:
+    [
+      {
+        Content: B
+        Repeat: 1
+        Weight: 470
+      }
+      {
+        Content: C
+        Repeat: 1
+        Weight: 351
+      }
+      {
+        Content: D
+        Repeat: 1
+        Weight: 267
+      }
+      {
+        Content: F
+        Repeat: 1
+        Weight: 378
+      }
+      {
+        Content: G
+        Repeat: 1
+        Weight: 195
+      }
+      {
+        Content: H
+        Repeat: 1
+        Weight: 723
+      }
+      {
+        Content: I
+        Repeat: 1
+        Weight: 629
+      }
+      {
+        Content: J
+        Repeat: 1
+        Weight: 60
+      }
+      {
+        Content: K
+        Repeat: 1
+        Weight: 59
+      }
+      {
+        Content: L
+        Repeat: 1
+        Weight: 271
+      }
+      {
+        Content: M
+        Repeat: 1
+        Weight: 437
+      }
+      {
+        Content: N
+        Repeat: 1
+        Weight: 237
+      }
+      {
+        Content: P
+        Repeat: 1
+        Weight: 255
+      }
+      {
+        Content: Q
+        Repeat: 1
+        Weight: 17
+      }
+      {
+        Content: R
+        Repeat: 1
+        Weight: 165
+      }
+      {
+        Content: S
+        Repeat: 1
+        Weight: 776
+      }
+      {
+        Content: T
+        Repeat: 1
+        Weight: 1667
+      }
+      {
+        Content: V
+        Repeat: 1
+        Weight: 65
+      }
+      {
+        Content: W
+        Repeat: 1
+        Weight: 675
+      }
+      {
+        Content: X
+        Repeat: 1
+        Weight: 2
+      }
+      {
+        Content: Y
+        Repeat: 1
+        Weight: 162
+      }
+      {
+        Content: Z
+        Repeat: 1
+        Weight: 3
+      }
+    ]
+    LowerConsonant:
+    [
+      {
+        Content: b
+        Repeat: 1
+        Weight: 149
+      }
+      {
+        Content: c
+        Repeat: 1
+        Weight: 278
+      }
+      {
+        Content: d
+        Repeat: 1
+        Weight: 425
+      }
+      {
+        Content: f
+        Repeat: 1
+        Weight: 223
+      }
+      {
+        Content: g
+        Repeat: 1
+        Weight: 202
+      }
+      {
+        Content: h
+        Repeat: 1
+        Weight: 609
+      }
+      {
+        Content: j
+        Repeat: 1
+        Weight: 15
+      }
+      {
+        Content: k
+        Repeat: 1
+        Weight: 77
+      }
+      {
+        Content: l
+        Repeat: 1
+        Weight: 403
+      }
+      {
+        Content: m
+        Repeat: 1
+        Weight: 241
+      }
+      {
+        Content: n
+        Repeat: 1
+        Weight: 675
+      }
+      {
+        Content: p
+        Repeat: 1
+        Weight: 193
+      }
+      {
+        Content: q
+        Repeat: 1
+        Weight: 10
+      }
+      {
+        Content: r
+        Repeat: 1
+        Weight: 599
+      }
+      {
+        Content: s
+        Repeat: 1
+        Weight: 633
+      }
+      {
+        Content: t
+        Repeat: 1
+        Weight: 906
+      }
+      {
+        Content: v
+        Repeat: 1
+        Weight: 98
+      }
+      {
+        Content: w
+        Repeat: 1
+        Weight: 236
+      }
+      {
+        Content: x
+        Repeat: 1
+        Weight: 15
+      }
+      {
+        Content: y
+        Repeat: 1
+        Weight: 197
+      }
+      {
+        Content: z
+        Repeat: 1
+        Weight: 7
+      }
+    ]
+    UpperVowel:
+    [
+      {
+        Content: A
+        Repeat: 1
+        Weight: 1160
+      }
+      {
+        Content: E
+        Repeat: 1
+        Weight: 201
+      }
+      {
+        Content: I
+        Repeat: 1
+        Weight: 629
+      }
+      {
+        Content: O
+        Repeat: 1
+        Weight: 626
+      }
+      {
+        Content: U
+        Repeat: 1
+        Weight: 149
+      }
+    ]
+    LowerVowel:
+    [
+      {
+        Content: a
+        Repeat: 1
+        Weight: 817
+      }
+      {
+        Content: e
+        Repeat: 1
+        Weight: 1270
+      }
+      {
+        Content: i
+        Repeat: 1
+        Weight: 697
+      }
+      {
+        Content: o
+        Repeat: 1
+        Weight: 751
+      }
+      {
+        Content: u
+        Repeat: 1
+        Weight: 276
+      }
+    ]
+  }
+  GeneratorType: Assignment
+}

@@ -1,0 +1,767 @@
+{
+  Name: "2,000,000+ Fantasy (D&D) Plot Hooks"
+  Author: Dedli (implemented by Lance Boudreaux)
+  Description: Generates a large variety of fantasy plot hooks tied mostly to D&D
+  Version: "2.0"
+  URL: https://www.reddit.com/r/rpgtables/comments/2siu9r/200000000_plot_hooks/
+  Tags:
+  [
+    D&D
+    Encounter
+    Fantasy
+  ]
+  OutputFormat: Html
+  Parameters: {}
+  TextCase: None
+  Imports: []
+  LineItems:
+  {
+    Start:
+    [
+      {
+        Content: "[Result+ResultEx]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Result:
+    [
+      {
+        Content: "[NPC+NPCEx] [Quirk+QuirkEx] [Doing]."
+        Repeat: 1
+        Weight: 19
+      }
+    ]
+    ResultEx:
+    [
+      {
+        Content: "[Result] and [Result]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    NPC:
+    [
+      {
+        Content: "[DragonAge] [ChromaticDragon]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[DragonAge] [MetallicDragon]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('An elf','A dwarf','A halfling','A human')] [=Pick('acolyte','scholar','noble','knight','cultist','druid','monk','elder','sorcerer','wizard','thief','artisan')]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('A goblin','An orc','A dragonborn','A gnome','A pixie','A merfolk')] [=Pick('acolyte','scholar','noble','knight','cultist','druid','monk','shaman','sorcerer','wizard','thief','artisan','farmer','miner')]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('A troll','A goblin','An ogre','A half-giant','A centaur','A tiefling','An aasimar')]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('A stone','A storm','A fire','A hill','A frost','An eldrich','A death','A sand')] [=Pick('giant','half-giant')]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('A rock','An air','A fire','A water')] elemental"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('A fiend','A celestial','A half-demon','A half-angel')]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Your [=Pick('parent','sibling','rich aunt','rich uncle','old friend','old enemy','doppelganger')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('A bard','A pirate','A thug','A noble')]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: The object to your left, coming to life
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A sentient [=Pick('owlbear','lion','tiger','bear','wolf','bird','snake','fish','ape','dinosaur')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('A lich','A dracolich','A beholder','A telephatic grell','A mindflayer','A demigod','Your alter-ego','A murloc (yes, a warcraft murloc)')]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: The closest [=Pick('wooden item','plant','stone object','metal object')] to you, preferably in your hand, animated
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A were[=Pick('lion','bear','rat','bat','tiger','llama','snake','tarantula')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A werewolf
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    NPCEx:
+    [
+      {
+        Content: The [=Pick('ghost','spectral image')] of [NPC]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('An undead','A skeletal')] [NPC]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    DragonAge:
+    [
+      {
+        Content: A wyrmling
+        Repeat: 1
+        Weight: 9
+      }
+      {
+        Content: A young
+        Repeat: 1
+        Weight: 5
+      }
+      {
+        Content: An adult
+        Repeat: 1
+        Weight: 5
+      }
+      {
+        Content: An ancient
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    ChromaticDragon:
+    [
+      {
+        Content: white
+        Repeat: 1
+        Weight: 2
+      }
+      {
+        Content: blue
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: green
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: black
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: red
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    MetallicDragon:
+    [
+      {
+        Content: brass
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: bronze
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: copper
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: gold
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: silver
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Quirk:
+    [
+      {
+        Content: the size of [=Pick('a gold coin','an oak tree')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: with anger issues
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: that has a lisp
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: that speaks too [=Pick('loudly','quietly')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: that can't help but turn everything into a joke
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: that has no sense of humor
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: that is missing [=Pick('an eye','a leg','an arm','a hand')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: elder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: that is racist against [=Pick('your','your ally\'s')] race
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: that was secretly sent to [=Pick('kill you','kill your ally','lead you to their master so you can be eaten','spy on you','steal your most prized item','eliminate and become you')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: that has amnesia and a note with their goals
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: that is way too [=Pick('clingy','much of an asshole','sexy for your eyes to behold','high level for this shit')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: that gives [=Pick('you','your friends')] dirty looks
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: that has a soft side
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: that is secretly [=Pick('the opposite gender','a different race')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: nymphomaniac
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: kleptomaniac
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: that is totally insane
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: that is a [=Pick('sadist','masochist')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: that is secretly a villain or a hero if they appear to be a villain already
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: that is invisible to everyone but you
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: that is cursed to not be able to make any sound
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: that [=Pick('is blind','is deaf','is deaf and blind','has truesight')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('mind-reader','telepath')]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: that is very [Ability]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: that is not very [Ability]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: that is cursed to trust [=Pick('no one','everyone')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: that is secretly someone from your past, or impersonating someone from your past if they already appear as someone from your past
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: that is divinely [=Pick('lucky','unlucky')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: that embodies [DeadlySins+DeadlySinsEx]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: that embodies [HeavenlyVirtues+HeavenlyVirtuesEx]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: that secretly [=Pick('loves you','hates you','loves your ally','hates your ally')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: child
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: that smells [=Pick('heavenly','horrible')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: that is cursed to say the opposite of what they want to
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: that is actually [NPC]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: that is a powerful illusion, caused by a [=Pick('wizard','sorceror','warlock','trickster')]
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    QuirkEx:
+    [
+      {
+        Content: "[Quirk] and is unknowingly poisoned and will die in 24 hours if untreated"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Quirk] and is unknowingly cursed and will transform into a monstrous version of itself in 24 hours and attack all in sight"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Quirk] and [Quirk]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Ability:
+    [
+      {
+        Content: strong
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: dexterous
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: hearty
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: intelligent
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: wise
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: charismatic
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    DeadlySins:
+    [
+      {
+        Content: greed
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: lust
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: sloth
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: wrath
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: envy
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: pride
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: gluttony
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    DeadlySinsEx:
+    [
+      {
+        Content: "[DeadlySins] and [DeadlySins]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    HeavenlyVirtues:
+    [
+      {
+        Content: chastity
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: temperance
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: charity
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: diligence
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: patience
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: kindness
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: humility
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    HeavenlyVirtuesEx:
+    [
+      {
+        Content: "[HeavenlyVirtues] and [HeavenlyVirtues]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Doing:
+    [
+      {
+        Content: asks if you would like to [=Pick('hear a joke','hear a song','join them for an event','earn some quick money','play a game','see something crazy')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: accuses you of stealing a magical item
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: begins to charge at you with [=Pick('fury','lust')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: challenges you to a [=Pick('duel','race','arm-wrestling challenge','performance challenge','game of chance','intelligence challenge','eating contest')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: begs you to help them save a loved one from [=Pick('goblinoids','humanoids','fiends','celestials')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: begs you to help protect them from [=Pick('assassins','a debt collector','an ex-lover','a supernatural stalker')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('begs','demands','offers gold for','lets you know that no one wants')] you to save a loved one from old enemies"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: offers an unrealistic amount of gold for the head of an enemy
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('tries to hit on you, in the lamest way possible','confesses their love for you in the most passionate way possible')]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: IS ON FIRE
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: is leading an attack on your location
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: appears out of thin air and yells "There is not time! Come with me!"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: puts a knife to your neck and whispers "Don't flinch..."
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: asks if you remember them
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: is [=Pick('crying and pleading to you','yelling furiously at you','speaking happily to you','apparently flirting with you')] in a language you don't understand
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('insults you','compliments you')] drunkenly"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: is obviously stalking you
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: demands that you pay them for the damages you've caused
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: is an old [=Pick('friend','rival','lover','relative','work associate','vaguely familiar individual')] from your past, whom you haven't seen in years
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: owes you [=Pick('a favor','money')], and it's time to collect
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: attempts to distract you from something important
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: asks if you have time to talk about your lord and savior, [=Pick('Bahamut','Pelor','Blipdoolpoolp','Orcus','Cthulu','Tiamat','Gruumsh')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: asks if they can hire some assistance in finding [=Pick('an ancient artifact','a legendary location','a means to travel to another continent or world','a pet','a lost relative','a lost toy')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: is impersonating you and [=Pick('stealing','murdering','vandalizing','gathering a party together using your fame','scamming','donating to charity')] in your name
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: arrives [=Pick('in a bland vehicle like a boat or wagon','in an exotic vehicle like an airship','on a common mount','on a rare or ridiculous mount')], shouts "There's no time to explain!", and expects you to join them
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: is telling a story about you which is [=Pick('true','false','exaggerated')] and [=Pick('heroic','humiliating','honor-less','charitable','wicked')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: is your worse enemy and looking right at you, ready to [=Pick('attack','flee')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: has a life-threatening [=Pick('extremely contagious','maddening','disgusting','extremely contagious, disgusting, and maddening')] disease and asks to hire you to find the antidote
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: is drowning
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: is fighting with another random NPC, and [=Pick('losing','winning')].  The loser calls for help
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: throws something large and dangerous at you
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: yells, "They\'re coming! Everybody hide!"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: desperately needs your help, but is under a spell that doesn't allow them to explain the situation
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: hands you an envelope with a note, with a wink, and then leaves.  It contains [=Pick('your darkest secret','a scrying-orb capture photograph of a loved on in chains','a threat against your home','a threat against your life')] and a polite request for [=Format(Roll(1,20)*1000,'#,##0')] gp
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: is hanging off the edge of something high of the ground and calling for help
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: demands that you tell them [=Pick('where their family is','who you\'re working with','what\'s in your pocket','your birthday and mother\'s maiden name')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: informs you that your bank accounts are empty
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: give you [Given]
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Given:
+    [
+      {
+        Content: a magic item
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: a letter from a loved one you thought was dead
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: an heirloom from a fallen family member, who you hadn\'t yet learned had died
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[=Format(Roll(1,100)*100,'#,##0')] sp"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+  }
+  GeneratorType: Assignment
+}

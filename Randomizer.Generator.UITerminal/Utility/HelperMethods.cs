@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Randomizer.Generator.UITerminal.Utility
+namespace Randomizer.Generator.UI.Terminal.Utility
 {
 	static class HelperMethods
 	{

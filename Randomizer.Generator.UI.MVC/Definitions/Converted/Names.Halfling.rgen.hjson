@@ -1,0 +1,1449 @@
+{
+  Name: Halfling Names
+  Author: Lance Boudreaux
+  Description: Generates random halfling/hobbit names in the spirit of fantasy worlds such as LotR, D&D, etc.
+  Version: "2.0"
+  Tags:
+  [
+    Names
+    Fantasy
+    Test
+  ]
+  OutputFormat: Html
+  Parameters:
+  {
+    Gender:
+    {
+      Value: Any
+      Display: Gender
+      Aliases: []
+      Type: List
+      Options:
+      [
+        Any:Any
+        Female:Female
+        Male:Male
+      ]
+    }
+  }
+  TextCase: None
+  Imports: []
+  LineItems:
+  {
+    Start:
+    [
+      {
+        Content: "[Gender] [Surname]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Any:
+    [
+      {
+        Content: "[Male]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Female]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Male:
+    [
+      {
+        Content: "[MalePrefix][MaleSuffix]"
+        Repeat: 1
+        Weight: 2
+      }
+      {
+        Content: "[MaleName]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Female:
+    [
+      {
+        Content: "[FemalePrefix][FemaleSuffix]"
+        Repeat: 1
+        Weight: 2
+      }
+      {
+        Content: "[FemaleName]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Surname:
+    [
+      {
+        Content: "[SurnamePrefix][SurnameSuffix]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    MalePrefix:
+    [
+      {
+        Content: Adal
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Adel
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Al
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Band
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bil
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bun
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cal
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Du
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Eld
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Fal
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Fos
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Fro
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Gar
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Gen
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hol
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Kep
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Mi
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Min
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Os
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Perv
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pim
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ron
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ror
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sara
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sere
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Thea
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: And
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cot
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Grif
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Lar
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Mor
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ruf
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tol
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: An
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bo
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cot
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Fil
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hal
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Lon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pal
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Por
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sam
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Well
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bal
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bol
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dro
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Flam
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Lo
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Mun
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pos
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: San
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    MaleName:
+    [
+      {
+        Content: Cade
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Lyle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Odo
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Olo
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Otho
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Polo
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sam
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    MaleSuffix:
+    [
+      {
+        Content: ald
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ard
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: bert
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: bo
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: born
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: by
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: cho
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: co
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: dac
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: do
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: doc
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: dric
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: fo
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: fred
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ger
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: go
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: grim
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: imac
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ince
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: kin
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: li
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: lo
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: man
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: obras
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: on
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ret
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: rill
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ro
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: son
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: tar
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: tho
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: to
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ton
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: wise
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: us
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    FemalePrefix:
+    [
+      {
+        Content: Adal
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Amar
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Angel
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Asp
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bel
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bella
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ber
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cam
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Car
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Celan
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Charm
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dona
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Eglan
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Elan
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Esme
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Euph
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Gwis
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hil
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Jill
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Lav
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Lid
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Lob
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Mal
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Mari
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Melin
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Men
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Mer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Mira
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pan
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pet
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pop
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Port
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Prim
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pris
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sera
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Susan
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ver
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    FemaleName:
+    [
+      {
+        Content: Cora
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Crystal
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Daisy
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Diamond
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dora
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Gilly
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Lily
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: May
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pearl
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Peony
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Rose
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ruby
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Violet
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    FemaleSuffix:
+    [
+      {
+        Content: aine
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ba
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: bella
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: belle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ca
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: da
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: dine
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: donna
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: dria
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: dy
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ella
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ellia
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: emia
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: gold
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ia
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ian
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ica
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: inia
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: issa
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: la
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: mira
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: na
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: nah
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: odel
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: or
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: phina
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: py
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: relda
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: rilly
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: sy
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: tha
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: tine
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ton
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ula
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: va
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ylla
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: yllis
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    SurnamePrefix:
+    [
+      {
+        Content: Am
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ash
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Band
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bof
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bol
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Brace
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Brown
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Brush
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bull
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bur
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cot
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dud
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Gam
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Gard
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Good
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Green
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ham
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Heather
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: High
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Horn
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Jallis
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Kalli
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Lea
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Linden
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Mar
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Meli
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Mill
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Mount
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: New
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Old
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Org
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ost
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Over
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Quet
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Short
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tal
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tea
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Thorn
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tight
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Toss
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Under
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Weather
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    SurnameSuffix:
+    [
+      {
+        Content: all
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: barrel
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: bee
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: blower
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: body
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: bot
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: bottle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: bough
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: bridge
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: brook
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: cobble
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: field
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: fin
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: fur
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: gate
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: gallow
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: gather
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ger
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: girdle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: good
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: hill
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: leaf
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ley
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: lock
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: lot
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: midas
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: midge
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ner
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: roar
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: row
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: son
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: span
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ster
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: tan
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: toe
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ton
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: top
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: tory
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ulas
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: wart
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: wax
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: wick
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: witch
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: worthy
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+  }
+  GeneratorType: Assignment
+}

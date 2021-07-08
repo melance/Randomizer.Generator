@@ -1,0 +1,6727 @@
+{
+  Name: null
+  Author: null
+  Description: null
+  Version: "2.0"
+  URL: null
+  Tags: []
+  OutputFormat: Html
+  Parameters: {}
+  TextCase: None
+  Imports: []
+  LineItems:
+  {
+    Career:
+    [
+      {
+        Content: "[Administration]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[Construction]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[Education]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[Engineering]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[Entertainment]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[Farming]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[Finance]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[Food]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[Government]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[Health]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[Legal]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[Management]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[Manufacturing]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[Media]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[Mining]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[Science]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[RealEstate]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[Volunteer]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[Retail]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[Service]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[Transportation]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    Administration:
+    [
+      {
+        Content: Account Collector
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Administrative Assistant
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Bill Collector
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Chief Financial Officer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Computer Operator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Crossing Guard
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Customer Service Representative
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Cutting Machine Operator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Data Entry Keyer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Dispatcher
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Environmental Science Technician
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Executive Secretary
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: File Clerk
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Hand [=Pick('Packer','Packager')]
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Hazardous Materials Removal Worker
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Housekeeping Supervisor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Janitorial Supervisor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Landscape Architect
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Landscape Contractor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Locksmith
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Mail Clerk
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Mail Machine Operator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Medical Transcriptionist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Office Clerk
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Office Machine Mechanic
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Offset Press Operators
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Packaging Machine Operator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Pest Control Worker
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Pesticide Handler
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Pressing Machine Operator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Private [=Pick('Detectives','Investigators')]
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Safe Repairer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Security Guard
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Switchboard Operator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Tax Collector
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Team Assembler
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Telemarketer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Tour Guide
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Travel Agent
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Travel Clerks
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Travel Counselor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Tree Trimmer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Utility Meter Reader
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Demonstrators','Product Promoters')]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Forklift','Industrial Truck')] Operators"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Freight','Stock')] Handler"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Light Duty','Long Distance')] Truck Driver"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Refuse','Recyclable')] Material Collector"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Security','Fire Alarm')] System Installer"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Weigher','Measurer')]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    Entertainment:
+    [
+      {
+        Content: Animation Cartoonist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Art Appraiser
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Art Director
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Art Restorer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Book Editor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Cartoonist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Commercial Designer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Fabric and Apparel Patternmaker
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Fashion Coordinator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Film Editor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Film Laboratory Technician
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Floral Designer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Furniture Designer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Furniture Finishers
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Glass Blower
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Graphic Designer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Interior Designer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Medical and Scientific Illustrator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Model Maker
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Museum [=Pick('Technician','Conservator')]
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ornamental-Metalwork Designer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Platemaker
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Proofreaders and Copy Marker
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Screen Writer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Set Designer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Set Illustrator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Speech Writer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Sportswriter (Journalist)
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Technical Illustrator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Textile Designer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Web Art Director
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Etcher','Engraver')]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Poet','Lyricists')]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Writer','Author')]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Actor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Aquarium Curator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Artists [=Pick('Agent','Manager')]
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Athletic Coach
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Athletic Trainer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Audio-Visual Collections Specialist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Audiovisual Production Specialist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Camp Director
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Caption Writer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Casino Cage Worker
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Casino Cashier
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Casino Dealer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Casino Floor Person
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Casino Manager
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Casino Pit Boss
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Casino Slot Machine Mechanic
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Casino Surveillance Officer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Casting Director
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Choreographer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Copy Writer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Costume Attendant
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Craft Artist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Dancer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Disk Jockey
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Dressing Room Attendant
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Exhibit Artist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Exhibit Designer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Fashion Artist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Fashion Designer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Fashion Model
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Fine Artist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Fitness Trainer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Game Runner
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Makeup Artist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Motion Picture Director
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Motion Picture Projectionist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Museum Curator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Music Director
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Music [=Pick('Arranger','Orchestrator')]
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Musical Instrument Tuner
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Musician
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Printmaker
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Professional Sports Scout
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Props and Lighting Technician
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Recreation Leader
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Recreational Protective Service Worker
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Script Editor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Singer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Sound Engineering Technician
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Stained Glass Artist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Technical [=Pick('Director','Manager')]
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Travel Writer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Vending Machine Mechanic
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Amusement Park','Recreation')] Attendant"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Radio','TV')] Talk Show Host"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Referee','Umpire')]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Sport/'s','Entertainment')] [=Pick('Agent','Manager')]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Usher','Lobby')] Attendant"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    Construction:
+    [
+      {
+        Content: Building Inspector
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Building Maintenance Mechanic
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Cabinet Maker
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Carpenter's Assistant
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Carpet Installer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ceiling Tile Installer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Cement Mason
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Construction Driller
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Construction Laborer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Construction Manager
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Construction Trades Supervisor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Construction and Maintenance Painter
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Cost Estimator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Crane Operator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Dry Wall Installer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Electric Meter Installer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Electrical Drafter
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Electrical and Electronic Inspector
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Electronic Drafter
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Elevator Mechanic
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Excavating Machine Operator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Fence Installer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Fire Prevention Engineer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Fire Protection Engineer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Fire Protection Engineering Technician
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Hardwood Floor Finisher
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Heating, A/C, & Refrigeration Technician
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Heavy Equipment Mechanic
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Home Appliance Installer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Home Entertainment System Installer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Industrial Painter
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Insulation Installer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Land Surveyor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Metal Casting Machine Operator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Metal Fabricator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Overhead Door Installer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Painters, Transportation Equipment
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Plumber
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Power-Line Installer and Mechanic
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Product Safety Engineer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Radio Mechanic
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Safety Inspector
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Septic Tank and Sewer Servicer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Sheet Metal Workers
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Telecommunications Line Installers and Repairers
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Telecommunications Maintenance Worker
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Telecommunications Technician
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Telephone Station Installers
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Tile and Marble Setter
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Bulldozer','Grader')] Operator"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Gas','Arc','Plasma','Laser')] Welder"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Plasterers','Stucco')] Mason"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    Education:
+    [
+      {
+        Content: Adult Literacy and Remedial Education Teacher
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Agricultural Sciences Professor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Alumni Relations Coordinator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Anthropology and Archeology Professor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Architecture Professor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Area, Ethnic, and Cultural Studies Professor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Athletic Director
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Biology Professor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Business Professor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Career Counselor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Chemistry Professor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Child Care Worker
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: College/University Professor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Communications Professor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Computer Science Professor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Criminal Justice Professor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Deaf Students Teacher
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Disabled Students Teacher
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Economics Professor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Education Professor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Education and Training Administrator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Educational Administrator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Educational Psychologist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Educational Resource Coordinator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Educational Therapist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Elementary School Administrator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Elementary School Teacher
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Employee Training Instructor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Engineering Professor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Environmental Science Professor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Foreign Language Teacher
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Foreign Student Adviser
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Forestry and Conservation Professor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Geography Professor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Graduate Teaching Assistant
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Health Educators
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: High School Administrator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: High School Guidance Counselor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: High School Teacher
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: History Professor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Home Economics Teacher
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Industrial Entertainment Teacher
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Instructional Coordinators
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Kindergarten Teacher
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Law Professor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Library Science Professor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Math Professor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Mentally Retarded Students Teacher
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Middle School Administrator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Middle School Guidance Counselor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Middle School Teacher
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Music Teacher
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Nursing Professor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Outdoor Education Teacher
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Philosophy and Religion Professor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Physical Education Instructor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Physics Professor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Political Science Professor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Preschool Administrator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Preschool Teacher
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Psychology Professor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Religious Institution Education Coordinator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Resource Teacher
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Self-Enrichment Education Teacher
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Social Work Professor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Sociology Professor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Special Education Administrator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Student Admissions Administrator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Student Affairs Administrator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Student Financial Aid Administrator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Teacher of the Blind
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Teachers Aide
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Vocational Education Instructor College
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Vocational Education Teacher High School
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Vocational Education Teacher Middle School
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Art','Drama','Music','Dance')] Professor"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('English Language','Literature')] Professor"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    Engineering:
+    [
+      {
+        Content: Airport Design Engineer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Biomedical Engineer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ceramic Engineer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Chemical Engineer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Civil Drafter
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Civil Engineer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Civil Engineering Technician
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Electrical Engineer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Electronics Engineer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Environmental Engineer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Factory Layout Engineer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Hydraulic Engineer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Irrigation Engineer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Marine Engineer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Mechanical Engineer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Mining Engineer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Nuclear Engineer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Nuclear Fuels Research Engineer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Petroleum Engineer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Photogrammetric Engineer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Quality Control Engineer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Radiation Protection Engineer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Reliability Engineer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Soil Engineer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    Farming:
+    [
+      {
+        Content: Agricultural Crop Farm Manager
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Agricultural Engineer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Agricultural Equipment Operator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Agricultural Inspector
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Agricultural Product Sorter
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Agricultural Technician
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Animal Breeder
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Animal Husbandry Worker Supervisor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Animal Kennel Supervisor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Animal Trainer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Animal [=Pick('Keeper','Groomer')]
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Commercial Fisherman
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Crop Workers Supervisor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Dairy Technologist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Farm Equipment Mechanic
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Farm Hand
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Farm Labor Contractor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Farm Manager
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Farm Products Purchasing Agent
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Farmworker
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Fish Hatchery Specialist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Fishery Worker Supervisor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Forest Engineer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Forest Fire Inspector
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Forest Fire Prevention Supervisor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Forest and Conservation Technician
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Greenhouse and Nursery Manager
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Livestock Commission Agent
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Log Grader and Scaler
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Logging Tractor Operator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Logging Worker Supervisor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Nursery Worker
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Park Naturalist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Plant Breeder
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Range Manager
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Soil Conservation Technician
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Soil Conservationist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Wildlife Control Agent
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Farmer','Rancher')]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    Finance:
+    [
+      {
+        Content: ATM Machine Servicer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Accounting Specialist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Adjustment Clerk
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Advertising Account Executive
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Bank Examiner
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Bank Teller
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Billing Specialist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Broker's Floor Representative
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Brokerage Clerk
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Budget Accountant
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Budget Analyst
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Certified Public Accountant
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Controller
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Correspondence Clerk
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Cost Accountant
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Credit Adjuster
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Credit Analyst
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Credit Reporter
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Finance Manager
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Financial Aid Counselor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Financial Analyst
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Financial Examiner
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Financial Planner
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Financial Services Sales Agent
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Foreign Exchange Trader
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Fund Raiser
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Funds Development Administrator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Home Economist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Insurance Adjuster
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Insurance Agent
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Insurance Appraiser
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Insurance Claim Examiner
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Insurance Claims Adjuster
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Insurance Claims Clerks
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Insurance Estate Planner
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Insurance Policy Processing Clerk
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Insurance Underwriter
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Internal Auditor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Loan Counselor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Loan Interviewers and Clerks
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Loan Officer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Medical Insurance Claims Analyst
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: New Accounts Clerk
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Property Accountant
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Property Assessor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Real Estate Sales Agent
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Securities Broker
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Systems Accountant
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Tax Accountant
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Tax Auditor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Tax Examiner
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Tax Preparer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Bank','Branch')] Manager"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    Food:
+    [
+      {
+        Content: Baker
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Barista
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Bartender
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Bus Boy / Bus Girl
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Chef
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Cook
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Dishwasher
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Food Batchmaker
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Food Preparation Worker
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Food Science Technician
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Food Technologist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Host
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Hotel Convention/Events Coordinator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Hotel Manager
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Restaurant Food Coordinator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Waiter
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Baggage Porter','Bellhop')]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Counter','Rental')] Clerks"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Hotel','Motel')] Desk Clerk"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    Government:
+    [
+      {
+        Content: Administrative Law Judge
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Administrative Service Manager
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Aeronautical & Aerospace Engineer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Aerospace Engineering Technician
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Air Traffic Controller
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Aircraft Mechanic
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Airfield Operations Specialist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ambulance Driver
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Animal Control Worker
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Anti-Terrorism Intelligence Agent
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Armored Assault Vehicle Crew Member
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Armored Assault Vehicle Officer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Artillery and Missile Crew Member
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Artillery and Missile Officer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ballistics Expert
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Border Patrol Agent
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Bridge and Lock Tender
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Bus Driver
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Child Support Investigator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Child Support Services Worker
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: City Planning Aide
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Community Organization Worker
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Community Welfare Worker
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Congressional Aide
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Correction Officer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Court Administrator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Court Clerk
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Court Reporter
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Criminal Investigator (Detective)
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Criminal Lawyer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Customs Inspector
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Deputy Sheriff
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Equal Opportunity Representative
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Family Caseworker
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Fire Inspector
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Fire Investigator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Fire Prevention Engineer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Fire Protection Engineer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Fire Protection Engineering Technician
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Firefighter
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Fish & Game Warden
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Food & Drug Inspector
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Foreign Service Officer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Foreign Service Peacekeeping Specialist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Forensic Science Technician
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Forensics Psychologist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Forest Fire Inspector
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Forest Fire Prevention Supervisor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Fraud Investigator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Government Budget Analyst
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Government Property Inspectors
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Government Service Executives
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Harbor, Lake & Waterways Police
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Hearing Officer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Highway Maintenance Worker
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Highway Patrol Pilot
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Historic Site Administrator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Immigration Inspector
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Infantry Officers
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Instructor, Police-Canine Services
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Intelligence Specialist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Law Clerk
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Legislative Assistant
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Legislator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Library Assistant
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Library Consultant
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Library Technician
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: License Clerk
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Licensing Examiner
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Marine and Aquatic Biologist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Medical Examiner/Coroner
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Military Analyst
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Military Control Center Specialist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Military Officer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Military-Enlisted Personnel
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Missing Person Investigator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Municipal Fire Fighting Supervisor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Narcotics Investigator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Occupational Safety & Health Inspector
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Park Naturalist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Parking Enforcement Officer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Parole Officer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Patent Agent
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Police Artist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Police Identification and Records Officer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Police Officer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Police and Detectives Supervisor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Political Scientist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Postal Service Clerks
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Postal Service Mail Carrier
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Postal Service Mail Sorter
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Probate Lawyer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Probation Officer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Range Manager
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Revenue Agent
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Sheriff
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Social Welfare Administrator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Social Worker
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Soil Conservation Technician
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Soil Conservationist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Special Forces Officers
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Special Forces
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Tax Auditor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Tax Collector
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Tax Examiner
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Town Clerk
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Traffic Technician
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Transit and Railroad Police
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Transportation Security Screener
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Transportation Systems Design Engineer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Unemployment Inspector
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Urban and Regional Planner
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Water Pollution Control Inspector
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Welfare Eligibility Worker
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Wildlife Biologist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Word Processing Specialist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Zoologist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('County','City')] Auditor"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Postmaster','Mail Superintendent')]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Social','Community')] Service Manager"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Subway','Streetcar')] Conductor"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    Health:
+    [
+      {
+        Content: Alcohol & Drug Abuse Assistance Coordinator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ambulance Driver
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Anesthesiologist (MD)
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Art Therapist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Cardiologist (MD)
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Cardiopulmonary Technologist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Clinical Dietitian
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Clinical Psychologist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Clinical Sociologist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Community Health Nurse
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Counseling Psychologist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Dental Assistant
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Dental Hygienist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Dental Laboratory Technician
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Dentist (MD)
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Dermatologist (MD)
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Developmental Psychologist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Dietetic Technician
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: EEG Technician
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Emergency Medical Technician
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Exercise Physiologist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Experimental Psychologist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Family Practitioner (MD)
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Field Health Officer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: General Internists (MD)
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Gynecologist (MD)
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Health Care Facilities Inspector
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Health Case Manager
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Health Psychologist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Home Health Aide
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Home Health Technician
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Hospital Administrator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Hospital Nurse
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Human Factors Psychologist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Industrial Health Engineer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Industrial Therapist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Industrial-Organizational Psychologist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Licensed Practical Nurse (LPN)
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Manual Entertainment Therapist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Massage Therapist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Medical Administrative Assistant
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Medical Appliance Technician
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Medical Assistant
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Medical Equipment Preparer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Medical Laboratory Technician
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Medical Photographer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Medical Records Administrator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Medical Records Technician
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Medical Secretary
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Medical Technologist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Medical and Public Health Social Worker
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Medical and Scientific Illustrator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Mental Health Counselor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Music Therapist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Nurse Practitioner
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Nurse's Aide
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Obstetrician (MD)
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Occupational Analyst
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Occupational Physician (MD)
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Occupational Therapist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Occupational Therapy Assistant
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ophthalmic Laboratory Technician
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ophthalmologist (MD)
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Orthodontic Assistant
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Orthodontic Laboratory Technician
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Orthodontist (MD)
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Pathologist (MD)
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Pediatric Dentist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Pediatrician (MD)
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Pharmacy Aide
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Pharmacy Technician
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Physical Therapist Aide
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Physical Therapist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Physical Therapy Assistant
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Physician's Assistant (PA)
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Physician's Office Nurse
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Plastic Surgeon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Private Nurse
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Prosthetic Technician
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Psychiatric Aide
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Psychiatric Technician
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Psychiatrist (MD)
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Public Health Service Officer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Radiation Therapists
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Radiologic Technician
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Radiologic Technologist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Radiologist (MD)
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Recreational Therapist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Residence Counselor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Respiratory Care Technician
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Respiratory Therapist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Respiratory Therapy Technician
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: School Nurse
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: School Psychologist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Social Psychologist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Social Service Volunteer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Speech Pathologist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Sport Psychologist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Sports Physician (Orthopedist)
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Substance Abuse Counselor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Surgeons (MD)
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Surgical Technician/Technologist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ultrasound Technologist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Veterinarian (VMD)
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Veterinarian Technician
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Veterinary Assistant
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Vocational Rehabilitation Counselor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Voice Pathologist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Zoo Veterinarian
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Dental','Orthodontic')] Office Administrator"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Dietitian','Nutritionist')]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Marriage','Family')] Therapist"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Oral','Maxillofacial')] Surgeon"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    HumanResources:
+    [
+      {
+        Content: Employee Benefits Analyst
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Employment Interviewer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Employment and Placement Specialist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Human Resources Management Advisor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Human Resources Management Consultant
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Job Analyst
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Job Development Specialist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Labor Relations Advisor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Payroll and Timekeeping Clerk
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Personnel Administrator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Personnel Assistant
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Personnel Recruiter
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Social and Human Service Assistant
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    Legal:
+    [
+      {
+        Content: Admiralty Lawyer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Appeals Referee
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Corporation Lawyer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Legal Assistant
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Legal Secretary
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Patent Lawyer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Tax Lawyer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Title Examiner
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Title Searchers
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    Management:
+    [
+      {
+        Content: Airport Administrator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Benefits Manager
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Catering Administrator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Child Care Center Administrator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Compensation Administrator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Computer and Information Systems Manager
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Contract Administrator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Customer Service Supervisor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Emergency Management Specialist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Employment Administrator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Engineering Manager
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Excavating Supervisor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Harbor Master
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Horticultural Worker Supervisor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: IT Administrator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Maintenance Supervisor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Management [=Pick('Consultant','Analyst')]
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Marina Boat Charter Administrator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Marketing Manager
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Office Supervisor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Operations Management Analyst
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Personal Service Supervisor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Property Manager
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Public Relations Manager
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Purchasing Manager
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Registrar Administrator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Restaurant Manager
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Retail Sales Department Supervisor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Retail Store Manager
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Sales Manager
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Sports Events Business Manager
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Storage and Distribution Manager
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('General','Operation')] Manager"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    Manager:
+    [
+      {
+        Content: Non-Retail Sales Supervisor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    Manufacturing:
+    [
+      {
+        Content: Aircraft Assembler
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Automotive Engineer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Bindery Machine Set-Up Operator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Bindery Machine Tender
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Biological Technician
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Biomedical Equipment Technician
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Boat Builder
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Chemical Equipment Operator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Chemical Plant Operator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Chemical Technician
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Computer Aided Design (CAD) Technician
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Computer Controlled Machine Tool Operator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Die Cutter Operator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Electric Motor Mechanic
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Electrical PEntertainment Re-conditioner
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Electrical Technician
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Electro-Mechanical Technician
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Electromechanical Equipment Assembler
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Electronics Technician
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Engine and Machine Assemblers
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Forging Machine Operator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Gluing Machine Operator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Graphic Entertainment Job Printer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Hand Sewer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Hand and Portable Tool Mechanic
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Industrial Designer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Industrial Engineer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Industrial Engineering Technician
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Industrial Hygienist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Industrial Machinery Mechanic
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Industrial Waste Inspector
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Instrument Technician
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Lathe Operator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Machine [=Pick('Feeder','Off-bearer')]
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Manufacturing Plant Manager
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Marine Drafter
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Materials Engineer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Materials Inspector
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Materials Scientist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Meat Packer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Meat, Poultry, and Fish Trimmer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Mechanical Drafter
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Mechanical Engineering Technician
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Mill Worker
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Motorboat Mechanic
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Motorcycle Mechanic
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Numerical Tool Programmer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Operating Engineers
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Order Clerk
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Order Filler
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Package Designer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Paste-Up Worker
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Petroleum Refinery Operator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Petroleum Technician
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Photo-Optics Technician
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Photoengravers
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Photographic Equipment Mechanic
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Photographic Process Workers
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Power Plant Operators
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Product Planner
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Production Planner
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Production, Planning, and Expediting Clerk
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Quality Control Coordinator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Quality Control Inspector
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Quality Control Technician
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Recreational Vehicle Mechanic
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Sawing Machine Operator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Scanner Operator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Screen Printing Machine Operator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Sewing Machine Operator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ship Carpenter
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Shoe Machine Operator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Small Engine Mechanics
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Solar Energy Systems Designer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Standards Engineer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Steel Worker
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Structural Drafter
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Structural Engineer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Textile Bleaching and Dyeing Machine Operator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Textile Cutting Machine Operator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Tool & Machine Designer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Tool Grinder, Filer, and Sharpener
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Tool and Die Maker
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Woodworking Machine Operator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Printing','Graphic Entertainment')] Reproduction Technician"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Shipping','Receiving','Traffic')] Clerk"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    Mariner:
+    [
+      {
+        Content: Able Seamen
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Marine Architect
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Marine Cargo Surveyor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Marine Surveyor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Oceanographic Assistant
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ordinary Seamen
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    Media:
+    [
+      {
+        Content: Advertising Agency Coordinator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Broadcast News Analyst
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Broadcast Technician
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Newspaper Editor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Publication Editor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Radio Operator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Technical & Scientific Publication Editor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Technical Publication Writer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Video Engineer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Newspaper','Magazine')] Writer"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Newspaper','Magazine')]Editorial Writer"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Radio','TV')] Announcer"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Radio','TV')] News Commentator"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Radio','TV')] Newscaster"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Radio','TV')] Producer"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Radio','TV')] Program Director"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Radio','TV')] Sports Announcer"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Radio','TV')] Station Administrator"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    Mining:
+    [
+      {
+        Content: Brattice Builder
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Environmental Planner
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Explosives Worker
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Gas Plant Operator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Geological Data Technician
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Geological Technician
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Mine Cutting Machine Operator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Mine Inspector
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Mining Machine Operator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Mining Shovel Machine Operator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Petroleum Geologist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Petroleum Laboratory Assistant
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Quarry Worker
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    RealEstate:
+    [
+      {
+        Content: Real Estate Appraiser
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Real Estate Assessor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Real Estate Broker
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Real Estate Lawyer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    Retail:
+    [
+      {
+        Content: Door To Door Salesmen
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Merchandise Displayer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Purchasing Agent
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Retail Buyer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Retail Customer Service Representative
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Retail Inventory Control Analyst
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Retail Salespersons
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Sales Floor Stock Clerk
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Sales Representative
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Wholesale Buyers
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    Science:
+    [
+      {
+        Content: Animal Scientist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Aquaculturist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Atmospheric and Space Scientist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Cartographer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Cartographic Technician
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Computer Applications Engineer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Computer Customer Support Specialist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Computer Hardware Technician
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Computer Programmer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Computer Scientist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Computer Security Specialist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Computer Software Engineer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Computer Software Technician
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Computer Systems Engineer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Conservation Scientist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Database Administrator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Horticulturist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Marine and Aquatic Biologist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Scientific Linguist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Scientific Photographer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Social Science Research Assistants
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Soil Scientist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Survey Researchers
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Wildlife Biologist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Zoologist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    Service:
+    [
+      {
+        Content: Airline Flight Attendant
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Answering Service Operator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Automobile Mechanic
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Automotive Body Repairer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Automotive Glass Installer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Bicycle Mechanic
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Bus and Truck Mechanics
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Communication Equipment Mechanic
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Cosmetologist (Hair Stylist)
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Couriers and Messengers
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Custom Tailor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Delivery Driver
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Directory Assistance Operator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Export Agent
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Foreign Language Interpreter
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Foreign Language Translator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Funeral Attendant
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Funeral Director
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Home Appliance Repairer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Industrial Relations Analyst
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Industrial Relations Specialist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Insurance Lawyer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Interpreter for the Hearing Impaired
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Manicurist and Pedicurist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Parking Lot Attendant
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: PEntertainment Salesperson
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Public Relations Specialist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Reservation Ticket Agent
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Sales Promoter
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Sanitary Engineer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Service Station Attendants
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Skin Care Specialists
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Transportation Attendants
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Taxi Driver','Chauffeur')]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    Transportation:
+    [
+      {
+        Content: Air Crew Member
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Air Crew Officer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Aircraft Body and Bonded Structure Repairer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Aircraft Cargo Handling Supervisor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Aircraft Examiner
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Aircraft Launch and Recovery Officer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Aircraft Launch and Recovery Specialist
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Airline Flight Control Administrator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Airline Flight Operations Administrator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Airline Flight Reservations Administrator
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Avionics Technician
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Commercial Diver
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Commercial Pilot
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Flight Engineer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Locomotive Engineer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Motor Vehicle Inspector
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Public Transportation Inspector
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Rail Yard Engineer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Railroad Engineer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Railroad Inspector
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Railroad [=Pick('Conductor','Yardmaster')]
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ship Engineers
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ship Master
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ship Mate
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Ship Pilot
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Signal Switch Repairer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Traffic Administrator (Freight & Passenger)
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Traffic Agent
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Cargo','Freight')] Agent"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    Volunteer:
+    [
+      {
+        Content: Chaplain
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Clergy Member
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Missionary Worker
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Nun
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Pastor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Peace Corps Worker
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+  }
+  GeneratorType: Assignment
+}

@@ -1,0 +1,391 @@
+{
+  Version: "2.0"
+  Tags: []
+  OutputFormat: Html
+  Parameters: {}
+  TextCase: None
+  Imports: []
+  LineItems:
+  {
+    AnyLetter:
+    [
+      {
+        Content: "[UpperConsonant]"
+        Repeat: 1
+        Weight: 21
+      }
+      {
+        Content: "[LowerConsonant]"
+        Repeat: 1
+        Weight: 21
+      }
+      {
+        Content: "[UpperVowel]"
+        Repeat: 1
+        Weight: 5
+      }
+      {
+        Content: "[LowerVowel]"
+        Repeat: 1
+        Weight: 5
+      }
+    ]
+    UpperCase:
+    [
+      {
+        Content: "[UpperConsonant]"
+        Repeat: 1
+        Weight: 21
+      }
+      {
+        Content: "[UpperVowel]"
+        Repeat: 1
+        Weight: 5
+      }
+    ]
+    LowerCase:
+    [
+      {
+        Content: "[LowerConsonant]"
+        Repeat: 1
+        Weight: 21
+      }
+      {
+        Content: "[LowerVowel]"
+        Repeat: 1
+        Weight: 5
+      }
+    ]
+    Digit:
+    [
+      {
+        Content: "0"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "1"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "2"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "3"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "4"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "5"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "6"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "7"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "8"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "9"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    UpperConsonant:
+    [
+      {
+        Content: B
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: C
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: D
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: F
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: G
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: H
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: I
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: J
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: K
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: L
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: M
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: N
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: P
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Q
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: R
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: S
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: T
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: V
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: W
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: X
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Y
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Z
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    LowerConsonant:
+    [
+      {
+        Content: b
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: c
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: d
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: f
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: g
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: h
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: j
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: k
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: l
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: m
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: n
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: p
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: q
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: r
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: s
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: t
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: v
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: w
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: x
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: y
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: z
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    UpperVowel:
+    [
+      {
+        Content: A
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: E
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: I
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: O
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: U
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    LowerVowel:
+    [
+      {
+        Content: a
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: e
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: i
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: o
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: u
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+  }
+  GeneratorType: Assignment
+}

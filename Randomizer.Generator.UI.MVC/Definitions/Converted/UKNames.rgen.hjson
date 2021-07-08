@@ -1,0 +1,69 @@
+{
+  Name: UK Names
+  Author: Lance Boudreaux
+  Description: A full name generator that presents names based on the top male first, female first, and surnames from England, Ireland, Scotland, and Wales.
+  Version: "2.0"
+  Tags:
+  [
+    Name
+    Modern
+  ]
+  OutputFormat: Html
+  Parameters:
+  {
+    Gender:
+    {
+      Value: Any
+      Display: Gender
+      Aliases: []
+      Type: List
+      Options:
+      [
+        Any:Any
+        Male:Male
+        Female:Female
+      ]
+    }
+  }
+  TextCase: None
+  Imports:
+  [
+    UKNamesLibrary
+  ]
+  LineItems:
+  {
+    Start:
+    [
+      {
+        Content: "[Gender]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Any:
+    [
+      {
+        Content: "[UKFullName]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Male:
+    [
+      {
+        Content: "[UKMaleFullName]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Female:
+    [
+      {
+        Content: "[UKFemaleFullName]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+  }
+  GeneratorType: Assignment
+}

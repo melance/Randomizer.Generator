@@ -1,4 +1,4 @@
-﻿using Randomizer.Generator.UITerminal.Validators;
+﻿using Randomizer.Generator.UI.Terminal.Validators;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Terminal.Gui;
 using Terminal.Gui.TextValidateProviders;
 
-namespace Randomizer.Generator.UITerminal.Views
+namespace Randomizer.Generator.UI.Terminal.Views
 {
 	class FloatField : UpDownFieldBase
 	{

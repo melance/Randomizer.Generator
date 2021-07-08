@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Terminal.Gui;
 using Randomizer.Generator.Core;
 
-namespace Randomizer.Generator.UITerminal.Views
+namespace Randomizer.Generator.UI.Terminal.Views
 {
 	class GeneratorTabView : TabView
 	{

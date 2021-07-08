@@ -1,0 +1,64 @@
+{
+  Name: Modern Job
+  Author: Lance Boudreaux
+  Description: Selects a random job or career
+  Version: "2.0"
+  Tags:
+  [
+    Modern
+    Other
+  ]
+  OutputFormat: Html
+  Parameters:
+  {
+    Industry:
+    {
+      Value: Career
+      Display: Industry
+      Aliases: []
+      Type: List
+      Options:
+      [
+        Career:Any
+        Administration:Administration & Support Services
+        "[Construction]:Construction"
+        "[Education]:Education"
+        "[Engineering]:Engineering"
+        "[Entertainment]:Arts & Entertainment"
+        "[Farming]:Farming, Forestry, Wildlife, & Hunting"
+        "[Finance]:Finance & Insurance"
+        "[Food]:Hotel & Food"
+        "[Government]:Government"
+        "[Health]:Health & Counseling"
+        "[Legal]:Legal"
+        "[Management]:Management"
+        "[Manufacturing]:Manufacturing"
+        "[Media]:Media & Communications"
+        "[Mining]:Mining, Oil, & Gas"
+        "[Science]:Professional, Science, & Technical"
+        "[RealEstate]:Real Estate & Rentals"
+        "[Volunteer]:Religious & Volunteer"
+        "[Retail]:Retail"
+        "[Service]:Service"
+        "[Transportation]:Transportation & Storage"
+      ]
+    }
+  }
+  TextCase: None
+  Imports:
+  [
+    CareersByIndustry
+  ]
+  LineItems:
+  {
+    Start:
+    [
+      {
+        Content: "[Industry]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+  }
+  GeneratorType: Assignment
+}

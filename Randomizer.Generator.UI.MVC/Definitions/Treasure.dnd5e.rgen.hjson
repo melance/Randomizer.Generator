@@ -1,0 +1,1101 @@
+{
+	Name: Treasure D&D 5e
+	Description: Creates a treasure find based on the 5e DMG
+	Author: Lance Boudreaux
+	Version: "1.0"
+	Tags:
+	[
+		NPC
+		Fantasy
+	]
+	Parameters:
+	{
+		Type:
+		{
+			Value: Individual
+			Display: Type
+			Type: List
+			Options:
+			[
+				Any:Any
+				Individual:Individual
+				Hoard:Hoard
+			]
+		}
+		Level:
+		{
+			Value: 0
+			Display: Level
+			Type: List
+			Options:
+			[
+				Any:Any
+				0:0-4
+				5:5-10
+				11:11-16
+				17:17+
+			]
+		}
+	}
+	OutputFormat: Html
+	Output:
+	'''	
+	<b>Coins</b><br />
+	[= if([*.CP] == '', '', [*.CP] + ' cp<br />')]
+	[= if([*.SP] == '', '', [*.SP] + ' sp<br />')]
+	[= if([*.EP] == '', '', [*.EP] + ' ep<br />')]
+	[= if([*.GP] == '', '', [*.GP] + ' gp<br />')]
+	[= if([*.PP] == '', '', [*.PP] + ' pp<br />')]
+	[= if([*.Goods?] == '', '', '<br /><b>Goods</b><br />' + [*.Goods?] + '<br />')]
+	[= if([*.MagicItem?] == '', '', '<br /><b>Magic Items</b><br />')]
+	[= if([MagicItem_A.MagicItem?] == '', '', [MagicItem_A.MagicItem?] + '<br />')]
+	[= if([MagicItem_B.MagicItem?] == '', '', [MagicItem_B.MagicItem?] + '<br />')]
+	[= if([MagicItem_C.MagicItem?] == '', '', [MagicItem_C.MagicItem?] + '<br />')]
+	[= if([MagicItem_D.MagicItem?] == '', '', [MagicItem_D.MagicItem?] + '<br />')]
+	[= if([MagicItem_E.MagicItem?] == '', '', [MagicItem_E.MagicItem?] + '<br />')]
+	[= if([MagicItem_F.MagicItem?] == '', '', [MagicItem_F.MagicItem?] + '<br />')]
+	[= if([MagicItem_G.MagicItem?] == '', '', [MagicItem_G.MagicItem?] + '<br />')]
+	[= if([MagicItem_H.MagicItem?] == '', '', [MagicItem_H.MagicItem?] + '<br />')]
+	[= if([MagicItem_I.MagicItem?] == '', '', [MagicItem_I.MagicItem?] + '<br />')]
+	'''
+	Tables:
+	{
+		Table_Choice:
+		{
+			TableType: Select
+			SelectColumn: Parameters
+			SelectValue: "=[Level] + [Type]"
+			Table:
+				'''
+				Parameters		| Table						| ItemsTable
+				0Individual		| =Table('0_Individual')	|
+				5Individual		| =Table('5_Individual')	|
+				11Individual	| =Table('11_Individual')	|
+				17Individual	| =Table('17_Individual')	|
+				0Hoard			| =Table('0_Hoard')			| =Table('0_Hoard_Items')
+				5Hoard			| =Table('5_Hoard')			| =Table('5_Hoard_Items')
+				11Hoard			| =Table('11_Hoard')		| =Table('11_Hoard_Items')
+				17Hoard			| =Table('17_Hoard')		| =Table('17_Hoard_Items')
+				AnyAny			| =Table('Any_Any')			|
+				AnyIndividual	| =Table('Any_Individual')	|
+				AnyHoard		| =Table('Any_Hoard')		|
+				Any0			| =Table('0_Any')			|
+				Any5			| =Table('5_Any')			|
+				Any11			| =Table('11_Any')			|
+				Any17			| =Table('17_Any')			|
+				'''
+		}
+		
+		Any_Any:
+		{
+			TableType: Random
+			SkipTable: "=true"
+			Table:
+				'''
+				Roll	| Table						| ItemsTable
+				1		| =Table('0_Individual')	|
+				2		| =Table('5_Individual')	|
+				3		| =Table('11_Individual')	|
+				4		| =Table('17_Individual')	|
+				5		| =Table('0_Hoard')			| =Table('0_Hoard_Items')
+				6		| =Table('5_Hoard')			| =Table('5_Hoard_Items')
+				7		| =Table('11_Hoard')		| =Table('11_Hoard_Items')
+				8		| =Table('17_Hoard')		| =Table('17_Hoard_Items')
+				'''
+		}
+		Any_Individual:
+		{
+			TableType: Random
+			SkipTable: "=true"
+			Table:
+				'''
+				Roll	| Table
+				1		| =Table('0_Individual')	
+				2		| =Table('5_Individual')	
+				3		| =Table('11_Individual')	
+				4		| =Table('17_Individual')	
+				'''
+		}
+		Any_Hoard:
+		{
+			TableType: Random
+			SkipTable: "=true"
+			Table:
+				'''
+				Roll	| Table						| ItemsTable
+				1		| =Table('0_Hoard')			| =Table('0_Hoard_Items')
+				2		| =Table('5_Hoard')			| =Table('5_Hoard_Items')
+				3		| =Table('11_Hoard')		| =Table('11_Hoard_Items')
+				4		| =Table('17_Hoard')		| =Table('17_Hoard_Items')
+				'''
+		}
+		0_Any:
+		{
+			TableType: Random
+			SkipTable: "=true"
+			Table:
+				'''
+				Roll	| Table						| ItemsTable
+				1		| =Table('0_Individual')	| 
+				2		| =Table('0_Hoard')			| =Table('0_Hoard_Items')
+				'''
+		}
+		5_Any:
+		{
+			TableType: Random
+			SkipTable: "=true"
+			Table:
+				'''
+				Roll	| Table						| ItemsTable
+				1		| =Table('5_Individual')	| 
+				2		| =Table('5_Hoard')			| =Table('5_Hoard_Items')
+				'''
+		}
+		11_Any:
+		{
+			TableType: Random
+			SkipTable: "=true"
+			Table:
+				'''
+				Roll	| Table						| ItemsTable
+				1		| =Table('11_Individual')	| 
+				2		| =Table('11_Hoard')		| =Table('11_Hoard_Items')
+				'''
+		}
+		17_Any:
+		{
+			TableType: Random
+			SkipTable: "=true"
+			Table:
+				'''
+				Roll	| Table						| ItemsTable
+				1		| =Table('17_Individual')	| 
+				2		| =Table('17_Hoard')		| =Table('17_Hoard_Items')
+				'''
+		}
+		
+		0_Individual:
+		{
+			TableType: Random
+			SkipTable: "=true"
+			Table:
+				'''
+				Roll 	| CP			| SP			| EP			| GP			| PP			
+				30		| =Roll(5,6)	|				|				|				|				
+				60		|				| =Roll(4,6)	|				|				|               
+				70		|				|				| =Roll(3,6)	|				|               
+				95		|				| 				|				| =Roll(3,6)	|               
+				100		|				|				|				|				| =Roll(1,6)    
+				'''
+		}
+		5_Individual:
+		{
+			TableType: Random
+			SkipTable: "=true"
+			Table:
+				'''
+				Roll	| CP			| SP			| EP			| GP			| PP			
+				30		| =Roll(4,6)*100|				| =Roll(1,6)*10	| 				|               
+				60		|				| =Roll(6,6)*10 |				| =Roll(2,6)*10	|               
+				70		|				|				| =Roll(3,6)*10	| =Roll(2,6)*10	|               
+				95		|				|				|				| =Roll(4,6)*10	|               
+				100		|				|				|				| =Roll(2,6)*10	| =Roll(3,6)    
+				'''
+		}
+		11_Individual:
+		{
+			TableType: Random
+			SkipTable: "=true"
+			Table:
+				'''
+				Roll	| CP			| SP			| EP			| GP			| PP			
+				20		|				| =Roll(4,6)*100|				| =Roll(1,6)*100|               
+				35		|				|				| =Roll(1,6)*100| =Roll(1,6)*100|               
+				75		|				|				|				| =Roll(2,6)*100| =Roll(1,6)*10 
+				100		|				|				|				| =Roll(2,6)*100| =Roll(2,6)*10 
+				'''
+		}
+		17_Individual:
+		{
+			TableType: Random                                                                                       
+			SkipTable: "=true"
+			Table:
+				'''
+				Roll	| CP			| SP			| EP				| GP				| PP				
+				15		|				|				| =Roll(2,6)*1000	| =Roll(8,6)*100 	|                   
+				55		|				|				|					| =Roll(1,6)*1000	| =Roll(1,6)*100    
+				100		|				|				|					| =Roll(1,6)*1000	| =Roll(2,6)*100    
+				'''                                                                                                 
+		}
+		0_Hoard:
+		{
+			TableType: Random
+			SkipTable: "=true"
+			Table:
+				'''
+				Roll	| CP				| SP			| EP			| GP			| PP		
+				1		| =Roll(6,6)*100	| =Roll(3,6)*100|				| =Roll(2,6)*10	|			
+				'''
+		}
+		0_Hoard_Items:
+		{
+			TableType: Random
+			SkipTable: "=true"
+			Table:
+				'''
+				Roll	| GoodsTable						| MagicItemTable1							
+				4		| 									| 											
+				16		| =Table('10_Gems', '=Roll(2,6)')	|											
+				26		| =Table('25_Art', '=Roll(2,4)')	| 											
+				36		| =Table('50_Gems', '=Roll(2,6)')	|											
+				44		| =Table('10_Gems', '=Roll(2,6)')	| =Table('MagicItem_A', '=Roll(1,6)')		
+				52		| =Table('25_Art', '=Roll(2,4)')	| =Table('MagicItem_A', '=Roll(1,6)')		
+				60		| =Table('50_Gems', '=Roll(2,6)')	| =Table('MagicItem_A', '=Roll(1,6)')		
+				65		| =Table('10_Gems', '=Roll(2,6)')	| =Table('MagicItem_B', '=Roll(1,4)')		
+				70		| =Table('25_Art', '=Roll(2,4)')	| =Table('MagicItem_B', '=Roll(1,4)')		
+				75		| =Table('50_Gems', '=Roll(2,6)')	| =Table('MagicItem_B', '=Roll(1,4)')		
+				78		| =Table('10_Gems', '=Roll(2,6)')	| =Table('MagicItem_C', '=Roll(1,4)')		
+				80		| =Table('25_Art', '=Roll(2,4)')	| =Table('MagicItem_C', '=Roll(1,4)')		
+				85		| =Table('50_Gems', '=Roll(2,6)')	| =Table('MagicItem_C', '=Roll(1,4)')		
+				92		| =Table('25_Art', '=Roll(2,4)')	| =Table('MagicItem_F', '=Roll(1,4)')		
+				97		| =Table('50_Gems', '=Roll(2,6)')	| =Table('MagicItem_F', '=Roll(1,4)')		
+				98		| =Table('25_Art', '=Roll(2,4)')	| =Table('MagicItem_G')						
+				100		| =Table('50_Gems', '=Roll(2,6)')	| =Table('MagicItem_G')						
+				'''
+		}
+		5_Hoard:
+		{
+			TableType: Random
+			SkipTable: "=true"
+			Table:
+				'''
+				Roll	| CP				| SP				| EP			| GP				| PP	
+				1		| =Roll(2,6)*100	| =Roll(2,6)*1000	| 				| =Roll(6,6)*100	| =Roll(3,6)*10				
+				'''
+		}
+		5_Hoard_Items:
+		{
+			TableType: Random
+			SkipTable: "=true"
+			Table:
+				'''
+				Roll 	| GoodsTable						| MagicItemTable1							
+				4		| 									|											
+				10		| =Table('25_Art', '=Roll(2,4)')	|											
+				16		| =Table('50_Gems', '=Roll(3,6)')	|											
+				22		| =Table('100_Gems', '=Roll(3,6)')	|											
+				28		| =Table('250_Art', '=Roll(2,4)')	|											
+				32		| =Table('25_Art', '=Roll(2,4)')	| =Table('MagicItem_A', '=Roll(1,6)')		
+				36		| =Table('50_Gems', '=Roll(3,6)')	| =Table('MagicItem_A', '=Roll(1,6)')		
+				40		| =Table('100_Gems', '=Roll(3,6)')	| =Table('MagicItem_A', '=Roll(1,6)')		
+				44		| =Table('250_Art', '=Roll(2,4)')	| =Table('MagicItem_A', '=Roll(1,6)')		
+				49		| =Table('25_Art', '=Roll(2,4)')	| =Table('MagicItem_B', '=Roll(1,4)')		
+				54		| =Table('50_Gems', '=Roll(3,6)')	| =Table('MagicItem_B', '=Roll(1,4)')		
+				59		| =Table('100_Gems', '=Roll(3,6)')	| =Table('MagicItem_B', '=Roll(1,4)')		
+				63		| =Table('250_Art', '=Roll(2,4)')	| =Table('MagicItem_B', '=Roll(1,4)')		
+				66		| =Table('25_Art', '=Roll(2,5)')	| =Table('MagicItem_C', '=Roll(1,4)')		
+				69		| =Table('50_Gems', '=Roll(3,6)')	| =Table('MagicItem_C', '=Roll(1,4)')		
+				72		| =Table('100_Gems', '=Roll(3,6)')	| =Table('MagicItem_C', '=Roll(1,4)')		
+				74		| =Table('250_Art', '=Roll(2,4)')	| =Table('MagicItem_C', '=Roll(1,4)')		
+				76		| =Table('25_Art', '=Roll(2,4)')	| =Table('MagicItem_D')						
+				78		| =Table('50_Gems', '=Roll(3,6)')	| =Table('MagicItem_D')						
+				79		| =Table('100_Gems', '=Roll(3,6)')	| =Table('MagicItem_D')						
+				80		| =Table('250_Art', '=Roll(2,4)')	| =Table('MagicItem_D')						
+				84		| =Table('25_Art', '=Roll(2,4)')	| =Table('MagicItem_F', '=Roll(1,4)')		
+				88		| =Table('50_Gems', '=Roll(3,6)')	| =Table('MagicItem_F', '=Roll(1,4)')		
+				91		| =Table('100_Gems', '=Roll(3,6)')	| =Table('MagicItem_F', '=Roll(1,4)')		
+				94		| =Table('250_Art', '=Roll(2,4)')	| =Table('MagicItem_F', '=Roll(1,4)')		
+				96		| =Table('100_Gems', '=Roll(3,6)')	| =Table('MagicItem_G', '=Roll(1,4)')		
+				98		| =Table('250_Art', '=Roll(2,4)')	| =Table('MagicItem_G', '=Roll(1,4)')		
+				99		| =Table('100_Gems', '=Roll(3,6)')	| =Table('MagicItem_H')						
+				100		| =Table('250_Art', '=Roll(2,4)')	| =Table('MagicItem_H')						
+				'''
+		}
+		11_Hoard:
+		{
+			TableType: Random
+			SkipTable: "=true"
+			Table:
+				'''
+				Roll	| CP				| SP				| EP			| GP				| PP	
+				1		|					|					|				| =Roll(4,6)*1000	| =Roll(5,6)*100
+				'''
+		}
+		11_Hoard_Items:
+		{
+			TableType: Random
+			SkipTable: "=true"
+			Table:
+				'''
+				Roll 	| GoodsTable							| MagicItemTable1						| MagicItemTable2
+				3		|										|										|
+				6		| =Table('250_Art', '=Roll(2,4)')		|										|
+				9		| =Table('750_Art', '=Roll(2,4)')		|										|
+				12		| =Table('500_Gems', '=Roll(3,6)')		|										|
+				15		| =Table('1000_Gems', '=Roll(3,6)')		|										|
+				19		| =Table('250_Art', '=Roll(2,4)')		| =Table('MagicItem_A', '=Roll(1,4)')	| =Table('MagicItem_B', '=Roll(1,6)')
+				23		| =Table('750_Art', '=Roll(2,4)')		| =Table('MagicItem_A', '=Roll(1,4)')	| =Table('MagicItem_B', '=Roll(1,6)')
+				26		| =Table('500_Gems', '=Roll(3,6)')		| =Table('MagicItem_A', '=Roll(1,4)')	| =Table('MagicItem_B', '=Roll(1,6)')
+				29		| =Table('1000_Gems', '=Roll(3,6)')		| =Table('MagicItem_A', '=Roll(1,4)')	| =Table('MagicItem_B', '=Roll(1,6)')
+				35		| =Table('250_Art', '=Roll(2,4)')		| =Table('MagicItem_C', '=Roll(1,6)')	|
+				40		| =Table('750_Art', '=Roll(2,4)')		| =Table('MagicItem_C', '=Roll(1,6)')	|
+				45		| =Table('500_Gems', '=Roll(3,6)')		| =Table('MagicItem_C', '=Roll(1,6)')	|
+				50		| =Table('1000_Gems', '=Roll(3,6)')		| =Table('MagicItem_C', '=Roll(1,6)')	|
+				54		| =Table('250_Art', '=Roll(2,4)')		| =Table('MagicItem_D', '=Roll(1,4)')	|
+				58		| =Table('750_Art', '=Roll(2,4)')		| =Table('MagicItem_D', '=Roll(1,4)')	|
+				62		| =Table('500_Gems', '=Roll(3,6)')		| =Table('MagicItem_D', '=Roll(1,4)')	|
+				66		| =Table('1000_Gems', '=Roll(3,6)')		| =Table('MagicItem_D', '=Roll(1,4)')	|
+				68		| =Table('250_Art', '=Roll(2,4)')		| =Table('MagicItem_E')					|
+				70		| =Table('750_Art', '=Roll(2,4)')		| =Table('MagicItem_E')					|
+				72		| =Table('500_Gems', '=Roll(2,4)')		| =Table('MagicItem_E')					|
+				74		| =Table('1000_Gems', '=Roll(3,6)')		| =Table('MagicItem_E')					|
+				76		| =Table('250_Art', '=Roll(2,4)')		| =Table('MagicItem_F')					| =Table('MagicItem_G', '=Roll(1,4)')
+				78		| =Table('750_Art', '=Roll(2,4)')		| =Table('MagicItem_F')					| =Table('MagicItem_G', '=Roll(1,4)')
+				80		| =Table('500_Gems', '=Roll(3,6)')		| =Table('MagicItem_F')					| =Table('MagicItem_G', '=Roll(1,4)')
+				82		| =Table('1000_Gems', '=Roll(3,6)')		| =Table('MagicItem_F')					| =Table('MagicItem_G', '=Roll(1,4)')
+				85		| =Table('250_Art', '=Roll(2,4)')		| =Table('MagicItem_H', '=Roll(1,4)')	| 
+				88		| =Table('750_Art', '=Roll(2,4)')		| =Table('MagicItem_H', '=Roll(1,4)')	| 
+				90		| =Table('500_Gems', '=Roll(3,6)')		| =Table('MagicItem_H', '=Roll(1,4)')	| 
+				92		| =Table('1000_Gems', '=Roll(3,6)')		| =Table('MagicItem_H', '=Roll(1,4)')	| 
+				94		| =Table('250_Art', '=Roll(2,4)')		| =Table('MagicItem_I')					| 
+				96		| =Table('750_Art', '=Roll(2,4)')		| =Table('MagicItem_I')					| 
+				98		| =Table('500_Gems', '=Roll(3,6)')		| =Table('MagicItem_I')					| 
+				100		| =Table('1000_Gems', '=Roll(3,6)')		| =Table('MagicItem_I')					| 				
+				'''
+		}
+		17_Hoard:
+		{
+			TableType: Random
+			SkipTable: "=true"
+			Table:
+				'''
+				Roll	| CP				| SP				| EP			| GP				| PP	
+				1		|					|					|				| =Roll(12,6)*1000	| =Roll(8,6)*1000
+				'''
+		}
+		17_Hoard_Items:
+		{
+			TableType: Random
+			SkipTable: "=true"
+			Table:
+				'''
+				Roll 	| GoodsTable							| MagicItemTable1						
+				2		|										|
+				5		| =Table('1000_Gems', '=Roll(3,6)')		| =Table('MagicItem_C', '=Roll(1,8)')
+				8		| =Table('2500_Art', '=Roll(1,10)')		| =Table('MagicItem_C', '=Roll(1,8)')
+				11		| =Table('7500_Art', '=Roll(1,4)')		| =Table('MagicItem_C', '=Roll(1,8)')
+				14		| =Table('5000_Gems', '=Roll(1,8)')		| =Table('MagicItem_C', '=Roll(1,8)')
+				22		| =Table('1000_Gems', '=Roll(3,6)')		| =Table('MagicItem_D', '=Roll(1,6)')
+				30		| =Table('2500_Art', '=Roll(1,10)')		| =Table('MagicItem_D', '=Roll(1,6)')
+				38		| =Table('7500_Art', '=Roll(1,4)')		| =Table('MagicItem_D', '=Roll(1,6)')
+				46		| =Table('5000_Gems', '=Roll(1,8)')		| =Table('MagicItem_D', '=Roll(1,6)')
+				52		| =Table('1000_Gems', '=Roll(3,6)')		| =Table('MagicItem_E', '=Roll(1,6)')
+				58		| =Table('2500_Art', '=Roll(1,10)')		| =Table('MagicItem_E', '=Roll(1,6)')
+				63		| =Table('7500_Art', '=Roll(1,4)')		| =Table('MagicItem_E', '=Roll(1,6)')
+				68		| =Table('5000_Gems', '=Roll(1,8)')		| =Table('MagicItem_E', '=Roll(1,6)')
+				69		| =Table('1000_Gems', '=Roll(3,6)')		| =Table('MagicItem_G', '=Roll(1,4)')
+				70		| =Table('2500_Art', '=Roll(1,10)')		| =Table('MagicItem_G', '=Roll(1,4)')
+				71		| =Table('7500_Art', '=Roll(1,4)')		| =Table('MagicItem_G', '=Roll(1,4)')
+				72		| =Table('5000_Gems', '=Roll(1,8)')		| =Table('MagicItem_G', '=Roll(1,4)')
+				74		| =Table('1000_Gems', '=Roll(3,6)')		| =Table('MagicItem_H', '=Roll(1,4)')
+				76		| =Table('2500_Art', '=Roll(1,10)')		| =Table('MagicItem_H', '=Roll(1,4)')
+				78		| =Table('7500_Art', '=Roll(1,4)')		| =Table('MagicItem_H', '=Roll(1,4)')
+				80		| =Table('5000_Gems', '=Roll(1,8)')		| =Table('MagicItem_H', '=Roll(1,4)')
+				85		| =Table('1000_Gems', '=Roll(3,6)')		| =Table('MagicItem_I', '=Roll(1,4)')
+				90		| =Table('2500_Art', '=Roll(1,10)')		| =Table('MagicItem_I', '=Roll(1,4)')
+				95		| =Table('7500_Art', '=Roll(1,4)')		| =Table('MagicItem_I', '=Roll(1,4)')
+				100		| =Table('5000_Gems', '=Roll(1,8)')		| =Table('MagicItem_I', '=Roll(1,4)')
+				'''
+		}
+		
+		## Gems
+		10_Gems:
+		{
+			TableType: Random
+			SkipTable: "=true"
+			RepeatJoin: "<br />"
+			EnumerateRepeat: true
+			Table:
+				'''
+				Roll	| Goods
+				1		| azurite (10 gp)
+				2		| banded agate (10 gp)
+				3		| blue quartz (10 gp)
+				4		| eye agate (10 gp)
+				5		| hematite (10 gp)
+				6		| lapis lazuli (10 gp)
+				7		| malachite (10 gp)
+				8		| moss agate (10 gp)
+				9		| obsidian (10 gp)
+				10		| rhodochrosite (10 gp)
+				11		| tiger eye (10 gp)
+				12		| turquoise (10 gp)
+				'''
+		}
+		50_Gems:
+		{
+			TableType: Random
+			SkipTable: "=true"
+			RepeatJoin: "<br />"
+			EnumerateRepeat: true
+			Table:
+				'''
+				Roll	| Goods
+				1		| bloodstone (50 gp)
+				2		| carnelian (50 gp)
+				3		| chalcedony (50 gp)
+				4		| chrysoprase (50 gp)
+				5		| citrine (50 gp)
+				6		| jasper (50 gp)
+				7		| moonstone (50 gp)
+				8		| onyx (50 gp)
+				9		| quartz (50 gp)
+				10		| sardonyx (50 gp)
+				11		| star rose quartz (50 gp)
+				12		| zircon (50 gp)
+				'''
+		}
+		100_Gems:
+		{
+			TableType: Random
+			SkipTable: "=true"
+			RepeatJoin: "<br />"
+			EnumerateRepeat: true
+			Table:
+				'''
+				Roll	| Goods 
+				1		| amber (100 gp)
+				2		| amethyst (100 gp)
+				3		| chrysoberyl (100 gp)
+				4		| coral (100 gp)
+				5		| garnet (100 gp)
+				6		| jade (100 gp)
+				7		| jet (100 gp)
+				8		| pearl (100 gp)
+				9		| spinel (100 gp)
+				10		| tourmaline (100 gp)
+				'''
+		}
+		500_Gems:
+		{
+			TableType: Random
+			SkipTable: "=true"
+			RepeatJoin: "<br />"
+			EnumerateRepeat: true
+			Table:
+				'''
+				Roll	| Goods
+				1		| alexandrite (500 gp)
+				2		| aquamarine (500 gp)
+				3		| black pearl (500 gp)
+				4		| blue spinal (500 gp)
+				5		| peridot (500 gp)
+				6		| topaz (500 gp)
+				'''
+		}
+		1000_Gems:
+		{
+			TableType: Random
+			SkipTable: "=true"
+			RepeatJoin: "<br />"
+			EnumerateRepeat: true
+			Table:
+				'''
+				Roll	| Goods
+				1		| black opal (1000 gp)
+				2		| blue sapphire (1000 gp)
+				3		| emerald (1000 gp)
+				4		| fire opal (1000 gp)
+				5		| opal (1000 gp)
+				6		| star ruby (1000 gp)
+				7		| star sapphire (1000 gp)
+				8		| yellow sapphire (1000 gp)
+				'''
+		}
+		5000_Gems:
+		{
+			TableType: Random
+			SkipTable: "=true"
+			RepeatJoin: "<br />"
+			EnumerateRepeat: true
+			Table:
+				'''
+				Roll	| Goods
+				1		| black sapphire (5000 gp)
+				2		| diamond (5000 gp)
+				3		| jacinth (5000 gp)
+				4		| ruby (5000 gp)
+				'''
+		}
+		
+		## Art
+		25_Art:
+		{
+			TableType: Random
+			SkipTable: "=true"
+			RepeatJoin: "<br />"
+			EnumerateRepeat: true
+			Table:
+				'''
+				Roll	| Goods
+				1		| silver ewer (25 gp)
+				2		| carved bone statuette (25 gp)
+				3		| small gold bracelet (25 gp)
+				4		| cloth-of-gold vestments (25 gp)
+				5		| black velvet mask stitched with silver thread (25 gp)
+				6		| copper chalice with silver filigree (25 gp)
+				7		| pair of engraved bone dice (25 gp)
+				8		| small mirror set in a painted wooden frame (25 gp)
+				9		| embroidered silk handverchief (25 gp)
+				10		| gold locked with a painted portrait inside (25 gp)
+				'''
+		}
+		250_Art:
+		{
+			TableType: Random
+			SkipTable: "=true"
+			RepeatJoin: "<br />"
+			EnumerateRepeat: true
+			Table:
+				'''
+				Roll	| Goods
+				1		| gold ring set with bloodstones (250 gp)
+				2		| carved ivory statuette (250 gp)
+				3		| large gold bracelet (250 gp)
+				4		| silver necklace with a gemstone pendant (250 gp)
+				5		| bronze crown (250 gp)
+				6		| silk robe with gold embroidery (250 gp)
+				7		| large well-made tapestry (250 gp)
+				8		| brass mug with jade inlay (250 gp)
+				9		| box of turquoise animal figures (250 gp)
+				10		| gold bird cage with electrum filigree (250 gp)
+				'''
+		}
+		750_Art:
+		{
+			TableType: Random
+			SkipTable: "=true"
+			RepeatJoin: "<br />"
+			EnumerateRepeat: true
+			Table:
+				'''
+				Roll	| Goods
+				1		| silver chalice set with moonstones (750 gp)
+				2		| silver-plated steel longsword with jet set in hilt (750 gp)
+				3		| carved harp of exotic wood with ivory inlay and zircon gemstone (750 gp)
+				4		| small gold idol (750 gp)
+				5		| gold dragon comb set with red garnets as eyes (750 gp)
+				6		| bottle stopper cork embossed with gold leaf and set with amethysts (750 gp)
+				7		| ceremonial electrum dagger with a black pearl in the pommel (750 gp)
+				8		| silver and gold brooch (750 gp)
+				9		| obsidian statuette with gold fittings and inlay (750 gp)
+				10		| painted gold war mask (750 gp)
+				'''
+		}
+		2500_Art:
+		{
+			TableType: Random
+			SkipTable: "=true"
+			RepeatJoin: "<br />"
+			EnumerateRepeat: true
+			Table:
+				'''
+				Roll	| Goods
+				1		| fine gold chain set with a fire opal (2500 gp)
+				2		| old masterpiece painting (2500 gp)
+				3		| embroidered silk and velvet mantle set with numerous moonstones (2500 gp)
+				4		| platinum bracelet set with sapphire (2500 gp)
+				5		| embroidered glove set with jewel chips (2500 gp)
+				6		| jeweled anklet (2500 gp)
+				7		| gold music box (2500 gp)
+				8		| gold circlet set with four aquamarines (2500 gp)
+				9		| eye patch with mock eye set in blue sapphire and moonstone (2500 gp)
+				10		| a necklace string of small pink pearls (2500 gp)
+				'''
+		}
+		7500_Art:
+		{
+			TableType: Random
+			SkipTable: "=true"
+			RepeatJoin: "<br />"
+			EnumerateRepeat: true
+			Table:
+				'''
+				Roll	| Goods
+				1		| jeweled gold crown (7500 gp)
+				2		| jeweled platinum ring (7500 gp)
+				3		| small gold statuette set with rubies (7500 gp)
+				4		| gold cup set with emeralds (7500 gp)
+				5		| gold jewelry box with platinum filigree (7500 gp)
+				6		| painted gold child's sarcophagus (7500 gp)
+				7		| jade game board with solid bold playing pieces (7500 gp)
+				8		| bejeweled ivory drinking horn with gold filigree (7500 gp)
+				'''
+		}
+		
+		## Magic Items
+		MagicItem_A:
+		{
+			TableType: Random
+			SkipTable: "=true"
+			RepeatJoin: "<br />"
+			EnumerateRepeat: true
+			Table:
+				'''
+				Roll	| MagicItem
+				50		| Potion of Healing
+				60		| ='Spell Scroll (' + Generate('Spells DnD 5e PHB', 'Level=0') + ')'
+				70		| Potion of Climbing
+				90		| ='Spell Scroll (' + Generate('Spells DnD 5e PHB', 'Level=1') + ')'
+				94		| ='Spell Scroll (' + Generate('Spells DnD 5e PHB', 'Level=2') + ')'
+				98		| Bag of Holding
+				100		| Driftglobe
+				'''
+		}
+		MagicItem_B:
+		{
+			TableType: Random
+			SkipTable: "=true"
+			RepeatJoin: "<br />"
+			EnumerateRepeat: true
+			Table:
+				'''
+				Roll	| MagicItem
+				15		| Potion of Greater Healing
+				22		| Potion of Fire Breathing
+				29		| ='Potion of ' + Generate('Resistance DnD 5e') + ' Resistance'
+				34		| =Generate('Weapons DnD 5e', 'Type=Ammunition') + ' +1'
+				39		| Potion of Animal Friendship
+				44		| Potion of Hill Giant Strength
+				49		| Potion of Growth
+				54		| Potion of Water Breathing
+				59		| ='Spell Scroll (' + Generate('Spells DnD 5e PHB', 'Level=2') + ')'
+				64		|  ='Spell Scroll (' + Generate('Spells DnD 5e PHB', 'Level=3') + ')'
+				67		| Bag of Holding
+				70		| Keoghtom's Ointment
+				73		| Oil of Slipperyness
+				75		| Dust of Disappearance
+				77		| Dust of Dryness
+				79		| Dust of Sneezing and Choking
+				81		| = Pick('Air','Earth','Fire','Water') + ' Elemental Gem'
+				83		| Philter of Love
+				84		| Alchemy Jug
+				85		| Cap of Water Breathing
+				86		| Cloak of the Manta Ray
+				87		| Driftglobe
+				88		| Goggles of Night
+				89		| Helm of Comprehend Languages
+				90		| Immovable Rod
+				91		| Lantern of Revealing
+				92		| Mariner's Armor
+				93		| Mithral Armor
+				94		| Potion of Poison
+				95		| Ring of Swimming
+				96		| Robe of Useful Items
+				97		| Rope of Climbing
+				98		| Saddle of the Cavalier
+				99		| Wand of Magic Detection
+				100		| Wand of Secrets
+				'''
+		}
+		MagicItem_C:
+		{
+			TableType: Random
+			SkipTable: "=true"
+			RepeatJoin: "<br />"
+			EnumerateRepeat: true
+			Table:
+				'''
+				Roll	| MagicItem
+				15		| Potion of Superior Healing
+				22		| ='Spell Scroll (' + Generate('Spells DnD 5e PHB', 'Level=4') + ')'
+				27		| =Pick('Arrow','Blowgun Needle','Crossbow Bolt','Sling Bullet') + ' +2'
+				32		| Potion of Clairvoyance
+				37		| Potion of Diminution
+				42		| Potion of Gaseous Form
+				47		| Potion of Frost Giant Strength
+				52		| Potion of Stone Giant Strength
+				57		| Potion of Heroism
+				62		| Potion of Invulnerability
+				67		| Potion of Mind Reading
+				72		|  ='Spell Scroll (' + Generate('Spells DnD 5e PHB', 'Level=5') + ')'
+				75		| Elixer of Health
+				78		| Oil of Etherealness
+				81		| Potion of Fire Giant Strength
+				84		| Quaal's Feather Token
+				87		| Scroll of Protection
+				89		| Bag of Beans
+				91		| Bead of Force
+				92		| Chime of Opening
+				93		| Decanter of Endless Water
+				94		| Eye of Minute Seeing
+				95		| Folding Boat
+				96		| Heward's Handy Haversack
+				97		| Horseshoe's of Speed
+				98		| Necklace of Fireballs
+				99		| Periapt of Health
+				100		| Sending Stones
+				'''
+		}
+		MagicItem_D:
+		{
+			TableType: Random
+			SkipTable: "=true"
+			RepeatJoin: "<br />"
+			EnumerateRepeat: true
+			Table:
+				'''
+				Roll	| MagicItem
+				20		| Potion of Superior Healing
+				30		| Potion of Invisibility
+				40		| Potion of Speed
+				50		|  ='Spell Scroll (' + Generate('Spells DnD 5e PHB', 'Level=6') + ')'
+				57		|  ='Spell Scroll (' + Generate('Spells DnD 5e PHB', 'Level=7') + ')'
+				62		| =Pick('Arrow','Blowgun Needle','Crossbow Bolt','Sling Bullet') + ' +3'
+				67		| Oil of Sharpness
+				72		| Potion of Flying
+				77		| Potion of Cloud Giant Strength
+				82		| Potion of Longevity
+				87		| Potion of Vitality
+				92		|  ='Spell Scroll (' + Generate('Spells DnD 5e PHB', 'Level=8') + ')'
+				95		| Horseshoes of a Zephyr
+				98		| Nolzur's Marvelous Pigments
+				99		| Bag of Devouring
+				100		| Portable Hole
+				'''
+		}
+		MagicItem_E:
+		{
+			TableType: Random
+			SkipTable: "=true"
+			RepeatJoin: "<br />"
+			EnumerateRepeat: true
+			Table:
+				'''
+				Roll	| MagicItem
+				30		|  ='Spell Scroll (' + Generate('Spells DnD 5e PHB', 'Level=8') + ')'
+				55		| Potion of Storm Giant Strength
+				70		| Potion of Supreme Healing
+				85		|  ='Spell Scroll (' + Generate('Spells DnD 5e PHB', 'Level=9') + ')'
+				93		| Universal Solvent
+				98		| Arrow of Slaying
+				100		| Sovereign Glue
+				'''
+		}
+		MagicItem_F:
+		{
+			TableType: Random
+			SkipTable: "=true"
+			RepeatJoin: "<br />"
+			EnumerateRepeat: true
+			Table:
+				'''
+				Roll	| MagicItem
+				15		| =Generate('Weapons DnD 5e') + ' +1'
+				18		| Shield +1
+				21		| Sentinel Shield
+				23		| Amulet of Proof Against Detection and Location
+				25		| Boots of Elvenkind
+				27		| Boots of Striding and Springing
+				29		| Bracers of Archery
+				31		| Brooch of Shielding
+				33		| Broom of Flying
+				35		| Cloak of Elvenkind
+				37		| Cload of Protection
+				39		| Gauntlets of Ogre Power
+				41		| Hat of Disguise
+				43		| Javelin of Lightning
+				45		| Pearl of Power
+				47		| Rod of the Pact Keeper +1
+				49		| Slippers of Spider Climbing
+				51		| Staff of the Adder
+				53		| Staff of the Python
+				55		| Sword of Vengeance
+				57		| Trident of Fish Command
+				59		| Wand of Magic Missiles
+				61		| Wand of the War Mage +1				
+				63		| Wand of Web
+				65		| =Generate('Weapons DnD 5e') + ' of Warning'
+				66		| Adamantine Chain Mail
+				67		| Adamantine Chain Shirt
+				68		| Adamantine Scale Mail
+				69		| Gray Bag of Tricks
+				70		| Rust Bag of Tricks
+				71		| Tan Bag of Tricks
+				72		| Boots of the Winterlands
+				73		| Circlet of Blasting
+				74		| Deck of Illusions
+				75		| Eversmoking Bottle
+				76		| Eyes of Charming
+				77		| Eyes of the Eagle
+				78		| Silver Raven Figurine of Wondrous Power
+				79		| Gem of Brightness
+				80		| Gloves of Missile Snaring
+				81		| Gloves of Swimming and Climbing
+				82		| Gloves of Thievery
+				83		| Headband of Intellect
+				84		| Helm of Telepathy
+				85		| Doss Lute of the Bards
+				86		| Fochlucan Bandore of the Bards
+				87		| Mac-Fuimidh Cittern of the Bards
+				88		| Medallion of Thoughts
+				89		| Necklace of Thoughts
+				90		| Periapt of Wound Closure
+				91		| Pipes of Haunting
+				92		| Pipes of the Sewers
+				93		| Ring of Jumping
+				94		| Ring of Mind Shielding
+				95		| Ring of Warmth
+				96		| Ring of Water Walking
+				97		| Quiver of Ehlonna
+				98		| Stone of Good Luck
+				99		| Wind Fan
+				100		| Winged Boots				
+				'''
+		}
+		MagicItem_G:
+		{
+			TableType: Random
+			SkipTable: "=true"
+			RepeatJoin: "<br />"
+			EnumerateRepeat: true
+			Table:
+				'''
+				Roll	| MagicItem
+				11		| =Generate('Weapons DnD 5e') + ' +2'
+				14		| =Pick('Bronze Griffon','Ebony Fly','Golden Lions','Ivory Goats','Marble Elephant','Onyx Dog','Onyx Dog','Serpentine Owl') + ' Figurine of Wondrous Power'
+				15		| Adamantine Breastplate
+				16		| Adamantine Splint
+				17		| Amulet of Health
+				18		| Armor of Vulnerability
+				19		| Arrow-Catching Shield
+				20		| Belt of Dwarvenkind
+				21		| Belt of Hill Giant Strength
+				22		| Berserker Axe
+				23		| Boots of Levitation
+				24		| Boots of Speed
+				25		| Bowl of Commanding Water Elementals
+				26		| Bracers of Defense
+				27		| Brazier of Commanding Fire Elementals
+				28		| Cape of the Mountebank
+				29		| Censer of Controlling Air Elementals
+				30		| Chain Mail +1
+				31		| ='Chaimail of ' + Generate('Resistance DnD 5e') + ' Resistance'
+				32		| Chain Shirt +1
+				33		| ='Chain Shirt of ' + Generate('Resistance DnD 5e') + ' Resistance'
+				34		| Cloak of Displacement
+				35		| Cloak of the Bat
+				36		| Cube of Force
+				37		| Daern's Instant Fortress
+				38		| Dagger of Venom
+				39		| Dimensional Shackles
+				40		| Dragon Slayer
+				41		| Elven Chain
+				42		| Flame Tongue
+				43		| Gem of Seeing
+				44		| Giant Slayer
+				45		| Glamoured Studded Leather
+				46		| Helm of Teleportation
+				47		| Horn of Blasting
+				48		| =Pick('Silver', 'Brass') + ' Horn of Valhalla'
+				49		| Canaith Mandolin of the Bards
+				50		| Cli Lyre of the Bards
+				51		| Ioun Stone of Awareness
+				52		| Ioun Stone of Protection
+				53		| Ioun Stone of Rserve
+				54		| Ioun Stone of Sustenance
+				55		| Iron Bands of Bilarro
+				56		| Leather Armor +1
+				57		| ='Leather Armor of ' + Generate('Resistance DnD 5e') + ' Resistance'
+				58		| Mace of Disruption
+				59		| Mace of Smiting
+				60		| Mace of Terror
+				61		| Mantle of Spell Resistance
+				62		| Necklace of Prayer Beads
+				63		| Periapt of Proof Against Poison
+				64		| Ring of Animal Influence
+				65		| Ring of Evasion
+				66		| Ring of Feather Falling
+				67		| Ring of Free Action
+				68		| Ring of Protection
+				69		| ='Ring of ' + Generate('Resistance DnD 5e') + ' Resistance'
+				70		| Ring of Spell Storing
+				71		| Ring of the Ram
+				72		| Ring of X-Ray Vision
+				73		| Robe of Eyes
+				74		| Rod of Rulership
+				75		| Rod of the Pact Keeper +2
+				76		| Rope of Entanglement
+				77		| Scale Mail + 1
+				78		| ='Scale Mail of ' + Generate('Resistance DnD 5e') + ' Resistance'
+				79		| Shield +2
+				80		| Shield of Missile Attraction
+				81		| Staff of Charming
+				82		| Staff of Healing
+				83		| Staff of Swarming Insects
+				84		| Staff of the Woodlands
+				85		| Staff of Withering
+				86		| Stone of Controlling Earth Elementals
+				87		| Sun Blade
+				88		| Sword of Life Stealing
+				89		| Sword of Wounding
+				90		| Tentacle Rod
+				91		| ='Vicious ' + Generate('Weapons DnD 5e')
+				92		| Wand of Binding
+				93		| Wand of Enemy Detection
+				94		| Wand of Fear
+				95		| Wand of Fireballs
+				96		| Wand of Lightning Bolts
+				97		| Wand of Paralysis
+				98		| Wand of The War Mage +2
+				99		| Wand of Wonder
+				100		| Wings of Flying
+				'''
+		}
+		MagicItem_H:
+		{
+			TableType: Random
+			SkipTable: "=true"
+			RepeatJoin: "<br />"
+			EnumerateRepeat: true
+			Table:
+				'''
+				Roll	| MagicItem
+				10		| =Generate('Weapons DnD 5e') +3
+				12		| Amulet of the Planes
+				14		| Flying Carpet
+				16		| Cyrstal Ball
+				18		| Ring of Regeneration
+				20		| Ring of Shooting Stars
+				22		| Ring of Telekinesis
+				24		| Robe of Scintilating Colors
+				26		| Robe of Stars
+				28		| Rod of Absorption
+				30		| Rod of Alertness
+				32		| Rod of Security
+				34		| Rod of the Pact Keeper +3
+				36		| Scimitar of Speed
+				38		| Shield +3
+				40		| Staff of Fire
+				42		| Staff of Frost
+				44		| Staff of Power
+				46		| Staff of Striking
+				48		| Staff of Thunder and Lightning
+				50		| =Generate('Weapons DnD 5e', 'Type=Sword') + ' of Sharpness'
+				52		| Wand of Polymorph
+				54		| Wand of the War Mage +3
+				55		| Adamantine Half Plate
+				56		| Adamantine Plate
+				57		| Animated Shield
+				58		| Belt of Fire Giant Strength
+				59		| ='Belt of ' + Pick('Frost','Stone') + ' Giant Strength'
+				60		| Breastplate +1
+				61		| ='Breastplate of ' + Generate('Resistance DnD 5e') + ' Resistance'
+				62		| Candle of Invocation
+				63		| Chain Mail +2
+				64		| Chain Shirt +2
+				65		| CLoak of Arachnida
+				66		| Dancing Sword
+				67		| Dragon Armor
+				68		| Dragon Scale Mail
+				69		| Dwarven Plate
+				70		| Dwarven Thrower
+				71		| Efreeti Bottle
+				72		| Obsidian Steed Figurine of Wondrous Power
+				73		| Forst Brand
+				74		| Helm of Brilliance
+				75		| Bronze Horn of Valhalla
+				76		| Anstruth Harp of the Bards
+				77		| Ioun Stone of Absorption
+				78		| Ioun Stone of Agility
+				79		| Ioun Stone of Fortitude
+				80		| Ioun Stone of Insight
+				81		| Ioun Stone of Intellect
+				82		| Ioun Stone of Leadership
+				83		| Ioun Stone of Strength
+				84		| Leather Armor +2
+				85		| Manual of Bodily Health
+				86		| Manual of Gainful Exercise
+				87		| Manual of Golems
+				88		| Manual of Quickness of Action
+				89		| Mirror of Life Trapping
+				90		| Nine Lives Stealer
+				91		| Oathbow
+				92		| Scale Mail +2
+				93		| Spellguard Shield
+				94		| Split Mail +1
+				95		| ='Splint Mail of ' + Generate('Resistance DnD 5e') + ' Resistance'
+				96		| Studded Leather +1
+				97		| ='Studded Leather of ' + Generate('Resistance DnD 5e') + ' Resistance'
+				98		| Tome of Clear Thought
+				99		| Tome of Leadership and Influence
+				100		| Tome of Understanding
+				'''
+		}
+		MagicItem_I:
+		{
+			TableType: Random
+			SkipTable: "=true"
+			RepeatJoin: "<br />"
+			EnumerateRepeat: true
+			Table:
+				'''
+				Roll	| MagicItem
+				5		| Defender
+				10		| Hammer of Thunderbolts
+				15		| Luck Blade
+				20		| Sword of Answering
+				23		| Holy Avenger
+				26		| Ring of Djinni Summoning
+				29		| Ring of Invisibility
+				32		| Ring of Spell Turning
+				35		| Rod of Lordly Might
+				38		| Staff of the Magi
+				41		| ='Vorpal ' + Generate('Weapons DnD 5e', 'Type=SwordSlashing')
+				43		| Belt of Cloud Giant Might
+				45		| Breastplate +2
+				47		| Chain Mail +3
+				49		| Chain Shirt +3
+				51		| Cloak of Invisibility
+				53		| ='Crystal Ball of ' + Pick('Mind Reading','Telepathy','True Seeing')
+				55		| Half Plate +1
+				57		| Iron Flask
+				59		| Leather Armor +3
+				61		| Plate Mail +1
+				63		| Robe of the Archmagi
+				65		| Rod of Resurrection
+				67		| Scale Mail +1
+				69		| Scarab of Protection
+				71		| Splint Mail +2
+				73		| Studded Leather +2
+				75		| Well of Many Worlds
+				76		| =PickW('Half Plate +2:2','Plate Mail +2:2','Studded Leather +3:2','Breastplate +3:2','Splint +3:2','Half Plate +3:1','Plate Mail +3:1')
+				77		| Apparatus of Kwalish
+				78		| Armor of Invulnerability
+				79		| Belt of Storm Giant Strength
+				80		| Cubic Gate
+				81		| Deck of Many Things
+				82		| Efreeti Chain
+				83		| ='Half Plate of ' + Generate('Resistance DnD 5e') + ' Resistance'
+				84		| Iron Horn of Valhalla
+				85		| Ollamh Harp of the Bards
+				86		| Ioun Stone of Greater Absorption
+				87		| Ioun Stone of Mastery
+				88		| Ioun Stone of Regeneration
+				89		| Plate Armor of Etherealness
+				90		| ='Plate Armor of ' + Generate('Resistance DnD 5e') + ' Resistance'
+				91		| Ring of Air Elemental Command
+				92		| Ring of Earth Elemental Command
+				93		| Ring of Fire Elemental Command
+				94		| Ring of Three Wishes
+				95		| Ring of Water Elemental Command
+				96		| Sphere of Annihilation
+				97		| Talisman of Pure Good
+				98		| Talisman of the Sphere
+				99		| Talisman of Pure Evil
+				100		| Tome of the Stilled Tongue
+				'''
+		}
+	}
+	GeneratorType: Table
+}

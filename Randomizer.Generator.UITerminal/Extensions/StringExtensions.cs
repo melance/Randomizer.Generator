@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Randomizer.Generator.UITerminal.Extensions
+namespace Randomizer.Generator.UI.Terminal.Extensions
 {
 	static class StringExtensions
 	{

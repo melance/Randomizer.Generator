@@ -1,0 +1,3329 @@
+{
+  Name: Psychological Disorders
+  Author: Lance Boudreaux
+  Description: Generates a psychological disorder.
+  Version: "2.0"
+  URL: http://psychcentral.com/disorders/
+  Tags:
+  [
+    Other
+  ]
+  OutputFormat: Html
+  Parameters: {}
+  TextCase: None
+  Imports: []
+  LineItems:
+  {
+    Start:
+    [
+      {
+        Content: "[Common]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Dissociative]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Eating]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Paraphilic]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[SleepWake]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Childhood]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Personality]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Other]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Phobia]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Common:
+    [
+      {
+        Content: Substance Abuse
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Substance Dependence
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Generalized Anxiety Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Panic Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Social Phobia
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Attention Deficit Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Attention Deficit Hyperactive Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bipolar Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Depression
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Obsessive-Compulsive Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Posttraumatic Stress Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Schizophrenia
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Seasonal Affective Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Social Anxiety
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Dissociative:
+    [
+      {
+        Content: Depersonalization Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dissociative Amnesia
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dissociative Fugue
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dissociative Identity Disorder
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Eating:
+    [
+      {
+        Content: Anorexia Nervosa
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Binge Eating Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bulimia Nervosa
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pica
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Paraphilic:
+    [
+      {
+        Content: Dyspareunia
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Erectile Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Exhibitionisitc Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Orgasmic Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Female Sexual Arousal Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Fetishistic Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Frotteuristic Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hypoactive Sexual Desire Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Premature Ejaculation
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sex Addiction
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sexual Masochism
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sexual Sadism
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Transvestic Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Vaginismus
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Voyeuristic Disorder
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    SleepWake:
+    [
+      {
+        Content: Circadian Rhythm Sleep-Wake Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hypersomnolence
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Insomnia Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Nightmare Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Narcolepsy
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Rapid Eye Movement Sleep Behavior Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Restless Leg Syndrome
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sleep Terror Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sleepwalking Disorder
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Childhood:
+    [
+      {
+        Content: Autism Spectrum Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Attachment Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Autism
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Conduct Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Disorder of Written Expression
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Disruptive Mood Dysregulation Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Encopresis
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Enuresis
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Expressive Language Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Mathematics Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Intellectual Disability
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Oppositional Defiant Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Reading Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Rumination Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Selective Mutism
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Seperation Anxiety Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Social Communication Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Stereotypic Movement Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Stuttering
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tourette's Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Transient Tic Disorder
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Personality:
+    [
+      {
+        Content: Antisocial Personality Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Avoidant Personality Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Borderline Personality Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dependent Personality Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Histrionic Personality Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dissociative Identity Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Narcissistic Personality Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Obssessive Compulsive Personality Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Paranoid Personality Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Schizoid Personality Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Schitotypal Personality Disorder
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Other:
+    [
+      {
+        Content: Acute Stress Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Adjustment Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Alzheimer's Disease
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bereavement
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Body Dysmorphic Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Brief Psychotic Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Conversion Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cyclothymic Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Delusional Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Disinhibited Social Engagement Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dysthymic Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Gender Dysphoria
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hoarding Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hypochondriasis
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Intermittent Explosive Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Kleptomania
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Major Neurocognitive Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Minor Neurocognitive Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Necrophilia
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pain Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Panic Attack
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pathological Gambling
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pedophilia
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Premenstrual Dysphoric Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Unspecified Psychotic Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pyromania
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Reactive Attachment Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Schizoaffective Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Schizophreniform Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Shared Psychotic Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Somatic Symptom Disorder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Trichotillomania
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Phobia:
+    [
+      {
+        Content: Ablutophobia :  Fear of washing or bathing.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Acarophobia :  Fear of itching or of the insects that cause itching.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Acerophobia :  Fear of sourness.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Achluophobia :  Fear of darkness.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Acousticophobia :  Fear of noise.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Acrophobia :  Fear of heights.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Aerophobia :  Fear of drafts, air swallowing, or airborne noxious substances.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Aeroacrophobia :  Fear of open high places.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Aeronausiphobia :  Fear of vomiting secondary to airsickness.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Agateophobia :  Fear of insanity.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Agliophobia :  Fear of pain.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Agoraphobia :  Fear of open spaces or of being in crowded, public places like markets. Fear of leaving a safe place.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Agraphobia :  Fear of sexual abuse.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Agrizoophobia :  Fear of wild animals.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Agyrophobia :  Fear of streets or crossing the street.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Aichmophobia :  Fear of needles or pointed objects.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ailurophobia :  Fear of cats.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Albuminurophobia :  Fear of kidney disease.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Alektorophobia :  Fear of chickens.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Algophobia :  Fear of pain.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Alliumphobia :  Fear of garlic.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Allodoxaphobia :  Fear of opinions.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Altophobia :  Fear of heights.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Amathophobia :  Fear of dust.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Amaxophobia :  Fear of riding in a car.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ambulophobia :  Fear of walking.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Amnesiphobia :  Fear of amnesia.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Amychophobia :  Fear of scratches or being scratched.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Anablephobia :  Fear of looking up.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "Ancraophobia :  Fear of wind. "
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Androphobia :  Fear of men.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Anemophobia :  Fear of air drafts or wind.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Anginophobia :  Fear of angina, choking or narrowness.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Anglophobia :  Fear of England or English culture, etc.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Angrophobia  :  Fear of anger or of becoming angry.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ankylophobia :  Fear of immobility of a joint.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Anthrophobia :  Fear of flowers.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Anthropophobia :  Fear of people or society.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Antlophobia :  Fear of floods.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Anuptaphobia :  Fear of staying single.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Apeirophobia :  Fear of infinity.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "Aphenphosmphobia :  Fear of being touched. "
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Apiphobia :  Fear of bees.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Apotemnophobia :  Fear of persons with amputations.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Arachibutyrophobia :  Fear of peanut butter sticking to the roof of the mouth.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Arachnephobia or Arachnophobia :  Fear of spiders.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Arithmophobia :  Fear of numbers.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Arrhenphobia :  Fear of men.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Arsonphobia :  Fear of fire.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Asthenophobia :  Fear of fainting or weakness.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Astraphobia :  Fear of thunder and lightning.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Astrophobia :  Fear of stars or celestial space.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Asymmetriphobia :  Fear of asymmetrical things.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ataxiophobia :  Fear of ataxia. (muscular in-coordination)
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ataxophobia :  Fear of disorder or untidiness.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Atelophobia :  Fear of imperfection.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Atephobia :  Fear of ruin or ruins.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Athazagoraphobia :  Fear of being forgotten, ignored, or forgetting.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Atomosophobia :  Fear of atomic explosions.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Atychiphobia :  Fear of failure.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Aulophobia :  Fear of flutes.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Aurophobia :  Fear of gold.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Auroraphobia :  Fear of Northern lights.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Autodysomophobia :  Fear of one that has a vile odor.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Automatonophobia :  Fear of ventriloquist's dummies, animatronic creatures, wax statues (anything that falsely represents a sentient being).
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Automysophobia :  Fear of being dirty.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Autophobia :  Fear of being alone or of oneself.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Aviophobia  :  Fear of flying.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bacillophobia :  Fear of microbes.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bacteriophobia :  Fear of bacteria.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ballistophobia :  Fear of missiles or bullets.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bolshephobia :  Fear of Bolsheviks.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Barophobia :  Fear of gravity.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Basophobia :  Inability to stand. Fear of walking or falling.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bathmophobia :  Fear of stairs or steep slopes.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bathophobia :  Fear of depth.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Batophobia :  Fear of heights or being close to high buildings.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Batrachophobia :  Fear of amphibians, such as frogs, newts, salamanders, etc.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Belonephobia :  Fear of pins and needles.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bibliophobia :  Fear of books.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Blennophobia :  Fear of slime.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bogyphobia :  Fear of bogeys or the bogeyman.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Botanophobia :  Fear of plants.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bromidrosiphobia :  Fear of body smells.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Brontophobia :  Fear of thunder and lightning.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bufonophobia :  Fear of toads.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cacophobia :  Fear of ugliness.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cainophobia :  Fear of newness, novelty.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Caligynephobia :  Fear of beautiful women.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cancerophobia :  Fear of cancer.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cardiophobia :  Fear of the heart.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Carnophobia :  Fear of meat.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Catagelophobia :  Fear of being ridiculed.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Catapedaphobia :  Fear of jumping from high and low places.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cathisophobia :  Fear of sitting.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Catoptrophobia :  Fear of mirrors.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cenophobia :  Fear of new things or ideas.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ceraunophobia:  Fear of thunder and lightning.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Chaetophobia :  Fear of hair.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cheimaphobia :  Fear of cold.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Chemophobia :  Fear of chemicals or working with chemicals.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cherophobia :  Fear of gaiety.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Chionophobia :  Fear of snow.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Chiraptophobia :  Fear of being touched.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Chirophobia :  Fear of hands.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Chiroptophobia :  Fear of bats.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cholerophobia :  Fear of anger or the fear of cholera.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Chorophobia :  Fear of dancing.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Chrometophobia :  Fear of money.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Chromophobia :  Fear of colors.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Chronophobia :  Fear of time.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Chronomentrophobia :  Fear of clocks.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cibophobia :  Fear of food.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Claustrophobia :  Fear of confined spaces.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cleithrophobia :  Fear of being locked in an enclosed place.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cleptophobia :  Fear of stealing.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Climacophobia :  Fear of stairs, climbing, or of falling downstairs.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Clinophobia :  Fear of going to bed.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Clithrophobia :  Fear of being enclosed.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cnidophobia :  Fear of stings.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cometophobia :  Fear of comets.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Coimetrophobia :  Fear of cemeteries.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Coitophobia :  Fear of coitus.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Contreltophobia :  Fear of sexual abuse.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Coprastasophobia :  Fear of constipation.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Coprophobia :  Fear of feces.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Consecotaleophobia :  Fear of chopsticks.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Coulrophobia :  Fear of clowns.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Counterphobia :  The preference by a phobic for fearful situations.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cremnophobia :  Fear of precipices.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cryophobia :  Fear of extreme cold, ice or frost.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Crystallophobia :  Fear of crystals or glass.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cyberphobia :  Fear of computers or working on a computer.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cyclophobia :  Fear of bicycles.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cymophobia  :  Fear of waves or wave like motions.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cynophobia :  Fear of dogs or rabies.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cypridophobia  :  Fear of prostitutes or venereal disease.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Decidophobia :  Fear of making decisions.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Defecaloesiophobia :  Fear of painful bowels movements.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Deipnophobia :  Fear of dining or dinner conversations.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dementophobia :  Fear of insanity.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Demonophobia :  Fear of demons.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Demophobia :  Fear of crowds. (Agoraphobia)
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dendrophobia :  Fear of trees.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dentophobia :  Fear of dentists.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dermatophobia :  Fear of skin lesions.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dermatosiophobia :  Fear of skin disease.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dextrophobia :  Fear of objects at the right side of the body.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Diabetophobia :  Fear of diabetes.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Didaskaleinophobia :  Fear of going to school.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dikephobia :  Fear of justice.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dinophobia :  Fear of dizziness or whirlpools.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Diplophobia :  Fear of double vision.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dipsophobia :  Fear of drinking.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dishabiliophobia :  Fear of undressing in front of someone.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Disposophobia :  Fear of throwing stuff out. Hoarding.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Domatophobia :  Fear of houses or being in a house.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Doraphobia :  Fear of fur or skins of animals.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Doxophobia :  Fear of expressing opinions or of receiving praise.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dromophobia :  Fear of crossing streets.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dutchphobia :  Fear of the Dutch.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dysmorphophobia :  Fear of deformity.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dystychiphobia :  Fear of accidents.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ecclesiophobia :  Fear of church.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ecophobia :  Fear of home.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Eicophobia :  Fear of home surroundings.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Eisoptrophobia :  Fear of mirrors or of seeing oneself in a mirror.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Electrophobia :  Fear of electricity.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Eleutherophobia :  Fear of freedom.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "Elurophobia :  Fear of cats. "
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Emetophobia :  Fear of vomiting.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Enetophobia :  Fear of pins.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Enochlophobia :  Fear of crowds.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Enosiophobia :  Fear of having committed an unpardonable sin or of criticism.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Entomophobia :  Fear of insects.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Eosophobia :  Fear of dawn or daylight.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ephebiphobia :  Fear of teenagers.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Epistaxiophobia :  Fear of nosebleeds.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Epistemophobia :  Fear of knowledge.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Equinophobia :  Fear of horses.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Eremophobia :  Fear of being oneself or of loneliness.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ereuthrophobia :  Fear of blushing.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ergasiophobia :  Fear of work or functioning or surgeon's fear of operating.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ergophobia :  Fear of work.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Erotophobia :  Fear of sexual love or sexual questions.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Euphobia :  Fear of hearing good news.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Eurotophobia :  Fear of female genitalia.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Erythrophobia :  Fear of redlights, blushing or Red.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Febriphobia :  Fear of fever.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Felinophobia :  Fear of cats.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Francophobia :  Fear of France or French culture.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Frigophobia :  Fear of cold or cold things.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Galeophobia :  Fear of cats.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Gallophobia :  Fear France or French culture.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Gamophobia :  Fear of marriage.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Geliophobia :  Fear of laughter.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Gelotophobia :  Fear of being laughed at.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Geniophobia :  Fear of chins.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Genophobia :  Fear of sex.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Genuphobia :  Fear of knees.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Gephyrophobia :  Fear of crossing bridges.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Germanophobia :  Fear of Germany or German culture.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Gerascophobia :  Fear of growing old.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Gerontophobia :  Fear of old people or of growing old.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Geumaphobia :  Fear of taste.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Glossophobia :  Fear of speaking in public or of trying to speak.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Gnosiophobia :  Fear of knowledge.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Graphophobia :  Fear of writing or handwriting.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Gymnophobia :  Fear of nudity.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Gynephobia :  Fear of women.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hadephobia :  Fear of hell.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hagiophobia :  Fear of saints or holy things.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hamartophobia :  Fear of sinning.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Haphephobia :  Fear of being touched.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Harpaxophobia :  Fear of being robbed.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hedonophobia :  Fear of feeling pleasure.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Heliophobia :  Fear of the sun.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hellenologophobia :  Fear of Greek terms or complex scientific terminology.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Helminthophobia :  Fear of being infested with worms.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hemophobia :  Fear of blood.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Heresyphobia :  Fear of challenges to official doctrine or of radical deviation.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Herpetophobia :  Fear of reptiles or creepy, crawly things.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "Heterophobia :  Fear of the opposite sex. "
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hexakosioihexekontahexaphobia :  Fear of the number 666.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hierophobia :  Fear of priests or sacred things.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hippophobia :  Fear of horses.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hippopotomonstrosesquipedaliophobia :  Fear of long words.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hobophobia :  Fear of bums or beggars.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hodophobia :  Fear of road travel.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hormephobia :  Fear of shock.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Homichlophobia :  Fear of fog.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Homilophobia :  Fear of sermons.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hominophobia :  Fear of men.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Homophobia :  Fear of sameness, monotony or of homosexuality or of becoming homosexual.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hoplophobia :  Fear of firearms.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hydrargyophobia :  Fear of mercurial medicines.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hydrophobia :  Fear of water or of rabies.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hydrophobophobia :  Fear of rabies.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hyelophobia :  Fear of glass.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hygrophobia :  Fear of liquids, dampness, or moisture.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hylephobia :  Fear of materialism or the fear of epilepsy.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hylophobia :  Fear of forests.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hypengyophobia  :  Fear of responsibility.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hypnophobia :  Fear of sleep or of being hypnotized.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hypsiphobia :  Fear of height.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Iatrophobia :  Fear of going to the doctor or of doctors.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ichthyophobia :  Fear of fish.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ideophobia :  Fear of ideas.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Illyngophobia :  Fear of vertigo or feeling dizzy when looking down.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Iophobia :  Fear of poison.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Insectophobia  :  Fear of insects.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Isolophobia :  Fear of solitude, being alone.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Isopterophobia :  Fear of termites, insects that eat wood.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ithyphallophobia :  Fear of seeing, thinking about or having an erect penis.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Japanophobia :  Fear of Japanese.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Judeophobia :  Fear of Jews.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Kainolophobia  :  Fear of anything new, novelty.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Kakorrhaphiophobia :  Fear of failure or defeat.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Katagelophobia :  Fear of ridicule.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Kathisophobia :  Fear of sitting down.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Katsaridaphobia :  Fear of cockroaches.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Kenophobia :  Fear of voids or empty spaces.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Keraunophobia  :  Fear of thunder and lightning.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Kinetophobia  :  Fear of movement or motion.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Kleptophobia :  Fear of stealing.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Koinoniphobia :  Fear of rooms.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Kolpophobia :  Fear of genitals, particularly female.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Kopophobia :  Fear of fatigue.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "Koniophobia :  Fear of dust. "
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Kosmikophobia :  Fear of cosmic phenomenon.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "Kymophobia :  Fear of waves. "
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Kynophobia :  Fear of rabies.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Kyphophobia :  Fear of stooping.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Lachanophobia :  Fear of vegetables.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Laliophobia :  Fear of speaking.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Leprophobia :  Fear of leprosy.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Leukophobia :  Fear of the color white.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Levophobia :  Fear of things to the left side of the body.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ligyrophobia :  Fear of loud noises.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Lilapsophobia :  Fear of tornadoes and hurricanes.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Limnophobia :  Fear of lakes.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Linonophobia :  Fear of string.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Liticaphobia :  Fear of lawsuits.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Lockiophobia :  Fear of childbirth.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Logizomechanophobia :  Fear of computers.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Logophobia :  Fear of words.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Lutraphobia :  Fear of otters.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Lygophobia :  Fear of darkness.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Lyssophobia :  Fear of rabies or of becoming mad.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Macrophobia :  Fear of long waits.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Mageirocophobia :  Fear of cooking.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Maieusiophobia :  Fear of childbirth.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Malaxophobia :  Fear of love play.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Maniaphobia :  Fear of insanity.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Mastigophobia :  Fear of punishment.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Mechanophobia :  Fear of machines.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Medomalacuphobia :  Fear of losing an erection.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Medorthophobia :  Fear of an erect penis.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Megalophobia :  Fear of large things.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Melissophobia :  Fear of bees.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Melanophobia :  Fear of the color black.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Melophobia :  Fear or hatred of music.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Meningitophobia :  Fear of brain disease.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Menophobia :  Fear of menstruation.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Merinthophobia :  Fear of being bound or tied up.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Metallophobia :  Fear of metal.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Metathesiophobia :  Fear of changes.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Meteorophobia :  Fear of meteors.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Methyphobia :  Fear of alcohol.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Metrophobia :  Fear or hatred of poetry.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "Microbiophobia :  Fear of microbes. "
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Microphobia :  Fear of small things.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Misophobia :  Fear of being contaminated with dirt or germs.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Mnemophobia :  Fear of memories.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Molysmophobia :  Fear of dirt or contamination.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Monophobia :  Fear of solitude or being alone.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Monopathophobia :  Fear of definite disease.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Motorphobia :  Fear of automobiles.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Mottephobia :  Fear of moths.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Musophobia :  Fear of mice.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Mycophobia :  Fear or aversion to mushrooms.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Mycrophobia :  Fear of small things.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Myctophobia :  Fear of darkness.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Myrmecophobia :  Fear of ants.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Mythophobia :  Fear of myths or stories or false statements.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Myxophobia :  Fear of slime.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "Nebulaphobia :  Fear of fog. "
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Necrophobia :  Fear of death or dead things.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Nelophobia :  Fear of glass.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Neopharmaphobia :  Fear of new drugs.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Neophobia :  Fear of anything new.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Nephophobia :  Fear of clouds.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Noctiphobia :  Fear of the night.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Nomatophobia :  Fear of names.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Nosocomephobia :  Fear of hospitals.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Nosophobia :  Fear of becoming ill.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Nostophobia :  Fear of returning home.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Novercaphobia :  Fear of your step : mother.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Nucleomituphobia :  Fear of nuclear weapons.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Nudophobia :  Fear of nudity.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Numerophobia :  Fear of numbers.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Nyctohylophobia :  Fear of dark wooded areas or of forests at night
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Nyctophobia :  Fear of the dark or of night.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Obesophobia :  Fear of gaining weight.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ochlophobia :  Fear of crowds or mobs.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ochophobia :  Fear of vehicles.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Octophobia  :  Fear of the figure 8.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Odontophobia :  Fear of teeth or dental surgery.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Odynophobia :  Fear of pain.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Oenophobia :  Fear of wines.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Oikophobia :  Fear of home surroundings, house.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Olfactophobia :  Fear of smells.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ombrophobia :  Fear of rain or of being rained on.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ommetaphobia :  Fear of eyes.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Omphalophobia :  Fear of belly buttons.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Oneirophobia :  Fear of dreams.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Oneirogmophobia :  Fear of wet dreams.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Onomatophobia :  Fear of hearing a certain word or of names.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "Ophidiophobia :  Fear of snakes. "
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ophthalmophobia :  Fear of being stared at.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Opiophobia :  Fear medical doctors experience of prescribing needed pain medications for patients.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Optophobia :  Fear of opening one's eyes.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ornithophobia :  Fear of birds.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Orthophobia :  Fear of property.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Osmophobia :  Fear of smells or odors.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ostraconophobia :  Fear of shellfish.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ouranophobia :  Fear of heaven.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pagophobia :  Fear of ice or frost.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Panthophobia :  Fear of suffering and disease.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Panophobia :  Fear of everything.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Papaphobia :  Fear of the Pope.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Papyrophobia :  Fear of paper.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Paralipophobia :  Fear of neglecting duty or responsibility.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Paraphobia :  Fear of sexual perversion.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Parasitophobia :  Fear of parasites.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Paraskavedekatriaphobia :  Fear of Friday the 13th.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Parthenophobia :  Fear of virgins or young girls.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pathophobia :  Fear of disease.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Patroiophobia :  Fear of heredity.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Parturiphobia :  Fear of childbirth.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Peccatophobia :  Fear of sinning or imaginary crimes.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pediculophobia :  Fear of lice.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pediophobia :  Fear of dolls.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pedophobia :  Fear of children.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Peladophobia :  Fear of bald people.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pellagrophobia :  Fear of pellagra.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Peniaphobia :  Fear of poverty.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "Pentheraphobia :  Fear of mother : in : law. "
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Phagophobia :  Fear of swallowing or of eating or of being eaten.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Phalacrophobia :  Fear of becoming bald.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Phallophobia :  Fear of a penis, esp erect.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pharmacophobia :  Fear of taking medicine.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Phasmophobia :  Fear of ghosts.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Phengophobia :  Fear of daylight or sunshine.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Philemaphobia :  Fear of kissing.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Philophobia :  Fear of falling in love or being in love.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Philosophobia :  Fear of philosophy.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Phobophobia :  Fear of phobias.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Photoaugliaphobia :  Fear of glaring lights.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Photophobia :  Fear of light.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Phonophobia :  Fear of noises or voices or one's own voice; of telephones.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Phronemophobia :  Fear of thinking.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Phthiriophobia :  Fear of lice.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Phthisiophobia :  Fear of tuberculosis.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Placophobia :  Fear of tombstones.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Plutophobia :  Fear of wealth.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pluviophobia :  Fear of rain or of being rained on.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pneumatiphobia :  Fear of spirits.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pnigophobia :  Fear of choking of being smothered.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pocrescophobia :  Fear of gaining weight.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pogonophobia :  Fear of beards.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Poliosophobia :  Fear of contracting poliomyelitis.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Politicophobia :  Fear or abnormal dislike of politicians.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Polyphobia :  Fear of many things.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Poinephobia :  Fear of punishment.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ponophobia :  Fear of overworking or of pain.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Porphyrophobia :  Fear of the color purple.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Potamophobia :  Fear of rivers or running water.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Potophobia :  Fear of alcohol.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pharmacophobia :  Fear of drugs.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Proctophobia :  Fear of rectums.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Prosophobia :  Fear of progress.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Psellismophobia :  Fear of stuttering.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Psychophobia :  Fear of mind.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Psychrophobia :  Fear of cold.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pteromerhanophobia :  Fear of flying.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pteronophobia :  Fear of being tickled by feathers.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pupaphobia  :  Fear of puppets.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pyrexiophobia :  Fear of Fever.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pyrophobia :  Fear of fire.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Radiophobia :  Fear of radiation, x : rays.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ranidaphobia :  Fear of frogs.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Rectophobia :  Fear of rectum or rectal diseases.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Rhabdophobia :  Fear of being severely punished or beaten by a rod, or of being severely criticized. Also fear of magic.(wand)
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Rhypophobia :  Fear of defecation.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Rhytiphobia :  Fear of getting wrinkles.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Rupophobia :  Fear of dirt.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Russophobia :  Fear of Russians.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Samhainophobia: Fear of Halloween.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "Sarmassophobia :  Fear of love play. "
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Satanophobia :  Fear of Satan.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Scabiophobia :  Fear of scabies.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Scatophobia :  Fear of fecal matter.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Scelerophibia :  Fear of bad men, burglars.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sciophobia :  Fear of shadows.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Scoleciphobia :  Fear of worms.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Scolionophobia :  Fear of school.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Scopophobia :  Fear of being seen or stared at.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Scotomaphobia :  Fear of blindness in visual field.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "Scotophobia :  Fear of darkness. "
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Scriptophobia :  Fear of writing in public.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Selachophobia :  Fear of sharks.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Selaphobia :  Fear of light flashes.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Selenophobia :  Fear of the moon.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Seplophobia :  Fear of decaying matter.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sesquipedalophobia :  Fear of long words.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "Sexophobia :  Fear of the opposite sex. "
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Siderodromophobia :  Fear of trains, railroads or train travel.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Siderophobia :  Fear of stars.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sinistrophobia :  Fear of things to the left or left : handed.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sinophobia :  Fear of Chinese, Chinese culture.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "Sitophobia :  Fear of food or eating. "
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "Snakephobia :  Fear of snakes. "
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Soceraphobia :  Fear of parents : in : law.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Social Phobia :  Fear of being evaluated negatively in social situations.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sociophobia :  Fear of society or people in general.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Somniphobia :  Fear of sleep.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sophophobia :  Fear of learning.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Soteriophobia  :  Fear of dependence on others.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Spacephobia :  Fear of outer space.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Spectrophobia :  Fear of specters or ghosts.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Spermatophobia :  Fear of germs.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Spheksophobia :  Fear of wasps.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Stasibasiphobia :  Fear of standing or walking.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Staurophobia :  Fear of crosses or the crucifix.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Stenophobia :  Fear of narrow things or places.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Stygiophobia :  Fear of hell.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Suriphobia :  Fear of mice.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Symbolophobia :  Fear of symbolism.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Symmetrophobia :  Fear of symmetry.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Syngenesophobia :  Fear of relatives.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Syphilophobia :  Fear of syphilis.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tachophobia :  Fear of speed.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Taeniophobia :  Fear of tapeworms.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Taphephobia :  Fear of being buried alive or of cemeteries.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tapinophobia :  Fear of being contagious.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Taurophobia :  Fear of bulls.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Technophobia :  Fear of technology.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Teleophobia :  Fear of definite plans or religious ceremony.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Telephonophobia :  Fear of telephones.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Teratophobia :  Fear of bearing a deformed child or fear of monsters or deformed people.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Testophobia :  Fear of taking tests.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tetanophobia :  Fear of lockjaw, tetanus.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Teutophobia :  Fear of German or German things.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Textophobia :  Fear of certain fabrics.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Thaasophobia :  Fear of sitting.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Thalassophobia :  Fear of the sea.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Thanatophobia :  Fear of death or dying.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Theatrophobia :  Fear of theaters.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Theologicophobia :  Fear of theology.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Theophobia :  Fear of gods or religion.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Thermophobia :  Fear of heat.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tocophobia :  Fear of pregnancy or childbirth.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tomophobia :  Fear of surgical operations.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tonitrophobia :  Fear of thunder.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Topophobia :  Fear of certain places or situations, such as stage fright.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Toxiphobia :  Fear of poison or of being accidentally poisoned.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Traumatophobia :  Fear of injury.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tremophobia :  Fear of trembling.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Trichinophobia :  Fear of trichinosis.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Trichopathophobia  :  Fear of hair.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Triskaidekaphobia :  Fear of the number 13.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tropophobia :  Fear of moving or making changes.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Trypanophobia :  Fear of injections.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tuberculophobia :  Fear of tuberculosis.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tyrannophobia :  Fear of tyrants.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Uranophobia :  Fear of heaven.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Urophobia :  Fear of urine or urinating.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Vaccinophobia :  Fear of vaccination.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Venustraphobia :  Fear of beautiful women.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Verbophobia :  Fear of words.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Verminophobia :  Fear of germs.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Vestiphobia :  Fear of clothing.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Virginitiphobia :  Fear of rape.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Vitricophobia :  Fear of step : father.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Walloonphobia :  Fear of the Walloons.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Wiccaphobia: Fear of witches and witchcraft.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Xanthophobia :  Fear of the color yellow or the word yellow.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Xenoglossophobia :  Fear of foreign languages.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Xenophobia :  Fear of strangers or foreigners.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Xerophobia :  Fear of dryness.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Xylophobia :  Fear of wooden objects or forests.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "Xyrophobia : Fear of razors. "
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Zelophobia :  Fear of jealousy.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Zeusophobia :  Fear of God or gods.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Zemmiphobia :  Fear of the great mole rat.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Zoophobia :  Fear of animals.
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+  }
+  GeneratorType: Assignment
+}

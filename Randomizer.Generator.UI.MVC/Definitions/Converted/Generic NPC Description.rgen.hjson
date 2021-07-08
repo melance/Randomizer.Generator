@@ -1,0 +1,40 @@
+{
+  Tables:
+  {
+    Gender: null
+    PhysicalAppearance: null
+    Height: null
+    Weight: null
+    Personality: null
+    Intelligence: null
+    DistinguisingTrait: null
+    Age: null
+  }
+  Values: {}
+  Name: Generic NPC
+  Author: Lance Boudreaux
+  Description: A generic NPC generator.
+  Version: "2.0"
+  Tags:
+  [
+    NPC
+  ]
+  OutputFormat: Html
+  Parameters:
+  {
+    Gender:
+    {
+      Value: "0"
+      Display: Gender
+      Aliases: []
+      Type: List
+      Options:
+      [
+        0:Any
+        -1:Male
+        +1:Female
+      ]
+    }
+  }
+  GeneratorType: Table
+}

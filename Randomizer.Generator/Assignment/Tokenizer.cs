@@ -28,14 +28,37 @@ namespace Randomizer.Generator.Assignment
                 var endMatch = Regex.Match(remaining, END_IDENTIFIER);
                 if (startMatch.Success && endMatch.Success && startMatch.Index < endMatch.Index)
                 {
-                    if (startMatch.Index > 0)
+					var endIndex = startMatch.Index + 1;
+                    if (!String.IsNullOrEmpty(startMatch.Value))
                     {
                         tokens.Add(new Token() { TokenType = TokenTypes.Text, Value = remaining[..startMatch.Index] });
+						var identifierCount = 1;
+						var i = endIndex;
+						var escape = false;
+						do
+						{
+							switch (remaining[i])
+							{
+								case '[':
+									if (!escape) identifierCount++;
+									escape = false;
+									break;
+								case ']':
+									if (!escape) identifierCount--;
+									escape = false;
+									break;
+								case '\\':
+									escape = true;
+									break;
+							}
+							endIndex++;
+							i++;
+						} while (identifierCount > 0);
                     }
-                    var value = remaining[(startMatch.Index + 1)..endMatch.Index];
+                    var value = remaining[(startMatch.Index + 1)..(endIndex - 1)];
                     var token = new Token();
 
-                    remaining = remaining[(endMatch.Index + 1)..];
+                    remaining = remaining[endIndex..];
                     switch (value[0])
                     {
                         case EXPRESSION_TOKEN:

@@ -1,0 +1,114 @@
+{
+	Name: Weapons DnD 5e
+	KeepWhitespace: false
+	Author: Lance Boudreaux
+	Description: Selects a random weapon from DnD 5e
+	Version: "1.0"
+	Tags: [	]
+	OutputFormat: Text
+	Parameters:
+	{
+		Type:
+		{
+			Value: AnyType
+			Display: Type
+			Type: List
+			Options:
+			[
+				AnyType:Any
+				SimpleMelee:Simple Melee
+				SimpleRanged:Simple Ranged
+				MartialMelee:Martial Melee
+				MartialRanged:Martial Ranged
+				Sword:Sword
+				SwordSlashing:Sword Slashing
+				Ammunition:Ammunition
+			]
+		}
+	}
+	 LineItems:
+	{
+		Start:
+		[
+			{ Content: "[Type]" }
+		]
+		AnyType:
+		[
+			{ Content: "[SimpleMelee]" }
+			{ Content: "[SimpleRanged]" }
+			{ Content: "[MartialMelee]" }
+			{ Content: "[MartialRanged]" }
+		]
+		SimpleMelee:
+		[
+			{ Content: "Club" }
+			{ Content: "Dagger" }
+			{ Content: "Greatclub" }
+			{ Content: "Handaxe" }
+			{ Content: "Javelin" }
+			{ Content: "Light Hammer" }
+			{ Content: "Mace" }
+			{ Content: "Quarterstaff" }
+			{ Content: "Sickle" }
+			{ Content: "Spear" }			
+		]
+		SimpleRanged:
+		[
+			{ Content: "Light Crossbow" }
+			{ Content: "Dart" }
+			{ Content: "Shortbow" }
+			{ Content: "Sling" }
+		]
+		MartialMelee:
+		[
+			{ Content: "Battleaxe" }
+			{ Content: "Flail" }
+			{ Content: "Glaive" }
+			{ Content: "Greataxe" }
+			{ Content: "Greatsword" }
+			{ Content: "Halberd" }
+			{ Content: "Lance" }
+			{ Content: "Longsword" }
+			{ Content: "Maul" }
+			{ Content: "Morningstar" }
+			{ Content: "Pike" }
+			{ Content: "Rapier" }
+			{ Content: "Scimitar" }
+			{ Content: "Shortsword" }
+			{ Content: "Trident" }
+			{ Content: "War Pick" }
+			{ Content: "Warhammer" }
+			{ Content: "Whip" }			
+		]
+		MartialRanged:
+		[
+			{ Content: "Blowgun" }
+			{ Content: "Hand Crossbow" }
+			{ Content: "Heavy Crossbow" }
+			{ Content: "Longbow" }
+			{ Content: "Net" }
+		]
+		Ammunition:
+		[
+			{ Content: "Arrow" }
+			{ Content: "Blowgun Needle" }
+			{ Content: "Crossbow Bolt" }
+			{ Content: "Sling Bullet" }
+		]
+		Sword:
+		[
+			{ Content: "Shortsword" }
+			{ Content: "Longsword" }
+			{ Content: "Greatsword" }
+			{ Content: "Scimitar" }
+			{ Content: "Rapier" }
+		]
+		SwordSlashing:
+		[
+			{ Content: "Longsword" }
+			{ Content: "Greatsword" }
+			{ Content: "Scimitar" }
+		]
+	}
+	GeneratorType: Assignment
+}

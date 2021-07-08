@@ -2,7 +2,7 @@
   "profiles": {
     "Randomizer.Generator.DefinitionConverter": {
       "commandName": "Project",
-      "commandLineArgs": "--source \"E:\\Dropbox\\Development\\Source Code\\TheRandomizerCustomizations\\Generators\\adventure_hooks_(post_apocalyptic).rgen\" --target \"test.rgen.hjson\" --overwrite true"
+      "commandLineArgs": "--source \"C:\\Users\\me_la\\source\\repos\\Randomizer.Generator\\Randomizer.Generator.UI.MVC\\Definitions\"  --overwrite false"
     }
   }
 }

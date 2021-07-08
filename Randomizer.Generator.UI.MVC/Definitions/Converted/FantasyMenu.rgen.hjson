@@ -1,0 +1,1921 @@
+{
+  Name: Fantasy Inn Menu
+  Author: Lance Boudreaux
+  Description: Generates a menu for a fantasy inn
+  Version: "2.0"
+  Tags:
+  [
+    Environment
+    Other
+  ]
+  OutputFormat: Html
+  Parameters:
+  {
+    Cuisine:
+    {
+      Value: Any
+      Display: Cuisine
+      Aliases: []
+      Type: List
+      Options:
+      [
+        Any:Any
+        Normal:Normal
+        Exotic:Exotic
+      ]
+    }
+  }
+  TextCase: None
+  Imports: []
+  LineItems:
+  {
+    Start:
+    [
+      {
+        Content: "[Cuisine]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Any:
+    [
+      {
+        Content:
+          '''
+          <h1>Menu</h1>
+          		<h3>Appetizers</h3>
+          		<hr />
+          		[Appetizer]<br />
+          		[Appetizer]<br />
+          		[Appetizer]<br />
+          		[Appetizer]<br />
+          		
+          		<h3>Soups and Salads</h3>
+          		<hr />
+          		[SoupAndSalad]<br />
+          		[SoupAndSalad]<br />
+          		[SoupAndSalad]<br />
+          		
+          		<h3>Entr&eacute;es</h3>
+          		<hr />
+          		[Entree]<br />
+          		[Entree]<br />
+          		[Entree]<br />
+          		[Entree]<br />
+          		
+          		<h3>Deserts</h3>
+          		<hr />
+          		[Desert]<br />
+          		[Desert]<br />
+          		
+          		<h3>Beverages</h3>
+          		<hr />
+          		[Drink]<br />
+          		[Drink]<br />
+          		
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Normal:
+    [
+      {
+        Content:
+          '''
+          <h1>Menu</h1>
+          		<h3>Appetizers</h3>
+          		<hr />
+          		[AppetizerNormal]<br />
+          		[AppetizerNormal]<br />
+          		[AppetizerNormal]<br />
+          		[AppetizerNormal]<br />
+          		
+          		<h3>Soups and Salads</h3>
+          		<hr />
+          		[SAndSNormal]<br />
+          		[SAndSNormal]<br />
+          		[SAndSNormal]<br />
+          		
+          		<h3>Entr&eacute;es</h3>
+          		<hr />
+          		[EntreeNormal]<br />
+          		[EntreeNormal]<br />
+          		[EntreeNormal]<br />
+          		[EntreeNormal]<br />
+          		
+          		<h3>Deserts</h3>
+          		<hr />
+          		[DesertNormal]<br />
+          		[DesertNormal]<br />
+          		
+          		<h3>Beverages</h3>
+          		<hr />
+          		[Drink]<br />
+          		[Drink]<br />
+          		
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Exotic:
+    [
+      {
+        Content:
+          '''
+          <h1>Menu</h1>
+          		<h3>Appetizers</h3>
+          		<hr />
+          		[AppetizerExotic]<br />
+          		[AppetizerExotic]<br />
+          		[AppetizerExotic]<br />
+          		[AppetizerExotic]<br />
+          		
+          		<h3>Soups and Salads</h3>
+          		<hr />
+          		[SAndSExotic]<br />
+          		[SAndSExotic]<br />
+          		[SAndSExotic]<br />
+          		
+          		<h3>Entr&eacute;es</h3>
+          		<hr />
+          		[EntreeExotic]<br />
+          		[EntreeExotic]<br />
+          		[EntreeExotic]<br />
+          		[EntreeExotic]<br />
+          		
+          		<h3>Deserts</h3>
+          		<hr />
+          		[DesertExotic]<br />
+          		[DesertExotic]<br />
+          		
+          		<h3>Beverages</h3>
+          		<hr />
+          		[Drink]<br />
+          		[Drink]<br />
+          		
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Appetizer:
+    [
+      {
+        Content: "[AppetizerNormal]"
+        Repeat: 1
+        Weight: 85
+      }
+      {
+        Content: "[AppetizerExotic]"
+        Repeat: 1
+        Weight: 5
+      }
+      {
+        Content: "[Appetizer]<br />[Appetizer]"
+        Repeat: 1
+        Weight: 10
+      }
+    ]
+    AppetizerExotic:
+    [
+      {
+        Content: Buffalo [Meat] with Fire Mephit Sauce
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[ExoticMeat] Jerky Skewered on [=Pick('Cactus Spines','Needle Blights')] in a [Sauce]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[ExoticMeat] Sausage"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[ExoticMeat] on a Stick"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[ExoticVegetable] in a [Sauce]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Method] [ExoticMeat] with a [Sauce]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Method] [Spice] [ExoticMeat]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    AppetizerNormal:
+    [
+      {
+        Content: Dire Boar's Head cheese
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sea Cucumber Kimchee
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Flavor] Fire Mephit Cheese"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Meat] Jerky Skewered on [=Pick('Cactus Spines','Needle Blights')] in a [Sauce]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Meat] Sausage"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Meat] on a Stick"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Spice] Dire Rat Bites"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Vegetable] in a [Sauce]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Sauce:
+    [
+      {
+        Content: "[Flavor] [Spice] Sauce"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Creamy Dipping Sauce
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Flavor] [Spice] [Ingredient] Sauce"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Ingredient] Sauce"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Spice] [Ingredient] Sauce"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Spice] and [Spice] [Ingredient] Sauce"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Ingredient] Reduction"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Flavor] [Ingredient] Sauce"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Spice] [Vegetable] Sauce"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Dressing:
+    [
+      {
+        Content: "[Flavor] Vinaigrette"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Ingredient] Dressing"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Ingredient] and [Ingredient] Dressing"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    SoupAndSalad:
+    [
+      {
+        Content: "[SoupAndSalad]<br />[SoupAndSalad]"
+        Repeat: 1
+        Weight: 10
+      }
+      {
+        Content: "[SAndSExotic]"
+        Repeat: 1
+        Weight: 5
+      }
+      {
+        Content: "[SAndSNormal]"
+        Repeat: 1
+        Weight: 85
+      }
+    ]
+    SAndSExotic:
+    [
+      {
+        Content: Devourer Brain Stew
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[ExoticMeat] Soup"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[ExoticMeat] and [Vegetable|ExoticVegetable] Stew"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Meat|ExoticMeat] and [ExoticVegetable] Stew"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[ExoticVegetable] Salad topped with [Spice] and a [Dressing]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[ExoticVegetable] Salad with [Dressing]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[ExoticVegetable] Salad"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[ExoticVegetable] Soup"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[ExoticVegetable] and Feta Salad"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[ExoticVegetable] Oil [ExoticMeat] Salad"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[ExoticVegetable] Salad topped with [Spice] and a [Dressing]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[ExoticVegetable] Salad with [Dressing]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[ExoticVegetable] Salad with [Dressing]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[ExoticVegetable] Salad"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[ExoticVegetable] and Feta Salad"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Meat] and [ExoticVegetable] Stew"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Method] [ExoticVegetable] Soup"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hallucinogenic Spore Soup
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    SAndSNormal:
+    [
+      {
+        Content: "[Meat] Soup"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Meat] and [Vegetable] Stew"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Method] [Vegetable] Soup"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Vegetable] Oil [Meat] Salad"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Vegetable] Salad topped with [Spice+Nut] and a [Dressing]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Vegetable] Salad with [Dressing]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Vegetable] Salad"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Vegetable] Soup"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Vegetable] and Feta Salad"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Vegetable] Salad Topped with Crushed [Nut]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Entree:
+    [
+      {
+        Content: "[EntreeNormal]"
+        Repeat: 1
+        Weight: 85
+      }
+      {
+        Content: "[EntreeExotic]"
+        Repeat: 1
+        Weight: 5
+      }
+      {
+        Content: "[Entree]<br />[Entree]"
+        Repeat: 1
+        Weight: 10
+      }
+    ]
+    EntreeExotic:
+    [
+      {
+        Content: Grilled [Meat] on a Treant Plank
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Mermaid Sashimi Platter
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[ExoticMeat] Shwarma with [Sauce]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[ExoticMeat] in a [Sauce]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Method] Mind Flayer Tentacles"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Method] Rubble Runner on the Half Shell"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Method] [ExoticMeat] Ribs with [Sauce]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Method] [ExoticMeat] Strip Steak"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Method] [ExoticMeat] with [Method] [Vegetable]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Method] [ExoticMeat] with a [Sauce]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Method] [ExoticMeat]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    EntreeNormal:
+    [
+      {
+        Content: Auroch's Cheeseburger with Dire Boar Bacon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Chef's Special
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Fried [Meat]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Giant Crab Leg Au Gratin
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pan Fried [Meat] with [Sauce]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Peppered [Meat] Kebabs with [Vegetable]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Spice Rubbed Rotisserie [Meat]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Meat] and [Vegetable] Chowder Pie"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Meat] in a [Sauce]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Method] [Meat] Steak Medium Rare with [Vegetable]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Method] [Meat] Steak"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Method] [Meat] with [Spice] and [Spice]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Method] [Meat] with [Spice]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Desert:
+    [
+      {
+        Content: "[DesertNormal]"
+        Repeat: 1
+        Weight: 85
+      }
+      {
+        Content: "[DesertExotic]"
+        Repeat: 1
+        Weight: 5
+      }
+      {
+        Content: "[Desert]<br />[Desert]"
+        Repeat: 1
+        Weight: 10
+      }
+    ]
+    DesertExotic:
+    [
+      {
+        Content: Candied Fairy Fruit
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Black Pudding Sweetened with [Fruit]
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    DesertNormal:
+    [
+      {
+        Content: Candied [Fruit]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Nut] [Alcohol] Bread Pudding"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Rice Pudding Sweetened with Dryad Dust
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Drink:
+    [
+      {
+        Content: "[Alcohol+Beverage]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Alcohol:
+    [
+      {
+        Content: Beer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Mead
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Wine
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Vodka
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ale
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Whiskey
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Scotch
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dragon's Breath
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Fairy Tears
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Spiced Wine
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Rum
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cider
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Beverage:
+    [
+      {
+        Content: Tea
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Fruit] Juice"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Fresh Spring Water
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Milk
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Goat Milk
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Coffee
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Nut:
+    [
+      {
+        Content: Pecan
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Peanut
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Walnut
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Chestnut
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pistachio
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cashew
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Brazilnut
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Almond
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Macadamia
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pine Nut
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Flavor:
+    [
+      {
+        Content: Acidic
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bitter
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sour
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Spicy
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sweet
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tangy
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Fruit:
+    [
+      {
+        Content: Prickleberry
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Strawberry
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Apple
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Orange
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Rasberry
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Lemon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Raspberry
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Grape
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Raisin
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dragonfruit
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Starfruit
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cantelope
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Watermelon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Grapfruit
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pineapple
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Ingredient:
+    [
+      {
+        Content: Apple Cider Vinegar
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Blood
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Blue Cheese
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Broth
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Butter
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cheese
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Citrus
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cream
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Mead
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Red Wine Vinegar
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Rice Vinegar
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tomato
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Vodka
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: White Vinegar
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Wine
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Meat:
+    [
+      {
+        Content: Goat
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Beef
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Steak
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pork
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Boar
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dire Boar
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dire Rat
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Rat
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bat
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Chicken
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Duck
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Lizard
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Turtle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Frog
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Crab Legs
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Giant Crab Legs
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Salmon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tuna
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Catfish
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Rock Crab Meat
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Giant Elk
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Elk
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Deer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Giant Dear
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hawk
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    ExoticMeat:
+    [
+      {
+        Content: Ankheg
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Basilisk
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Beholder Eyes
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Blink Dog
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Blood Hawk
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bugbear
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Devourer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Displacer Beast
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dragon Turtle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Fire Mephit
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Giant Spider Legs
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Goblin
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Lizardfolk
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Naga
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Owlbear
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pegasus
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Rust Monster Tail
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Stirge
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Troll Goat
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Umber Hulk
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Unicorn
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Wyrmling
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Method:
+    [
+      {
+        Content: Baked
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Barbecued
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Blanched
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Boiled
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Braised
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Broiled
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Deep Fried
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Fresh
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Grilled
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pan Fried
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pickled
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Poached
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Roasted
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Saut&eacute;ed
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Seared
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Simmered
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Slow Cooked
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Smoked
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Steamed
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Stewed
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Stir Fried
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Spice:
+    [
+      {
+        Content: Allspice
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Anise
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Basil
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Black Pepper
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Caraway
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cayenne
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Celery Seed
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Chili
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Chive
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cilantro
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cinnamon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Clove
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cumin
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Curry
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dill
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: File
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Fennel
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Garlic
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ginger
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Horseradish
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Jalape&ntilde;o
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Lemon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Lime
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Marjoram
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Mustard
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Nutmeg
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Onion
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Orange
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Oregano
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Paprika
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Parsley
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pink Pepper
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Poppy Seed
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Red Pepper
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Rosemary
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Saffron
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sage
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sea Salt
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sesame
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sichuan
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tarragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Thyme
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Turmeric
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Vanilla
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: White Pepper
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Vegetable:
+    [
+      {
+        Content: Artichoke
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Asparagus
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Avocado
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Baby Carrots
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Baby Onions
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Beets
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Black Beans
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Black Eyed Peas
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Broccoli
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Brussels Sprouts
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Button Mushrooms
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cabbage
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Carrots
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cauliflower
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Chickpeas
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Corn
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Eggplant
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Field Peas
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Green Beans
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Kale
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Leeks
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Lentils
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Lima Beans
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Navy Beans
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Okra
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Olives
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Onions
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Parsnips
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Potatoes
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pumpkin
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Radishes
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Red Beans
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Rutabagas
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Shallots
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Snow Peas
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Soybeans
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Spinach
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Squash
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sweet Peas
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sweet Potatoes
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Taro Roots
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tomatoes
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Turnips
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Watercrest
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Waxbeans
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Yams
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Zucchini
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    ExoticVegetable:
+    [
+      {
+        Content: "[Method] Assassin Vine"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Method] Carnivorous Plant Petals"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Method] Deep Mountain Potato"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Method] Fairy Flowers"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Method] Flowering Death Petals"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Method] Green Wood Root"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Method] Hallucinogenic Spores"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Method] Nightshade"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Method] Psilocybin Mushrooms"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Method] Sea Cucumber"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Method] Treant Root"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Method] Treant Sapling"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Method] Vine Blight Limbs"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Method] Witchroot"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+  }
+  GeneratorType: Assignment
+}

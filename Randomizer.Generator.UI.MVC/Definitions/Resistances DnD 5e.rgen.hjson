@@ -1,0 +1,22 @@
+{
+	Name: Resistance DnD 5e
+	Description: Resitances from DnD 5e
+	Author: Lance Boudreaux
+	Version: "1.0"
+	OutputFormat: Text
+	Tags: [ ]
+	KeepWhitespace: false
+	Items: [
+		Acid
+		Cold
+		Fire
+		Force
+		Lightning
+		Necrotic
+		Poison
+		Psychic
+		Radiant
+		Thunder
+	]
+	GeneratorType: List
+}

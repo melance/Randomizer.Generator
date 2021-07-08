@@ -1,0 +1,24 @@
+{
+  Tables:
+  {
+    "Town Size": null
+    "Power Center": null
+    "Power Center Alignment": null
+    "Community Authorities": null
+    "Highest-level locals": null
+  }
+  Values: {}
+  Name: Town Generator (D&D 3e)
+  Author: Lance Boudreaux
+  Description: A town generator based on the D&D 3e DMG.
+  Version: "2.0"
+  Tags:
+  [
+    Environment
+    D&D
+    Fantasy
+  ]
+  OutputFormat: Html
+  Parameters: {}
+  GeneratorType: Table
+}

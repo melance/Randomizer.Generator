@@ -14,7 +14,7 @@ namespace Randomizer.Generator.Assignment
 	/// Using a series of line items containing line item references, equations, and variables generates random content
 	/// </summary>
 	public class AssignmentDefinition : BaseDefinition
-    {		
+    {
 		#region Constants
 		/// <summary>The starting lineitem for generation</summary>
 		private const string START_ITEM = "Start"; 
@@ -35,13 +35,16 @@ namespace Randomizer.Generator.Assignment
 
 		#region Properties
 		/// <summary>List of line items used in the generator</summary>
-		[JsonProperty(Order = 101)]
+		[JsonProperty(Order = 102)]
 		public LineItemDictionary LineItems { get; set; } = new();
 		/// <summary>List of imported assignment generators</summary>
-		[JsonProperty(Order = 100)]
+		[JsonProperty(Order = 101)]
 		public List<String> Imports { get; set; } = new();
+		/// <summary>The case to convert the text to</summary>
+		[JsonProperty(Order = 100)]
+		public TextCases TextCase { get; set; } = TextCases.None;
 		/// <summary>Variables added during generation</summary>
-		private InsensitiveDictionary<String> Variables { get; set; } = new();
+		private InsensitiveDictionary<String> Variables { get; set; } = new();		
 		#endregion
 
 		#region Public Methods
@@ -49,24 +52,20 @@ namespace Randomizer.Generator.Assignment
 		/// Generates random content
 		/// </summary>
 		/// <returns>The generated content</returns>
-		public override string Generate()
+		public override string Generate() 
         {
-            var value = string.Empty;
-            var next = START_ITEM;
+			base.Generate();
+			var next = START_ITEM;
             LineItem item;
 			LoadImports();
 
             _loopCount = 0;
             _recursionDepth = 0;
 
-            do
-            {
-                item = LineItems[next].SelectRandomItem();
-                value += EvaluateLineItem(item);
-                next = item.Next;
-            } while (!String.IsNullOrWhiteSpace(next));
+            item = LineItems[next].SelectRandomItem();
+			var value = EvaluateLineItem(item);
 
-            return value;
+			return value.ToCase(TextCase);
         }
 		#endregion
 
@@ -74,11 +73,16 @@ namespace Randomizer.Generator.Assignment
 		/// <summary>
 		/// Loads a definition from the list of <see cref="Imports"/>
 		/// </summary>
-		/// <param name="importPath">The path to the definition to import</param>
+		/// <param name="name">The name to the definition to import</param>
 		/// <returns>The <see cref="AssignmentDefinition"/> requested</returns>
-		protected virtual AssignmentDefinition LoadImport(String importPath)
+		protected virtual AssignmentDefinition LoadImport(String name)
 		{
-			return (AssignmentDefinition)Deserialize(File.ReadAllText(importPath));
+			if (DataAccess.DataAccess.Instance.LibraryExists(name))
+				return (AssignmentDefinition)DataAccess.DataAccess.Instance.GetLibrary(name);
+			else if (DataAccess.DataAccess.Instance.DefinitionExists(name))
+				return (AssignmentDefinition)DataAccess.DataAccess.Instance.GetDefinition(name);
+			else
+				throw new DefinitionNotFoundException(name);
 		}
 
 		/// <summary>
@@ -137,6 +141,8 @@ namespace Randomizer.Generator.Assignment
                     result.Append(evaluated);
                 }
             }
+			if (!String.IsNullOrWhiteSpace(item.Next))
+				result.Append(EvaluateLineItem(LineItems[item.Next].SelectRandomItem()));
             _recursionDepth--;
             return result.ToString();
         }
@@ -170,9 +176,14 @@ namespace Randomizer.Generator.Assignment
                     case TokenTypes.Item:
                         var name = token.Value;
 
+						// If there are more than on item names in the token, select one
+						var parts = name.Split("|");
+						if (parts.Length > 1)
+							name = parts[Utility.Random.RandomNumber(0, parts.Length - 1)];
+
                         // If there is a parameter with this name, get the value
                         if (Parameters.ContainsKey(token.Value))
-                            name = Parameters[token.Value].Value;
+                            name = Parameters[token.Value].Value.ToString();
 
                         // Reevaluate to allow nested items
                         name = EvaluateContent(name);

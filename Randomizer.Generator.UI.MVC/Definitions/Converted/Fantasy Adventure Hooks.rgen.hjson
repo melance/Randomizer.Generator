@@ -1,0 +1,741 @@
+{
+  Name: Adventure Hooks (Fantasy)
+  Author: Lance Boudreaux
+  Description: A fantasy adventure hook generator.
+  Version: "2.0"
+  Tags:
+  [
+    Encounter
+    Fantasy
+  ]
+  OutputFormat: Html
+  Parameters: {}
+  TextCase: None
+  Imports:
+  [
+    monsters by size
+  ]
+  LineItems:
+  {
+    Start:
+    [
+      {
+        Content: A(n) [LargeMonster] [Action]s a nearby [Settlement].
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Forbidden lovers from a nearby [Settlement] run away to a [DangerousLocation].
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: The adventurers must protect a(n) [Person] from a(n) [Person].
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A local [Person] is suspected of kidnapping people.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A local [Person] claims to have been attacked by a [Monster] on the road.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A cult is abducting people for sacrifices.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Strange lights and sounds come from a(n) [DangerousLocation].
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A dying [Person] claims to have found a mother lode of [Mineral].
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A cursed item comes to the adventurers passing on a corruption.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A demon possesses a(n) [Person] to fulfill an ancient obligation made with a [Person] no longer alive.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A friend asks for help in settling a duel of honor.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A respected [Person] is accused of serious crimes; is it a frame up?
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Rumors are spreading of a [Person] who has returned from the dead.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A killer stalks a [Settlement] at night.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A(n) [Person] has become lost in a(n) [DangerousLocation] and need help.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Monster]s are gathering in large numbers near a local [Settlement]."
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: The nobles of a local [Settlement] are calling for help to find thieves that stole their riches.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A group of undead have begun guarding a(n) [DangerousLocation].
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A local [Settlement] has been devastated by a mysterious [NaturalDisaster].
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: The group is asked to escort a caravan through dangerous territory.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: The local rulers plan to execute a friend of one of the adventurers.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A local [Person] is accused of governmental corruption
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A conflict errupts between a group of [Monster]s and [Monster]s.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: On their deathbed, a(n) [Person] asks for help achieving a final task.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: All of the citizens of a local [Settlement] have mysteriously disappeared.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Two [Settlement]s are contesting who has rights to a local mine.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Rumors arise of a [Monster] in the nearby forest.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A(n) [Person] is seeing the near future, they foresee a [NaturalDisaster] in the local [Settlement]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A mage is granting wishes to anyone willing to pay.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: The daughter of a noble has run away to an enemy [Settlement].
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: All of the mages in the nearby area have lost their ability to cast spells.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: All of the soldiers in a nearby [Settlement] have fallen into a magical sleep just as an army gathers outside.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A(n) [Settlement] suffering from a plague say they were cursed.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: The adventurers awaken with short term memory loss.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A [Person] claiming to have information about a recent murder turns up dead.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A ship of undead arrive at the docks but do not disembark.
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    NaturalDisaster:
+    [
+      {
+        Content: tornado
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: hurricane
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: earthquake
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: storm
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: sandstorm
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: blizzard
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: locust swarm
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: fire
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: tsunami
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: wildfire
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: disease
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: plague
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: hail
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: sinkhole
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: drought
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: crop blight
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: cattle plague
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    LargeMonster:
+    [
+      {
+        Content: "[Large]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Huge]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Gargantuan]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Colossal]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Mineral:
+    [
+      {
+        Content: copper
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: silver
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: gold
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: platinum
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: iron
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: lead
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: tin
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: mercury
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: adamantine
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: mithril
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: obsidian
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: orichalcum
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Action:
+    [
+      {
+        Content: attack
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: terrorize
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: stalk
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: threaten
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: inhabit
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: leave
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Settlement:
+    [
+      {
+        Content: town
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: city
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: hamlet
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: kingdom
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: settlement
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: castle
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    DangerousLocation:
+    [
+      {
+        Content: ruin
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: dungeon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: abandoned castle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: abandoned mine
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: wizard's tower
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: haunted woods
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Person:
+    [
+      {
+        Content: adventurer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: archer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: bandit
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: barbarian
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: baron
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: beggar
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: bishop
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: blacksmith
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: cardinal
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: champion
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: cleric
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: cooper
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: courier
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: druid
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: dwarf
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: elf
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: farmer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: fool
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: gypsy
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: hangman
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: henchman
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: hunter
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: jester
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: knave
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: king
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: knight
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: lady
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: lord
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: maiden
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: mariner
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: mercenary
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: merchant
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: messenger
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: noble
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: nobleman
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: paladin
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: pedlar
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: potter
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: priest
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: prince
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ranger
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: rogue
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: queen
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: sailer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: scoundrel
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: soldier
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: sorceror
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: thief
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: undertaker
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: vagabond
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: warrior
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: wizard
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+  }
+  GeneratorType: Assignment
+}

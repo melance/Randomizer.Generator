@@ -1,0 +1,779 @@
+{
+  Name: Random Encounters (Fantasy)
+  Author: Lance Boudreaux
+  Description: A random fantasy non-plot encounter generator based on:
+  Version: "2.0"
+  URL: https://www.reddit.com/r/DnD/comments/28x8z8/so_the_other_day_i_asked_for_some_random/
+  Tags:
+  [
+    Encounter
+    Fantasy
+  ]
+  OutputFormat: Html
+  Parameters: {}
+  TextCase: None
+  Imports:
+  [
+    Fantasy Person
+    monsters by type
+  ]
+  LineItems:
+  {
+    Start:
+    [
+      {
+        Content: A(n) [NaturalDisaster] strikes the region.
+        Repeat: 1
+        Weight: 5
+      }
+      {
+        Content: You meet a traveling [Merchant] merchant on the road.
+        Repeat: 1
+        Weight: 3
+      }
+      {
+        Content: An escaped slave runs across your path with his master close behind.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: An adventuring party similar to yours passes by.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: You come across a wounded citizen on the road.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: You come across a [Person] in need of food or water.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A bounty hunter passes by, stops you but doesn't do anything.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: You see two gods fighting fly over head.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: You see two dragons fighting fly over head.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: You discover an abundant [Mineral] ore deposit in the mouth of a mysterious chasm.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: The largest rat you've ever seen passes by.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: You come across a pack of dogs guarding the corpes of a [Person].
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: You come across a camp of nomads.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A [DireAnimal] and a [DireAnimal] are fighting on the road.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A stranger walks up, hands you a [Object] with a dragon engraved in it and walks away.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Your path is blocked by a forest fire.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A row of [=ToText(Roll(3,2))] freshly dug unmarked graves line the side of the road.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A group of unmanned childer run past and call you names.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A clinicaly insane woman shuffles by ranting and raving.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: You come across a cannibal eating a corpse.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: You can hear a wizard casting a spell with a voice that crosses miles.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: There is an empty sack by the side of the road.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A child approaches you asking for an autograph.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: You spot a traveling merchant selling (fake) magic devices.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A cartographer approaches you asking for help on map notes.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: You come across a small group of people trying to start up a town.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A pack of non-hostile [Undead] meander by, bickering about past discretions.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A looter tells you he's headed to a nearby destroyed town.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A fanatic in old robes passes by and screams obsinities, saying "He's coming for you!"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: One of your party contracts food poisoning.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: You spot a pick-pocket in a crowd of people.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A meteorite flys overhead and crashes down miles away.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A [ChromaticDragon] flys overhead and roars.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A [MetallicDragon] flys overhead and roars.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A [Humanoid] missionary comes by to share with you the lore of his deity.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: You pass by an abandoned [Building].
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: You discover a hidden prison labor camp with the worst of the land's prisoners inside.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: You spot a unicorn off in the distance.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: One of your party is invited to join a guild.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: You come across a rare piece of foliage.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A group of travelers come by and tell you of a nearby overgrown [Building] in some nearby woods.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A stray arrow flies overhead. A novice runs out, grabs the arrow, and apologizes.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Some workers come begging for work in exchange for food.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A lone bandit attempts to rob you.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: You come across a cavern inahbited by a(n) [Animal].
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A magical rift appears in your path.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: You discover a lamp that grants one minor wish.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: You come across a group of slavers.
+        Repeat: 1
+        Weight: 3
+      }
+      {
+        Content: You are ambushed by a group of [=ToText(Roll(2,6))] bandits.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: You are ambushed by a group of [=ToText(Roll(2,6))] incompetent bandits.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: You are ambushed by a group of [=ToText(Roll(2,6))] goblins.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: You are ambushed by a group of [=ToText(Roll(2,6))] incompetent goblins.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: The road suddenly turns sharply, going in a direction different from the map.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A group of guards accompanying an ornate carriage passes by.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A group of bandits accosting an ornate carriage passes by.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A [Noble] passes by.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A [Noble] passes by with a group of slavers.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A group of [Humanoid]s are at the side of the road, burying a respected elder.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A group of [Animal]s circle your camp as if they are going to attack but don't.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A minsterl passes by.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A group of [BlackRobes] dressed in black robes pass you by.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A magician offers you a test. Two chests lay before him, one with treasure, one with trash.  Pick one for 1 gp.  (Both are trash)
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A skeleton is on the road with the "Elixer of Eternal Life", he looks to be a week old.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A man on a horse trots past with a "squire" close behind.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A naked woman comes from the bushes, begging for protection.  A bear follows her.  [Bear].
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Where a city is marked on the map, you instead find [MissingCity].
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: The body of a [Person] on the side of the road.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A bounty hunter passes by after some bandits.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A bounty hunter passes by looking for you.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: You must cross a thin, weak, drooping rope bridge over a very large gorge.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A pack of [Fey] gather around you singing peaceful songs.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: You encounter a group of [Humanoid]s that would like to travel with you for a day because they believe they are being chased.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A large tree has fallen into the road and the locals are helping move it.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: You cross paths with a group of pilgrims traveling to a nearby shrine.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: You come across a group of tax collectors.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A freak storm forces you to take shelter with a [Humanoid] that has already set up camp.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: The road is marked by [MarkedRoad].
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: You come across a child who is lost and crying.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: You come across a pack of wild dogs.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A group of vultures is feasting on the carcass of a freshly dead [Monster] carcass.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: You spot a well worn sword embeded in a rock off of the road.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A minstrel begins to follow you around in hopes of writing songs of adventure.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: The entire party falls down a sinkhole.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A group of rabid [Animal]s attacks the party.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A sorcerer claims to be a necromancer is accompanyed by two zombies.  (The zombies are actually just friends pretending).
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: You find a well worn journal filled with details of supernatural creatures.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A roc attacks another adventuring party just up the road.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: The bridge that crosses a strong deep river has collapsed.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A horse pulling an empty carriage is running toward you, and away from someting.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: You see a flutist playing a song, followed by a line of [=ToText(Roll(2,20))] children.
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Bear:
+    [
+      {
+        Content: Her boyfriend was a druid who accidentally turned into a bear mentally and physically.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: She was a forest animal that was accidentally turned into a human.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: The bear found her while she was washing.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: The bear is actually a nervous boy druid trying to sneak a peek at a naked girl.
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    BlackRobes:
+    [
+      {
+        Content: monks from a distant land
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: cultists, spreading the word of a powerful aberration
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: famous nobles, trying to travel unseen
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: happy, normal travelers
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Building:
+    [
+      {
+        Content: castle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: cottage
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: wizard's tower
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: hut
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: mine
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: town
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: keep
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: village
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: farm
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: temple
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    MarkedRoad:
+    [
+      {
+        Content: a grave dug in the middle of a crossroad
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: a badly made summoning circle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: a group of dead bandits
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: a broken down and abandoned wagon
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Merchant:
+    [
+      {
+        Content: medical
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: alchemist
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: weapons
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Mineral:
+    [
+      {
+        Content: copper
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: silver
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: gold
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: platinum
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: iron
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: lead
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: tin
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: mercury
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: adamantine
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: mithril
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: obsidian
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    MissingCity:
+    [
+      {
+        Content: a giant hole
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: a mirage of a large pond created by a wizard as a defense system.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: a city controlled by bandits with all of the guards dead.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: the burnt ruins of the city with no bodies or gold to be found.
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    NaturalDisaster:
+    [
+      {
+        Content: Earthquake
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hurricane
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Blizzard
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Supercell Thunderstorm
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Heatwave
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tornado
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Windstorm
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sandstorm
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Object:
+    [
+      {
+        Content: key
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: metal ball
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: empty flask
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: pendant
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: mask
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ring
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: brooch
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+  }
+  GeneratorType: Assignment
+}

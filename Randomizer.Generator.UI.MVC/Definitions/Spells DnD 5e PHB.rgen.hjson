@@ -1,0 +1,477 @@
+{
+	Name: Spells DnD 5e PHB
+	KeepWhitespace: false
+	Author: Lance Boudreaux
+	Description: Selects a random spell from DnD 5e Player's Hand Book
+	Version: "1.0"
+	Tags: [	]
+	OutputFormat: Text
+	Parameters:
+	{
+		Level:
+		{
+			Value: AnyLevel
+			Display: Level
+			Type: List
+			Options:
+			[
+				AnyLevel:Any
+				0:Cantrip
+				1:1st
+				2:2nd
+				3:3rd
+				4:4th
+				5:5th
+				6:6th
+				7:7th
+				8:8th
+				9:9th
+			]
+		}
+	}
+	LineItems:
+	{
+		Start:
+		[
+			{ Content: "[Level]" }
+		]
+		AnyLevel:
+		[
+			{ Content: "[0]" }
+			{ Content: "[1]" }
+			{ Content: "[2]" }
+			{ Content: "[3]" }
+			{ Content: "[4]" }
+			{ Content: "[5]" }
+			{ Content: "[6]" }
+			{ Content: "[7]" }
+			{ Content: "[8]" }
+			{ Content: "[9]" }
+		]
+		"0":
+		[
+			{ Content: "Acid Splash" }
+			{ Content: "Blade Ward" }
+			{ Content: "Chill Touch" }
+			{ Content: "Dancing Lights" }
+			{ Content: "Druidcraft"	}
+			{ Content: "Eldritch Blast" }
+			{ Content: "Fire Bolt" }
+			{ Content: "Friends" }
+			{ Content: "Guidance" }
+			{ Content: "Light" }
+			{ Content: "Mage Hand" }
+			{ Content: "Mending" }
+			{ Content: "Message" }
+			{ Content: "Minor Illusion" }
+			{ Content: "Poison Spray" }
+			{ Content: "Prestidigitation" }
+			{ Content: "Produce Flame" }
+			{ Content: "Ray of Frost" }
+			{ Content: "Resistance" }
+			{ Content: "Sacred Flame" }
+			{ Content: "Shillelagh" }
+			{ Content: "Shocking Grasp" }
+			{ Content: "Spare the Dying" }
+			{ Content: "Thaumaturgy" }
+			{ Content: "Thorn Whip" }
+			{ Content: "True Strike" }
+			{ Content: "Vicious Mockery" }
+		]
+		"1":
+		[
+			{ Content: "Alarm" }
+			{ Content: "Animal Friendship" }
+			{ Content: "Armor of Agathys" }
+			{ Content: "Arms of Hadar" }
+			{ Content: "Bane" }
+			{ Content: "Bless" }
+			{ Content: "Burning Hands" }
+			{ Content: "Charm Person" }
+			{ Content: "Chromatic Orb" }
+			{ Content: "Color Spray" }
+			{ Content: "Command" }
+			{ Content: "Compelled Duel" }
+			{ Content: "Comprehend Languages" }
+			{ Content: "Create or Destroy Water" }
+			{ Content: "Cure Wounds" }
+			{ Content: "Detect Evil and Good" }
+			{ Content: "Detect Magic" }
+			{ Content: "Detect Poison and Disease" }
+			{ Content: "Disguise Self" }
+			{ Content: "Dissonant Whispers" }
+			{ Content: "Divine Favor" }
+			{ Content: "Ensnaring Strike" }
+			{ Content: "Entangle" }
+			{ Content: "Expeditious Retreat" }
+			{ Content: "Faerie Fire" }
+			{ Content: "False Life" }
+			{ Content: "Feather Fall" }
+			{ Content: "Find Familiar" }
+			{ Content: "Fog Cloud" }
+			{ Content: "Goodberry" }
+			{ Content: "Grease" }
+			{ Content: "Guiding Bolt" }
+			{ Content: "Hail of Thorns" }
+			{ Content: "Healing Word" }
+			{ Content: "Hellish Rebuke" }
+			{ Content: "Heroism" }
+			{ Content: "Hex" }
+			{ Content: "Hunter's Mark" }
+			{ Content: "Identify" }
+			{ Content: "Illusory Script" }
+			{ Content: "Inflict Wounds" }
+			{ Content: "Jump" }
+			{ Content: "Longstrider" }
+			{ Content: "Mage Armor" }
+			{ Content: "Magic Missile" }
+			{ Content: "Protection from Evil and Good" }
+			{ Content: "Purify Food and Drink" }
+			{ Content: "Ray of Sickness" }
+			{ Content: "Sanctuary" }
+			{ Content: "Searing Smite" }
+			{ Content: "Shield" }
+			{ Content: "Shield of Faith" }
+			{ Content: "Silent Image" }
+			{ Content: "Sleep" }
+			{ Content: "Speak with Animals" }
+			{ Content: "Tasha's Hideous Laughter" }
+			{ Content: "Tenser's Floating Disk" }
+			{ Content: "Thunderous Smite" }
+			{ Content: "Thunderwave" }
+			{ Content: "Unseen Servant" }
+			{ Content: "Witch Bolt" }
+			{ Content: "Wrathful Smite" }
+		]
+		"2":
+		[
+			{ Content: "Goodberry" }
+			{ Content: "Grease" }
+			{ Content: "Guiding Bolt" }
+			{ Content: "Hail of Thorns" }
+			{ Content: "Healing Word" }
+			{ Content: "Hellish Rebuke" }
+			{ Content: "Heroism" }
+			{ Content: "Hex" }
+			{ Content: "Hunter's Mark" }
+			{ Content: "Identify" }
+			{ Content: "Illusory Script" }
+			{ Content: "Inflict Wounds" }
+			{ Content: "Jump" }
+			{ Content: "Longstrider" }
+			{ Content: "Mage Armor" }
+			{ Content: "Magic Missile" }
+			{ Content: "Protection from Evil and Good" }
+			{ Content: "Purify Food and Drink" }
+			{ Content: "Ray of Sickness" }
+			{ Content: "Sanctuary" }
+			{ Content: "Searing Smite" }
+			{ Content: "Shield" }
+			{ Content: "Shield of Faith" }
+			{ Content: "Silent Image" }
+			{ Content: "Sleep" }
+			{ Content: "Speak with Animals" }
+			{ Content: "Tasha's Hideous Laughter" }
+			{ Content: "Tenser's Floating Disk" }
+			{ Content: "Thunderous Smite" }
+			{ Content: "Thunderwave" }
+			{ Content: "Unseen Servant" }
+			{ Content: "Witch Bolt" }
+			{ Content: "Wrathful Smite" }
+			{ Content: "Aid" }
+			{ Content: "Alter Self" }
+			{ Content: "Animal Messenger" }
+			{ Content: "Arcane Lock" }
+			{ Content: "Augury" }
+			{ Content: "Barkskin" }
+			{ Content: "Beast Sense" }
+			{ Content: "Blindness/Deafness" }
+			{ Content: "Blur" }
+			{ Content: "Branding Smite" }
+			{ Content: "Calm Emotions" }
+			{ Content: "Cloud of Daggers" }
+			{ Content: "Continual Flame" }
+			{ Content: "Cordon of Arrows" }
+			{ Content: "Crown of Madness" }
+			{ Content: "Darkness" }
+			{ Content: "Darkvision" }
+			{ Content: "Detect Thoughts" }
+			{ Content: "Enhance Ability" }
+			{ Content: "Enlarge/Reduce" }
+			{ Content: "Enthrall" }
+			{ Content: "Find Steed" }
+			{ Content: "Find Traps" }
+			{ Content: "Flame Blade" }
+			{ Content: "Flaming Sphere" }
+			{ Content: "Gentle Repose" }
+			{ Content: "Gust of Wind" }
+			{ Content: "Heat Metal" }
+			{ Content: "Hold Person" }
+			{ Content: "Invisibility" }
+			{ Content: "Knock" }
+			{ Content: "Lesser Restoration" }
+			{ Content: "Levitate" }
+			{ Content: "Locate Animals or Plants" }
+			{ Content: "Locate Object" }
+			{ Content: "Magic Mouth" }
+			{ Content: "Magic Weapon" }
+			{ Content: "Melf's Acid Arrow" }
+			{ Content: "Mirror Image" }
+			{ Content: "Misty Step" }
+			{ Content: "Moonbeam" }
+			{ Content: "Nystul's Magic Aura" }
+			{ Content: "Pass without Trace" }
+			{ Content: "Phantasmal Force" }
+			{ Content: "Prayer of Healing" }
+			{ Content: "Protection from Poison" }
+			{ Content: "Ray of Enfeeblement" }
+			{ Content: "Rope Trick" }
+			{ Content: "Scorching Ray" }
+			{ Content: "See Invisibility" }
+			{ Content: "Shatter" }
+			{ Content: "Silence" }
+			{ Content: "Spider Climb" }
+			{ Content: "Spike Growth" }
+			{ Content: "Spiritual Weapon" }
+			{ Content: "Suggestion" }
+			{ Content: "Warding Bond" }
+			{ Content: "Web" }
+			{ Content: "Zone of Truth" }
+			{ Content: "Animate Dead" }
+		]
+		"3":
+		[
+			{ Content: "Aura of Vitality" }
+			{ Content: "Beacon of Hope" }
+			{ Content: "Bestow Curse" }
+			{ Content: "Blinding Smite" }
+			{ Content: "Blink" }
+			{ Content: "Call Lightning" }
+			{ Content: "Clairvoyance" }
+			{ Content: "Conjure Animals" }
+			{ Content: "Conjure Barrage" }
+			{ Content: "Counterspell" }
+			{ Content: "Create Food and Water" }
+			{ Content: "Crusader's Mantle" }
+			{ Content: "Daylight" }
+			{ Content: "Dispel Magic" }
+			{ Content: "Elemental Weapon" }
+			{ Content: "Fear" }
+			{ Content: "Feign Death" }
+			{ Content: "Fireball" }
+			{ Content: "Fly" }
+			{ Content: "Gaseous Form" }
+			{ Content: "Glyph of Warding" }
+			{ Content: "Haste" }
+			{ Content: "Hunger of Hadar" }
+			{ Content: "Hypnotic Pattern" }
+			{ Content: "Leomund's Tiny Hut" }
+			{ Content: "Lightning Arrow" }
+			{ Content: "Lightning Bolt" }
+			{ Content: "Magic Circle" }
+			{ Content: "Major Image" }
+			{ Content: "Mass Healing Word" }
+			{ Content: "Meld into Stone" }
+			{ Content: "Nondetection" }
+			{ Content: "Phantom Steed" }
+			{ Content: "Plant Growth" }
+			{ Content: "Protection from Energy" }
+			{ Content: "Remove Curse" }
+			{ Content: "Revivify" }
+			{ Content: "Sending" }
+			{ Content: "Sleet Storm" }
+			{ Content: "Slow" }
+			{ Content: "Speak with Dead" }
+			{ Content: "Speak with Plants" }
+			{ Content: "Spirit Guardians" }
+			{ Content: "Stinking Cloud" }
+			{ Content: "Tongues" }
+			{ Content: "Vampiric Touch" }
+			{ Content: "Water Breathing" }
+			{ Content: "Water Walk" }
+			{ Content: "Wind Wall" }		
+		]
+		"4":
+		[
+			{ Content: "Arcane Eye" }
+			{ Content: "Aura of Life" }
+			{ Content: "Aura of Purity" }
+			{ Content: "Banishment" }
+			{ Content: "Blight" }
+			{ Content: "Compulsion" }
+			{ Content: "Confusion" }
+			{ Content: "Conjure Minor Elementals" }
+			{ Content: "Conjure Woodland Beings" }
+			{ Content: "Control Water" }
+			{ Content: "Death Ward" }
+			{ Content: "Dimension Door" }
+			{ Content: "Divination" }
+			{ Content: "Dominate Beast" }
+			{ Content: "Evard's Black Tentacles" }
+			{ Content: "Fabricate" }
+			{ Content: "Fire Shield" }
+			{ Content: "Freedom of Movement" }
+			{ Content: "Giant Insect" }
+			{ Content: "Grasping Vine" }
+			{ Content: "Greater Invisibility" }
+			{ Content: "Guardian of Faith" }
+			{ Content: "Hallucinatory Terrain" }
+			{ Content: "Ice Storm" }
+			{ Content: "Leomund's Secret Chest" }
+			{ Content: "Locate Creature" }
+			{ Content: "Mordenkainen's Faithful Hound" }
+			{ Content: "Mordenkainen's Private Sanctum" }
+			{ Content: "Otiluke's Resilient Sphere" }
+			{ Content: "Phantasmal Killer" }
+			{ Content: "Polymorph" }
+			{ Content: "Staggering Smite" }
+			{ Content: "Stone Shape" }
+			{ Content: "Stoneskin" }
+			{ Content: "Wall of Fire" }		
+		]
+		"5":
+		[
+			{ Content: "Animate Objects" }
+			{ Content: "Antilife Shell" }
+			{ Content: "Awaken" }
+			{ Content: "Banishing Smite" }
+			{ Content: "Bigby's Hand" }
+			{ Content: "Circle of Power" }
+			{ Content: "Cloudkill" }
+			{ Content: "Commune" }
+			{ Content: "Commune with Nature" }
+			{ Content: "Cone of Cold" }
+			{ Content: "Conjure Elemental" }
+			{ Content: "Conjure Volley" }
+			{ Content: "Contact Other Plane" }
+			{ Content: "Contagion" }
+			{ Content: "Creation" }
+			{ Content: "Destructive Wave" }
+			{ Content: "Dispel Evil and Good" }
+			{ Content: "Dominate Person" }
+			{ Content: "Dream" }
+			{ Content: "Flame Strike" }
+			{ Content: "Geas" }
+			{ Content: "Greater Restoration" }
+			{ Content: "Hallow" }
+			{ Content: "Hold Monster" }
+			{ Content: "Insect Plague" }
+			{ Content: "Legend Lore" }
+			{ Content: "Mass Cure Wounds" }
+			{ Content: "Mislead" }
+			{ Content: "Modify Memory" }
+			{ Content: "Passwall" }
+			{ Content: "Planar Binding" }
+			{ Content: "Raise Dead" }
+			{ Content: "Rary's Telepathic Bond" }
+			{ Content: "Reincarnate" }
+			{ Content: "Scrying" }
+			{ Content: "Seeming" }
+			{ Content: "Swift Quiver" }
+			{ Content: "Telekinesis" }
+			{ Content: "Teleportation Circle" }
+			{ Content: "Tree Stride" }
+			{ Content: "Wall of Force" }
+			{ Content: "Wall of Stone" }		
+		]
+		"6":
+		[
+			{ Content: "Arcane Gate" }
+			{ Content: "Blade Barrier" }
+			{ Content: "Chain Lightning" }
+			{ Content: "Circle of Death" }
+			{ Content: "Conjure Fey" }
+			{ Content: "Contingency" }
+			{ Content: "Create Undead" }
+			{ Content: "Disintegrate" }
+			{ Content: "Drawmij's Instant Summons" }
+			{ Content: "Eyebite" }
+			{ Content: "Find the Path" }
+			{ Content: "Flesh to Stone" }
+			{ Content: "Forbiddance" }
+			{ Content: "Globe of Invulnerability" }
+			{ Content: "Guards and Wards" }
+			{ Content: "Harm" }
+			{ Content: "Heal" }
+			{ Content: "Heroes' Feast" }
+			{ Content: "Magic Jar" }
+			{ Content: "Mass Suggestion" }
+			{ Content: "Move Earth" }
+			{ Content: "Otiluke's Freezing Sphere" }
+			{ Content: "Otto's Irresistible Dance" }
+			{ Content: "Planar Ally" }
+			{ Content: "Programmed Illusion" }
+			{ Content: "Sunbeam" }
+			{ Content: "Transport via Plants" }
+			{ Content: "True Seeing" }
+			{ Content: "Wall of Ice" }
+			{ Content: "Wall of Thorns" }
+			{ Content: "Wind Walk" }
+			{ Content: "Word of Recall" }
+		]
+		"7":
+		[
+			{ Content: "Conjure Celestial" }
+			{ Content: "Delayed Blast Fireball" }
+			{ Content: "Divine Word" }
+			{ Content: "Etherealness" }
+			{ Content: "Finger of Death" }
+			{ Content: "Fire Storm" }
+			{ Content: "Forcecage" }
+			{ Content: "Mirage Arcane" }
+			{ Content: "Mordenkainen's Magnificent Mansion" }
+			{ Content: "Mordenkainen's Sword" }
+			{ Content: "Plane Shift" }
+			{ Content: "Prismatic Spray" }
+			{ Content: "Project Image" }
+			{ Content: "Regenerate" }
+			{ Content: "Resurrection" }
+			{ Content: "Reverse Gravity" }
+			{ Content: "Sequester" }
+			{ Content: "Simulacrum" }
+			{ Content: "Symbol" }
+			{ Content: "Teleport" }
+		]
+		"8":
+		[
+			{ Content: "Animal Shapes" }
+			{ Content: "Antimagic Field" }
+			{ Content: "Antipathy/Sympathy" }
+			{ Content: "Clone" }
+			{ Content: "Control Weather" }
+			{ Content: "Demiplane" }
+			{ Content: "Dominate Monster" }
+			{ Content: "Earthquake" }
+			{ Content: "Feeblemind" }
+			{ Content: "Glibness" }
+			{ Content: "Holy Aura" }
+			{ Content: "Incendiary Cloud" }
+			{ Content: "Maze" }
+			{ Content: "Mind Blank" }
+			{ Content: "Power Word Stun" }
+			{ Content: "Sunburst" }
+			{ Content: "Telepathy" }
+			{ Content: "Tsunami" }		
+		]
+		"9":
+		[
+			{ Content: "Astral Projection" }
+			{ Content: "Foresight" }
+			{ Content: "Gate" }
+			{ Content: "Imprisonment" }
+			{ Content: "Mass Heal" }
+			{ Content: "Meteor Swarm" }
+			{ Content: "Power Word Heal" }
+			{ Content: "Power Word Kill" }
+			{ Content: "Prismatic Wall" }
+			{ Content: "Shapechange" }
+			{ Content: "Storm of Vengeance" }
+			{ Content: "Time Stop" }
+			{ Content: "True Polymorph" }
+			{ Content: "True Resurrection" }
+			{ Content: "Weird" }
+			{ Content: "Wish" }
+		]
+	}
+	GeneratorType: Assignment
+}

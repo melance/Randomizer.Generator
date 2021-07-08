@@ -1,0 +1,816 @@
+{
+  Name: NPC Reaction
+  Author: /r/DM_FamousHippopotamus (converted by Lance Boudreaux)
+  Description: A random NPC reaction generator
+  Version: "2.0"
+  URL: https://www.reddit.com/r/DM_FamousHippopotamus/comments/2u1klv/random_reasons_table/
+  Tags:
+  [
+    NPC
+    Encounter
+  ]
+  OutputFormat: Html
+  Parameters:
+  {
+    Generator:
+    {
+      Value: Veracity
+      Display: Generate
+      Aliases: []
+      Type: List
+      Options:
+      [
+        Veracity:Rumor Veracity
+        Reactions:NPC Reactions
+        Motivations:NPC Motivations
+        AreaStatus:Area/Site Status
+      ]
+    }
+  }
+  TextCase: None
+  Imports: []
+  LineItems:
+  {
+    Start:
+    [
+      {
+        Content: "[Generator]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Veracity:
+    [
+      {
+        Content: False
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Vague
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Mixed
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: General
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Specific
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Exact
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Reactions:
+    [
+      {
+        Content: Hostile, now a nemesis. Gives a major bane ([MajorBane]).  Will pursue PC until dead.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Unhappy, gives a minor bane ([MinorBane]). [UnhappyNext]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Gives information ([PersonalInformation|LocalInformation]) as requested
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pleased.  Shares specific rumor. [PleasedNext].
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Happy.  Gives Minor Boon ([MinorBoon]) [HappyNext].
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Friendly, now an ally.  Gives Major Boon ([MajorBoon]).  Will protect PC until dead.
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    UnhappyNext:
+    [
+      {
+        Content: Remains non-hostile on next encounter
+        Repeat: 1
+        Weight: 20
+      }
+      {
+        Content: Will shift to hostile on next encounter
+        Repeat: 1
+        Weight: 80
+      }
+    ]
+    PleasedNext:
+    [
+      {
+        Repeat: 1
+        Weight: 60
+      }
+      {
+        Content: Will shift to happy on next encounter
+        Repeat: 1
+        Weight: 40
+      }
+    ]
+    HappyNext:
+    [
+      {
+        Repeat: 1
+        Weight: 20
+      }
+      {
+        Content: Will shift to friendly on next encounter
+        Repeat: 1
+        Weight: 80
+      }
+    ]
+    ItemRarity:
+    [
+      {
+        Content: common
+        Repeat: 1
+        Weight: 60
+      }
+      {
+        Content: uncommon
+        Repeat: 1
+        Weight: 35
+      }
+      {
+        Content: rare
+        Repeat: 1
+        Weight: 5
+      }
+    ]
+    PersonalInformation:
+    [
+      {
+        Content: Gives a secret that leads to Major Boon ([MajorBoon])
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Describes a family emergency ([Emergency])
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Passes along a rumor about the PC as told by a friend
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Passes along a rumor about the PC as told by an enemy ([MinorEnemy+MajorEnemy])
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Gives information that confirms a suspicion held by the PC or the party
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Passes along a Minor Warning ([MinorWarning]) that concerns the PC or the Party
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Gives exact knowledge about information the PC or Party has been investigating
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Passes along knowledge of a Major Warning ([Warning]) to the PC
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    LocalInformation:
+    [
+      {
+        Content: Tell of a Major Boon ([MajorBoon]) concerning the area
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tell of an Emergency ([Emergency])
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Passes along knowledge of a Social Event ([SocialEvent])
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Gives information about an Enemy ([MajorEnemy+MinorEnemy])
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Passes along information of a political event ([PoliticalEvent])
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Gives information about Religious Event ([ReligiousEvent])
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tells of Major Bane ([MajorBane])
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    ItemInformation:
+    [
+      {
+        Content: an artifact
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('jewelry','chest','map','bucket','lantern','jar')]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: armor
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('ranged','melee')] weapon ([ItemRarity])"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('rod','staff','wand','scepter','crown','gemstone')]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('statue','painting','instrument','sheet music','article of clothing')]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: replacement [=Pick('body part','body part','body part','organ')]
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    MajorBane:
+    [
+      {
+        Content: Gives bad luck (random penalties to random die rolls) for 1 month or 10 combats
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Causes outbreak of [=Pick('plague','pestilence')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Causes a large loss of monetary wealth
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Many items of value have been lost or destroyed
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Many buildings have been damaged','The land has been damaged')]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Many people have been killed
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: PC or Party has attracted the attention of [MinorEnemy+MajorEnemy]
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    MinorBane:
+    [
+      {
+        Content: "[=Pick('Disease','Pestilence')]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Buildings destroyed
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Enemy ([MinorEnemy+MajorEnemy]) of the PC or Party is actively opposing them
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Loss of items of value
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Curse ([Curse]) has been activated
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: People have been injured
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Haunted by [Haunted]
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    MajorBoon:
+    [
+      {
+        Content: Divine intervention grants [treasure]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: True knowledge of a [treasure] location is obtained
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Large amount of monetary wealth is granted
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('An existing skill is improved (+1)','An existing knowledge is improved (+1)','A new skill is obtained')]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A personal relation ship is improved to 100%
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A major property is awarded or an improvement to a major property is granted
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: PC or Party is pointed towards an Artifact ([ItemInformation])
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    MinorBoon:
+    [
+      {
+        Content: Enemy ([MinorEnemy+MajorEnemy]) has been temporarily thwarted
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Minor magic item obtained
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Small amount of [=Pick('money','resources')] obtained
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Magic gemstone obtained (use 0-level or cantrip effect, 1/day as level 1 cater)
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('A minor property is awarded','An improvement to a minor property is granted')]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Personal relationship established with potential ally','Social status increases with ally')]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: For one day, all activities are easier. +1
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    MinorEnemy:
+    [
+      {
+        Content: a snubbed ex-friend
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: a school bully
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: a business rival
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: a local thug
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: a romantic rival
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: a spiteful [=Pick('boss','teacher')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: a family member
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    MajorEnemy:
+    [
+      {
+        Content: a [=Pick('politician','political group')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: a powerful [=Pick('rogue','thug','assassin')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: a noble's family
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: a religious [=Pick('cult','sect','group','temple')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: a power [=Pick('mage','cabal')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: a mercenary group
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: a mysterious NPC
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Haunted:
+    [
+      {
+        Content: Spirits locked in battle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A tortured revenant who must relive its brutal murder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A benign phantom who provides small comforts and messages
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A crazed banshee
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A spiteful haunt, who appears as dead loved ones and friends
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A playful poltergeist, a childish trickster
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: An evil ghost, driven to consume lifeforce in a bid to regain life
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Curse:
+    [
+      {
+        Content: Time moves at a different speed
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sleep and rest is impossible
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Extreme [=Pick('heat','cold')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: An overwhelming aura of helplessness and suffering
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Plagues of vermin
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Foul weather
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Corruption of reality
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Treasure:
+    [
+      {
+        Content: potions
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: gems
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('weapons','armor')]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: coins
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('wands','staves','rods')]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: clothing
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: artifact ([ItemInformation])
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Emergency:
+    [
+      {
+        Content: Political power is dead or arrested/exiled
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Business in trouble
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Family friend [=Pick('ill','mad','dead')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hometown has been [=Pick('attacked','enslaved','destroyed')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Disease epidemic
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Close relative','Spouse')] has done something terrible"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: All [=Pick('resources','income')] has been [=Pick('stolen','destroyed')]
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Warning:
+    [
+      {
+        Content: A powerful enemy is coming for you
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: An enemy is plotting against you
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: The government is investigating you
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Your [=Pick('friend','lover','spouse')] is lying to you
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A [=Pick('co-worker','business partner')] is lying to you
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A rival is spreading [=Pick('terrible lies','rumors')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: An avatar is coming
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    SocialEvent:
+    [
+      {
+        Content: An invitation to an upcoming event given by a mysterious stranger
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A local revival of a deity's followers is nearby and drawing crowds
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A challenger has been issued by the local ruler calling for Feats of [=Pick('strength','dexterity','constitution','intelligence','wisdom','charisma')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: The guild-house is permitting new members to join, decided by a contest
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A circus has come to town.  Rumors are they are taking on workers and performers
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A fancy dress party for the local ruler has drawn all the wealthy in the area
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: The [=Pick('marriage','birth','death','divorce')] of the [=Pick('local ruler','local ruler\'s family')]
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    PolicitalEvent:
+    [
+      {
+        Content: Opposition gains control through a coup
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A downshift in the support of financial backers has driven prices way up
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A noble is accused of a terrible chrime
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A marriage between noble houses has been announced, rumors of treachery persist
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A shift in the government's stance on taxes has been taken badly by the populace
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Corruption rumors abound and evidence of murder and treachery is being sought
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A power figure has been [=Pick('killed','exiled')]
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    RelgiousEvent:
+    [
+      {
+        Content: Avatar issues sanctions
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Open warfare against temple enemies is now public knowledge
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: New [=Pick('edict','sanction')] is announced, causing a radical shift in the local population's mood
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: An expedition to the heathen lands has been announced
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Temple leaders have declared a peace agreement and a Summit of Faith is announced
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: An [=Pick('artifact','holy relic')] has been [=Pick('found','destroyed')] and a call to the faithful has gone out
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Avatar appears and [=Pick('denounces the faithful and punishes with a bane','blesses the faithful and rewards with a boon')]
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+  }
+  GeneratorType: Assignment
+}

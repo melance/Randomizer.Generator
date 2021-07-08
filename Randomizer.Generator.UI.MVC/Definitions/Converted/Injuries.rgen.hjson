@@ -1,0 +1,292 @@
+{
+  Name: Injuries
+  Author: Lance Boudreaux
+  Description: Creates random injuries from minor to permanent.
+  Version: "2.0"
+  Tags:
+  [
+    Other
+  ]
+  OutputFormat: Html
+  Parameters:
+  {
+    Severity:
+    {
+      Value: Any
+      Display: Severity
+      Aliases: []
+      Type: List
+      Options:
+      [
+        Any:Any
+        Minor:Minor
+        Major:Major
+        Permanent:Permanent
+      ]
+    }
+  }
+  TextCase: None
+  Imports: []
+  LineItems:
+  {
+    Start:
+    [
+      {
+        Content: "[Severity]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Any:
+    [
+      {
+        Content: "[Minor]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Major]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Permanent]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Minor:
+    [
+      {
+        Content: Black eye
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bruised ribs
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Exhaustion
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: 1st degree burn
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: 2nd degree burn
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Minor concussion
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sprained ankle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sprained hand
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sprained wrist
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Stunned
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Swollen eye
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Temporary tinnitus
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Major:
+    [
+      {
+        Content: 3rd degree burn
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Abdominal contusion
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Coma
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Compound fractured [BodyPart]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Concussion
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cracked skull
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Fractured [BodyPart]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Lost tooth
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Puncture wound
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Severe laceration
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Slipped vertebrae
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Unconscious
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Permanent:
+    [
+      {
+        Content: 4th degree burn
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Blinded
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Brain damage
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Broken spine (paraplegic)
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Broken spine (quadriplegic)
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Deafened
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Finger severed
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Lost eye
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Lost tongue
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Severed [BodyPart]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Severed ear
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tinnitus
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    BodyPart:
+    [
+      {
+        Content: ankle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: arm
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: foot
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: jaw
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: leg
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: hand
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: rib
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: wrist
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+  }
+  GeneratorType: Assignment
+}

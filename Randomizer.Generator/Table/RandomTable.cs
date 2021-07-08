@@ -11,9 +11,9 @@ namespace Randomizer.Generator.Table
 
 		#region Properties
 		/// <summary>An expression that evaluates to an <see cref="Int32"/> that modifies the dice roll</summary>
-		public String Modifier { get; set; } 
+		public String Modifier { get; set; }
 		/// <summary>The column used to calculate the row of the roll</summary>
-		public String RollColumn { get; set; }
+		public String RollColumn { get; set; } = "Roll";
 		#endregion
 
 		/// <summary>
@@ -22,7 +22,7 @@ namespace Randomizer.Generator.Table
 		/// <returns>The results of the process</returns>
 		protected override Dictionary<String, String> ProcessTableInternal()
 		{
-			var max = Table.Columns[RollColumn].Max(r => Int32.Parse(r.ToString()));
+			var max = ParsedTable.Columns[RollColumn].Max(r => Int32.Parse(r.ToString()));
 			var value = 0;
 			var results = new Dictionary<String, String>();
 			var modifier = 0;
@@ -36,15 +36,15 @@ namespace Randomizer.Generator.Table
 				modifier = GetModifier();
 
 				value = Utility.Random.RandomNumber(max) + modifier;
-				while (index < Table.RowCount && !found)
+				while (index < ParsedTable.RowCount && !found)
 				{
-					if (value < Int32.Parse(Table[RollColumn, index].ToString()))
+					if (value < Int32.Parse(ParsedTable[RollColumn, index].ToString()))
 						found = true;
 					else
 						index++;
 				}
 
-				if (index >= Table.RowCount) index = Table.RowCount - 1;
+				if (index >= ParsedTable.RowCount) index = ParsedTable.RowCount - 1;
 
 				ProcessRow(results, index);
 			}

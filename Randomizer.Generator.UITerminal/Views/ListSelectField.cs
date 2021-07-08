@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Terminal.Gui;
 
-namespace Randomizer.Generator.UITerminal.Views
+namespace Randomizer.Generator.UI.Terminal.Views
 {
 	class ListSelectField<T> : UpDownFieldBase
 	{

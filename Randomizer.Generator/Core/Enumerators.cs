@@ -12,7 +12,8 @@ namespace Randomizer.Generator.Core
         List,
 		Lua,
         Phonotactics,
-		Table
+		Table,
+		DotNet
     }
 
     /// <summary>
@@ -60,6 +61,8 @@ namespace Randomizer.Generator.Core
 		/// <summary>Change the text case to all UPPERCASE</summary>
         Upper,
 		/// <summary>Change the text case to Title Case</summary>
-        Title
-    }
+        Title,
+		/// <summary>Change the text case to Sentence case</summary>
+		Sentence
+	}
 }

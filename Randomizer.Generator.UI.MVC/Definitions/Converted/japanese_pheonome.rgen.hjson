@@ -1,0 +1,710 @@
+{
+  Version: "2.0"
+  Tags: []
+  OutputFormat: Html
+  Parameters: {}
+  TextCase: None
+  Imports: []
+  LineItems:
+  {
+    japanesepheonome:
+    [
+      {
+        Content: a
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: i
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: u
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: e
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: o
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ka
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ku
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ke
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ko
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ki
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: kya
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: kyu
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: kye
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: kyo
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ga
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: gu
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ge
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: go
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: gi
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: gya
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: gyu
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: gye
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: gyo
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: sa
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: su
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: se
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: so
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: si
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: shi
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: sha
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: shu
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: she
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: sho
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: zu
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ze
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: zo
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ju
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: je
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: jo
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ja
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ji
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: za
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ta
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: te
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: to
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: tu
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ti
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: tyu
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: tsu
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: tsa
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: tsi
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: tse
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: tso
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: chi
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: cha
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: chu
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: che
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: cho
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: da
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: du
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: de
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: do
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: di
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: dyu
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: na
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: nu
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ne
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: no
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: n
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ni
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: nya
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: nyu
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: nye
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: nyo
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ha
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: he
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ho
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: xa
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: xi
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: xu
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: xe
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: xo
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: hi
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: hya
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: hyu
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: hye
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: hyo
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: fu
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: fwa
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: fe
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: fo
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: fi
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: fya
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: fyu
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: fye
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: fyo
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ba
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: bu
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: be
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: bo
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: bi
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: bya
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: byu
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: bye
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: byo
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: pa
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: pu
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: pe
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: po
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: pi
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: pya
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: pyu
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: pye
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: pyo
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ma
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: mu
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: me
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: mo
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: mi
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: mya
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: myu
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: mye
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: myo
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ya
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: yu
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: yo
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ye
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ra
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ru
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: re
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ro
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ri
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: rya
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ryu
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ryo
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: wa
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: wi
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: we
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: wo
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+  }
+  GeneratorType: Assignment
+}

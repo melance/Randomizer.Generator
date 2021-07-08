@@ -12,7 +12,7 @@ namespace Randomizer.Generator.Table
 	public class LoopTable : BaseTable
 	{
 		/// <summary>The column used as the name for the result</summary>
-		public String KeyColumn { get; set; }
+		public String KeyColumn { get; set; } = "Key";
 
 		/// <summary>
 		/// Loops through each row in the table and constructs a result with the name "KeyColumnValue.ColumnName"
@@ -22,26 +22,28 @@ namespace Randomizer.Generator.Table
 		{
 			var results = new Dictionary<String, String>();
 			var count = GetRepeat();
-			var idIndex = Table.Columns.IndexOf(KeyColumn);
+			var idIndex = ParsedTable.Columns.IndexOf(KeyColumn);
 
 			// Repeat as requested
 			for (var i = 1; i <= count; i++)
 			{
 				// Loop through each row of the table
-				foreach (var row in Table.Rows)
+				foreach (var row in ParsedTable.Rows)
 				{
 					// Get the id for the column property
 					var id = row[idIndex].ToString();
-					for (var k = 0; k < Table.Columns.Count; k++)
+					for (var k = 0; k < ParsedTable.Columns.Count; k++)
 					{
 						// Create the key for the result
-						var key = $"{id}.{Table.Columns[k].Name}";
+						var key = $"{id}.{ParsedTable.Columns[k].Name}";
 						// Get and evaluate the expression
 						var expression = row[k].ToString();
 						var value = OnEvaluate<Object>(expression);
-						// Store the results from the expression in teh results dictionary
+						// Store the results from the expression in the results dictionary
 						if (results.ContainsKey(key))
+						{
 							results[key] += $"{RepeatJoin}{value}";
+						}
 						else
 							results.Add(key, value.ToString());
 					}

@@ -5,5 +5,5 @@ If (!(Test-Path .\bin\Debug\net5.0))
     New-Item -Path .\bin\Debug\net5.0
 }
 Copy-Item -Path ..\Randomizer.Generator.CmdLine\bin\Release\net5.0\* -Destination .\bin\Debug\net5.0 -Recurse -Force
-Write-Host("Copying Randomizer.Generator.UITerminal");
+Write-Host("Copying Randomizer.Generator.UI.Terminal");
 Copy-Item -Path .\bin\Release\net5.0\* -Destination ..\bin\Debug\net5.0 -Recurse -Force

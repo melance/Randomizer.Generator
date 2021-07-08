@@ -1,0 +1,22 @@
+{
+  Tables:
+  {
+    Prefix: null
+    Suffix: null
+    TitlePrefix: null
+    TitleSuffix: null
+  }
+  Values: {}
+  Name: Super Villain Name and Title
+  Author: Lance Boudreaux
+  Description: Generates a super villain name and title
+  Version: "2.0"
+  Tags:
+  [
+    Name
+    Comic Book
+  ]
+  OutputFormat: Html
+  Parameters: {}
+  GeneratorType: Table
+}

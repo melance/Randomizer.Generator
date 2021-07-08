@@ -17,7 +17,7 @@ namespace Randomizer.Generator.Converters
 		public override Object ReadJson(JsonReader reader, Type objectType, Object existingValue, JsonSerializer serializer)
 		{
 			if (reader.Value == null) return new Version(0, 0, 0, 0);
-			if (objectType == typeof(String)) return Version.Parse(reader.Value.ToString());
+			if (reader.Value.GetType() == typeof(String)) return Version.Parse(reader.Value.ToString());
 			return new Version(1, 0);
 		}
 

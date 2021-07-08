@@ -1,12 +1,12 @@
-﻿using Randomizer.Generator.UITerminal.Utility;
+﻿using Randomizer.Generator.UI.Terminal.Utility;
 using System;
 using System.IO;
 using Terminal.Gui;
 using NStack;
-using Randomizer.Generator.UITerminal.Models;
+using Randomizer.Generator.UI.Terminal.Models;
 using System.Collections.Generic;
 
-namespace Randomizer.Generator.UITerminal
+namespace Randomizer.Generator.UI.Terminal
 {
     class Program
     {

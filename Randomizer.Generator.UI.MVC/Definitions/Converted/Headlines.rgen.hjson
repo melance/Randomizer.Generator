@@ -1,0 +1,861 @@
+{
+  Name: Headline (Contemporary)
+  Author: Lance Boudreaux
+  Description: Creates a contemporary random news headline
+  Version: "2.0"
+  Tags:
+  [
+    Other
+    Modern
+  ]
+  OutputFormat: Html
+  Parameters: {}
+  TextCase: None
+  Imports: []
+  LineItems:
+  {
+    Start:
+    [
+      {
+        Content: <div style="font-family: Georgia; font-weight: bold; font-size: 1.5em; Margin: 3px 0 3px 0;">[Subject] [Action] [Location]</div>
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Subject:
+    [
+      {
+        Content: A [JobC]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: An [JobV]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A local [JobC+JobV]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A [GroupC]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: An [GroupV]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A [=Pick('local','county','parish','state','federal') politician
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('A famous','An up-and-coming','A washed up')] [Entertainer]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Entertainer:
+    [
+      {
+        Content: actor
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: artist
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: athlete
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: dancer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: director
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: musician
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: producer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: writer
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    GroupC:
+    [
+      {
+        Content: group of teens
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: group of local parents
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: workers union
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: teachers coalition
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: motorcycle gang
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: police officers union
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: city council
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: justice department committee
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: group of concerned citizens
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    GroupV:
+    [
+      {
+        Content: internet activist group
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    JobC:
+    [
+      {
+        Content: "[=Pick('club','bar','tavern')] owner"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('mechanical','petroleum','chemical','civil')] engineer"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: C[=Pick('A','B','D','E','F','O')]O
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: baker
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: bartender
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: business owner
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: businessman
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: city councilman
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: citizen
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: computer programmer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: criminal
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: dentist
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: doctor
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: drug dealer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: gang [=Pick('member','leader')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: homeless [=Pick('man','woman','child')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: landscaper
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: park ranger
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: police detective
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: police officer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: police sergeant
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: private investigator
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: religious leader
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: scientist
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: stay-at-home mom
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: student
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: surgeon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: systems administrator
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: teacher
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: teenager
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: town councilman
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: veterinarian
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: waitress
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    JobV:
+    [
+      {
+        Content: acrobat
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: antique dealer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: art collector
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: artist
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: assessor
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('electrical','aerospace')] engineer"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: entrepreneur
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: environmentalist
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: executive
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: intern
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: insurance [=Pick('agent','adjuster')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: investigator
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: eye doctor
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: oil rigger
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: undertaker
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: union head
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Action:
+    [
+      {
+        Content: observed acting oddly last night
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: seemingly on PCP was seen running amok
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: disappeared mysteriously
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: found murdered
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: vetoes funding for local renovation
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: rioted
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: decried the decaying morals of society
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: are displaying symptoms of [Disease]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: claim to have seen a [=Pick('UFO','sasquatch','chupacabra','ghost','vampire','werewolf')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: are responsible for a string of prank 911 calls
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: began protesting [=Pick('recent police shooting','public school funding','welfare requirements','abortion clinics','gay rights')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: expressed outrage at tainted products being sold to the poor
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: heard muttering about [=Pick('rats','roaches','ghosts','people')] in the walls
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: claimed the meat served was in fact human flesh
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: found in possession of [AmountOfMoney] worth of [IllegalSubstance]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: are still looking for survivors
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: have not stopped the search
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: expect that there are no survivors
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: notes that "Well, they were asking for it"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: is wrapped up in a sex scandal
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: arrested on charges of [Crime]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: released on bond pending trial
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: was [=Pick('shot','stabbed','mugged','assaulted')] and killed
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Location:
+    [
+      {
+        Content: "[=Pick('in front of','inside of','outside of','behind','at','near')] [LocationSub]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: behind a wall of cameras on the Capital steps
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: around family dinner tables
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: in their home
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: in the [=Pick('wilderness','local forest')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: in a press conference
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: at an abandoned art gallery
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: on the witness stand
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: at the Congressional hearing
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    LocationSub:
+    [
+      {
+        Content: several burning cars
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: a car on fire
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: a subway station
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: a police station
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: a firehouse
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: a residential home
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: an apartment complex
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: the[=Pick(' state',' city','')] capitol
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: a [=Pick('local','national')] business office
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: a restaurant
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: a neighborhood park
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: a bus station
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: a [=Pick('science','natural history','art')] museum
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: a factory
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: a line of picketers
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: the local sports arena
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: a [=Pick('lake','pond','river','creek')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: an undeveloped lot
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: a supermarket
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: a grocer store
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: a general store
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: the courthouse
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: a water treatment plant
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: a train station
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: an apartment complex
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: a [=Pick('hotel','motel')
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: the sewer
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Crime:
+    [
+      {
+        Content: laundering
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: murder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: manslaughter
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: human trafficking
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: prostitution
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: bribery
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Disease:
+    [
+      {
+        Content: malaria
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: scarlet fever
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ebola
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: e coli
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: tuberculosis
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: small pox
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: an unknown disease
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    AmountOfMoney:
+    [
+      {
+        Content: over a million dollars
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: thousands of dollars
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: millions of dollars
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    IllegalSubstance:
+    [
+      {
+        Content: marijuana
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: cocaine
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: heroine
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: PCP
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: amphetamines
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: prescription drugs
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: counterfeit money
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: moonshine
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: stolen [=Pick('electronics','car parts','money','merchandise')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: spice
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+  }
+  GeneratorType: Assignment
+}

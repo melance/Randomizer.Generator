@@ -1,0 +1,875 @@
+{
+  Name: Spaceship Names
+  Author: Lance Boudreaux
+  Description: Generates spaceship names.
+  Version: "2.0"
+  Tags:
+  [
+    Name
+    Sci-Fi
+  ]
+  OutputFormat: Html
+  Parameters: {}
+  TextCase: None
+  Imports:
+  [
+    LettersAndDigits
+  ]
+  LineItems:
+  {
+    Start:
+    [
+      {
+        Content: "[UpperCase][UpperCase]-[Digit][Digit] [Name]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[UpperCase][UpperCase]-[Digit][Digit] [Noun]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[UpperCase][UpperCase]-[Digit][Digit] [Class]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: The [Noun] [Class]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: The [Noun] [Size] [Class]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Name]'s [Noun]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Name]'s [Noun]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: The [Adjective] [Noun]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: The [Noun] of [Name]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: The [Name]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: The [Noun]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[UpperCase][UpperCase][UpperCase] [Class]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Name:
+    [
+      {
+        Content: Agamemmnon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Aldrin
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Anastasia
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Archemedes
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Argonaut
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Aries
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Benna
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bresa
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Daedalus
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Darwin
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Democritus
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Einstein
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Excalibur
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Falcon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hammurabi
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Icarus
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Leonidas
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Leonov
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Masamune
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Miyamoto
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Nebuchadnezzar
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Orion
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pascal
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pythagoras
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Rosen
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Saratoga
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Scorpio
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tesla
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Turing
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Yamamoto
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Yamato
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Class:
+    [
+      {
+        Content: Assault Ship
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Battlecruiser
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Battleship
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Carrier
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Clipper
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Conquistador
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Corsair
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Corvette
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Courier
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cruiser
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Destroyer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dreadnought
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Explorer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Fighter
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Frigate
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Landing Ship
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Medical Frigate
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Missile Cruiser
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Patrol Ship
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Science Vessel
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Scout
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Stealth Ship
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Striker
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Noun:
+    [
+      {
+        Content: Adventurer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Andromeda
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ark
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Atlantis
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Aurora
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Axis
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Centaur
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Challenger
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cicada
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Columbia
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Destiny
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Discover
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dragonfly
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Drake
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Drifter
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Eagle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Elysium
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Endeavor
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Enterprise
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Express
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Fire
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Firefly
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Flame
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Freedom
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Gypsy
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hammer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hammerhead
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hawk
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Heart
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Horizon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hornet
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hunter
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hyperion
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Icon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Jewel
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Liberator
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Maiden
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Marauder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Mongoose
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Moon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Moth
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Nemesis
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Nomad
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Nostromo
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Nostradamus
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Opportunity
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pathfinder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Prince
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Princess
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Queen
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Raider
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ranger
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Raven
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Revenant
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Samurai
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Scorpion
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Serenity
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Shepard
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Spirit
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sprinter
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Star
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Swallow
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Terra
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Thunderbolt
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Titan
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Valkyrie
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Vengence
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Venture
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Victory
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Voyager
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Wasp
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Wraith
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Zephyr
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Adjective:
+    [
+      {
+        Content: Astral
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Battle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Celestial
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Eastern
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Galactic
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Gold
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Great
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Intrepid
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Luna
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Lunar
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Mega
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Northern
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Red
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Silver
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Solar
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Southern
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Stalwart
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Stellar
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Swift
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Valliant
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Western
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: White
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Size:
+    [
+      {
+        Content: Ultralight
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Light
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Medium
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Heavy
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Super Heavy
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+  }
+  GeneratorType: Assignment
+}

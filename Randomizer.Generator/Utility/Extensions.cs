@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Hjson;
 using Randomizer.Generator.Core;
@@ -192,6 +193,14 @@ namespace Randomizer.Generator.Utility
             return $"a {value}";
         }
 
+		/// <summary>
+		/// Calls String.IsNullOrWhitespace
+		/// </summary>
+		public static Boolean IsNullOrWhitespace(this String extended)
+		{
+			return String.IsNullOrWhiteSpace(extended);
+		}
+
         /// <summary>
         /// Returns the right portion of a string
         /// </summary>
@@ -214,6 +223,7 @@ namespace Randomizer.Generator.Utility
 				TextCases.Lower => CultureInfo.CurrentCulture.TextInfo.ToLower(extended),
 				TextCases.Upper => CultureInfo.CurrentCulture.TextInfo.ToUpper(extended),
 				TextCases.Title => CultureInfo.CurrentCulture.TextInfo.ToTitleCase(extended),
+				TextCases.Sentence => extended.SCase(),
 				_ => extended,
 			};
 		}
@@ -247,6 +257,63 @@ namespace Randomizer.Generator.Utility
 		{
 			return extended.ToCase(TextCases.Title);
 		}
+		
+		/// <summary>
+		/// Converts a string to Sentence case
+		/// </summary>
+		/// <param name="extended">The string to convert</param>
+		/// <returns>The converted string</returns>
+		/// <remarks>Not culture compliant</remarks>
+		public static String SCase(this String extended)
+		{
+			var punctuation = new List<Char>() { '.', '!', '?' };
+			var result = extended.Trim();
+			var capsNext = false;
+			var buff = String.Empty;
+			
+			result = Char.ToUpper(result[0]) + result[1..];
+
+			foreach (var c in result)
+			{
+				if (capsNext && Char.IsLetter(c))
+				{
+					buff += Char.ToUpper(c);
+					capsNext = false;
+				}
+				else
+				{
+					buff += c;
+					if (punctuation.Contains(c))
+						capsNext = true;
+				}
+			}
+
+			return buff;
+		}
+
+		public static String MultiReplace(this String extended, Boolean caseSensitive, params (String Find, String Replacement)[] ps)
+		{
+			var result = extended;
+			var comparison = caseSensitive ? StringComparison.CurrentCulture : StringComparison.CurrentCultureIgnoreCase;
+
+			foreach (var (Find, Replacement) in ps)
+			{
+				result = result.Replace(Find, Replacement, comparison);
+			}
+
+			return result;
+		}
+		#endregion
+
+		#region StringBuilder Extensions
+		/// <summary>
+		/// Returns true if the string builder is empty
+		/// </summary>
+		public static Boolean IsNullOrWhitespace(this StringBuilder extended)
+		{
+			if (extended == null) return true;
+			return String.IsNullOrWhiteSpace(extended.ToString());
+		}
 		#endregion
 
 		#region Generic Extensions
@@ -261,6 +328,23 @@ namespace Randomizer.Generator.Utility
             }
             return false;
         }
-        #endregion
-    }
+		#endregion
+
+		#region Exception Extensions
+		/// <summary>
+		/// Adds data in an exception.  Adds numeric suffix if the key already exists
+		/// </summary>
+		public static void AddData(this Exception extended, String key, Object value)
+		{
+			var newKey = key;
+			var i = 0;
+			while (extended.Data.Contains(newKey))
+			{
+				newKey = $"{key}.{i}";
+				i++;
+			}
+			extended.Data.Add(newKey, value);
+		}
+		#endregion
+	}
 }

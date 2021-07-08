@@ -1,0 +1,112 @@
+{
+  ScriptPath: LUA\DnD 5e Monsters.lua
+  Name: Monster (D&D 5e)
+  Author: Lance Boudreaux
+  Description: Generates either a list of monsters fitting the selected criteria or a randomly selected monster using the criteria.
+  Version: "2.0"
+  Tags:
+  [
+    Encounter
+    D&D 5e
+    Fantasy
+  ]
+  OutputFormat: Html
+  Parameters:
+  {
+    selectRandom:
+    {
+      Display: Select Random Monster
+      Aliases: []
+      Type: Boolean
+      Options: []
+    }
+    size:
+    {
+      Value: Any
+      Display: Size
+      Aliases: []
+      Type: List
+      Options:
+      [
+        Any:Any
+        Tiny:Tiny
+        Small:Small
+        Medium:Medium
+        Large:Large
+        Huge:Huge
+        Gargantuan:Gargantuan
+      ]
+    }
+    creatureType:
+    {
+      Value: Any
+      Display: Type
+      Aliases: []
+      Type: List
+      Options:
+      [
+        Any:Any
+        Aberration:Aberration
+        Beast:Beast
+        Celestial:Celestial
+        Construct:Construct
+        Dragon:Dragon
+        Elemental:Elemental
+        Fey:Fey
+        Fiend:Fiend
+        Giant:Giant
+        Humanoid:Humanoid
+        Monstrosity:Monstrosity
+        Ooze:Ooze
+        Plant:Plant
+        Undead:Undead
+        Swarm:Swarm
+      ]
+    }
+    alignmentLNC:
+    {
+      Value: Any
+      Display: Alignment
+      Aliases: []
+      Type: List
+      Options:
+      [
+        Any:Any
+        Lawful:Lawful
+        Neutral:Neutral
+        Chaotic:Chaotic
+        Unaligned:Unaligned
+      ]
+    }
+    alignmentGNE:
+    {
+      Value: Any
+      Display: Alignment
+      Aliases: []
+      Type: List
+      Options:
+      [
+        Any:Any
+        Good:Good
+        Neutral:Neutral
+        Evil:Evil
+        Unaligned:Unaligned
+      ]
+    }
+    minCR:
+    {
+      Display: Minimum CR
+      Aliases: []
+      Type: Text
+      Options: []
+    }
+    maxCR:
+    {
+      Display: Maximum CR
+      Aliases: []
+      Type: Text
+      Options: []
+    }
+  }
+  GeneratorType: Lua
+}

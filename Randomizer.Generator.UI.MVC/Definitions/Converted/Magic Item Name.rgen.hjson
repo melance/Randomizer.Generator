@@ -1,0 +1,1363 @@
+{
+  Name: Magic Item Name
+  Author: Lance Boudreaux
+  Description: Generates a name for a magic item to spur creativity
+  Version: "2.0"
+  Tags:
+  [
+    Name
+    Item
+  ]
+  OutputFormat: Html
+  Parameters: {}
+  TextCase: None
+  Imports: []
+  LineItems:
+  {
+    Start:
+    [
+      {
+        Content: The [One] [Two]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Object] of the [One]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Object] of the [One]'s [Two]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Named]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Named:
+    [
+      {
+        Content: "[Name]'s [Object] of the [One]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Name]'s [Object]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Name]'s [One] [Two]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Object] of [Name]'s [Two]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    One:
+    [
+      {
+        Content: Blessed
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Blood
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bright
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Brutal
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cursed
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dark
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Day
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Death
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Draconic
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dusk
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dwarven
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Eagle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Elven
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Enchanted
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Force
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Fungus
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Giant
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Goblin
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hallowed
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Heart
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hollow
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Jester
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: King
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Life
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Lion
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Lying
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Magic
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Moon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Morning
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Necromancer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Night
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Noble
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Plant
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Queen
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Shadow
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Spirit
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Star
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sun
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Thought
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Unknown
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Void
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Whisper
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Wolf
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Word
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Elemental','Earth','Fire','Water','Wind')]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Red','Blue','Green','Yellow','Orange','Purple','Black','White')]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Sea','River','Ocean')]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Silver','Gold','Bronze','Copper','Iron','Stone')]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Two:
+    [
+      {
+        Content: Abyss
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bearer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bellow
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Blast
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Blight
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Blind
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Breaker
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Caller
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Caster
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Chant
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Claim
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Crawl
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Darkness
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Delver
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Depth
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Destruction
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Drain
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dreamer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dweller
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Echo
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Fae
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Fear
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Flood
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Freedom
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Gem
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ghost
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Glass
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Globe
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Glory
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ground
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hand
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hate
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Honor
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Keeper
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Letting
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Master
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Retribution
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Rock
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Scaler
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Set
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Shine
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sign
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sound
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Star
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Starshine
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Vengeance
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Wind
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Wisdom
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Chastity','Charity','Temperance','Diligence','Patience','Kindness','Humility')]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Gluttony','Envy','Lust','Sloth','Greed','Wrath','Pride')]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Object:
+    [
+      {
+        Content: Amulet
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Armor
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Arrows
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Axe
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Blade
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bracelet
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Brooch
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Chalice
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Circlet
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cloth
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Club
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Crossbow
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dagger
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Darts
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Finger
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Fire
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Flail
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Gem
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Glove
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Goblet
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Goggles
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Greatsword
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hand
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hat
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Helm
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Javalin
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Katana
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Kerchief
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Key
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Knife
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Longbow
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Mace
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Mallet
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Monocle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Morningstar
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Necklace
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Orb
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pick
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pike
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Quiver
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Rapier
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ring
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Robe
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Rod
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Scimitar
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Shortbow
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sling
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Spear
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Spectacles
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sphere
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Staff
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Stick
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Stone
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sword
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Wand
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Name:
+    [
+      {
+        Content: "[MaleName]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[FemaleName]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    MaleName:
+    [
+      {
+        Content: Aglovale
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Agravaine
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Arthur
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bagdemagus
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bart
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bigsby
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bob
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Boris
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bors
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Breunor
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Brian
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Caradoc
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Colgrevance
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Constantine
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dagonet
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Daniel
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ector
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Elyan
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Frank
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Gaheris
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Gaheris
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Galahad
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Galehaut
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Galeshin
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Gareth
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Gawain
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Geraint
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Geraint
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Gingalain
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: James
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Kay
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Lamorak
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Lance
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Leodegrance
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Lionel
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Maleagant
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Morien
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pelleas
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Percival
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Safir
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sagramore
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Segwarides
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tom
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tor
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tristan
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Uriens
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ywain
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Zenith
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Merlin
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Oberon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ty
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    FemaleName:
+    [
+      {
+        Content: Arwen
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Belladonna
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bertha
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bethany
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Blanchefleur
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Brangaine
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Brenda
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bronwynn
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Caelia
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cyhtia
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dindrane
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Elaine
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Eleanor
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Elisef
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Enide
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Eowyn
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Evaine
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Guinevak
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Guinevere
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Gunnhild
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Gwynn
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Helga
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hilda
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Igraine
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Joan
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Judith
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Lagertha
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Laudine
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Lorien
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Lunete
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Lyonesse
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Madeline
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Marion
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Mary
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Modron
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Morgan
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Morgause
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Morvydd
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Nimue
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Nyneve
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Olwen
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Orgeluse
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Parcenet
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Porunn
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Prim
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Primula
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Roanna
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Therese
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Thyri
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Wynn
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+  }
+  GeneratorType: Assignment
+}

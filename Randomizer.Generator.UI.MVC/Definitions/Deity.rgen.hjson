@@ -1,0 +1,279 @@
+{
+  Name: Deities
+  Author: Lance Boudreaux
+  Description: Generates a deity name and domains
+  Version: "2.0"
+  URL: null
+  Tags:
+  [
+    Name
+    Deity
+  ]
+  OutputFormat: Html
+  Parameters:
+  {
+    Name:
+    {
+      Value: AnyName
+      Display: Name Type
+      Aliases: []
+      Type: List
+      Options:
+      [
+        AnyName:Any
+        AztecDeity:Aztec
+        BalticDeity:Baltic
+        CelticDeity:Celtic
+        ChineseDeity:Chinese
+        EgyptianDeity:Egyptian
+        GreekDeity:Greek
+        IndianDeity:Indian
+        JapaneseDeity:Japanese
+        MayanDeity:Mayan
+        NativeAmericanDeity:Native American
+        NorseDeity:Norse
+        RomanDeity:Roman
+        SlavicDeity:Slavic
+        VoodooDeity:Voodoo
+      ]
+    }
+  }
+  TextCase: Title
+  Imports: [
+	Aztec Deity Name
+	Baltic Deity Name
+	Celtic Deity Name
+	Chinese Deity Name
+	Egyptian Deity Name
+	Greek Deity Name
+	Indian Deity Name
+	Japanese Deity Name
+	Mayan Deity Name
+	Native American Deity Name
+	Norse Deity Name
+	Roman Deity Name
+	Slavic Deity Name
+	Voodoo Loa Name
+  ]
+  LineItems:
+  {
+    Start:
+    [
+      { Content: "[Name], the [=Pick('goddess','god','deity','demigod','demigoddess')] of [Domains]." }
+    ]
+    AnyName:
+    [
+      { Content: "[AztecDeity]" }
+      { Content: "[BalticDeity]" }
+      { Content: "[CelticDeity]" }
+      { Content: "[ChineseDeity]" }
+      { Content: "[EgyptianDeity]" }
+      { Content: "[GreekDeity]" }
+      { Content: "[IndianDeity]" }
+      { Content: "[JapaneseDeity]" }
+      { Content: "[MayanDeity]" }
+      { Content: "[NativeAmericanDeity]" }
+      { Content: "[NorseDeity]" }
+      { Content: "[RomanDeity]" }
+      { Content: "[SlavicDeity]" }
+      { Content: "[VoodooLoa]" }
+    ]
+    Domains:
+    [
+		{ 
+			Content: "[Domain]" 
+			Weight: 22
+		}
+		{ 
+			Content: "[Domain] and [Domain]"
+			Weight: 66
+		}
+		{ 
+			Content: "[Domain], [Domain], and [Domain]"
+			Weight: 22
+		}
+    ]
+    Domain:
+    [
+      { Content: "Acrobats" }
+      { Content: "Agility" }
+      { Content: "Agriculture" }
+      { Content: "Air" }
+      { Content: "Alchemy" }
+      { Content: "Alcohol" }
+      { Content: "Ancestors"  }
+      { Content: "Anger"  }
+      { Content: "Animals"  }
+      { Content: "Archers"  }
+      { Content: "Astrology"  }
+      { Content: "Autumn"  }
+      { Content: "Battle"  }
+      { Content: "Beauty"  }
+      { Content: "Beer"  }
+      { Content: "Bravery"  }
+      { Content: "Brides"  }
+      { Content: "Cats"  }
+      { Content: "Cattle"  }
+      { Content: "Cavalry"  }
+      { Content: "Celebration"  }
+      { Content: "Chance"  }
+      { Content: "Change"  }
+      { Content: "Chaos"  }
+      { Content: "Children"  }
+      { Content: "Choice"  }
+      { Content: "Cities"  }
+      { Content: "Clouds"  }
+      { Content: "Clowns"  }
+      { Content: "Cowards"  }
+      { Content: "Creation"  }
+      { Content: "Creativity"  }
+      { Content: "Crops"  }
+      { Content: "Dancers"  }
+      { Content: "Darkness"  }
+      { Content: "Dawn"  }
+      { Content: "Day"  }
+      { Content: "Death"  }
+      { Content: "Desert"  }
+      { Content: "Desire"  }
+      { Content: "Destiny"  }
+      { Content: "Disease"  }
+      { Content: "Dogs"  }
+      { Content: "Dragons"  }
+      { Content: "Dreams"  }
+      { Content: "Drink"  }
+      { Content: "Dusk"  }
+      { Content: "Earth"  }
+      { Content: "Entertainers"  }
+      { Content: "Everything"  }
+      { Content: "Evil"  }
+      { Content: "Fate"  }
+      { Content: "Fear"  }
+      { Content: "Fertility"  }
+      { Content: "Fire"  }
+      { Content: "Fish"  }
+      { Content: "Food"  }
+      { Content: "Fools"  }
+      { Content: "Gambling"  }
+      { Content: "Games"  }
+      { Content: "Gold"  }
+      { Content: "Good"  }
+      { Content: "Grooms"  }
+      { Content: "Handmaidens"  }
+      { Content: "Happiness"  }
+      { Content: "Hate"  }
+      { Content: "Healing"  }
+      { Content: "Health"  }
+      { Content: "The Hearth"  }
+      { Content: "Hell"  }
+      { Content: "Hills"  }
+      { Content: "Home"  }
+      { Content: "Hunting"  }
+      { Content: "Hurricanes"  }
+      { Content: "Husbands"  }
+      { Content: "Illusion"  }
+      { Content: "Innocence"  }
+      { Content: "Inspiration"  }
+      { Content: "Intellect"  }
+      { Content: "Jesters"  }
+      { Content: "Jewelers"  }
+      { Content: "Justice"  }
+      { Content: "Knights"  }
+      { Content: "Knowledge"  }
+      { Content: "Land"  }
+      { Content: "Lava"  }
+      { Content: "Law"  }
+      { Content: "Life"  }
+      { Content: "Light"  }
+      { Content: "Lightning"  }
+      { Content: "Loss"  }
+      { Content: "Love"  }
+      { Content: "Magic"  }
+      { Content: "Magma"  }
+      { Content: "Maidens"  }
+      { Content: "Marriage"  }
+      { Content: "Marshes"  }
+      { Content: "Medicine"  }
+      { Content: "Messengers"  }
+      { Content: "Mischief"  }
+      { Content: "Mothers"  }
+      { Content: "Mountains"  }
+      { Content: "Music"  }
+      { Content: "Musicians"  }
+      { Content: "Nature"  }
+      { Content: "Night"  }
+      { Content: "Nightmares"  }
+      { Content: "Nobility"  }
+      { Content: "Oceans"  }
+      { Content: "Peace"  }
+      { Content: "Peasants"  }
+      { Content: "Performers"  }
+      { Content: "Pestilence"  }
+      { Content: "Poetry"  }
+      { Content: "Prairies"  }
+      { Content: "Prophecy"  }
+      { Content: "Rainbows"  }
+      { Content: "Rebirth"  }
+      { Content: "Revenge"  }
+      { Content: "Rivers"  }
+      { Content: "Roads"  }
+      { Content: "Rocks"  }
+      { Content: "Rogues"  }
+      { Content: "Royalty"  }
+      { Content: "Science"  }
+      { Content: "Seas"  }
+      { Content: "Serendipity"  }
+      { Content: "Serpents"  }
+      { Content: "Sex"  }
+      { Content: "Silver"  }
+      { Content: "Soldiers"  }
+      { Content: "Sorrow"  }
+      { Content: "Speed"  }
+      { Content: "Spring"  }
+      { Content: "Stars"  }
+      { Content: "Steppes"  }
+      { Content: "Stone"  }
+      { Content: "Storms"  }
+      { Content: "Strength"  }
+      { Content: "Summer"  }
+      { Content: "Swamps"  }
+      { Content: "Technology"  }
+      { Content: "The Afterlife"  }
+      { Content: "The Forge"  }
+      { Content: "The Harvest"  }
+      { Content: "The Heavens"  }
+      { Content: "The Moon"  }
+      { Content: "The Seasons"  }
+      { Content: "The Sky"  }
+      { Content: "The Sun"  }
+      { Content: "The Underworld"  }
+      { Content: "The Unknown"  }
+      { Content: "Thieves"  }
+      { Content: "Thunder"  }
+      { Content: "Time"  }
+      { Content: "Tornadoes"  }
+      { Content: "Tournaments"  }
+      { Content: "Towns"  }
+      { Content: "Treasure"  }
+      { Content: "Trees"  }
+      { Content: "Trickery"  }
+      { Content: "Truth"  }
+      { Content: "Villages"  }
+      { Content: "Void"  }
+      { Content: "Volcanoes"  }
+      { Content: "War"  }
+      { Content: "Warriors"  }
+      { Content: "Water"  }
+      { Content: "Wealth"  }
+      { Content: "Weapons"  }
+      { Content: "Weather"  }
+      { Content: "Wilderness"  }
+      { Content: "Wine"  }
+      { Content: "Winter"  }
+      { Content: "Wisdom"  }
+      { Content: "Wives"  }
+      { Content: "Woodlands"  }
+      { Content: "Youth"  }
+    ]
+  }
+  GeneratorType: Assignment
+}

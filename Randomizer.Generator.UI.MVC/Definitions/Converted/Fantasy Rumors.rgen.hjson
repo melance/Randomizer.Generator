@@ -1,0 +1,64 @@
+{
+  Name: Rumors (Fantasy)
+  Author: Lance Boudreaux
+  Description: Uses the Adventure Hooks (Fantasy) grammar and tells how truthful the hook is
+  Version: "2.0"
+  Tags:
+  [
+    Environment
+    Fantasy
+  ]
+  OutputFormat: Html
+  Parameters: {}
+  TextCase: None
+  Imports: []
+  LineItems:
+  {
+    Start:
+    [
+      {
+        Content:
+          '''
+          [RumorLevel] <br /> 
+          							 [=Generate('Fantasy Adventure Hooks')]
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    RumorLevel:
+    [
+      {
+        Content: Absolute truth
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Exaggerated
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Partially true
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Half and half
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Mostly lies
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Absolute lie
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+  }
+  GeneratorType: Assignment
+}

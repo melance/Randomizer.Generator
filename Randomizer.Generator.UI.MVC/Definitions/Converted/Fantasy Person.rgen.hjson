@@ -1,0 +1,704 @@
+{
+  Version: "2.0"
+  Tags: []
+  OutputFormat: Html
+  Parameters: {}
+  TextCase: None
+  Imports: []
+  LineItems:
+  {
+    Person:
+    [
+      {
+        Content: "[Adventurer]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Noble]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Court]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Craftsman]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: peasant
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: slave
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Noble:
+    [
+      {
+        Content: "[Imperial]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Royal]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Tite]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Religious]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Imperial:
+    [
+      {
+        Content: emperor
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: high king
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: pharoah
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: caesar
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: tzar
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: kaiser
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Royal:
+    [
+      {
+        Content: king
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: sultan
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: queen
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: sultana
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: prince
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: despot
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: duke
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: grand duke
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: princess
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: archduke
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: duke
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: grand prince
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: dauphin
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: infante
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: elector
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: marquis
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: count
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: viscount
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: baron
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Title:
+    [
+      {
+        Content: baronet
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: vidame
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: seigneur
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: knight of the manor
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: knight
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: patrician
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: nobile
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: squire
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: gentleman
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: sheriff
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: vassal
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Religious:
+    [
+      {
+        Content: caliph
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: saltigue
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: priest
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: bishop
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: cardinal
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: reverend
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: witchdoctor
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: medicine man
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: deacon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: archbishop
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: prophet
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: apostle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: high priest
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: guru
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Court:
+    [
+      {
+        Content: bottler
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: butler
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: chamberlain
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: chancellor
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: chaplain
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: herald
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: jester
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: marshal
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: messenger
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: servant
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: steward
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: watchman
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Craftsman:
+    [
+      {
+        Content: alchemist
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: apothecary
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: armorer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: artist
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: astrologer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: bailiff
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: baker
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: barber
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: blacksmith
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: bower
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: brewer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: butcher
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: candlemaker
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: carpenter
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: cartwright
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: clerk
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: cobler
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: cook
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: cooper
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: cotter
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ditcher
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: draper
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: falconer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: farmer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: farmhand
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: fishmonger
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: fletcher
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: furrier
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: gardener
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: goldsmith
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: gravedigger
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: grocer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: groom
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: hayward
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: herbalist
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: metalsmith
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: miller
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: minstrel
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: page
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: plowman
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: potter
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: reeve
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: scribe
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: scullion
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: silversmith
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: stonemason
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: tailor
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: tinsmith
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: weaver
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Adventurer:
+    [
+      {
+        Content: cleric
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: barbarian
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: fighter
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: druid
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: rogue
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: paladin
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: sorcerer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: bard
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: wizard
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: monk
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ranger
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: warlock
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+  }
+  GeneratorType: Assignment
+}
