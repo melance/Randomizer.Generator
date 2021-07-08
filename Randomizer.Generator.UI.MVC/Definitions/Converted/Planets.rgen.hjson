@@ -1,0 +1,462 @@
+{
+  Name: Planets
+  Author: Lance Boudreaux
+  Description: Generates planets and their descriptions.
+  Version: "2.0"
+  Tags:
+  [
+    Environment
+    Sci-Fi
+  ]
+  OutputFormat: Html
+  Parameters: {}
+  TextCase: None
+  Imports: []
+  LineItems:
+  {
+    Start:
+    [
+      {
+        Content:
+          '''
+
+          		<span style="font-size:24px;font-weight:bolder;">[=Generate('Planet Names','MaxLength',20)]</span><br />
+          		<b>Surface</b>: [Surface]<br />
+          		<b>Land</b>: [=Roll(1,101)-1]%<br />
+          		<b>Weather</b>: [Weather]<br />
+          		<b>Sun(s)</b>: [Suns]<br />
+          		<b>Moon(s)</b>: [Moons]<br />
+          		<b>Plantlife</b>: [Plantlife]<br />
+          		<b>Animals</b>: [Wildlife]<br />
+          		<b>Humanoid Population</b>: [=Format(Roll(1,1000000),'#,##0')]/mi²<br />
+          		<b>Technology Level</b>: [Technology]<br />
+          		<b>Natural Resources</b>: [NaturalResources]<br />
+          		<b>Orbital Period</b>: [=Format(Roll(100,10000),'#,##0')] days<br />
+          		<b>Rotation Period</b>: [=Roll(10,1000)] hours<br />
+          		<b>Diameter:</b> [=Format(Roll(1,200)*1000,'#,##0')] miles<br />
+          		<b>Gravity: </b> [=Roll(1,100)] ft/s²<br />
+          		<b>Atmosphere Density: </b> [Atmosphere]<br />
+          		<b>Atmosphere Primary Composition: </b> [Element] and [Element]<br />
+          		
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Surface:
+    [
+      {
+        Content: Ice
+        Repeat: 1
+        Weight: 10
+      }
+      {
+        Content: Lava
+        Repeat: 1
+        Weight: 10
+      }
+      {
+        Content: Rock
+        Repeat: 1
+        Weight: 50
+      }
+      {
+        Content: Dirt
+        Repeat: 1
+        Weight: 50
+      }
+      {
+        Content: Gas
+        Repeat: 1
+        Weight: 10
+      }
+    ]
+    Weather:
+    [
+      {
+        Content: Violent
+        Repeat: 1
+        Weight: 5
+      }
+      {
+        Content: Calm
+        Repeat: 1
+        Weight: 5
+      }
+      {
+        Content: Seasonal
+        Repeat: 1
+        Weight: 50
+      }
+      {
+        Content: Still
+        Repeat: 1
+        Weight: 10
+      }
+      {
+        Content: Wild
+        Repeat: 1
+        Weight: 5
+      }
+      {
+        Content: Savage
+        Repeat: 1
+        Weight: 5
+      }
+      {
+        Content: Stable
+        Repeat: 1
+        Weight: 50
+      }
+      {
+        Content: Shifting
+        Repeat: 1
+        Weight: 25
+      }
+    ]
+    Suns:
+    [
+      {
+        Content: Single [SunType]
+        Repeat: 1
+        Weight: 70
+      }
+      {
+        Content: Binary [SunType]/[SunType]
+        Repeat: 1
+        Weight: 25
+      }
+      {
+        Content: Trinary [SunType]/[SunType]/[SunType]
+        Repeat: 1
+        Weight: 5
+      }
+    ]
+    Moons:
+    [
+      {
+        Content: "[=ToText(Roll(1,2))]"
+        Repeat: 1
+        Weight: 50
+      }
+      {
+        Content: "[=ToText(Roll(2,2))]"
+        Repeat: 1
+        Weight: 20
+      }
+      {
+        Content: "[=ToText(Roll(4,4))]"
+        Repeat: 1
+        Weight: 5
+      }
+      {
+        Content: "[=ToText(Roll(16,4))]"
+        Repeat: 1
+        Weight: 2
+      }
+    ]
+    SunType:
+    [
+      {
+        Content: B Class
+        Repeat: 1
+        Weight: 2
+      }
+      {
+        Content: A Class
+        Repeat: 1
+        Weight: 5
+      }
+      {
+        Content: F Class
+        Repeat: 1
+        Weight: 10
+      }
+      {
+        Content: G Class
+        Repeat: 1
+        Weight: 15
+      }
+      {
+        Content: K Class
+        Repeat: 1
+        Weight: 20
+      }
+      {
+        Content: M Class
+        Repeat: 1
+        Weight: 50
+      }
+      {
+        Content: L Class
+        Repeat: 1
+        Weight: 10
+      }
+      {
+        Content: T Class
+        Repeat: 1
+        Weight: 5
+      }
+    ]
+    Plantlife:
+    [
+      {
+        Content: Abundant [Planttype]
+        Repeat: 1
+        Weight: 10
+      }
+      {
+        Content: Scarce [Planttype]
+        Repeat: 1
+        Weight: 10
+      }
+      {
+        Content: Excessive [Planttype]
+        Repeat: 1
+        Weight: 5
+      }
+      {
+        Content: Average [Planttype]
+        Repeat: 1
+        Weight: 50
+      }
+      {
+        Content: Nonexistant
+        Repeat: 1
+        Weight: 5
+      }
+    ]
+    Planttype:
+    [
+      {
+        Content: Grasses and Fungus
+        Repeat: 1
+        Weight: 10
+      }
+      {
+        Content: Moss and Wetlands
+        Repeat: 1
+        Weight: 5
+      }
+      {
+        Content: Trees and Grasses
+        Repeat: 1
+        Weight: 50
+      }
+      {
+        Content: Giant Forests
+        Repeat: 1
+        Weight: 25
+      }
+    ]
+    Wildlife:
+    [
+      {
+        Content: Nonexistant
+        Repeat: 1
+        Weight: 5
+      }
+      {
+        Content: Abundant [Animaltypes]
+        Repeat: 1
+        Weight: 10
+      }
+      {
+        Content: Scarce [Animaltypes]
+        Repeat: 1
+        Weight: 10
+      }
+      {
+        Content: Overpopulated [Animaltypes]
+        Repeat: 1
+        Weight: 5
+      }
+      {
+        Content: Average [Animaltypes]
+        Repeat: 1
+        Weight: 50
+      }
+    ]
+    Animaltypes:
+    [
+      {
+        Content: Dinosaurs
+        Repeat: 1
+        Weight: 10
+      }
+      {
+        Content: Simple Life
+        Repeat: 1
+        Weight: 5
+      }
+      {
+        Content: Sea Life
+        Repeat: 1
+        Weight: 5
+      }
+      {
+        Content: Small Mammalians
+        Repeat: 1
+        Weight: 15
+      }
+      {
+        Content: Small Lizards
+        Repeat: 1
+        Weight: 15
+      }
+      {
+        Content: Varied
+        Repeat: 1
+        Weight: 30
+      }
+      {
+        Content: Extremely Varied
+        Repeat: 1
+        Weight: 5
+      }
+    ]
+    Technology:
+    [
+      {
+        Content: Stone Age
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bronze Age
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Iron Age
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Classical Era
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Midieval Era
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Age of Discovery
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Age of Industry
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Modern Era
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Post-Modern Era
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Near Future
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Future
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Distant Future
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    NaturalResources:
+    [
+      {
+        Content: Soil
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Water
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Minerals
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Vegetation
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Animals
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Atmosphere:
+    [
+      {
+        Content: Light
+        Repeat: 1
+        Weight: 5
+      }
+      {
+        Content: Average
+        Repeat: 1
+        Weight: 15
+      }
+      {
+        Content: Heavy
+        Repeat: 1
+        Weight: 5
+      }
+    ]
+    Element:
+    [
+      {
+        Content: Oxygen
+        Repeat: 1
+        Weight: 25
+      }
+      {
+        Content: Nitrogen
+        Repeat: 1
+        Weight: 25
+      }
+      {
+        Content: Helium
+        Repeat: 1
+        Weight: 5
+      }
+      {
+        Content: Methane
+        Repeat: 1
+        Weight: 5
+      }
+      {
+        Content: Argon
+        Repeat: 1
+        Weight: 5
+      }
+      {
+        Content: Carbon Dioxide
+        Repeat: 1
+        Weight: 25
+      }
+    ]
+  }
+  GeneratorType: Assignment
+}

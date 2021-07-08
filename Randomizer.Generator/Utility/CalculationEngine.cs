@@ -5,6 +5,7 @@ using System.Globalization;
 using Randomizer.Generator.Attributes;
 using System.Reflection;
 using System.Collections.Generic;
+using System.Runtime.ExceptionServices;
 
 namespace Randomizer.Generator.Utility
 {
@@ -56,23 +57,172 @@ namespace Randomizer.Generator.Utility
 		/// </summary>
 		private static Boolean ExecuteFunction(String name, FunctionArgs args)
 		{
-			var paramValues = new List<dynamic>();
-			var paramTypes = new List<Type>();
-			for (var i = 0; i < args.Parameters.Length; i++)
+			ExceptionDispatchInfo exi = null;
+			try
 			{
-				var value = args.Parameters[i].Evaluate();
-				paramValues.Add(value);
-				paramTypes.Add(value.GetType());
-
-				var method = typeof(CalculationEngine).GetMethod(name, paramTypes.ToArray());
-
-				if (method != null && method.GetCustomAttribute<NCalcFunctionAttribute>() != null)
+				if (name.Equals(nameof(Pick), StringComparison.CurrentCultureIgnoreCase))
 				{
-					args.Result = method.Invoke(null, paramValues.ToArray());
-					return true;
+					args.Result = Pick(args.EvaluateParameters().Cast<String>().ToArray());
+				}
+				else if (name.Equals(nameof(PickW), StringComparison.CurrentCultureIgnoreCase))
+				{
+					args.Result = PickW(args.EvaluateParameters().Cast<String>().ToArray());
+				}
+				else if (name.Equals(nameof(Generate), StringComparison.CurrentCultureIgnoreCase) && args.Parameters.Length > 1)
+				{
+					var evaluated = args.EvaluateParameters();
+					var generatorName = evaluated[0].ToString();
+					var parameters = evaluated[1..].Cast<String>();
+					args.Result = Generate(generatorName, parameters.ToArray());
+				}
+				else
+				{
+					var paramValues = new List<dynamic>();
+					var paramTypes = new List<Type>();
+					for (var i = 0; i < args.Parameters.Length; i++)
+					{
+						var value = args.Parameters[i].Evaluate();
+						paramValues.Add(value);
+						paramTypes.Add(value.GetType());
+
+					}
+					var method = typeof(CalculationEngine).GetMethod(name, paramTypes.ToArray());
+
+					if (method == null)
+						method = typeof(CalculationEngine).GetMethod(name);
+
+					if (method != null && method.GetCustomAttribute<NCalcFunctionAttribute>() != null)
+					{
+						args.Result = method.Invoke(null, paramValues.ToArray());
+						return true;
+					}
 				}
 			}
+			catch (Exception ex)
+			{
+				exi = ExceptionDispatchInfo.Capture(ex);
+				exi.SourceException.AddData(nameof(name), name);
+				exi.SourceException.AddData(nameof(args), args);
+			}
+			if (exi != null) exi.Throw();
 			return false;
+		}
+
+		/// <summary>
+		/// Converts the value to the provided type
+		/// </summary>
+		[NCalcFunction]
+		public static Object Cast(Object value, String nameOfType)
+		{
+			var type = Type.GetType(nameOfType);
+			if (type == null)
+				throw new ArgumentException($"{nameof(Cast)} function parameter {nameof(nameOfType)} invalid.  Expects a valid .net type.");
+			return Convert.ChangeType(value, type, CultureInfo.InvariantCulture);
+		}
+
+		/// <summary>
+		/// Converts the value to a string
+		/// </summary>
+		[NCalcFunction]
+		public static String CStr(Object value)
+		{
+			return value.ToString();
+		}
+
+		/// <summary>
+		/// Converts the value to an integer
+		/// </summary>
+		[NCalcFunction]
+		public static Int32 CInt(Object value)
+		{
+			return Convert.ToInt32(value);
+		}
+
+		/// <summary>
+		/// Converts the value to a double
+		/// </summary>
+		[NCalcFunction]
+		public static Double CDbl(Object value)
+		{
+			return Convert.ToDouble(value);
+		}
+
+		/// <summary>
+		/// Converts the value to a boolean
+		/// </summary>
+		[NCalcFunction]
+		public static Boolean CBool(Object value)
+		{
+			return Convert.ToBoolean(value);			
+		}
+
+		/// <summary>
+		/// Converts the value to a datetime
+		/// </summary>
+		[NCalcFunction]
+		public static DateTime CDate(Object value)
+		{
+			return Convert.ToDateTime(value);
+		}
+
+		/// <summary>
+		/// Formats the provided integer using the given format
+		/// </summary>
+		[NCalcFunction]
+		public static String Format(Int32 value, String format)
+		{
+			return value.ToString(format);
+		}
+
+		/// <summary>
+		/// Formats the provided double using the given format
+		/// </summary>
+		[NCalcFunction]
+		public static String Format(Double value, String format)
+		{
+			return value.ToString(format);
+		}
+
+		/// <summary>
+		/// Formats the provided date time using the given format
+		/// </summary>
+		[NCalcFunction]
+		public static String Format(DateTime value, String format)
+		{
+			return value.ToString(format);
+		}
+
+		/// <summary>
+		/// Runs the generator for the definition file provided
+		/// </summary>
+		/// <param name="definitionPath">The path to the definition file</param>
+		/// <returns>The result of the generation</returns>
+		[NCalcFunction]
+		public static String Generate(String definitionPath)
+		{
+			return Generate(definitionPath, null);
+		}
+
+
+		/// <summary>
+		/// Runs the generator for the definition file provided
+		/// </summary>
+		/// <param name="name">The path to the definition file</param>
+		/// <returns>The result of the generation</returns>
+		[NCalcFunction]
+		public static String Generate(String name, params String[] parameters)
+		{
+			var definition = DataAccess.DataAccess.Instance.GetDefinition(name);
+			if (parameters != null)
+			{
+				foreach (var parameter in parameters)
+				{
+					var parts = parameter.Split('=');
+					definition.Parameters[parts[0]].Value = parts[1];
+				}
+			}
+			if (definition == null) throw new Exceptions.DefinitionNotFoundException(name);
+			return definition.Generate();
 		}
 
 		/// <summary>
@@ -109,7 +259,7 @@ namespace Randomizer.Generator.Utility
         /// Selects an item from the list
         /// </summary>
 		[NCalcFunction]
-        public static dynamic Pick(params dynamic[] parameters)
+        public static dynamic Pick(params string[] parameters)
         {
             if (parameters.Length > 0)
             {
@@ -122,9 +272,44 @@ namespace Randomizer.Generator.Utility
             }
         }
 
-        /// <summary>
-        /// Generates a random number between 0 and <paramref name="max">max</paramref> inclusive
-        /// </summary>
+		/// <summary>
+		/// Selects an item from the list using weights
+		/// </summary>
+		[NCalcFunction]
+		public static dynamic PickW(params string[] parameters)
+		{
+			if (parameters.Length > 0)
+			{
+				var parsed = new List<(String Value, UInt32 Weight)>();
+				foreach (var parameter in parameters)
+				{
+					var parts = parameter.Split(':').Select(p => p.Trim()).ToArray();
+					if (parts.Length == 1)
+						parsed.Add(new(parts[0], 1));
+					else
+						parsed.Add(new(parts[0], UInt32.Parse(parts[1])));
+				}
+				var total = (Int32)parsed.Sum(i => i.Weight);
+				var index = Utility.Random.RandomNumber(1, total);
+				var current = 0;
+
+				foreach (var (Value, Weight) in parsed)
+				{
+					if (index <= current) return Value;
+					current += (Int32)Weight;
+				}
+
+				throw new Exception($"Error in {nameof(PickW)}");
+			}
+			else
+			{
+				throw new ArgumentException("Requires at least one value.");
+			}
+		}
+
+		/// <summary>
+		/// Generates a random number between 0 and <paramref name="max">max</paramref> inclusive
+		/// </summary>
 		[NCalcFunction]
         public static Int32 Random(Int32 max)
         {
@@ -184,7 +369,16 @@ namespace Randomizer.Generator.Utility
         public static String UCase(String value)
         {
             return value.UCase();
-        }        
+        }
+
+		/// <summary>
+		/// Converts a string to Sentence case
+		/// </summary>
+		[NCalcFunction]
+		public static String SCase(String value)
+		{
+			return value.SCase();
+		}
         #endregion
 
     }

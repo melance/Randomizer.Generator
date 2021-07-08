@@ -7,12 +7,15 @@ using System.Threading.Tasks;
 using Hjson;
 using Newtonsoft.Json;
 
-namespace Randomizer.Generator.UITerminal.Utility
+namespace Randomizer.Generator.UI.Terminal.Utility
 {
 	class UserSettings
 	{
+		#region Members
 		private static UserSettings _instance;
+		#endregion
 
+		#region Properties
 		public static UserSettings Instance
 		{
 			get
@@ -32,7 +35,9 @@ namespace Randomizer.Generator.UITerminal.Utility
 
 		[JsonIgnore]
 		public String SettingPath { get; set; } = Program.SettingsDirectory;
+		#endregion
 
+		#region Public Methods
 		public void Save()
 		{
 			var builder = new StringBuilder();
@@ -69,13 +74,16 @@ namespace Randomizer.Generator.UITerminal.Utility
 				Save();
 			}
 		}
+		#endregion
 
+		#region Protected Methods
 		/// <summary>
 		/// The settings used to serialize and deserialize definitions
 		/// </summary>
 		protected static JsonSerializerSettings SerializerSettings => new()
 		{
 			Formatting = Formatting.Indented
-		};
+		}; 
+		#endregion
 	}
 }

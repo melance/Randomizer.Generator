@@ -1,0 +1,2824 @@
+{
+  Version: "2.0"
+  Tags: []
+  OutputFormat: Html
+  Parameters: {}
+  TextCase: None
+  Imports: []
+  LineItems:
+  {
+    Color:
+    [
+      {
+        Content: alice blue
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: antique white
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: aqua
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: aquamarine
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: azure
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: beige
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: bisque
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: black
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: blanched almond
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: blue
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: blue violet
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: brown
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: burly wood
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: cadet blue
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: chartreuse
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: chocolate
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: coral
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: cornflower blue
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: cornsilk
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: crimson
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: cyan
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: dark blue
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: dark cyan
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: dark goldenrod
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: dark gray
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: dark green
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: dark khaki
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: dark magenta
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: dark olive green
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: dark orange
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: dark orchid
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: dark red
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: dark salmon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: dark sea green
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: dark slate blue
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: dark slate gray
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: dark turquoise
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: dark violet
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: deep pink
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: deep sky blue
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: dim gray
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: dodger blue
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: firebrick
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: floral white
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: forest green
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: fuchsia
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: gainsboro
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ghost white
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: gold
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: goldenrod
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: gray
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: green
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: green yellow
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: honeydew
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: hot pink
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: indian red
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: indigo
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ivory
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: khaki
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: lavender
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: lavender blush
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: lawn green
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: lemon chiffon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: light blue
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: light coral
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: light cyan
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: light goldenrod yellow
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: light gray
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: light green
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: light pink
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: light salmon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: light sea green
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: light sky blue
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: light slate gray
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: light steel blue
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: light yellow
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: lime
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: lime green
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: linen
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: magenta
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: maroon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: medium aquamarine
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: medium blue
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: medium orchid
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: medium purple
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: medium sea green
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: medium slate blue
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: medium spring green
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: medium turquoise
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: medium violet red
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: midnight blue
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: mint cream
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: misty rose
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: moccasin
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: navajo white
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: navy
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: old lace
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: olive
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: olive drab
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: orange
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: orange red
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: orchid
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: pale goldenrod
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: pale green
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: pale turquoise
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: pale violet red
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: papaya whip
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: peach puff
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: peru
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: pink
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: plum
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: powder blue
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: purple
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: red
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: rosy brown
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: royal blue
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: saddle brown
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: salmon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: sandy brown
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: sea green
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: sea shell
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: sienna
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: silver
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: sky blue
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: slate blue
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: slate gray
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: snow
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: spring green
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: steel blue
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: tan
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: teal
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: thistle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: tomato
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: turquoise
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: violet
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: wheat
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: white
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: white smoke
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: yellow
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: yellow green
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    ColorBackground:
+    [
+      {
+        Content: <div style="background: #F0F8FF;">alice blue</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #FAEBD7">antique white</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #00FFFF">aqua</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #7FFFD4">aquamarine</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #F0FFFF">azure</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #F5F5DC">beige</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #FFE4C4">bisque</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #000000">black</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #FFEBCD">blanched almond</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #0000FF">blue</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #8A2BE2">blue violet</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #A52A2A">brown</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #DEB887">burly wood</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #5F9EA0">cadet blue</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #7FFF00">chartreuse</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #D2691E">chocolate</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #FF7F50">coral</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #6495ED">cornflower blue</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #FFF8DC">cornsilk</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #DC143C">crimson</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #00FFFF">cyan</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #00008B">dark blue</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #008B8B">dark cyan</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #B8860B">dark goldenrod</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #A9A9A9">dark gray</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #006400">dark green</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #BDB76B">dark khaki</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #8B008B">dark magenta</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #556B2F">dark olive green</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #FF8C00">dark orange</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #9932CC">dark orchid</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #8B0000">dark red</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #E9967A">dark salmon</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #8FBC8B">dark sea green</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #483D8B">dark slate blue</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #2F4F4F">dark slate gray</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #00CED1">dark turquoise</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #9400D3">dark violet</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #FF1493">deep pink</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #00BFFF">deep sky blue</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #696969">dim gray</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #1E90FF">dodger blue</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #B22222">firebrick</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #FFFAF0">floral white</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #228B22">forest green</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #FF00FF">fuchsia</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #DCDCDC">gainsboro</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #F8F8FF">ghost white</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #FFD700">gold</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #DAA520">goldenrod</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #808080">gray</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #008000">green</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #ADFF2F">green yellow</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #F0FFF0">honeydew</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #FF69B4">hot pink</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #CD5C5C">indian red</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #4B0082">indigo</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #FFFFF0">ivory</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #F0E68C">khaki</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #E6E6FA">lavender</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #FFF0F5">lavender blush</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #7CFC00">lawn green</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #FFFACD">lemon chiffon</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #ADD8E6">light blue</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #F08080">light coral</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #E0FFFF">light cyan</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #FAFAD2">light goldenrod yellow</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #D3D3D3">light gray</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #90EE90">light green</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #FFB6C1">light pink</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #FFA07A">light salmon</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #20B2AA">light sea green</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #87CEFA">light sky blue</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #778899">light slate gray</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #B0C4DE">light steel blue</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #FFFFE0">light yellow</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #00FF00">lime</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #32CD32">lime green</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #FAF0E6">linen</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #FF00FF">magenta</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #800000">maroon</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #66CDAA">medium aquamarine</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #0000CD">medium blue</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #BA55D3">medium orchid</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #9370DB">medium purple</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #3CB371">medium sea green</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #7B68EE">medium slate blue</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #00FA9A">medium spring green</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #48D1CC">medium turquoise</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #C71585">medium violet red</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #191970">midnight blue</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #F5FFFA">mint cream</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #FFE4E1">misty rose</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #FFE4B5">moccasin</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #FFDEAD">navajo white</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #000080">navy</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #FDF5E6">old lace</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #808000">olive</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #6B8E23">olive drab</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #FFA500">orange</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #FF4500">orange red</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #DA70D6">orchid</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #EEE8AA">pale goldenrod</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #98FB98">pale green</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #AFEEEE">pale turquoise</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #DB7093">pale violet red</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #FFEFD5">papaya whip</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #FFDAB9">peach puff</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #CD853F">peru</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #FFC0CB">pink</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #DDA0DD">plum</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #B0E0E6">powder blue</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #800080">purple</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #FF0000">red</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #BC8F8F">rosy brown</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #4169E1">royal blue</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #8B4513">saddle brown</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #FA8072">salmon</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #F4A460">sandy brown</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #2E8B57">sea green</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #FFF5EE">sea shell</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #A0522D">sienna</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #C0C0C0">silver</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #87CEEB">sky blue</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #6A5ACD">slate blue</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #708090">slate gray</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #FFFAFA">snow</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #00FF7F">spring green</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #4682B4">steel blue</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #D2B48C">tan</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #008080">teal</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #D8BFD8">thistle</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #FF6347">tomato</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #40E0D0">turquoise</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #EE82EE">violet</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #F5DEB3">wheat</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #FFFFFF">white</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #F5F5F5">white smoke</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #FFFF00">yellow</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="background: #9ACD32">yellow green</div>
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    ColorForeground:
+    [
+      {
+        Content: <div style="color: #F0F8FF">alice blue</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #FAEBD7">antique white</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #00FFFF">aqua</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #7FFFD4">aquamarine</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #F0FFFF">azure</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #F5F5DC">beige</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #FFE4C4">bisque</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #000000">black</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #FFEBCD">blanched almond</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #0000FF">blue</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #8A2BE2">blue violet</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #A52A2A">brown</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #DEB887">burly wood</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #5F9EA0">cadet blue</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #7FFF00">chartreuse</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #D2691E">chocolate</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #FF7F50">coral</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #6495ED">cornflower blue</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #FFF8DC">cornsilk</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #DC143C">crimson</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #00FFFF">cyan</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #00008B">dark blue</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #008B8B">dark cyan</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #B8860B">dark goldenrod</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #A9A9A9">dark gray</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #006400">dark green</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #BDB76B">dark khaki</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #8B008B">dark magenta</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #556B2F">dark olive green</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #FF8C00">dark orange</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #9932CC">dark orchid</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #8B0000">dark red</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #E9967A">dark salmon</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #8FBC8B">dark sea green</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #483D8B">dark slate blue</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #2F4F4F">dark slate gray</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #00CED1">dark turquoise</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #9400D3">dark violet</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #FF1493">deep pink</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #00BFFF">deep sky blue</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #696969">dim gray</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #1E90FF">dodger blue</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #B22222">firebrick</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #FFFAF0">floral white</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #228B22">forest green</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #FF00FF">fuchsia</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #DCDCDC">gainsboro</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #F8F8FF">ghost white</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #FFD700">gold</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #DAA520">goldenrod</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #808080">gray</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #008000">green</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #ADFF2F">green yellow</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #F0FFF0">honeydew</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #FF69B4">hot pink</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #CD5C5C">indian red</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #4B0082">indigo</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #FFFFF0">ivory</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #F0E68C">khaki</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #E6E6FA">lavender</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #FFF0F5">lavender blush</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #7CFC00">lawn green</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #FFFACD">lemon chiffon</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #ADD8E6">light blue</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #F08080">light coral</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #E0FFFF">light cyan</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #FAFAD2">light goldenrod yellow</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #D3D3D3">light gray</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #90EE90">light green</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #FFB6C1">light pink</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #FFA07A">light salmon</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #20B2AA">light sea green</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #87CEFA">light sky blue</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #778899">light slate gray</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #B0C4DE">light steel blue</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #FFFFE0">light yellow</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #00FF00">lime</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #32CD32">lime green</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #FAF0E6">linen</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #FF00FF">magenta</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #800000">maroon</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #66CDAA">medium aquamarine</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #0000CD">medium blue</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #BA55D3">medium orchid</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #9370DB">medium purple</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #3CB371">medium sea green</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #7B68EE">medium slate blue</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #00FA9A">medium spring green</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #48D1CC">medium turquoise</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #C71585">medium violet red</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #191970">midnight blue</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #F5FFFA">mint cream</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #FFE4E1">misty rose</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #FFE4B5">moccasin</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #FFDEAD">navajo white</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #000080">navy</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #FDF5E6">old lace</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #808000">olive</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #6B8E23">olive drab</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #FFA500">orange</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #FF4500">orange red</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #DA70D6">orchid</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #EEE8AA">pale goldenrod</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #98FB98">pale green</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #AFEEEE">pale turquoise</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #DB7093">pale violet red</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #FFEFD5">papaya whip</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #FFDAB9">peach puff</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #CD853F">peru</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #FFC0CB">pink</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #DDA0DD">plum</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #B0E0E6">powder blue</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #800080">purple</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #FF0000">red</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #BC8F8F">rosy brown</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #4169E1">royal blue</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #8B4513">saddle brown</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #FA8072">salmon</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #F4A460">sandy brown</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #2E8B57">sea green</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #FFF5EE">sea shell</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #A0522D">sienna</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #C0C0C0">silver</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #87CEEB">sky blue</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #6A5ACD">slate blue</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #708090">slate gray</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #FFFAFA">snow</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #00FF7F">spring green</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #4682B4">steel blue</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #D2B48C">tan</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #008080">teal</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #D8BFD8">thistle</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #FF6347">tomato</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #40E0D0">turquoise</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #EE82EE">violet</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #F5DEB3">wheat</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #FFFFFF">white</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #F5F5F5">white smoke</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #FFFF00">yellow</div>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <div style="color: #9ACD32">yellow green</div>
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    "Color HTML":
+    [
+      {
+        Content: "#F0F8FF"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#FAEBD7"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#00FFFF"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#7FFFD4"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#F0FFFF"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#F5F5DC"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#FFE4C4"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#000000"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#FFEBCD"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#0000FF"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#8A2BE2"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#A52A2A"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#DEB887"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#5F9EA0"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#7FFF00"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#D2691E"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#FF7F50"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#6495ED"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#FFF8DC"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#DC143C"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#00FFFF"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#00008B"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#008B8B"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#B8860B"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#A9A9A9"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#006400"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#BDB76B"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#8B008B"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#556B2F"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#FF8C00"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#9932CC"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#8B0000"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#E9967A"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#8FBC8B"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#483D8B"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#2F4F4F"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#00CED1"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#9400D3"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#FF1493"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#00BFFF"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#696969"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#1E90FF"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#B22222"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#FFFAF0"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#228B22"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#FF00FF"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#DCDCDC"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#F8F8FF"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#FFD700"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#DAA520"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#808080"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#008000"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#ADFF2F"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#F0FFF0"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#FF69B4"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#CD5C5C"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#4B0082"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#FFFFF0"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#F0E68C"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#E6E6FA"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#FFF0F5"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#7CFC00"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#FFFACD"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#ADD8E6"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#F08080"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#E0FFFF"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#FAFAD2"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#D3D3D3"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#90EE90"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#FFB6C1"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#FFA07A"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#20B2AA"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#87CEFA"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#778899"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#B0C4DE"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#FFFFE0"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#00FF00"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#32CD32"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#FAF0E6"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#FF00FF"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#800000"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#66CDAA"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#0000CD"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#BA55D3"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#9370DB"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#3CB371"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#7B68EE"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#00FA9A"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#48D1CC"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#C71585"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#191970"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#F5FFFA"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#FFE4E1"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#FFE4B5"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#FFDEAD"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#000080"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#FDF5E6"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#808000"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#6B8E23"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#FFA500"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#FF4500"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#DA70D6"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#EEE8AA"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#98FB98"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#AFEEEE"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#DB7093"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#FFEFD5"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#FFDAB9"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#CD853F"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#FFC0CB"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#DDA0DD"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#B0E0E6"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#800080"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#FF0000"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#BC8F8F"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#4169E1"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#8B4513"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#FA8072"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#F4A460"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#2E8B57"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#FFF5EE"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#A0522D"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#C0C0C0"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#87CEEB"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#6A5ACD"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#708090"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#FFFAFA"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#00FF7F"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#4682B4"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#D2B48C"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#008080"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#D8BFD8"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#FF6347"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#FFFFFF"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#40E0D0"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#EE82EE"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#F5DEB3"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#F5F5F5"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#FFFF00"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "#9ACD32"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+  }
+  GeneratorType: Assignment
+}

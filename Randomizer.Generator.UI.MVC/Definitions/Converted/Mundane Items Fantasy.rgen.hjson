@@ -1,0 +1,2218 @@
+{
+  Name: Mundane Items (Fantasy)
+  Author: Lance Boudreaux
+  Description: Generates random mundane items to add to treasure finds in fantasy games.
+  Version: "2.0"
+  URL: http://creaturespotlight.blogspot.com/p/random-encounters.html
+  Tags:
+  [
+    Treasure
+    Fantasy
+  ]
+  OutputFormat: Html
+  Parameters: {}
+  TextCase: None
+  Imports: []
+  LineItems:
+  {
+    Start:
+    [
+      {
+        Content: "[SoftMaterial] Purse"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Shrunken Head
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cornhusk Doll
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bottle of [=Pick('Perfume','Cologne')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Glass Jar with a Preserved [Animal|BodyPart]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Necklace Pouch
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Loin-Cloth
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Smokepipe
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bag of [BagContents]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[CommonMetal] Chime"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Shiny','Dull but Smooth')] Stone"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Small [CommonMetal] Bell
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[CommonMetal] Whistle"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Rusty Nose Ring
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dried Scalp
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hookah
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Tome','Grimoire')] of [Tome]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[MysticalAnimal] Shaped Earring"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Serrated','Pairing')] Knife"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Windfan with [MysticalAnimal] Image
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Vial of [Liquid]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Shackles
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Clay Pot with Rainbow Colored Mold
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Fishing Net
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Journal of a [Artisan]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Glass Eye
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pitchfork
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tar Paper
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Libram of "Things that shall not be said"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Charcoal Bar
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Feather Headband
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Set of Wooden Soldiers
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pot of Lard
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Stained Glass with [=Pick('Butterflies','Dragonflies','Stars','Knights')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Stained Glass with [MysticalAnimal]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Taxidermied','Mummified')] [Animal]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Leather Corset
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Grinning Idol
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Baby Carriage made of Bones
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Baby Doll [=Pick('Covered in Human Flesh','Made of Ivory','Missing All Limbs','Missing the Eyes')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Empty Cart
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cart of [=Pick('Seawead','Rotted Vegetables','Rotted Meat','Hay')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Abacus
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Statue of a Porcelain [Animal]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Box of [BoxContents]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Wooden Plank Engraved with [=Pick('Words of Love','A Bill of Sale','Last Rights','Final Words of a Dying Man')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Book of [=Pick('Children\'s Names','the Dead','Philosophy','Nonsensical Phrases','An Unknown Language')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Crystal Goblet
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[CommonMetal] Goblet"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Rusty Cleaver
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Thumbscrews
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Snow Globe
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ornate Letter Opener
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Jar of Wax
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ceremonial Breastplate
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Plumed Helm
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Skull','Dragon','Gargoyle','Faceless')] Mask"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Mirror
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Small Box of Toothpicks
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[CommonMetal] Bucket"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Rusty Iron Spikes
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Case of Chewing Tobacco
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dusty Turban
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ceramic [Animal|MysticalAnimal] Statue
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Metal] Urn with Ashes"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Empty Spice Shaker
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Glass Container of [Spice]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[CommonMetal] Perascope"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bundle of Barbwire
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bar of Cold Iron
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bag with Half Dozen Scented Soap Bars
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[PreciousMetal|Metal] Candle Holder"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cast Iron Pot
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Copper Pot
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Scroll Case with a [Scroll]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Metal] Broach"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Broken Bear Trap
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Deck of [Cards] Cards
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Wicker','Reed')] Basket with [=Pick('Several Balls of Yarn','Rotten Fruit')]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Journal of [Journal]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Snowshoes
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Giant Iron Fishhook
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[CommonMetal] Tiara"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pair of [SoftMaterial] Slippers
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Porcelain Doll
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Book','Manual')] of [Book]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Medalian with a [Animal|MysticalAnimal] Motif
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Straw Hat Infested with [=Pick('Fleas','Lice')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Prayer Bread of the Dwarven God of Misery
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[CommonMetal] Necklace"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Animal] Skin Cloak"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[CommonMetal] Offering Bowl"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bag of Goose Feathers
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Color] Crystal with a Wooden Soldier Inside"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Parasol with Floral Designs
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Rusty','Sharp')] [=Pick('Scalpel','Bonesaw')]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Flask of [Fruit] Flavored Liquor
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ornate Pipe
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Set of Clay Pots
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Clothing] Soaked in [Liquid]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hollow [PreciousMetal] Ball
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sack with a Severed Head
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tombstone with No Date of Death
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Ornate','Plain')] [CommonMetal] Key"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Wooden Training Sword
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Miniature Orrery
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Mammoth Tusk
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: White Pearl Earrings
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Wooden Toy Rattle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[PreciousMetal] Heart Shaped Pendant"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bone Hair Clasp
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Gold Colored Horseshoe
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bamboo Tube
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Canopic Jar with a(n) [Animal] Head
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Spool of [Metal] Wire
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Box Inlaid with Cold Iron
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cracked [=Pick('Bowl','Vase','Jar','Pot')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[SoftMaterial] [Clothing]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Marble Bust of a [MysticalAnimal]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[MysticalAnimal] Skull with Emerald Eye Sockets"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Golden Leaf
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Shard of Slate
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[PreciousMetal] Plaque"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Stone Disk with Engraved Dwarven Runes
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Serpentine Stein
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Golden Flute
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Color] Colored [CommonMetal] Hand"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Obsidian Statuette of a [MysticalAnimal]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[CommonMetal] Measuring Weights"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Leather Leash
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Empty Art Frame
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[CommonMetal] Drinking Horn"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Irregular Freshwater Pearls
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Timber Raft
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Stone Tablet with Dwarven Runes
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Block of Dried Clay
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bleached Drake Skull
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bone Scroll Case
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Water Skin Filled with Holy Water
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Lace Wedding Dress
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Paper Lantern
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Crown of Brambles
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Carriage Wheel
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Threadbare [Clothing]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Metal] Fish Scale"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Spirit Board
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Container with Cured Organs
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Glass Globe with [Color] Liquid
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Transparent Glass Chest
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[PreciousMetal] Braided Necklace"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Iron Pike Skewerd through a Severed Head
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Spiked Leather Collar
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Belt of [=Pick('Faerie Skulls','Shriveled Halfling Hands','Goblin Bones')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Crate of [Food]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Fist Sized [PreciousMetal] Cube with Runic Symbols
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Weapon Cleaning Kit
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Voodoo Doll with Needles
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Teddy Bear with a Bag of Coins Sewn Inside
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Horn Helmet
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Animal Skin Medicine Ball
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ornate Musical Box
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pair of Charcoal Pencils
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Blank Spellbook
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Twelve Sticks of Incense
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[SoftMaterial] Gloves"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Large [PreciousMetal] Nugget
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Wooden Ruler
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pair of [CommonMetal] Tweezers
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hemp Sack filled with [BagContents]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Porcelain Matryoshka Doll
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[PreciousMetal] Shamrock Charm"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Warped Quarterstaff
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Rusty Manacles
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[CommonMetal] Tongs"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Animal]-Shaped [Metal] Letter Opener"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Color] [SoftMaterial] [Clothing]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Block of Aged Cheese
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[CommonMetal] Coat Button"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bouquet of Dead Roses
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Vial of Gold Dust
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Silver','Gold')] Tooth"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[CommonMetal] Rod"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dozen [Metal] [=Pick('Spoons','Forks','Dinner Knives')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Calligraphy Set
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Beaver Skin Boots
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[SoftMaterial] Pouch with a Set of [Cards] Cards"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: An Incomplete Set of [Cards] Cards
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Elk Thighbone
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Solid [PreciousMetal] Idol
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dire Bear Pelt
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[CommonMetal] [Animal] with [GemStone] Eyes"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Miniature Clockwork [Animal]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hollowed Unicorn Horn
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: War Drums made of Bamboo and Dragon Skin
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Deer Antlers
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Stone Tablet etched with the True Name of a Demon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Severed Finger with a [GemStone] Ring
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Plague Doctor's Mask
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Portrait of a Naked [RaceAdjective] Maiden
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Coral Ring
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Half-Finished Wittled Knife
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dented [Metal] Crown
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Wax Sealed Jewelry Box
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tortoise Shelled Snuffbox
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ten Sheets of Vellum
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Small Wooden [Animal|MysticalAnimal] Statue
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ivory Finger
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bowl of Sugar Cubes
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Polished Ram Horn
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ornately Carved Hat Stand
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[CommonMetal] Tea Kettle"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Torn [Clothing]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[CommonMetal] Flagon  with a Floral Design"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Wicker Elephant Barding
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Color] Aba Trimmed with [PreciousMetal]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hairpin Dart
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Fake [GemStone] Brooch
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Kuckle-Bone Bracelet
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Velvet-Lined Jade Box
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Metal] Totem Mask"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Color] Coral Necklace"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Folding Paper Fan
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Miniature [PreciousMetal] Gong
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[CommonMetal] Chain Shirt"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[SoftMaterial] Kimono with Spider Embroidery"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Strip of Parchment with a Fable Written on It
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tapestry of a Renowned Saint
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Twenty-Five Glass Beads
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Letter of Credit to a General Store
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Thick Fur Corset
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[PreciousMetal] Belt Buckle"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bamboo Umbrella
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Troll Skull Helmet
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Color] [SoftMaterial] Pouch with [BagContents]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cloak Pin made of Amber
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Jade Statuette of a(n) [Animal]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Golden Disc Studded with Tiny Diamonds
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sand-filled Lizardskin Sack
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Multi-colored Glass Heart
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bagpipe with Intricate Snake Figures
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Alligator Skin Valise
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Stone Bottle with [Liquid]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Blank Papyrus Scroll
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ceramic Mask with Golden Circles
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bolt of [Color] [SoftMaterial]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Coiled Aluminum Tubing
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sheep Hide Pillow
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Porcelain Chamber Pot
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[GemStone] Encrusted Holy Symbol"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tarnished Crown
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Case of Needles
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Painting of a Sphinx Smoking a Pipe
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Animal:
+    [
+      {
+        Content: Black Bird
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cat
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dog
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Eagle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Eel
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Fox
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Gerbil
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hawk
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Lizard
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Mouse
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Peacock
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Rat
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Snake
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tiger
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Artisan:
+    [
+      {
+        Content: Jeweler
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Painter
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Playwright
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Poet
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sculptor
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Toymaker
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    BagContents:
+    [
+      {
+        Content: Crushed Pearls
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Goblin Teeth
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Humanoid Tongues
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Malachite Powder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Multi-colored Chalk
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Shell Bits
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Small Rocks
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: 10 Obsidian Arrowheads
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    BodyPart:
+    [
+      {
+        Content: Brain
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ear
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Eye
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Fetus
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Foot
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hand
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Heart
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Kidney
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Book:
+    [
+      {
+        Content: Blacksmithing
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cobbling
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Empty Pages
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Geneology
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Heraldy
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Lumberjack Poetry
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Military Tactics
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Modern History
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Names
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ocular Visions
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Recipes
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: the Dead
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    BoxContents:
+    [
+      {
+        Content: "[Color] Stone Tiles"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pickled Beef
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Tea','Tobacco')] Leaves"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Firecrackers
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Volcanic Ash
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Cards:
+    [
+      {
+        Content: Picture
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Playing
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tarot
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Clothing:
+    [
+      {
+        Content: Cloak
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Gown
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hat
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pants
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Robe
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Shirt
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Color:
+    [
+      {
+        Content: Black
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Blue
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Gray
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Green
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Midnight Blue
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Orange
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Purple
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Red
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Yellow
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: White
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    CommonMetal:
+    [
+      {
+        Content: Bronze
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Copper
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Iron
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Lead
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tin
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Zinc
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Food:
+    [
+      {
+        Content: "[Fruit]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[PreservedFood]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Fruit:
+    [
+      {
+        Content: Blackberry
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Grape
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Orange
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Strawberry
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Watermelon
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    GemStone:
+    [
+      {
+        Content: Emerald
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Jade
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    GenStone:
+    [
+      {
+        Content: Ruby
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Journal:
+    [
+      {
+        Content: Love Letters
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Poetry
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: a Brigand
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: a Lich
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: a Mindflayer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: a Sea Captain
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Liquid:
+    [
+      {
+        Content: Arsenic
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Blood
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dragon Blood Ink
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dye
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ink
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Lavender Oil
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Olive Oil
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Orc Sweat
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Peppermint Oil
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Raw Honey
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Rubbing Alcohol
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Rum
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sea Water
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sour Wine
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tepid Water
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Urine
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Metal:
+    [
+      {
+        Content: "[CommonMetal]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[PreciousMetal]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    MysticalAnimal:
+    [
+      {
+        Content: Beholder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Chimera
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ettercap
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Griffon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Imp
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Mermaid
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Owlbear
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Unicorn
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    PreciousMetal:
+    [
+      {
+        Content: Aluminum
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Electrum
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Gold
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Platinum
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Silver
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Titanium
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    PreservedFood:
+    [
+      {
+        Content: Aged Cheese
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Black Mushrooms
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dried Squid
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tack Bread
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    RaceAdjective:
+    [
+      {
+        Content: Dragonborn
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dwarven
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Elven
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Genasi
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Gnomish
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Goliath
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Halfling
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Human
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Scroll:
+    [
+      {
+        Content: Blank Piece of Papyrus
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dying Man's Confession
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Letter of Confession
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Mysterious Arcane Symbols
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Partially Written Spell
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Shopping List
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Suicide Note
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Treasure Map
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    SoftMaterial:
+    [
+      {
+        Content: Burlap
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Calfskin
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cotton
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Leather
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Linen
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Silk
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Velvet
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Wool
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Spice:
+    [
+      {
+        Content: Basil
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Black Pepper
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cayenne Pepper
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cinnamon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dried Seeds
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Mint
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Nutmeg
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Oregano
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Parsley
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sage
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Salt
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tumeric
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Tome:
+    [
+      {
+        Content: Goblin Art
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Gruesome Insights
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Sacred','Divine')] Words"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Substances Most Toxic
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[MysticalAnimal] Anatomy"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+  }
+  GeneratorType: Assignment
+}

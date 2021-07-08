@@ -33,9 +33,10 @@ namespace Randomizer.Generator.Lua
 		/// <returns>The content generated</returns>
 		public override String Generate()
 		{
+			base.Generate();
 			foreach (var parameter in Parameters)
 			{
-				_lua[parameter.Key] = parameter.Value;
+				_lua[parameter.Key] = parameter.Value.Value;
 			}
 
 			Result.Clear();

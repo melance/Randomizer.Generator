@@ -1,0 +1,505 @@
+{
+  Name: DnD Monsters by Type
+  Author: Lance Boudreaux
+  Description: null
+  Version: "2.0"
+  OutputFormat: Text
+  LineItems:
+  {
+    Monster:
+    [
+      { Content: "[Aberration]"}
+      { Content: "[Animal]"}
+      { Content: "[Beast]"}
+      { Content: "[Construct]"}
+      { Content: "[Dragon]"}
+      { Content: "[Elemental]"}
+      { Content: "[Fey]"}
+      { Content: "[Fiend]"}
+      { Content: "[Giant]"}
+      { Content: "[Humanoid]"}
+      { Content: "[Ooze]"}
+      { Content: "[Outsider]"}
+      { Content: "[MagicalBeast]"}
+      { Content: "[Monstrosity]"}
+      { Content: "[Plant]"}
+      { Content: "[ShapeChanger]"}
+      { Content: "[Undead]"}
+      { Content: "[Vermin]"}
+    ]
+    Aberration:
+    [
+      { Content: "aboleth" }
+      { Content: "athach" }
+      { Content: "beholder" }
+      { Content: "carrion crawler" }
+      { Content: "chimera" }
+      { Content: "choker" }
+      { Content: "chuul" }
+      { Content: "cloaker" }
+      { Content: "delver" }
+      { Content: "destrachan" }
+      { Content: "drider" }
+      { Content: "ethereal filcher" }
+      { Content: "ettercap" }
+      { Content: "gibbering mouther" }
+      { Content: "grick" }
+      { Content: "mimic" }
+      { Content: "mind flayer" }
+      { Content: "[Naga]" }
+      { Content: "otyugh" }
+      { Content: "rust monster" }
+      { Content: "skum" }
+      { Content: "umber hulk" }
+      { Content: "will-o'-wisp" }
+    ]
+    Animal:
+    [
+      { Content: "[DireAnimal]" }
+      { Content: "ape" }
+      { Content: "baboon" }
+      { Content: "badger" }
+      { Content: "bat" }
+      { Content: "black bear" }
+      { Content: "brown bear" }
+      { Content: "polar bear" }
+      { Content: "bison" }
+      { Content: "boar" }
+      { Content: "camel" }
+      { Content: "cat" }
+      { Content: "cheetah" }
+      { Content: "crocodile" }
+      { Content: "giant crocodile" }
+      { Content: "dog" }
+      { Content: "riding dog" }
+      { Content: "donkey" }
+      { Content: "eagle" }
+      { Content: "elephant" }
+      { Content: "hawk" }
+      { Content: "heavy horse" }
+      { Content: "heavy war horse" }
+      { Content: "light horse" }
+      { Content: "light war horse" }
+      { Content: "leopard" }
+      { Content: "lion" }
+      { Content: "lizard" }
+      { Content: "giant lizard" }
+      { Content: "monkey" }
+      { Content: "mule" }
+      { Content: "octopus" }
+      { Content: "giant octopus" }
+      { Content: "owl" }
+      { Content: "pony" }
+      { Content: "war pony" }
+      { Content: "porpoise" }
+      { Content: "rat" }
+      { Content: "raven" }
+      { Content: "rhinoceros" }
+      { Content: "shark" }
+      { Content: "constrictor snake" }
+      { Content: "giant constrictor snake" }
+      { Content: "viper snake" }
+      { Content: "squid" }
+      { Content: "giant squid" }
+      { Content: "baleen whale" }
+      { Content: "cachalot whale" }
+      { Content: "orca" }
+      { Content: "wolf" }
+      { Content: "wolverine" }
+    ]
+    Beast:
+    [
+      { Content: "ankheg" }
+      { Content: "bulette" }
+      { Content: "[Dinosaur]" }
+      { Content: "girallon" }
+      { Content: "gray render" }
+      { Content: "griffon" }
+      { Content: "hippogriff" }
+      { Content: "[Hydra]" }
+      { Content: "owlbear" }
+      { Content: "purple worm" }
+      { Content: "roc" }
+      { Content: "roper" }
+      { Content: "sea lion" }
+      { Content: "stirge" }
+    ]
+    Celestial:
+    [
+      { Content: "lantern archon celestial" }
+      { Content: "hound archon celestial" }
+      { Content: "avoral celestial" }
+      { Content: "ghaele celestial" }
+      { Content: "trumper archon celestial" }
+      { Content: "astral deva celestial" }
+      { Content: "planetar celestial" }
+      { Content: "solar celestial" }
+    ]
+    ChromaticDragon:
+    [
+      { Content: "black dragon" }
+      { Content: "blue dragon" }
+      { Content: "green dragon" }
+      { Content: "red dragon" }
+      { Content: "white dragon" }
+    ]
+    Construct:
+    [
+      { Content: "flesh golem" }
+      { Content: "clay golem" }
+      { Content: "stone golem" }
+      { Content: "iron golem" }
+      { Content: "homunculus" }
+      { Content: "shield guardian" }
+    ]
+    Demon:
+    [
+      { Content: "dretch demon" }
+      { Content: "quasit demon" }
+      { Content: "succubus demon" }
+      { Content: "bebilith demon" }
+      { Content: "retriever demon" }
+      { Content: "vrock demon" }
+      { Content: "hezrou demon" }
+      { Content: "glabrezu demon" }
+      { Content: "nalfeshnee demon" }
+      { Content: "marilith demon" }
+      { Content: "balor demon" }
+    ]
+    Devil:
+    [
+      { Content: "lemure" }
+      { Content: "imp" }
+      { Content: "osyluth" }
+      { Content: "kyton" }
+      { Content: "hellcat" }
+      { Content: "barbazu" }
+      { Content: "erinyes" }
+      { Content: "hamatula" }
+      { Content: "cornugon" }
+      { Content: "gelugon" }
+      { Content: "pit fiend" }
+    ]
+    Dinosaur:
+    [
+      { Content: "deinonychus" }
+      { Content: "elasmosaurus" }
+      { Content: "megaraptor" }
+      { Content: "triceratops" }
+      { Content: "tyrannosaurus" }
+    ]
+    DireAnimal:
+    [
+      { Content: "dire rat" }
+      { Content: "dire weasel" }
+      { Content: "dire badger" }
+      { Content: "dire bat" }
+      { Content: "dire ape" }
+      { Content: "dire wolverine" }
+      { Content: "dire wolf" }
+      { Content: "dire boar" }
+      { Content: "dire lion" }
+      { Content: "dire bear" }
+      { Content: "dire tiger" }
+      { Content: "dire shark" }
+    ]
+    Dragon:
+    [
+      { Content: "[ChromaticDragon]" }
+      { Content: "[MetallicDragon]" }
+      { Content: "dragon turtle" }
+      { Content: "pseudodragon" }
+      { Content: "wyvern" }
+    ]
+    Elemental:
+    [
+      { Content: "azer" }
+      { Content: "belker" }
+      { Content: "air elemental" }
+      { Content: "earth elemental" }
+      { Content: "fire elemental" }
+      { Content: "water elemental" }
+      { Content: "invisible stalker" }
+      { Content: "magmin" }
+      { Content: "thoqqua" }
+    ]
+    Fey:
+    [
+      { Content: "dryad" }
+      { Content: "nymph" }
+      { Content: "satyr" }
+      { Content: "[Sprite]" }
+    ]
+    Fiend:
+    [
+      { Content: "cambion" }
+    ]
+    Formian:
+    [
+      { Content: "formian worker" }
+      { Content: "formian warrior" }
+      { Content: "formian taskmaster" }
+      { Content: "formian myrmarch" }
+      { Content: "formian queen" }
+    ]
+    Genie:
+    [
+      { Content: "janni" }
+      { Content: "djinni" }
+      { Content: "efreeti" }
+    ]
+    Giant:
+    [
+      { Content: "ettin" }
+      { Content: "hill giant" }
+      { Content: "stone giant" }
+      { Content: "frost giant" }
+      { Content: "fire giant" }
+      { Content: "cloud giant" }
+      { Content: "storm giant" }
+      { Content: "ogre" }
+      { Content: "ogre mage" }
+      { Content: "troll" }
+    ]
+    Hag:
+    [
+      { Content: "sea hag" }
+      { Content: "annia" }
+      { Content: "green hag" }
+    ]
+    Humanoid:
+    [
+      { Content: "aarakocra" }
+      { Content: "bugbear" }
+      { Content: "bullywug" }
+      { Content: "centaur" }
+      { Content: "dwarf" }
+      { Content: "elf" }
+      { Content: "gnoll" }
+      { Content: "gnome" }
+      { Content: "goblin" }
+      { Content: "grimlock" }
+      { Content: "[Hag]"}
+      { Content: "halfling" }
+      { Content: "harpy" }
+      { Content: "hobgoblin" }
+      { Content: "kobold" }
+      { Content: "kuo-toa" }
+      { Content: "lizardfolk" }
+      { Content: "locathah" }
+      { Content: "medusa" }
+      { Content: "merfolk" }
+      { Content: "minotaur" }
+      { Content: "orc" }
+      { Content: "sahuagin" }
+      { Content: "troglodyte" }
+      { Content: "[YuanTi]" }
+    ]
+    Hydra:
+    [
+      { Content: "five-headed hydra" }
+      { Content: "six-headed hydra" }
+      { Content: "seven-headed hydra" }
+      { Content: "eight-headed hydra" }
+      { Content: "nine-headed hydra" }
+      { Content: "ten-headed hydra" }
+      { Content: "eleven-headed hydra" }
+      { Content: "twelve-headed hydra" }
+    ]
+    MagicalBeast:
+    [
+      { Content: "basilisk" }
+      { Content: "behir" }
+      { Content: "blink dog" }
+      { Content: "cockatrice" }
+      { Content: "darkmantle" }
+      { Content: "digester" }
+      { Content: "displacer beast" }
+      { Content: "dragonne" }
+      { Content: "ethereal marauder" }
+      { Content: "frost worm" }
+      { Content: "gargoyle" }
+      { Content: "giant eagle" }
+      { Content: "giant owl" }
+      { Content: "gorgon" }
+      { Content: "kraken" }
+      { Content: "krenshar" }
+      { Content: "lamia" }
+      { Content: "lammasu" }
+      { Content: "manticore" }
+      { Content: "pegasus" }
+      { Content: "phase spider" }
+      { Content: "remorhaz" }
+      { Content: "shocker lizard" }
+      { Content: "[Sphinx]" }
+      { Content: "spider eater" }
+      { Content: "tarrasque" }
+      { Content: "unicorn" }
+      { Content: "winter wolf" }
+      { Content: "worg" }
+      { Content: "yrthak" }
+    ]
+    Mephit:
+    [
+      { Content: "air mephit" }
+      { Content: "dust mephit" }
+      { Content: "earth mephit" }
+      { Content: "fire mephit" }
+      { Content: "ice mephit" }
+      { Content: "magma mephit" }
+      { Content: "ooze mephit" }
+      { Content: "salt mephit" }
+      { Content: "steam mephit" }
+      { Content: "water mephit" }
+    ]
+    MetallicDragon:
+    [
+      { Content: "brass dragon" }
+      { Content: "bronze dragon" }
+      { Content: "copper dragon" }
+      { Content: "gold dragon" }
+      { Content: "silver dragon" }
+    ]
+    Naga:
+    [
+      { Content: "water naga" }
+      { Content: "spirit naga" }
+      { Content: "dark naga" }
+      { Content: "guardian naga" }
+    ]
+    Nightshade:
+    [
+      { Content: "nightwing" }
+      { Content: "nightwalker" }
+      { Content: "nightcrawler" }
+    ]
+    Ooze:
+    [
+      { Content: "gray ooze" }
+      { Content: "gelatinous cube" }
+      { Content: "ochre jelly" }
+      { Content: "black pudding" }
+    ]
+    Outsider:
+    [
+      { Content: "achaierai" }
+      { Content: "arrowhawk" }
+      { Content: "azer" }
+      { Content: "barghest" }
+      { Content: "[Celestial]" }
+      { Content: "couatl" }
+      { Content: "chaos beast" }
+      { Content: "[Demon]" }
+      { Content: "[Devil]" }
+      { Content: "[Formian]" }
+      { Content: "[Genie]" }
+      { Content: "hellhound" }
+      { Content: "howler" }
+      { Content: "lillend" }
+      { Content: "[Mephit]" }
+      { Content: "night hag" }
+      { Content: "nightmare" }
+      { Content: "[PlaneTouched]"}
+      { Content: "rakshasa" }
+      { Content: "rast" }
+      { Content: "ravid" }
+      { Content: "[Salamander]"}
+      { Content: "shadow mastiff" }
+      { Content: "[Slaad]"}
+      { Content: "titan" }
+      { Content: "tojanida" }
+      { Content: "triton" }
+      { Content: "vargouille" }
+      { Content: "xill" }
+      { Content: "xorn" }
+      { Content: "yeth hound" }
+    ]
+    PlaneTouched:
+    [
+      { Content: "aasimar" }
+      { Content: "tiefling" }
+    ]
+    Plant:
+    [
+      { Content: "assassin vine" }
+      { Content: "shrieker" }
+      { Content: "violet fungus" }
+      { Content: "phantom fungus" }
+      { Content: "shambling mound" }
+      { Content: "tendriculos" }
+      { Content: "treant" }
+    ]
+    Salamander:
+    [
+      { Content: "flamebrother" }
+      { Content: "average salamander" }
+      { Content: "noble salamander" }
+    ]
+    ShapeChanger:
+    [
+      { Content: "aranea" }
+      { Content: "doppelganger" }
+      { Content: "phasm" }
+    ]
+    Slaad:
+    [
+      { Content: "red slaad" }
+      { Content: "blue slaad" }
+      { Content: "gray slaad" }
+      { Content: "death slaad" }
+    ]
+    Sphinx:
+    [
+      { Content: "androsphinx" }
+      { Content: "crisosphinx" }
+      { Content: "gynosphinx" }
+    ]
+    Sprite:
+    [
+      { Content: "grig" }
+      { Content: "nixie" }
+      { Content: "pixie" }
+    ]
+    Undead:
+    [
+      { Content: "allip" }
+      { Content: "banshee" }
+      { Content: "bodak" }
+      { Content: "devourer" }
+      { Content: "ghast" }
+      { Content: "ghoul" }
+      { Content: "mohrg" }
+      { Content: "mummy" }
+      { Content: "[Nightshade]"}
+      { Content: "shadow" }
+      { Content: "skeleton" }
+      { Content: "spectre" }
+      { Content: "vampire spawn" }
+      { Content: "wight" }
+      { Content: "wraith" }
+      { Content: "zombie" }
+    ]
+    Vermin:
+    [
+      { Content: "giant worker ant" }
+      { Content: "giant soldier ant" }
+      { Content: "giant queen ant" }
+      { Content: "giant bee" }
+      { Content: "giant bombardier beetle" }
+      { Content: "giant fire beetle" }
+      { Content: "giant stag beetle" }
+      { Content: "giant praying mantis" }
+      { Content: "giant wasp" }
+      { Content: "monstrous centipede" }
+      { Content: "monstrous scorpion" }
+      { Content: "monstrous spider" }
+    ]
+    YuanTi:
+    [
+      { Content: "pureblood yuan-ti" }
+      { Content: "halfblood yuan-ti" }
+      { Content: "abomination yuan-ti" }
+    ]
+  }
+  GeneratorType: Assignment
+}

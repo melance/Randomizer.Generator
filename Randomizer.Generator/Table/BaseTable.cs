@@ -3,6 +3,7 @@ using Microsoft.VisualBasic.FileIO;
 using System;
 using System.Collections.Generic;
 using Newtonsoft.Json;
+using System.Linq;
 
 namespace Randomizer.Generator.Table
 {
@@ -34,11 +35,13 @@ namespace Randomizer.Generator.Table
 		/// <summary>An expression that denotes if the table should be skipped</summary>
 		public String SkipTable { get; set; }
 		/// <summary>The formatted table string</summary>
-		public String Value { get; set; }
+		public String Table { get; set; }
 		/// <summary>The string to use between values when repeat is greater than 1</summary>
 		public String RepeatJoin { get; set ; }
+		/// <summary>When true, duplicate values from a repeat are noted as "x #"</summary>
+		public Boolean EnumerateRepeat { get; set; } = false;
 		/// <summary>The parsed table</summary>
-		protected Table Table { get; set; }
+		protected Table ParsedTable { get; set; }
 		#endregion
 
 		#region Public Methods
@@ -50,10 +53,19 @@ namespace Randomizer.Generator.Table
 			if (String.IsNullOrWhiteSpace(SkipTable) || !OnEvaluate<Boolean>(SkipTable))
 			{				
 				ParseTable();
-				return ProcessTableInternal();
+				return EnumerateResults(ProcessTableInternal());
 			}
 
 			return new Dictionary<String, String>();
+		}
+
+		/// <summary>
+		/// Processes the tabel and returns the results
+		/// </summary>
+		public Dictionary<String, String> ProcessTableNoCheck()
+		{
+			ParseTable();
+			return EnumerateResults(ProcessTableInternal());
 		}
 		#endregion
 
@@ -94,9 +106,9 @@ namespace Randomizer.Generator.Table
 		/// <param name="row">The index of the row to process</param>
 		protected virtual void ProcessRow(Dictionary<String, String> result, Int32 row)
 		{
-			if (row >= 0 && row < Table.RowCount)
+			if (row >= 0 && row < ParsedTable.RowCount)
 			{
-				foreach (Column column in Table.Columns)
+				foreach (Column column in ParsedTable.Columns)
 				{
 					var value = OnEvaluate<object>(column[row]);
 					if (result.ContainsKey(column.Name))
@@ -112,12 +124,60 @@ namespace Randomizer.Generator.Table
 		}
 
 		/// <summary>
+		/// Processes a row and set puts the result into the <paramref name="result"/> 
+		/// </summary>
+		/// <param name="result">The results of the process</param>
+		/// <param name="row">The index of the row to process</param>
+		protected virtual void ProcessRow(Dictionary<String, String> result, Row row)
+		{
+			var index = ParsedTable.RowIndex(row);
+			foreach (Column column in ParsedTable.Columns)
+			{
+				var value = OnEvaluate<object>(column[index]);
+				if (result.ContainsKey(column.Name))
+				{
+					result[column.Name] = $"{result[column.Name]}{RepeatJoin}{value}";
+				}
+				else
+				{
+					result[column.Name] = (String)value;
+				}
+			}			
+		}
+
+		/// <summary>
 		/// Gets or evaluates the value of the repeat property
 		/// </summary>
 		protected Int32 GetRepeat()
 		{
 			if (string.IsNullOrWhiteSpace(Repeat)) return 1;
 			return OnEvaluate<Int32>(Repeat);
+		}
+
+		protected Dictionary<String, String> EnumerateResults(Dictionary<String, String> results)
+		{
+			if (EnumerateRepeat)
+			{
+				var value = new Dictionary<String, String>();
+				foreach (var result in results)
+				{
+					var parts = result.Value.Split(RepeatJoin);
+					var aggregated = new List<String>();
+					foreach (var part in parts.Distinct())
+					{
+						var partCount = parts.Count(p => p.Equals(part));
+
+						if (partCount == 1)
+							aggregated.Add(part);
+						else
+							aggregated.Add($"{part} x{partCount}");
+					}
+					value.Add(result.Key, String.Join(RepeatJoin, aggregated));
+				}
+				return value;
+			}
+			else
+				return results;
 		}
 		#endregion
 
@@ -127,11 +187,11 @@ namespace Randomizer.Generator.Table
 		/// </summary>
 		private void ParseTable()
 		{
-			Table = new();
+			ParsedTable = new();
 
-			if (!string.IsNullOrWhiteSpace(Value))
+			if (!string.IsNullOrWhiteSpace(Table))
 			{
-				using var reader = new System.IO.StringReader(Value);
+				using var reader = new System.IO.StringReader(Table);
 				using var parser = new TextFieldParser(reader);
 
 				parser.Delimiters = new string[] { DELIMITER_TOKEN };
@@ -143,13 +203,13 @@ namespace Randomizer.Generator.Table
 				var headers = parser.ReadFields();
 				foreach (var header in headers)
 				{
-					Table.AddColumn(header);
+					ParsedTable.AddColumn(header);
 				}
 
 				while (!parser.EndOfData)
 				{
 					var fields = parser.ReadFields();
-					Table.AddRow(fields);
+					ParsedTable.AddRow(fields);
 				}
 			}
 		} 

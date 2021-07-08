@@ -1,4 +1,5 @@
-﻿using Randomizer.Generator.Utility;
+﻿using NCalc;
+using Randomizer.Generator.Utility;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,5 +11,6 @@ namespace Randomizer.Generator.Attributes
 	[AttributeUsage(AttributeTargets.Method)]
 	internal class NCalcFunctionAttribute : Attribute
 	{
+		public NCalcFunctionAttribute() : base() { }
 	}
 }

@@ -1,0 +1,2864 @@
+{
+  Version: "2.0"
+  Tags: []
+  OutputFormat: Html
+  Parameters: {}
+  TextCase: None
+  Imports: []
+  LineItems:
+  {
+    Monster:
+    [
+      {
+        Content: "[Dimunitive]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Tiny]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Small]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Medium]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Large]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Huge]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Gargantuan]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Colossal]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Dimunitive:
+    [
+      {
+        Content: "[DimunitiveAnimal]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    DimunitiveAnimal:
+    [
+      {
+        Content: bat
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: toad
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Tiny:
+    [
+      {
+        Content: quasit
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: imp
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[TinyDragon]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: homunculus
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: psuedodragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: tiny skeleton
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: grig
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: stirge
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: tiny zombie
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[TinyAnimal]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[TinyVermin]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    TinyAnimal:
+    [
+      {
+        Content: badger
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: cat
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: hawk
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: lizard
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: monkey
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: owl
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: rat
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: raven
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: tiny viper snake
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: weasel
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    TinyDragon:
+    [
+      {
+        Content: wyrmling black dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: wyrmling white dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: wyrmling brass dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: wyrmling copper dragon
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    TinyVermin:
+    [
+      {
+        Content: tiny monstrous centipede
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: tiny monstrous scorpion
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: tiny monstrous spider
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Small:
+    [
+      {
+        Content: juvenile arrowhawk
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: lantern archon celestial
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: choker
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: cockatrice
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: darkmantle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: dretch
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: dire rat
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[SmallDragon]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[SmallElemental]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: formian worker
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: gnome
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: goblin
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: halfling
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: kobold
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: magmin
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[SmallMephit]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: flamebrother
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: shocker lizard
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: small skeleton
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: nixie
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: pixie
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: juvenile tojanida
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: vargouille
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: will-o'-wisp
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: minor xorn
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: small zombie
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[SmallAnimal]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[SmallVermin]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    SmallAnimal:
+    [
+      {
+        Content: dog
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: eagle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: octopus
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: small viper snake
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    SmallDragon:
+    [
+      {
+        Content: very young black dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: wyrmling blue dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: wyrmling green dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: very young white dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: very young brass dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: wyrmling bronze dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: very young copper dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: wyrmling silver dragon
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    SmallElemental:
+    [
+      {
+        Content: small air elemental
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: small earth elemental
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: small fire elemental
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: small water elemental
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    SmallMephit:
+    [
+      {
+        Content: air mephit
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: dust mephit
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: earth mephit
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: fire mephit
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ice mephit
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: magma mephit
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ooze mephit
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: salt mephit
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: steam mephit
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: water mephit
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    SmallVermin:
+    [
+      {
+        Content: giant fire beetle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: small monstrous centipede
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: small monstrous scorpion
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: small monstrous spider
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Medium:
+    [
+      {
+        Content: adult arrowhawk
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: azer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: barghest
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: aranea
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: allip
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: bodak
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: blink dog
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: bugbear
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: basilisk
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: hound archon celestial
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: avoral celestial
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ghaele celestial
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: trumper archon celestial
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: astral deva celestial
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: chaos beast
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: succubus
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: lemure
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: kyton
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: barbazu
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: erinyes
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: hamatula
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: digester
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: dire weasel
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: dire badger
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[MediumDragon]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: dryad
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: dwarf
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[MediumElemental]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: elf
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ethereal filcher
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ethereal marauder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ettercap
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: formian warrior
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: formian taskmaster
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: shrieker
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: violet fungus
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: gargoyle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: janni
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ghoul
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ghast
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: gibbering mound
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: gnoll
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: grick
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: grimlock
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: green hag
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: harpy
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: hell hound
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: hobgoblin
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: krenshar
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: kuo-toa
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: lamia
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: lizardfolk
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: locathah
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: medusa
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: merfolk
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: mind flayer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: mohrg
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: mummy
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: night hag
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: nymph
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: grey ooze
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: orc
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: phantom fungus
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: phasm
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: aasimar
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: tiefling
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: rahshasa
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: rast
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ravid
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: rust monster
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: sahuagin
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: average salamander
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: satyr
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: shadow
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: shadow mastiff
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: medium skeleton
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: skum
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[MediumSlaad]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: spectre
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: thoqqua
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: adult tojanida
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: triton
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: troglodyte
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: vamire spawn
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: wight
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: worg
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: wraith
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: xill
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: average xorn
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: yeth hound
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: pureblood yuan-ti
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: halfblood yuan-ti
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: medium zombie
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[MediumAnimal]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[MediumVermin]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    MediumAnimal:
+    [
+      {
+        Content: black bear
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: baboon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: boar
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: cheetah
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: crocodile
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: riding dog
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: donkey
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: leopard
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: giant lizard
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: pony
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: war pony
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: porpoise
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: medium shark
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: constrictor snake
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: medium viper snake
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: squid
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: wolf
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: wolverine
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    MediumDragon:
+    [
+      {
+        Content: young black dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: juvenile black dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: very young blue dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: young blue dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: very young green dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: young green dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: wyrmling red dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: young white dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: juvenile white dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: young brass dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: juvenile brass dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: very young bronze dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: young bronze dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: young copper dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: juvenile copper dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: wyrmling gold dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: very young silver dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: young silver dragon
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    MediumElemental:
+    [
+      {
+        Content: medium air elemental
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: medium earth elemental
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: medium fire elemental
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: medium water elemental
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    MediumSlaad:
+    [
+      {
+        Content: gray slaad
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: death slaad
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    MediumVermin:
+    [
+      {
+        Content: giant worker ant
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: giant soldier ant
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: giant bee
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: giant bombadier beetle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: medium giant centipede
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: medium monstrous scorpion
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: medium monstrous spider
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Large:
+    [
+      {
+        Content: achaierai
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ankheg
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: beholder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: belker
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: elder arrowhawk
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: greater barghest
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: assassin vine
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: carrion crawler
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: planetar celestial
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: solar celestial
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: centaur
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: chimera
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: chuul
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: cloaker
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: couatl
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: vrock
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: hezrou
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: marilith
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: balor
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: destrachan
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: osyluth
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: hellcat
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: cornugon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: gelugon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: pit fiend
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: devourer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: deinonychus
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: dire bat
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: dire ape
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: dire wolvering
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: dire wolf
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: dire boar
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: dire lion
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: dire bear
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: displacer beast
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[LargeDragon]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: dragonne
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: drider
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[LargeElemental]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ettin
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: formian myrmarch
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: formian queen
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: djinni
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: efreeti
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[LargeGiant]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: giant eagle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: giant owl
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: girallon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[LargeGolem]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: gorgon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: gray render
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: griffon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: sea hag
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: annis hag
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: hippogriff
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: howler
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: invisible stalker
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: lammasu
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: lillend
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: mimic
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: minotaur
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[LargeNaga]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: nightmare
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ogre
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ogre mage
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ochre jelly
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: otyugh
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: owlbear
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: pegasus
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: phase spider
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: roper
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: noble salamander
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: sea lion
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: shambling mound
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: shield guardian
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: large skeleton
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[LargeSlaad]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[LargeSphinx]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: elder tojanida
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: troll
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: umberhulk
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: unicorn
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: winter wolf
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: elder xorn
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: abomination yuan-ti
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: large zombie
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[LargeAnimal]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[LargeVermin]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    LargeAnimal:
+    [
+      {
+        Content: ape
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: brown bear
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: polar bear
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: bison
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: camel
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: heavy horse
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: heavy war horse
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: light horse
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: light war horse
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: lion
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: mule
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: giant octopus
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: rhinoceros
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: large shark
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: large viper snake
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: tiger
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    LargeDragon:
+    [
+      {
+        Content: adult black dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: mature adult black dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: juvenile blue dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: young adult blue dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: juvenile green dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: young adult green dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: young adult white dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: adult white dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: young adult brass dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: adult brass dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: juvenile bronze dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: young adult bronze dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: young adult copper dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: adult copper dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: very young gold dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: young gold dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: juvenile gold dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: juvenile silver dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: young adult dragon
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    LargeElemental:
+    [
+      {
+        Content: large air elemental
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: large earth elemental
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: large fire elemental
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: large water elemental
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    LargeGiant:
+    [
+      {
+        Content: hill giant
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: stone giant
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: frost giant
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: fire giant
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    LargeGolem:
+    [
+      {
+        Content: flesh golem
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: clay golem
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: stone golem
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: iron golem
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    LargeNaga:
+    [
+      {
+        Content: water naga
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: spirit naga
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: dark naga
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    LargeSlaad:
+    [
+      {
+        Content: red slaad
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: blue slaad
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: green slaad
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    LargeSphinx:
+    [
+      {
+        Content: androsphinx
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: criosphinx
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: gynosphinx
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: hieracosphinx
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    LargeVermin:
+    [
+      {
+        Content: giant queen ant
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: giant stag beelte
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: giant praying mantis
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: giant wasp
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: large monstrous centipede
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: large monstrous scoprion
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: large monstrous spider
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Huge:
+    [
+      {
+        Content: aboleth
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: athach
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: behir
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: bulette
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: delver
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: bebilith
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: retriever demon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: glabrezue
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: nalfeshnee
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: elasmosaurus
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: megaraptor
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: triceratops
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: tyrannosaurus
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: dire tiger
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: dire shark
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[HugeDragon]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: dragon turtle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[HugeElemental]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: frost worm
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[HugeGiant]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[HugeHyrda]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: manticore
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[HugeNightshade]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: gelatinous cube
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: black pudding
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: remorhaz
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: huge skeleton
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: spider eater
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: tendriculos
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: titan
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: treant
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: wyvern
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: yrthak
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: huge zombie
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[HugeAnimal]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[HugeVermin]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    HugeAnimal:
+    [
+      {
+        Content: giant crocodile
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: elephant
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: huge shark
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: huge viper snake
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: giant squid
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: giant constrictor snake
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: orca
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    HugeDragon:
+    [
+      {
+        Content: old black dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: very old black dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ancient black dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: adult blue dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: mature adult blue dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: old blue dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: very old blue dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: adult green dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: mature adult green dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: old green dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: very old green dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: mature adult white dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: old white dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: very old white dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ancient white dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: mature adult brass dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: old brass dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: very old brass dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ancient brass dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: adult bronze dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: mature adult bronze dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: old bronze dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: very old bronze dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: mature adult copper dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: old copper dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: very old copper dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ancient copper dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: young adult gold dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: adult gold dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: mature adult gold dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: adult silver dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: mature adult silver dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: old silver dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: very old silver dragon
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    HugeElemental:
+    [
+      {
+        Content: huge air elemental
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: greater air elemental
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: elder air elemental
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: huge earth elemental
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: greater earth elemental
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: elder earth elemental
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: huge fire elemental
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: greater fire elemental
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: elder fire elemental
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: huge water elemental
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: greater water elemental
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: elder water elemental
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    HugeGiant:
+    [
+      {
+        Content: cloud giant
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: storm giant
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    HugeHydra:
+    [
+      {
+        Content: five-headed hydra
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: six-headed hydra
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: seven-headed hydra
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: eight-headed hydra
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: nine-headed hydra
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ten-headed hydra
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: eleven-headed hydra
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: twelve-headed hydra
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    HugeVermin:
+    [
+      {
+        Content: huge monstrous centipede
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: huge monstrous scorpion
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: huge monstrous spider
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    NightShade:
+    [
+      {
+        Content: nightwing
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: nightwalker
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: nightcrawler
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Gargantuan:
+    [
+      {
+        Content: "[GargantuanDragon]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: kraken
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: purple worm
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: roc
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: gargantuan skeleton
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: gargantuan zombie
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[GargantuanAnimal]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[GargantuanVermin]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    GargantuanAnimal:
+    [
+      {
+        Content: baleen whale
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: cachalot whale
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    GargantuanDragon:
+    [
+      {
+        Content: wyrm black dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: great wyrm black dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ancient blue dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: wyrm blue dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: great wyrm blue dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ancient green dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: wyrm green dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: great wyrm green dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: wyrm white dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: great wyrm white dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: wyrm brass dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: great wyrm brass dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ancient bronze dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: wyrm bronze dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: great wyrm bronze dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: wyrm copper dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: great wyrm copper dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: old gold dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: very old gold dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ancient gold dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ancient silver dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: wyrm silver dragon
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    GargantuanVermin:
+    [
+      {
+        Content: gargantuan monstrous centipede
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: gargantuan monstrous scorpion
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: gargantuan monstrous spider
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Colossal:
+    [
+      {
+        Content: "[ColossalDragon]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: colossal skeleton
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: tarrasque
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: colossal zombie
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[ColossalVermin]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    ColossalDragon:
+    [
+      {
+        Content: wyrm gold dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: great wyrm gold dragon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: great wyrm silver dragon
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    ColossalVermin:
+    [
+      {
+        Content: colossal monstrous centipede
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: colossal monstrous scorpion
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: colossal monstrous spider
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+  }
+  GeneratorType: Assignment
+}

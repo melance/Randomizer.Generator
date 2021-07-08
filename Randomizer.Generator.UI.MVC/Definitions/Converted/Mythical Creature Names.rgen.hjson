@@ -1,0 +1,860 @@
+{
+  Name: Mythical Creature Names
+  Author: Lance Boudreaux
+  Description: Generates the names for new species of mythical creatures
+  Version: "2.0"
+  Tags:
+  [
+    Name
+    Fantasy
+  ]
+  OutputFormat: Html
+  Parameters: {}
+  TextCase: None
+  Imports:
+  [
+    LettersAndDigitsWeighted
+  ]
+  LineItems:
+  {
+    Start:
+    [
+      {
+        Content: "[=TCase([Name])]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Name:
+    [
+      {
+        Content: "[Cv]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Cvc]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Cvd]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Cvvc]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Vc]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Vv]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    V:
+    [
+      {
+        Content: "[UpperVowel]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[LowerVowel]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    C:
+    [
+      {
+        Content: "[UpperConsonant]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[LowerConsonant]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Ctvc:
+    [
+      {
+        Content: "[Ct][v][c]"
+        Next: cvc
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Ctvcv:
+    [
+      {
+        Content: "[Ct][v][c][v]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Cv:
+    [
+      {
+        Content: "[C][v]"
+        Next: cdvc
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[C][v]"
+        Next: cvc
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[C][v]"
+        Next: cvcd
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[c][v]"
+        Next: cdvcv
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[c][v]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Cvc:
+    [
+      {
+        Content: "[C][v][c]"
+        Next: cvcc
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[C][v][c]"
+        Next: cvd
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[C][v][c]"
+        Next: cvvcd
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[C][v][c]"
+        Next: vcd
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[c][v][c]"
+        Next: vc
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[c][v][c]"
+        Next: vcd
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[c][v][c]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Cvcd:
+    [
+      {
+        Content: "[C][v][cd]"
+        Next: ccvdc
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[c][v][cd]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Cvd:
+    [
+      {
+        Content: "[C][vd]"
+        Next: cdvc
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[c][vd]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Cvvc:
+    [
+      {
+        Content: "[C][v][v][c]"
+        Next: cvc
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Vc:
+    [
+      {
+        Content: "[V][c]"
+        Next: ca
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[V][c]"
+        Next: cdcv
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[V][c]"
+        Next: cvd
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[V][c]"
+        Next: vc
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[v][c]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Vv:
+    [
+      {
+        Content: "[V][v]"
+        Next: cvc
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    cdcv:
+    [
+      {
+        Content: "[cd][c][v]"
+        Next: cv
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    vcd:
+    [
+      {
+        Content: "[v][cd]"
+        Next: vc
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[v][cd]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    ca:
+    [
+      {
+        Content: "[c][vd]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    ccvdc:
+    [
+      {
+        Content: "[c][c][vd][c]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    cdvc:
+    [
+      {
+        Content: "[cd][v][c]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    cdvcv:
+    [
+      {
+        Content: "[cd][v][c][v]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    cvcc:
+    [
+      {
+        Content: "[c][v][c][c]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    cvvcd:
+    [
+      {
+        Content: "[c][v][v][cd]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    vd:
+    [
+      {
+        Content: ai
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: au
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: aw
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ay
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ea
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ee
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ei
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: eu
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ew
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ey
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ie
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: oi
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: oo
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ow
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: oy
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ai
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Au
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Aw
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ay
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ea
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ee
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ei
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Eu
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ew
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ey
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ie
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Oi
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Oo
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ow
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Oy
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    cd:
+    [
+      {
+        Content: bl
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: br
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ch
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: cl
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: cr
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: dr
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: fl
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: fr
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: gl
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: gr
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: pl
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: pr
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: sc
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: sh
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: sk
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: sl
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: sm
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: sn
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: sp
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: st
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: sw
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: th
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: tr
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: tw
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: wh
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: wr
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ph
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: gh
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bl
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Br
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ch
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cl
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cr
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dr
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Fl
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Fr
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Gl
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Gr
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pl
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pr
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sc
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sh
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sk
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sl
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sm
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sn
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sp
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: St
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sw
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Th
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tr
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tw
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Wh
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Wr
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ph
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Gh
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    ct:
+    [
+      {
+        Content: sch
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: scr
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: shr
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: sph
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: spl
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: spr
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: squ
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: str
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: thr
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sch
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Scr
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Shr
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sph
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Spl
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Spr
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Squ
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Str
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Thr
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+  }
+  GeneratorType: Assignment
+}

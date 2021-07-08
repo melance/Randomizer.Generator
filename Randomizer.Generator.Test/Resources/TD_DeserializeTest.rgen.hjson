@@ -1,29 +1,114 @@
 {
-      Tables:
-      {
-        LoopTable:
-        {
-          KeyColumn: Key
-          Repeat: "1"
-          SkipTable: null
-          Value:
-            '''
-            Key | Value
-			1   | Test
-            '''
-          RepeatJoin: null
-          TableType: Loop
-        }
-      }
-      Output: null
-      Values: {}
-      Name: Table Test
-      Author: null
-      Description: null
-      Version: null
-      URL: null
-      Tags: null
-      GeneratorType: Table
-      OutputFormat: Text
-      Parameters: {}
+  Name: "BBEG Fantasy (D&D)"
+  Description: "Creates an outline for a fantasy big bad evil guy (BBEG)."
+  Author: Lance Boudreaux
+  Version: "1.0"
+  Tags:
+  [
+	NPC
+	Fantasy
+  ]
+  OutputFormat: Html
+  Output:
+	'''
+	<table>
+		<tr>
+			<td width="100px"><b>Type:</b></td>
+			<td>[Type]</td>
+		</tr>
+		<tr>
+			<td width="100px"><b>Motivation:</b></td>
+			<td>[Motivation]</td>
+		</tr>
+		<tr>
+			<td width="100px"><b>Habitat:</b></td>
+			<td>[Habitat]</td>
+		</tr>
+	</table>
+	'''
+  Tables:
+  {
+	Type:
+	{
+		RollColumn: Roll
+		Table:
+			'''
+			Roll 	| Value
+			1		| ExtraPlanar
+			2		| Monster			
+			3		| Magical
+			4		| Paranormal
+			5		| Group
+			6		| Human
+			7		| Humanoid
+			'''
+		TableType: Random
+	}
+	ExtraPlanar:
+	{
+		RollColumn: Roll
+		SkipTable: "Type <> 'ExtraPlanar'"
+		Table:
+			'''
+			Roll	| Value
+			1		| Aa extra planar invasion force
+			2		| An extra planar forward reconnassance force
+			3		| A group of extra planar refugees
+			4		| An extra planar scout team
+			5		| An extra planar terraforming team
+			6		| An extra planar overlord and their guards
+			7		| A group of extra planar criminals
+			8		| A group of extra planar prison escapees
+			9		| An extra planar military platoon
+			10		| Automated extra planar terraforming technology
+			'''
+		TableType: Random
+	}
+	Monster:
+	{
+		RollColumn: Roll
+		SkipTable: "Type <> 'Monster'"
+		Table:
+			'''
+			Roll	| Value
+			
+			'''
+		TableType: Random
+	}
+	Magical:
+	{
+		RollColumn: Roll
+		SkipTable: "Type <> 'Magical'"
+		Table:
+			'''
+			Roll	| Value
+			
+			'''
+		TableType: Random
+	}
+	Paranormal:
+	{
+		RollColumn: Roll
+		SkipTable: "Type <> 'Paranormal'"
+		Table:
+			'''
+			Roll	| Value
+			
+			'''
+		TableType: Random
+	}
+	Group:
+	{
+		RollColumn: Roll
+		SkipTable: "Type <> 'Group'"
+		Table:
+			'''
+			Roll	| Value
+			
+			'''
+		TableType: Random
+	}
+	
+  }
+  GeneratorType: Table
 }

@@ -1,0 +1,628 @@
+{
+  Name: Technology Jargon
+  Author: Lance Boudreaux
+  Description: Generates sci-fi techno babble names
+  Version: "2.0"
+  Tags:
+  [
+    Name
+    Sci-Fi
+  ]
+  OutputFormat: Html
+  Parameters: {}
+  TextCase: None
+  Imports: []
+  LineItems:
+  {
+    Start:
+    [
+      {
+        Content: "[GeneralPrefix][General][GeneralSuffix]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[GeneralPrefix][General]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[General][GeneralSuffix]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Units][General]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[GeneralPrefix][Units][General]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Units][Particle][General]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Particle][Beams]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Cosmic][General]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Cosmic][Beams]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[GeneralPrefix][Beams]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Beams][GeneralSuffix]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[GeneralPrefix][GeneralSuffix]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: i[General]
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    GeneralPrefix:
+    [
+      {
+        Content: mechano
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: mecha
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: electro
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: morpho
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: dyna
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: gravi
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: robo
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: atomic
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: cyber
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: compu
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: neuro
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: cyclo
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: synchro
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: turbo
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: meta
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: e
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: gyro
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: aether
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: mag
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: magno
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: magneto
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: pneumatic
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    GeneralSuffix:
+    [
+      {
+        Content: tron
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: tor
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ite
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ium
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: oid
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: izer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: inator
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: graph
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    General:
+    [
+      {
+        Content: matrix
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: fusion
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: core
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: reactor
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: machine
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: engine
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: drive
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: thruster
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: gun
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: apparatus
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: rifle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: blaster
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: saber
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: sword
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: planet
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: moon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: asteroid
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: comet
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: console
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: communicator
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: transponder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: cloner
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: computer
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Units:
+    [
+      {
+        Content: macro
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: mega
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: giga
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: tera
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: peta
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: micro
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: nano
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: pico
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: femto
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Particle:
+    [
+      {
+        Content: atomic
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: nuclear
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: nucleo
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: quantum
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: photon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: proton
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: neutron
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: electron
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: molecular
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: positron
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: tachyon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: lambda
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: muon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ion
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: particle
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Beams:
+    [
+      {
+        Content: laser
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: graser
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: maser
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: uvaser
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: xaser
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: taser
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: phaser
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: blazer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: stazer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: gauss
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Cosmic:
+    [
+      {
+        Content: space
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: star
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: galactic
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: intergalactic
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: vortex
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: astro
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: cosmo
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: hyper
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: warp
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: phase
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: orbital
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: planetary
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: interplanetary
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: stellar
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: interstellar
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: flux
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: node
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+  }
+  GeneratorType: Assignment
+}

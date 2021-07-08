@@ -1,0 +1,46 @@
+﻿@model IndexModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h3>Generators</h3>
+
+<div class="row">
+    @if (!String.IsNullOrWhiteSpace(Model.Tag))
+    {
+        <h4 class="col-12">Tag: @Model.Tag</h4>
+    }
+    else
+    {        
+        <h5 class="col-12">Tags</h5>
+        <div class="col-12 mb-2">
+        @foreach (var tag in Model.TagList)
+        {
+            <a asp-action="" asp-route-tag="@tag" class="badge badge-secondary p-1">@tag</a>
+        }
+        </div>
+    }
+</div>
+<div class="list-group-flush">
+    @foreach(var item in Model.Definitions)
+    {
+    <a asp-action="Definition" asp-route-name="@item.Name" class="list-group-item list-group-item-action">
+        <div class="row">
+            <span class="font-weight-bold col-7">@item.Name</span>
+            <span class="col-4">@String.Join(", ", item.Tags)</span>
+            @switch (item.OutputFormat)
+            {
+                case Randomizer.Generator.Core.OutputFormats.Text:
+                    <span class="col-1 bi-file-text"></span>
+                    break;
+                case Randomizer.Generator.Core.OutputFormats.Html:
+                    <span class="col-1 bi-file-code"></span>
+                    break;
+            }
+        </div>
+        <div class="row">
+            <span class="col-12">@item.Description</span>
+        </div>
+    </a>
+    }
+</div>

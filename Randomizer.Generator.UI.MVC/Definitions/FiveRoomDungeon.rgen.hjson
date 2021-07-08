@@ -1,0 +1,1071 @@
+{
+	Name: Five Room Dungeon
+	Author: Lance Boudreaux
+	Description: Generates a five room dungeon based on work by Jay Merrit, Shieldice Studio
+	Version: "1.0"
+	URL: https://www.reddit.com/r/UnearthedArcana/comments/oet7ll/oc_d6_five_room_dungeon_generator_a_tool_for/
+	Tags: 
+	[	
+		Encounter
+		Map
+	]
+	OutputFormat: Html
+	LineItems:
+	{
+		Start: 
+		[
+			{ 
+				Content: 
+					'''
+					<table>
+					[Layout[=Roll(1,36)]]
+					</table>
+					'''
+			}
+		]
+		
+#region Definitions
+		Dice1: [ { Content: "<span style='font-size: 2em;'>&#9856;</span>" } ]
+		Dice2: [ { Content: "<span style='font-size: 2em;'>&#9857;</span>" } ]
+		Dice3: [ { Content: "<span style='font-size: 2em;'>&#9858;</span>" } ]
+		Dice4: [ { Content: "<span style='font-size: 2em;'>&#9859;</span>" } ]
+		Dice5: [ { Content: "<span style='font-size: 2em;'>&#9860;</span>" } ]
+		Dice6: [ { Content: "<span style='font-size: 2em;'>&#9861;</span>" } ]		
+		
+		RoomCell:
+		[
+			{ Content: "<td style='border: 3px solid black; height: [RoomSize]em; width: [RoomSize]em; text-align: center;'>" }
+		]		
+				
+		RoomSize:
+		[
+			{ Content: "14" }
+		]
+#endregion
+		
+#region Layouts
+		##############
+		# [][][][][] #
+		#			 #
+		#			 #
+		#			 #
+		##############
+		Layout1:
+		[
+			{
+				Content:
+					'''					
+					<tr>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+					</tr>
+					'''
+			}
+		]
+		
+		##############
+		# [][][][]	 #
+		#       []	 #
+		#			 #
+		#			 #
+		##############
+		Layout2:
+		[
+			{
+				Content:
+					'''					
+					<tr>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+					</tr>
+					<tr>
+						<td colspan='3'>&nbsp;</td>
+						[RoomCell][Room]</td>
+					</tr>
+					'''
+			}
+		]
+		
+		##############
+		# [][][][]	 #
+		#     []	 #
+		#			 #
+		#			 #
+		##############
+		Layout3:
+		[
+			{
+				Content:
+					'''					
+					<tr>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+					</tr>
+					<tr>
+						<td colspan='2'>&nbsp;</td>
+						[RoomCell][Room]</td>
+					</tr>
+					'''
+			}
+		]
+		
+		##############
+		# [][][][]	 #
+		#   []		 #
+		#			 #
+		#			 #
+		##############
+		Layout4:
+		[
+			{
+				Content:
+					'''					
+					<tr>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						[RoomCell][Room]</td>
+					</tr>
+					'''
+			}
+		]
+		
+		##############
+		# [][][][]	 #
+		# []		 #
+		#			 #
+		#			 #
+		##############
+		Layout5:
+		[
+			{
+				Content:
+					'''					
+					<tr>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+					</tr>
+					<tr>
+						[RoomCell][Room]</td>
+					</tr>
+					'''
+			}
+		]
+		
+		##############
+		# [][][]	 #
+		#     []	 #
+		#     []	 #
+		#			 #
+		##############
+		Layout6:
+		[
+			{
+				Content:
+					'''	
+					<tr>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+					</tr>
+					<tr>
+						<td colspan='2'>&nbsp;</td>
+						[RoomCell][Room]</td>
+					</tr>
+					<tr>
+						<td colspan='2'>&nbsp;</td>					
+						[RoomCell][Room]</td>
+					</tr>
+					'''
+			}
+		]
+		
+		##############
+		# [][][]	 #
+		#   []		 #
+		#	[]		 #
+		#			 #
+		##############
+		Layout7:
+		[
+			{
+				Content:
+					'''	
+					<tr>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						[RoomCell][Room]</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						[RoomCell][Room]</td>
+					</tr>
+					'''
+			}
+		]
+		
+		##############
+		# [][][]	 #
+		# []		 #
+		# []		 #
+		#			 #
+		##############
+		Layout8:
+		[
+			{
+				Content:
+					'''	
+					<tr>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+					</tr>
+					<tr>						
+						[RoomCell][Room]</td>
+					</tr>
+					<tr>						
+						[RoomCell][Room]</td>
+					</tr>
+					'''
+			}
+		]
+		
+		##############
+		# [][][]	 #
+		#     [][]	 #
+		#			 #
+		#			 #
+		##############
+		Layout9:
+		[
+			{
+				Content:
+					'''	
+					<tr>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+					</tr>
+					<tr>
+						<td colspan='2'>&nbsp;</td>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+					</tr>
+					'''
+			}
+		]
+		
+		##############
+		# [][][]	 #
+		#   [][]	 #
+		#			 #
+		#			 #
+		##############
+		Layout10:
+		[
+			{
+				Content:
+					'''	
+					<tr>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+					</tr>
+					'''
+			}
+		]
+		
+		##############
+		# [][][]	 #
+		# [][]		 #
+		#			 #
+		#			 #
+		##############
+		Layout11:
+		[
+			{
+				Content:
+					'''	
+					<tr>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+					</tr>
+					<tr>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+					</tr>
+					'''
+			}
+		]
+		
+		##############
+		#   [][][]	 #
+		# [][]		 #
+		#			 #
+		#			 #
+		##############
+		Layout12:
+		[
+			{
+				Content:
+					'''	
+					<tr>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+					</tr>
+					<tr>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+					</tr>
+					'''
+			}
+		]
+		
+		##############
+		#     []	 #
+		#     []	 #
+		# [][][]	 #
+		#			 #
+		##############
+		Layout13:
+		[
+			{
+				Content:
+					'''	
+					<tr>
+						<td colspan='2'>&nbsp;</td>
+						[RoomCell][Room]</td>
+					</tr>
+					<tr>
+						<td colspan='2'>&nbsp;</td>
+						[RoomCell][Room]</td>
+					</tr>
+					<tr>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+					</tr>
+					'''
+			}
+		]
+		
+		##############
+		#   []		 #
+		#   []		 #
+		# [][][]	 #
+		#			 #
+		##############
+		Layout14:
+		[
+			{
+				Content:
+					'''	
+					<tr>
+						<td>&nbsp;</td>
+						[RoomCell][Room]</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						[RoomCell][Room]</td>
+					</tr>
+					<tr>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+					</tr>
+					'''
+			}
+		]
+		
+		##############
+		# []		 #
+		# []		 #
+		# [][][]	 #
+		#			 #
+		##############
+		Layout15:
+		[
+			{
+				Content:
+					'''	
+					<tr>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+					</tr>
+					<tr>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+					</tr>
+					'''
+			}
+		]
+		
+		##############
+		#     [][]	 #
+		# [][][]	 #
+		#			 #
+		#			 #
+		##############		
+		Layout16:
+		[
+			{
+				Content:
+					'''					
+					<tr>
+						<td colspan='2'>&nbsp;</td>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+					</tr>
+					<tr>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+					</tr>
+					'''
+			}
+		]
+		
+		##############
+		#   [][]	 #
+		# [][][]	 #
+		#			 #
+		#			 #
+		##############
+		Layout17:
+		[
+			{
+				Content:
+					'''	
+					<tr>
+						<td>&nbsp;</td>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+					</tr>
+					<tr>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+					</tr>
+					'''
+			}
+		]
+		
+		##############
+		# [][]		 #
+		# [][][]	 #
+		#			 #
+		#			 #
+		##############
+		Layout18:
+		[
+			{
+				Content:
+					'''	
+					<tr>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+					</tr>
+					<tr>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+					</tr>
+					'''
+			}
+		]
+		
+		##############
+		# [][]		 #
+		#   [][][]	 #
+		#			 #
+		#			 #
+		##############		
+		Layout19:
+		[
+			{
+				Content:
+					'''					
+					<tr>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+					</tr>
+					'''
+			}
+		]
+		
+		##############
+		#     []	 #
+		# [][][]	 #
+		#     []	 #
+		#			 #
+		##############
+		Layout20:
+		[
+			{
+				Content:
+					'''	
+					<tr>
+						<td colspan='2'>&nbsp;</td>
+						[RoomCell][Room]</td>
+					</tr>
+					<tr>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+					</tr>
+					<tr>
+						<td colspan='2'>&nbsp;</td>
+						[RoomCell][Room]</td>
+					</tr>
+					'''
+			}
+		]
+		
+		##############
+		#     []	 #
+		# [][][]	 #
+		#   []		 #
+		##############		
+		Layout21:
+		[
+			{
+				Content:
+					'''					
+					<tr>
+						<td colspan='2'>&nbsp;</td>
+						[RoomCell][Room]</td>
+					</tr>
+					<tr>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						[RoomCell][Room]</td>
+					</tr>
+					'''
+			}
+		]
+		
+		##############
+		#     []	 #
+		# [][][]	 #
+		# []		 #
+		#			 #
+		##############		
+		Layout22:
+		[
+			{
+				Content:
+					'''					
+					<tr>
+						<td colspan='2'>&nbsp;</td>
+						[RoomCell][Room]</td>
+					</tr>
+					<tr>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+					</tr>
+					<tr>
+						[RoomCell][Room]</td>
+					</tr>
+					'''
+			}
+		]
+		
+		##############
+		#   []		 #
+		# [][][]	 #
+		#     []	 #
+		#			 #
+		##############
+		Layout23:
+		[
+			{
+				Content:
+					'''	
+					<tr>
+						<td>&nbsp;</td>
+						[RoomCell][Room]</td>
+					</tr>
+					<tr>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+					</tr>
+					<tr>
+						<td colspan='2'>&nbsp;</td>
+						[RoomCell][Room]</td>
+					</tr>
+					'''
+			}
+		]
+		
+		##############
+		# []		 #
+		# [][][]	 #
+		#     []	 #
+		#			 #
+		##############
+		Layout24:
+		[
+			{
+				Content:
+					'''	
+					<tr>
+						[RoomCell][Room]</td>
+					</tr>
+					<tr>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+					</tr>
+					<tr>
+						<td colspan='2'>&nbsp</td>
+						[RoomCell][Room]</td>
+					</tr>
+					'''
+			}
+		]
+		
+		##############
+		#   []		 #
+		# [][][]	 #
+		#   []		 #
+		#			 #
+		##############
+		Layout25:
+		[
+			{
+				Content:
+					'''					
+					<tr>
+						<td>&nbsp;</td>
+						[RoomCell][Room]</td>
+					</tr>
+					<tr>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						[RoomCell][Room]</td>
+					</tr>
+					'''
+			}
+		]
+		
+		##############
+		#   []		 #
+		# [][][]	 #
+		# []		 #
+		#			 #
+		##############
+		Layout26:
+		[
+			{
+				Content:
+					'''	
+					<tr>
+						<td>&nbsp;</td>
+						[RoomCell][Room]</td>
+					</tr>
+					<tr>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+					</tr>
+					<tr>
+						[RoomCell][Room]</td>
+					</tr>
+					'''
+			}
+		]
+		
+		##############
+		# []		 #
+		# [][][]	 #
+		#   []		 #
+		#			 #
+		##############
+		Layout27:
+		[
+			{
+				Content:
+					'''		
+					<tr>
+						[RoomCell][Room]</td>
+					</tr>
+					<tr>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						[RoomCell][Room]</td>
+					</tr>
+					'''
+			}
+		]
+		
+		##############
+		# []		 #
+		# [][][]     #
+		# []		 #
+		#			 #
+		##############
+		Layout28:
+		[
+			{
+				Content:
+					'''	
+					<tr>
+						[RoomCell][Room]</td>
+					</tr>
+					<tr>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+					</tr>
+					<tr>
+						[RoomCell][Room]</td>
+					</tr>
+					'''
+			}
+		]
+		
+		##############
+		# []		 #
+		# [][]		 #
+		#   []		 #
+		#   []		 #
+		##############
+		Layout29:
+		[
+			{
+				Content:
+					'''	
+					<tr>
+						[RoomCell][Room]</td>
+					</tr>
+					<tr>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						[RoomCell][Room]</td>
+					</tr>					
+					<tr>
+						<td>&nbsp;</td>
+						[RoomCell][Room]</td>
+					</tr>
+					'''
+			}
+		]
+		
+		##############
+		# []		 #
+		# []   	 	 #
+		# [][]		 #
+		#   []		 #
+		##############
+		Layout30:
+		[
+			{
+				Content:
+					'''	
+					<tr>
+						[RoomCell][Room]</td>
+					</tr>
+					<tr>
+						[RoomCell][Room]</td>
+					</tr>
+					<tr>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+					</tr>				
+					<tr>
+						<td>&nbsp;</td>
+						[RoomCell][Room]</td>
+					</tr>
+					'''
+			}
+		]
+		
+		##############
+		#   []		 #
+		#   []		 #
+		# [][]		 #
+		# []		 #
+		##############
+		Layout31:
+		[
+			{
+				Content:
+					'''	
+					<tr>
+						<td>&nbsp;</td>
+						[RoomCell][Room]</td>
+					</tr>					
+					<tr>
+						<td>&nbsp;</td>
+						[RoomCell][Room]</td>
+					</tr>
+					<tr>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+					</tr>
+					<tr>
+						[RoomCell][Room]</td>
+					</tr>
+					'''
+			}
+		]
+		
+		##############
+		#   []		 #
+		# [][]		 #
+		# []		 #
+		# []		 #
+		##############
+		Layout32:
+		[
+			{
+				Content:
+					'''	
+					<tr>
+						<td>&nbsp;</td>
+						[RoomCell][Room]</td>
+					</tr>			
+					<tr>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+					</tr>
+					<tr>
+						[RoomCell][Room]</td>
+					</tr>
+					<tr>
+						[RoomCell][Room]</td>
+					</tr>
+					'''
+			}
+		]
+		
+		##############
+		#   []		 #
+		# [][]		 #
+		# [][]		 #
+		#			 #
+		##############
+		Layout33:
+		[
+			{
+				Content:
+					'''	
+					<tr>
+						<td>&nbsp;</td>
+						[RoomCell][Room]</td>
+					</tr>					
+					<tr>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+					</tr>
+					<tr>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+					</tr>
+					'''
+			}
+		]
+		
+		##############
+		# []		 #
+		# [][]		 #
+		# [][]		 #
+		#			 #
+		##############
+		Layout34:
+		[
+			{
+				Content:
+					'''	
+					<tr>
+						[RoomCell][Room]</td>
+					</tr>					
+					<tr>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+					</tr>
+					<tr>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+					</tr>
+					'''
+			}
+		]
+		
+		##############
+		# [][]		 #
+		# [][]		 #
+		# []		 #		
+		#			 #
+		##############
+		Layout35:
+		[
+			{
+				Content:
+					'''	
+					<tr>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+					</tr>
+					<tr>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+					</tr>
+					<tr>
+						[RoomCell][Room]</td>
+					</tr>					
+					'''
+			}
+		]
+		
+		##############
+		# [][]		 #
+		# [][]		 #
+		#   []		 #		
+		#			 #
+		##############
+		Layout36:
+		[
+			{
+				Content:
+					'''	
+					<tr>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+					</tr>
+					<tr>
+						[RoomCell][Room]</td>
+						[RoomCell][Room]</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						[RoomCell][Room]</td>
+					</tr>					
+					'''
+			}
+		]
+		#endregion
+			
+#region Rooms
+		Room:
+		[
+			{ Content: "[Dice1][Room01]" }
+			{ Content: "[Dice2][Room02]" }
+			{ Content: "[Dice3][Room03]" }
+			{ Content: "[Dice4][Room04]" }
+			{ Content: "[Dice5][Room05]" }
+			{ Content: "[Dice6][Room06]" }
+		]
+		
+		Room01:
+		[
+			{ Content: "[Dice1] NPC" }
+			{ Content: "[Dice2] Sentinel" }
+			{ Content: "[Dice3] Atmosphere" }
+			{ Content: "[Dice4] Explore" }
+			{ Content: "[Dice5] Secret" }
+			{ Content: "[Dice6] Separated" }
+		]
+		
+		Room02:
+		[
+			{ Content: "[Dice1] Puzzle" }
+			{ Content: "[Dice2] Obstacle" }
+			{ Content: "[Dice3] Trick" }
+			{ Content: "[Dice4] Setback" }
+			{ Content: "[Dice5] Device" }
+			{ Content: "[Dice6] Betrayal" }
+		]
+		
+		Room03:
+		[
+			{ Content: "[Dice1] Trap" }
+			{ Content: "[Dice2] Switch" }
+			{ Content: "[Dice3] Environment" }
+			{ Content: "[Dice4] Timer" }
+			{ Content: "[Dice5] Targets" }
+			{ Content: "[Dice6] Gate" }
+		]
+		
+		Room04:
+		[
+			{ Content: "[Dice1] Treasure" }
+			{ Content: "[Dice2] Weapons" }
+			{ Content: "[Dice3] Narrative Beat" }
+			{ Content: "[Dice4] Heal" }
+			{ Content: "[Dice5] Lore" }
+			{ Content: "[Dice6] Spells" }
+		]
+		
+		Room05:
+		[
+			{ Content: "[Dice1] Combat" }
+			{ Content: "[Dice2] Boss" }
+			{ Content: "[Dice3] Stealth" }
+			{ Content: "[Dice4] Spawn" }
+			{ Content: "[Dice5] Outmatched" }
+			{ Content: "[Dice6] Injury" }
+		]
+		
+		Room06:
+		[
+			{ Content: "[Dice1] Roleplay" }
+			{ Content: "[Dice2] Dispute" }
+			{ Content: "[Dice3] Revelation" }
+			{ Content: "[Dice4] Twist" }
+			{ Content: "[Dice5] Escape" }
+			{ Content: "[Dice6] Death" }
+		]		
+#endregion
+
+	}
+	GeneratorType: Assignment
+}

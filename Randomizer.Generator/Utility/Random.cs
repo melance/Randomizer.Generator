@@ -18,7 +18,7 @@ namespace Randomizer.Generator.Utility
 
 		public static Int32 RandomNumber(Int32 maxValue) => Randomizer.Next(maxValue);
 
-        public static Int32 RandomNumber(Int32 minValue, Int32 maxValue) => Randomizer.Next(minValue, maxValue);
+        public static Int32 RandomNumber(Int32 minValue, Int32 maxValue) => Randomizer.Next(minValue, maxValue + 1);
 
         static System.Random Randomizer
         {

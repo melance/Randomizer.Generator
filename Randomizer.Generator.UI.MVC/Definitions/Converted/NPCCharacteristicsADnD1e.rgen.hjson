@@ -1,0 +1,1509 @@
+{
+  Name: AD&D 1e NPC Characteristics
+  Author: Lance Boudreaux
+  Description: A NPC characteristics generator from the AD&D 1e DM's Guide
+  Version: "2.0"
+  Tags:
+  [
+    NPC
+    AD&D 1e
+    Fantasy
+  ]
+  OutputFormat: Html
+  Parameters: {}
+  TextCase: None
+  Imports: []
+  LineItems:
+  {
+    Start:
+    [
+      {
+        Content: <b>Race:</b>&nbsp;
+        Next: Race
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Race:
+    [
+      {
+        Content: Dwarf
+        Next: GenderTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Elf
+        Next: GenderTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Human
+        Next: GenderTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Gnome
+        Next: GenderTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Halfling
+        Next: GenderTitle
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    GenderTitle:
+    [
+      {
+        Content: <br /><b>Gender:</b>&nbsp;
+        Next: Gender
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Gender:
+    [
+      {
+        Content: Male
+        Next: OccupationTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Female
+        Next: OccupationTitle
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    OccupationTitle:
+    [
+      {
+        Content: <br /><b>Class:</b>&nbsp;
+        Next: Class
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <br /><b>Occupation:</b>&nbsp;
+        Next: Occupation
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Class:
+    [
+      {
+        Content: Cleric
+        Next: AlignmentTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Druid
+        Next: AlignmentTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Fighter
+        Next: AlignmentTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ranger
+        Next: AlignmentTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Paladin
+        Next: AlignmentTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Magic-User
+        Next: AlignmentTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Illusionist
+        Next: AlignmentTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Monk
+        Next: AlignmentTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Thief
+        Next: AlignmentTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Assassin
+        Next: AlignmentTitle
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Occupation:
+    [
+      {
+        Content: Laborer
+        Next: AlignmentTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Mercenary (level 0)
+        Next: AlignmentTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Merchant/Trader
+        Next: AlignmentTitle
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    AlignmentTitle:
+    [
+      {
+        Content: <br /><b>Alignment:</b>&nbsp;
+        Next: Alignment
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Alignment:
+    [
+      {
+        Content: Lawful Good
+        Next: PossessionsTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Lawful Neutral
+        Next: PossessionsTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Lawful Evil
+        Next: PossessionsTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Neutral Evil
+        Next: PossessionsTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Chaotic Evil
+        Next: PossessionsTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Chaotic Neutral
+        Next: PossessionsTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Chaotic Good
+        Next: PossessionsTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Neutral Good
+        Next: PossessionsTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Neutral
+        Next: PossessionsTitle
+        Repeat: 1
+        Weight: 2
+      }
+    ]
+    PossessionsTitle:
+    [
+      {
+        Content: <br /><b>Possessions:</b>&nbsp;
+        Next: Possessions
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Possessions:
+    [
+      {
+        Content: None
+        Next: AgeTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Scant
+        Next: AgeTitle
+        Repeat: 1
+        Weight: 2
+      }
+      {
+        Content: Average
+        Next: AgeTitle
+        Repeat: 1
+        Weight: 4
+      }
+      {
+        Content: Above Average
+        Next: AgeTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Exceptional
+        Next: AgeTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Superabundant
+        Next: AgeTitle
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    AgeTitle:
+    [
+      {
+        Content: <br /><b>Age:</b>&nbsp;
+        Next: Age
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Age:
+    [
+      {
+        Content: Young
+        Next: AppearanceTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Youthful
+        Next: AppearanceTitle
+        Repeat: 1
+        Weight: 2
+      }
+      {
+        Content: Mature
+        Next: AppearanceTitle
+        Repeat: 1
+        Weight: 4
+      }
+      {
+        Content: Middle-aged
+        Next: AppearanceTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Old
+        Next: AppearanceTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ancient
+        Next: AppearanceTitle
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    AppearanceTitle:
+    [
+      {
+        Content: <br /><b>Appearance:</b>&nbsp;
+        Next: Appearance
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Appearance:
+    [
+      {
+        Content: Dirty
+        Next: SanityTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Clean
+        Next: SanityTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Unkempt
+        Next: SanityTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Immaculate
+        Next: SanityTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Rough
+        Next: SanityTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ragged
+        Next: SanityTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dandyish
+        Next: SanityTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Foppish
+        Next: SanityTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Non-descript
+        Next: SanityTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Imposing
+        Next: SanityTitle
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    SanityTitle:
+    [
+      {
+        Content: <br /><b>Sanity:</b>&nbsp;
+        Next: Sanity
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Sanity:
+    [
+      {
+        Content: Very stable
+        Next: GeneralTendenciesTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Normal
+        Next: GeneralTendenciesTitle
+        Repeat: 1
+        Weight: 5
+      }
+      {
+        Content: Neurotic
+        Next: GeneralTendenciesTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Unstable
+        Next: GeneralTendenciesTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Insane
+        Next: GeneralTendenciesTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Maniacal
+        Next: GeneralTendenciesTitle
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    GeneralTendenciesTitle:
+    [
+      {
+        Content: <br /><b>General Tendencies:</b>&nbsp;
+        Next: GeneralTendencies
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    GeneralTendencies:
+    [
+      {
+        Content: Optimist
+        Next: PersonalityTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pessimist
+        Next: PersonalityTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hedonist
+        Next: PersonalityTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Altruist
+        Next: PersonalityTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Helpful/Kindly
+        Next: PersonalityTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Careless
+        Next: PersonalityTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Capricious/Mischievous
+        Next: PersonalityTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sober
+        Next: PersonalityTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Curious/Inquisitive
+        Next: PersonalityTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Moody
+        Next: PersonalityTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Trusting
+        Next: PersonalityTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Suspicious/Cautious
+        Next: PersonalityTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Precise/Exacting
+        Next: PersonalityTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Perceptive
+        Next: PersonalityTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Opinionated/Contrary
+        Next: PersonalityTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Violent/Warlike
+        Next: PersonalityTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Studious
+        Next: PersonalityTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Foul/Barbaric
+        Next: PersonalityTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cruel/Callous
+        Next: PersonalityTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Practical Joker/Prankster
+        Next: PersonalityTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Servile/Obsequious
+        Next: PersonalityTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Fanatical/Obsessive
+        Next: PersonalityTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Malevolent
+        Next: PersonalityTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Loquacious
+        Next: PersonalityTitle
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    PersonalityTitle:
+    [
+      {
+        Content: <br /><b>Personality:</b>&nbsp;
+        Next: PersonalityType
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    PersonalityType:
+    [
+      {
+        Content: "[Average]"
+        Next: DispositionTitle
+        Repeat: 1
+        Weight: 5
+      }
+      {
+        Content: "[Extroverted]"
+        Next: DispositionTitle
+        Repeat: 1
+        Weight: 2
+      }
+      {
+        Content: "[Introverted]"
+        Next: DispositionTitle
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Average:
+    [
+      {
+        Content: Modest
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Egoist/Arrogant
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Friendly
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Aloof
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hostile
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Well-spoken
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Diplomatic
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Abrasive
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Extroverted:
+    [
+      {
+        Content: Forceful
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Overbearing
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Friendly
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Blustering
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Antagonistic
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Rude
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Rash
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Diplomatic
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Introverted:
+    [
+      {
+        Content: Retiring
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Taciturn
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Friendly
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Aloof
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hostile
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Rude
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Courteous
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Solitary/Secretive
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    DispositionTitle:
+    [
+      {
+        Content: <br /><b>Disposition:</b>&nbsp;
+        Next: Disposition
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Disposition:
+    [
+      {
+        Content: Cheerful
+        Next: IntellectTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Morose
+        Next: IntellectTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Compassionate/Sensitive
+        Next: IntellectTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Unfeeling/Insensitive
+        Next: IntellectTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Humble
+        Next: IntellectTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Proud/Haughty
+        Next: IntellectTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Even Tempered
+        Next: IntellectTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hot tempered
+        Next: IntellectTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Easy Going
+        Next: IntellectTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Harsh
+        Next: IntellectTitle
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    IntellectTitle:
+    [
+      {
+        Content: <br /><b>Intellect:</b>&nbsp;
+        Next: Intellect
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Intellect:
+    [
+      {
+        Content: Dull
+        Next: NatureTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Average
+        Next: NatureTitle
+        Repeat: 1
+        Weight: 2
+      }
+      {
+        Content: Active
+        Next: NatureTitle
+        Repeat: 1
+        Weight: 2
+      }
+      {
+        Content: Dreaming
+        Next: NatureTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ponderous
+        Next: NatureTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Anti-intellectual
+        Next: NatureTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Scheming
+        Next: NatureTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Brilliant
+        Next: NatureTitle
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    NatureTitle:
+    [
+      {
+        Content: <br /><b>Nature:</b>&nbsp;
+        Next: Nature
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Nature:
+    [
+      {
+        Content: Soft-hearted
+        Next: MaterialismTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Forgiving
+        Next: MaterialismTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hard-hearted
+        Next: MaterialismTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Unforgiving
+        Next: MaterialismTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Jealous
+        Next: MaterialismTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Vengeful
+        Next: MaterialismTitle
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    MaterialismTitle:
+    [
+      {
+        Content: <br /><b>Materialism:</b>&nbsp;
+        Next: Materialism
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Materialism:
+    [
+      {
+        Content: Aesthetic
+        Next: HonestyTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Intellectualist
+        Next: HonestyTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Average
+        Next: HonestyTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Covetous
+        Next: HonestyTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Greedy
+        Next: HonestyTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Avaricious
+        Next: HonestyTitle
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    HonestyTitle:
+    [
+      {
+        Content: <br /><b>Honesty:</b>&nbsp;
+        Next: Honesty
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Honesty:
+    [
+      {
+        Content: Scrupulous
+        Next: BraveryTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Very Honorable
+        Next: BraveryTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Truthful
+        Next: BraveryTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Average
+        Next: BraveryTitle
+        Repeat: 1
+        Weight: 3
+      }
+      {
+        Content: Liar
+        Next: BraveryTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Deceitful
+        Next: BraveryTitle
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    BraveryTitle:
+    [
+      {
+        Content: <br /><b>Bravery:</b>&nbsp;
+        Next: Bravery
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Bravery:
+    [
+      {
+        Content: Normal
+        Next: EnergyTitle
+        Repeat: 1
+        Weight: 3
+      }
+      {
+        Content: Foolhardy
+        Next: EnergyTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Brave
+        Next: EnergyTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Fearless
+        Next: EnergyTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cowardly
+        Next: EnergyTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Craven
+        Next: EnergyTitle
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    EnergyTitle:
+    [
+      {
+        Content: <br /><b>Energy:</b>&nbsp;
+        Next: Energy
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Energy:
+    [
+      {
+        Content: Slothful
+        Next: ThriftTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Lazy
+        Next: ThriftTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Normal
+        Next: ThriftTitle
+        Repeat: 1
+        Weight: 3
+      }
+      {
+        Content: Energetic
+        Next: ThriftTitle
+        Repeat: 1
+        Weight: 2
+      }
+      {
+        Content: Driven
+        Next: ThriftTitle
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    ThriftTitle:
+    [
+      {
+        Content: <br /><b>Thrift:</b>&nbsp;
+        Next: Thrift
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Thrift:
+    [
+      {
+        Content: Miserly
+        Next: MoralsTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Mean
+        Next: MoralsTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Thrifty
+        Next: MoralsTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Average
+        Next: MoralsTitle
+        Repeat: 1
+        Weight: 2
+      }
+      {
+        Content: Spendthrift
+        Next: MoralsTitle
+        Repeat: 1
+        Weight: 2
+      }
+      {
+        Content: Wastrel
+        Next: MoralsTitle
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    MoralsTitle:
+    [
+      {
+        Content: <br /><b>Morals:</b>&nbsp;
+        Next: Morals
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Morals:
+    [
+      {
+        Content: Aesthetic
+        Next: PietyTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Virtuous
+        Next: PietyTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Normal
+        Next: PietyTitle
+        Repeat: 1
+        Weight: 2
+      }
+      {
+        Content: Lusty
+        Next: PietyTitle
+        Repeat: 1
+        Weight: 2
+      }
+      {
+        Content: Lustful
+        Next: PietyTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Immoral
+        Next: PietyTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Amoral
+        Next: PietyTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Perverted
+        Next: PietyTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sadistic
+        Next: PietyTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Depraved
+        Next: PietyTitle
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    PietyTitle:
+    [
+      {
+        Content: <br /><b>Piety:</b>&nbsp;
+        Next: Piety
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Piety:
+    [
+      {
+        Content: Saintly
+        Next: InterestsTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Martyr/Zealot
+        Next: InterestsTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pious
+        Next: InterestsTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Reverent
+        Next: InterestsTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Average
+        Next: InterestsTitle
+        Repeat: 1
+        Weight: 4
+      }
+      {
+        Content: Impious
+        Next: InterestsTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Irreverent
+        Next: InterestsTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Iconoclastic
+        Next: InterestsTitle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Irreligious
+        Next: InterestsTitle
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    InterestsTitle:
+    [
+      {
+        Content: <br /><b>Interests:</b>&nbsp;
+        Next: Interests
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Interests:
+    [
+      {
+        Content: Religion
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Legends
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: History
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Nature
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Horticulture
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Husbandry
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Exotic Animals
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hunting
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Fishing
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Handicrafts
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Athletics
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Politics
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Wine & Spirits
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Foods & Preparation
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Gambling
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Drugs
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Collector of [Collections]
+        Repeat: 1
+        Weight: 4
+      }
+      {
+        Content: Community Service
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Altruism
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: None
+        Repeat: 1
+        Weight: 2
+      }
+    ]
+    Collections:
+    [
+      {
+        Content: Knives & Daggers
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Swords
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Weapons
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Shields & Weapons
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Armor
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Books & Scrolls
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Minerals & Gems
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ornaments & Jewelry
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Coins & Tokens
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Trophies & Skins
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Porcelain, China, & Crystal
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Artwork
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+  }
+  GeneratorType: Assignment
+}

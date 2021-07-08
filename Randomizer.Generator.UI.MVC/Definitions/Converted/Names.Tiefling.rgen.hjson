@@ -1,0 +1,102 @@
+{
+  Name: Tiefling Names
+  Author: Lance Boudreaux
+  Description: Generates random Tiefling names for D&D.
+  Version: "2.0"
+  Tags:
+  [
+    Fantasy
+    Names
+  ]
+  OutputFormat: Html
+  Parameters:
+  {
+    Gender:
+    {
+      Value: Any
+      Display: Gender
+      Aliases: []
+      Type: List
+      Options:
+      [
+        Any:Any
+        Female:Female
+        Male:Male
+      ]
+    }
+  }
+  TextCase: None
+  Imports: []
+  LineItems:
+  {
+    Start:
+    [
+      {
+        Content: "[Gender] [Surname]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Any:
+    [
+      {
+        Content: "[Female]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Male]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Female:
+    [
+      {
+        Content: "[FemalePrefix][FemaleSuffix]"
+        Repeat: 1
+        Weight: 9
+      }
+      {
+        Content: "[FemaleName]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Male:
+    [
+      {
+        Content: "[MalePrefix][MaleSuffix]"
+        Repeat: 1
+        Weight: 9
+      }
+      {
+        Content: "[MaleName]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    FemaleName:
+    [
+      {
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    FemalePrefix:
+    [
+      {
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    FemaleSuffix:
+    [
+      {
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+  }
+  GeneratorType: Assignment
+}

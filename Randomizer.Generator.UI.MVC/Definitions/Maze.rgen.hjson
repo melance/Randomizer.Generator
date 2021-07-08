@@ -1,0 +1,65 @@
+{
+	Name: Maze
+	Author: Lance Boudreaux
+	Description: Generates a random maze using the Aldous-Broder algorithm.
+	Version: "2.0"
+	Tags:
+	[
+		Map
+	]
+	OutputFormat: Html
+	DLLPath: C:\Users\me_la\source\repos\Randomizer.Generator\Randomizer.Generator.UI.MVC\Definitions\Libraries\maze.rgen.dll
+	ClassName: Maze.Rgen.MazeMaker
+	MethodName: RecursiveBacktracking
+	Parameters:
+	{
+		width:
+		{
+			Value: "20"
+			Display: Width
+			Description: Determines the width of the map.  The value must be greater than or equal to 10.
+			Type: Integer
+			Validation:
+			[
+				{ Expression: "Value < 10", Message: "[Name] must be greater than or equal to 10.<br />Value received was [Value]." }
+			]
+		}
+		height:
+		{
+			Value: "20"
+			Display: Height
+			Description: Determines the height of the map.  The value must be greater than or equal to 10.
+			Type: Integer
+			Validation:
+			[
+				{ Expression: "Value < 10", Message: "[Name] must be greater than or equal to 10.<br />Value received was [Value]." }
+			]
+		}
+		format:
+		{
+			Value: "HTML"
+			Display: Format
+			Description: The format to display the resulting maze in.
+			Type: List
+			Visible: false
+			Options:
+			[
+				HTML:Html
+				ASCII:Text
+			]
+		}
+		method:
+		{
+			Value: RecursiveBacktracking
+			Display: Algorithm
+			Description: The algorithm used to generate the maze.
+			Type: List
+			Options:
+			[
+				GrowingTree: Growing Tree
+				RecursiveBacktracking: Recursive Backtracking
+			]
+		}
+	}
+	GeneratorType: DotNet
+}

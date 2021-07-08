@@ -1,0 +1,1199 @@
+{
+  Name: Adventure Hooks (Post Apocalyptic)
+  Author: Lance Boudreaux
+  Description: Generates adventure hooks for post-apocalyptic settings
+  Version: "2.0"
+  URL: null
+  Tags:
+  [
+    Encounters
+    Post Apocalyptic
+  ]
+  OutputFormat: Html
+  Parameters: {}
+  TextCase: None
+  Imports: []
+  LineItems:
+  {
+    Start:
+    [
+      {
+        Content: Your [Settlement] is overrun by [EnemyGroup].
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: You're running low on [Supplies] and must get more soon.
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Supplies are being used to quickly because [SupplySap].
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: The local [Utility] has stopped working.
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: You hear [RadioGroup] over [Radio].
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: You come across a [RaidLocation] and [RaidLocationState].
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: A [ExtortionGroup] is demanding tribute in exchange for protection.
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[Outbreak] has broken out in your group."
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: One of your group went out to [MissingPersonJob] and has not returned.
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: While [SettlementJob] one of your group [WorkerMishap].
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    SettlementJob:
+    [
+      {
+        Content: building a food store
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: reinforcing the doors
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: reinforcing windows
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: standing guard
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: taking a break from working
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: cutting down a tree
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: gathering fire wood
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: setting up camp
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: scouting the area
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: hunting
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    WorkerMishap:
+    [
+      {
+        Content: passed out
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: was attacked by an unknown assailant
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: disappeared
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: broke a bone in their [=Pick('leg','arm','hand','foot')]
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: injured their [=Pick('neck','back','leg','arm','hand','foot')]
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: was attacked by a [=Pick('rabid','wild')] animal
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: broke a rib
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: was approached by a member of a cult
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: killed a [=Pick('person','zombie')]
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: cut themselves with a rusted tool
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: received a large cut
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ran away
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: saw a car drive by
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: saw another group of survivors in the distance
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: saw a pack of wolves staring them down
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: saw a pack of zombies
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: saw some mutated wildlife
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: received radiation poisoning
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: was shot by a stray bullet
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: was shot by someone who ran away
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: saw a plane fly over head
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: saw a helicopter over head
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: thought they heard a train whistle
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    MissingPersonJob:
+    [
+      {
+        Content: scavenge for supplies
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: scavenge for food
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: hunt for food
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: fish for food
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: trade with a nearby [Settlement]
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: scout the area
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: scout ahead
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: spy on a nearby [Settlement]
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: look for other survivors
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: collect fire wood
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    Settlement:
+    [
+      {
+        Content: camp
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: town
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: city
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: stronghold
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: encampment
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: village
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: home
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: house
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    EnemyGroup:
+    [
+      {
+        Content: zombies
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: a band of raiders
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: a group of anarchists
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: a militia
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: an insect swarm
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: an unknown group striking at night
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: rats
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: scorpions
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: snakes
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    ExtortionGroup:
+    [
+      {
+        Content: group of bandits
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: militia
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: band of gypsies
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: band of mutants
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: cult
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    Supplies:
+    [
+      {
+        Content: food
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: medical supplies
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: medication
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: clean water
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ammunition
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: tools
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: morale
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: wood
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: fuel
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    SupplySap:
+    [
+      {
+        Content: there are too many survivors unable to pull their weight
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: someone is stealing them
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: something is stealing them
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: some survivors are being wasteful
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: pets are being provided with them
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    Utility:
+    [
+      {
+        Content: power plant
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: water station
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: sewage station
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    RadioGroup:
+    [
+      {
+        Content: another group of survivors who sound like they can help you
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: another group of survivors and they are in trouble
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: a garbled message
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: someone screaming
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: someone speaking in a language you do not understand
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: wild animal sounds
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: inhuman sounds
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: a voice discernible through the static
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: a voice say, "Help me" through the static
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: music
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: faint music through the static
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: silence
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    Radio:
+    [
+      {
+        Content: an FM radio
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: an AM radio
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: a HAM radio
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: a CB
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: a walkie-talkie
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: a shortwave radio
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: a police scanner
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: a cell phone
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: a telephone
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    RaidLocation:
+    [
+      {
+        Content: gas station
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: grocery store
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: hospital
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: hospice
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: nursing home
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: funeral home
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: farm house
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: suburban neighborhood
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: prison
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: police station
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: hotel
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: motel
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: YMCA
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: gym
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: factory
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: warehouse
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: cabin
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: apartment complex
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: apartment building
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    RaidLocationState:
+    [
+      {
+        Content: it appears completely abandoned
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: it appears to have been recently occupied
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: it is in ruins
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: it appears to be occupied
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: is being overgrown by plants
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: you can hear a low humming noise from within
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: you can hear talking
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: you hear someone inside scream
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: the doors and windows are boarded up
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: a single warning shot lands near you
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: several doors are open
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: you hear an unrecognizable noise from within
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    Outbreak:
+    [
+      {
+        Content: The flu
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: A plague
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Tuberculous
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Mutiny
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Mutation
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: An unknown disease
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Hysteria
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Mass delusion
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Dysentery
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Mad cow disease
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Food poisoning
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Typhoid fever
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Chickenpox
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Shingles
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Panic
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Low morale
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Depression
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: Cheerfulness
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+  }
+  GeneratorType: Assignment
+}

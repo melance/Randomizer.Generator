@@ -1,0 +1,2264 @@
+{
+  Name: Post-Apocalyptic Junk
+  Author: Lance Boudreaux
+  Description: Selects random junk found in a post-apocalyptic settings.  Some of the results are specific to Fallout but most are not.
+  Version: "2.0"
+  URL: https://www.reddit.com/r/RandomTables/comments/2z4u61/450_random_post_apocalypse_junk_items_from_rrpg/
+  Tags:
+  [
+    Post Apocalyptic
+    Item
+    Fallout
+  ]
+  OutputFormat: Html
+  Parameters: {}
+  TextCase: None
+  Imports: []
+  LineItems:
+  {
+    Start:
+    [
+      {
+        Content: 12 Gauge Dragonsbreath Shell
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: 1d20 Christmas Ornaments
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: 3 ft of Rope
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: 3 ft. 2x4
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ABC's Chart
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Abraxo Cleaner
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Accountants Logs
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Action Figure
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Adhesive Bandages [=Roll(1,30)]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Adult Publication Magazine
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Air Compressor Hose
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ant Larva
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Anti Mutant Propaganda
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ashtray
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Astronaut Helmet
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: BBs x[=Roll(10,100)]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bag of Computer Keys [=Roll(2,20)]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bag of Golf Tees [=Roll(10,10)]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bag of Gunpowder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bag of Marbles [=Roll(1,12)]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bag of Used Cement
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bag of Yeast
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ball Gag
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ball of Yarn
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Barbed Wire [=Roll(1,20)] Meters
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Barber's Clips
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Baseball Bat
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Baseball Glove
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Baseball
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Basic Car Repair Book
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Basic Lock
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Basic Sensor Module
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bed Sheeting
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Beetle Carcasses
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bent Tin Can
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bible
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bicycle Basket
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Binoculars
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bioluminous Mold
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Black Box with a Blinking Red Light
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bloatfly Wings
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Blunt Wood Saw
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bobby Pin box ([=Roll(2,2)] pins)
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Body Piercing Jewelry
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bomb Collar (dud)
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bonesaw
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Book Detailing Historical Empires
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Book of Caring for Young Children
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Book of Poetry
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Book of Religions
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Book of Sheet Music
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Book on Dealing with PTSD
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Book on Preserving Fish Meat
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Boots
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bottle of Anti-venom
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bottle of Sun Tan Oil
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bottle of Whiskey
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bottle of Wine
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bowl
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bowling Pin
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Box Cutter
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Box of Detergent
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Box of Fishing Hooks
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Box of Light Bulbs [=Roll(1,30)]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Box of Matches
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Box of Staples ([=Roll(1,5)*1000])
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Boxing Glove
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Brahmin Ear
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Brahmin Skull
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bread Box
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Broken Bed
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Broken Cybernetic Arm
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Broken Garden Gnome
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Broken Gun Barrel
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Broken Holotape
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Broken Jewelry Box
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Broken Nuka Cola Bottle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Broken Psychic Dampener
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Broken Stealth Boy
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Broken Television Set
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Broken Tripod
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Broken Wall Clock
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Broken Weapon Parts
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Broken Wire Rimmed Spectacles
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Brotherhood of Steel Holotag
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Burned Globe
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Butter Knife
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cable Cutters
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Camera (Roll vs Luck for working)
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Camera Lense
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Can Opener
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Can of Decayed Food
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cardiovascular Medication
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Carton of Cigarettes ([=Roll(1,20)] packs)
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cash Register Drawer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cathode Ray Tube
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cave Fungus
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ceramic Jar of Numbing Agent
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Charred Diagram of Water Chip
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Chemical Hot Plate
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cherry Bomb
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Chessboard
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Child's Mobile
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Child's Story Book
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Chisel
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Christmas Lights [=Roll(1,20)*5] ft.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Circular Saw-blade
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Claw Hammer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Clipboard
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Clothes Iron
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Clown Mask
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Clown Nose
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Coffee Mug
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Coffee Pot
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Coffin Infant Sized
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Comic Book
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Compass
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Copper Tubing [=Roll(1,4)] Meters
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Corn Cob Pipe
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Coyote Tobacco
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Crayons
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Crowbar
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Crucifix
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Crushed Can
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cuckoo Bird from a Cuckoo Clock
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Curtain Rod
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cutting Board
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dartboard
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dead Potted Plant
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Deathclaw Claw
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Deck of Playing Cards [=Pick('(Marked)','')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Diary (Something about Talking [=Pick('Plants','Animals','Rocks','Appliances')])
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dinner Plate
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dirtied Wedding Dress
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dirty Water
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Disarmed Land Mine
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dog Collar
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dog Skeleton
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dog Tags of Pre-War Soldier
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Door Knob
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dried Flowers
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dried Noodles
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dried up Marker
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Drinking Glass
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Drum Cymbal
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Drum Stick
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Duct Tape
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dustpan
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Easter Egg
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Egg Timer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Electrical Conductor
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Electrical Fuse
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Electrical Tape
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Empty 10 gallon Gas Can
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Empty Fire Extinguisher
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Empty Grenade
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Empty Jet Canister
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Empty Motor Oil Can
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Empty Nuka Cola Bottle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Empty Pickle Jar
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Empty Pill Bottle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Empty Radaway Bag
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Empty Snowglobe
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Empty Tool Box
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Faded Photograph
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Fan Blade
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Film Canister
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Firehose Nozzle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: First Aid Kit
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Fish Bowl
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Fishing Pole
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Fission Battery
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Flare
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Flashlight
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Flask of Vodka
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Flint
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Flute (Roll vs Luck for intact)
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Flying Disk
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Food (1 Supplies)
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Forceps
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Fork
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Fountain Pen
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Framed Picture of Old World Politician
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Fresh Human Heart
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Frying Pan
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Funnel
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Gambling Dice Set [=Pick('(Weighted)','')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Garden Hoe
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Garden Hose 10 ft.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Gardening Gloves
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Gardening Trowel
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Gas Mask Filter
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Gecko Tooth
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Glass Baby Bottle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Glass Eye
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Golden Locket
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Golf Balls [=Roll(1,8)]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Golf Club
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Guitar
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: HAM Radio Speaker
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hair Curlers
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Half Eaten Mirelurk Leg
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hand Bell
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hand Mirror
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Handful of Rusty Nails
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Harmonica
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hatched Gecko Egg
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Healing Powder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hedge Shears
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hockey Stick
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Holorecord (Roll vs Luck for intact)
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Holotape of Missile Launch Codes
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Human Ear
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Human Remains
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Human Skull
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ink Well
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Intact Book
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Irradiated Water
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Jar Full of Sand
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Jar full of Spider Webs
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Jar of Dried Plaster Paris
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Jar of Dried up Wood Glue
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Jar of Preserved Eyes ([=Roll(1,12)])
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Jimmy Hat
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Journal of Chemistry Notes on Jet
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Jump Starting Cables
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Keyring full of Keys
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Kitchen Pot
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Knife
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Knitting Needle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ladle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Large Inner Tube
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Lawn Mower Blade
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Lawn chair
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Lead Box ([=Roll(1,6)]x[=Roll(1,6)]x[=Roll(1,6)] in.)
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Leaf Blower
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Leather Address Book
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Leather Belt
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Library Book Slip (well overdue)
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Light Switch
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Lipstick Case
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: License Plate
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Lucky 8-Ball
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Lunchbox
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: MRE
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Magic 8-Ball
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Magnet
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Magnifying Glass
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Make Up Case
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Malfunctioning Geiger Counter
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Mannequin Head
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Mannequin Torso
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Manual Water Pump
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Map of Wasteland
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Mattress Filling
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Mattress Spring
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Mechanical Clamp
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Medical Drawing of Ghouls
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Medical File
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Mercury Thermometer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Metal Clothing Hangar
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Metal Cooking Pan
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Metal Cracker Box
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Metal Pole
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Milk Bottle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Mirelurk Claw
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Mold Covered Skeletal Hand
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Monopoly Board
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Motorcycle Handbrake
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Mummified Hand with Six fingers
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Music Box (Roll vs Luck for working)
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Necklace of Bottlecaps
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Notepad
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Nuka Cola
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Old Tractor Tire
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Opthalmoscope
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pack of Cigarettes
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pack of Drill Bits
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pack of Flour
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Paddle and Ball
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Paint Brush
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Paint Gun
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Painting Canvas Covered in Bird Droppings
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Paper Money [Roll(3,100)]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Paper [=Roll(1,12)] sheets unused
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Passport
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pasta Strainer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pencil
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Penknife
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Personal Sewing Kit
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Personal Sized Safe
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Photograph of Pre-War Model
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pickled Fetus
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Picture Frame
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Picture of Children Worn and Tear Damaged
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Picture of a Nuclear Blast
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pigrat Excretions
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pillow
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pilot Light
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pitcher
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Plunger
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pocket Knife
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pocket Watch
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pocketful of Coins
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Poker Chips 2d20
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pool Ball
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pool Cue
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pouch of Gold Teeth [=Pick(1,10)]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Preserved Brain
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Preserved Wolf Paw
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pressure Cooker
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pull-String Talking Doll
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Purified Water
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Rad X
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Radiation Suit (No Helmet)
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Radio Speaker
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Radio
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Radraoch Carapace
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Radscorpion Stinger
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Railroad Charts of Wasteland
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Railroad Lantern (out of oil)
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Railroad Spike
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Rake
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Religious Talisman
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Restaurant Menu
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Robo Brain Head Case
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Robot Motivator
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Rocket Toy
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Rolling Pin
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Rolodex of Business Contacts
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Rosary Beads
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Rubber Ball
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Rubber Duck
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Rubber Mallet
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Rucksack (Contains [Start],[Start], and [Start])
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Rusty Butcher's Cleaver
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sales Catalog
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sandals
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sandpaper
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Santa Nuka Cola Sign
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Scalpel
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Scrap Metal
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sewing Needle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sheriff's Badge
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Shopping Trolley
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Shot Glass
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Shower Head
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sketch Book with Drawings of Mutants
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Slave Collar
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sleeping Bag Cut in Half
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sleeve for Blood Pressure
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Slot Machine Lever
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Small Bell
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Small Energy Cell
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Small Statuette
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Soap
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Spark Plug
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Spatula
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Spoon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Square of Dog Fur
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Square of Linen
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Stapler
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Steam Gauge Assembly
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Steering Wheel
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Stethoscope
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Stick of Chalk
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Stop Sign
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Suitcase
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sunglasses
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Surgical Mask
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Surgical Tubing
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Survey Map
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Swimming Goggles
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: TOW II Targeting Chip
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tackle Box
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tattered Scarf
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Taxidermied Cat
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Taxidermied Feral Ghoul Head
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Taxidermied Fish
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Taxidermied Rabbits Foot
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tea Kettle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tea Towel
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Teddy Bear
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Teeth [=Roll(1,12)]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Telephone Receiver
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tennis Ball
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tennis Racket
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tent Pole
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: The Karma Sutra
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Timebomb Clock
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tin Snuff Box
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Toaster
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tool Belt
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Torn Jacket Sleeve
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Torn Skeleton
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Toupee
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Towel
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Toy Airplane
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Toy Car
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Toy Dinosaur
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Toy Nuka Cola Truck
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Toy Robot
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tragic the Gathering Deck
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Trash Bin
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tree Sap
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Triangle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tribal Fetish
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tricycle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Turpentine
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tweezers
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Umbrella
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Underwater Topography of Closest Lakes
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[=Pick('Female','Male')] Underwear"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Urn of Ashes
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Used Hypodermic Needle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Used Sock
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Used Toothbrush
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Vacuum Nozzle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Very Old Calendar
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Very Old Farmer's Almanac
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Vial of Poison
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Vinyl Record (Roll vs Luck for intact)
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Violin (Roll vs Luck for intact)
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Walkie-Talkie
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Walking Cane (may count as baton)
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Wanted Poster
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Water Damaged Oil Painting
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Weapon Scope
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Wedding Cake Topper
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Wedding Ring
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Welding Mask
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Wheel Chair Arm
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Whetstone
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: White Lace Glove
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Winter Coat
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Woman's Brassier
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Wonderglue
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Wooden Broom Handle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Wooden Chair
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Wooden Crutch
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Wooden Oar
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Wooden Peg Leg
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Wooden Sword
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Wooden Toy Bocks [=Roll(1,10)]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Wrist Watch
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Zippo Lighter
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[=Roll(1,30)] Ornamental Glass Beads"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Paraffin Candle
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+  }
+  GeneratorType: Assignment
+}

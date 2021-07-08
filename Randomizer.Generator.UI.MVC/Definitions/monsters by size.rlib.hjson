@@ -1,0 +1,3955 @@
+{
+  Name: DnD Monsters by Size
+  Author: Lance Boudreaux
+  Description: null
+  Version: "2.0"
+  URL: null
+  Tags: []
+  OutputFormat: Html
+  Parameters: {}
+  Imports: []
+  LineItems:
+  {
+    Monster:
+    [
+      {
+        Content: "[Dimunitive]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[Tiny]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[Small]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[Medium]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[Large]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[Huge]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[Gargantuan]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[Colossal]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    Dimunitive:
+    [
+      {
+        Content: "[DimunitiveAnimal]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    DimunitiveAnimal:
+    [
+      {
+        Content: bat
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: toad
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    Tiny:
+    [
+      {
+        Content: quasit
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: imp
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[TinyDragon]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: homunculus
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: psuedodragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: tiny skeleton
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: grig
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: stirge
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: tiny zombie
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[TinyAnimal]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[TinyVermin]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    TinyAnimal:
+    [
+      {
+        Content: badger
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: cat
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: hawk
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: lizard
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: monkey
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: owl
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: rat
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: raven
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: tiny viper snake
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: weasel
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    TinyDragon:
+    [
+      {
+        Content: wyrmling black dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: wyrmling white dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: wyrmling brass dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: wyrmling copper dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    TinyVermin:
+    [
+      {
+        Content: tiny monstrous centipede
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: tiny monstrous scorpion
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: tiny monstrous spider
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    Small:
+    [
+      {
+        Content: juvenile arrowhawk
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: lantern archon celestial
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: choker
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: cockatrice
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: darkmantle
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: dretch
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: dire rat
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[SmallDragon]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[SmallElemental]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: formian worker
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: gnome
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: goblin
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: halfling
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: kobold
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: magmin
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[SmallMephit]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: flamebrother
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: shocker lizard
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: small skeleton
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: nixie
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: pixie
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: juvenile tojanida
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: vargouille
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: will-o'-wisp
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: minor xorn
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: small zombie
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[SmallAnimal]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[SmallVermin]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    SmallAnimal:
+    [
+      {
+        Content: dog
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: eagle
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: octopus
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: small viper snake
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    SmallDragon:
+    [
+      {
+        Content: very young black dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: wyrmling blue dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: wyrmling green dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: very young white dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: very young brass dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: wyrmling bronze dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: very young copper dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: wyrmling silver dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    SmallElemental:
+    [
+      {
+        Content: small air elemental
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: small earth elemental
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: small fire elemental
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: small water elemental
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    SmallMephit:
+    [
+      {
+        Content: air mephit
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: dust mephit
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: earth mephit
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: fire mephit
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ice mephit
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: magma mephit
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ooze mephit
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: salt mephit
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: steam mephit
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: water mephit
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    SmallVermin:
+    [
+      {
+        Content: giant fire beetle
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: small monstrous centipede
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: small monstrous scorpion
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: small monstrous spider
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    Medium:
+    [
+      {
+        Content: adult arrowhawk
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: azer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: barghest
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: aranea
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: allip
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: bodak
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: blink dog
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: bugbear
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: basilisk
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: hound archon celestial
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: avoral celestial
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ghaele celestial
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: trumper archon celestial
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: astral deva celestial
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: chaos beast
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: succubus
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: lemure
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: kyton
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: barbazu
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: erinyes
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: hamatula
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: digester
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: dire weasel
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: dire badger
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[MediumDragon]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: dryad
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: dwarf
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[MediumElemental]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: elf
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ethereal filcher
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ethereal marauder
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ettercap
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: formian warrior
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: formian taskmaster
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: shrieker
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: violet fungus
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: gargoyle
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: janni
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ghoul
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ghast
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: gibbering mound
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: gnoll
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: grick
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: grimlock
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: green hag
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: harpy
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: hell hound
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: hobgoblin
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: krenshar
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: kuo-toa
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: lamia
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: lizardfolk
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: locathah
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: medusa
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: merfolk
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: mind flayer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: mohrg
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: mummy
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: night hag
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: nymph
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: grey ooze
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: orc
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: phantom fungus
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: phasm
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: aasimar
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: tiefling
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: rahshasa
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: rast
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ravid
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: rust monster
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: sahuagin
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: average salamander
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: satyr
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: shadow
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: shadow mastiff
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: medium skeleton
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: skum
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[MediumSlaad]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: spectre
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: thoqqua
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: adult tojanida
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: triton
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: troglodyte
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: vamire spawn
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: wight
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: worg
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: wraith
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: xill
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: average xorn
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: yeth hound
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: pureblood yuan-ti
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: halfblood yuan-ti
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: medium zombie
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[MediumAnimal]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[MediumVermin]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    MediumAnimal:
+    [
+      {
+        Content: black bear
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: baboon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: boar
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: cheetah
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: crocodile
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: riding dog
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: donkey
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: leopard
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: giant lizard
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: pony
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: war pony
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: porpoise
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: medium shark
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: constrictor snake
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: medium viper snake
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: squid
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: wolf
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: wolverine
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    MediumDragon:
+    [
+      {
+        Content: young black dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: juvenile black dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: very young blue dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: young blue dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: very young green dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: young green dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: wyrmling red dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: young white dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: juvenile white dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: young brass dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: juvenile brass dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: very young bronze dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: young bronze dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: young copper dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: juvenile copper dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: wyrmling gold dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: very young silver dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: young silver dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    MediumElemental:
+    [
+      {
+        Content: medium air elemental
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: medium earth elemental
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: medium fire elemental
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: medium water elemental
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    MediumSlaad:
+    [
+      {
+        Content: gray slaad
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: death slaad
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    MediumVermin:
+    [
+      {
+        Content: giant worker ant
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: giant soldier ant
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: giant bee
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: giant bombadier beetle
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: medium giant centipede
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: medium monstrous scorpion
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: medium monstrous spider
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    Large:
+    [
+      {
+        Content: achaierai
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ankheg
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: beholder
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: belker
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: elder arrowhawk
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: greater barghest
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: assassin vine
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: carrion crawler
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: planetar celestial
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: solar celestial
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: centaur
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: chimera
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: chuul
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: cloaker
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: couatl
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: vrock
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: hezrou
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: marilith
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: balor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: destrachan
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: osyluth
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: hellcat
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: cornugon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: gelugon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: pit fiend
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: devourer
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: deinonychus
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: dire bat
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: dire ape
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: dire wolvering
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: dire wolf
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: dire boar
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: dire lion
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: dire bear
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: displacer beast
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[LargeDragon]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: dragonne
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: drider
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[LargeElemental]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ettin
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: formian myrmarch
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: formian queen
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: djinni
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: efreeti
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[LargeGiant]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: giant eagle
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: giant owl
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: girallon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[LargeGolem]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: gorgon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: gray render
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: griffon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: sea hag
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: annis hag
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: hippogriff
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: howler
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: invisible stalker
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: lammasu
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: lillend
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: mimic
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: minotaur
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[LargeNaga]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: nightmare
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ogre
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ogre mage
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ochre jelly
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: otyugh
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: owlbear
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: pegasus
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: phase spider
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: roper
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: noble salamander
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: sea lion
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: shambling mound
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: shield guardian
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: large skeleton
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[LargeSlaad]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[LargeSphinx]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: elder tojanida
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: troll
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: umberhulk
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: unicorn
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: winter wolf
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: elder xorn
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: abomination yuan-ti
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: large zombie
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[LargeAnimal]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[LargeVermin]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    LargeAnimal:
+    [
+      {
+        Content: ape
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: brown bear
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: polar bear
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: bison
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: camel
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: heavy horse
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: heavy war horse
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: light horse
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: light war horse
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: lion
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: mule
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: giant octopus
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: rhinoceros
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: large shark
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: large viper snake
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: tiger
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    LargeDragon:
+    [
+      {
+        Content: adult black dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: mature adult black dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: juvenile blue dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: young adult blue dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: juvenile green dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: young adult green dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: young adult white dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: adult white dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: young adult brass dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: adult brass dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: juvenile bronze dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: young adult bronze dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: young adult copper dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: adult copper dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: very young gold dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: young gold dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: juvenile gold dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: juvenile silver dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: young adult dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    LargeElemental:
+    [
+      {
+        Content: large air elemental
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: large earth elemental
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: large fire elemental
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: large water elemental
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    LargeGiant:
+    [
+      {
+        Content: hill giant
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: stone giant
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: frost giant
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: fire giant
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    LargeGolem:
+    [
+      {
+        Content: flesh golem
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: clay golem
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: stone golem
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: iron golem
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    LargeNaga:
+    [
+      {
+        Content: water naga
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: spirit naga
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: dark naga
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    LargeSlaad:
+    [
+      {
+        Content: red slaad
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: blue slaad
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: green slaad
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    LargeSphinx:
+    [
+      {
+        Content: androsphinx
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: criosphinx
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: gynosphinx
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: hieracosphinx
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    LargeVermin:
+    [
+      {
+        Content: giant queen ant
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: giant stag beelte
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: giant praying mantis
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: giant wasp
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: large monstrous centipede
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: large monstrous scoprion
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: large monstrous spider
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    Huge:
+    [
+      {
+        Content: aboleth
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: athach
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: behir
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: bulette
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: delver
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: bebilith
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: retriever demon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: glabrezue
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: nalfeshnee
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: elasmosaurus
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: megaraptor
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: triceratops
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: tyrannosaurus
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: dire tiger
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: dire shark
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[HugeDragon]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: dragon turtle
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[HugeElemental]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: frost worm
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[HugeGiant]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[HugeHydra]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: manticore
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[HugeNightshade]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: gelatinous cube
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: black pudding
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: remorhaz
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: huge skeleton
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: spider eater
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: tendriculos
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: titan
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: treant
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: wyvern
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: yrthak
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: huge zombie
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[HugeAnimal]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[HugeVermin]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    HugeAnimal:
+    [
+      {
+        Content: giant crocodile
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: elephant
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: huge shark
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: huge viper snake
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: giant squid
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: giant constrictor snake
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: orca
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    HugeDragon:
+    [
+      {
+        Content: old black dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: very old black dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ancient black dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: adult blue dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: mature adult blue dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: old blue dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: very old blue dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: adult green dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: mature adult green dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: old green dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: very old green dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: mature adult white dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: old white dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: very old white dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ancient white dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: mature adult brass dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: old brass dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: very old brass dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ancient brass dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: adult bronze dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: mature adult bronze dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: old bronze dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: very old bronze dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: mature adult copper dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: old copper dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: very old copper dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ancient copper dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: young adult gold dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: adult gold dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: mature adult gold dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: adult silver dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: mature adult silver dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: old silver dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: very old silver dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    HugeElemental:
+    [
+      {
+        Content: huge air elemental
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: greater air elemental
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: elder air elemental
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: huge earth elemental
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: greater earth elemental
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: elder earth elemental
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: huge fire elemental
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: greater fire elemental
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: elder fire elemental
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: huge water elemental
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: greater water elemental
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: elder water elemental
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    HugeGiant:
+    [
+      {
+        Content: cloud giant
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: storm giant
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    HugeHydra:
+    [
+      {
+        Content: five-headed hydra
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: six-headed hydra
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: seven-headed hydra
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: eight-headed hydra
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: nine-headed hydra
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ten-headed hydra
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: eleven-headed hydra
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: twelve-headed hydra
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    HugeVermin:
+    [
+      {
+        Content: huge monstrous centipede
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: huge monstrous scorpion
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: huge monstrous spider
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    NightShade:
+    [
+      {
+        Content: nightwing
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: nightwalker
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: nightcrawler
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    Gargantuan:
+    [
+      {
+        Content: "[GargantuanDragon]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: kraken
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: purple worm
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: roc
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: gargantuan skeleton
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: gargantuan zombie
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[GargantuanAnimal]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[GargantuanVermin]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    GargantuanAnimal:
+    [
+      {
+        Content: baleen whale
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: cachalot whale
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    GargantuanDragon:
+    [
+      {
+        Content: wyrm black dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: great wyrm black dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ancient blue dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: wyrm blue dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: great wyrm blue dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ancient green dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: wyrm green dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: great wyrm green dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: wyrm white dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: great wyrm white dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: wyrm brass dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: great wyrm brass dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ancient bronze dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: wyrm bronze dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: great wyrm bronze dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: wyrm copper dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: great wyrm copper dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: old gold dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: very old gold dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ancient gold dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: ancient silver dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: wyrm silver dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    GargantuanVermin:
+    [
+      {
+        Content: gargantuan monstrous centipede
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: gargantuan monstrous scorpion
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: gargantuan monstrous spider
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    Colossal:
+    [
+      {
+        Content: "[ColossalDragon]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: colossal skeleton
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: tarrasque
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: colossal zombie
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: "[ColossalVermin]"
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    ColossalDragon:
+    [
+      {
+        Content: wyrm gold dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: great wyrm gold dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: great wyrm silver dragon
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+    ColossalVermin:
+    [
+      {
+        Content: colossal monstrous centipede
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: colossal monstrous scorpion
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+      {
+        Content: colossal monstrous spider
+        Next: null
+        Repeat: 1
+        Variable: null
+        Weight: 1
+      }
+    ]
+  }
+  GeneratorType: Assignment
+}

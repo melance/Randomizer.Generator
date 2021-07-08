@@ -1,0 +1,989 @@
+{
+  Name: Settlement Names
+  Author: Lance Boudreaux
+  Description: Generates names for settlements such as cities, kingdoms, countries, etc.
+  Version: "2.0"
+  Tags:
+  [
+    Name
+  ]
+  OutputFormat: Html
+  Parameters: {}
+  TextCase: None
+  Imports:
+  [
+    USNames
+  ]
+  LineItems:
+  {
+    Start:
+    [
+      {
+        Content: "[prefix+prefixsep][inner][suffix]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[prefix][inner][suffix]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[prefix][suffix|suffixsep]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[prefixsep][prefix][suffix][suffixsep|End]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[prefixsep][USMaleName+USFemaleName][suffixsep|End]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[prefixsep][USLastName][suffixsep|End]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[USMaleName+USFemaleName][suffix][suffixsep|End]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    prefix:
+    [
+      {
+        Content: Aber
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ast
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Auch
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Auchter
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bal
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ball
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Balla
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bally
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bre
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Caer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Car
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cedar
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Center
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cul
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cum
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dal
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Din
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dinas
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Don
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dom
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Doune
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Drum
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dun
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dum
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Fin
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Inner
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: inver
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Kil
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Kin
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Lang
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Nan
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Nor
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pen
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pit
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pol
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pont
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Shep
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ship
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Strath
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sud
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sut
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tre
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tilly
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Win
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    prefixsep:
+    [
+      {
+        Content: "Bay "
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "Bayou "
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "Big "
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "Castle "
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "De "
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "Des "
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "East "
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "El "
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "Fort "
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "Grand "
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "Grosse "
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "La "
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "Lake "
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "Le "
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "Los "
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "Mount "
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "Neo "
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "New "
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "North "
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "Old "
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "Ol' "
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "Point "
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "San "
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "Saint "
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "South "
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "St. "
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "The Kingdom of "
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "The Land of "
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "West "
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    suffix:
+    [
+      {
+        Content: beck
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: berg
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: berry
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: borough
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: bridge
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: brough
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: burgh
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: bury
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: by
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: caster
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: cester
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: chester
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: dale
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ette
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: field
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ford
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: forth
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: furt
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: gate
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: grad
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ham
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: house
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ia
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: iana
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: land
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: lea
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ley
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: leigh
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: market
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: mont
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: mouth
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: polis
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: pool
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: port
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: saw
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: shire
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: side
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: son
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: stadt
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: stan
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: thorpe
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ton
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: town
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ville
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: wall
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: wich
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: wick
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: wood
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: yard
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    suffixsep:
+    [
+      {
+        Content: " Beach"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: " Bend"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: " Bluff"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: " Bridge"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: " City"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: " Coast"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: " Creek"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: " Crossing"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: " Falls"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: " Field"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: " Gap"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: " Grove"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: " Groves"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: " Hill"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: " Hot Springs"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: " Island"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: " Isle"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: " Lake"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: " Landing"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: " Meadow"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: " Park"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: " Pass"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: " Point"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: " Ridge"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: " River"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: " Road"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: " Roads"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: " Springs"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: " Summit"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: " Valley"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: " Vista"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    inner:
+    [
+      {
+        Content: ac
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: acc
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: afon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ar
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ard
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ash
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: avon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: axe
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: beck
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ben
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: beinn
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: beann
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: berg
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: berry
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: bex
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: blen
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: blaen
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: bourne
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: burn
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: cheap
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: chipping
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: combe
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: coombe
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: coed
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: eglos
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: eilean
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: exe
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: usk
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: esk
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ock
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+  }
+  GeneratorType: Assignment
+}

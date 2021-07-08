@@ -1,0 +1,280 @@
+{
+  Version: "2.0"
+  Tags: []
+  OutputFormat: Html
+  Parameters: {}
+  TextCase: None
+  Imports: []
+  LineItems:
+  {
+    koreanpheonome:
+    [
+      {
+        Content: a
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ya
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: eo
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: yeo
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ae
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: e
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: yae
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ye
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: o
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: wa
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: yo
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: u
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: weo
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: wae
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: we
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: oe
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: wi
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: eu
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: eui
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: I
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: g
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: gg
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: n
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: d
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: dd
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: r
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: l
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: m
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: b
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: bb
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: s
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: sh
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ss
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: -
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: j
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: jj
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ch
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: k
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: t
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: p
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: h
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: er
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "C "
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Z
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: F
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: V
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: gp
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: np
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: dp
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: rp
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: mp
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: bp
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Np
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+  }
+  GeneratorType: Assignment
+}

@@ -1,0 +1,44 @@
+{
+  Name: Five Room "Dungeon"
+  Author: Lance Boudreaux
+  Description: Generates an outline for a five room dungeon.
+  Version: "2.0"
+  URL: http://www.reddit.com/r/therandomizer
+  Tags:
+  [
+    Encounter
+  ]
+  OutputFormat: Html
+  Parameters: {}
+  TextCase: None
+  Imports: []
+  LineItems:
+  {
+    Start:
+    [
+      {
+        Content: "[themes]"
+        Next: content
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    themes:
+    [
+      {
+        Content: Kobolds
+        Repeat: 1
+        Variable: theme
+        Weight: 1
+      }
+    ]
+    content:
+    [
+      {
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+  }
+  GeneratorType: Assignment
+}

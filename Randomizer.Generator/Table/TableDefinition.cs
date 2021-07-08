@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.ExceptionServices;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using NCalc;
+using Newtonsoft.Json;
 using Randomizer.Generator.Core;
 using Randomizer.Generator.Utility;
 
@@ -11,31 +14,54 @@ namespace Randomizer.Generator.Table
 {
 	public class TableDefinition : BaseDefinition
 	{
+		#region Properties
+		[JsonProperty(Order = 102)]
 		public InsensitiveDictionary<BaseTable> Tables { get; set; } = new();
+		[JsonProperty(Order = 101)]
 		public String Output { get; set; }
-		public InsensitiveDictionary<Object> Values { get; } = new();
+		private InsensitiveDictionary<Object> Values { get; } = new();
+		#endregion
 
+		#region Public Methods
 		public override String Generate()
 		{
 			Values.Clear();
 			foreach (var table in Tables)
 			{
-				table.Value.Evaluate += Calculate;
-				var results = table.Value.ProcessTable();
-				foreach (var result in results)
-				{
-					Values.Add($"{table.Key}.{result.Key}", result.Value);
-				}
-				table.Value.Evaluate -= Calculate;
+				EvaluateTable(table.Key, table.Value);
 			}
 			return PopulateOutput();
+		}
+		#endregion
+
+		#region Private Methods
+		private void EvaluateTable(String key, BaseTable table, Boolean dontCheckSkip = false)
+		{
+			table.Evaluate += Calculate;
+			var results = dontCheckSkip ? table.ProcessTableNoCheck() : table.ProcessTable();
+			foreach (var result in results)
+			{
+				Values.Add($"{key}.{result.Key}", result.Value);
+			}
+			table.Evaluate -= Calculate;
 		}
 
 		private String PopulateOutput()
 		{
-			if (String.IsNullOrEmpty(Output))
-				return "Output is empty";
-			return Evaluate(Output);
+			ExceptionDispatchInfo exi;
+			try
+			{
+				if (String.IsNullOrEmpty(Output))
+					return "Output is empty";
+				return Evaluate(Output);
+			}
+			catch (Exception ex)
+			{
+				exi = ExceptionDispatchInfo.Capture(ex);
+				exi.SourceException.AddData("Location: ", "Output");
+			}
+			exi.Throw();
+			return String.Empty;
 		}
 
 		private String Evaluate(string expression)
@@ -65,10 +91,50 @@ namespace Randomizer.Generator.Table
 			return result.ToString();
 		}
 
+		private void TableFunction(String name, String repeat = "1")
+		{
+			var table = Tables[name];
+			table.Repeat = repeat;
+			EvaluateTable(name, table, true);
+		}
+		#endregion
+
+		#region Protected Methods
 		protected override void EvaluateParameter(String name, ParameterArgs e)
 		{
-			if (Values.ContainsKey(name))
-				e.Result = Values[name];
+			var isNullable = name.EndsWith("?");
+			var cleanName = isNullable ? name[..^1] : name;
+			if (Values.ContainsKey(cleanName))
+				e.Result = Values[cleanName];
+			else
+			{
+				// Convert to regex	
+				var regex = cleanName.Replace(".", @"\.").Replace("*", ".");
+				var result = Values.Where(v => Regex.IsMatch(v.Key, regex));
+
+				if (result.Any())
+				{
+					e.Result = result.First().Value;
+				}
+				else if (isNullable)
+				{
+					e.Result = String.Empty;
+				}
+			}
 		}
+
+		protected override void EvaluateFunction(String name, FunctionArgs e)
+		{
+			switch (name.ToLower())
+			{
+				case "table":
+					var tableName = e.Parameters[0].Evaluate().ToString();
+					var repeat = e.Parameters.Length == 2 ? e.Parameters[1].Evaluate().ToString() : "1";
+					TableFunction(tableName, repeat);
+					e.Result = true;
+					break;
+			}
+		} 
+		#endregion
 	}
 }

@@ -1,0 +1,654 @@
+{
+  Name: Adventure Hooks (Space Opera)
+  Description: An adventure hook generator based on the this post on reddit:
+  Version: "2.0"
+  URL: https://www.reddit.com/r/rpg/comments/19bd3b/d20_space_opera_plot_hook_generator_by_yours_truly/
+  Tags:
+  [
+    Encounter
+    Sci-Fi
+  ]
+  OutputFormat: Html
+  Parameters: {}
+  TextCase: None
+  Imports: []
+  LineItems:
+  {
+    Start:
+    [
+      {
+        Content:
+          '''
+          <b>What do you have?</b><br />
+          		[WDYH+WDYHRR]<br />
+          		<b>Where does it need to go?</b><br />
+          		[WDINTG]<br />
+          		<b>Who else wants it?</b><br />
+          		[WEWI+WEWIRR]<br />
+          		<b>What do you need?</b><br />
+          		[WDYN]<br />
+          		<b>Who can help you?</b><br />
+          		[WCHY]<br />
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    WDYH:
+    [
+      {
+        Content: A little girl with a dark secret
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A planet-destroying bomb
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: The sacred royal treasure of a prominent alien race
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: The cryogenically frozen body of someone important
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: The only signed copy of the peace treaty
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A powerful new energy supply
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A critical resupply
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: An artifact of a legendary ancient alien race
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A religious relic of crucial importance
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: An illegal weapon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: An experimental starfighter
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: The only working FTL drive
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: The survivors of a genocide
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A genetically engineered clone
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A virulent disease
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: The last specimens of an endangered organism
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: One metric tonne of a powerful narcotic
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: The blood soaked body of the universe's most powerful diplomat
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A hibernating serial killer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A rare and expensive spice
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    WDYHRR:
+    [
+      {
+        Content: Nothing of value but you're supposed to be carrying [WDYH]
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    WDINTG:
+    [
+      {
+        Content: The edge of known space as coordinates x,y,z.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: The heart of the galaxy
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: The chief historian of the imperial archives
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A secret temple on a remote planet
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: One of the last known pockets of the resistance
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: To someone that can keep it safe for us
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Home
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A maximum-security prison on an uninhabited planet
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: An uninhabited world you had to hole up in one time
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Your old boss
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: The alien's despot king
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Agents of the imperial army
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Earth
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A neglected mining colony way out on the frontier
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Your father
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A top secret deep space research lab
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: The ship doctor's [Compatriots|Lab]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: An underworld contact who you think will give you a good price for it
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Your hideout
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A badly outmatched fleet about to engage the enemy in a last ditch battle
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A strategic target behind enemy lines
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A priest of an ancient, nearly extinct religion
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: The republican senate
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: The president of the universe
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    WEWI:
+    [
+      {
+        Content: A team of expert bounty hunters
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A large crime syndicate
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: The emperor of the galaxy
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A powerful corporation or one of it's subsidiaries
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: The person/faction that hired you
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A rogue government [Official|Office]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A pirate captain
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A new alien race recently risen to space-faring
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A militaristic faction with dreams of galactic domination
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Its rightful owner
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Your rivals
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A remorseless general
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Whoever you stole it from
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: An important cleric of the imperial diocese
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A former lover
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Nightmarish creatures from outside the galaxy
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Someone you left for dead back in the war
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Your old boss
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A fanatic cult
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: No one
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    WEWIRR:
+    [
+      {
+        Content: You don't know [WEWI]
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    WDYN:
+    [
+      {
+        Content: Guarantees of safety for someone's dependents
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Better weapons and shields
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A new, more powerful reactor core
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A new [Mechanic|Technician] with flexible morals
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Supplies
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Permission from a governing body
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A new engine
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Something to distract your opposition
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Something to safely contain what you are carrying
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: More fuel
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Advice from a sage
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: An extension on your contract
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: The blueprints for your ship
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Back pay for the last job you did for this employer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: An advance payment
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Something to fix the [Radiation|Fluid] leak
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: The planet you are on is quarantined
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A new AI, this time a little less sarcastic (Don't hold our breath)
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Your ship has been taken
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A new navigator (Probably best to not tell him what happened to the last one)
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    WCHY:
+    [
+      {
+        Content: A legendary ghost ship populated with androids
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Your real boss
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A team of adrenaline-seeking smugglers
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A tenacious street kid you met when you got here
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: The planetary governor's younger brother
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: An untrustworthy acquaintance of yours
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: An old sage
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A mysterious stranger who contacts you out of the blue
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Someone you saved back in the war
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: An eccentric reclusive scientist
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A crew-member's ex-wife
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: The captain's mentor
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: The bishop
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A disgraced politician infamous for scandalous habits
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: No one but yourselves
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A grizzled war vet with nothing left to lose
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: The leader of the local insurgency
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[=ToText(Roll(1,6))] of the emperor's advisors"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A friend with a pirate crew
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A family member with a commission in the imperial Navy
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Compatriots:
+    [
+      {
+        Content: compatriots
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Lab:
+    [
+      {
+        Content: lab
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Official:
+    [
+      {
+        Content: official
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Office:
+    [
+      {
+        Content: office
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Mechanic:
+    [
+      {
+        Content: mechanic
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Technician:
+    [
+      {
+        Content: technician
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Radiation:
+    [
+      {
+        Content: radiation
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Fluid:
+    [
+      {
+        Content: fluid
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+  }
+  GeneratorType: Assignment
+}

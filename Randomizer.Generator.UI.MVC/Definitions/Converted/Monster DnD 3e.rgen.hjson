@@ -1,0 +1,70 @@
+{
+  Name: Monster Encounter D&D 3e
+  Author: Lance Boudreaux
+  Description: A random monster encounter selector using D&D 3e.
+  Version: "2.0"
+  Tags:
+  [
+    Encounter
+    D&D 3e
+    Fantasy
+  ]
+  OutputFormat: Html
+  Parameters:
+  {
+    Type:
+    {
+      Value: Any
+      Display: Type
+      Aliases: []
+      Type: List
+      Options:
+      [
+        Any:Any
+        Aberration:Aberration
+        Animal:Animal
+        Beast:Beast
+        Construct:Construct
+        Dragon:Dragon
+        Elemental:Elemental
+        Fey:Fey
+        Fiend:Fiend
+        Giant:Giant
+        Humanoid:Humanoid
+        Ooze:Ooze
+        Outsider:Outsider
+        MagicalBeast:MagicalBeast
+        Monstrosity:Monstrosity
+        Plant:Plant
+        ShapeChanger:ShapeChanger
+        Undead:Undead
+        Vermin:Vermin
+      ]
+    }
+  }
+  TextCase: None
+  Imports:
+  [
+    monsters by type
+  ]
+  LineItems:
+  {
+    Start:
+    [
+      {
+        Content: "[Type]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Any:
+    [
+      {
+        Content: "[Monster]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+  }
+  GeneratorType: Assignment
+}

@@ -42,7 +42,7 @@ namespace Randomizer.Generator.Test
 			var lTable = new LoopTable()
 			{
 				KeyColumn = "Key",
-				Value = @"Key | Value
+				Table = @"Key | Value
 						  1   | Test"
 			};
 			generator.Tables.Add("LoopTable", lTable);

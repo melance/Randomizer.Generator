@@ -1,0 +1,448 @@
+{
+  Name: Monster Maker
+  Author: Lance Boudreaux
+  Description: Creates a random monster
+  Version: "2.0"
+  Tags:
+  [
+    Monster
+  ]
+  OutputFormat: Html
+  Parameters: {}
+  TextCase: None
+  Imports: []
+  LineItems:
+  {
+    Start:
+    [
+      {
+        Content:
+          '''
+          Type: [Type]<br />
+          		Environment: [Environment]<br />
+          		Size: [Size]<br />
+          		Movment: [Locomotion]<br />
+          		Feature: [Feature]<br />
+          		
+          '''
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Reproduction:
+    [
+      {
+        Content: <a href="http://en.wikipedia.org/wiki/Reproduction#Allogamy">allogamy</a>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <a href="http://en.wikipedia.org/wiki/Reproduction#Autogamy">autogamy</a>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <a href="http://en.wikipedia.org/wiki/Reproduction#Mitosis">mitosis</a>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <a href="http://en.wikipedia.org/wiki/Reproduction#Meiosis">meiosis</a>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <a href="http://en.wikipedia.org/wiki/Reproduction#Asexual">asexual</a>
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Type:
+    [
+      {
+        Content: humanoid
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: mammal
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: bird
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: reptile
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: amphibian
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: celestial
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: demon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: elemental
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: plant
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: insect
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: crustacean
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Environment:
+    [
+      {
+        Content: forest
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: desert
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: plains
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: steppe
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: city
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: rain forest
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: tundra
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: salt water
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: fresh water
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Size:
+    [
+      {
+        Content: tiny [=Round(Rnd(0.1,1.0),2)] ft.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: small [=Round(Rnd(1.1, 3.0),2)] ft.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: medium [=Round(Rnd(3.1, 8.0),2)] ft.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: large [=Round(Rnd(8.1, 15.0),2)] ft.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: giant [=Round(Rnd(15.1, 30),2)] ft.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: enormous [=Round(Rnd(30.1, 75),2)] ft.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: gargantuan [=Round(Rnd(75.1, 150),2)] ft.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: colossal [=Round(Rnd(150.1, 250),2)] ft.
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Locomotion:
+    [
+      {
+        Content: "[LocomotionTerrestrial]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[LocomotionAquatic]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[LocomotionAerial]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    LocomotionTerrestrial:
+    [
+      {
+        Content: bipedal
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: crawl
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: slither
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: hopping
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: stationary
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    LocomotionAquatic:
+    [
+      {
+        Content: <a href="http://en.wikipedia.org/wiki/Animal_locomotion#Swimming">swimming</a>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <a href="http://en.wikipedia.org/wiki/Animal_locomotion#Benthic">benthic</a>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <a href="http://en.wikipedia.org/wiki/Animal_locomotion#Aquatic_surface">aquatic surface</a>
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    LocomotionAerial:
+    [
+      {
+        Content: <a href="http://en.wikipedia.org/wiki/Animal_locomotion#Gliding">gliding</a>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <a href="http://en.wikipedia.org/wiki/Animal_locomotion#Soaring">soaring</a>
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: <a href="http://en.wikipedia.org/wiki/Animal_locomotion#Ballooning">ballooning</a>
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Feature:
+    [
+      {
+        Content: "[HeadFeature]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[LimbFeature]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[BodyFeature]"
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[FullFeature]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    HeadFeature:
+    [
+      {
+        Content: horns
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: eye stalks
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: no eyes
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: single eye
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: glowing eyes
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: many eyes
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: empty eye sockets
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: large nose
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: multiple noses
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: multiple nostrils
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: no nose
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: large ears
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: no ears
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: long hair
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: fangs
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: gills
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    LimbFeature:
+    [
+      {
+        Content: wings
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: withered limbs
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: long limbs
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    BodyFeature:
+    [
+      {
+        Content: incorporeal
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: fur
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: scales
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    FullFeature:
+    [
+      {
+        Content: undead
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: constructed
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+  }
+  GeneratorType: Assignment
+}

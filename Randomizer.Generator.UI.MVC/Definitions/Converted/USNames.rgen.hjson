@@ -1,0 +1,69 @@
+{
+  Name: US Names
+  Author: Lance Boudreaux
+  Description: A full name generator that presents names based on the top 300 male first, female first, and surnames.
+  Version: "2.0"
+  Tags:
+  [
+    Name
+    Modern
+  ]
+  OutputFormat: Html
+  Parameters:
+  {
+    Gender:
+    {
+      Value: Any
+      Display: Gender
+      Aliases: []
+      Type: List
+      Options:
+      [
+        Any:Any
+        Male:Male
+        Female:Female
+      ]
+    }
+  }
+  TextCase: None
+  Imports:
+  [
+    USNamesLibrary
+  ]
+  LineItems:
+  {
+    Start:
+    [
+      {
+        Content: "[Gender]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Any:
+    [
+      {
+        Content: "[USFullName]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Male:
+    [
+      {
+        Content: "[USMaleFullName]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Female:
+    [
+      {
+        Content: "[USFemaleFullName]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+  }
+  GeneratorType: Assignment
+}

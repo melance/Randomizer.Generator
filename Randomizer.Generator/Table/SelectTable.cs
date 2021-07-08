@@ -14,7 +14,7 @@ namespace Randomizer.Generator.Table
 		/// <summary>The value to look for in <see cref="SelectColumn"/></summary>
 		public String SelectValue { get; set; }
 		/// <summary>The column to look for <see cref="SelectValue"/></summary>
-		public String SelectColumn { get; set; }
+		public String SelectColumn { get; set; } = "Select";
 
 		/// <summary>
 		/// Find a row based on <see cref="SelectValue"/>
@@ -23,20 +23,17 @@ namespace Randomizer.Generator.Table
 		{
 			Object value;
 			var result = new Dictionary<String, String>();
-			var colIndex = Table.Columns.IndexOf(Table.Columns[SelectColumn]);
-			var index = 0;
+			var colIndex = ParsedTable.Columns.IndexOf(ParsedTable.Columns[SelectColumn]);
 
 			value = OnEvaluate<Object>(SelectValue);
 
-			var row = Table.Rows.Where(o => o[colIndex].Equals(value));
+			var rows = ParsedTable.Rows.Where(o => o[colIndex].Equals(value));
 
-			while (!Table[SelectColumn, index].Equals(value) && index < Table.RowCount)
+			if (rows != null && rows.Any())
 			{
-				index++;
+				foreach (var row in rows)
+					ProcessRow(result, row);
 			}
-
-			if (row != null)
-				ProcessRow(result, index--);
 
 			return result;
 		}

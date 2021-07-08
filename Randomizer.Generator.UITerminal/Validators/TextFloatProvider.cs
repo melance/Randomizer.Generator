@@ -3,12 +3,10 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Terminal.Gui.TextValidateProviders;
 using Rune = System.Rune;
 
-namespace Randomizer.Generator.UITerminal.Validators
+namespace Randomizer.Generator.UI.Terminal.Validators
 {
 	class TextFloatProvider : ITextValidateProvider
 	{

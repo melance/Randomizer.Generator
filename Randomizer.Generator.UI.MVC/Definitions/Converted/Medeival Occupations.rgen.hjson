@@ -1,0 +1,1576 @@
+{
+  Version: "2.0"
+  Tags: []
+  OutputFormat: Html
+  Parameters: {}
+  TextCase: None
+  Imports: []
+  LineItems:
+  {
+    Occupation:
+    [
+      {
+        Content: "[Government|Military|Criminal|Religious|Merchants|Artists|Farmers|Scholars|Sailors|RegularFolks|Craftsmen|Services]"
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Government:
+    [
+      {
+        Content: Bailiff
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Chancellor
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Constable
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Diplomat
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Emperor
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Exchequer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Herald
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Jailer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Judge
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: King
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Knight
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Lady
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Nobleman
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Prince
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sheriff
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Watchman
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Woodward
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Military:
+    [
+      {
+        Content: Archer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bowman
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Crossbowman
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Drummer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Engineer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Guardsman
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Halberdier
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Knifeman
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Mercenary
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pikeman
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pioneer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Scout
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Siege engineer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sergeant
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sergeant-at-arms
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Spearman
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Spy
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Criminal:
+    [
+      {
+        Content: Marauder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Highwayman
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Burglar
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pickpocket
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Fence
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Outlaw
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Poacher
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Thimblerigger
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Religious:
+    [
+      {
+        Content: Abbess
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Abbot
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Almoner
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Archbishop
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bishop
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cantor
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cardinal
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Chantry priest
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Chaplain
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Curate
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Friar
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Monk
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Nun
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pardoner
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Parish priest
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pilgrim
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pope
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Priest
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Primate
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sacristan
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sexton
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Merchants:
+    [
+      {
+        Content: Alewife
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Apothecary
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Banker
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Chapman
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Fishmonger
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Fruitier
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Greengrocer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Grocer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Haberdasher
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hay merchant
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Innkeeper
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ironmonger
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Linen-draper
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Mercer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Merchant
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Milkmaid
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Peddler
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Plumer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Poulter
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Shrimper
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Skinner
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Spicer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Stationer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Taverner
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Thresher
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Wine seller
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Wood seller
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Woodmonger
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Wool stapler
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Artists:
+    [
+      {
+        Content: Minstrel
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Barker
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Fiddler
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Fool
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Painter
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Harper
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Jester
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Illustrator
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Lutenist
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Minnesinger
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Mummer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Musician
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Organist
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Piper
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Player
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Playwright
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Poet
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sculptor
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Singer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Troubadour
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tumbler
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Writer
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Farmers:
+    [
+      {
+        Content: Acreman
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Falconer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Farmer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Fewterer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Fisherman
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Forester
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Fowler
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Gamekeeper
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Goatherd
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hawker
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Horse trainer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hunter
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Huntsman
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Master of hounds
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Molecatcher
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hostler
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Oysterer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Plowman
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Rat catcher
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Reaper
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sheep shearer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Shepherd
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Swineherd
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Thresher
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tillerman
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Trapper
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Woolcomber
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Woolman
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Scholars:
+    [
+      {
+        Content: Alchemist
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Astrologer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Astronomer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dean
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Librarian
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Mathematician
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Philosopher
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Professor
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Scholar
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Scribe
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tutor
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Theologian
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Sailors:
+    [
+      {
+        Content: Bargeman
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Boatman
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Canaller
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ferryman
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Mariner
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Navigator
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pilot
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sailor
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sea captain
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ship's captain
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Shipchandler
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Waterman
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    RegularFolks:
+    [
+      {
+        Content: Begger
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Buffoon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Clown
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Crofter
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Franklin
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Gardner
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hermit
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Housewife
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Landlord
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Palmer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Peasant
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pilgrim
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Spinster
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tenter
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Craftsmen:
+    [
+      {
+        Content: Shoemaker
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Furrier
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tailor
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Jeweler
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pastrycook
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Mason
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Carpenter
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Weaver
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Chandler
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cooper
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Baker
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Scabbard maker
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hatmaker
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Saddler
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Butcher
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Blacksmith
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Roofer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Locksmith
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ropemaker
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tanner
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Rugmaker
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Harness maker
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bleacher
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cutler
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Glover
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Architect
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Armorer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Basketmaker
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Beekeeper
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Beerbrewer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bellfounder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bellmaker
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bonecarver
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bookbinder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bookprinter
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bowyer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Brazier
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Brewer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bricklayer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Embroiderer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bronzefounder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Builder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cabinetmaker
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cartwright
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cheesemaker
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Clockmaker
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Clothier
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cobbler
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Coiner
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Redsmith
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Delver
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Fletcher
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Foundryman
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Glassblower
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Goldsmith
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Gravedigger
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hatter
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Ivorist
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Joiner
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Lapidary
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Latoner
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Leadworker
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Luthier
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cartographer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Master builder
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Miner
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Netmaker
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Parchmenter
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Pewterer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Physician
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Potter
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Printer
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Quarryman
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Rectifier
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Reedmaker
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Roper
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Rugweaver
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Sailmaker
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Salter
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Seamstress
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Shipwright
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Silversmith
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Smelter
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Stonecarver
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Stonecutter
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Swordsmith
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tapestrymaker
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tinsmith
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Vintner
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Woodcarver
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Woodcutter
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Services:
+    [
+      {
+        Content: Maidservant
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Barber
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Restaurateur
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Water carrier
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Laundress
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Porter
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Doctor
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Accountant
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bailiff
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Barrister
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bath attendent
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Butler
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Carter
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Chamberlain
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Chimney sweep
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Surgeon
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cook
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cowherd
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dairymaid
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dentist
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Executioner
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Farrier
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Harlot
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Maid
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Midwife
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Nurse
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Prostitute
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Quartermaster
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Bartender
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Barmaid
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Innkeeper
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Wagoner
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Wetnurse
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+  }
+  GeneratorType: Assignment
+}

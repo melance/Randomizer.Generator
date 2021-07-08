@@ -1,0 +1,876 @@
+{
+  Name: Adventure Hooks (Post Apocalyptic)
+  Author: Lance Boudreaux
+  Description: Generates adventure hooks for post-apocalyptic settings
+  Version: "2.0"
+  Tags:
+  [
+    Encounter
+    Post Apocalyptic
+    null
+    null
+  ]
+  OutputFormat: Html
+  Parameters: {}
+  TextCase: None
+  Imports: []
+  LineItems:
+  {
+    Start:
+    [
+      {
+        Content: Your [Settlement] is overrun by [EnemyGroup].
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: You're running low on [Supplies] and must get more soon.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Supplies are being used to quickly because [SupplySap].
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: The local [Utility] has stopped working.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: You hear [RadioGroup] over [Radio].
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: You come across a [RaidLocation] and [RaidLocationState].
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A [ExtortionGroup] is demanding tribute in exchange for protection.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: "[Outbreak] has broken out in your group."
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: One of your group went out to [MissingPersonJob] and has not returned.
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: While [SettlementJob] one of your group [WorkerMishap].
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    SettlementJob:
+    [
+      {
+        Content: building a food store
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: reinforcing the doors
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: reinforcing windows
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: standing guard
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: taking a break from working
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: cutting down a tree
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: gathering fire wood
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: setting up camp
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: scouting the area
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: hunting
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    WorkerMishap:
+    [
+      {
+        Content: passed out
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: was attacked by an unknown assailant
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: disappeared
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: broke a bone in their [=Pick('leg','arm','hand','foot')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: injured their [=Pick('neck','back','leg','arm','hand','foot')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: was attacked by a [=Pick('rabid','wild')] animal
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: broke a rib
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: was approached by a member of a cult
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: killed a [=Pick('person','zombie')]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: cut themselves with a rusted tool
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: received a large cut
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ran away
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: saw a car drive by
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: saw another group of survivors in the distance
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: saw a pack of wolves staring them down
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: saw a pack of zombies
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: saw some mutated wildlife
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: received radiation poisoning
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: was shot by a stray bullet
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: was shot by someone who ran away
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: saw a plane fly over head
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: saw a helicopter over head
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: thought they heard a train whistle
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    MissingPersonJob:
+    [
+      {
+        Content: scavenge for supplies
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: scavenge for food
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: hunt for food
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: fish for food
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: trade with a nearby [Settlement]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: scout the area
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: scout ahead
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: spy on a nearby [Settlement]
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: look for other survivors
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: collect fire wood
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Settlement:
+    [
+      {
+        Content: camp
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: town
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: city
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: stronghold
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: encampment
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: village
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: home
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: house
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    EnemyGroup:
+    [
+      {
+        Content: zombies
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: a band of raiders
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: a group of anarchists
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: a militia
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: an insect swarm
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: an unknown group striking at night
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: rats
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: scorpions
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: snakes
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    ExtortionGroup:
+    [
+      {
+        Content: group of bandits
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: militia
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: band of gypsies
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: band of mutants
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: cult
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Supplies:
+    [
+      {
+        Content: food
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: medical supplies
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: medication
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: clean water
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: ammunition
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: tools
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: morale
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: wood
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: fuel
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    SupplySap:
+    [
+      {
+        Content: there are too many survivors unable to pull their weight
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: someone is stealing them
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: something is stealing them
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: some survivors are being wasteful
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: pets are being provided with them
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Utility:
+    [
+      {
+        Content: power plant
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: water station
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: sewage station
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    RadioGroup:
+    [
+      {
+        Content: another group of survivors who sound like they can help you
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: another group of survivors and they are in trouble
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: a garbled message
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: someone screaming
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: someone speaking in a language you do not understand
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: wild animal sounds
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: inhuman sounds
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: a voice discernible through the static
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: a voice say, "Help me" through the static
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: music
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: faint music through the static
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: silence
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Radio:
+    [
+      {
+        Content: an FM radio
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: an AM radio
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: a HAM radio
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: a CB
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: a walkie-talkie
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: a shortwave radio
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: a police scanner
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: a cell phone
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: a telephone
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    RaidLocation:
+    [
+      {
+        Content: gas station
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: grocery store
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: hospital
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: hospice
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: nursing home
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: funeral home
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: farm house
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: suburban neighborhood
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: prison
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: police station
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: hotel
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: motel
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: YMCA
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: gym
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: factory
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: warehouse
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: cabin
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: apartment complex
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: apartment building
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    RaidLocationState:
+    [
+      {
+        Content: it appears completely abandoned
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: it appears to have been recently occupied
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: it is in ruins
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: it appears to be occupied
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: is being overgrown by plants
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: you can hear a low humming noise from within
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: you can hear talking
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: you hear someone inside scream
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: the doors and windows are boarded up
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: a single warning shot lands near you
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: several doors are open
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: you hear an unrecognizable noise from within
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+    Outbreak:
+    [
+      {
+        Content: The flu
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: A plague
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Tuberculous
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Mutiny
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Mutation
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: An unknown disease
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Hysteria
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Mass delusion
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Dysentery
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Mad cow disease
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Food poisoning
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Typhoid fever
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Chickenpox
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Shingles
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Panic
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Low morale
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Depression
+        Repeat: 1
+        Weight: 1
+      }
+      {
+        Content: Cheerfulness
+        Repeat: 1
+        Weight: 1
+      }
+    ]
+  }
+  GeneratorType: Assignment
+}

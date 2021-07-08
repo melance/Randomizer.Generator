@@ -1,0 +1,18 @@
+{
+  Tables:
+  {
+    Cookie: null
+  }
+  Values: {}
+  Name: Fortune Cookie
+  Author: Lance Boudreaux
+  Description: Pulls a fortune from inside of a fortune cookie
+  Version: "2.0"
+  Tags:
+  [
+    Other
+  ]
+  OutputFormat: Html
+  Parameters: {}
+  GeneratorType: Table
+}

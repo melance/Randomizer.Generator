@@ -6,7 +6,7 @@
 <#@ output extension=".g.cs" #>
 
 using System;
-namespace Randomizer.Generator.UITerminal
+namespace Randomizer.Generator.UI.Terminal
 {
     public static partial class AssemblyInfo
     {

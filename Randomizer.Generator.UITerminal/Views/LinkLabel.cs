@@ -1,9 +1,9 @@
 ﻿using NStack;
-using Randomizer.Generator.UITerminal.Utility;
+using Randomizer.Generator.UI.Terminal.Utility;
 using System;
 using Terminal.Gui;
 
-namespace Randomizer.Generator.UITerminal.Views
+namespace Randomizer.Generator.UI.Terminal.Views
 {
 	class LinkLabel : Label
 	{
