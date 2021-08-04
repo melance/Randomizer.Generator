@@ -1,0 +1,44 @@
+Name: Bars, Pubs, Taverns, and Inns
+Author: Lance Boudreaux
+Description: Generates a bar, pub, tavern, or inn to fit into the selected genre.
+Version: "1.0"
+Tags:
+[
+	Location
+	Fantasy
+	Sci-Fi
+]
+OutputFormat: Html
+ShowInList: true
+Parameters:
+{
+	Genre:
+	{
+		Value: Fantasy
+		Display: Genre
+		Type: List
+		Options:
+		[
+			Fantasy:Fantasy
+			SciFi:Sci-Fi
+		]
+	}
+}
+LineItems:
+{
+	Start:
+	[
+		{ Content: "[Genre]" }
+	]
+	
+	Fantasy:
+	[
+		{ Content: "[=Generate('Fantasy Inns and Taverns')]" }
+	]
+	
+	SciFi:
+	[
+		{ Content: "[=Generate('Bars and Pubs Sci-Fi')]" }
+	]
+}
+GeneratorType: Assignment

@@ -1,7 +1,18 @@
-﻿using System.Text.Json.Serialization;
+﻿using System;
+using System.Text.Json.Serialization;
 
 namespace Randomizer.Generator.Core
 {
+	[Flags]
+	public enum AnalyzeOptions
+	{
+		None = 0,
+		IterateItems = 1,
+		ShowImportDetails = 2,
+		ShowScript = 4,
+		All = 4095
+	}
+
 	/// <summary>
 	/// Types of generators
 	/// </summary>
@@ -13,7 +24,8 @@ namespace Randomizer.Generator.Core
 		Lua,
         Phonotactics,
 		Table,
-		DotNet
+		DotNet,
+		Sampler
     }
 
     /// <summary>
@@ -25,7 +37,8 @@ namespace Randomizer.Generator.Core
 		/// <summary>The generator will output plain text</summary>
         Text,
 		/// <summary>The generator will output text in HTML format</summary>
-        Html
+        Html,
+		Image
     }
 
     /// <summary>

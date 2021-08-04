@@ -1,0 +1,936 @@
+Name: Human Fantasy Names Male
+KeepWhitespace: false
+Author: Lance Boudreaux
+Description:
+Version: "1.0"
+Tags: 
+[ 
+	Fantasy
+	Name
+]
+OutputFormat: Text
+ShowInList: false
+LineItems:
+{
+	Start:
+	[
+		{ Content: "Ad[AD]" }
+		{ Content: "Ai[AI]" }
+		{ Content: "Al[AL]" }
+		{ Content: "Am[AM]" }
+		{ Content: "An[AN]" }
+		{ Content: "Ar[AR]" }
+		{ Content: "Au[AU]" }
+		
+		{ Content: "Ba[BA]" }
+		{ Content: "Bar[BAR]" }
+		{ Content: "Baud[BAUD]" }
+		{ Content: "Ben[BEN]" }
+		{ Content: "Ber[BER]" }
+		{ Content: "Bla[BLA]" }
+		{ Content: "Bli[BLI]" }
+		
+		{ Content: "Cas[CAS]" }
+		{ Content: "Char[CHAR]" }
+		{ Content: "Cer[CER]" }
+		{ Content: "Col" }
+		{ Content: "Cyr" }
+		
+		{ Content: "Daw" }
+		{ Content: "Di[DI]" }
+		{ Content: "Dr[DR]" }
+		
+		{ Content: "Ed[ED]" }
+		{ Content: "El[EL]" }
+		{ Content: "Em[EM]" }
+		{ Content: "Eu[EU]" }
+		{ Content: "Ev[EV]" }
+		
+		{ Content: "Far[FAR]" }
+		{ Content: "Fir[FIR]" }
+		{ Content: "Fr[FR]" }
+		{ Content: "Fu[FU]" }
+		
+		{ Content: "Ga[GA]" }
+		{ Content: "Ger[GER]" }
+		{ Content: "Geo[GEO]" }
+		{ Content: "Gil[GIL]" }
+		{ Content: "God[GOD]" }
+		{ Content: "Gre[GRE]" }
+		{ Content: "Grif[GRIF]" }
+		{ Content: "Gri[GRI]" }
+		{ Content: "Gu[GU]" }
+		{ Content: "Gun[GUN]" }
+		{ Content: "Guy" }
+		
+		{ Content: "Ha[HA]" }
+		{ Content: "Ham[HAM]" }
+		{ Content: "Hard[HARD]" }
+		{ Content: "He[HE]" }
+		{ Content: "Hil[HIL]" }
+		{ Content: "Hob" }
+		{ Content: "Hop[HOP]" }
+		{ Content: "Hu[HU]" }
+		
+		{ Content: "Is[IS]" }
+		{ Content: "In[IN]" }
+		{ Content: "Ives" }
+		
+		{ Content: "Ja[JA]" }
+		{ Content: "Je[JE]" }
+		{ Content: "Jo[JO]" }
+		{ Content: "Ju[JU]" }
+		
+		{ Content: "La[LA]" }
+		{ Content: "Lam[LAM]" }
+		{ Content: "Lau[LAU]" }
+		{ Content: "Law" }
+		{ Content: "Leo[LEO]" }
+		{ Content: "Li[LI]" }
+		{ Content: "Lo[LO]" }
+		{ Content: "Lu[LU]" }
+		
+		{ Content: "Ma[MA]" }
+		{ Content: "Mer[MER]" }
+		{ Content: "Mi[MI]" }
+		{ Content: "Mo[MO]" }
+		
+		{ Content: "Ni[NI]" }
+		{ Content: "No[NO]" }
+		
+		{ Content: "Ode" }
+		{ Content: "Og[OG]" }
+		{ Content: "Os[OS]" }
+		
+		{ Content: "Pa[PA]" }
+		{ Content: "Pe[PE]" }
+		{ Content: "Phi[PHI]" }
+		{ Content: "Pi[PI]" }
+		
+		{ Content: "Ra[RA]" }
+		{ Content: "Re[RE]" }
+		{ Content: "Ri[RI]" }
+		{ Content: "Ro[RO]" }
+		{ Content: "Sa[SA]" }
+		{ Content: "Sam[SAM]" }
+		{ Content: "So[SO]" }
+		
+		{ Content: "Tan[TAN]" }
+		{ Content: "Te[TE]" }
+		{ Content: "Ti[TI]" }
+		{ Content: "Tom[TOM]" }
+		
+		{ Content: "Ul[UL]" }
+		{ Content: "Ur[UR]" }
+		
+		{ Content: "Wa[WA]" }
+		{ Content: "Wi[WI]" }
+		{ Content: "Wo[WO]" }
+		{ Content: "Wy[WY]" }
+		
+		{ Content: "Yves" }
+	]
+	
+	## A ##
+	A:
+	[
+		{ Content: "char[CHAR]" }
+		{ Content: "mond" }
+	]
+	AD:
+	[
+		{ Content: "am" }
+		{ Content: "dy" }
+		{ Content: "el[EL]" }
+	]
+	AGO:
+	[
+		{ Content: "slav" }
+		{ Content: "sol" }
+	]
+	AI:
+	[
+		{ Content: "mer[MER]" }
+	]
+	AL:
+	[
+		{ Content: "phon[PHON]" }
+		{ Content: "an" }
+		{ Content: "bert" }
+		{ Content: "dred" }
+		{ Content: "ex[EX]" }
+		{ Content: "is[IS]" }
+		{ Content: "ek[EK]" }
+	]
+	AM:
+	[
+		{ Content: "aur[AUR]" }
+		{ Content: "is" }
+	]
+	AN:
+	[
+		{ Content: "sel[SEL]" }
+	]
+	AND:
+	[
+		{ Content: "el" }
+		{ Content: "er" }
+	]
+	AR:
+	[
+		{ Content: "in" }
+		{ Content: "char[CHAR]" }
+		{ Content: "nol[NOL]" }
+		{ Content: "th[TH]" }
+	]
+	AU:
+	[
+		{ Content: "gu[GU]" }
+	]
+	AUR:
+	[
+		{ Content: "" }
+		{ Content: "y" }
+	]
+	
+	## B ##
+	BA:
+	[
+		{ Content: "lin" }
+		{ Content: "sil" }
+		{ Content: "te" }
+	]
+	BAR:
+	[
+		{ Content: "dol[DOL]" }
+		{ Content: "nab[NAB]" }
+		{ Content: "t" }
+		{ Content: "thol[THOL]" }
+	]
+	BAUD:
+	[
+		{ Content: "win" }
+	]
+	BE:
+	[
+		{ Content: "rt" }
+	]
+	BEN:
+	[
+		{ Content: "net" }
+	]		
+	BER:
+	[
+		{ Content: "eng[ENG]" }
+		{ Content: "nard" }
+		{ Content: "tram" }
+	]
+	BLA:
+	[
+		{ Content: "ise" }
+		{ Content: "zh" }
+	]
+	BLI:
+	[
+		{ Content: "ant" }
+	]
+	BR:
+	[
+		{ Content: "and" }
+	]
+	BRI:
+	[
+		{ Content: "el" }
+	]
+	
+	## C ##
+	CAS:
+	[
+		{ Content: "tor" }
+	]
+	CE:
+	[
+		{ Content: "lyn" }
+	]
+	CER:
+	[
+		{ Content: "dic" }
+	]
+	CH:
+	[
+		{ Content: "ael" }
+	]
+	CHAR:
+	[
+		{ Content: "les" }
+		{ Content: "lie" }
+		{ Content: "d" }
+	]
+	CHO:
+	[
+		{ Content: "las" }
+	]
+	CI:
+	[
+		{ Content: "us" }
+		{ Content: "un" }
+	]
+	CK:
+	[
+		{ Content: "" }
+		{ Content: "in" }
+	]
+	CR:
+	[
+		{ Content: "ed" }
+	]
+	CT:
+	[
+		{ Content: "or" }
+	]
+	
+	## D ##
+	DE:
+	[
+		{ Content: "br[BR]" }
+	]
+	DI:
+	[
+		{ Content: "cun" }
+	]
+	DOL:
+	[
+		{ Content: "ph" }
+	]
+	DOM:
+	[
+		{ Content: "ir" }
+	]
+	DR:
+	[
+		{ Content: "ago[AGO]" }
+	]
+	
+	## E ##
+	ED:
+	[
+		{ Content: "win" }
+		{ Content: "er[ER]" }
+	]
+	EK:
+	[
+		{ Content: "sa[SA]" }
+	]
+	EL:
+	[
+		{ Content: "ard" }
+		{ Content: "ias" }
+		{ Content: "iot" }
+		{ Content: "is" }
+		{ Content: "o" }
+		{ Content: "ric" }
+		{ Content: "uard" }
+	]		
+	EM:
+	[
+		{ Content: "or[OR]" }
+		{ Content: "ard" }
+	]
+	ENG:
+	[
+		{ Content: "er" }
+	]
+	ER:
+	[
+		{ Content: "ard" }
+		{ Content: "ick" }
+		{ Content: "mo" }
+	]
+	EU:
+	[
+		{ Content: "stace" }
+	]
+	EV:
+	[
+		{ Content: "er[ER]" }
+	]
+	EX:
+	[
+		{ Content: "" }
+		{ Content: "and[AND]" }
+	]
+	
+	## F ##
+	FAR:
+	[
+		{ Content: "a[A]" }
+	]
+	FIR:
+	[
+		{ Content: "man" }
+		{ Content: "min" }
+	]
+	FF:
+	[
+		{ Content: "rey" }
+	]
+	FR:
+	[
+		{ Content: "ed[ED]" }
+		{ Content: "o[O]" }
+		{ Content: "os[OS]" }
+	]
+	FU:
+	[
+		{ Content: "lke" }
+	]
+	
+	## G ##
+	GA:
+	[
+		{ Content: "bri[BRI]" }
+		{ Content: "ll[LL]" }
+		{ Content: "mel" }
+		{ Content: "ret" }
+		{ Content: "reth" }
+	]		
+	GER:
+	[
+		{ Content: "ald" }
+		{ Content: "ard" }
+		{ Content: "vase" }			
+	]		
+	GEO:
+	[
+		{ Content: "ff[FF]" }
+		{ Content: "rge" }
+		{ Content: "rgei" }
+	]
+	GIL:
+	[
+		{ Content: "bert" }
+		{ Content: "es" }
+	]
+	GIN:
+	[
+		{ Content: "ald" }
+	]
+	GOD:
+	[
+		{ Content: "win" }
+		{ Content: "wyn" }
+		{ Content: "fried" }
+	]
+	GOR:
+	[
+		{ Content: "" }
+		{ Content: "y" }
+		{ Content: "ii" }
+	]
+	GR:
+	[
+		{ Content: "am" }
+	]
+	GRE:
+	[
+		{ Content: "g" }
+		{ Content: "gor[GOR]" }
+	]
+	GRI:
+	[
+		{ Content: "gor[GOR]" }
+	]
+	GRIF:
+	[
+		{ Content: "fon" }
+		{ Content: "fith" }
+		{ Content: "fild" }
+	]
+	GU:
+	[
+		{ Content: "ar[AR]" }
+		{ Content: "ic[IC]" }
+		{ Content: "st" }
+	]
+	GUN:
+	[
+		{ Content: "ter" }
+	]
+	
+	## H ##
+	HA:
+	[
+		{ Content: "imo" }
+		{ Content: "hn" }
+		{ Content: "nk[NK]" }
+		{ Content: "nn" }
+		{ Content: "ro[RO]" }
+	]
+	HAM:
+	[
+		{ Content: "o" }
+		{ Content: "on" }
+		{ Content: "on[ON]" }
+	]
+	HARD:
+	[
+		{ Content: "win" }
+		{ Content: "man" }
+	]
+	HE:
+	[
+		{ Content: "ct[CT]" }
+		{ Content: "nry" }
+		{ Content: "be[BE]" }
+		{ Content: "rb[RB]" }
+		{ Content: "rm[RM]" }
+		{ Content: "rr[RR]" }
+	]
+	HIL:
+	[
+		{ Content: "de[DE]" }
+	]
+	HOP:
+	[
+		{ Content: "kin[KIN]" }
+	]
+	HU:
+	[
+		{ Content: "be[BE]" }
+		{ Content: "dde" }
+		{ Content: "mph[MPH]" }
+		{ Content: "gh" }
+	]
+	
+	## I ##
+	IC:
+	[
+		{ Content: "ard" }
+	]
+	IE:
+	[
+		{ Content: "an" }
+	]		
+	IN:
+	[
+		{ Content: "gr[GR]" }
+	]
+	IS:
+	[
+		{ Content: "and[AND]" }
+		{ Content: "aac" }
+		{ Content: "em[EM]" }
+		{ Content: "lav" }
+	]
+	
+	## J ##
+	JA:
+	[
+		{ Content: "ck[CK]" }
+		{ Content: "mes" }
+		{ Content: "n" }
+		{ Content: "nk[NK]" }
+		{ Content: "sp[SP]" }
+		{ Content: "yne" }
+	]
+	JE:
+	[
+		{ Content: "re[RE]" }
+		{ Content: "ff[FF]" }
+	]
+	JO:
+	[
+		{ Content: "ce[CE]" }
+		{ Content: "hn" }
+		{ Content: "n" }
+		{ Content: "rd[RD]" }
+		{ Content: "se[SE]" }
+	]
+	JU:
+	[
+		{ Content: "dd" }
+		{ Content: "les" }
+		{ Content: "li[LI]" }
+		{ Content: "ri[RI]" }
+	]
+	
+	## K ##
+	KIN:
+	[
+		{ Content: "" }
+		{ Content: "s" }
+	]
+	KO:
+	[
+		{ Content: "la" }
+		{ Content: "las" }
+	]
+	
+	## L ##
+	LA:
+	[
+		{ Content: "nd" }
+		{ Content: "nce" }
+		{ Content: "rk[RK]" }
+	]
+	LAM:
+	[
+		{ Content: "be[BE]" }
+	]
+	LAU:
+	[
+		{ Content: "re[RE]" }
+	]
+	LEO:
+	[
+		{ Content: "fwin" }
+	]
+	LF:
+	[
+		{ Content: "st[ST]" }
+	]
+	LI:
+	[
+		{ Content: "on[ON]" }
+	]
+	LK:
+	[
+		{ Content: "in" }
+		{ Content: "y" }
+	]
+	LL:
+	[
+		{ Content: "iam" }
+		{ Content: "eron" }
+	]
+	LM:
+	[
+		{ Content: "ot" }
+		{ Content: "ond" }
+	]
+	LO:
+	[
+		{ Content: "mon" }
+		{ Content: "re[RE]" }
+		{ Content: "rn[RN]" }
+	]
+	LT:
+	[
+		{ Content: "er" }
+	]
+	LU:
+	[
+		{ Content: "can" }
+		{ Content: "ci[CI]" }
+		{ Content: "ke" }
+	]
+	
+	## M ##
+	MA:
+	[
+		{ Content: "bon" }
+		{ Content: "ck" }
+		{ Content: "n[N]" }
+		{ Content: "rk" }
+		{ Content: "rt[RT]" }
+		{ Content: "tt[TT]" }
+		{ Content: "y[Y]" }
+	]
+	MER:
+	[
+		{ Content: "" }
+		{ Content: "y" }
+		{ Content: "ek" }
+		{ Content: "iet" }
+	]
+	MI:
+	[
+		{ Content: "ch[CH]" }
+		{ Content: "les" }
+		{ Content: "lo" }
+		{ Content: "rc[RC]" }
+	]
+	MO:
+	[
+		{ Content: "nd" }
+		{ Content: "rr[RR]" }
+	]
+	MPH:
+	[
+		{ Content: "rey" }
+	]
+	
+	## N ##
+	N:
+	[
+		{ Content: "fr[FR]" }
+	]
+	NA:
+	[
+		{ Content: "rd" }
+	]
+	NAB:
+	[
+		{ Content: "us" }
+	]
+	ND:
+	[
+		{ Content: "al" }
+		{ Content: "el" }
+		{ Content: "ru" }
+	]
+	NI:
+	[
+		{ Content: "col" }
+		{ Content: "cho[CHO]" }
+		{ Content: "gel" }
+		{ Content: "ko[KO]" }
+	]
+	NK:
+	[
+		{ Content: "in" }
+	]
+	NN:
+	[
+		{ Content: "ey" }
+	]
+	NO:
+	[
+		{ Content: "ah" }
+		{ Content: "ll" }
+	]
+	NOL:
+	[
+		{ Content: "d" }
+	]
+	NU:
+	[
+		{ Content: "lf" }
+	]
+
+	## O ##
+	O:
+	[
+		{ Content: "do" }
+	]
+	OG:
+	[
+		{ Content: "ier" }
+	]
+	ON:
+	[
+		{ Content: "" }
+		{ Content: "d" }
+		{ Content: "el" }
+	]
+	OR:
+	[
+		{ Content: "" }
+		{ Content: "y" }
+	]
+	OS:
+	[
+		{ Content: "ric" }
+		{ Content: "t" }
+	]
+	
+	## P ##
+	PA:
+	[
+		{ Content: "te" }
+		{ Content: "ul" }
+	]
+	PE:
+	[
+		{ Content: "rci[RCI]" }
+		{ Content: "ter" }
+	]
+	PHI:
+	[
+		{ Content: "lip" }
+	]
+	PHON:
+	[
+		{ Content: "se" }
+	]
+	PI:
+	[
+		{ Content: "ers" }
+	]
+	
+	## R ##		
+	RA:
+	[
+		{ Content: "dom[DOM]" }
+		{ Content: "nd[ND]" }
+		{ Content: "nu[NU]" }
+	]
+	RB:
+	[
+		{ Content: "ert" }
+	]
+	RC:
+	[
+		{ Content: "he" }
+	]
+	RCI:
+	[
+		{ Content: "val" }
+	]
+	RD:
+	[
+		{ Content: "an" }
+		{ Content: "ld" }
+	]
+	RE:
+	[
+		{ Content: "my" }
+		{ Content: "nce" }
+		{ Content: "gin[GIN]" }
+	]
+	RI:
+	[
+		{ Content: "an" }
+		{ Content: "char[CHAR]" }
+		{ Content: "n" }
+	]
+	RK:
+	[
+		{ Content: "in" }
+	]
+	RM:
+	[
+		{ Content: "an" }
+	]
+	RN:
+	[
+		{ Content: "cio" }
+		{ Content: "er" }
+	]
+	RO:
+	[
+		{ Content: "be[BE]" }
+		{ Content: "ger" }
+		{ Content: "la[LA]" }
+		{ Content: "lf" }
+		{ Content: "wan" }
+	]
+	RR:
+	[
+		{ Content: "is" }
+		{ Content: "y" }
+	]
+	RT:
+	[
+		{ Content: "in" }
+	]
+	
+	## S ##
+	SA:
+	[
+		{ Content: "yer" }
+		{ Content: "nd[ND]" }
+	]
+	SAM:
+	[
+		{ Content: "wise" }
+		{ Content: "uael" }
+		{ Content: "pson" }
+	]
+	SE:
+	[
+		{ Content: "ph" }
+	]
+	SEL:
+	[
+		{ Content: "" }
+		{ Content: "m" }
+	]
+	SO:
+	[
+		{ Content: "lo[LO]" }
+	]
+	SP:
+	[
+		{ Content: "er" }
+	]
+	ST:
+	[
+		{ Content: "an" }
+		{ Content: "one" }
+	]	
+	
+	## T ##
+	TAN:
+	[
+		{ Content: "cr[CR]" }
+	]
+	TE:
+	[
+		{ Content: "nn[NN]" }
+	]
+	TH:
+	[
+		{ Content: "ur" }
+	]		
+	THOL:
+	[
+		{ Content: "omew" }
+	]
+	TI:
+	[
+		{ Content: "el[EL]" }
+	]
+	TOM:
+	[
+		{ Content: "as" }
+		{ Content: "is[IS]" }
+	]
+	TT:
+	[
+		{ Content: "hew" }
+	]
+	
+	## U ##
+	UL:
+	[
+		{ Content: "ric" }
+	]
+	UR:
+	[
+		{ Content: "ric" }
+		{ Content: "ian" }
+		{ Content: "ial" }
+	]
+	
+	## W ##
+	WA:
+	[
+		{ Content: "lt[LT]" }
+		{ Content: "ri[RI]" }
+		{ Content: "rn[RN]" }
+	]
+	WI:
+	[
+		{ Content: "ll[LL]" }
+		{ Content: "lk[LK]" }
+		{ Content: "lm[LM]" }
+	]
+	WO:
+	[
+		{ Content: "lf[LF]" }
+	]
+	WY:
+	[
+		{ Content: "be[BE]" }
+		{ Content: "mo[MO]" }
+		{ Content: "ot" }
+	]
+	
+	## Y ##
+	Y:
+	[
+		{ Content: "na[NA]" }
+	]
+}
+GeneratorType: Assignment

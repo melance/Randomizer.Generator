@@ -1,46 +1,135 @@
-﻿@model IndexModel
+﻿@using X.PagedList.Mvc.Core
+@model IndexModel
 @{
     ViewData["Title"] = "Home Page";
 }
 
-<h3>Generators</h3>
+@section Scripts
+{
+    <script>
+        $(document).ready(function () {
+            $(".pagination a").click(function () {
+                if (event.preventDefault) {
+                    event.preventDefault();
+                }
+                else {
+                    event.returnValue = false;
+                }
+                $('#page').val($(this).html());
+                $('#filterForm').submit();
+                event.returnValue = true;
+            });
+        });
+    </script>
+}
 
-<div class="row">
-    @if (!String.IsNullOrWhiteSpace(Model.Tag))
-    {
-        <h4 class="col-12">Tag: @Model.Tag</h4>
-    }
-    else
-    {        
-        <h5 class="col-12">Tags</h5>
-        <div class="col-12 mb-2">
-        @foreach (var tag in Model.TagList)
-        {
-            <a asp-action="" asp-route-tag="@tag" class="badge badge-secondary p-1">@tag</a>
-        }
-        </div>
-    }
-</div>
-<div class="list-group-flush">
-    @foreach(var item in Model.Definitions)
-    {
-    <a asp-action="Definition" asp-route-name="@item.Name" class="list-group-item list-group-item-action">
-        <div class="row">
-            <span class="font-weight-bold col-7">@item.Name</span>
-            <span class="col-4">@String.Join(", ", item.Tags)</span>
-            @switch (item.OutputFormat)
+<h3>Generators</h3>
+<span class="text-black-50">Select a generator from the list to begin generatating content.</span>
+@if (String.IsNullOrWhiteSpace(ViewBag.ErrorMessage))
+{
+<form method="post" id="filterForm">
+    <input id="page" name="page" type="hidden" />
+    <div class="row">
+        <h5 class="col-1">Tags</h5>
+        <div id="tags" class="col-12">
+            @foreach (var tag in Model.TagList.OrderBy(t => t.Key))
             {
-                case Randomizer.Generator.Core.OutputFormats.Text:
-                    <span class="col-1 bi-file-text"></span>
-                    break;
-                case Randomizer.Generator.Core.OutputFormats.Html:
-                    <span class="col-1 bi-file-code"></span>
-                    break;
+                <input class="btn-check form-check-input" style="height:0; width: 0; visibility:hidden;" asp-for="TagList[tag.Key]" />
+                <label class="btn btn-sm mb-1 @(tag.Value ? "btn-secondary" : "btn-outline-secondary") form-check-label" onclick="SwapClasses(this, 'btn-secondary', 'btn-outline-secondary')" for="TagList_@Html.GenerateIdFromName(tag.Key)_">
+                    @tag.Key
+                </label>
             }
         </div>
-        <div class="row">
-            <span class="col-12">@item.Description</span>
+    </div>
+    <div class="row form-row mb-1 mt-1">
+        <div class="col-1">
+            <label class="col-form-label ">Search</label>
         </div>
-    </a>
+        <div class="col-4">
+            <input class="form-control" placeholder="Search by name" data-toggle="tooltip" title="Enter part of the name of the generator you would like to find." asp-for="Search" />
+        </div>
+        <div class="col-7">
+            <button class="btn btn-sm btn-primary mb-2 float-right" type="submit">Filter</button>
+            @if (Model.IsFiltered)
+            {
+                <a class="btn btn-sm btn-secondary mb-2 mr-2 float-right" asp-action="Index">Clear Filter</a>
+            }
+        </div>
+    </div>
+    <div class="list-group-flush">
+        @if (!Model.Definitions.Any())
+        {
+            <div class="row">
+                <div class="col-12 text-center">
+                    No generators found
+                </div>
+            </div>
+        }
+        @foreach (var item in Model.Definitions)
+        {
+            <a asp-action="Definition" asp-route-name="@item.Name" class="list-group-item list-group-item-action">
+                <div class="row">
+                    <span class="font-weight-bold col-7">@item.Name</span>
+                    <span class="col-4">@String.Join(", ", item.Tags)</span>
+                    @switch (item.OutputFormat)
+                    {
+                        case Randomizer.Generator.Core.OutputFormats.Text:
+                            <span class="col-1 bi-file-text" data-toggle="tooltip" data-html="true" data-placement="top" title="Outputs Text"></span>
+                            break;
+                        case Randomizer.Generator.Core.OutputFormats.Html:
+                            <span class="col-1 bi-file-code" data-toggle="tooltip" data-html="true" data-placement="top" title="Outputs Html"></span>
+                            break;
+                        case Randomizer.Generator.Core.OutputFormats.Image:
+                            <span class="col-1 bi-image" data-toggle="tooltip" data-html="true" data-placement="top" title="Outputs an Image"></span>
+                            break;
+                    }
+                </div>
+                <div class="row">
+                    <span class="col-12">@item.Description</span>
+                </div>
+            </a>
+        }
+    </div>
+
+    @if (Model.Definitions.Any())
+    {
+        <nav class="mt-1">
+            <input type="hidden" asp-for="Page" />
+            <ul class="pagination justify-content-center">
+                @if (Model.Definitions.HasPreviousPage)
+                {
+                    <li class="page-item"><a class="page-link" asp-route-page="@(Model.Definitions.PageNumber - 1)">&laquo;</a></li>
+                }
+                else
+                {
+                    <li class="page-item disabled"><a class="page-link" href="#">&laquo;</a></li>
+                }
+
+                @for (var i = 1; i <= Model.Definitions.PageCount; i++)
+                {
+                    if (i == Model.Definitions.PageNumber)
+                    {
+                        <li class="page-item disabled"><a class="page-link bg-secondary text-light" href="#">@i</a></li>
+                    }
+                    else
+                    {
+                        <li class="page-item"><a class="page-link" asp-route-page="@i">@i</a></li>
+                    }
+                }
+                @if (Model.Definitions.HasNextPage)
+                {
+                    <li class="page-item"><a class="page-link" asp-route-page="@(Model.Definitions.PageNumber + 1)">&raquo;</a></li>
+                }
+                else
+                {
+                    <li class="page-item disabled"><a class="page-link" href="#">&raquo;</a></li>
+                }
+            </ul>
+        </nav>
     }
-</div>
+</form>
+}
+else
+{
+    <div class="border p-2 border-danger">@Html.Raw(ViewBag.ErrorMessage)</div>
+}

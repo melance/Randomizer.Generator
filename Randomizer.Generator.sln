@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.31423.177
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31321.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Randomizer.Generator", "Randomizer.Generator\Randomizer.Generator.csproj", "{DF21E4B9-0E88-4B84-A1FA-B5AC4202927E}"
 EndProject
@@ -26,7 +26,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NSIS", "NSIS", "{BAB97826-E
 		Installer\Randomizer.Generator.nsi = Installer\Randomizer.Generator.nsi
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Randomizer.Generator.UI.MVC", "Randomizer.Generator.UI.MVC\Randomizer.Generator.UI.MVC.csproj", "{C66F2DEE-FE4D-463F-8E03-497D4D0717A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Randomizer.Generator.UI.MVC", "Randomizer.Generator.UI.MVC\Randomizer.Generator.UI.MVC.csproj", "{C66F2DEE-FE4D-463F-8E03-497D4D0717A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

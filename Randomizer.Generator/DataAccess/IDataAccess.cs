@@ -10,7 +10,9 @@ namespace Randomizer.Generator.DataAccess
 	public interface IDataAccess
 	{
 		BaseDefinition GetDefinition(String name);
+		String GetDefinitionRaw(String name);
 		BaseDefinition GetLibrary(String name);
+		String GetText(String name);
 
 		IEnumerable<BaseDefinition> GetDefinitionList();
 		IEnumerable<BaseDefinition> GetLibraryList();

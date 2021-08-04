@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Linq;
 using System.Collections.Generic;
 using Randomizer.Generator.Utility;
 using Newtonsoft.Json;
+using System.ComponentModel;
 
 namespace Randomizer.Generator.Core
 {
@@ -20,8 +22,12 @@ namespace Randomizer.Generator.Core
 		public String Description { get; set; }
 		/// <summary>The type of parameter</summary>
 		public ParameterTypes Type { get; set; }
+		[DefaultValue(true)]
+		public Boolean Visible { get; set; } = true;
 		/// <summary>A series of expressions that determines if there is an error</summary>
 		public List<ParameterValidation> Validation { get; set; } = new();
+		public Boolean IsValid { get; set; } = true;
+		public String ValidationMessage { get; set; }
 		/// <summary>The list of options for a <see cref="ParameterTypes.List"/> parameter</summary>
 		public ListOptionList Options { get; set; } = new();
 
@@ -36,7 +42,7 @@ namespace Randomizer.Generator.Core
 					ParameterTypes.Integer => Value.IsNullOrWhitespace() ? 0 : Int64.Parse(Value),
 					ParameterTypes.Decimal => Value.IsNullOrWhitespace() ? 0d : Double.Parse(Value),
 					ParameterTypes.Date => Value.IsNullOrWhitespace() ? DateTime.MinValue : DateTime.Parse(Value),
-					ParameterTypes.Boolean => Value.IsNullOrWhitespace() ? false : Boolean.Parse(Value),
+					ParameterTypes.Boolean => !Value.IsNullOrWhitespace() && Boolean.Parse(Value),
 					_ => Value,
 				};
 			}

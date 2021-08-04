@@ -10,6 +10,18 @@ namespace Randomizer.Generator.Table
 	public class Table
 	{
 		#region Indexers
+		public List<Object> this[String column]
+		{
+			get
+			{
+				var values = new List<Object>();
+				foreach (var row in Rows)
+				{
+					values.Add(row[Columns.IndexOf(column)]);
+				}
+				return values;
+			}
+		}
 		public Object this[String column, Int32 row] => Columns[column][row];
 		public Object this[Int32 column, Int32 row] => Columns[column][row]; 
 		public Row this[Int32 row]

@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Text.Json.Serialization;
+using Newtonsoft.Json;
+using System.ComponentModel;
 
 namespace Randomizer.Generator.Assignment
 {
@@ -22,6 +24,7 @@ namespace Randomizer.Generator.Assignment
         /// <summary>If given a value, the outcome of this line is stored in a variable instead of being output</summary>
         public String Variable { get; set; }
         /// <summary>A weight given to the random selection of this line item</summary>
+		[DefaultValue(1)]
         public UInt32 Weight { get; set; } = 1;
         #endregion
     }

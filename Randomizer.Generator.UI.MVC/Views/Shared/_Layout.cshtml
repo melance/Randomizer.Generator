@@ -4,17 +4,17 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Randomizer.Generator</title>
+    <title>@ViewData["Title"] - The Randomizer</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
     <link rel="icon" type="image/x-icon" href="~/FavIcon.ico" />
     <link rel="stylesheet" href="~/bootstrap-icons-1.5.0/bootstrap-icons.css" />
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark bg-gradient border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Randomizer.Generator</a>
+                <div class="navbar-brand"><a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/Randomizer 150.png" height="24" style="margin-left:12px; margin-top:-6px;" /> The Randomizer</a></div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -22,10 +22,13 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="About">About</a>
+                            <a class="nav-link text-light" asp-area="" asp-controller="Help" asp-action="Index">Help</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="About">About</a>
                         </li>
                     </ul>
                 </div>
@@ -33,15 +36,15 @@
         </nav>
     </header>
 
-    <div class="container">
+    <div class="container" style="padding-top: 73px;">
         <main role="main" class="col-12">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer class="border-top footer text-muted bg-dark bg-gradient">
         <div class="container">
-            &copy; 2021 - Lance Boudreaux - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2021 - Lance Boudreaux<!-- - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>-->
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
@@ -50,6 +53,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ajax-unobtrusive/3.2.6/jquery.unobtrusive-ajax.min.js"></script>
     <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+    <script src="~/js/printThis.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

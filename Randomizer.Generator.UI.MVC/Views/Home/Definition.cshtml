@@ -4,123 +4,170 @@
 @{
     ViewData["Title"] = Model.Name;
 }
-
-<h3 class="">@Model.Name</h3>
-<h5 class="font-weight-bold border-bottom">@Model.Description</h5>
-
-<a class="font-weight-bold" data-toggle="collapse" href="#details" role="button" aria-expanded="false" aria-controls="details">Details</a>
-<div id="details" class="collapse">
-    <div class="card card-body">
-        <div class="row">
-            <div class="col-2">Version:</div>
-            <div class="col-10">@Model.Version?.ToString()</div>
-        </div>
-        @if (!String.IsNullOrWhiteSpace(Model.Author))
-        {
-            <div class="row">
-                <div class="col-2">Author:</div>
-                <div class="col-10">@Model.Author</div>
-            </div>            
-        }
-        @if (!String.IsNullOrWhiteSpace(Model.URL))
-        {
-            <div class="row">
-                <div class="col-2">URL:</div>
-                <a class="col-10" href="@Model.URL" target="_blank">@Model.URL</a>
-            </div>
-        }
-        <div class="row">
-            <div class="col-2">Output Format:</div>
-            <div class="col-10">@Model.OutputFormat.ToString()</div>
-        </div>
-        @if (Model.Tags != null && Model.Tags.Count > 0)
-        {
-            <div class="row">
-                <div class="col-2">Tags:</div>
-                <div class="col-10">@String.Join(", ", Model.Tags)</div>
-            </div>
-        }
-    </div>
-</div>
-
-<form asp-action="Definition" method="post" role="form">
-    <input type="hidden" asp-for="Name" />
-    <div class="form-group">
-        <div class="form-row">
-            <a href="#parameters" class="col-12 font-weight-bold" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="paraemters">Parameters</a>
-        </div>
-        <div class="card card-body show" id="parameters">
-            <div class="form-row mb-1">
-                <div class="col-2">
-                    <span class="align-middle">Repeat</span>
-                </div>
-                <div class="col-5" data-toggle="tooltip" data-placement="top" title="The number of times to run the generator.">
-                    <input class="form-control" asp-for="Repeat" step="1" min="1" max="50" />
-                </div>
-            </div>
-
-            @if (Model.Parameters.Count > 0)
-            {
-                foreach (var parameter in Model.Parameters)
+<div>
+    <div>
+        <h3 class="">@Model.Name</h3>
+        <h5 class="border-bottom">@Model.Description</h5>
+        <a class="font-weight-bold" data-toggle="collapse" href="#details" role="button" aria-expanded="false" aria-controls="details">Details</a>
+        <div id="details" class="collapse">
+            <div class="card card-body">
+                @if (!String.IsNullOrWhiteSpace(Model.Remarks))
                 {
-                    <div class="form-row mb-1">
-                        <div class="col-2">
-                            <span class="align-middle">@parameter.Value.Display</span>
-                        </div>
-                        <div class="col-5" data-toggle="tooltip" data-html="true" data-placement="top" title="@parameter.Value.Description">
-                            @switch (parameter.Value.Type)
-                            {
-                                case ParameterTypes.Text:
-                                    <input class="form-control" asp-for="Parameters[parameter.Key].Value" />
-                                    break;
-                                case ParameterTypes.Integer:
-                                    <input class="form-control" asp-for="Parameters[parameter.Key].Value" type="number" />
-                                    break;
-                                case ParameterTypes.Decimal:
-                                    <input class="form-control col-5" asp-for="Parameters[parameter.Key].Value" type="number" />
-                                    break;
-                                case ParameterTypes.List:
-                                    <select class="form-control col-5" asp-for="Parameters[parameter.Key].Value" asp-items="@(new SelectList(parameter.Value.Options, "Value", "Display"))"></select>
-                                    break;
-                                case ParameterTypes.Date:
-                                    <input class="form-control col-5" asp-for="Parameters[parameter.Key].Value" type="date" />
-                                    break;
-                                case ParameterTypes.Boolean:
-                                    <input class="form-check-input col-5" asp-for="Parameters[parameter.Key].Value" type="checkbox" data-toggle="toggle" data-on="Yes" data-off="No" />
-                                    break;
-                            }
-                        </div>
+                    <div class="row mb-3">
+                        <div class="col-12">@Model.Remarks</div>
                     </div>
                 }
-            }
-        </div>
-        <div class="form-row">
-            <div class="col-12">
-                <button id="btnGenerate" class="btn btn-primary float-right m-2" type="submit" asp-action="Definition">
-                    Generate
-                </button>
+                <div class="row">
+                    <div class="col-2">Version:</div>
+                    <div class="col-10">@Model.Version?.ToString()</div>
+                </div>
+                @if (!String.IsNullOrWhiteSpace(Model.Author))
+                {
+                    <div class="row">
+                        <div class="col-2">Author:</div>
+                        <div class="col-10">@Model.Author</div>
+                    </div>
+                }
+                @if (!String.IsNullOrWhiteSpace(Model.URL))
+                {
+                    <div class="row">
+                        <div class="col-2">URL:</div>
+                        <a class="col-10" href="@Model.URL" target="_blank">@Model.URL</a>
+                    </div>
+                }
+                <div class="row">
+                    <div class="col-2">Output Format:</div>
+                    <div class="col-10">@Model.OutputFormat.ToString()</div>
+                </div>
+                @if (Model.Tags != null && Model.Tags.Count > 0)
+                {
+                    <div class="row">
+                        <div class="col-2">Tags:</div>
+                        <div class="col-10">@String.Join(", ", Model.Tags)</div>
+                    </div>
+                }
+                <div class="row">
+                    <div class="col-12">
+                        <a class="btn btn-secondary btn-sm mt-1" target="_blank" asp-action="RawView" asp-route-name="@Model.Name">View Definition</a>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <form asp-action="Definition" method="post" role="form">
+            <input type="hidden" asp-for="Name" />
+            <div class="form-group">
+                <div class="form-row">
+                    <a href="#parameters" class="col-12 font-weight-bold" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="paraemters">Parameters</a>
+                </div>
+                <div class="card card-body show" id="parameters">
+                    <div class="form-row mb-1">
+                        <div class="col-2">
+                            <span class="align-middle">Repeat</span>
+                        </div>
+                        <div class="col-5" data-toggle="tooltip" data-placement="top" title="The number of times to run the generator.">
+                            <input class="form-control" asp-for="Repeat" step="1" min="1" max="50" />
+                        </div>
+                    </div>
+
+                    @if (Model.Parameters.Count > 0)
+                    {
+                        foreach (var parameter in Model.Parameters)
+                        {
+                            if (parameter.Value.Visible)
+                            {
+                                <div class="form-row mb-1">
+                                    <div class="col-2">
+                                        <span class="align-middle">@parameter.Value.Display</span>
+                                    </div>
+                                    <div class="col-5" data-toggle="tooltip" data-html="true" data-placement="top" title="@parameter.Value.Description">
+                                        @switch (parameter.Value.Type)
+                                        {
+                                            case ParameterTypes.Text:
+                                                <input class="form-control @(parameter.Value.IsValid ? "" : "is-invalid")" asp-for="Parameters[parameter.Key].Value" />
+                                                <div class="invalid-feedback">@parameter.Value.ValidationMessage</div>
+                                                break;
+                                            case ParameterTypes.Integer:
+                                                <input class="form-control @(parameter.Value.IsValid ? "" : "is-invalid")" asp-for="Parameters[parameter.Key].Value" type="number" />
+                                                <div class="invalid-feedback">@parameter.Value.ValidationMessage</div>
+                                                break;
+                                            case ParameterTypes.Decimal:
+                                                <input class="form-control @(parameter.Value.IsValid ? "" : "is-invalid")" asp-for="Parameters[parameter.Key].Value" type="number" />
+                                                <div class="invalid-feedback">@parameter.Value.ValidationMessage</div>
+                                                break;
+                                            case ParameterTypes.List:
+                                                <select class="form-control form-select @(parameter.Value.IsValid ? "" : "is-invalid")" asp-for="Parameters[parameter.Key].Value" asp-items="@(new SelectList(parameter.Value.Options, "Value", "Display"))"></select>
+                                                <div class="invalid-feedback">@parameter.Value.ValidationMessage</div>
+                                                break;
+                                            case ParameterTypes.Date:
+                                                <input class="form-control @(parameter.Value.IsValid ? "" : "is-invalid")" asp-for="Parameters[parameter.Key].Value" type="date" />
+                                                <div class="invalid-feedback">@parameter.Value.ValidationMessage</div>
+                                                break;
+                                            case ParameterTypes.Boolean:
+                                                <input class="form-check-input @(parameter.Value.IsValid ? "" : "is-invalid")" asp-for="Parameters[parameter.Key].Value" type="checkbox" data-toggle="toggle" data-on="Yes" data-off="No" />
+                                                <div class="invalid-feedback">@parameter.Value.ValidationMessage</div>
+                                                break;
+                                        }
+                                    </div>
+                                </div>
+                            }
+                            else
+                            {
+                                <input asp-for="Parameters[parameter.Key].Value" type="hidden" />
+                            }
+                        }
+                    }
+                </div>
+                <div class="form-row">
+                    <div class="col-12">
+                        <button id="btnGenerate" class="btn btn-primary float-right m-2" type="submit" asp-action="Definition">
+                            <span class="bi-play-circle"></span>
+                            Generate
+                        </button>
+                        <a class="btn btn-secondary float-right m-2" asp-action="Definition" asp-route-name="@Model.Name">
+                            <span class="bi-x-circle"></span>
+                            Reset
+                        </a>
+                        <button id="btnPrint" class="btn float-right m-2 @(String.IsNullOrWhiteSpace(Model.Result) ? "disabled btn-outline-secondary" : "btn-secondary")" type="button" @(String.IsNullOrWhiteSpace(Model.Result) ? "disabled" : "") onclick="$('#results').printThis({removeInline: true, importCSS: false})">
+                            <span class="bi-printer"></span>
+                            Print Results
+                        </button>
+                        <button id="btnCopy" class="btn float-right m-2 @(String.IsNullOrWhiteSpace(Model.Result) ? "disabled btn-outline-secondary" : "btn-secondary")" type="button" @(String.IsNullOrWhiteSpace(Model.Result) ? "disabled" : "") onclick="CopyToClipboard('#results')">
+                            <span class="bi-file-text"></span>
+                            Copy Results
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div>
         @if (!String.IsNullOrEmpty(Model.Result))
         {
-            <div class="font-weight-bold">Results</div>
-            <div class="border p-2" style="overflow: auto; min-height: 200px;">
-                @if (Model.OutputFormat == OutputFormats.Text)
+            <h5>Results</h5>
+            <div class="border p-2" style="overflow: auto;">
+                @switch (Model.OutputFormat)
                 {
-                    <pre class="col-12">@Model.Result</pre>
+                    case OutputFormats.Text:
+                    <pre class="col-12" id="results">@Model.Result</pre>
+                    break;
+                    case OutputFormats.Html:
+                    <div id="results">@Html.Raw(Model.Result)</div>
+                    break;
+                    case OutputFormats.Image:
+                    <img src="data:image/Png;base64,@Model.Result" />
+                    break;
+
                 }
-                else
-                {
-                    @Html.Raw(Model.Result)
-                }
+                 
             </div>
         }
         @if (!String.IsNullOrEmpty(Model.ErrorMessage))
         {
-            <div class="font-weight-bold text-danger">Error</div>
+            <h5 class="text-danger">Error</h5>
             <div class="border p-2 border-danger">
                 <pre class="col-12">@Model.ErrorMessage</pre>
             </div>
         }
     </div>
-</form>
+</div>

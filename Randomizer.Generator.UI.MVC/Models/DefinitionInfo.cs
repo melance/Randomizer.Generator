@@ -17,6 +17,7 @@ namespace Randomizer.Generator.UI.MVC.Models
 		public String Url { get; set; }
 		public List<String> Tags { get; set; }
 		public String FileName { get; set; }
+		public String ErrorMessage { get; set; }
 
 		public static implicit operator DefinitionInfo(BaseDefinition definition)
 		{

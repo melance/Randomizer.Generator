@@ -15,43 +15,47 @@ namespace Randomizer.Generator.DotNet
 		public String DLLPath { get; set; }
 		public String ClassName { get; set; }
 		public String MethodName { get; set; }
+		public override Boolean SupportsParameters => true;
 
 		public override String Generate()
 		{
-			ExceptionDispatchInfo edi;
-			try
+			ExceptionDispatchInfo edi = null;
+			if (ValidateParameters())
 			{
-				base.Generate();
-				var dll = Assembly.LoadFile(DLLPath);
-
-				
-				
-				foreach (Type type in dll.ExportedTypes)
+				try
 				{
-					if (type.FullName.Equals(ClassName))
+
+					var dll = Assembly.LoadFile(DLLPath);
+					foreach (Type type in dll.ExportedTypes)
 					{
-						foreach (var method in type.GetMethods())
+						if (type.FullName.Equals(ClassName))
 						{
-							if (method.Name.Equals(GetMethodName()))
+							foreach (var method in type.GetMethods())
 							{
-								var args = new List<Object>();								
-								foreach (var parameter in method.GetParameters())
+								if (method.Name.Equals(GetMethodName()))
 								{
-									args.Add(Convert.ChangeType(Parameters[parameter.Name].TypedValue, parameter.ParameterType));
+									var args = new List<Object>();
+									foreach (var parameter in method.GetParameters())
+									{
+										if (Parameters.ContainsKey(parameter.Name))
+											args.Add(Convert.ChangeType(Parameters[parameter.Name].TypedValue, parameter.ParameterType));
+										else if (parameter.IsOptional)
+											args.Add(null);
+									}
+									return method.Invoke(null, args.ToArray()).ToString();
 								}
-								return method.Invoke(null, args.ToArray()).ToString();
 							}
 						}
 					}
+					throw new Exception("Could not locate the class.");
 				}
-				throw new Exception("Could not locate the class.");
-			}
-			catch (Exception ex)
-			{
-				edi = ExceptionDispatchInfo.Capture(ex);
-				ex.Data.Add(nameof(DLLPath), DLLPath);
-				ex.Data.Add(nameof(ClassName), ClassName);
-				ex.Data.Add(nameof(MethodName), MethodName);
+				catch (Exception ex)
+				{
+					edi = ExceptionDispatchInfo.Capture(ex);
+					ex.Data.Add(nameof(DLLPath), DLLPath);
+					ex.Data.Add(nameof(ClassName), ClassName);
+					ex.Data.Add(nameof(MethodName), MethodName);
+				} 
 			}
 			if (edi != null) edi.Throw();
 			return String.Empty;

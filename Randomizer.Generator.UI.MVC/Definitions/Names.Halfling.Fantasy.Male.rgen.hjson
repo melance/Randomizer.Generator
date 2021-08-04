@@ -1,0 +1,379 @@
+Name: Halfling Fantasy Names Male
+Author: Lance Boudreaux
+Description: Generates fantasy style masculine names for Halfling
+Version: "1.0"
+Tags: 
+[	
+	Fantasy
+	Name
+]
+OutputFormat: Text
+ShowInList: 0
+Parameters:
+{
+}
+LineItems:
+{
+	Start:
+	[
+		{ Content: "Al[AL]" }
+		{ Content: "An[AN]" }
+		
+		{ Content: "Be[BE]" }
+		{ Content: "Bo[BO]" }
+		
+		{ Content: "Ca[CA]" }
+		{ Content: "Co[CO]" }
+		
+		{ Content: "Da[DA]" }
+		
+		{ Content: "Ed[ED]" }
+		{ Content: "Eg[EG]" }
+		{ Content: "Er[ER]" }
+		
+		{ Content: "Fi[FI]" }
+		{ Content: "Fr[FR]" }
+		
+		{ Content: "Ga[GA]" }
+		{ Content: "Gi[GI]" }
+		{ Content: "Go[GO]" }
+		
+		{ Content: "Ha[HA]" }
+		
+		{ Content: "La[LA]" }
+		{ Content: "Le[LE]" }
+		{ Content: "Ly[LY]" }
+		
+		{ Content: "Me[ME]" }
+		{ Content: "Mi[MI]" }
+		{ Content: "Mo[MO]" }
+		
+		{ Content: "Ne[NE]" }
+		
+		{ Content: "Os[OS]" }
+		
+		{ Content: "Pe[PE]" }
+		{ Content: "Po[PO]" }
+		
+		{ Content: "Re[RE]" }
+		{ Content: "Ro[RO]" }
+		
+		{ Content: "Sa[SA]" }
+		{ Content: "Sh[SH]" }
+		
+		{ Content: "Tye" }
+		
+		{ Content: "Ul[UL]" }
+		
+		{ Content: "We[WE]" }
+	]
+	
+	## A ##
+	AL:
+	[
+		{ Content: "to[TO]" }
+	]
+	AN:
+	[
+		{ Content: "de[DE]" }
+		{ Content: "kl[KL]" }
+	]
+	AR:
+	[
+		{ Content: "do[DO]" }
+		{ Content: "t" }
+	]
+	
+	## B ##
+	BE:
+	[
+		{ Content: "rn[RN]" }
+	]
+	BI:
+	[		
+		{ Content: "in" }
+		{ Content: "it" }
+		{ Content: "n" }
+	]
+	BO:
+	[
+		{ Content: "bi[BI]" }
+		{ Content: "rn" }
+	]
+		
+	## C ##
+	CA:
+	[
+		{ Content: "de" }
+		{ Content: "ll[LL]" }
+		{ Content: "n" }
+	]
+	CO:
+	[
+		{ Content: "rr[RR]" }
+	]
+	
+	## D ##
+	DA:
+	[
+		{ Content: "nn[NN]" }
+	]
+	DE:
+	[
+		{ Content: "r" }
+		{ Content: "s" }
+	]
+	DI:
+	[
+		{ Content: "e" }
+	]
+	DO:
+	[
+		{ Content: "n" }
+	]
+	
+	## E ##
+	ED:
+	[
+		{ Content: "di[DI]" }
+	]
+	EG:
+	[
+		{ Content: "ar[AR]" }
+	]
+	ER:
+	[
+		{ Content: "ri[RI]" }
+		{ Content: "t" }
+	]
+		
+	## F ##
+	FI:
+	[
+		{ Content: "ld" }
+		{ Content: "nn[NN]" }
+	]
+	FR:
+	[
+		{ Content: "an[AN]" }
+	]
+	
+	## G ##
+	GA:
+	[
+		{ Content: "rr[RR]" }
+		{ Content: "rt[RT]" }
+	]
+	GI:
+	[
+		{ Content: "lb[LB]" }
+	]
+	GO:
+	[
+		{ Content: "b" }
+	]
+	
+	## H ##
+	HA:
+	[
+		{ Content: "ro[RO]" }
+	]
+	
+	## I ##
+	IE:
+	[
+		{ Content: "l" }
+	]
+	
+	## J ##
+	
+	## K ##
+	KL:
+	[
+		{ Content: "in" }
+	]
+	
+	## L ##
+	LA:
+	[
+		{ Content: "za[ZA]" }
+	]
+	LB:
+	[
+		{ Content: "er[ER]" }
+	]
+	LD:
+	[
+		{ Content: "o" }
+	]
+	LE:
+	[
+		{ Content: "rr[RR]" }
+	]
+	LL:
+	[
+		{ Content: "by" }
+		{ Content: "en" }
+		{ Content: "us" }
+	]
+	LY:
+	[
+		{ Content: "le" }
+	]
+	
+	## M ##
+	ME:
+	[
+		{ Content: "rr[RR]" }
+	]
+	MI:
+	[
+		{ Content: "ca[CA]" }
+	]
+	MO:
+	[
+		{ Content: "rr[RR]" }
+	]
+	
+	## N ##
+	ND:
+	[
+		{ Content: "el" }
+	]
+	NE:
+	[
+		{ Content: "bi[BI]" }
+		{ Content: "vi[VI]" }
+	]
+	NN:
+	[
+		{ Content: "an" }
+		{ Content: "ed" }
+		{ Content: "er" }
+		{ Content: "ie[IE]" }
+	]
+	
+	## O ##
+	OS:
+	[
+		{ Content: "bo[BO]" }
+		{ Content: "tr[TR]" }
+		{ Content: "wa[WA]" }
+	]
+	
+	## P ##
+	PE:
+	[
+		{ Content: "rr[RR]" }
+	]
+	PO:
+	[
+		{ Content: "pp[PP]" }
+	]
+	PP:
+	[
+		{ Content: "in" }
+		{ Content: "y" }
+	]
+	
+	## Q ##
+	
+	## R ##
+	RE:
+	[
+		{ Content: "ed" }
+	]
+	RI:
+	[
+		{ Content: "ch" }
+	]
+	RN:
+	[
+		{ Content: "ie" }
+	]
+	RO:
+	[
+		{ Content: "l" }
+		{ Content: "ld" }
+		{ Content: "sc[SC]" }
+	]
+	RR:
+	[
+		{ Content: "et" }
+		{ Content: "ic" }
+		{ Content: "il" }
+		{ Content: "in" }
+		{ Content: "y" }
+	]
+	RT:
+	[
+		{ Content: "h" }
+	]
+	
+	## S ##
+	SA:
+	[
+		{ Content: "m" }
+		{ Content: "mwi[WI]" }
+	]
+	SC:
+	[
+		{ Content: "oe" }
+	]
+	SH:
+	[
+		{ Content: "ar[AR]" }
+	]
+	
+	## T ##
+	TO:
+	[
+		{ Content: "n" }
+	]
+	TR:
+	[
+		{ Content: "an" }
+	]
+	
+	## U ##
+	UL:
+	[
+		{ Content: "mo" }
+	]
+	
+	## V ##
+	VI:
+	[
+		{ Content: "l" }
+	]
+	
+	## W ##
+	WA:
+	[
+		{ Content: "ld" }
+		{ Content: "lt" }
+	]
+	WE:
+	[
+		{ Content: "ll[LL]" }
+		{ Content: "nd[ND]" }
+		{ Content: "nn[NN]" }
+		{ Content: "s" }
+	]
+	WI:
+	[
+		{ Content: "se" }
+	]
+	
+	## X ##
+	
+	## Y ##
+	
+	## Z ##
+	ZA:
+	[
+		{ Content: "m" }
+		{ Content: "s" }
+	]
+}
+GeneratorType: Assignment

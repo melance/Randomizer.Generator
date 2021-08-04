@@ -20,17 +20,68 @@ namespace Randomizer.Generator.Table
 		[JsonProperty(Order = 101)]
 		public String Output { get; set; }
 		private InsensitiveDictionary<Object> Values { get; } = new();
+		public override Boolean SupportsParameters => true;
 		#endregion
 
 		#region Public Methods
 		public override String Generate()
 		{
-			Values.Clear();
+			if (ValidateParameters())
+			{
+				Values.Clear();
+				foreach (var table in Tables)
+				{
+					EvaluateTable(table.Key, table.Value);
+				}
+				return PopulateOutput(); 
+			}
+			return String.Empty;
+		}
+
+		public override String Analyze(AnalyzeOptions options)
+		{
+			var analysis = new AnalysisWriter(base.Analyze(options));
+
+			analysis.AppendHeader("Table");
+			analysis.AppendItemValue("Table Count", Tables.Count);
+			analysis.AppendHeader("Output");
+			analysis.AppendLine(Output);
+			analysis.AppendHeader("Tables");
+
 			foreach (var table in Tables)
 			{
-				EvaluateTable(table.Key, table.Value);
+				analysis.AppendItemValue("Name", table.Key);
+				analysis.AppendItemValue("Table Type", table.Value.GetType().Name);
+				analysis.AppendItemValue("Skip Table", table.Value.SkipTable);
+				analysis.AppendItemValue("Repeat", table.Value.Repeat);
+				analysis.AppendItemValue("Repeat Join", table.Value.RepeatJoin);
+				analysis.AppendItemValue("Enumerate Repeat", table.Value.EnumerateRepeat);
+				switch (table.Value.GetType().Name)
+				{
+					case "LoopTable":
+						var loopTable = (LoopTable)table.Value;
+						analysis.AppendItemValue("Key Column", loopTable.KeyColumn);
+						break;
+					case "RandomTable":
+						var randomTable = (RandomTable)table.Value;
+						analysis.AppendItemValue("Roll Column", randomTable.RollColumn);
+						analysis.AppendItemValue("Modifier", randomTable.Modifier);
+						break;
+					case "SelectTable":
+						var selectTable = (SelectTable)table.Value;
+						analysis.AppendItemValue("Select Column", selectTable.SelectColumn);
+						analysis.AppendItemValue("Select Value", selectTable.SelectValue);
+						break;
+				}
+				analysis.AppendLine();
+				if (options.HasFlag(AnalyzeOptions.IterateItems))
+				{
+					analysis.AppendLine(table.Value.Table);
+					analysis.AppendLine();
+				}
 			}
-			return PopulateOutput();
+
+			return analysis.ToString();
 		}
 		#endregion
 
@@ -134,7 +185,7 @@ namespace Randomizer.Generator.Table
 					e.Result = true;
 					break;
 			}
-		} 
+		}
 		#endregion
 	}
 }

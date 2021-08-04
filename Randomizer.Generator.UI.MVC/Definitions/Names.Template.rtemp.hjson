@@ -1,0 +1,74 @@
+Name: Human Fantasy Names Family
+Author: Lance Boudreaux
+Description: Generates fantasy style family names for humans
+Version: "1.0"
+Tags: 
+[	
+	Fantasy
+	Name
+]
+OutputFormat: Text
+ShowInList: false
+Parameters:
+{
+}
+LineItems:
+{
+	Start:
+	[
+		
+	]
+	
+	## A ##
+	
+	## B ##
+		
+	## C ##
+	
+	## D ##
+	
+	## E ##
+		
+	## F ##
+	
+	## G ##
+	
+	## H ##
+	
+	## I ##
+	
+	## J ##
+	
+	## K ##
+	
+	## L ##
+	
+	## M ##
+	
+	## N ##
+	
+	## O ##
+	
+	## P ##
+	
+	## Q ##
+	
+	## R ##
+	
+	## S ##
+	
+	## T ##
+	
+	## U ##
+	
+	## V ##
+	
+	## W ##
+	
+	## X ##
+	
+	## Y ##
+	
+	## Z ##
+}
+GeneratorType: Assignment

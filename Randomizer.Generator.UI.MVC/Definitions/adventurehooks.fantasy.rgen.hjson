@@ -1,1020 +1,184 @@
+Name: Adventure Hooks (Fantasy)
+Author: Lance Boudreaux
+Description: A fantasy adventure hook generator.
+Version: "2.0"
+Tags:
+[
+	Encounters
+	Fantasy
+]
+OutputFormat: Text
+Parameters: {}
+TextCase: Sentence
+ShowInList: false
+Imports:
+[
+	DnD Monsters by Size
+]
+LineItems:
 {
-  Name: Adventure Hooks (Fantasy)
-  Author: Lance Boudreaux
-  Description: A fantasy adventure hook generator.
-  Version: "2.0"
-  URL: "https://google.com"
-  Tags:
-  [
-    Encounters
-    Fantasy
-  ]
-  OutputFormat: Text
-  Parameters: {}
-  TextCase: Sentence
-  Imports:
-  [
-    "DnD Monsters by Size"
-  ]
-  LineItems:
-  {
-    Start:
-    [
-      {
-        Content: A(n) [LargeMonster] [Action]s a nearby [Settlement].
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Forbidden lovers from a nearby [Settlement] run away to a [DangerousLocation].
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: The adventurers must protect a(n) [Person] from a(n) [Person].
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: A local [Person] is suspected of kidnapping people.
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: A local [Person] claims to have been attacked by a [Monster] on the road.
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: A cult is abducting people for sacrifices.
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Strange lights and sounds come from a(n) [DangerousLocation].
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: A dying [Person] claims to have found a mother lode of [Mineral].
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: A cursed item comes to the adventurers passing on a corruption.
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: A demon possesses a(n) [Person] to fulfill an ancient obligation made with a [Person] no longer alive.
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: A friend asks for help in settling a duel of honor.
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: A respected [Person] is accused of serious crimes; is it a frame up?
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Rumors are spreading of a [Person] who has returned from the dead.
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: A killer stalks a [Settlement] at night.
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: A(n) [Person] has become lost in a(n) [DangerousLocation] and need help.
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: "[Monster]s are gathering in large numbers near a local [Settlement]."
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: The nobles of a local [Settlement] are calling for help to find thieves that stole their riches.
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: A group of undead have begun guarding a(n) [DangerousLocation].
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: A local [Settlement] has been devastated by a mysterious [NaturalDisaster].
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: The group is asked to escort a caravan through dangerous territory.
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: The local rulers plan to execute a friend of one of the adventurers.
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: A local [Person] is accused of governmental corruption
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: A conflict errupts between a group of [Monster]s and [Monster]s.
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: On their deathbed, a(n) [Person] asks for help achieving a final task.
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: All of the citizens of a local [Settlement] have mysteriously disappeared.
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Two [Settlement]s are contesting who has rights to a local mine.
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Rumors arise of a [Monster] in the nearby forest.
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: A(n) [Person] is seeing the near future, they foresee a [NaturalDisaster] in the local [Settlement]
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: A mage is granting wishes to anyone willing to pay.
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: The daughter of a noble has run away to an enemy [Settlement].
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: All of the mages in the nearby area have lost their ability to cast spells.
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: All of the soldiers in a nearby [Settlement] have fallen into a magical sleep just as an army gathers outside.
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: A(n) [Settlement] suffering from a plague say they were cursed.
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: The adventurers awaken with short term memory loss.
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: A [Person] claiming to have information about a recent murder turns up dead.
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: A ship of undead arrive at the docks but do not disembark.
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-    ]
-    NaturalDisaster:
-    [
-      {
-        Content: tornado
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: hurricane
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: earthquake
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: storm
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: sandstorm
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: blizzard
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: locust swarm
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: fire
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: tsunami
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: wildfire
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: disease
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: plague
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: hail
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: sinkhole
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: drought
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: crop blight
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: cattle plague
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-    ]
-    LargeMonster:
-    [
-      {
-        Content: "[Large]"
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: "[Huge]"
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: "[Gargantuan]"
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: "[Colossal]"
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-    ]
-    Mineral:
-    [
-      {
-        Content: copper
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: silver
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: gold
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: platinum
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: iron
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: lead
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: tin
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: mercury
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: adamantine
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: mithril
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: obsidian
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: orichalcum
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-    ]
-    Action:
-    [
-      {
-        Content: attack
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: terrorize
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: stalk
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: threaten
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: inhabit
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: leave
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-    ]
-    Settlement:
-    [
-      {
-        Content: town
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: city
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: hamlet
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: kingdom
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: settlement
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: castle
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-    ]
-    DangerousLocation:
-    [
-      {
-        Content: ruin
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: dungeon
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: abandoned castle
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: abandoned mine
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: wizard's tower
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: haunted woods
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-    ]
-    Person:
-    [
-      {
-        Content: adventurer
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: archer
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: bandit
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: barbarian
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: baron
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: beggar
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: bishop
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: blacksmith
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: cardinal
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: champion
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: cleric
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: cooper
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: courier
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: druid
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: dwarf
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: elf
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: farmer
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: fool
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: gypsy
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: hangman
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: henchman
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: hunter
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: jester
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: knave
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: king
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: knight
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: lady
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: lord
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: maiden
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: mariner
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: mercenary
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: merchant
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: messenger
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: noble
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: nobleman
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: paladin
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: pedlar
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: potter
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: priest
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: prince
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: ranger
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: rogue
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: queen
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: sailer
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: scoundrel
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: soldier
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: sorcerer
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: thief
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: undertaker
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: vagabond
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: warrior
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: wizard
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-    ]
-  }
-  GeneratorType: Assignment
+	Start:
+	[
+		{ Content: "A(n) [LargeMonster] [Action]s a nearby [Settlement]." }
+		{ Content: "Forbidden lovers from a nearby [Settlement] run away to a [DangerousLocation]." }
+		{ Content: "The adventurers must protect a(n) [Person] from a(n) [Person]." }
+		{ Content: "A local [Person] is suspected of kidnapping people." }
+		{ Content: "A local [Person] claims to have been attacked by a [Monster] on the road." }
+		{ Content: "A cult is abducting people for sacrifices." }
+		{ Content: "Strange lights and sounds come from a(n) [DangerousLocation]." }
+		{ Content: "A dying [Person] claims to have found a mother lode of [Mineral]." }
+		{ Content: "A cursed item comes to the adventurers passing on a corruption." }
+		{ Content: "A demon possesses a(n) [Person] to fulfill an ancient obligation made with a [Person] no longer alive." }
+		{ Content: "A friend asks for help in settling a duel of honor." }
+		{ Content: "A respected [Person] is accused of serious crimes; is it a frame up?" }
+		{ Content: "Rumors are spreading of a [Person] who has returned from the dead." }
+		{ Content: "A killer stalks a [Settlement] at night." }
+		{ Content: "A(n) [Person] has become lost in a(n) [DangerousLocation] and need help." }
+		{ Content: "[Monster]s are gathering in large numbers near a local [Settlement]." }
+		{ Content: "The nobles of a local [Settlement] are calling for help to find thieves that stole their riches." }
+		{ Content: "A group of undead have begun guarding a(n) [DangerousLocation]." }
+		{ Content: "A local [Settlement] has been devastated by a mysterious [NaturalDisaster]." }
+		{ Content: "The group is asked to escort a caravan through dangerous territory." }
+		{ Content: "The local rulers plan to execute a friend of one of the adventurers." }
+		{ Content: "A local [Person] is accused of governmental corruption" }
+		{ Content: "A conflict errupts between a group of [Monster]s and [Monster]s." }
+		{ Content: "On their deathbed, a(n) [Person] asks for help achieving a final task." }
+		{ Content: "All of the citizens of a local [Settlement] have mysteriously disappeared." }
+		{ Content: "Two [Settlement]s are contesting who has rights to a local mine." }
+		{ Content: "Rumors arise of a [Monster] in the nearby forest." }
+		{ Content: "A(n) [Person] is seeing the near future, they foresee a [NaturalDisaster] in the local [Settlement]" }
+		{ Content: "A mage is granting wishes to anyone willing to pay." }
+		{ Content: "The daughter of a noble has run away to an enemy [Settlement]." }
+		{ Content: "All of the mages in the nearby area have lost their ability to cast spells." }
+		{ Content: "All of the soldiers in a nearby [Settlement] have fallen into a magical sleep just as an army gathers outside." }
+		{ Content: "A(n) [Settlement] suffering from a plague say they were cursed." }
+		{ Content: "The adventurers awaken with short term memory loss." }
+		{ Content: "A [Person] claiming to have information about a recent murder turns up dead." }
+		{ Content: "A ship of undead arrive at the docks but do not disembark." }
+	]
+	NaturalDisaster:
+	[
+		{ Content: "tornado" }
+		{ Content: "hurricane" }
+		{ Content: "earthquake" }
+		{ Content: "storm" }
+		{ Content: "sandstorm" }
+		{ Content: "blizzard" }
+		{ Content: "locust swarm" }
+		{ Content: "fire" }
+		{ Content: "tsunami" }
+		{ Content: "wildfire" }
+		{ Content: "disease" }
+		{ Content: "plague" }
+		{ Content: "hail" }
+		{ Content: "sinkhole" }
+		{ Content: "drought" }
+		{ Content: "crop blight" }
+		{ Content: "cattle plague" }
+	]
+	LargeMonster:
+	[
+		{ Content: "[Large]" }
+		{ Content: "[Huge]" }
+		{ Content: "[Gargantuan]" }
+		{ Content: "[Colossal]" }
+	]
+	Mineral:
+	[
+		{ Content: "copper" }
+		{ Content: "silver" }
+		{ Content: "gold" }
+		{ Content: "platinum" }
+		{ Content: "iron" }
+		{ Content: "lead" }
+		{ Content: "tin" }
+		{ Content: "mercury" }
+		{ Content: "adamantine" }
+		{ Content: "mithril" }
+		{ Content: "obsidian" }
+		{ Content: "orichalcum" }
+	]
+	Action:
+	[
+		{ Content: "attack" }
+		{ Content: "terrorize" }
+		{ Content: "stalk" }
+		{ Content: "threaten" }
+		{ Content: "inhabit" }
+		{ Content: "leave" }
+	]
+	Settlement:
+	[
+		{ Content: "town" }
+		{ Content: "city" }
+		{ Content: "hamlet" }
+		{ Content: "kingdom" }
+		{ Content: "settlement" }
+		{ Content: "castle" }
+	]
+	DangerousLocation:
+	[
+		{ Content: "ruin" }
+		{ Content: "dungeon" }
+		{ Content: "abandoned castle" }
+		{ Content: "abandoned mine" }
+		{ Content: "wizard's tower" }
+		{ Content: "haunted woods" }
+	]
+	Person:
+	[
+		{ Content: "adventurer" }
+		{ Content: "archer" }
+		{ Content: "bandit" }
+		{ Content: "barbarian" }
+		{ Content: "baron" }
+		{ Content: "beggar" }
+		{ Content: "bishop" }
+		{ Content: "blacksmith" }
+		{ Content: "cardinal" }
+		{ Content: "champion" }
+		{ Content: "cleric" }
+		{ Content: "cooper" }
+		{ Content: "courier" }
+		{ Content: "druid" }
+		{ Content: "dwarf" }
+		{ Content: "elf" }
+		{ Content: "farmer" }
+		{ Content: "fool" }
+		{ Content: "gypsy" }
+		{ Content: "hangman" }
+		{ Content: "henchman" }
+		{ Content: "hunter" }
+		{ Content: "jester" }
+		{ Content: "knave" }
+		{ Content: "king" }
+		{ Content: "knight" }
+		{ Content: "lady" }
+		{ Content: "lord" }
+		{ Content: "maiden" }
+		{ Content: "mariner" }
+		{ Content: "mercenary" }
+		{ Content: "merchant" }
+		{ Content: "messenger" }
+		{ Content: "noble" }
+		{ Content: "nobleman" }
+		{ Content: "paladin" }
+		{ Content: "pedlar" }
+		{ Content: "potter" }
+		{ Content: "priest" }
+		{ Content: "prince" }
+		{ Content: "ranger" }
+		{ Content: "rogue" }
+		{ Content: "queen" }
+		{ Content: "sailer" }
+		{ Content: "scoundrel" }
+		{ Content: "soldier" }
+		{ Content: "sorcerer" }
+		{ Content: "thief" }
+		{ Content: "undertaker" }
+		{ Content: "vagabond" }
+		{ Content: "warrior" }
+		{ Content: "wizard" }
+	]
 }
+GeneratorType: Assignment

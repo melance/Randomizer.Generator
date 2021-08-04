@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Randomizer.Generator.Exceptions
 {
-    class MaxLoopCountException : Exception
-    {
+    class MaxLoopCountException : RandomizerGeneratorException
+	{
         /// <summary>
         /// Thrown when an assignment generator enters the Evaluate method too many times
         /// </summary>

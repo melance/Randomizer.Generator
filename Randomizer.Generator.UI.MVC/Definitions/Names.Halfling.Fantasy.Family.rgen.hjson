@@ -1,0 +1,108 @@
+Name: Halfling Fantasy Names Family
+Author: Lance Boudreaux
+Description: Generates fantasy style family names for halfling
+Version: "1.0"
+Tags: 
+[	
+	Fantasy
+	Name
+]
+OutputFormat: Text
+ShowInList: false
+Parameters:
+{
+}
+LineItems:
+{
+	Start:
+	[
+		{ Content: "Apple[Suffix]" }
+		{ Content: "Big[Suffix]" }
+		{ Content: "Bright[Suffix]" }
+		{ Content: "Brush[Suffix]" }
+		{ Content: "Cherry[Suffix]" }
+		{ Content: "Deep[Suffix]" }
+		{ Content: "Elder[Suffix]" }
+		{ Content: "Fast[Suffix]" }
+		{ Content: "Fat[Suffix]" }
+		{ Content: "Fleet[Suffix]" }
+		{ Content: "Glen[Suffix]" }
+		{ Content: "Good[Suffix]" }
+		{ Content: "High[Suffix]" }
+		{ Content: "Hog[Suffix]" }
+		{ Content: "Honey[Suffix]" }
+		{ Content: "Jam[Suffix]" }
+		{ Content: "Kettle[Suffix]" }
+		{ Content: "Lea[Suffix]" }
+		{ Content: "Little[Suffix]" }
+		{ Content: "Nimble[Suffix]" }
+		{ Content: "Porridge[Suffix]" }
+		{ Content: "Quick[Suffix]" }
+		{ Content: "Reed[Suffix]" }
+		{ Content: "Shadow[Suffix]" }
+		{ Content: "Smooth[Suffix]" }
+		{ Content: "Stone[Suffix]" }
+		{ Content: "Stout[Suffix]" }
+		{ Content: "Strong[Suffix]" }
+		{ Content: "Sun[Suffix]" }
+		{ Content: "Swift[suffix]" }
+		{ Content: "Tall[Suffix]" }
+		{ Content: "Tea[Suffix]" }
+		{ Content: "Ten[Suffix]" }
+		{ Content: "Thistle[Suffix]" }
+		{ Content: "Thorn[Suffix]" }
+		{ Content: "Toss[Suffix]" }
+		{ Content: "Under[Suffix]" }
+		{ Content: "Warm[Suffix]" }
+		{ Content: "Whisper[Suffix]" }
+		{ Content: "Wild[Suffix]" }
+		{ Content: "Wise[Suffix]" }
+		
+		{ Content: "[=TCase(Generate('Colors', 'Swatch=ColorSwatchMetal'))][Suffix]" }
+		{ Content: "[=TCase(Generate('Colors', 'Swatch=ColorSwatchBasic'))][Suffix]" }
+	]
+	
+	Suffix:
+	[
+		{ Content: "acre" }
+		{ Content: "barrel" }
+		{ Content: "berry" }
+		{ Content: "blossom" }
+		{ Content: "bones" }
+		{ Content: "bottle" }
+		{ Content: "bough" }
+		{ Content: "bridge" }
+		{ Content: "cheeks" }
+		{ Content: "cloak" }
+		{ Content: "cobble" }
+		{ Content: "collar" }
+		{ Content: "earth" }
+		{ Content: "fellow" }
+		{ Content: "fingers" }
+		{ Content: "foot" }
+		{ Content: "found" }
+		{ Content: "gage" }
+		{ Content: "gallow" }
+		{ Content: "gather" }
+		{ Content: "hands" }
+		{ Content: "heart" }		
+		{ Content: "hill" }
+		{ Content: "hollow" }
+		{ Content: "jar" }
+		{ Content: "kettle" }
+		{ Content: "leaf" }
+		{ Content: "man" }
+		{ Content: "meadow" }
+		{ Content: "moon" }
+		{ Content: "mouse" }
+		{ Content: "penny" }
+		{ Content: "pot" }
+		{ Content: "rabbit" }
+		{ Content: "step" }
+		{ Content: "top" }
+		{ Content: "topple" }
+		{ Content: "water" }
+		{ Content: "whistle" }
+	]	
+}
+GeneratorType: Assignment

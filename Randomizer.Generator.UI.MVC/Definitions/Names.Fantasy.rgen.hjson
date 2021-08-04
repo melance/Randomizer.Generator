@@ -1,0 +1,229 @@
+Name: Fantasy Names
+Author: Lance Boudreaux
+Description: Generates a fantasy name
+Remarks: The human names are very much based on English names.  I do plan to upgrade this definition to allow choosing what region you would like to have human names be based on.
+Version: "1.0"
+Tags: 
+[
+	Fantasy
+	Name
+]
+OutputFormat: Text
+ShowInList: True
+Parameters:
+{
+	Gender:
+	{
+		Value: Any
+		Display: Gender
+		Type: List
+		Options:
+		[
+			Any:Any
+			Male:Masculine
+			Female:Feminine
+		]
+	}
+	Race:
+	{
+		Value: AnyRace
+		Display: Race
+		Type: List
+		Options:
+		[
+			AnyRace:Any
+			Dragonborn
+			Dwarf
+			Elf
+			Gnome
+			Halfling:Halfling
+			HalfOrc:Half-Orc
+			Human
+			Tiefling
+			Nickname
+		]
+	}
+	FamilyName:
+	{
+		Value: true
+		Display: Include Family Name
+		Type: Boolean
+	}
+}
+LineItems:
+{
+	Start:
+	[
+		{ Content: "[[Race][Gender]]" }
+	]
+	
+	## Any Race
+	AnyRaceAny:
+	[
+		{ Content: "[DragonbornAny]" }
+		{ Content: "[DwarfAny]" }
+		{ Content: "[ElfAny]" }
+		{ Content: "[GnomeAny]" }
+		{ Content: "[HalflingAny]" }
+		{ Content: "[HalfOrcAny]" }
+		{ Content: "[TieflingAny]" }
+		{ Content: "[HumanAny]" }
+	]
+	AnyRaceFemale:
+	[
+		{ Content: "[DragonbornFemale]" }
+		{ Content: "[DwarfFemale]" }
+		{ Content: "[ElfFemale]" }
+		{ Content: "[GnomeFemale]" }
+		{ Content: "[HalflingFemale]" }
+		{ Content: "[HalfOrcFemale]" }
+		{ Content: "[TieflingFemale]" }
+		{ Content: "[HumanFemale]" }
+	]
+	AnyRaceMale:
+	[
+		{ Content: "[DragonbornMale]" }
+		{ Content: "[DwarfMale]" }
+		{ Content: "[ElfMale]" }
+		{ Content: "[GnomeMale]" }
+		{ Content: "[HalflingMale]" }
+		{ Content: "[HalfOrcMale]" }
+		{ Content: "[TieflingMale]" }
+		{ Content: "[HumanMale]" }
+	]
+	
+	## Nicknames
+	NicknameAny:
+	[
+		{ Content: "[NicknameFemale]" }
+	]
+	NicknameMale:
+	[
+		{ Content: "[NicknameFemale]" }
+	]
+	NicknameFemale:
+	[
+		{ Content: "[=Generate('Nickname Fantasy Names')]" }
+	]
+	
+	## Dragonborn
+	DragonbornAny:
+	[
+		{ Content: "[DragonbornFemale]" }
+		{ Content: "[DragonbornMale]" }
+	]
+	DragonbornFemale:
+	[
+		{ Content: "[=if(FamilyName, Generate('Dragonborn Fantasy Names Clan') + ' ', '')][=Generate('Dragonborn Fantasy Names Female')]" }
+	]
+	DragonbornMale:
+	[
+		{ Content: "[=if(FamilyName, Generate('Dragonborn Fantasy Names Clan') + ' ', '')][=Generate('Dragonborn Fantasy Names Male')]" }
+	]
+
+	## Dwarf
+	DwarfAny:
+	[
+		{ Content: "[DwarfFemale]" }
+		{ Content: "[DwarfMale]" }
+	]
+	DwarfFemale:
+	[
+		{ Content: "[=Generate('Dwarf Fantasy Names Female')][=if(FamilyName, ' ' + Generate('Dwarf Fantasy Names Clan'), '')]" }
+	]
+	DwarfMale:
+	[
+		{ Content: "[=Generate('Dwarf Fantasy Names Male')][=if(FamilyName, ' ' + Generate('Dwarf Fantasy Names Clan'), '')]" }
+	]
+	
+	## Elf
+	ElfAny:
+	[
+		{ Content: "[ElfFemale]" }
+		{ Content: "[ElfMale]" }
+	]
+	ElfFemale:
+	[
+		{ Content: "[=Generate('Elf Fantasy Names Female')][=if(FamilyName, ' ' + Generate('Elf Fantasy Names Family'), '')]" }
+	]
+	ElfMale:
+	[
+		{ Content: "[=Generate('Elf Fantasy Names Male')][=if(FamilyName, ' ' + Generate('Elf Fantasy Names Family'), '')]" }
+	]
+	
+	## Gnome
+	GnomeAny:
+	[
+		{ Content: "[GnomeFemale]" }
+		{ Content: "[GnomeMale]" }
+	]
+	GnomeFemale:
+	[
+		{ Content: "[=Generate('Gnome Fantasy Names Female')][=if(FamilyName, ' ' + Generate('Gnome Fantasy Names Clan'), '')]" }
+	]
+	GnomeMale:
+	[
+		{ Content: "[=Generate('Gnome Fantasy Names Male')][=if(FamilyName, ' ' + Generate('Gnome Fantasy Names Clan'), '')]" }
+	]
+	
+	## Halfling
+	HalflingAny:
+	[
+		{ Content: "[HalflingFemale]" }
+		{ Content: "[HalflingMale]" }
+	]
+	HalflingFemale:
+	[
+		{ Content: "[=Generate('Halfling Fantasy Names Female')][=if(FamilyName, ' ' + Generate('Halfling Fantasy Names Family'), '')]" }
+	]
+	HalflingMale:
+	[
+		{ Content: "[=Generate('Halfling Fantasy Names Male')][=if(FamilyName, ' ' + Generate('Halfling Fantasy Names Family'), '')]" }		
+	]
+	
+	## Half-Orc
+	HalfOrcAny:
+	[
+		{ Content: "[HalfOrcFemale]" }
+		{ Content: "[HalfOrcMale]" }
+	]
+	HalfOrcFemale:
+	[
+		{ Content: "[=Generate('Half-Orc Fantasy Names Female')]" }
+	]
+	HalfOrcMale:
+	[
+		{ Content: "[=Generate('Half-Orc Fantasy Names Male')]" }
+	]
+	
+	## Human
+	HumanAny:
+	[
+		{ Content: "[HumanFemale]" }
+		{ Content: "[HumanMale]" }
+	]
+	HumanFemale:
+	[
+		{ Content: "[=Generate('Human Fantasy Names Female')][=if(FamilyName, ' ' + Generate('Human Fantasy Names Family'), '')]" }
+	]
+	HumanMale:
+	[
+		{ Content: "[=Generate('Human Fantasy Names Male')][=if(FamilyName, ' ' + Generate('Human Fantasy Names Family'), '')]" }
+	]
+	
+	## Tiefling
+	TieflingAny:
+	[
+		{ Content: "[TieflingFemale]" }
+		{ Content: "[TieflingMale]" }
+	]
+	TieflingFemale:
+	[
+		{ Content: "[=Generate('Tiefling Fantasy Names Female')]" }
+	]
+	TieflingMale:
+	[
+		{ Content: "[=Generate('Tiefling Fantasy Names Male')]" }
+	]
+}
+GeneratorType: Assignment

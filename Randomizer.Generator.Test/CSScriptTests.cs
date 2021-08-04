@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Randomizer.Generator.CScript;
+using Randomizer.Generator.DotNet;
 
 namespace Randomizer.Generator.Test
 {
@@ -12,7 +12,7 @@ namespace Randomizer.Generator.Test
 	public class CSScriptTests
 	{
 		[TestMethod()]
-		[TestCategory("CSScript")]
+		[TestCategory("DotNet")]
 		public void SimpleTest()
 		{
 			var generator = new DotNetDefinition()

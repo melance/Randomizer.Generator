@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Randomizer.Generator.Exceptions
 {
-    public class UnrecognizedGeneratorException : Exception
-    {
+    public class UnrecognizedGeneratorException : RandomizerGeneratorException
+	{
         public UnrecognizedGeneratorException(String generatorTypeName) : base($"Unrecognized generator type: {generatorTypeName}") { }
     }
 }

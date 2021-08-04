@@ -16,23 +16,25 @@ namespace Randomizer.Generator.Test
         /// </summary>
         public TestContext TestContext { get; set; }
 
-        [TestMethod]
+		[TestMethod]
 		[TestCategory("Serialization")]
 		public void AssignmentSerialize()
-        {
+		{
 			var generator = new AssignmentDefinition()
 			{
-				Version = new Version(1, 2, 3, 4)
+				Version = new Version(1, 2, 3, 4),
+				ShowInList = false
 			};
-            generator.LineItems.Add("Start", new LineItemList()
-            {
-                new LineItem() { Content = "Test", Next = "One" }
-            });
-            generator.LineItems.Add("One", new LineItemList()
-            {
-                new LineItem() { Content = "One Test", Weight = 10, Repeat = 2, Variable = "Var"},
-                new LineItem() { Content = "Two Test", Weight = 20, Repeat = 2, Variable = "Var"}
-            });
+			generator.LineItems.Add("Start", new LineItemList()
+			{
+				new LineItem() { Content = "Test", Next = "One" }
+			});
+			generator.LineItems.Add("One", new LineItemList()
+			{
+				new LineItem() { Content = "One Test", Weight = 10, Repeat = 2, Variable = "Var"},
+				new LineItem() { Content = "Two Test", Weight = 20, Repeat = 2, Variable = "Var"}
+			});
+			generator.PreProcessItems.Add(new PreProcessItem() { Variable = "One", Content = "My Content" });
             generator.Parameters.Add("Gender",
                                      new Parameter()
                                      {

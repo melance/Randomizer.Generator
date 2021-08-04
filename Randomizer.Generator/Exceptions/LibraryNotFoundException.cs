@@ -9,8 +9,8 @@ namespace Randomizer.Generator.Exceptions
     /// <summary>
     /// Thrown when a request for library returns null
     /// </summary>
-    public class LibraryNotFoundException : Exception
-    {
+    public class LibraryNotFoundException : RandomizerGeneratorException
+	{
         public LibraryNotFoundException(string name) : base($"Unable to locate the library named '{name}'")
         {
         }

@@ -4,7 +4,7 @@
     <TargetFramework>net5.0</TargetFramework>
     <ApplicationIcon>TheRandomizer.ico</ApplicationIcon>
     <Configurations>Debug;Release;Beta</Configurations>
-    <VersionSuffix>3.0.$([System.DateTime]::Now.ToString(MMdd)).$([System.DateTime]::Now.ToString(mmff))</VersionSuffix>
+    <VersionSuffix>4.0.$([System.DateTime]::Now.ToString(MMdd)).$([System.DateTime]::Now.ToString(mmff))</VersionSuffix>
     <AssemblyVersion Condition=" '$(VersionSuffix)' == '' ">0.0.0.1</AssemblyVersion>
     <AssemblyVersion Condition=" '$(VersionSuffix)' != '' ">$(VersionSuffix)</AssemblyVersion>
     <Version Condition=" '$(VersionSuffix)' == '' ">0.0.0.1</Version>
@@ -17,6 +17,7 @@
     <Description>The infinitely customizable random content generator.</Description>
     <Copyright>Lance Boudreaux 2021</Copyright>
     <AssemblyName>Rnd.Gen</AssemblyName>
+    <Version>4.0.0715.5237</Version>
   </PropertyGroup>
 
   <ItemGroup>

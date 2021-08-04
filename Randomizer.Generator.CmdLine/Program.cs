@@ -30,7 +30,7 @@ namespace Randomizer.Generator.CmdLine
         /// <param name="info">Displays information about the definition</param>
         /// <param name="textonly">When set to true, output simple text</param>
         static void Main(String path, Int32 repeat = 1, Boolean info = false, Boolean textonly = false, String[] args = null)
-        {
+        {			
             TextOnly = Console.IsOutputRedirected || textonly;
             if (!TextOnly)
             {
@@ -45,6 +45,7 @@ namespace Randomizer.Generator.CmdLine
                 WriteError($"File not found: {fullPath}");
             else
             {
+				DataAccess.DataAccess.Instance = new DataAccess.FileSystemDataAccess(Path.GetDirectoryName(fullPath));
                 BaseDefinition generator = BaseDefinition.Deserialize(File.ReadAllText(fullPath));
 
                 if (!TextOnly)
@@ -58,8 +59,8 @@ namespace Randomizer.Generator.CmdLine
                 else
                 {
                     Console.Write(generator.Name);
-                    if (generator.Version != null) Console.Write($"v{generator.Version}");
-                    if (!String.IsNullOrWhiteSpace(generator.Author)) Console.Write($"by {generator.Author}");
+                    if (generator.Version != null) Console.Write($" v{generator.Version}");
+                    if (!String.IsNullOrWhiteSpace(generator.Author)) Console.Write($" by {generator.Author}");
                     Console.WriteLine();                    
                 }
                 if (info)
@@ -82,66 +83,67 @@ namespace Randomizer.Generator.CmdLine
         static void ShowInfo(BaseDefinition generator)
         {
             Console.WriteLine("Generator Information");
-            Console.WriteLine(new String('-', 80));
+			Console.WriteLine(generator.Analyze(AnalyzeOptions.All));
+    //        Console.WriteLine(new String('-', 80));
 
-            Console.WriteLine(generator.Description);
-            Console.WriteLine();
+    //        Console.WriteLine(generator.Description);
+    //        Console.WriteLine();
           
-            Console.WriteLine($"Generator Type:   {generator.GetType().Name}");
-            Console.WriteLine($"Tags:             {String.Join(", ", generator.Tags)}");
-            Console.WriteLine($"Output Format:    {generator.OutputFormat}");
-            if (!String.IsNullOrWhiteSpace(generator.URL)) Console.WriteLine($"URL:              {generator.URL}");
+    //        Console.WriteLine($"Generator Type:   {generator.GetType().Name}");
+    //        Console.WriteLine($"Tags:             {String.Join(", ", generator.Tags)}");
+    //        Console.WriteLine($"Output Format:    {generator.OutputFormat}");
+    //        if (!String.IsNullOrWhiteSpace(generator.URL)) Console.WriteLine($"URL:              {generator.URL}");
 
-            if (generator.GetType() == typeof(Assignment.AssignmentDefinition))
-            {
-                var ad = (Assignment.AssignmentDefinition)generator;
-                Console.WriteLine($"Category Count:   {ad.LineItems.Count:#,##0}");
-                Console.WriteLine($"Line Item Count:  {ad.LineItems.Sum(kvp => kvp.Value.Count):#,##0}");
-				if (ad.Imports.Any())
-				{
-					Console.WriteLine("Imports:");
-					foreach (var import in ad.Imports)
-					{
-						Console.WriteLine($"\t{import}");
-					}
-				}
-            }
-            if (generator.GetType() == typeof(Phonotactics.PhonotacticsDefinition))
-            {
-                var pd = (Phonotactics.PhonotacticsDefinition)generator;
-                Console.WriteLine($"Definition Count: {pd.Definitions.Count:#,##0}");
-                Console.WriteLine($"Pattern Count:    {pd.Patterns.Count:#,##0}");
-            }
-            if (generator.GetType() == typeof(List.ListDefinition))
-            {
-                Console.WriteLine($"Item Count:       {((List.ListDefinition)generator).Items.Count:#:##0}");
-            }
+    //        if (generator.GetType() == typeof(Assignment.AssignmentDefinition))
+    //        {
+    //            var ad = (Assignment.AssignmentDefinition)generator;
+    //            Console.WriteLine($"Category Count:   {ad.LineItems.Count:#,##0}");
+    //            Console.WriteLine($"Line Item Count:  {ad.LineItems.Sum(kvp => kvp.Value.Count):#,##0}");
+				//if (ad.Imports.Any())
+				//{
+				//	Console.WriteLine("Imports:");
+				//	foreach (var import in ad.Imports)
+				//	{
+				//		Console.WriteLine($"\t{import}");
+				//	}
+				//}
+    //        }
+    //        if (generator.GetType() == typeof(Phonotactics.PhonotacticsDefinition))
+    //        {
+    //            var pd = (Phonotactics.PhonotacticsDefinition)generator;
+    //            Console.WriteLine($"Definition Count: {pd.Definitions.Count:#,##0}");
+    //            Console.WriteLine($"Pattern Count:    {pd.Patterns.Count:#,##0}");
+    //        }
+    //        if (generator.GetType() == typeof(List.ListDefinition))
+    //        {
+    //            Console.WriteLine($"Item Count:       {((List.ListDefinition)generator).Items.Count:#:##0}");
+    //        }
 
-            // Parameter table
-            if (generator.Parameters?.Count > 0)
-            {
-                Console.WriteLine();
-                Console.WriteLine("Parameters");
-                var nameWidth = Math.Max(generator.Parameters.Keys.Max(k => k.Length), "Name".Length) + 1;
-                var displayWidth = Math.Max(generator.Parameters.Values.Max(p => p.Display.Length), "Display".Length) + 1;
-                var typeWidth = Math.Max(generator.Parameters.Values.Max(p => p.Type.ToString().Length), "Type".Length) + 1;
-                var valueWidth = Math.Max(generator.Parameters.Values.Max(p => p.Value.ToString().Length), "Default".Length) + 1;
+    //        // Parameter table
+    //        if (generator.Parameters?.Count > 0)
+    //        {
+    //            Console.WriteLine();
+    //            Console.WriteLine("Parameters");
+    //            var nameWidth = Math.Max(generator.Parameters.Keys.Max(k => k.Length), "Name".Length) + 1;
+    //            var displayWidth = Math.Max(generator.Parameters.Values.Max(p => p.Display.Length), "Display".Length) + 1;
+    //            var typeWidth = Math.Max(generator.Parameters.Values.Max(p => p.Type.ToString().Length), "Type".Length) + 1;
+    //            var valueWidth = Math.Max(generator.Parameters.Values.Max(p => p.Value.ToString().Length), "Default".Length) + 1;
 
-                Console.Write("Name".PadRight(nameWidth));
-                Console.Write("Display".PadRight(displayWidth));
-                Console.Write("Type".PadRight(typeWidth));
-                Console.Write("Default".PadRight(valueWidth));
-                Console.WriteLine("Values");
+    //            Console.Write("Name".PadRight(nameWidth));
+    //            Console.Write("Display".PadRight(displayWidth));
+    //            Console.Write("Type".PadRight(typeWidth));
+    //            Console.Write("Default".PadRight(valueWidth));
+    //            Console.WriteLine("Values");
                                 
-                foreach (var parameter in generator.Parameters)
-                {
-                    Console.Write(parameter.Key.PadRight(nameWidth));
-                    Console.Write(parameter.Value.Display.PadRight(displayWidth));
-                    Console.Write(parameter.Value.Type.ToString().PadRight(typeWidth));
-                    Console.Write(parameter.Value.Value.PadRight(valueWidth));
-                    Console.Write(String.Join(", ", parameter.Value.Options));
-                }
-            }
+    //            foreach (var parameter in generator.Parameters)
+    //            {
+    //                Console.Write(parameter.Key.PadRight(nameWidth));
+    //                Console.Write(parameter.Value.Display.PadRight(displayWidth));
+    //                Console.Write(parameter.Value.Type.ToString().PadRight(typeWidth));
+    //                Console.Write(parameter.Value.Value.PadRight(valueWidth));
+    //                Console.Write(String.Join(", ", parameter.Value.Options));
+    //            }
+    //        }
         }
 
         /// <summary>

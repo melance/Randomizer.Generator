@@ -11,6 +11,7 @@ namespace Randomizer.Generator.UI.MVC.Models
 		public String Name { get; set; }
 		public String Author { get; set; }
 		public String Description { get; set; }
+		public String Remarks { get; set; }
 		public Version Version { get; set; }
 		public String URL { get; set; }
 		public List<String> Tags { get; set; }
@@ -27,6 +28,7 @@ namespace Randomizer.Generator.UI.MVC.Models
 				Name = definition.Name,
 				Author = definition.Author,
 				Description = definition.Description,
+				Remarks = definition.Remarks,
 				Version = definition.Version,
 				URL = definition.URL,
 				Tags = definition.Tags,

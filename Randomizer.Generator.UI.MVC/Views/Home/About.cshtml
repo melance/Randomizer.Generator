@@ -1,1 +1,17 @@
-﻿
+﻿@model AboutModel
+@{
+    ViewData["Title"] = "About";
+}
+
+<h3>The Randomizer</h3>
+<h5>The infinitely customizable random content generator.</h5>
+
+<img src="~/Randomizer 150.png" style="z-index: -1;  opacity: 0.4; position: absolute; top: 0; left: -150px;" />
+
+<div>By <a href="https://www.deviantart.com/lance-boudreaux" target="_blank">Lance Boudreaux</a></div>
+<div>Version @Model.Version</div>
+<div>The Randomizer on <a href="https://github.com/melance/Randomizer.Generator" target="_blank">GitHub</a></div>
+<div>The Randomizer on <a href="https://reddit.com/r/therandomizer" target="_blank">Reddit</a></div>
+<div>Built on @Model.BuildDate.ToString("yyyy.MM.dd HH:mm:ss")</div>
+<div>Icon Design by <a href="https://rndmnm.deviantart.com/" target="_blank">Hubert Tomaszweski</a></div>
+

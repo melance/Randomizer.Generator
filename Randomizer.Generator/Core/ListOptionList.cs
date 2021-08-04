@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Collections.Generic;
 
 namespace Randomizer.Generator.Core
@@ -8,6 +9,14 @@ namespace Randomizer.Generator.Core
 	/// </summary>
 	public class ListOptionList : List<ListOption>
     {
+		public ListOption this[String value]
+		{
+			get
+			{
+				return this.Where(li => li.Value.Equals(value)).FirstOrDefault();
+			}
+		}
+
 		/// <summary>
 		/// Add a <see cref="ListOption"/> with the provided Value and Display
 		/// </summary>
