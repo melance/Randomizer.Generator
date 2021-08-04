@@ -1,0 +1,35 @@
+Name: Deck of Many Things Images
+Author: Lance Boudreaux
+Description: Icon size images for the deck of many things
+Version: "1.0"
+OutputFormat: Html
+ShowInList: false
+Parameters:
+{
+}
+LineItems:
+{
+	Balance: [ { Content: "<img src='../img/transparent.png' style='width: 32px; height 32px; background: url(../img/deckofmanythings.png) 0 0;' />" } ]
+	Comet: [ { Content: "<img src='../img/transparent.png' style='width: 32px; height 32px; background: url(../img/deckofmanythings.png) -32px 0;' />" } ]
+	Ruin: [ { Content: "<img src='../img/transparent.png' style='width: 32px; height 32px; background: url(../img/deckofmanythings.png) -64px 0;' />" } ]
+	Knight: [ { Content: "<img src='../img/transparent.png' style='width: 32px; height 32px; background: url(../img/deckofmanythings.png) -96px 0;' />" } ]
+	Moon: [ { Content: "<img src='../img/transparent.png' style='width: 32px; height 32px; background: url(../img/deckofmanythings.png) -128px 0;' />" } ]
+	Skull: [ { Content: "<img src='../img/transparent.png' style='width: 32px; height 32px; background: url(../img/deckofmanythings.png) -160px 0;' />" } ]
+	Talon: [ { Content: "<img src='../img/transparent.png' style='width: 32px; height 32px; background: url(../img/deckofmanythings.png) -192px 0;' />" } ]
+	Euryale: [ { Content: "<img src='../img/transparent.png' style='width: 32px; height 32px; background: url(../img/deckofmanythings.png) 0 -32px;' />" } ]
+	Sun: [ { Content: "<img src='../img/transparent.png' style='width: 32px; height 32px; background: url(../img/deckofmanythings.png) -32px -32px;' />" } ]
+	Fates: [ { Content: "<img src='../img/transparent.png' style='width: 32px; height 32px; background: url(../img/deckofmanythings.png) -64px -32px;' />" } ]
+	Key: [ { Content: "<img src='../img/transparent.png' style='width: 32px; height 32px; background: url(../img/deckofmanythings.png) -96px -32px;' />" } ]
+	Fool: [ { Content: "<img src='../img/transparent.png' style='width: 32px; height 32px; background: url(../img/deckofmanythings.png) -128px -32px;' />" } ]
+	Gem: [ { Content: "<img src='../img/transparent.png' style='width: 32px; height 32px; background: url(../img/deckofmanythings.png) -160px -32px;' />" } ]
+	Vizier: [ { Content: "<img src='../img/transparent.png' style='width: 32px; height 32px; background: url(../img/deckofmanythings.png) -192px -32px;' />" } ]
+	Jester: [ { Content: "<img src='../img/transparent.png' style='width: 32px; height 32px; background: url(../img/deckofmanythings.png) 0 -64px;' />" } ]
+	Throne: [ { Content: "<img src='../img/transparent.png' style='width: 32px; height 32px; background: url(../img/deckofmanythings.png) -32px -64px;' />" } ]
+	Star: [ { Content: "<img src='../img/transparent.png' style='width: 32px; height 32px; background: url(../img/deckofmanythings.png) -64px -64px;' />" } ]
+	Void: [ { Content: "<img src='../img/transparent.png' style='width: 32px; height 32px; background: url(../img/deckofmanythings.png) -96px -64px;' />" } ]
+	Donjon: [ { Content: "<img src='../img/transparent.png' style='width: 32px; height 32px; background: url(../img/deckofmanythings.png) -128px -64px;' />" } ]
+	Idiot: [ { Content: "<img src='../img/transparent.png' style='width: 32px; height 32px; background: url(../img/deckofmanythings.png) -160px -64px;' />" } ]
+	Rogue: [ { Content: "<img src='../img/transparent.png' style='width: 32px; height 32px; background: url(../img/deckofmanythings.png) -192px -64px;' />" } ]
+	Flame: [ { Content: "<img src='../img/transparent.png' style='width: 32px; height 32px; background: url(../img/deckofmanythings.png) 0 -96px;' />" } ]
+}
+GeneratorType: Assignment

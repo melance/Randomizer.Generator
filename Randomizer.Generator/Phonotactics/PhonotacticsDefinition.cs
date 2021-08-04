@@ -24,38 +24,74 @@ namespace Randomizer.Generator.Phonotactics
         public PatternDictionary Patterns { get; set; } = new();
 		/// <summary>The case to apply to the result</summary>
         public TextCases TextCase { get; set; } = TextCases.None;
-        #endregion
-
-        #region Public Methods
-        /// <summary>
-        /// Generates content based on the definitions and patterns
-        /// </summary>
-		/// <returns>The generated content</returns>
-        public override String Generate()
-        {
-            var key = Parameters.Any() ? Parameters.First().Value.Value : String.Empty;
-            var pattern = Patterns.SelectRandomPattern(key);
-            var tokens = Tokenizer.Tokenize(pattern);
-            var result = new StringBuilder();
-
-            foreach (var token in tokens)
-            {
-                var generate = true;
-
-                if (token.TokenType == TokenTypes.Optional && Utility.Random.RandomNumber(1, 100) < 50)
-                {
-                    generate = false;
-                }
-                if (generate)
-                {
-                    if (Definitions.ContainsKey(token.Value))
-                        result.Append(Definitions[token.Value].SelectRandomValue());
-                    else
-                        result.Append(token.Value);
-                }
-            }
-            return result.ToString().ToCase(TextCase);
-        }
+		public override Boolean SupportsParameters => true;
 		#endregion
+
+		#region Public Methods
+		/// <summary>
+		/// Generates content based on the definitions and patterns
+		/// </summary>
+		/// <returns>The generated content</returns>
+		public override String Generate()
+        {
+			if (ValidateParameters())
+			{
+				var key = Parameters.Any() ? Parameters.First().Value.Value : String.Empty;
+				var pattern = Patterns.SelectRandomPattern(key);
+				var tokens = Tokenizer.Tokenize(pattern);
+				var result = new StringBuilder();
+
+				foreach (var token in tokens)
+				{
+					var generate = true;
+
+					if (token.TokenType == TokenTypes.Optional && Utility.Random.RandomNumber(1, 100) < 50)
+					{
+						generate = false;
+					}
+					if (generate)
+					{
+						if (Definitions.ContainsKey(token.Value))
+							result.Append(Definitions[token.Value].SelectRandomValue());
+						else
+							result.Append(token.Value);
+					}
+				}
+				return result.ToString().ToCase(TextCase); 
+			}
+			return String.Empty;
+        }
+
+		public override String Analyze(AnalyzeOptions options)
+		{
+			var analysis = new AnalysisWriter(base.Analyze(options));
+
+			analysis.AppendHeader("Phonotactics");
+			analysis.AppendItemValue("TextCase", TextCase);
+
+			analysis.AppendHeader("Definitions");
+
+			foreach (var definition in Definitions)
+			{
+				analysis.AppendItemValue(definition.Key.ToString(), String.Join(", ", definition.Value));
+			}
+
+			analysis.AppendLine();
+			analysis.AppendHeader("Patterns");
+
+			foreach (var item in Patterns)
+			{
+				analysis.AppendLine(item.Key);
+				foreach (var pattern in item.Value)
+				{
+					analysis.AppendItemValue(pattern.Pattern, $"Weight: {pattern.Weight}");
+				}
+				analysis.AppendLine();
+			}
+
+			return analysis.ToString();
+		}
+		#endregion
+
 	}
 }

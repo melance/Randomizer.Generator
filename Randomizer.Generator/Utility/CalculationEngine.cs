@@ -68,6 +68,18 @@ namespace Randomizer.Generator.Utility
 				{
 					args.Result = PickW(args.EvaluateParameters().Cast<String>().ToArray());
 				}
+				else if (name.Equals(nameof(Switch), StringComparison.CurrentCultureIgnoreCase))
+				{
+					if (args.Parameters.Length < 4) throw new EvaluationException($"{nameof(Switch)} requires at least 4 parameters.");
+					var value = args.Parameters[0].Evaluate();
+					var defaultValue = args.Parameters[1].Evaluate();
+					var cases = new List<SwitchCase>();
+					for (var i = 2; i < args.Parameters.Length - 1; i += 2)
+					{
+						cases.Add(new SwitchCase(args.Parameters[i].Evaluate(), args.Parameters[i + 1].Evaluate()));
+					}
+					args.Result = Switch(value, defaultValue, cases);
+				}
 				else if (name.Equals(nameof(Generate), StringComparison.CurrentCultureIgnoreCase) && args.Parameters.Length > 1)
 				{
 					var evaluated = args.EvaluateParameters();
@@ -101,8 +113,8 @@ namespace Randomizer.Generator.Utility
 			catch (Exception ex)
 			{
 				exi = ExceptionDispatchInfo.Capture(ex);
-				exi.SourceException.AddData(nameof(name), name);
-				exi.SourceException.AddData(nameof(args), args);
+				ex.AddData(nameof(name), name);
+				ex.AddData(nameof(args), args);
 			}
 			if (exi != null) exi.Throw();
 			return false;
@@ -212,17 +224,32 @@ namespace Randomizer.Generator.Utility
 		[NCalcFunction]
 		public static String Generate(String name, params String[] parameters)
 		{
-			var definition = DataAccess.DataAccess.Instance.GetDefinition(name);
-			if (parameters != null)
+			ExceptionDispatchInfo edi;
+			try
 			{
-				foreach (var parameter in parameters)
+				var definition = DataAccess.DataAccess.Instance.GetDefinition(name);
+				if (parameters != null)
 				{
-					var parts = parameter.Split('=');
-					definition.Parameters[parts[0]].Value = parts[1];
+					foreach (var parameter in parameters)
+					{
+						var parts = parameter.Split('=');
+						definition.Parameters[parts[0]].Value = parts[1];
+					}
 				}
+				if (definition == null) throw new Exceptions.DefinitionNotFoundException(name);
+				return definition.Generate();
 			}
-			if (definition == null) throw new Exceptions.DefinitionNotFoundException(name);
-			return definition.Generate();
+			catch (Exceptions.DefinitionNotFoundException)
+			{
+				throw;
+			}
+			catch (Exception ex)
+			{
+				edi = ExceptionDispatchInfo.Capture(ex);
+				ex.AddData(nameof(name), name);
+			}
+			if (edi != null) edi.Throw();
+			return string.Empty;
 		}
 
 		/// <summary>
@@ -378,6 +405,25 @@ namespace Randomizer.Generator.Utility
 		public static String SCase(String value)
 		{
 			return value.SCase();
+		}
+
+		public class SwitchCase
+		{
+			public SwitchCase(Object c, Object v) => (Case, Value) = (c, v);
+
+			public Object Case { get; set; }
+			public Object Value { get; set; }
+		}
+
+		[NCalcFunction]
+		public static Object Switch(Object value, Object defaultValue, List<SwitchCase> cases)
+		{
+			foreach (var switchCase in cases)
+			{
+				if (value.Equals(switchCase.Case)) return switchCase.Value;
+			}
+			
+			return defaultValue;
 		}
         #endregion
 

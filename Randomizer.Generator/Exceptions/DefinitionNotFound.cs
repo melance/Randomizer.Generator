@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Randomizer.Generator.Exceptions
 {
-	public class DefinitionNotFoundException : Exception
+	public class DefinitionNotFoundException : RandomizerGeneratorException
 	{
-		public DefinitionNotFoundException(String name) : base($"Could not locate definition: {name}.") { }
+		public DefinitionNotFoundException(String name) : base("Could not locate definition.") { Data.Add("Name", name); }
 	}
 }

@@ -1,0 +1,49 @@
+﻿<div class="col-12">
+    <h3>Using the Site</h3>
+    <h5>Generating Content</h5>
+    <div>
+        After selecting a generator from the <a asp-controller="Home" asp-action="Index">home page</a>, the generator definition page will display.  There are four areas to the
+        page though only three are visible at first:
+    </div>
+    <br />
+    <div class="card">
+        <div class="card-header">Details</div>
+        <div class="card-body">
+            The details section will display details about the definition including the author, version, type, and more.
+            This section is hidden by default but can be expanded by clicking on the header.
+        </div>
+    </div>
+    <br />
+    <div class="card">
+        <div class="card-header">Parameters</div>
+        <div class="card-body">
+            The parameters section will display parameters for the definition if the are defined.  The <i>Repeat</i> parameter will display for all definitions and determines how many times to repeat the content generation.
+            There are several types of parameters that can be used by a definition including:
+            <div><span class="font-weight-bold">List</span> a combobox to select a value from.</div>
+            <div><span class="font-weight-bold">Text</span> a textbox to allow a value to be entered.</div>
+            <div><span class="font-weight-bold">Integer</span> a numerical textbox to allow an integer number to be entered.</div>
+            <div><span class="font-weight-bold">Decimal</span> a numerical textbox to allow a decimal number to be entered.</div>
+            <div><span class="font-weight-bold">Date</span> a date edit box to allow entry of a date.</div>
+            <div><span class="font-weight-bold">Boolean</span> a checkbox that can be checked or unchecked.</div>
+        </div>
+    </div>
+    <br />
+    <br />
+    <div class="card">
+        <div class="card-header">Buttons</div>
+        <div class="card-body">
+            There are four buttons:
+            <div><span class="font-weight-bold"><span class="bi-file-text"></span> Copy Results</span> will copy the resulting content to your clibpoard.</div>
+            <div><span class="font-weight-bold"><span class="bi-printer"></span> Print Results</span> will print the resulting content.</div>
+            <div><span class="font-weight-bold"><span class="bi-x-circle"></span> Reset</span> will reset the parameters and clear the results.</div>
+            <div><span class="font-weight-bold"><span class="bi-play-circle"></span> Generate</span> will generate content.</div>
+        </div>
+    </div>
+    <br />
+    <div class="card">
+        <div class="card-header">Results</div>
+        <div class="card-body">The results of the generated content will display in the results area.  If there is an error attempting to generate the content, the error message
+        will appear in the results area in red.</div>
+    </div>
+
+</div>

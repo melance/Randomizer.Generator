@@ -1,0 +1,440 @@
+Name: Gnome Fantasy Names Clan
+Author: Lance Boudreaux
+Description: Generates fantasy style clan names for gnomes
+Version: "1.0"
+Tags: 
+[	
+	Fantasy
+	Name
+]
+OutputFormat: Text
+ShowInList: 0
+Parameters:
+{
+}
+LineItems:
+{
+	Start:
+	[
+		{ Content: "Baffle[Suffix]" }
+		{ Content: "Boon[Suffix]" }
+		{ Content: "Cobble[Suffix]" }
+		{ Content: "Fabble[Suffix]" }
+		{ Content: "Fapple[Suffix]" }
+		{ Content: "Fiddle[Suffix]" }
+		{ Content: "Glitter[Suffix]" }
+		{ Content: "Gobble[Suffix]" }
+		{ Content: "Horcus[Suffix]" }
+		{ Content: "Humple[Suffix]" }
+		{ Content: "Iron[Suffix]" }
+		{ Content: "Lingen[Suffix]" }
+		{ Content: "Nopen[Suffix]" }
+		{ Content: "Nuckle[Suffix]" }
+		{ Content: "Quill[Suffix]" }
+		{ Content: "Shadow[Suffix]" }
+		{ Content: "Waggle[Suffix]" }
+		{ Content: "Wild[Suffix]" }
+		
+		{ Content: "[=Generate('Colors','Swatch=ColorSwatchMetal')][Suffix]" }
+	
+		{ Content: "Al[AL]" }
+		
+		{ Content: "Be[BE]" }
+		
+		{ Content: "Da[DA]" }
+		{ Content: "Du[DU]" }
+		
+		{ Content: "Fo[FO]" }
+		
+		{ Content: "Ga[GA]" }
+		{ Content: "Gi[GI]" }
+		{ Content: "Gu[GU]" }
+		
+		{ Content: "Le[LE]" }
+		{ Content: "Lo[LO]" }
+		
+		{ Content: "Ma[MA]" }
+		{ Content: "Mi[MI]" }
+		{ Content: "Mu[MU]" }
+		
+		{ Content: "Na[NA]" }
+		{ Content: "Ni[NI]" }	
+
+		{ Content: "Of[OF]" }		
+		{ Content: "Oom[OOM]" }
+		
+		{ Content: "Pil[PI]" }
+		{ Content: "Pin[PI]" }
+		
+		{ Content: "Ra[RA]" }
+		{ Content: "Re[RE]" }
+		{ Content: "Ro[RO]" }
+		
+		{ Content: "Sc[SC]" }
+		{ Content: "Sy[SY]" }
+		
+		{ Content: "Ta[TA]" }
+		{ Content: "Ti[TI]" }
+		{ Content: "Tu[TU]" }
+		
+		{ Content: "Um[UM]" }
+		
+		{ Content: "We[WE]" }
+	]
+	
+	## Suffix ##
+	Suffix:
+	[
+		{ Content: "bumple" }
+		{ Content: "cloak" }
+		{ Content: "diggles" }
+		{ Content: "fen" }
+		{ Content: "firn" }
+		{ Content: "gem" }
+		{ Content: "hall" }
+		{ Content: "hide" }
+		{ Content: "lob" }
+		{ Content: "porcus" }
+		{ Content: "sharpener" }
+		{ Content: "stabble" }
+		{ Content: "stallen" }
+		{ Content: "stamp" }
+		{ Content: "stone" }
+		{ Content: "thread" }
+		{ Content: "top" }
+		{ Content: "trowel" }
+		{ Content: "wander" }
+	]
+	
+	## A ##
+	AL:
+	[
+		{ Content: "ba[BA]" }
+	]
+	
+	## B ##
+	BA:
+	[
+		{ Content: "ra[RA]" }
+	]
+	BE:
+	[
+		{ Content: "n" }
+		{ Content: "re[RE]" }
+	]
+	BO:
+	[
+		{ Content: "do[DO]" }
+	]
+		
+	## C ##
+	CK:
+	[
+		{ Content: "en" }
+		{ Content: "le" }
+	]
+	
+	## D ##
+	DA:
+	[
+		{ Content: "er[ER]" }
+	]
+	DO:
+	[
+		{ Content: "be[BE]" }
+	]
+	DU:
+	[
+		{ Content: "nb[NB]" }
+	]
+	
+	## E ##	
+	EK:
+	[
+		{ Content: "ke[KE]" }
+	]
+	EL:
+	[
+		{ Content: "by" }
+	]
+	ES:
+	[
+		{ Content: "e" }
+	]
+	ER:
+	[
+		{ Content: "ce" }
+		{ Content: "ge[GE]" }
+		{ Content: "s" }
+		{ Content: "ton" }
+		{ Content: "y" }
+	]
+		
+	## F ##
+	FF:
+	[
+		{ Content: "er[ER]" }
+	]
+	FO:
+	[
+		{ Content: "lk[LK]" }
+	]
+	FU:
+	[
+		{ Content: "nd" }
+	]
+	
+	## G ##
+	GA:
+	[
+		{ Content: "rr[RR]" }
+	]
+	GE:
+	[
+		{ Content: "l" }
+		{ Content: "n" }
+	]
+	GG:
+	[
+		{ Content: "le[LE]" }
+	]
+	GI:
+	[
+		{ Content: "ml[ML]" }
+	]
+	GU:
+	[
+		{ Content: "mm[MM]" }
+		{ Content: "n" }
+	]
+	
+	## H ##
+	
+	## I ##
+	IC:
+	[
+		{ Content: "k" }
+	]
+	
+	## J ##
+	
+	## K ##
+	KE:
+	[
+		{ Content: "lf[LF]" }
+	]
+	
+	## L ##
+	LB:
+	[
+		{ Content: "er" }
+	]
+	LE:
+	[
+		{ Content: "dy" }
+		{ Content: "ff" }
+	]
+	LF:
+	[
+		{ Content: "er[ER]" }
+	]
+	LK:
+	[
+		{ Content: "or" }
+	]
+	LO:
+	[
+		{ Content: "of[OF]" }
+	]
+	LU:
+	[
+		{ Content: "e" }
+	]
+	
+	## M ##
+	MA:
+	[
+		{ Content: "ek[EK]" }
+	]
+	MB:
+	[
+		{ Content: "er[ER]" }
+	]
+	MI:
+	[
+		{ Content: "gg[GG]" }
+	]
+	ML:
+	[
+		{ Content: "en" }
+	]
+	MM:
+	[
+		{ Content: "en" }
+	]
+	MP:
+	[
+		{ Content: "on[ON]" }
+		{ Content: "hon[ON]" }
+	]
+	MU:
+	[
+		{ Content: "ng[NG]" }
+		{ Content: "rn[RN]" }
+		{ Content: "sg[SG]" }
+	]
+	
+	## N ##
+	NA:
+	[
+		{ Content: "ck[CK]" }
+	]
+	NB:
+	[
+		{ Content: "en" }
+	]
+	HE:
+	[
+		{ Content: "pp[PP]" }
+	]
+	NG:
+	[
+		{ Content: "el" }
+		{ Content: "ge[GE]" }
+	]
+	NI:
+	[
+		{ Content: "ng[NG]" }
+	]
+	NO:
+	[
+		{ Content: "r" }
+	]
+	
+	## O ##
+	OF:
+	[
+		{ Content: "fu[FU]" }
+		{ Content: "ol[OL]" }
+	]
+	OL:
+	[
+		{ Content: "lu[LU]" }
+	]
+	ON:
+	[
+		{ Content: "y" }
+	]
+	OOM:
+	[
+		{ Content: "tr[TR]" }
+	]
+	OW:
+	[
+		{ Content: "el" }
+	]
+	
+	## P ##
+	PI:
+	[
+		{ Content: "gu[GU]" }
+		{ Content: "wi[WI]" }
+	]
+	PP:
+	[
+		{ Content: "en" }
+	]
+	
+	## Q ##
+	
+	## R ##
+	RA:
+	[
+		{ Content: "be[BE]" }
+		{ Content: "ti[TI]" }
+		{ Content: "ul[UL]" }
+	]
+	RE:
+	[
+		{ Content: "es[ES]" }
+		{ Content: "n" }
+	]
+	RK:
+	[
+		{ Content: "el[EL]" }
+	]
+	RN:
+	[
+		{ Content: "ig" }
+	]
+	RO:
+	[
+		{ Content: "ff[FF]" }
+	]
+	RR:
+	[
+		{ Content: "ic[IC]" }
+	]
+	
+	## S ##
+	SC:
+	[
+		{ Content: "he[HE]" }
+	]
+	SG:
+	[
+		{ Content: "ra[RA]" }
+	]
+	SY:
+	[
+		{ Content: "mp[MP]" }
+	]
+	
+	## T ##
+	TA:
+	[
+		{ Content: "rk[RK]" }
+	]
+	TI:
+	[
+		{ Content: "e" }
+		{ Content: "mb[MB]" }
+	]
+	TR:
+	[
+		{ Content: "ow[OW]" }
+	]
+	TU:
+	[
+		{ Content: "re[RE]" }
+	]
+	
+	## U ##
+	UL:
+	[
+		{ Content: "no[NO]" }
+	]
+	UM:
+	[
+		{ Content: "bo[BO]" }
+	]
+	
+	## V ##
+	
+	## W ##
+	WE:
+	[
+		{ Content: "lb[LB]" }
+	]
+	WI:
+	[
+		{ Content: "ck[CK]" }
+	]
+	
+	## X ##
+	
+	## Y ##
+	
+	## Z ##
+}
+GeneratorType: Assignment

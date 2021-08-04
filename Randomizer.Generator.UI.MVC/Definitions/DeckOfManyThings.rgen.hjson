@@ -25,13 +25,13 @@
         3e:D&D 3e
 		5e13:D&D 5e (13 Cards)
 		5e22:D&D 5e (22 Cards)
-        cust:Custom
       ]
     }
   }
   Imports:
   [
 	Deck of Cards
+	Deck of Many Things Images
   ]
   TextCase: None
   LineItems:
@@ -40,133 +40,76 @@
     [
       { Content: "[Version]" }
     ]
-	5e13:
-	[
-		{ Content: "<b>Euryale</b> The card's medusa-like visage curses you.  You take a -2 penalty on saving throws while cursed in this way. Only a god or the magic of The Fates card can end this card." }
-		{ Content: "<b>Flames</b> A powerful devil becomes your enemy.  The devil seeks your ruin and plagues your life, savoring your suffering before attempting to slay you.  This enmity lasts until either you or the devil dies." }
-		{ Content: "<b>Jester</b> You gain 10,000 XP, or you can draw two additional cards beyond your declared draws." }
-		{ Content: "<b>Key</b> A rare or rarer magic weapon with which you are proficient appears in your hands.  The DM chooses the weapon." }
-		{ Content: "<b>Knight</b> You gain the service of a 4<sup>th</sup>-level fighter who appears in a space you choose within 30 feet of you.  The fighter is of the same race as you and serves you loyally until death, believing the fates have drawn him or her to you.  You control this character." }
-		{ Content: "<b>Moon</b> You are granted the ability to cast the <i>wish</i> spell [=Roll(1,3)] times." }
-		{ Content: "<b>Rogue</b> A nonplayer character of the DM's choice becomes hostile to you.  The identity of your new enemy isn't known until the NPC or someone else reveals it.  Nothing less than a <i>wish</i> spell or divine intervention can end the NPC's hostility toward you." }
-		{ Content: "<b>Ruin</b> All forms of wealth that you carry or own, other than magic items, are lost to you.  Portable property vanishes.  Businesses, buildings, and land you own are lost in a way that alters reality the least. Any documentation that proves you should own something lost to this card also disappears." }
-		{ Content: "<b>Skull</b> You summon at avatar of death&#8212;a ghostly humanoid skeleton clad in a tattered black robe and carrying a spectral scythe.  It appears in a space of the DM's choice within 10 feet of you and attacks you, warning all others that you must win the battle alone.  The avatar fights until you die or it drops to 0 hit points, whereupon it disappears.  If anyone tries to help you, the helper summons its own avatar of death.  A creature slain by an avatar of death can't be restored to life." }
-		{ Content: "<b>Star</b> Increase one of your ability scores by 2.  The score can exceed 20 but can't exceed 24." }
-		{ Content: "<b>Sun</b> You gain 50,000 XP, and a wondrous item (which the DM determines randomly) appears in your hands. " }
-		{ Content: "<b>Throne</b> You gain proficiency in the Persuasion skill, and you double your proficiency bonus on checks made with that skill.  In addition, you gain rightful ownership of a small keep somewhere in the world.  However, the keep is currently in the hands of monsters, which you must clear out before you can claim the keep as yours." }
-		{ Content: "<b>The Void</b> This black card spells disaster.  Your soul is drawn from your body and contained in an object in a place of the DM's choice.  One or more popwerful beings guard the place.  While your soul is trapped in this way, your body is incapacitated.  A <i>wish</i> spell can't restore your soul, but the spell reveals the location of the object that holds it.  You draw no more cards." }
-	]
-	5e22:
-	[		
-		{ Content: "<b>Euryale</b> The card's medusa-like visage curses you.  You take a -2 penalty on saving throws while cursed in this way. Only a god or the magic of The Fates card can end this card." }
-		{ Content: "<b>Flames</b> A powerful devil becomes your enemy.  The devil seeks your ruin and plagues your life, savoring your suffering before attempting to slay you.  This enmity lasts until either you or the devil dies." }
-		{ Content: "<b>Jester</b> You gain 10,000 XP, or you can draw two additional cards beyond your declared draws." }
-		{ Content: "<b>Key</b> A rare or rarer magic weapon with which you are proficient appears in your hands.  The DM chooses the weapon." }
-		{ Content: "<b>Knight</b> You gain the service of a 4<sup>th</sup>-level fighter who appears in a space you choose within 30 feet of you.  The fighter is of the same race as you and serves you loyally until death, believing the fates have drawn him or her to you.  You control this character." }
-		{ Content: "<b>Moon</b> You are granted the ability to cast the <i>wish</i> spell [=Roll(1,3)] times." }
-		{ Content: "<b>Rogue</b> A nonplayer character of the DM's choice becomes hostile to you.  The identity of your new enemy isn't known until the NPC or someone else reveals it.  Nothing less than a <i>wish</i> spell or divine intervention can end the NPC's hostility toward you." }
-		{ Content: "<b>Ruin</b> All forms of wealth that you carry or own, other than magic items, are lost to you.  Portable property vanishes.  Businesses, buildings, and land you own are lost in a way that alters reality the least. Any documentation that proves you should own something lost to this card also disappears." }
-		{ Content: "<b>Skull</b> You summon at avatar of death&#8212;a ghostly humanoid skeleton clad in a tattered black robe and carrying a spectral scythe.  It appears in a space of the DM's choice within 10 feet of you and attacks you, warning all others that you must win the battle alone.  The avatar fights until you die or it drops to 0 hit points, whereupon it disappears.  If anyone tries to help you, the helper summons its own avatar of death.  A creature slain by an avatar of death can't be restored to life." }
-		{ Content: "<b>Star</b> Increase one of your ability scores by 2.  The score can exceed 20 but can't exceed 24." }
-		{ Content: "<b>Sun</b> You gain 50,000 XP, and a wondrous item (which the DM determines randomly) appears in your hands. " }
-		{ Content: "<b>Throne</b> You gain proficiency in the Persuasion skill, and you double your proficiency bonus on checks made with that skill.  In addition, you gain rightful ownership of a small keep somewhere in the world.  However, the keep is currently in the hands of monsters, which you must clear out before you can claim the keep as yours." }
-		{ Content: "<b>The Void</b> This black card spells disaster.  Your soul is drawn from your body and contained in an object in a place of the DM's choice.  One or more popwerful beings guard the place.  While your soul is trapped in this way, your body is incapacitated.  A <i>wish</i> spell can't restore your soul, but the spell reveals the location of the object that holds it.  You draw no more cards." }
-		{ Content: "<b>Balance</b> Your mind suffers a wrenching alteration, causing your alignment to change.  Lawful becomes chaotic, good becomes evil, and vice versa. If you are true neutral or unaligned, this card has no effect on you." }
-		{ Content: "<b>Comet</b> If you single-handedly defeat the next hostile monster or group of monsters you encounter, you gain experience points enough to gain one level.  Otherwise this card has no effect." }
-		{ Content: "<b>Donjon</b> You disappear and become entomed in a state of suspended animation in an extradimensional sphere.  Everything you were wearing and carrying stays behind in the space you occupied when you disappeared. You remain imprisoned until you are found and removed from the sphere.  You can't be located with any divination magic, but a <i>wish</i> spell can reveal the location of your prison.  You draw no more cards." }
-		{ Content: "<b>The Fates</b> Reality's fabric unravels and spins anew, allowing you to avoid or erase one event as if it never happened.  You can use the card's magic as soon as you draw the card or at any other time before you die." }
-		{ Content: "<b>Fool</b> You lose 10,000XP, discard this card, and draw from the deck again, counting both draws as one of your declared draws.  If losing that much XP would cause you to lose a level, you instead lose ana mount that leaves you with just enough XP to keep your level." }
-		{ Content: "<b>Gem</b> Twenty-five pieces of jewelry worth 2,000 gp each or fifty gems worth 1,000 gp each appear at your feet." }
-		{ Content: "<b>Idiot</b> Permanently reduce your Intelligence by [=Roll(1,4)+1] (to a minimum of 1).  You can draw one additional card beyond your declared draws." }
-		{ Content: "<b>Talons</b> Every magic item you wear or carry disintegrates.  Artifacts in your possession aren't destroyed but do vanish." }
-		{ Content: "<b>Vizier</b> At any time you choose within one year of drawing this card, you can ask a question in meditation and mentally receive a turthful answer to the question.  Besides the information, the answer helps ou solve a puzzling problem or other dilemma.  In other words, the knowledge comes with wisdom on how to apply it." }
-	]
-    3e:
-    [
-		{ Content: "<b>Balance</b> Change alignment instantly" }
-		{ Content: "<b>Comet</b> Defeat the next monster single-handedly you meet to gain one level" }
-		{ Content: "<b>Donjon</b> You are imprisoned, all gear and spells are stripped away" }
-		{ Content: "<b>Euryale</b> -1 penalty to all saving throws" }
-		{ Content: "<b>The Fates</b> Avoid any situation you choose ... once" }
-		{ Content: "<b>Flames</b> Enmity between you and an outsider" }
-		{ Content: "<b>Fool</b> Lose 10,000 experience points and you must draw again" }
-		{ Content: "<b>Gem</b> Gain your choice of twenty-five pieces of jewelry or fifty gems" }
-		{ Content: "<b>Idiot</b> Lose intelligence (permanent drain).  You may draw again." }
-		{ Content: "<b>Jester</b> Gain 10,000 experience or two more draws from the deck" }
-		{ Content: "<b>Key</b> Gain a major magic weapon " }
-		{ Content: "<b>Knight</b> Gain the service of a 4th level fighter " }
-		{ Content: "<b>Moon</b> You are granted 1d4 wishes " }
-		{ Content: "<b>Rogue</b> One of your friends turns against you " }
-		{ Content: "<b>Ruin</b> Immediately lose all wealth and real property " }
-		{ Content: "<b>Skull</b> Defeat Death or be forever destroyed " }
-		{ Content: "<b>Star</b> Immediately gain a +2 inherent bonus to one ability " }
-		{ Content: "<b>Sun</b> Gain beneficial medium wondrous item and 50,000xp " }
-		{ Content: "<b>Talons</b> All magic items you possess disappear permanently " }
-		{ Content: "<b>Throne</b> Gain 6 ranks of Diplomacy plus a small keep " }
-		{ Content: "<b>Vizier</b> Know the answer to your next dilemma " }
-		{ Content: "<b>The Void</b> Body functions but soul is trapped elsewhere " }
-    ]
 	cardSize:
 	[
 		{ Content: "3em;" }
 	]
-    cust:
+	5e13:
+	[
+		{ Content: "[Euryale] <b>Euryale</b> The card's medusa-like visage curses you.  You take a -2 penalty on saving throws while cursed in this way. Only a god or the magic of The Fates card can end this card." }
+		{ Content: "[Flame] <b>Flames</b> A powerful devil becomes your enemy.  The devil seeks your ruin and plagues your life, savoring your suffering before attempting to slay you.  This enmity lasts until either you or the devil dies." }
+		{ Content: "[Jester] <b>Jester</b> You gain 10,000 XP, or you can draw two additional cards beyond your declared draws." }
+		{ Content: "[Key] <b>Key</b> A rare or rarer magic weapon with which you are proficient appears in your hands.  The DM chooses the weapon." }
+		{ Content: "[Knight] <b>Knight</b> You gain the service of a 4<sup>th</sup>-level fighter who appears in a space you choose within 30 feet of you.  The fighter is of the same race as you and serves you loyally until death, believing the fates have drawn him or her to you.  You control this character." }
+		{ Content: "[Moon] <b>Moon</b> You are granted the ability to cast the <i>wish</i> spell [=Roll(1,3)] times." }
+		{ Content: "[Rogue] <b>Rogue</b> A nonplayer character of the DM's choice becomes hostile to you.  The identity of your new enemy isn't known until the NPC or someone else reveals it.  Nothing less than a <i>wish</i> spell or divine intervention can end the NPC's hostility toward you." }
+		{ Content: "[Ruin] <b>Ruin</b> All forms of wealth that you carry or own, other than magic items, are lost to you.  Portable property vanishes.  Businesses, buildings, and land you own are lost in a way that alters reality the least. Any documentation that proves you should own something lost to this card also disappears." }
+		{ Content: "[Skull] <b>Skull</b> You summon at avatar of death&#8212;a ghostly humanoid skeleton clad in a tattered black robe and carrying a spectral scythe.  It appears in a space of the DM's choice within 10 feet of you and attacks you, warning all others that you must win the battle alone.  The avatar fights until you die or it drops to 0 hit points, whereupon it disappears.  If anyone tries to help you, the helper summons its own avatar of death.  A creature slain by an avatar of death can't be restored to life." }
+		{ Content: "[Star] <b>Star</b> Increase one of your ability scores by 2.  The score can exceed 20 but can't exceed 24." }
+		{ Content: "[Sun] <b>Sun</b> You gain 50,000 XP, and a wondrous item (which the DM determines randomly) appears in your hands." }
+		{ Content: "[Throne] <b>Throne</b> You gain proficiency in the Persuasion skill, and you double your proficiency bonus on checks made with that skill.  In addition, you gain rightful ownership of a small keep somewhere in the world.  However, the keep is currently in the hands of monsters, which you must clear out before you can claim the keep as yours." }
+		{ Content: "[Void] <b>The Void</b> This black card spells disaster.  Your soul is drawn from your body and contained in an object in a place of the DM's choice.  One or more popwerful beings guard the place.  While your soul is trapped in this way, your body is incapacitated.  A <i>wish</i> spell can't restore your soul, but the spell reveals the location of the object that holds it.  You draw no more cards." }
+	]
+	5e22:
+	[		
+		{ Content: "[Euryale] <b>Euryale</b> The card's medusa-like visage curses you.  You take a -2 penalty on saving throws while cursed in this way. Only a god or the magic of The Fates card can end this card." }
+		{ Content: "[Flame] <b>Flames</b> A powerful devil becomes your enemy.  The devil seeks your ruin and plagues your life, savoring your suffering before attempting to slay you.  This enmity lasts until either you or the devil dies." }
+		{ Content: "[Jester] <b>Jester</b> You gain 10,000 XP, or you can draw two additional cards beyond your declared draws." }
+		{ Content: "[Key] <b>Key</b> A rare or rarer magic weapon with which you are proficient appears in your hands.  The DM chooses the weapon." }
+		{ Content: "[Knight] <b>Knight</b> You gain the service of a 4<sup>th</sup>-level fighter who appears in a space you choose within 30 feet of you.  The fighter is of the same race as you and serves you loyally until death, believing the fates have drawn him or her to you.  You control this character." }
+		{ Content: "[Moon] <b>Moon</b> You are granted the ability to cast the <i>wish</i> spell [=Roll(1,3)] times." }
+		{ Content: "[Rogue] <b>Rogue</b> A nonplayer character of the DM's choice becomes hostile to you.  The identity of your new enemy isn't known until the NPC or someone else reveals it.  Nothing less than a <i>wish</i> spell or divine intervention can end the NPC's hostility toward you." }
+		{ Content: "[Ruin] <b>Ruin</b> All forms of wealth that you carry or own, other than magic items, are lost to you.  Portable property vanishes.  Businesses, buildings, and land you own are lost in a way that alters reality the least. Any documentation that proves you should own something lost to this card also disappears." }
+		{ Content: "[Skull] <b>Skull</b> You summon at avatar of death&#8212;a ghostly humanoid skeleton clad in a tattered black robe and carrying a spectral scythe.  It appears in a space of the DM's choice within 10 feet of you and attacks you, warning all others that you must win the battle alone.  The avatar fights until you die or it drops to 0 hit points, whereupon it disappears.  If anyone tries to help you, the helper summons its own avatar of death.  A creature slain by an avatar of death can't be restored to life." }
+		{ Content: "[Star] <b>Star</b> Increase one of your ability scores by 2.  The score can exceed 20 but can't exceed 24." }
+		{ Content: "[Sun] <b>Sun</b> You gain 50,000 XP, and a wondrous item (which the DM determines randomly) appears in your hands." }
+		{ Content: "[Throne] <b>Throne</b> You gain proficiency in the Persuasion skill, and you double your proficiency bonus on checks made with that skill.  In addition, you gain rightful ownership of a small keep somewhere in the world.  However, the keep is currently in the hands of monsters, which you must clear out before you can claim the keep as yours." }
+		{ Content: "[Void] <b>The Void</b> This black card spells disaster.  Your soul is drawn from your body and contained in an object in a place of the DM's choice.  One or more popwerful beings guard the place.  While your soul is trapped in this way, your body is incapacitated.  A <i>wish</i> spell can't restore your soul, but the spell reveals the location of the object that holds it.  You draw no more cards." }
+		{ Content: "[Balance] <b>Balance</b> Your mind suffers a wrenching alteration, causing your alignment to change.  Lawful becomes chaotic, good becomes evil, and vice versa. If you are true neutral or unaligned, this card has no effect on you." }
+		{ Content: "[Coment] <b>Comet</b> If you single-handedly defeat the next hostile monster or group of monsters you encounter, you gain experience points enough to gain one level.  Otherwise this card has no effect." }
+		{ Content: "[Donjon] <b>Donjon</b> You disappear and become entomed in a state of suspended animation in an extradimensional sphere.  Everything you were wearing and carrying stays behind in the space you occupied when you disappeared. You remain imprisoned until you are found and removed from the sphere.  You can't be located with any divination magic, but a <i>wish</i> spell can reveal the location of your prison.  You draw no more cards." }
+		{ Content: "[Fates] <b>The Fates</b> Reality's fabric unravels and spins anew, allowing you to avoid or erase one event as if it never happened.  You can use the card's magic as soon as you draw the card or at any other time before you die." }
+		{ Content: "[Fool] <b>Fool</b> You lose 10,000XP, discard this card, and draw from the deck again, counting both draws as one of your declared draws.  If losing that much XP would cause you to lose a level, you instead lose ana mount that leaves you with just enough XP to keep your level." }
+		{ Content: "[Gem] <b>Gem</b> Twenty-five pieces of jewelry worth 2,000 gp each or fifty gems worth 1,000 gp each appear at your feet." }
+		{ Content: "[Idiot] <b>Idiot</b> Permanently reduce your Intelligence by [=Roll(1,4)+1] (to a minimum of 1).  You can draw one additional card beyond your declared draws." }
+		{ Content: "[Talon] <b>Talons</b> Every magic item you wear or carry disintegrates.  Artifacts in your possession aren't destroyed but do vanish." }
+		{ Content: "[Vizier] <b>Vizier</b> At any time you choose within one year of drawing this card, you can ask a question in meditation and mentally receive a turthful answer to the question.  Besides the information, the answer helps ou solve a puzzling problem or other dilemma.  In other words, the knowledge comes with wisdom on how to apply it." }
+	]
+    3e:
     [
-		{ Content: "<span style='Font-Size: [cardSize];'>[AofSpades]</span> The character is transported to an alternate plane where he must best death in a contest or die." }
-		{ Content: "<span style='Font-Size: [cardSize];'>[2ofSpades]</span> Immediately gain one experience level." }
-		{ Content: "<span style='Font-Size: [cardSize];'>[3ofSpades]</span> Every animal within a quarter mile begins seeking out the character to attack." }
-		{ Content: "<span style='Font-Size: [cardSize];'>[4ofSpades]</span> One non-magical item the character is carrying gains a +2 bonus." }
-		{ Content: "<span style='Font-Size: [cardSize];'>[5ofSpades]</span> A sudden and violent earthquake strikes the area the character is in." }
-		{ Content: "<span style='Font-Size: [cardSize];'>[6ofSpades]</span> Natural armor is increased by one." }
-		{ Content: "<span style='Font-Size: [cardSize];'>[7ofSpades]</span> All magical items in the character's possession become mundane." }
-		{ Content: "<span style='Font-Size: [cardSize];'>[8ofSpades]</span> One nature based skill gains one to four points." }
-		{ Content: "<span style='Font-Size: [cardSize];'>[9ofSpades]</span> The character's natural armor is reduced by one even if it leads to a negative natural armor." }	  
-		{ Content: "<span style='Font-Size: [cardSize];'>[10ofSpades]</span> The character gains one to four points in strength permanently." }
-		{ Content: "<span style='Font-Size: [cardSize];'>[JofSpades]</span> The character loses sight in one eye." }
-		{ Content: "<span style='Font-Size: [cardSize];'>[QofSpades]</span> The character's age increases by fifty percent." }
-		{ Content: "<span style='Font-Size: [cardSize];'>[KofSpades]</span> The character gains advantage on attack roles against enemies one or more sizes larger." }	  
-		{ Content: "<span style='Font-Size: [cardSize];'>[AofHearts]</span> The character meets the love of their life." }
-		{ Content: "<span style='Font-Size: [cardSize];'>[2ofHearts]</span> The character's hit points increased by one hit die permanently." }
-		{ Content: "<span style='Font-Size: [cardSize];'>[3ofHearts]</span> The character's hit points decrease by one hit die permanently (but not below 1)." }
-		{ Content: "<span style='Font-Size: [cardSize];'>[4ofHearts]</span> The character's charisma increases by one to four points permanently." }
-		{ Content: "<span style='Font-Size: [cardSize];'>[5ofHearts]</span> The character has a premonition of a close loved one's eminent and near death." }
-		{ Content: "<span style='Font-Size: [cardSize];'>[6ofHearts]</span> An animal takes a liking to the character joining him as a pet." }
-		{ Content: "<span style='Font-Size: [cardSize];'>[7ofHearts]</span> The character shrinks down to the next lower size." }
-		{ Content: "<span style='Font-Size: [cardSize];'>[8ofHearts]</span> The next non-enemy the character encounters will immediately befriend the character." }
-		{ Content: "<span style='Font-Size: [cardSize];'>[9ofHearts]</span> The character becomes afflicted by a deadly disease." }
-		{ Content: "<span style='Font-Size: [cardSize];'>[10ofHearts]</span> A random group of local creatures claims you as their leader." }
-		{ Content: "<span style='Font-Size: [cardSize];'>[JofHearts]</span> The character loses hearing in one ear." }
-		{ Content: "<span style='Font-Size: [cardSize];'>[QofHearts]</span> The character gains advantage on all friendly (non-intimidation) charisma rolls." }
-		{ Content: "<span style='Font-Size: [cardSize];'>[KofHearts]</span> The character immediately attempts to commit suicide by the closest means possible." }	  
-		{ Content: "<span style='Font-Size: [cardSize];'>[AofDiamonds]</span> The character is inexplicably granted land by the local ruler." }
-		{ Content: "<span style='Font-Size: [cardSize];'>[2ofDiamonds]</span> All coins that the character is carrying increase to the next better coin type." }
-		{ Content: "<span style='Font-Size: [cardSize];'>[3ofDiamonds]</span> All of the coins that the character is carrying decrease to the next lesser coin type." }
-		{ Content: "<span style='Font-Size: [cardSize];'>[4ofDiamonds]</span> The character is granted one wish." }
-		{ Content: "<span style='Font-Size: [cardSize];'>[5ofDiamonds]</span> All of the character's carried wealth vanishes." }
-		{ Content: "<span style='Font-Size: [cardSize];'>[6ofDiamonds]</span> The character's constitution is increased by one to four permanently" }
-		{ Content: "<span style='Font-Size: [cardSize];'>[7ofDiamonds]</span> All of the magical properties of the character's most powerful artifacts disappear." }
-		{ Content: "<span style='Font-Size: [cardSize];'>[8ofDiamonds]</span> All non-magical items carried by the character gain a +1 bonus." }
-		{ Content: "<span style='Font-Size: [cardSize];'>[9ofDiamonds]</span> All non-magical metal items carried by the character turn to rust." }
-		{ Content: "<span style='Font-Size: [cardSize];'>[10ofDiamonds]</span> All of the character's wealth is doubled." }
-		{ Content: "<span style='Font-Size: [cardSize];'>[JofDiamonds]</span> The character's base attack bonus is increased by one to four points." }
-		{ Content: "<span style='Font-Size: [cardSize];'>[QofDiamonds]</span> The character becomes a sheep for two to eight days." }
-		{ Content: "<span style='Font-Size: [cardSize];'>[KofDiamonds]</span> All magical weapons the character owns gain a +1 advantage." }      
-		{ Content: "<span style='Font-Size: [cardSize];'>[AofClubs]</span> The character comes into possession of a bag that is eternally filled with berries." }
-		{ Content: "<span style='Font-Size: [cardSize];'>[2ofClubs]</span> The character can now cast one (or one additional) cantrip per day." }      
-		{ Content: "<span style='Font-Size: [cardSize];'>[3ofClubs]</span> The character suffers a severe fear of violence for three days." }
-		{ Content: "<span style='Font-Size: [cardSize];'>[4ofClubs]</span> For a fortnight, the character avoids all attacks of opportunity." }
-		{ Content: "<span style='Font-Size: [cardSize];'>[5ofClubs]</span> The character's alignment shifts drastically." }
-		{ Content: "<span style='Font-Size: [cardSize];'>[6ofClubs]</span> The next enemy that character defeats single handedly grants one experience level." }
-		{ Content: "<span style='Font-Size: [cardSize];'>[7ofClubs]</span> The character loses one to four points of wisdom permanently." }
-		{ Content: "<span style='Font-Size: [cardSize];'>[8ofClubs]</span> Once per day, the character can choose to have advantage on one roll." }
-		{ Content: "<span style='Font-Size: [cardSize];'>[9ofClubs]</span> The character becomes overwhelmed with violence attacking anyone and anything in the viacinity until subdued." }      
-		{ Content: "<span style='Font-Size: [cardSize];'>[10ofClubs]</span> For two to eight days, the character can sense the intentions of others." }
-		{ Content: "<span style='Font-Size: [cardSize];'>[JofClubs]</span> The ruler of the land the character hails from finds special favor in the character." }
-		{ Content: "<span style='Font-Size: [cardSize];'>[QofClubs]</span> The character's age decreases by fifty percent." }
-		{ Content: "<span style='Font-Size: [cardSize];'>[KofClubs]</span> The character becomes obsessed with being loyal and kind to the person in the group they are least amiable with." }	  
-		{ Content: "<span style='Font-Size: [cardSize];'>[JokerBlack]</span> Lose one level and draw again twice" }
-		{ Content: "<span style='Font-Size: [cardSize];'>[JokerRed]</span> Gain one level and draw again" }
-    ]
+		{ Content: "[Balance] <b>Balance</b> Change alignment instantly" }
+		{ Content: "[Comet] <b>Comet</b> Defeat the next monster single-handedly you meet to gain one level" }
+		{ Content: "[Donjon] <b>Donjon</b> You are imprisoned, all gear and spells are stripped away" }
+		{ Content: "[Euryale] <b>Euryale</b> -1 penalty to all saving throws" }
+		{ Content: "[Fates] <b>The Fates</b> Avoid any situation you choose ... once" }
+		{ Content: "[Flame] <b>Flames</b> Enmity between you and an outsider" }
+		{ Content: "[Fool] <b>Fool</b> Lose 10,000 experience points and you must draw again" }
+		{ Content: "[Gem] <b>Gem</b> Gain your choice of twenty-five pieces of jewelry or fifty gems" }
+		{ Content: "[Idiot] <b>Idiot</b> Lose intelligence (permanent drain).  You may draw again." }
+		{ Content: "[Jester] <b>Jester</b> Gain 10,000 experience or two more draws from the deck" }
+		{ Content: "[Key] <b>Key</b> Gain a major magic weapon" }
+		{ Content: "[Knight] <b>Knight</b> Gain the service of a 4th level fighter" }
+		{ Content: "[Moon] <b>Moon</b> You are granted [=Roll(1,4)] wish(es)" }
+		{ Content: "[Rogue] <b>Rogue</b> One of your friends turns against you" }
+		{ Content: "[Ruin] <b>Ruin</b> Immediately lose all wealth and real property" }
+		{ Content: "[Skull] <b>Skull</b> Defeat Death or be forever destroyed" }
+		{ Content: "[Star] <b>Star</b> Immediately gain a +2 inherent bonus to one ability" }
+		{ Content: "[Sun] <b>Sun</b> Gain beneficial medium wondrous item and 50,000xp" }
+		{ Content: "[Talon] <b>Talons</b> All magic items you possess disappear permanently" }
+		{ Content: "[Throne] <b>Throne</b> Gain 6 ranks of Diplomacy plus a small keep" }
+		{ Content: "[Vizier] <b>Vizier</b> Know the answer to your next dilemma" }
+		{ Content: "[Void] <b>The Void</b> Body functions but soul is trapped elsewhere" }
+    ]	    
     greyhawk:
     [
 		{ Content: "<span style='Font-Size: [cardSize]</span>;'>[AofHearts]</span> Immediately gain 50,000 experience points" }
@@ -190,28 +133,28 @@
     ]
     add2e:
     [
-		{ Content: "<b>Sun</b> Gain beneficial miscellaneous magic item and 50,000 experience points " }
-		{ Content: "<b>Moon</b> You are granted 1-4 wishes " }
-		{ Content: "<b>Star</b> Immediately gain 2 points on your major ability " }
-		{ Content: "<b>Comet</b> Defeat next monster you meet to gain 1 level " }
-		{ Content: "<b>Vizier</b> Know the answer to your next dilemma " }
-		{ Content: "<b>Throne</b> Gain charisma of 18 and a small keep " }
-		{ Content: "<b>Key</b> Gain a treasure map plus 1 magic weapon " }
-		{ Content: "<b>Knight</b> Gain service of a 4th level fighter " }
-		{ Content: "<b>Gem</b> Gain your choice of 50 jewelry or 50 gems " }
-		{ Content: "<b>Fates</b> Avoid any situation you choose … once " }
-		{ Content: "<b>The Void</b> Body functions but soul is trapped elsewhere " }
-		{ Content: "<b>Flames</b> Enmity between you and a devil " }
-		{ Content: "<b>Skull</b> Defeat Death or be forever destroyed " }
-		{ Content: "<b>Talons</b> All magic items you possess are torn from you " }
-		{ Content: "<b>Idiot</b> Lose 1-4 points of intelligence, you may draw again " }
-		{ Content: "<b>Ruin</b> Immediately lose all wealth and real property " }
-		{ Content: "<b>Euryale</b> Minus 3 on all saving throws vs. petrification " }
-		{ Content: "<b>Rogue</b> One of your henchmen turns against you " }
-		{ Content: "<b>Balance</b> Change alignment or be judged " }
-		{ Content: "<b>Donjon</b> You are imprisoned " }
-		{ Content: "<b>Jester</b> Gain 10,000 experience points or 2 more draws from the deck " }
-		{ Content: "<b>Fool</b> Lose 10,000 experience points; draw again " }
+		{ Content: "[Sun] <b>Sun</b> Gain beneficial miscellaneous magic item and 50,000 experience points" }
+		{ Content: "[Moon] <b>Moon</b> You are granted 1-4 wishes" }
+		{ Content: "[Star] <b>Star</b> Immediately gain 2 points on your major ability" }
+		{ Content: "[Comet] <b>Comet</b> Defeat next monster you meet to gain 1 level" }
+		{ Content: "[Vizier] <b>Vizier</b> Know the answer to your next dilemma" }
+		{ Content: "[Throne] <b>Throne</b> Gain charisma of 18 and a small keep" }
+		{ Content: "[Key] <b>Key</b> Gain a treasure map plus 1 magic weapon" }
+		{ Content: "[Knight] <b>Knight</b> Gain service of a 4th level fighter" }
+		{ Content: "[Gem] <b>Gem</b> Gain your choice of 50 jewelry or 50 gems" }
+		{ Content: "[Fates] <b>Fates</b> Avoid any situation you choose … once" }
+		{ Content: "[Void] <b>The Void</b> Body functions but soul is trapped elsewhere" }
+		{ Content: "[Flame] <b>Flames</b> Enmity between you and a devil" }
+		{ Content: "[Skull] <b>Skull</b> Defeat Death or be forever destroyed" }
+		{ Content: "[Talon] <b>Talons</b> All magic items you possess are torn from you" }
+		{ Content: "[Idiot] <b>Idiot</b> Lose 1-4 points of intelligence, you may draw again" }
+		{ Content: "[Ruin] <b>Ruin</b> Immediately lose all wealth and real property" }
+		{ Content: "[Euryale] <b>Euryale</b> Minus 3 on all saving throws vs. petrification" }
+		{ Content: "[Rogue] <b>Rogue</b> One of your henchmen turns against you" }
+		{ Content: "[Balance] <b>Balance</b> Change alignment or be judged" }
+		{ Content: "[Donjon] <b>Donjon</b> You are imprisoned" }
+		{ Content: "[Jester] <b>Jester</b> Gain 10,000 experience points or 2 more draws from the deck" }
+		{ Content: "[Fool] <b>Fool</b> Lose 10,000 experience points; draw again" }
     ]	
   }
   GeneratorType: Assignment

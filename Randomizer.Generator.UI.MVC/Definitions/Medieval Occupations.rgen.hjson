@@ -1,0 +1,143 @@
+Name: Medieval Occupations
+Author: Lance Boudreaux
+Description: a list of medieval occupations
+Version: "1.0"
+Tags:
+[
+	Medieval
+	Occupation
+	Fantasy
+]
+OutputFormat: Text
+ShowInList: false
+Parameters:
+{
+	Class:
+	{
+		Value: Any
+		Display: Class
+		Type: List
+		Options:
+		[
+			Poor:Poor
+			Servant:Servant
+			Trade:Trade
+			Merchant:Merchant
+			Noble:Noble
+			Clerical:Clerical
+			Ruler:Ruler
+		]
+	}
+}
+LineItems:
+{
+	Start:
+	[
+		{ Content: "[Class]" }
+	]
+	
+	Any:
+	[
+		{ Content: "[Poor]" }
+		{ Content: "[Trade]" }
+		{ Content: "[Merchant]" }
+		{ Content: "[Noble]" }
+		{ Content: "[Clergy]" }
+		{ Content: "[Ruler]" }
+	]
+	
+	Poor:
+	[
+		{ Content: "beggar" }
+		{ Content: "panhandler" }
+		{ Content: "pauper" }
+		{ Content: "peddler" }
+		{ Content: "servant" }
+	]
+	
+	Trade:
+	[
+		{ Content: "archer" }
+		{ Content: "architect" }
+		{ Content: "artist" }
+		{ Content: "armourer" }
+		{ Content: "baker" }
+		{ Content: "barber" }
+		{ Content: "blacksmith" }
+		{ Content: "boatman" }
+		{ Content: "brewer" }
+		{ Content: "builder" }
+		{ Content: "butcher" }
+		{ Content: "carpenter" }
+		{ Content: "cartographer" }
+		{ Content: "cobbler" }
+		{ Content: "cook" }
+		{ Content: "farmer" }
+		{ Content: "fisherman" }
+		{ Content: "fletcher" }
+		{ Content: "gardener" }
+		{ Content: "gravedigger" }
+		{ Content: "herald" }
+		{ Content: "hunter" }
+		{ Content: "jeweler" }
+		{ Content: "locksmith" }
+		{ Content: "mason" }
+		{ Content: "messenger" }
+		{ Content: "playwright" }
+		{ Content: "potter" }
+		{ Content: "sailor" }
+		{ Content: "scribe" }
+		{ Content: "shipwright" }
+		{ Content: "soldier" }
+		{ Content: "tanner" }
+		{ Content: "tracker" }
+		{ Content: "troubadour" }
+		{ Content: "waitress" }
+		{ Content: "watchman" }
+		{ Content: "weaver" }
+		{ Content: "whitesmith" }
+	]
+	
+	Merchant:
+	[
+		{ Content: "apothecary" }
+		{ Content: "barkeeper" }
+		{ Content: "grocer" }
+		{ Content: "herbalist" }
+		{ Content: "innkeeper" }
+		{ Content: "ship captain" }
+	]
+	
+	Noble:
+	[
+		{ Content: "baron" }
+		{ Content: "barrister" }
+		{ Content: "diplomat" }
+		{ Content: "duke" }
+		{ Content: "dutchess" }
+		{ Content: "fool" }
+		{ Content: "jester" }
+		{ Content: "knight" }
+		{ Content: "prince" }
+		{ Content: "princess" }
+	]
+	
+	Clergy:
+	[
+		{ Content: "cleric" }
+		{ Content: "monk" }
+		{ Content: "nun" }
+		{ Content: "parson" }
+		{ Content: "priest" }
+		{ Content: "vicor" }
+	]
+	
+	Ruler:
+	[
+		{ Content: "emperor" }
+		{ Content: "king" }
+		{ Content: "queen" }
+		{ Content: "tzar" }
+	]
+}
+GeneratorType: Assignment

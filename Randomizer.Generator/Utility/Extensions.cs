@@ -211,6 +211,25 @@ namespace Randomizer.Generator.Utility
         }
 
 		/// <summary>
+		/// Splits a string into evenly sized parts
+		/// </summary>
+		public static List<String> Split(this String extended, Int32 partSize)
+		{			
+			if (extended == null) return null;
+			var parts = new List<String>();
+			for (var i = 0; i + partSize <= extended.Length; i += partSize)
+			{
+				parts.Add(extended[i..(i + partSize)]);
+			}
+			var mod = extended.Length % partSize;
+			if (mod > 0)
+			{
+				parts.Add(extended[^mod..]);
+			}
+			return parts;
+		}
+
+		/// <summary>
 		/// Converts the case of the <paramref name="extended"/> to the case defined by <paramref name="textCase"/>
 		/// </summary>
 		/// <param name="extended">The string to convert</param>
@@ -305,6 +324,19 @@ namespace Randomizer.Generator.Utility
 		}
 		#endregion
 
+		#region String List Extensions
+		/// <summary>
+		/// Trim all values of whitespace
+		/// </summary>
+		public static IEnumerable<String> TrimAll(this IEnumerable<String> extended)
+		{
+			foreach (var item in extended)
+			{
+				yield return item.Trim();
+			}
+		}
+		#endregion
+
 		#region StringBuilder Extensions
 		/// <summary>
 		/// Returns true if the string builder is empty
@@ -328,6 +360,43 @@ namespace Randomizer.Generator.Utility
             }
             return false;
         }
+
+		/// <summary>
+		/// Picks a random keyvaluepair from the dictionary
+		/// </summary>
+		public static KeyValuePair<TKey, TValue> RandomItem<TKey, TValue>(this IDictionary<TKey, TValue> extended)
+		{			
+			var values = Enumerable.ToList(extended);
+			int size = extended.Count;
+			if (size == 1) return values.First();
+			return values[Random.RandomNumber(size - 1)];			
+		}
+
+		/// <summary>
+		/// Picks a random item from the list
+		/// </summary>
+		public static TValue RandomItem<TValue>(this IList<TValue> extended)
+		{
+			int size = extended.Count;
+			if (size == 1) return extended.First();
+			return extended[Random.RandomNumber(size - 1)];
+		}
+
+		/// <summary>
+		/// Returns true if the list is empty
+		/// </summary>
+		public static Boolean IsEmpty<T>(this IEnumerable<T> extended)
+		{
+			return !extended.Any();
+		}
+
+		/// <summary>
+		/// Returns true if the list is empty
+		/// </summary>
+		public static Boolean IsEmpty<TKey, TValue>(this IDictionary<TKey, TValue> extended)
+		{
+			return !extended.Any();
+		}
 		#endregion
 
 		#region Exception Extensions

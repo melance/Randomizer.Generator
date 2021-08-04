@@ -1,18 +1,18 @@
+Name: Colors
+Author: null
+Description: "A color generator, with themed swatches suitable for import."
+Version: "2.0"
+URL: null
+Tags:
+[
+	Generic
+]
+OutputFormat: Text
+ShowInList: false
+Parameters:
 {
-  Name: Colors
-  Author: null
-  Description: "A color generator, with themed swatches suitable for import."
-  Version: "2.0"
-  URL: null
-  Tags:
-  [
-    Generic
-  ]
-  OutputFormat: Text
-  Parameters:
-  {
-    Swatch:
-    {
+	Swatch:
+	{
 		Value: ColorSwatchAll
 		Display: Swatch
 		Type: List
@@ -28,18 +28,21 @@
 			ColorSwatchRed:Red
 			ColorSwatchYellow:Yellow
 			ColorSwatchMetal:Metal
+			ColorSwatchWarm:Warm
+			ColorSwatchCool:Cool
+			ColorSwatchNatural:Natural
 		]
-    }
-  }
-  TextCase: None
-  LineItems:
-  {
-    Start:
-    [
-      { Content: "[Swatch]" }
-    ]
+	}
+}
+TextCase: None
+LineItems:
+{
+	Start:
+	[
+	  { Content: "[Swatch]" }
+	]
 	ColorSwatchAll:
-    [
+	[
 		{ Content: "[ColorSwatchBlue]" }
 		{ Content: "[ColorSwatchBrown]" }
 		{ Content: "[ColorSwatchGreen]" }
@@ -49,9 +52,27 @@
 		{ Content: "[ColorSwatchRed]" }
 		{ Content: "[ColorSwatchYellow]" }
 		{ Content: "[ColorSwatchMetal]" }
-    ]	
+		{ Content: "[ColorSwatchBasic]" }
+	]	
+	ColorSwatchWarm:
+	[
+		{ Content: "[ColorSwatchOrange]" }
+		{ Content: "[ColorSwatchYellow]" }
+		{ Content: "[ColorSwatchRed]" }
+	]
+	ColorSwatchCool:
+	[
+		{ Content: "[ColorSwatchBlue]" }
+		{ Content: "[ColorSwatchGreen]" }
+		{ Content: "[ColorSwatchGrey]" }
+	]
+	ColorSwatchNatural:
+	[
+		{ Content: "[ColorSwatchBrown]" }
+		{ Content: "[ColorSwatchGreen]" }
+	]
 	ColorSwatchBlue:
-    [
+	[
 		{ Content: "blue gray" }
 		{ Content: "mist blue" }
 		{ Content: "marble blue" }
@@ -110,9 +131,9 @@
 		{ Content: "water" }
 		{ Content: "alice blue" }		
 		{ Content: "azure" }
-    ]
+	]
 	ColorSwatchGreyscale:
-    [
+	[
 		{ Content: "black" }
 		{ Content: "night" }
 		{ Content: "charcoal" }
@@ -153,9 +174,9 @@
 		{ Content: "slate granite gray" }
 		{ Content: "jet gray" }
 		{ Content: "ghost white" }
-    ]
+	]
 	ColorSwatchOrange:
-    [      
+	[      
 		{ Content: "dark bisque" }
 		{ Content: "rust" }
 		{ Content: "copper" }
@@ -177,9 +198,9 @@
 		{ Content: "saffron" }
 		{ Content: "beer" }
 		{ Content: "golden brown" }
-    ]
-    ColorSwatchRed:
-    [
+	]
+	ColorSwatchRed:
+	[
 		{ Content: "red" }
 		{ Content: "scarlet" }
 		{ Content: "ruby red" }
@@ -227,9 +248,9 @@
 		{ Content: "mauve" }
 		{ Content: "deep mauve" }
 		{ Content: "cinnamon" }
-    ]
-    ColorSwatchYellow:
-    [      
+	]
+	ColorSwatchYellow:
+	[      
 		{ Content: "harvest gold" }
 		{ Content: "sun yellow" }
 		{ Content: "corn yellow" }
@@ -246,9 +267,9 @@
 		{ Content: "lemon" }
 		{ Content: "bumblebee" }
 		{ Content: "pineapple yellow" }		
-    ]
-    ColorSwatchGreen:
-    [      
+	]
+	ColorSwatchGreen:
+	[      
 		{ Content: "beetle green" }
 		{ Content: "green blue" }
 		{ Content: "aquamarine" }
@@ -309,9 +330,9 @@
 		{ Content: "pale green" }
 		{ Content: "mint green" }
 		{ Content: "light jade" }
-    ]
-    ColorSwatchPurple:
-    [
+	]
+	ColorSwatchPurple:
+	[
 		{ Content: "purple lily" }
 		{ Content: "purple maroon" }
 		{ Content: "magenta" }
@@ -343,8 +364,8 @@
 		{ Content: "fuchsia" }
 		{ Content: "heliotrope" }
 	]
-    ColorSwatchBrown:
-    [
+	ColorSwatchBrown:
+	[
 		{ Content: "wood" }
 		{ Content: "oak" }
 		{ Content: "antique bronze" }
@@ -369,7 +390,7 @@
 		{ Content: "cinnamon" }
 		{ Content: "cocoa" }
 		{ Content: "dark brown" }		
-    ]
+	]
 	ColorSwatchMetal:
 	[		
 		{ Content: "aluminum" }
@@ -392,6 +413,111 @@
 		{ Content: "lead" }
 		{ Content: "chrome" }
 	]
-  }
-  GeneratorType: Assignment
+	ColorSwatchBasic:
+	[
+		{ Content: "apricot" }
+		{ Content: "black" }
+		{ Content: "blue" }
+		{ Content: "brown" }
+		{ Content: "gray" }
+		{ Content: "green" }
+		{ Content: "indigo" }
+		{ Content: "orange" }
+		{ Content: "pink" }
+		{ Content: "purple" }
+		{ Content: "red" }
+		{ Content: "scarlet" }
+		{ Content: "violet" }
+		{ Content: "white" }
+		{ Content: "yellow" }
+	]
+	ColorSwatchSingleWord:
+	[
+		{ Content: "aluminum" }
+		{ Content: "apricot" }
+		{ Content: "azure" }
+		{ Content: "black" }
+		{ Content: "blue" }
+		{ Content: "blueberry" }
+		{ Content: "brass" }
+		{ Content: "bronze" }
+		{ Content: "brown" }
+		{ Content: "bumblebee" }
+		{ Content: "burgundy" }
+		{ Content: "butter" }
+		{ Content: "cantelope" }
+		{ Content: "carnation" }
+		{ Content: "charcoal" }
+		{ Content: "chestnut" }
+		{ Content: "chocolate" }
+		{ Content: "chrome" }
+		{ Content: "cinnamon" }
+		{ Content: "cinnamon" }		
+		{ Content: "cobalt" }
+		{ Content: "cocoa" }
+		{ Content: "coffee" }
+		{ Content: "copper" }
+		{ Content: "coral" }
+		{ Content: "crimson" }
+		{ Content: "daffodil" }
+		{ Content: "eggplant" }
+		{ Content: "electrum" }
+		{ Content: "emerald" }
+		{ Content: "fuchsia" }
+		{ Content: "gainsboro" }
+		{ Content: "ginger" }
+		{ Content: "gold" }
+		{ Content: "gold" }		
+		{ Content: "granite" }
+		{ Content: "grape" }	
+		{ Content: "gray" }
+		{ Content: "green" }
+		{ Content: "gunmetal" }
+		{ Content: "hazel" }
+		{ Content: "heliotrope" }
+		{ Content: "indigo" }
+		{ Content: "iridium" }
+		{ Content: "iron" }
+		{ Content: "jade" }
+		{ Content: "lead" }
+		{ Content: "lemon" }
+		{ Content: "lilac" }
+		{ Content: "lime" }
+		{ Content: "maroon" }
+		{ Content: "mauve" }
+		{ Content: "mercury" }
+		{ Content: "mint" }
+		{ Content: "mocha" }
+		{ Content: "mustard" }
+		{ Content: "navy" }
+		{ Content: "night" }
+		{ Content: "oil" }
+		{ Content: "olive" }
+		{ Content: "orange" }
+		{ Content: "orchid" }
+		{ Content: "pink" }
+		{ Content: "platinum" }
+		{ Content: "plum" }
+		{ Content: "purple" }
+		{ Content: "red" }
+		{ Content: "rose" }
+		{ Content: "rust" }
+		{ Content: "saffron" }
+		{ Content: "sage" }
+		{ Content: "sand" }
+		{ Content: "sandstone" }
+		{ Content: "scarlet" }		
+		{ Content: "sedona" }
+		{ Content: "silver" }
+		{ Content: "steel" }
+		{ Content: "sunflower" }
+		{ Content: "tan" }
+		{ Content: "tangerine" }
+		{ Content: "taupe" }
+		{ Content: "violet" }
+		{ Content: "white" }
+		{ Content: "wisteria" }
+		{ Content: "yellow" }
+	]
 }
+GeneratorType: Assignment

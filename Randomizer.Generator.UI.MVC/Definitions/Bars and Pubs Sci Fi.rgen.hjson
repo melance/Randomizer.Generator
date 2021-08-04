@@ -1,1360 +1,253 @@
+Name: Bars and Pubs Sci-Fi
+Author: Lance Boudreaux
+Description: Generates a random futuristic drinking hole.
+Version: "2.0"
+Tags:
+[
+	Environment
+	Generic
+	Sci-Fi
+]
+OutputFormat: Html
+ShowInList: false
+LineItems:
 {
-  LineItems:
-  {
-    Start:
-    [
-      {
-        Content:
-          '''
-          <h3 style="margin:0;">[Name]</h3>
-          		<b>Location</b>:    [Location]<br />
-          		<b>Description</b>: A [Stories]-story establishment with [Walls] walls that are [Decorations].<br />
-          		<b>Barkeeper</b>:   A [Size] [Age] [Gender] [Trait].
-          		
-          '''
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-    ]
-    Name:
-    [
-      {
-        Content: The [Noun] & [Noun]
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: The [Adjective] [Noun]
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: "[Owner]'s [Type]"
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: "[Owner]'s [Noun] [Type]"
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: "[Type] [Noun]"
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: "[Type] [Adjective] [Noun]"
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-    ]
-    Location:
-    [
-      {
-        Content: In the slums
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Alleyway
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Inside a hotel
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: downtown
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: In a rural area
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: On skid row
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: In the red light district
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Uptown
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Underground
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: In the suburbs
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: At the top of a skyscraper
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-    ]
-    Size:
-    [
-      {
-        Content: diminutive
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: tiny
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 2
-      }
-      {
-        Content: small
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 5
-      }
-      {
-        Content: average height
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 10
-      }
-      {
-        Content: tall
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 5
-      }
-      {
-        Content: very tall
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 2
-      }
-      {
-        Content: towering
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: giant
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-    ]
-    Age:
-    [
-      {
-        Content: young
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: twenty-something
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: thirty-something
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: middle age
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: old
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: very old
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: forty-something
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-    ]
-    Gender:
-    [
-      {
-        Content: male
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: female
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: androgynous
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: trans-gender
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: transsexual
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-    ]
-    Trait:
-    [
-      {
-        Content: who is unremarkable
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: with a facial scar
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: with a missing eye
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: with a misshapen hand
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: with long hair
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: with [Color] hair
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: with alopecia
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: with a slight limp
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: with a bad limp
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: with dark skin
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: with pale skin
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: albino
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: wearing coke-bottle glasses
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: wearing neon clothing
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: with 9 fingers
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: wearing earphones
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: cleaning glasses
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: moving fluidly
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: with [Color] eyes
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: who is barefoot
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: with a broken nose
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: with a black eye
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: with a lazy eye
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: who is cross-eyed
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: with a cleft lip
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: with a hare lip
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: sporting a mohawk
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: sporting liberty spikes
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: carrying a sidearm
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-    ]
-    Stories:
-    [
-      {
-        Content: single
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 15
-      }
-      {
-        Content: double
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 5
-      }
-      {
-        Content: triple
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-    ]
-    Walls:
-    [
-      {
-        Content: steel
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: wood
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: plastic
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: plaster
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: brick
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-    ]
-    Decorations:
-    [
-      {
-        Content: bare
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: decorated with local art
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: covered in dirt
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: exceptionally clean
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: full of random items
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: covered in televisions
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: decorated with cliché posters
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: windowless
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: painted [Color]
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: graffitied
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: lined with pool tables
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: lined with patrons
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-    ]
-    Color:
-    [
-      {
-        Content: blue
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: red
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: green
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: purple
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: yellow
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: orange
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: brown
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: white
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: black
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: tan
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: beige
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: camouflage
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: silver
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: bronze
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: burgundy
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: maroon
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: navy
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: olive
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-    ]
-    Type:
-    [
-      {
-        Content: Club
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Café
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Pub
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Bistro
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Bar
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Tavern
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Lounge
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-    ]
-    Adjective:
-    [
-      {
-        Content: Dead
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Short
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Off
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Hard
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Tech
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Dark
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Blue
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Red
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Green
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Black
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Blind
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: South
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: North
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: East
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: West
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Urban
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Cyber
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Blank
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Titanium
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Steel
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Bone
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-    ]
-    Noun:
-    [
-      {
-        Content: Matrix
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Charge
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Circuit
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Beat
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Rocker
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Illusion
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Phantasia
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Phantasm
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Pony
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Horse
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Fire
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Body
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Dance
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Squad
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Time
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Noir
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Town
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Light
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Line
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Mice
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Straight
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Stone
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Haven
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Heaven
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Hell
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Wanted
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Runner
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Shadow
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: House
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Yard
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-    ]
-    Owner:
-    [
-      {
-        Content: Killroy
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Henry
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Bone
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Bob
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Dante
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Crystal
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Lance
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Ashe
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Brenna
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Lizzie
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Country
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Dallas
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Texas
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Paris
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: London
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Glenda
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Robin
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Bruce
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Layne
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Lisa
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-      {
-        Content: Raven
-        Next: null
-        Repeat: 1
-        Variable: null
-        Weight: 1
-      }
-    ]
-  }
-  Imports: []
-  Name: Bars & Pubs (Sci-Fi)
-  Author: Lance Boudreaux
-  Description: Generates a random futuristic drinking hole.
-  Version: "2.0"
-  URL: null
-  Tags:
-  [
-    Environment
-    Generic
-    Sci-Fi
-  ]
-  OutputFormat: Html
-  Parameters: {}
-  GeneratorType: Assignment
+	Start:
+	[
+	  {
+		Content:
+			'''
+			<h5 style="margin:0;">[Name]</h5>
+			<b>Location</b>:    [Location]<br />
+			<b>Description</b>: A [Stories]-story establishment with [Walls] walls that are [Decorations].<br />
+			<b>Barkeeper</b>:   A [Size] [Age] [Gender] [Trait].
+			'''
+	  }
+	]
+	Name:
+	[
+	  { Content: "The [Noun] & [Noun]" }
+	  { Content: "The [Adjective] [Noun]" }
+	  { Content: "[Owner]'s [Type]" }
+	  { Content: "[Owner]'s [Noun] [Type]" }
+	  { Content: "[Type] [Noun]" }
+	  { Content: "[Type] [Adjective] [Noun]" }
+	]
+	Location:
+	[
+	  { Content: "In the slums" }
+	  { Content: "Alleyway" }
+	  { Content: "Inside a hotel" }
+	  { Content: "downtown" }
+	  { Content: "In a rural area" }
+	  { Content: "On skid row" }
+	  { Content: "In the red light district" }
+	  { Content: "Uptown" }
+	  { Content: "Underground" }
+	  { Content: "In the suburbs" }
+	  { Content: "At the top of a skyscraper" }
+	]
+	Size:
+	[
+	  { Content: "diminutive" }
+	  { Content: "tiny", Weight: "2" }
+	  { Content: "small", Weight: "5" }
+	  { Content: "average height", Weight: "10" }
+	  { Content: "tall", Weight: "5" }
+	  { Content: "very tall", Weight: "2" }
+	  { Content: "towering" }
+	  { Content: "giant" }
+	]
+	Age:
+	[
+	  { Content: "young" }
+	  { Content: "twenty-something" }
+	  { Content: "thirty-something" }
+	  { Content: "middle age" }
+	  { Content: "old" }
+	  { Content: "very old" }
+	  { Content: "forty-something" }
+	]
+	Gender:
+	[
+	  { Content: "male" }
+	  { Content: "female" }
+	  { Content: "androgynous" }
+	  { Content: "trans-gender" }
+	  { Content: "transsexual" }
+	]
+	Trait:
+	[
+	  { Content: "who is unremarkable" }
+	  { Content: "with a facial scar" }
+	  { Content: "with a missing eye" }
+	  { Content: "with a misshapen hand" }
+	  { Content: "with long hair" }
+	  { Content: "with [Color] hair" }
+	  { Content: "with alopecia" }
+	  { Content: "with a slight limp" }
+	  { Content: "with a bad limp" }
+	  { Content: "with dark skin" }
+	  { Content: "with pale skin" }
+	  { Content: "albino" }
+	  { Content: "wearing coke-bottle glasses" }
+	  { Content: "wearing neon clothing" }
+	  { Content: "with 9 fingers" }
+	  { Content: "wearing earphones" }
+	  { Content: "cleaning glasses" }
+	  { Content: "moving fluidly" }
+	  { Content: "with [Color] eyes" }
+	  { Content: "who is barefoot" }
+	  { Content: "with a broken nose" }
+	  { Content: "with a black eye" }
+	  { Content: "with a lazy eye" }
+	  { Content: "who is cross-eyed" }
+	  { Content: "with a cleft lip" }
+	  { Content: "with a hare lip" }
+	  { Content: "sporting a mohawk" }
+	  { Content: "sporting liberty spikes" }
+	  { Content: "carrying a sidearm" }
+	]
+	Stories:
+	[
+	  { Content: "single", Weight: "15" }
+	  { Content: "double", Weight: "5" }
+	  { Content: "triple" }
+	]
+	Walls:
+	[
+	  { Content: "steel" }
+	  { Content: "wood" }
+	  { Content: "plastic" }
+	  { Content: "plaster" }
+	  { Content: "brick" }
+	]
+	Decorations:
+	[
+	  { Content: "bare" }
+	  { Content: "decorated with local art" }
+	  { Content: "covered in dirt" }
+	  { Content: "exceptionally clean" }
+	  { Content: "full of random items" }
+	  { Content: "covered in televisions" }
+	  { Content: "decorated with cliché posters" }
+	  { Content: "windowless" }
+	  { Content: "painted [Color]" }
+	  { Content: "graffitied" }
+	  { Content: "lined with pool tables" }
+	  { Content: "lined with patrons" }
+	]
+	Color:
+	[
+	  { Content: "blue" }
+	  { Content: "red" }
+	  { Content: "green" }
+	  { Content: "purple" }
+	  { Content: "yellow" }
+	  { Content: "orange" }
+	  { Content: "brown" }
+	  { Content: "white" }
+	  { Content: "black" }
+	  { Content: "tan" }
+	  { Content: "beige" }
+	  { Content: "camouflage" }
+	  { Content: "silver" }
+	  { Content: "bronze" }
+	  { Content: "burgundy" }
+	  { Content: "maroon" }
+	  { Content: "navy" }
+	  { Content: "olive" }
+	]
+	Type:
+	[
+	  { Content: "Club" }
+	  { Content: "Café" }
+	  { Content: "Pub" }
+	  { Content: "Bistro" }
+	  { Content: "Bar" }
+	  { Content: "Tavern" }
+	  { Content: "Lounge" }
+	]
+	Adjective:
+	[
+	  { Content: "Dead" }
+	  { Content: "Short" }
+	  { Content: "Off" }
+	  { Content: "Hard" }
+	  { Content: "Tech" }
+	  { Content: "Dark" }
+	  { Content: "Blue" }
+	  { Content: "Red" }
+	  { Content: "Green" }
+	  { Content: "Black" }
+	  { Content: "Blind" }
+	  { Content: "South" }
+	  { Content: "North" }
+	  { Content: "East" }
+	  { Content: "West" }
+	  { Content: "Urban" }
+	  { Content: "Cyber" }
+	  { Content: "Blank" }
+	  { Content: "Titanium" }
+	  { Content: "Steel" }
+	  { Content: "Bone" }
+	]
+	Noun:
+	[
+	  { Content: "Matrix" }
+	  { Content: "Charge" }
+	  { Content: "Circuit" }
+	  { Content: "Beat" }
+	  { Content: "Rocker" }
+	  { Content: "Illusion" }
+	  { Content: "Phantasia" }
+	  { Content: "Phantasm" }
+	  { Content: "Pony" }
+	  { Content: "Horse" }
+	  { Content: "Fire" }
+	  { Content: "Body" }
+	  { Content: "Dance" }
+	  { Content: "Squad" }
+	  { Content: "Time" }
+	  { Content: "Noir" }
+	  { Content: "Town" }
+	  { Content: "Light" }
+	  { Content: "Line" }
+	  { Content: "Mice" }
+	  { Content: "Straight" }
+	  { Content: "Stone" }
+	  { Content: "Haven" }
+	  { Content: "Heaven" }
+	  { Content: "Hell" }
+	  { Content: "Wanted" }
+	  { Content: "Runner" }
+	  { Content: "Shadow" }
+	  { Content: "House" }
+	  { Content: "Yard" }
+	]
+	Owner:
+	[
+	  { Content: "Killroy" }
+	  { Content: "Henry" }
+	  { Content: "Bone" }
+	  { Content: "Bob" }
+	  { Content: "Dante" }
+	  { Content: "Crystal" }
+	  { Content: "Lance" }
+	  { Content: "Ashe" }
+	  { Content: "Brenna" }
+	  { Content: "Lizzie" }
+	  { Content: "Country" }
+	  { Content: "Dallas" }
+	  { Content: "Texas" }
+	  { Content: "Paris" }
+	  { Content: "London" }
+	  { Content: "Glenda" }
+	  { Content: "Robin" }
+	  { Content: "Bruce" }
+	  { Content: "Layne" }
+	  { Content: "Lisa" }
+	  { Content: "Raven" }
+	]
 }
+GeneratorType: Assignment

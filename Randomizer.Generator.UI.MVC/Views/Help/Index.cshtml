@@ -1,0 +1,75 @@
+﻿@model Randomizer.Generator.UI.MVC.Models.HelpModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Help";
+}
+
+@section Scripts
+{
+    <script>
+        $(document).ready(function () {
+            $('div.tree-toggler').click(function () {
+                $(this).siblings('ul.tree').toggle();
+                SwapClasses($(this).children('span'), 'bi-folder', 'bi-folder2-open');
+            });
+            $('#@Model.Category').toggle();
+        });
+    </script>
+}
+
+<style>
+    .tree-toggler {
+        cursor: pointer;
+        color: #0366d6;
+    }
+
+    .nav-link {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+</style>
+
+<div class="container">
+    <div class="row">
+        <div class="col-3 overflow-auto border-right">
+            <h3>Help</h3>
+            <ul class="nav flex-column">
+                <li class="nav-item"><a asp-action="Index"><span class="bi-file-text"></span> Overview</a></li>
+                <li class="nav-item">
+                    <div class="tree-toggler"><span class="bi-folder"></span> Using the Site</div>
+                    <ul class="tree nav flex-column collapse" id="MVC">
+                        <li class="list-unstyled nav-item"><a class="nav-link" asp-action="Index" asp-route-category="MVC" asp-route-topic="Filtering"><span class="bi-file-text"></span> Filtering Generators</a></li>
+                        <li class="list-unstyled nav-item"><a class="nav-link" asp-action="Index" asp-route-category="MVC" asp-route-topic="Generating"><span class="bi-file-text"></span> Generating Content</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <div class="tree-toggler"><span class="bi-folder"></span> Using the Terminal UI</div>
+                    <ul class="tree nav flex-column collapse" id="TUI">
+                        <li class="list-unstyled nav-item"><a class="nav-link" asp-action="Index" asp-route-category="TUI" asp-route-topic="Overview"><span class="bi-file-text"></span> Overview</a></li>
+                        <li class="list-unstyled nav-item"><a class="nav-link" asp-action="Index" asp-route-category="TUI" asp-route-topic="Interface"><span class="bi-file-text"></span> Interface</a></li>
+                        <li class="list-unstyled nav-item"><a class="nav-link" asp-action="Index" asp-route-category="TUI" asp-route-topic="Filtering"><span class="bi-file-text"></span> Filtering Generators</a></li>
+                        <li class="list-unstyled nav-item"><a class="nav-link" asp-action="Index" asp-route-category="TUI" asp-route-topic="Generating"><span class="bi-file-text"></span> Generating Content</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <div class="tree-toggler"><span class="bi-folder"></span> Using the CLI Utilities</div>
+                    <ul class="tree nav flex-column collapse" id="CLI">
+                        <li class="list-unstyled nav-item"><a class="nav-link" asp-action="Index" asp-route-category="CLI" asp-route-topic="Overview"><span class="bi-file-text"></span> Overview</a></li>
+                        <li class="list-unstyled nav-item"><a class="nav-link" asp-action="Index" asp-route-category="CLI" asp-route-topic="Generating"><span class="bi-file-text"></span> Generating Content</a></li>
+                        <li class="list-unstyled nav-item"><a class="nav-link" asp-action="Index" asp-route-category="CLI" asp-route-topic="ViewInfo"><span class="bi-file-text"></span> Viewing Definition Info</a></li>
+                        <li class="list-unstyled nav-item"><a class="nav-link" asp-action="Index" asp-route-category="CLI" asp-route-topic="Converting"><span class="bi-file-text"></span> Converting a Generator</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <div class="tree-toggler"><span class="bi-folder"></span> Definitions</div>
+                    <ul class="tree nav flex-column collapse" id="Definitions">
+                        <li class="list-unstyled nav-item"><a class="nav-link" asp-action="Index" asp-route-category="Definitions" asp-route-topic="Overview"><span class="bi-file-text"></span> Overview</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="col-9">
+            <partial name="~/Views/Help/@Model.Category/_@(Model.Topic).cshtml" />
+        </div>
+    </div>
+</div>

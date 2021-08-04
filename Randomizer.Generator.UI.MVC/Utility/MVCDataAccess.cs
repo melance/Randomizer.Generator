@@ -27,9 +27,10 @@ namespace Randomizer.Generator.UI.MVC.Utility
 
 		public IEnumerable<Models.DefinitionInfo> GetDefinitionInfoList(String tag)
 		{
-			var results = new List<Models.DefinitionInfo>();			
+			var results = new List<Models.DefinitionInfo>();
 
 			foreach (var definition in GetDefinitionList(db => db.Tags?.Count > 0  && 
+															   db.ShowInList &&
 															   (String.IsNullOrWhiteSpace(tag) || 															   
 															   db.Tags.Contains(tag, StringComparer.CurrentCultureIgnoreCase))))
 			{

@@ -26,14 +26,33 @@ namespace Randomizer.Generator.UI.MVC.Controllers
 			Settings = settings.Value;
 		}
 
-        public IActionResult Index(String tag = "")
+		[HttpGet]
+        public IActionResult Index()
         {
-			var model = new IndexModel(DataAccess, tag)
+			try
 			{
-				Tag = tag
-			};
-			return View(model);
+				var model = new IndexModel(DataAccess, 1);
+				ViewBag.ErrorMessage = String.Empty;
+				return View(model);
+			}
+			catch (Exception ex)
+			{
+				var model = new IndexModel();
+				ViewBag.ErrorMessage = ex.Message;
+				foreach (var key in ex.Data.Keys)
+				{
+					ViewBag.ErrorMessage += $"<br/>{key}: {ex.Data[key]}";
+				}
+				return View(model);
+			}
         }
+
+		[HttpPost]
+		public IActionResult Index(IndexModel model, Int32 page = 1)
+		{
+			model.GetDefinitions(DataAccess);
+			return View(model);
+		}
 
 		[HttpGet]
 		public IActionResult Definition(String name)
@@ -49,7 +68,7 @@ namespace Randomizer.Generator.UI.MVC.Controllers
 			{
 				var results = new List<String>();
 				var definition = DataAccess.GetDefinition(model.Name);
-
+				
 				foreach (var parameter in model.Parameters)
 				{
 					definition.Parameters[parameter.Key].Value = parameter.Value.Value;
@@ -67,10 +86,6 @@ namespace Randomizer.Generator.UI.MVC.Controllers
 				else
 					model.Result = String.Join("\n\n", results.ToArray());
 			}
-			catch (ParameterValidationException ex)
-			{
-				model.ErrorMessage = ex.Message;
-			}
 			catch (Exception ex)
 			{
 				model.ErrorMessage = Utility.ExceptionHandling.GetExceptionDetails(ex, Settings.FullExceptions);				
@@ -80,7 +95,8 @@ namespace Randomizer.Generator.UI.MVC.Controllers
 
         public IActionResult About()
         {
-            return View();
+			var model = new AboutModel();
+            return View(model);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
@@ -88,6 +104,11 @@ namespace Randomizer.Generator.UI.MVC.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+		public IActionResult RawView(String name)
+		{
+			return Content(DataAccess.GetDefinitionRaw(name));
+		}
 
     }
 }

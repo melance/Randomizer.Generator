@@ -1,13 +1,13 @@
 {
 	Name: Maze
 	Author: Lance Boudreaux
-	Description: Generates a random maze using the Aldous-Broder algorithm.
+	Description: Generates a random maze.
 	Version: "2.0"
 	Tags:
 	[
 		Map
 	]
-	OutputFormat: Html
+	OutputFormat: Image
 	DLLPath: C:\Users\me_la\source\repos\Randomizer.Generator\Randomizer.Generator.UI.MVC\Definitions\Libraries\maze.rgen.dll
 	ClassName: Maze.Rgen.MazeMaker
 	MethodName: RecursiveBacktracking
@@ -21,7 +21,8 @@
 			Type: Integer
 			Validation:
 			[
-				{ Expression: "Value < 10", Message: "[Name] must be greater than or equal to 10.<br />Value received was [Value]." }
+				{ Expression: "Value < 10", Message: "[Name] must be greater than or equal to 10. Value received was [Value]." }
+				{ Expression: "Value > 250", Message: "[Name] must be less than or equal to 250. Value received was [Value]." }
 			]
 		}
 		height:
@@ -32,33 +33,36 @@
 			Type: Integer
 			Validation:
 			[
-				{ Expression: "Value < 10", Message: "[Name] must be greater than or equal to 10.<br />Value received was [Value]." }
+				{ Expression: "Value < 10", Message: "[Name] must be greater than or equal to 10. Value received was [Value]." }
+				{ Expression: "Value > 250", Message: "[Name] must be less than or equal to 250. Value received was [Value]." }
+			]
+		}
+		fontSizeInPixels:
+		{
+			Value: "6"
+			Display: Cell Size
+			Description: Determines the size of each cell.
+			Type: Integer
+			Validation:
+			[
+				{ Expression: "Value < 2", Message: "[Name] must be greater than 1. Value received was [Value]." }
+				{ Expression: "Value > 24", Message: "[Name] must be less than 24. Value received was [Value]." }
 			]
 		}
 		format:
 		{
-			Value: "HTML"
+			Value: Image
 			Display: Format
 			Description: The format to display the resulting maze in.
-			Type: List
+			Type: Text
 			Visible: false
-			Options:
-			[
-				HTML:Html
-				ASCII:Text
-			]
 		}
-		method:
+		showStartAndEnd:
 		{
-			Value: RecursiveBacktracking
-			Display: Algorithm
-			Description: The algorithm used to generate the maze.
-			Type: List
-			Options:
-			[
-				GrowingTree: Growing Tree
-				RecursiveBacktracking: Recursive Backtracking
-			]
+			Value: true
+			Display: Show Start and Finish
+			Description: Show the start and finish points of the maze.
+			Type: Boolean			
 		}
 	}
 	GeneratorType: DotNet

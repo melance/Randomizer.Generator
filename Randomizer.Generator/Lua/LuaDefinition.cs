@@ -16,47 +16,71 @@ namespace Randomizer.Generator.Lua
 	/// </summary>
 	public class LuaDefinition : BaseDefinition
 	{
+		#region Members
 		/// <summary>The lua interpreter .NET wrapper</summary>
 		private readonly NLua.Lua _lua = new();
+		#endregion
 
+		#region Properties
 		/// <summary>The Lua script to be run.</summary>
 		/// <remarks>If <see cref="ScriptPath"/> is set, this property is ignored</remarks>
 		public String Script { get; set; }
 		/// <summary>The path to the Lua script to be run.</summary>
 		public String ScriptPath { get; set; }
+		public override Boolean SupportsParameters => true;
 		/// <summary>Keeps the results that are printed as the generator is run.</summary>
-		private StringBuilder Result { get; set; } = new();
+		private StringBuilder Result { get; set; } = new(); 
+		#endregion
 
+		#region Public Methods
 		/// <summary>
 		/// Generates random content
 		/// </summary>
 		/// <returns>The content generated</returns>
 		public override String Generate()
 		{
-			base.Generate();
-			foreach (var parameter in Parameters)
+			if (ValidateParameters())
 			{
-				_lua[parameter.Key] = parameter.Value.Value;
+				foreach (var parameter in Parameters)
+				{
+					_lua[parameter.Key] = parameter.Value.Value;
+				}
+
+				Result.Clear();
+
+				// Register methods in this class marked with the Lua Global Attribute
+				LuaRegistrationHelper.TaggedInstanceMethods(_lua, this);
+				LuaRegistrationHelper.TaggedStaticMethods(_lua, typeof(LuaDefinition));
+
+				// Prevent imports to sandbox the script
+				_lua.DoString("import = function () end");
+
+				// Load the script if ScriptPath is set
+				var script = GetScript();
+
+				_lua.DoString(script, Name);
+
+				return Result.ToString(); 
 			}
-
-			Result.Clear();
-
-			// Register methods in this class marked with the Lua Global Attribute
-			LuaRegistrationHelper.TaggedInstanceMethods(_lua, this);
-			LuaRegistrationHelper.TaggedStaticMethods(_lua, typeof(LuaDefinition));
-
-			// Prevent imports to sandbox the script
-			_lua.DoString("import = function () end");
-
-			// Load the script if ScriptPath is set
-			if (!String.IsNullOrWhiteSpace(ScriptPath))
-				Script = File.ReadAllText(ScriptPath);
-
-			_lua.DoString(Script, Name);
-
-			return Result.ToString();
+			return String.Empty;
 		}
 
+		public override String Analyze(AnalyzeOptions options)
+		{
+			var analysis = new AnalysisWriter(base.Analyze(options));
+
+			analysis.AppendHeader("LUA");
+
+			analysis.AppendItemValue("Script Path", ScriptPath);
+
+			if (options.HasFlag(AnalyzeOptions.ShowScript))
+			{
+				analysis.AppendHeader("Script");
+				analysis.AppendLine(GetScript());
+			}
+
+			return analysis.ToString();
+		}
 
 		/// <summary>
 		/// Prints a blank line to the Results
@@ -203,5 +227,16 @@ namespace Randomizer.Generator.Lua
 			}
 			return string.Empty;
 		}
+		#endregion
+
+		#region Private Methods
+		private String GetScript()
+		{
+			var script = Script;
+			if (!String.IsNullOrWhiteSpace(ScriptPath))
+				script = DataAccess.DataAccess.Instance.GetText(ScriptPath);
+			return script;
+		}
+		#endregion
 	}
 }

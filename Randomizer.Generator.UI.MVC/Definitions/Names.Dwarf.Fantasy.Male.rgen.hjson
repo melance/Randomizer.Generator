@@ -1,0 +1,496 @@
+Name: Dwarf Fantasy Names Male
+Author: Lance Boudreaux
+Description: Generates fantasy style masculine names for dwarves
+Version: "1.0"
+Tags: 
+[	
+	Fantasy
+	Name
+]
+OutputFormat: Text
+ShowInList: false
+Parameters:
+{
+}
+LineItems:
+{
+	Start:
+	[
+		{ Content: "Ad[AD]" }
+		{ Content: "Al[AL]" }
+		
+		{ Content: "Ba[BA]" }
+		{ Content: "Be[BE]" }
+		{ Content: "Br[BR]" }
+		
+		{ Content: "Da[DA]" }
+		{ Content: "De[DE]" }
+		{ Content: "Du[DU]" }
+		{ Content: "Dw[DW]" }
+		
+		{ Content: "Eb[EB]" }
+		{ Content: "Ei[EI]" }
+		{ Content: "El[EL]" }
+		{ Content: "Er[ER]" }
+		
+		{ Content: "Fa[FA]" }
+		{ Content: "Fi[FI]" }
+		{ Content: "Fl[FL]" }
+		
+		{ Content: "Ga[GA]" }
+		{ Content: "Gi[GI]" }
+		{ Content: "Gl[GL]" }
+		{ Content: "Go[GO]" }
+		
+		{ Content: "Ha[HA]" }
+		
+		{ Content: "Jo[JO]" }
+		
+		{ Content: "Ki[KI]" }
+		
+		{ Content: "Mo[MO]" }
+		
+		{ Content: "Na[NA]" }
+		{ Content: "No[NO]" }
+		{ Content: "Nu[NU]" }
+		
+		{ Content: "Ol[OL]" }
+		{ Content: "Oi[OI]" }
+		{ Content: "Or[OR]" }
+		{ Content: "Os[OS]" }
+		
+		{ Content: "Ra[RA]" }
+		{ Content: "Re[RE]" }
+		{ Content: "Ru[RU]" }
+		
+		{ Content: "Ta[TA]" }
+		{ Content: "Th[TH]" }
+		{ Content: "To[TO]" }
+		{ Content: "Tr[TR]" }
+		{ Content: "Ty[TY]" }
+		
+		{ Content: "Ul[UL]" }
+		{ Content: "Ur[UR]" }
+		
+		{ Content: "Ve[VE]" }
+		{ Content: "Vo[VO]" }
+		
+		{ Content: "Wh[WH]" }
+	]
+	
+	## A ##
+	AD:
+	[
+		{ Content: "in" }
+		{ Content: "ri[RI]" }
+	]
+	AI:
+	[
+		{ Content: "m" }
+		{ Content: "n" }
+		{ Content: "r" }
+	]
+	AL:
+	[
+		{ Content: "be[BE]" }
+		{ Content: "in" }
+	]
+	AU:
+	[
+		{ Content: "bo[BO]" }
+	]
+	AV:
+	[
+		{ Content: "ok" }
+	]
+	
+	## B ##
+	BA:
+	[
+		{ Content: "er[ER]" }
+		{ Content: "li[LI]" }
+		{ Content: "re[RE]" }
+	]
+	BE:
+	[	
+		{ Content: "lo[LO]" }
+		{ Content: "ri[RI]" }
+	]
+	BI:
+	[
+		{ Content: "n" }
+	]
+	BO:
+	[
+		{ Content: "n" }
+		{ Content: "re" }
+	]
+	BR:
+	[
+		{ Content: "ot[OT]" }
+		{ Content: "ue[UE]" }
+	]
+	
+	## C ##
+	
+	## D ##
+	DA:
+	[
+		{ Content: "in" }
+		{ Content: "l" }
+		{ Content: "lg[LG]" }
+		{ Content: "rr[RR]" }
+	]
+	DE:
+	[
+		{ Content: "lg" }
+	]
+	DU:
+	[
+		{ Content: "er[ER]" }
+	]
+	DW:
+	[
+		{ Content: "al[AL]" }
+		{ Content: "or[OR]" }
+	]
+	
+	## E ##
+	EB:
+	[
+		{ Content: "er[ER]" }
+	]
+	EI:
+	[
+		{ Content: "nk[NK]" }
+	]
+	EL:
+	[
+		{ Content: "ai[AI]" }
+	]
+	ER:
+	[
+		{ Content: "ga[GA]" }
+		{ Content: "ias" }
+		{ Content: "k" }
+		{ Content: "n" }
+	]
+	
+	## F ##
+	FA:
+	[
+		{ Content: "ll[LL]" }
+		{ Content: "rg[RG]" }
+	]
+	FG:
+	[
+		{ Content: "ar" }
+	]
+	FI:
+	[
+		{ Content: "li" }
+	]
+	FL:
+	[
+		{ Content: "in[IN]" }
+	]
+	
+	## G ##
+	GA:
+	[
+		{ Content: "rd[RD]" }
+		{ Content: "th" }
+	]
+	GI:
+	[
+		{ Content: "lt[LT]" }
+		{ Content: "ml[ML]" }
+	]
+	GL:
+	[
+		{ Content: "oi[OI]" }
+	]
+	GO:
+	[
+		{ Content: "tr[TR]" }
+	]
+	GR:
+	[
+		{ Content: "im" }
+	]
+	
+	## H ##
+	HA:
+	[
+		{ Content: "rb[RB]" }
+	]
+	HU:
+	[
+		{ Content: "r" }
+	]
+	
+	## I ##
+	IN:
+	[
+		{ Content: "n" }
+		{ Content: "t" }
+	]
+	IR:
+	[
+		{ Content: "ak" }
+	]
+	
+	## J ##
+	JO:
+	[
+		{ Content: "se[SE]" }
+	]
+	
+	## K ##
+	KI:
+	[
+		{ Content: "ld[LD]" }
+		{ Content: "lv[LV]" }
+	]
+	KL:
+	[
+		{ Content: "in[IN]" }
+	]
+	
+	## L ##
+	LD:
+	[
+		{ Content: "rak" }
+	]
+	LG:
+	[
+		{ Content: "al" }
+	]
+	LI:
+	[
+		{ Content: "n" }
+	]
+	LL:
+	[
+		{ Content: "on[ON]" }
+	]
+	LO:
+	[
+		{ Content: "ri[RI]" }
+	]
+	LR:
+	[
+		{ Content: "al" }
+	]
+	LT:
+	[
+		{ Content: "hu[HU]" }
+	]
+	LV:
+	[
+		{ Content: "ar" }
+	]
+	
+	## M ##
+	ML:
+	[
+		{ Content: "i" }
+	]
+	MO:
+	[
+		{ Content: "rg[RG]" }
+		{ Content: "rk[RK]" }
+	]
+	
+	## N ##
+	NA:
+	[
+		{ Content: "lr[LR]" }
+	]
+	NB:
+	[
+		{ Content: "in" }
+	]
+	ND:
+	[
+		{ Content: "al" }
+		{ Content: "d" }
+	]
+	NG:
+	[
+		{ Content: "ri[RI]" }
+	]
+	NK:
+	[
+		{ Content: "il" }
+	]
+	NO:
+	[
+		{ Content: "rd[RD]" }
+	]
+	NU:
+	[
+		{ Content: "ra[RA]" }
+	]
+	
+	## O ##
+	OL:
+	[
+		{ Content: "or[OR]" }
+		{ Content: "un[UN]" }
+	]
+	OI:
+	[
+		{ Content: "n" }
+	]
+	ON:
+	[
+		{ Content: "d" }
+	]
+	OR:
+	[
+		{ Content: "ad[AD]" }
+		{ Content: "ic" }
+		{ Content: "in" }
+		{ Content: "gr[GR]" }
+		{ Content: "si[SI]" }
+	]
+	OS:
+	[
+		{ Content: "kar" }
+	]
+	OT:
+	[
+		{ Content: "tor" }
+	]
+	
+	## P ##
+	
+	## Q ##
+	
+	## R ##
+	RA:
+	[
+		{ Content: "da[DA]" }
+		{ Content: "ng[NG]" }
+		{ Content: "val" }
+	]
+	RB:
+	[
+		{ Content: "ek" }
+	]
+	RD:
+	[
+		{ Content: "ai[AI]" }
+		{ Content: "ak" }
+	]
+	RE:
+	[
+		{ Content: "ek" }
+		{ Content: "ir[IR]" }
+		{ Content: "nd[ND]" }
+	]
+	RG:
+	[
+		{ Content: "an" }
+		{ Content: "ri[RI]" }
+	]
+	RI:
+	[
+		{ Content: "ch" }
+		{ Content: "k" }
+		{ Content: "l" }
+		{ Content: "m" }
+		{ Content: "on" }
+	]
+	RK:
+	[
+		{ Content: "al" }
+	]
+	RR:
+	[
+		{ Content: "ak" }
+	]
+	RU:
+	[
+		{ Content: "ri[RI]" }
+	]
+	
+	## S ##
+	SE:
+	[
+		{ Content: "f" }
+	]
+	SI:
+	[
+		{ Content: "c" }
+	]
+	
+	## T ##
+	TA:
+	[
+		{ Content: "kl[KL]" }
+	]
+	TH:
+	[
+		{ Content: "ra[RA]" }
+		{ Content: "or[OR]" }
+	]
+	TO:
+	[
+		{ Content: "rd[RD]" }
+	]
+	TR:
+	[
+		{ Content: "au[AU]" }
+		{ Content: "av[AV]" }
+		{ Content: "ek" }
+	]
+	TY:
+	[
+		{ Content: "ri[RI]" }
+	]
+	
+	## U ##
+	UE:
+	[
+		{ Content: "nor" }
+	]
+	UL:
+	[
+		{ Content: "fg[FG]" }
+	]
+	UN:
+	[
+		{ Content: "t" }
+	]
+	UR:
+	[
+		{ Content: "ai[AI]" }
+		{ Content: "bi[BI]" }
+	]
+	
+	## V ##
+	VE:
+	[
+		{ Content: "it" }
+	]
+	VO:
+	[
+		{ Content: "nb[NB]" }
+		{ Content: "nd[ND]" }
+	]
+	
+	## W ##
+	WH:
+	[
+		{ Content: "ur[UR]" }
+	]
+	
+	## X ##
+	
+	## Y ##
+	
+	## Z ##
+}
+GeneratorType: Assignment

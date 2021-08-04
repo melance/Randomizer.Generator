@@ -1,0 +1,1006 @@
+Name: Fantasy Inns and Taverns
+Author: Lance Boudreaux
+Description: Generates a fantasy tavern name and additional info
+Version: "1.0"
+Tags:
+[
+	Fantasy
+	Location
+]
+OutputFormat: Html
+ShowInList: false
+Parameters:
+{
+}
+PreProcessItems:
+[
+	{ Variable: "EstType", Content: "[=Pick('Tavern', 'Inn', 'InnTavern')]" }
+]
+LineItems:
+{
+	Start:
+	[
+	  {
+		Content:
+			'''
+			<h5 style="margin:0;">[Name]</h5>
+			[Description]
+			'''
+	  }
+	]
+	
+	## region Name
+	Name:
+	[
+		{ Content: "The [Person|Creature]'s [Item][=Pick('', ' ' + Type)]", Weight: 6 }
+		{ Content: "The [Person|Creature]'s [Adjective] [Item][=Pick('', ' ' + Type)]", Weight: 6}
+		{ Content: "The [Adjective] [Item|Creature][=Pick('', ' ' + Type)]", Weight: 6 }
+		{ Content: "The [Adjective] [Person|Creature]'s [Type]", Weight: 6 }
+		{ Content: "The [Person]'s [Type]", Weight: 6 }
+		{ Content: "The [Item|Creature] [Type]", Weight: 6 }		
+		{ Content: "The [=TCase(Generate('Colors','Swatch=ColorSwatchSingleWord'))] [Item|Person|Creature][=Pick('', ' ' + Type)]", Weight: 6 }
+		{ Content: "The [InnJoke] Inn" }
+		{ Content: "The [PubJoke] Pub" }
+		{ Content: "[=Generate('Fantasy Names','Gender=Any','Race=AnyRace','FamilyName=false')]'s [Type]" }
+		{ Content: "[=Generate('Fantasy Names','Gender=Any','Race=AnyRace','FamilyName=false')]'s [Adjective] [Type]" }
+	]
+	
+	Type:
+	[
+		{ Content: "[=switch(EstType, '', 'Tavern', TavernType, 'Inn', InnType, 'InnTavern', InnTavernType)]" }
+	]
+	
+	InnType:
+	[
+		{ Content: "Den" }
+		{ Content: "Hideaway" }
+		{ Content: "House" }
+		{ Content: "Inn", weight: 6 }
+		{ Content: "Bathhouse" }
+		{ Content: "Flophouse" }
+		{ Content: "Roadhouse" }
+	]
+	
+	TavernType:
+	[
+		{ Content: "Alehouse" }
+		{ Content: "Brewery", Weight: 6 }
+		{ Content: "Café" }
+		{ Content: "Hall" }
+		{ Content: "Hideaway" }
+		{ Content: "House" }
+		{ Content: "Market" }
+		{ Content: "Meadhouse" }
+		{ Content: "Pub", Weight: 6 }
+		{ Content: "Roadhouse" }
+		{ Content: "Tavern", Weight: 6 }
+	]
+	
+	InnTavernType:
+	[
+		{ Content: "[InnType|TavernType]" }
+	]
+	
+	Adjective:
+	[
+		{ Content: "[=TCase(ToText(Roll(1,3)))] Legged" }		
+		{ Content: "Abyssal" }
+		{ Content: "Angry" }
+		{ Content: "Ascending" }
+		{ Content: "Barren" }
+		{ Content: "Best" }
+		{ Content: "Bitter" }
+		{ Content: "Blessed" }
+		{ Content: "Bloody" }
+		{ Content: "Blushing" }
+		{ Content: "Bold" }
+		{ Content: "Boring" }
+		{ Content: "Bottomless" }
+		{ Content: "Brazen" }
+		{ Content: "Broken" }
+		{ Content: "Busted" }
+		{ Content: "Cackling" }
+		{ Content: "Clay" }
+		{ Content: "Cracked" }
+		{ Content: "Crazy" }
+		{ Content: "Crooked" }
+		{ Content: "Crossed" }
+		{ Content: "Dancing" }
+		{ Content: "Dead" }
+		{ Content: "Deadly" }
+		{ Content: "Descending" }
+		{ Content: "Dirty" }
+		{ Content: "Dishonest" }
+		{ Content: "Dizzy" }
+		{ Content: "Double" }
+		{ Content: "Dreaming" }
+		{ Content: "Dreamy" }
+		{ Content: "Drowned" }
+		{ Content: "Drowning" }
+		{ Content: "Drunken" }
+		{ Content: "Dry" }
+		{ Content: "Dwarven" }
+		{ Content: "Early" }
+		{ Content: "Eastern" }
+		{ Content: "Eastward" }
+		{ Content: "Elven" }
+		{ Content: "Empty" }
+		{ Content: "Eternal" }
+		{ Content: "Excited" }
+		{ Content: "Fallen" }
+		{ Content: "Famous" }
+		{ Content: "Fat" }
+		{ Content: "Fatal" }
+		{ Content: "Fearless" }
+		{ Content: "Fiendish" }
+		{ Content: "Fiery" }
+		{ Content: "Fireside" }
+		{ Content: "First" }
+		{ Content: "Flaming" }
+		{ Content: "Flying" }
+		{ Content: "Forever" }
+		{ Content: "Forgotten" }
+		{ Content: "Frozen" }
+		{ Content: "Full" }
+		{ Content: "Furious" }
+		{ Content: "Gelded" }
+		{ Content: "Giggling" }
+		{ Content: "Glaring" }
+		{ Content: "Gleaming" }
+		{ Content: "Gnomish" }
+		{ Content: "Good" }
+		{ Content: "Great" }
+		{ Content: "Half" }
+		{ Content: "Hanging" }
+		{ Content: "Happy" }
+		{ Content: "Hearty" }
+		{ Content: "Holy" }
+		{ Content: "Horny" }
+		{ Content: "Hungry" }
+		{ Content: "Ice" }
+		{ Content: "Infamous" }
+		{ Content: "Insatiable" }
+		{ Content: "Inscrutable" }
+		{ Content: "Last" }
+		{ Content: "Lazy" }
+		{ Content: "Leaping" }
+		{ Content: "Lecherous" }
+		{ Content: "Laughing" }
+		{ Content: "Lonely" }
+		{ Content: "Lost" }
+		{ Content: "Lunar" }
+		{ Content: "Mad" }
+		{ Content: "Mangy" }
+		{ Content: "Maniacal" }
+		{ Content: "Magnificent" }
+		{ Content: "Marbled" }
+		{ Content: "Mellow" }
+		{ Content: "Mended" }
+		{ Content: "Merry" }
+		{ Content: "Mighty" }
+		{ Content: "Musty" }
+		{ Content: "Naughty" }
+		{ Content: "New" }
+		{ Content: "Noisy" }
+		{ Content: "Northern" }
+		{ Content: "Northward" }
+		{ Content: "Oak" }
+		{ Content: "Old" }
+		{ Content: "Parched" }
+		{ Content: "Perfumed" }
+		{ Content: "Pewter" }
+		{ Content: "Poor" }
+		{ Content: "Proud" }
+		{ Content: "Quarter" }
+		{ Content: "Raging" }
+		{ Content: "Raining" }
+		{ Content: "Rampant" }
+		{ Content: "Randy" }
+		{ Content: "Reveling" }
+		{ Content: "Rich" }
+		{ Content: "Running" }
+		{ Content: "Rusty" }
+		{ Content: "Safe" }
+		{ Content: "Salty" }
+		{ Content: "Screaming" }
+		{ Content: "Shattered" }
+		{ Content: "Shining" }
+		{ Content: "Singing" }
+		{ Content: "Sleeping" }
+		{ Content: "Sleepy" }
+		{ Content: "Sloppy" }
+		{ Content: "Slumbering" }
+		{ Content: "Smiling" }
+		{ Content: "Snoring" }
+		{ Content: "Solar" }
+		{ Content: "Sour" }
+		{ Content: "Southern" }
+		{ Content: "Southward" }
+		{ Content: "Spined" }
+		{ Content: "Splendid" }
+		{ Content: "Splintered" }
+		{ Content: "Squalid" }
+		{ Content: "Starving" }
+		{ Content: "Sterling" }
+		{ Content: "Stone" }
+		{ Content: "Stout" }
+		{ Content: "Strange" }
+		{ Content: "Strangled" }
+		{ Content: "Strong" }
+		{ Content: "Sublime" }
+		{ Content: "Tasty" }
+		{ Content: "Tattered" }
+		{ Content: "Thirsty" }
+		{ Content: "Tipsy" }
+		{ Content: "Tired" }
+		{ Content: "Toasty" }
+		{ Content: "Triple" }
+		{ Content: "Vulgar" }
+		{ Content: "Wandering" }
+		{ Content: "War" }
+		{ Content: "Warm" }
+		{ Content: "Weary" }
+		{ Content: "Welcoming" }
+		{ Content: "Well Worn" }
+		{ Content: "Western" }
+		{ Content: "Westward" }
+		{ Content: "Wet" }
+		{ Content: "Whistling" }
+		{ Content: "Wild" }
+		{ Content: "Wiley" }
+		{ Content: "Wistful" }
+		{ Content: "Wooden" }
+		{ Content: "Yawning" }
+	]
+	
+	Person:
+	[
+		{ Content: "Acrobat" }
+		{ Content: "Adventurer" }
+		{ Content: "Alchemist" }
+		{ Content: "Apprentist" }
+		{ Content: "Artisan" }
+		{ Content: "Assassin" }
+		{ Content: "Baker" }
+		{ Content: "Bandit" }
+		{ Content: "Barber" }
+		{ Content: "Barbarian" }
+		{ Content: "Bard" }
+		{ Content: "Barker" }
+		{ Content: "Barmaid" }
+		{ Content: "Baron" }
+		{ Content: "Bartender" }
+		{ Content: "Blacksmith" }
+		{ Content: "Captain" }
+		{ Content: "Cobbler" }
+		{ Content: "Coward" }
+		{ Content: "Damsel" }
+		{ Content: "Dock Master" }
+		{ Content: "Druid" }
+		{ Content: "Drunkard" }
+		{ Content: "Duke" }
+		{ Content: "Dwarf" }
+		{ Content: "Elf" }
+		{ Content: "Eunuch" }
+		{ Content: "Executioner" }
+		{ Content: "Farmer" }
+		{ Content: "F[=Pick('a','e')]rrier" }
+		{ Content: "Fiddler" }
+		{ Content: "Fool" }
+		{ Content: "Footman" }
+		{ Content: "Forester" }
+		{ Content: "Gambler" }		
+		{ Content: "Gentlem[=Pick('a','e')]n" }
+		{ Content: "Goldsmith" }
+		{ Content: "Gnome" }
+		{ Content: "Guard" }
+		{ Content: "Hag" }
+		{ Content: "Halfling" }
+		{ Content: "Harlot" }
+		{ Content: "Harvester" }
+		{ Content: "Herald" }
+		{ Content: "Hunter" }
+		{ Content: "Imbecile" }
+		{ Content: "Jester" }
+		{ Content: "Jezebel" }
+		{ Content: "Judge" }
+		{ Content: "Keeper" }
+		{ Content: "Killer" }
+		{ Content: "King" }
+		{ Content: "Knight" }
+		{ Content: "Lady" }
+		{ Content: "Liar" }
+		{ Content: "Loser" }
+		{ Content: "Mage" }
+		{ Content: "Maid" }
+		{ Content: "Man" }
+		{ Content: "Man of War" }
+		{ Content: "Master" }
+		{ Content: "Merchant" }
+		{ Content: "Migrant" }
+		{ Content: "Mime" }
+		{ Content: "Miner" }
+		{ Content: "Minstrel" }
+		{ Content: "Momma" }
+		{ Content: "Monk" }
+		{ Content: "Nanny" }
+		{ Content: "Necromancer" }
+		{ Content: "Noble" }
+		{ Content: "Nomad" }
+		{ Content: "Paladin" }
+		{ Content: "Panhandler" }
+		{ Content: "Parson" }
+		{ Content: "Pascifest" }
+		{ Content: "Peasant" }
+		{ Content: "Peddler" }
+		{ Content: "Potter" }
+		{ Content: "Priest" }
+		{ Content: "Prince" }
+		{ Content: "Princess" }
+		{ Content: "Queen" }
+		{ Content: "Ranger" }
+		{ Content: "Riverman" }
+		{ Content: "Rogue" }
+		{ Content: "Sailor" }
+		{ Content: "Seaman" }
+		{ Content: "Servent" }
+		{ Content: "Shepherd" }
+		{ Content: "Silversmith" }
+		{ Content: "Slayer" }
+		{ Content: "Smithy" }
+		{ Content: "Soaring" }
+		{ Content: "Soldier" }
+		{ Content: "Sorceror" }
+		{ Content: "Squire" }
+		{ Content: "Steward" }
+		{ Content: "Stonecrafter" }
+		{ Content: "Stowaway" }
+		{ Content: "Student" }
+		{ Content: "Swashbuckler" }
+		{ Content: "Thief" }
+		{ Content: "Thug" }
+		{ Content: "Tracker" }
+		{ Content: "Trapper" }
+		{ Content: "Traveler" }
+		{ Content: "Vagabond" }
+		{ Content: "Vicor" }
+		{ Content: "Virgin" }
+		{ Content: "Wanderer" }
+		{ Content: "Warrior" }
+		{ Content: "Watchm[=Pick('a','e')]n" }
+		{ Content: "Wayfarer" }
+		{ Content: "Wench" }
+		{ Content: "Widow[=Pick('','er')]" }
+		{ Content: "Winner" }
+		{ Content: "Witch" }
+		{ Content: "Wizard" }
+	]
+	
+	Item:
+	[
+		{ Content: "Ace[Plural]" }
+		{ Content: "Ale" }
+		{ Content: "Amulet" }
+		{ Content: "Antidote" }
+		{ Content: "Apple" }
+		{ Content: "Arm[Plural]" }
+		{ Content: "Armor" }
+		{ Content: "Arrow" }
+		{ Content: "Aubergine" }
+		{ Content: "Axe" }
+		{ Content: "Axehandle" }
+		{ Content: "Bacon" }
+		{ Content: "Bag" }		
+		{ Content: "Ballad" }
+		{ Content: "Banner" }
+		{ Content: "Barnacle" }
+		{ Content: "Barrel" }
+		{ Content: "Beard" }
+		{ Content: "Bed" }
+		{ Content: "Belly" }
+		{ Content: "Blade" }
+		{ Content: "Blood" }
+		{ Content: "Bluff" }
+		{ Content: "Body" }
+		{ Content: "Bone" }
+		{ Content: "Book" }
+		{ Content: "Boot[Plural]" }
+		{ Content: "Bottle" }
+		{ Content: "Bow" }
+		{ Content: "Breath" }
+		{ Content: "Brook" }
+		{ Content: "Bucket" }
+		{ Content: "Buckler" }
+		{ Content: "Bunk" }
+		{ Content: "Calm" }
+		{ Content: "Candle" }
+		{ Content: "Cane" }
+		{ Content: "Cauldron" }
+		{ Content: "Chain" }
+		{ Content: "Chalice" }
+		{ Content: "Chord" }
+		{ Content: "Claw" }
+		{ Content: "Clearing" }
+		{ Content: "Club" }
+		{ Content: "Coin" }
+		{ Content: "Compass" }
+		{ Content: "Corner" }
+		{ Content: "Cradle" }
+		{ Content: "Cup" }
+		{ Content: "Dagger" }
+		{ Content: "Dance" }
+		{ Content: "Delight[Plural]" }
+		{ Content: "Delusion" }
+		{ Content: "Den" }
+		{ Content: "Dervish" }
+		{ Content: "Drum" }
+		{ Content: "Dungeon" }
+		{ Content: "Egg" }
+		{ Content: "Ego" }
+		{ Content: "End" }
+		{ Content: "Entourage" }
+		{ Content: "Eye[Plural]" }
+		{ Content: "Feet" }
+		{ Content: "Fig" }
+		{ Content: "Firewater" }
+		{ Content: "Fist" }
+		{ Content: "Flag" }
+		{ Content: "Flagon" }
+		{ Content: "Flame" }
+		{ Content: "Flask" }
+		{ Content: "Flute" }
+		{ Content: "Folly" }
+		{ Content: "Foot" }
+		{ Content: "Forest" }
+		{ Content: "Galleon" }
+		{ Content: "Gizzard" }
+		{ Content: "Grail" }
+		{ Content: "Grave" }
+		{ Content: "Gristle" }
+		{ Content: "Grog" }
+		{ Content: "Grove" }
+		{ Content: "Hand[Plural]" }
+		{ Content: "Harp" }
+		{ Content: "Hatchet" }
+		{ Content: "Haven" }
+		{ Content: "Head" }
+		{ Content: "Heart" }
+		{ Content: "Hearth" }
+		{ Content: "Heaven" }
+		{ Content: "Hide" }
+		{ Content: "Hill" }
+		{ Content: "Hoard" }
+		{ Content: "Hole" }
+		{ Content: "Horn" }
+		{ Content: "House" }
+		{ Content: "Hubris" }
+		{ Content: "Javeline" }
+		{ Content: "Jewel" }
+		{ Content: "Kettle" }
+		{ Content: "Knife" }
+		{ Content: "Knoll" }
+		{ Content: "Knot" }
+		{ Content: "Lair" }
+		{ Content: "Lantern" }
+		{ Content: "Leg" }
+		{ Content: "Life" }
+		{ Content: "Lips" }
+		{ Content: "Lookout" }
+		{ Content: "Lotus" }
+		{ Content: "Lyre" }
+		{ Content: "Luck" }
+		{ Content: "Lute" }
+		{ Content: "Kumquat" }
+		{ Content: "Mind" }
+		{ Content: "Mixwater" }
+		{ Content: "Moon" }
+		{ Content: "Mug" }
+		{ Content: "Mustache" }
+		{ Content: "Neck" }
+		{ Content: "Nest" }
+		{ Content: "Night" }
+		{ Content: "Nightmare" }
+		{ Content: "Nose" }
+		{ Content: "Notch" }
+		{ Content: "Note" }
+		{ Content: "Organ" }
+		{ Content: "Palace" }
+		{ Content: "Pale" }	
+		{ Content: "Perch" }
+		{ Content: "Pipe" }
+		{ Content: "Pit" }
+		{ Content: "Platter" }
+		{ Content: "Pocket" }
+		{ Content: "Port" }
+		{ Content: "Portal" }
+		{ Content: "Pot" }
+		{ Content: "Pride" }
+		{ Content: "Rage" }
+		{ Content: "Rampart" }
+		{ Content: "Respite" }
+		{ Content: "Rest" }
+		{ Content: "Revery" }
+		{ Content: "River" }
+		{ Content: "Road" }
+		{ Content: "Robe" }
+		{ Content: "Roost" }
+		{ Content: "Rose" }
+		{ Content: "Rotgut" }		
+		{ Content: "Sack" }
+		{ Content: "Sausage" }
+		{ Content: "Scabbard" }
+		{ Content: "Scimitar" }
+		{ Content: "Sea" }
+		{ Content: "Shadow" }
+		{ Content: "Shame" }
+		{ Content: "Shelter" }
+		{ Content: "Shield" }
+		{ Content: "Shroom" }
+		{ Content: "Shrubbery" }
+		{ Content: "Sin" }
+		{ Content: "Skeleton" }
+		{ Content: "Skull" }
+		{ Content: "Sleep" }
+		{ Content: "Smile" }
+		{ Content: "Song" }
+		{ Content: "Sorrow" }
+		{ Content: "Soul" }
+		{ Content: "Spear" }
+		{ Content: "Spirit[Plural]" }
+		{ Content: "Spittoon" }
+		{ Content: "Stable" }
+		{ Content: "Stone" }
+		{ Content: "Stool" }
+		{ Content: "Sunrise" }
+		{ Content: "Sunset" }
+		{ Content: "Storm" }
+		{ Content: "Swamp" }
+		{ Content: "Sword" }
+		{ Content: "tabard" }
+		{ Content: "Table" }
+		{ Content: "Tail" }
+		{ Content: "Tale" }
+		{ Content: "Talon" }
+		{ Content: "Tankard" }
+		{ Content: "Teapot" }
+		{ Content: "Throne" }
+		{ Content: "Timber" }
+		{ Content: "Toe" }
+		{ Content: "Toenail" }
+		{ Content: "Tome" }
+		{ Content: "Tooth" }
+		{ Content: "Tower" }
+		{ Content: "Trail" }
+		{ Content: "Trap" }
+		{ Content: "Tree[Plural]" }
+		{ Content: "Trough" }
+		{ Content: "Trousers" }
+		{ Content: "Ulcer" }
+		{ Content: "Wagon" }
+		{ Content: "Wand" }
+		{ Content: "Wart" }
+		{ Content: "Wheel" }
+		{ Content: "Whip" }
+		{ Content: "Whisper" }
+		{ Content: "Whistle" }
+		{ Content: "Willow" }
+		{ Content: "Wind" }
+		{ Content: "Wineskin" }
+		{ Content: "Wish" }
+		{ Content: "Woods" }
+		{ Content: "World" }
+	]
+	
+	Creature:
+	[
+		{ Content: "Angel" }
+		{ Content: "Badger" }
+		{ Content: "Bear" }
+		{ Content: "Beast" }
+		{ Content: "Bee" }
+		{ Content: "Beholder" }
+		{ Content: "Behemoth" }
+		{ Content: "Bird" }
+		{ Content: "Boar" }
+		{ Content: "Cat" }
+		{ Content: "Chicken" }
+		{ Content: "Cock" }
+		{ Content: "Cockatrice" }
+		{ Content: "Cow" }
+		{ Content: "Crow" }
+		{ Content: "Demon" }
+		{ Content: "Devil" }
+		{ Content: "Direwolf" }
+		{ Content: "Dog" }
+		{ Content: "Dolphin" }
+		{ Content: "Dracolich" }
+		{ Content: "Dragon" }
+		{ Content: "Drake" }
+		{ Content: "Duck" }
+		{ Content: "Eagle" }
+		{ Content: "Efreet" }
+		{ Content: "Ent" }
+		{ Content: "Fairy" }
+		{ Content: "Falcon" }
+		{ Content: "Fawn" }
+		{ Content: "Ferret" }
+		{ Content: "Firebird" }
+		{ Content: "Fish" }
+		{ Content: "Flea" }
+		{ Content: "Flumph" }
+		{ Content: "Fox" }
+		{ Content: "Frog" }
+		{ Content: "Geldling" }
+		{ Content: "Giant" }
+		{ Content: "Gnoll" }
+		{ Content: "Goat" }
+		{ Content: "Goblin" }
+		{ Content: "Gorgon" }
+		{ Content: "Griffin" }
+		{ Content: "Hare" }
+		{ Content: "Harring" }
+		{ Content: "Hen" }
+		{ Content: "Hobgoblin" }
+		{ Content: "Homunculus" }		
+		{ Content: "Horse" }
+		{ Content: "Hound[Plural]" }
+		{ Content: "Incubus" }
+		{ Content: "Imp" }
+		{ Content: "Harpy" }
+		{ Content: "Kobold" }
+		{ Content: "Kraken" }
+		{ Content: "Lamb" }
+		{ Content: "Lamprey" }
+		{ Content: "Lemure" }
+		{ Content: "Lion" }
+		{ Content: "Lizard" }
+		{ Content: "Llama" }
+		{ Content: "Man o' War" }
+		{ Content: "Mermaid" }
+		{ Content: "Minotaur" }
+		{ Content: "Monster" }
+		{ Content: "Mosquito" }
+		{ Content: "Mouse" }
+		{ Content: "Nag" }
+		{ Content: "Newt" }
+		{ Content: "Nymph" }
+		{ Content: "Octopus" }
+		{ Content: "Ogre" }
+		{ Content: "Orc" }
+		{ Content: "Orca" }
+		{ Content: "Owlbear" }
+		{ Content: "Oyster" }
+		{ Content: "Pan" }
+		{ Content: "Parrot" }
+		{ Content: "Peacock" }
+		{ Content: "Pegasus" }
+		{ Content: "Phoenix" }
+		{ Content: "Pig" }
+		{ Content: "Pit Fiend" }
+		{ Content: "Pixie" }
+		{ Content: "Portpoise" }
+		{ Content: "Possom" }
+		{ Content: "Puppy" }
+		{ Content: "Rat" }
+		{ Content: "Ram" }
+		{ Content: "Razorback" }
+		{ Content: "Reptile" }
+		{ Content: "Roc" }
+		{ Content: "Rooster" }
+		{ Content: "Satyr" }
+		{ Content: "Scorpion" }
+		{ Content: "Serpent" }
+		{ Content: "Shark" }
+		{ Content: "Snail" }
+		{ Content: "Snake" }
+		{ Content: "Spectre" }
+		{ Content: "Sphynx" }
+		{ Content: "Spider" }
+		{ Content: "Squid" }
+		{ Content: "Squirrel" }
+		{ Content: "Stag" }
+		{ Content: "Stoat" }
+		{ Content: "Succubus" }
+		{ Content: "Thunderbird" }
+		{ Content: "Tick" }
+		{ Content: "Tiger" }
+		{ Content: "Time" }
+		{ Content: "Toad" }
+		{ Content: "Troll" }
+		{ Content: "Turtle" }
+		{ Content: "Unicorn" }
+		{ Content: "Wasp" }
+		{ Content: "Weasel" }
+		{ Content: "Whale" }
+		{ Content: "Wolf" }
+		{ Content: "Wolfhound" }
+		{ Content: "Wraith" }
+		{ Content: "Wyvern" }
+	]
+	
+	InnJoke:
+	[
+		{ Content: "Bardgeright" }
+		{ Content: "Come[=Pick('',' Back')]" }
+		{ Content: "Dead Men Walk" }
+		{ Content: "Dewdrop" }
+		{ Content: "Drift [=Pick('Write','Wright','Right','Wight')]" }
+		{ Content: "Fool's Rush" }
+		{ Content: "Head [=Pick('Write','Wright','Right','Wight')]" }
+		{ Content: "Knee Deep" }
+		{ Content: "Sleep" }
+		{ Content: "Stay" }
+		{ Content: "Step [=Pick('Write','Wright','Right','Wight')]" }
+		{ Content: "Storming" }
+		{ Content: "Swagger [=Pick('Write','Wright','Right','Wight')]" }
+		{ Content: "Walk [=Pick('Write','Wright','Right','Wight')]" }
+		{ Content: "Weigh" }
+	]
+	
+	PubJoke:
+	[
+		{ Content: "Beelze" }
+		{ Content: "Grub Hub" }
+		{ Content: "Hops Skip and Jump" }
+		{ Content: "Nubb's" }
+		{ Content: "Rouge Rogue" }
+	]
+	
+	Plural:
+	[
+		{ Content: "" }
+		{ Content: "s" }
+	]
+	## endregion
+	
+	## region Description
+	Description:
+	[
+		{ Content: "[=switch(@EstType, '', 'Inn', Inn, 'Tavern', Tavern, 'InnTavern', InnTavern)]  [Owner]" }
+	]
+	
+	Inn:
+	[
+		{ Content: "An establishment with rooms for rent and nothing else.  [Atmosphere] [InnRooms]" }
+		{ Content: "The walls are covered in local art in this simple inn.  [Atmosphere] [InnRooms]" }
+		{ Content: "Grayed wood makes up the thin walls of this inn.  [Atmosphere] [InnRooms]" }
+		{ Content: "The inn is a [Walls] walled [=ToText(Roll(2,2))] story building. [Atmosphere] [InnRooms]" }
+	]
+	
+	Tavern:
+	[
+		{ Content: "A [=Pick('bustling','whole in the wall','quiet')] tavern with [=Pick(ToText(Roll(2,6)) + 'different', 'a rotating set of')] ales on tab.  [Atmosphere]" }
+		{ Content: "Always busy, this tavern has tables dedicated to [=Pick('card','dice','card and dice')] gambling." }
+	]
+	
+	InnTavern:
+	[
+		{ Content: "[Inn|Tavern]" }
+		{ Content: "Having stood in the same location for [=ToText(Roll(10,100))] years folks consider this an institution." }
+		{ Content: "The basement of this inn and tavern [Basement]." }
+	]
+	
+	Atmosphere:
+	[
+		{ Content: "The air is stale and smells slightly of [Scent]." }
+		{ Content: "Multiple oil lamps are set on each wall giving the main room a warm glow." }		
+		{ Content: "The floor creeks with the slightest step." }
+		{ Content: "The interior of the building is [=Pick('poorly', 'brightly')] lit." }
+		{ Content: "Several magical globes of light line the walls of the main room giving the room a [=Generate('Colors','Swatch=ColorSwatchWarm')] glow." }
+	]
+	
+	Basement:
+	[
+		{ Content: "has an illegal gambling den behind a false wall." }
+		{ Content: "has a secret door even the owner isn't aware of." }
+		{ Content: "is sealed to prevent giant rats from getting into the building." }
+		{ Content: "echoes haunted moans and mysterious noises every [=Pick('night','morning','sundown','dusk','day')]." }
+		{ Content: "fills with water every [=ToText(Roll(2,10))] [=Pick('days','weeks','months')]." }
+	]
+	
+	InnRooms:
+	[
+		{ Content: "Each room has a bed, a chamber pot, a small side table, and nothing else." }
+		{ Content: "Rooms are well appointed with a bed, a desk, an armoire, a night stand, a mirror, and more." }
+		{ Content: "The rooms of the inn smell of [Scent] and [Scent]." }
+		{ Content: "Sounds carry easily through the thin walls dividing the rooms." }
+		{ Content: "There are rarely available rooms due to the popularity of the inn." }
+		{ Content: "Each room has a unique piece of art from a local artisan." }
+		{ Content: "While the rooms are fairly standard, each has a sturdy chest with lock bolted to the floor." }
+	]
+		
+	Owner:
+	[
+		{ Content: "No one knows who the owner is as they are never around." }
+		{ Content: "The [=if(@EstType = 'InnTavern', 'Business', @EstType)] is owned by [Group]." }
+		{ Content: "The owner is a [Personality] [Race] who [OwnerDescription]", Weight: 20 }
+	]
+	
+	Group:
+	[
+		{ Content: "a group of lifelong friends" }
+		{ Content: "a merchant's guild" }
+		{ Content: "a noble family" }
+		{ Content: "an organized crime syndicate" }
+		{ Content: "a shadowy organization" }
+	]
+	
+	OwnerDescription:
+	[
+		{ Content: "[NervousHabit] as a nervous habit." }
+		{ Content: "avoids eye contact." }
+		{ Content: "has a large belly." }
+		{ Content: "has eyes that dart around even when focused." }
+		{ Content: "is a night owl." }
+		{ Content: "is directly involved in the day to day running of the business." }
+		{ Content: "is generally out of sight but on site." }
+		{ Content: "is never seen without [=Pick('food', 'a drink')] in hand." }
+		{ Content: "is often found in the main hall among the patrons." }
+		{ Content: "is rarely around and trusts their manager to run the place." }
+		{ Content: "is unusually tall." }
+		{ Content: "is usually quite drunk." }
+		{ Content: "is very superstitious." }
+		{ Content: "never appears to sleep to the point of causing rumors." }
+		{ Content: "stares holes into everyone they interact with." }
+		{ Content: "stares into the middle distance when in conversation." }
+		{ Content: "undersells everything they do." }
+		{ Content: "appears awfully young to own their own business." }
+		{ Content: "is very advanced in age." }
+		{ Content: "was a [=Generate('Medieval Occupations')] prior to being a business owner." }
+		{ Content: "worked their way from [=Generate('Medieval Occupations','Class=Poor')] to business owner." }
+		{ Content: "was once a [=Generate('Medieval Occupations','Class=Noble')]." }
+		{ Content: "is a [=Pick('widow', 'widower')]." }	
+		{ Content: "takes insults [=Pick('in stride', 'with a laugh', 'very personally', 'quietly but never forgets', 'with violent reprise', 'and retorts with quick wit')]." }
+	]
+	
+	NervousHabit:
+	[
+		{ Content: "bites their nails" }
+		{ Content: "clicks their tongue" }
+		{ Content: "counts things" }
+		{ Content: "cracks their knuckles" }
+		{ Content: "exaggerates" }
+		{ Content: "one ups everyone" }
+		{ Content: "rubs their head" }
+		{ Content: "taps nearby surfaces with their fingers" }
+		{ Content: "taps their foot" }
+		{ Content: "whistles" }
+	]
+	
+	Personality:
+	[
+		{ Content: "affable" }
+		{ Content: "aloof" }
+		{ Content: "ambivalent" }
+		{ Content: "androgynous" }
+		{ Content: "anxious" }
+		{ Content: "avuncular" }
+		{ Content: "benevolent" }
+		{ Content: "benign" }
+		{ Content: "boisterous" }
+		{ Content: "brash" }
+		{ Content: "caring" }
+		{ Content: "chatty" }
+		{ Content: "clever" }
+		{ Content: "dim" }
+		{ Content: "earnest" }
+		{ Content: "easy-going" }
+		{ Content: "firm" }
+		{ Content: "friendly" }
+		{ Content: "funny" }
+		{ Content: "genuine" }
+		{ Content: "gregarious" }
+		{ Content: "grumpy" }
+		{ Content: "honest" }
+		{ Content: "industrious" }
+		{ Content: "jolly" }
+		{ Content: "joyous" }
+		{ Content: "kind" }
+		{ Content: "lazy" }
+		{ Content: "malicious" }
+		{ Content: "mean" }
+		{ Content: "moody" }
+		{ Content: "nasty" }
+		{ Content: "nervous" }
+		{ Content: "paternal" }
+		{ Content: "patronizing" }
+		{ Content: "polite" }
+		{ Content: "quiet" }
+		{ Content: "reserved" }
+		{ Content: "resolute" }
+		{ Content: "rude" }
+		{ Content: "selfish" }
+		{ Content: "serious" }
+		{ Content: "shy" }
+		{ Content: "sincere" }
+		{ Content: "striking" }
+		{ Content: "tidy" }
+		{ Content: "wise" }
+		{ Content: "witty" }
+	]
+	
+	Race:
+	[
+		{ Content: "dragonborn", weight: 5 }
+		{ Content: "dwarf", weight: 10 }
+		{ Content: "elf", weight: 10 }
+		{ Content: "firbolg" }
+		{ Content: "[=Pick('air','earth','water','fire')] genasi", weight: 2 }
+		{ Content: "gnome", weight: 10 }
+		{ Content: "goliath", weight: 5 }
+		{ Content: "half-elf", weight: 15 }		
+		{ Content: "halfling", weight: 20 }
+		{ Content: "half-orc", weight: 15 }
+		{ Content: "human", weight: 30 }
+		{ Content: "tiefling", weight: 5 }
+	]
+
+	Scent:
+	[
+		{ Content: "ambrosia" }
+		{ Content: "anticeptic" }
+		{ Content: "burnt tobacco" }
+		{ Content: "chemicals" }
+		{ Content: "citrus" }
+		{ Content: "earth" }
+		{ Content: "feet" }
+		{ Content: "fish" }
+		{ Content: "flowers" }
+		{ Content: "forest" }
+		{ Content: "fresh herbs" }
+		{ Content: "garlic" }
+		{ Content: "meat" }
+		{ Content: "mildew" }
+		{ Content: "mint" }
+		{ Content: "musk" }
+		{ Content: "onion" }
+		{ Content: "perfume" }
+		{ Content: "potpourri" }
+		{ Content: "rot" }
+		{ Content: "rotted meat" }
+		{ Content: "sawdust" }
+		{ Content: "smoke" }
+		{ Content: "stale mead" }
+		{ Content: "stale wine" }
+		{ Content: "sweat" }
+		{ Content: "sweet wine" }
+		{ Content: "wet fur" }
+	]
+	
+	Walls:
+	[
+		{ Content: "adobe" }
+		{ Content: "stoned" }
+		{ Content: "brick" }		
+		{ Content: "oak" }
+		{ Content: "plaster" }
+		{ Content: "walnut" }
+	]
+	## Atmosphere ##
+	## Scent
+	## Decor
+	## Sounds
+	## Bartender/Waitresses
+	## Lighting
+	
+	## Patrons ##
+	## Busy or Empty
+	## Roudy or Subdued
+	## Types of Patrons
+	
+	## Services ##
+	## Food and Drink
+	## Rooms for Rent
+	## Stables
+	## Job Postings
+	## Entertainment
+	## Storage
+	## Mail Services
+	## Cleaning and Mending
+	## Baths	
+	
+	## endregion
+	
+	
+}
+GeneratorType: Assignment

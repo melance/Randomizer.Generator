@@ -23,21 +23,5 @@ namespace Randomizer.Generator.Table
 		{
 			return base.GetHashCode();
 		}
-
-		//public static Boolean operator ==(Row op1, Row op2)
-		//{
-		//	if (op1 == null || op2 == null) return false;
-		//	if (op1?.Count != op2?.Count) return false;
-		//	for (var i = 0; i < op1.Count; i++)
-		//	{
-		//		if (!op1[i].Equals(op2[i])) return false;
-		//	}
-		//	return true;
-		//}
-
-		//public static Boolean operator !=(Row op1, Row op2)
-		//{
-		//	return !(op1 == op2);
-		//}
 	}
 }

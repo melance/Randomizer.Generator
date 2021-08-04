@@ -18,7 +18,12 @@ namespace Randomizer.Generator.Converters
 		public override Object ReadJson(JsonReader reader, Type objectType, Object existingValue, JsonSerializer serializer)
 		{
 			var text = reader.Value.ToString().Split(':');
-			return new ListOption(text.First(), text.Length == 1 ? String.Empty : text[1]);
+			return text.Length switch
+			{
+				1 => new ListOption(text[0], text[0]),
+				2 => new ListOption(text[0], text[1]),
+				_ => null
+			};
 		}
 
 		public override void WriteJson(JsonWriter writer, Object value, JsonSerializer serializer)

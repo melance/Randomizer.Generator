@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Randomizer.Generator.Exceptions
 {
-    public class DefinitionException : Exception
-    {
+    public class DefinitionException : RandomizerGeneratorException
+	{
         public DefinitionException(String message) : base(message)
         {
         }

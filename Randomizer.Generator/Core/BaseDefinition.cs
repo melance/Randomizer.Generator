@@ -8,6 +8,7 @@ using Randomizer.Generator.Exceptions;
 using Randomizer.Generator.Utility;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -88,6 +89,7 @@ namespace Randomizer.Generator.Core
 													.RegisterSubtype<Phonotactics.PhonotacticsDefinition>(GeneratorTypes.Phonotactics)
 													.RegisterSubtype<Table.TableDefinition>(GeneratorTypes.Table)
 													.RegisterSubtype<DotNet.DotNetDefinition>(GeneratorTypes.DotNet)
+													.RegisterSubtype<Sampler.SamplerDefinition>(GeneratorTypes.Sampler)
 													.SerializeDiscriminatorProperty() // ask to serialize the type property
 													.Build(),
 						JsonSubtypesConverterBuilder.Of(typeof(Table.BaseTable), "TableType")
@@ -97,7 +99,8 @@ namespace Randomizer.Generator.Core
 													.SerializeDiscriminatorProperty() // ask to serialize the type property
 													.Build()
 					},
-			NullValueHandling = NullValueHandling.Ignore
+			NullValueHandling = NullValueHandling.Ignore, 
+			DefaultValueHandling = DefaultValueHandling.Ignore
 		};
 
 		/// <summary>Name of the generator definition</summary>
@@ -109,6 +112,9 @@ namespace Randomizer.Generator.Core
 		/// <summary>Description of the generator definition</summary>
 		[JsonProperty(Order = 2)]
 		public String Description { get; set; }
+		/// <summary>Remarks for the definition</summary>
+		[JsonProperty(Order = 2)]
+		public String Remarks { get; set; }
 		/// <summary>Version of the generator definition</summary>
 		[JsonProperty(Order = 3)]
 		public Version Version { get; set; }
@@ -121,9 +127,16 @@ namespace Randomizer.Generator.Core
 		/// <summary>The format that the generator outputs</summary>
 		[JsonProperty(Order = 6)]
 		public OutputFormats OutputFormat { get; set; }
-		/// <summary>Parameters for the generator definition</summary>
+		/// <summary>If true, show in the list of generators</summary>
 		[JsonProperty(Order = 7)]
+		[DefaultValue(true)]
+		public Boolean ShowInList { get; set; } = true;
+		/// <summary>Parameters for the generator definition</summary>
+		[JsonProperty(Order = 8)]
 		public virtual ParameterDictionary Parameters { get; set; } = new();
+		/// <summary>If true, this definition type supports parameters</summary>
+		[JsonIgnore]
+		public abstract Boolean SupportsParameters { get; }
 		#endregion
 
 		#region Public Methods
@@ -131,9 +144,56 @@ namespace Randomizer.Generator.Core
 		/// In child classes, overridden to process the definition and return a result
 		/// </summary>
 		/// <returns>The result of the definition process</returns>
-		public virtual String Generate()
+		public abstract String Generate();
+
+		public virtual String Analyze(AnalyzeOptions options)
 		{
-			var message = new StringBuilder();
+			var analysis = new AnalysisWriter();
+			analysis.AppendLine(Name);
+			analysis.AppendLine(Description);
+			analysis.AppendHeader("General");
+			analysis.AppendItemValue("Generator Type", GetType().Name);
+			analysis.AppendItemValue("Author", Author);
+			analysis.AppendItemValue("Version", Version);
+			analysis.AppendItemValue("Tags", Tags != null && Tags.Count > 0 ? String.Join(", ", Tags) : "");
+			analysis.AppendItemValue("Output Format", OutputFormat);
+			analysis.AppendItemValue("URL", URL);
+			
+			if (SupportsParameters)
+			{
+				analysis.AppendHeader("Parameters");			
+				foreach (var parameter in Parameters)
+				{
+					analysis.AppendLine($"Name:           {parameter.Key}");
+					analysis.AppendLine($"Display:        {parameter.Value.Display}");
+					analysis.AppendLine($"Aliases:        {String.Join(", ", parameter.Value.Aliases)}");
+					analysis.AppendLine($"Description:    {parameter.Value.Description}");
+					analysis.AppendLine($"Type:           {parameter.Value.Type}");
+					analysis.AppendLine($"Default:        {parameter.Value.Value}");
+
+					if (parameter.Value.Type == ParameterTypes.List)
+					{
+						analysis.AppendLine("Options:");
+						analysis.Level++;
+						var labelWidth = parameter.Value.Options.Max(o => o.Display.Length) + 1;
+						foreach (var option in parameter.Value.Options)
+						{
+							analysis.AppendLine($"{option.Display.PadRight(labelWidth)} : {option.Value}");
+						}
+						analysis.Level--;
+					}
+					analysis.AppendLine();
+				}
+			}
+
+			return analysis.ToString();
+		}
+		#endregion
+
+		#region Protected Methods
+		protected Boolean ValidateParameters()
+		{
+			var result = true;
 			foreach (var parameter in Parameters)
 			{
 				if (parameter.Value.Validation.Any())
@@ -145,21 +205,17 @@ namespace Randomizer.Generator.Core
 						if ((Boolean)calc.Evaluate())
 						{
 							var thisMessage = validation.Message.IsNullOrWhitespace() ? validation.Expression : validation.Message;
-							message.AppendLine(thisMessage.MultiReplace(false, ("[Name]", parameter.Value.Display),
-																			   ("[Value]", parameter.Value.Value)));
+							parameter.Value.ValidationMessage = thisMessage.MultiReplace(false, ("[Name]", parameter.Value.Display),
+																								("[Value]", parameter.Value.Value));
+							parameter.Value.IsValid = false;
+							result = false;
 						}
 					}
 				}
 			}
-			if (!message.IsNullOrWhitespace())
-			{
-				throw new ParameterValidationException(message.ToString());
-			}
-			return String.Empty;
+			return result;
 		}
-		#endregion
 
-		#region Protected Methods
 		/// <summary>
 		/// Processes an expression through the <see cref="CalculationEngine"/>
 		/// </summary>
