@@ -25,7 +25,7 @@ namespace Randomizer.Generator.DotNet
 				try
 				{
 
-					var dll = Assembly.LoadFile(DLLPath);
+					var dll = Assembly.LoadFile(((DataAccess.FileSystemDataAccess)DataAccess.DataAccess.Instance).ExpandFilePath(DLLPath));
 					foreach (Type type in dll.ExportedTypes)
 					{
 						if (type.FullName.Equals(ClassName))

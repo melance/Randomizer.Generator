@@ -33,6 +33,11 @@ namespace Randomizer.Generator.DataAccess
 
 		public FileSystemDataAccess(String rootPath) => RootPath = rootPath;
 
+		public string ExpandFilePath(String path)
+		{
+			if (Path.IsPathRooted(path)) return path;
+			return Path.Combine(RootPath, path);
+		}
 
 		public String GetText(String path)
 		{

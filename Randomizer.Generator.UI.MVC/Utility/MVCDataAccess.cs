@@ -11,13 +11,15 @@ namespace Randomizer.Generator.UI.MVC.Utility
 	public class MVCDataAccess : FileSystemDataAccess
 	{
 		private const String FILE_EXTENSION = ".rgen.hjson";
-		private const String FILE_PATH = "..\\Definitions";
+		private const String DEFAULT_FILE_PATH = "..\\Definitions";
 
-		public MVCDataAccess(String rootPath) : base(Path.Combine(rootPath, FILE_PATH)) => SearchPattern = $"*{FILE_EXTENSION}";
+		internal static String DefinitionsPath { get; set; } = DEFAULT_FILE_PATH;
+
+		public MVCDataAccess(String rootPath) : base(Path.Combine(rootPath, DefinitionsPath)) => SearchPattern = $"*{FILE_EXTENSION}";
 
 		public static String FullPath(String path)
 		{
-			return Path.Combine(FILE_PATH, path + FILE_EXTENSION);
+			return Path.Combine(DefinitionsPath, path + FILE_EXTENSION);
 		}
 
 		public IEnumerable<Models.DefinitionInfo> GetDefinitionInfoList()

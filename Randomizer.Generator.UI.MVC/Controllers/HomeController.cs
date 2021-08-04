@@ -22,8 +22,9 @@ namespace Randomizer.Generator.UI.MVC.Controllers
 
 		public HomeController(Utility.MVCDataAccess dataAccess, IOptions<Utility.Settings> settings)
 		{
-			Generator.DataAccess.DataAccess.Instance = dataAccess;
 			Settings = settings.Value;
+			Utility.MVCDataAccess.DefinitionsPath = String.Empty;
+			Generator.DataAccess.DataAccess.Instance = new Utility.MVCDataAccess(Settings.DefinitionsPath);
 		}
 
 		[HttpGet]

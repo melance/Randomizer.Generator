@@ -10,5 +10,6 @@ namespace Randomizer.Generator.UI.MVC.Utility
 		public const string SectionName = "Settings";
 
 		public Boolean FullExceptions { get; set; }
+		public String DefinitionsPath { get; set; }
 	}
 }
