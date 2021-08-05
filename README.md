@@ -8,7 +8,7 @@ The infinitely customizable random content generator.
   * **Randomizer.Generator** the engine behind The Randomizer.  It contains a number of classes for generating content using different types of generators.
   * **Randomizer.Generator.Test** unit tests for the Randomizer.Generator project
   * **Randomizer.Generator.CmdLine** a command line tool to generate content.
-  * **Randomizer.Generator.UI.MVC** an MVC Core web application for generating content.
+  * **Randomizer.Generator.UI.MVC** an MVC Core web application for generating content. Available here: https://randomizergeneratoruimvc.azurewebsites.net/
   * **Randomizer.Generator.UI.Terminal** a terminal gui to generate content.  Designed to work on Windows, Mac, Unix, and Linux.
   * **Randomizer.Generator.DefinitionConverter** a command line tool to convert old grammar files to the new dictionary format
 
