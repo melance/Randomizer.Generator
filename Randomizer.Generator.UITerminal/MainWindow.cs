@@ -63,7 +63,7 @@ namespace Randomizer.Generator.UI.Terminal
 		#region Event Handlers
 		private void GeneratorList_GeneratorSelected(Object sender, EventArgs.GeneratorSelectedEventArgs e)
 		{
-			tabGenerators.AddGenerator(e.FilePath);
+			tabGenerators.AddGenerator(e.Name);
 		}
 		#endregion
 	}

@@ -1,10 +1,11 @@
-﻿using Randomizer.Generator.UI.Terminal.Utility;
-using System;
+﻿using System;
 using System.IO;
 using Terminal.Gui;
 using NStack;
-using Randomizer.Generator.UI.Terminal.Models;
 using System.Collections.Generic;
+using Randomizer.Generator.UI.Terminal.Utility;
+using Randomizer.Generator.UI.Terminal.Models;
+using Randomizer.Generator.UI.Terminal;
 
 namespace Randomizer.Generator.UI.Terminal
 {
@@ -44,7 +45,9 @@ namespace Randomizer.Generator.UI.Terminal
 			Application.Init();
 			Directory.CreateDirectory(DefaultDirectory);
 			Directory.SetCurrentDirectory(DefaultDirectory);
-			
+
+			Randomizer.Generator.DataAccess.DataAccess.Instance = new TUIDataAccess();
+
 			TopLevelObject = Application.Top;
 			MainWindow = new()
 			{

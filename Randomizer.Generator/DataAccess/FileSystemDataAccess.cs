@@ -25,7 +25,7 @@ namespace Randomizer.Generator.DataAccess
 		public String SearchPattern { get; set; } = DEFAULT_SEARCH_PATTERN;
 		public String LibrarySearchPattern { get; set; } = DEFAULT_LIBRARY_SEARCH_PATTERN;
 
-		public String RootPath { get; }
+		public virtual String RootPath { get; }
 		#endregion
 
 		#region Public Methods
@@ -33,64 +33,64 @@ namespace Randomizer.Generator.DataAccess
 
 		public FileSystemDataAccess(String rootPath) => RootPath = rootPath;
 
-		public string ExpandFilePath(String path)
+		public virtual string ExpandFilePath(String path)
 		{
 			if (Path.IsPathRooted(path)) return path;
 			return Path.Combine(RootPath, path);
 		}
 
-		public String GetText(String path)
+		public virtual String GetText(String path)
 		{
 			if (!Path.IsPathRooted(path)) path = Path.Combine(RootPath, path);
 			return File.ReadAllText(path);
 		}
 
-		public Boolean DefinitionExists(String name)
+		public virtual Boolean DefinitionExists(String name)
 		{
 			return GetDefinitionList(bd => !String.IsNullOrWhiteSpace(bd.Name) && bd.Name.Equals(name, StringComparison.CurrentCultureIgnoreCase)).Any();
 		}
 
-		public BaseDefinition GetDefinition(String name)
+		public virtual BaseDefinition GetDefinition(String name)
 		{
 			return GetDefinitionList(bd => !String.IsNullOrWhiteSpace(bd.Name) && bd.Name.Equals(name, StringComparison.CurrentCultureIgnoreCase)).FirstOrDefault();
 		}
 
-		public String GetDefinitionRaw(String name)
+		public virtual String GetDefinitionRaw(String name)
 		{
 			return GetDefinitionsRaw(SearchPattern, bd => bd.Name.Equals(name, StringComparison.CurrentCultureIgnoreCase)).FirstOrDefault();
 		}
 
-		public IEnumerable<BaseDefinition> GetDefinitionList()
+		public virtual IEnumerable<BaseDefinition> GetDefinitionList()
 		{
 			return GetDefinitionList(null);
 		}
 
-		public IEnumerable<BaseDefinition> GetDefinitionList(Func<BaseDefinition, Boolean> filter)
+		public virtual IEnumerable<BaseDefinition> GetDefinitionList(Func<BaseDefinition, Boolean> filter)
 		{
 			return GetDefinitions(SearchPattern, filter);
 		}
 
-		public Boolean LibraryExists(String name)
+		public virtual Boolean LibraryExists(String name)
 		{
 			return GetLibraryList(bd => !String.IsNullOrWhiteSpace(bd.Name) && bd.Name.Equals(name, StringComparison.CurrentCultureIgnoreCase)).Any();
 		}
 
-		public BaseDefinition GetLibrary(String name)
+		public virtual BaseDefinition GetLibrary(String name)
 		{
 			return GetLibraryList(bd => !String.IsNullOrWhiteSpace(bd.Name) && bd.Name.Equals(name, StringComparison.CurrentCultureIgnoreCase)).FirstOrDefault();
 		}
 
-		public IEnumerable<BaseDefinition> GetLibraryList()
+		public virtual IEnumerable<BaseDefinition> GetLibraryList()
 		{
 			return GetLibraryList(null);
 		}
 
-		public IEnumerable<BaseDefinition> GetLibraryList(Func<BaseDefinition, Boolean> filter)
+		public virtual IEnumerable<BaseDefinition> GetLibraryList(Func<BaseDefinition, Boolean> filter)
 		{
 			return GetDefinitions(LibrarySearchPattern, filter);
 		}
 
-		public IEnumerable<String> GetTagList()
+		public virtual IEnumerable<String> GetTagList()
 		{
 			return GetDefinitionList().Select(d => d.Tags).SelectMany(t => t).Distinct().OrderBy(t => t);
 		}

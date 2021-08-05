@@ -15,10 +15,10 @@ namespace Randomizer.Generator.UI.Terminal.Views
 			Style.ShowBorder = false;
 		}
 
-		public void AddGenerator(String filePath)
+		public void AddGenerator(String name)
 		{
 			Style.ShowBorder = true;
-			var tab = new GeneratorTab(filePath);
+			var tab = new GeneratorTab(name);
 			tab.Close += Tab_Close;
 			AddTab(tab, true);
 		}

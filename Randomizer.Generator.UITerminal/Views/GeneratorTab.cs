@@ -15,9 +15,9 @@ namespace Randomizer.Generator.UI.Terminal.Views
 	partial class GeneratorTab : Tab
 	{
 		#region Constructors
-		public GeneratorTab(String filePath)
+		public GeneratorTab(String name)
 		{
-			_filePath = filePath;
+			Text = name;
 			LoadTheGenerator();
 
 			// Create the view
@@ -172,7 +172,6 @@ namespace Randomizer.Generator.UI.Terminal.Views
 		#endregion
 
 		#region Members
-		private readonly String _filePath;
 		private BaseDefinition _generator;
 		private readonly Dictionary<String, View> _parameterControls = new();
 		private String _saveFilePath;
@@ -181,9 +180,7 @@ namespace Randomizer.Generator.UI.Terminal.Views
 		#region Private Methods
 		private void LoadTheGenerator()
 		{
-			var hjson = File.ReadAllText(_filePath);			
-			_generator = BaseDefinition.Deserialize(hjson);
-			Text = _generator.Name;
+			_generator = DataAccess.DataAccess.Instance.GetDefinition(Text.ToString());
 		}
 
 		private void GetParameterValues()

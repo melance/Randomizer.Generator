@@ -9,11 +9,11 @@ namespace Randomizer.Generator.UI.Terminal.EventArgs
 	class GeneratorSelectedEventArgs : System.EventArgs
 	{
 		#region Properties
-		public String FilePath { get; private set; }
+		public String Name { get; private set; }
 		#endregion
 
 		#region Constructor
-		public GeneratorSelectedEventArgs(String filePath) => FilePath = filePath; 
+		public GeneratorSelectedEventArgs(String name) => Name = name; 
 		#endregion
 	}
 }

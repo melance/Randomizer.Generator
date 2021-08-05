@@ -102,46 +102,31 @@ namespace Randomizer.Generator.UI.Terminal.Views
 		public void RefreshGeneratorList()
 		{
 			var source = new List<GeneratorListViewItem>();
-			var selectedTags = Program.TagList.Where(t => t.Selected).ToList();
+			var allTags = DataAccess.DataAccess.Instance.GetTagList();
 
-			foreach (var filePath in Directory.GetFiles(Program.CurrentDirectory, "*.rgen.?json"))
+			foreach (var tag in allTags)
 			{
-				var definition = BaseDefinition.Deserialize(File.ReadAllText(filePath));
-				var tags = definition.Tags == null ? new List<String>() : definition.Tags.Where(t => !Program.TagList.Any(t2 => t2.Text.Equals(t, StringComparison.CurrentCultureIgnoreCase)));
-				var include = true;
-
-				foreach (var tag in tags)
-				{
-					Program.TagList.Add(tag);
-				}
-
-				if (definition.Tags?.Any() == true)
-				{
-					include = false;
-					foreach (var tag in definition.Tags)
-					{
-						if (selectedTags.Any(st => st.Text.Equals(tag, StringComparison.CurrentCultureIgnoreCase)))
-							include = true;
-					}
-				}
-
-				if (include)
-				{
-					if (Utility.UserSettings.Instance.ShowFileNameInList)
-						source.Add(new(filePath));
-					else
-						source.Add(new(filePath, definition.Name));
-				}
+				if (!Program.TagList.Contains(tag)) Program.TagList.Add(new Tag(tag) { Selected = true });
 			}
+
+			var selectedTags = Program.TagList.Where(t => t.Selected).Select(t => t.Text).ToList();
+
+			foreach (var definition in DataAccess.DataAccess.Instance.GetDefinitionList().Where(d => d.ShowInList && d.OutputFormat != OutputFormats.Image))
+			{
+				if (definition.Tags.Any(t => selectedTags.Contains(t)))
+				{
+					source.Add(new(definition));
+				}
+			}		
 
 			lstGenerators.SetSource(source);
 		}
 		#endregion
 
 		#region Protected Methods
-		protected void OnGeneratorSelected(String filePath)
+		protected void OnGeneratorSelected(String name)
 		{
-			GeneratorSelected?.Invoke(this, new EventArgs.GeneratorSelectedEventArgs(filePath));
+			GeneratorSelected?.Invoke(this, new EventArgs.GeneratorSelectedEventArgs(name));
 		}
 		#endregion
 
@@ -153,7 +138,7 @@ namespace Randomizer.Generator.UI.Terminal.Views
 
 		private void lstGenerators_OpenSelectedItem(ListViewItemEventArgs e)			
 		{
-			OnGeneratorSelected(((GeneratorListViewItem)e.Value).Path);
+			OnGeneratorSelected(((GeneratorListViewItem)e.Value).Name);
 		}
 
 		private void TagSelection_Clicked()
