@@ -73,6 +73,7 @@ Section "Program Files (Required)" secRequired
 	File "..\bin\Debug\net5.0\KeraLua.dll"
 	File "..\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll"
 	File "..\bin\Debug\net5.0\JetBrains.Annotations.dll"
+	File "..\bin\Debug\net5.0\JsonSubtypes.dll"
 	File "..\bin\Debug\net5.0\NCalc.dll"
 	File "..\bin\Debug\net5.0\Newtonsoft.Json.dll"
 	File "..\bin\Debug\net5.0\NLua.dll"

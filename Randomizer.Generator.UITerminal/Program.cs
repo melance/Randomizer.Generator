@@ -6,6 +6,8 @@ using System.Collections.Generic;
 using Randomizer.Generator.UI.Terminal.Utility;
 using Randomizer.Generator.UI.Terminal.Models;
 using Randomizer.Generator.UI.Terminal;
+using Microsoft.Extensions.Logging.EventLog;
+using System.Diagnostics;
 
 namespace Randomizer.Generator.UI.Terminal
 {
@@ -42,34 +44,43 @@ namespace Randomizer.Generator.UI.Terminal
 
 		static void Main(String settingsPath)
         {
-			Application.Init();
-			Directory.CreateDirectory(DefaultDirectory);
-			Directory.SetCurrentDirectory(DefaultDirectory);
-
-			Randomizer.Generator.DataAccess.DataAccess.Instance = new TUIDataAccess();
-
-			TopLevelObject = Application.Top;
-			MainWindow = new()
+			try
 			{
-				Title = AssemblyInfo.ProductName
-			};
+				Application.Init();
+				Directory.CreateDirectory(DefaultDirectory);
+				Directory.SetCurrentDirectory(DefaultDirectory);
 
-			if (!String.IsNullOrEmpty(settingsPath))
-			{
-				UserSettings.Instance.SettingPath = settingsPath;
-			}
-			UserSettings.Instance.Load();
+				Randomizer.Generator.DataAccess.DataAccess.Instance = new TUIDataAccess();
 
-			stsCurrentDirectory = new(Key.Null, ustring.Empty, null);
-			CurrentDirectory = UserSettings.Instance.WorkingDirectory;
+				TopLevelObject = Application.Top;
+				MainWindow = new()
+				{
+					Title = AssemblyInfo.ProductName
+				};
+
+				if (!String.IsNullOrEmpty(settingsPath))
+				{
+					UserSettings.Instance.SettingPath = settingsPath;
+				}
+				UserSettings.Instance.Load();
+
+				stsCurrentDirectory = new(Key.Null, ustring.Empty, null);
+				CurrentDirectory = UserSettings.Instance.WorkingDirectory;
 			
-			TopLevelObject.Add(new StatusBar(new[] { stsCurrentDirectory }));
-			TopLevelObject.Add(MainWindow);	
-			Application.Run();
-			if (UserSettings.Instance.RememberLastDirectory)
+				TopLevelObject.Add(new StatusBar(new[] { stsCurrentDirectory }));
+				TopLevelObject.Add(MainWindow);	
+				Application.Run();
+				if (UserSettings.Instance.RememberLastDirectory)
+				{
+					UserSettings.Instance.WorkingDirectory = CurrentDirectory;
+					UserSettings.Instance.Save();
+				}
+			}
+			catch (Exception ex)
 			{
-				UserSettings.Instance.WorkingDirectory = CurrentDirectory;
-				UserSettings.Instance.Save();
+				var eventLog = new EventLog();
+				eventLog.Source = "Application";
+				eventLog.WriteEntry(ex.ToString(), EventLogEntryType.Error);
 			}
 		}
 
