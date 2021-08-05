@@ -20,12 +20,12 @@ There is a small but great community on reddit that I personally moderate under 
 ---
 Customizations can be found in the following repository:
 
-*Coming Soon*
+[Randomizer Customizations](https://github.com/melance/TheRandomizerCustomizations)
 
 ### Contributing ###
 ---
 **Everyone**
-I love seeing custom grammars and libraries written by users to add to the growing list.  If you develop a new grammar that you think anyone else might like, please submit it to the [Customizations Repository](https://github.com/melance/TheRandomizerWPFCustomizations) or send it to me a message here via my [GitHub profile](https://github.com/melance).
+I love seeing custom definitions written by users to add to the growing list.  If you develop a new definition that you think anyone else might like, please submit it to the [Customizations Repository](https://github.com/melance/TheRandomizerCustomizations) or send it to me a message here via my [GitHub profile](https://github.com/melance).
 
 **Translators**
 Planned for the future.
