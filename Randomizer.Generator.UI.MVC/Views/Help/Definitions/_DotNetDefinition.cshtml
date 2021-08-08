@@ -1,0 +1,136 @@
+﻿<div class="col-12">
+    <h3>Definitions</h3>
+    <h5>DotNet Definition</h5>
+    <div>
+        DotNet definition is the most recent addition.  
+        It requires both a definition file and a .NET DLL.  
+        I do not recommend downloading these definitions from other sources than the official <a href="https://github.com/melance/TheRandomizerCustomizations">Randomizer Customizations</a> because they can be dangerous.
+        All definitions in the Randomizer Customizations are first reviewed by me and those that are DotNet definitions are validated by me and will require the code to be open source including those that I create.
+    </div>
+    <br />
+    <div class="card">
+        <div class="card-header">
+            <h5 class="card-title">
+                Properties
+            </h5>
+        </div>
+        <div class="card-body">
+            <h6 class="card-subtitle">In addition to the properties found in the <a asp-action="Index" asp-route-category="Definitions" asp-route-topic="BaseDefinition">Base Definition</a>, the following are specific to this definition type.</h6>
+            <br />
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Property</th>
+                        <th>Description</th>
+                        <th>&nbsp;</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>DLLPath</th>
+                        <td>The path to the dll that contains the code to execute. Relative paths are handled differently depending on the application in use.</td>
+                        <td><span class="bi-exclamation-circle-fill text-center" data-toggle="tooltip" data-html="true" data-placement="top" title="Required"></span></td>
+                    </tr>
+                    <tr>
+                        <th>ClassName</th>
+                        <td>The full namespace and class name that contains the method to execute.</td>
+                        <td><span class="bi-exclamation-circle-fill text-center" data-toggle="tooltip" data-html="true" data-placement="top" title="Required"></span></td>
+                    </tr>
+                    <tr>
+                        <th>MethodName</th>
+                        <td>
+                            The name of the method to execute.<br />
+                            The method has the signature of <code>public string [MethodName]([Parameters])</code><br />
+                            For an OutputType of Image, the return string must be a 64bit encoded image file.
+                        </td>
+                        <td><span class="bi-exclamation-circle-fill text-center" data-toggle="tooltip" data-html="true" data-placement="top" title="Required"></span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <br />
+    <div class="card">
+        <div class="card-header">
+            <h5 class="card-title">
+                Example
+            </h5>
+        </div>
+        <div class="card-body">
+            <div class="card-text">
+                <pre>
+                    <code>
+<span class="font-weight-bold">Name:</span> Cave
+<span class="font-weight-bold">Author:</span> Lance Boudreaux
+<span class="font-weight-bold">Description:</span> Generates a random cave.
+<span class="font-weight-bold">Version:</span> "2.0"
+<span class="font-weight-bold">Tags:</span>
+<span class="font-weight-bold">[</span>
+    Map
+<span class="font-weight-bold">]</span>
+<span class="font-weight-bold">OutputFormat:</span> Image
+<span class="font-weight-bold">DLLPath:</span> Libraries\maze.rgen.dll
+<span class="font-weight-bold">ClassName:</span> Maze.Rgen.CaveMaker
+<span class="font-weight-bold">MethodName:</span> CellularAutomata
+<span class="font-weight-bold">Parameters:</span>
+<span class="font-weight-bold">{</span>
+    width:
+    <span class="font-weight-bold">{</span>
+        <span class="font-weight-bold">Value:</span> "20"
+        <span class="font-weight-bold">Display:</span> Width
+        <span class="font-weight-bold">Description:</span> Determines the width of the map.  The value must be greater than or equal to 10.
+        <span class="font-weight-bold">Type:</span> Integer
+        <span class="font-weight-bold">Validation:</span>
+        <span class="font-weight-bold">[</span>
+            <span class="font-weight-bold">{ Expression:</span> "Value < 10", <span class="font-weight-bold">Message:</span> "[Name] must be greater than or equal to 10. Value received was [Value]." <span class="font-weight-bold">}</span>
+            <span class="font-weight-bold">{ Expression:</span> "Value > 250", <span class="font-weight-bold">Message:</span> "[Name] must be less than or equal to 250. Value received was [Value]." <span class="font-weight-bold">}</span>
+        <span class="font-weight-bold">]</span>
+    <span class="font-weight-bold">}</span>
+    <span class="font-weight-bold">}</span>
+    height:
+    <span class="font-weight-bold">{</span>
+        <span class="font-weight-bold">Value:</span> "20"
+        <span class="font-weight-bold">Display:</span> Height
+        <span class="font-weight-bold">Description:</span> Determines the height of the map.  The value must be greater than or equal to 10.
+        <span class="font-weight-bold">Type:</span> Integer
+        <span class="font-weight-bold">Validation:</span>
+        <span class="font-weight-bold">[</span>
+            <span class="font-weight-bold">{ Expression:</span> "Value < 10", <span class="font-weight-bold">Message:</span> "[Name] must be greater than or equal to 10. Value received was [Value]." <span class="font-weight-bold">}</span>
+            <span class="font-weight-bold">{ Expression:</span> "Value > 250", <span class="font-weight-bold">Message:</span> "[Name] must be less than or equal to 250. Value received was [Value]." <span class="font-weight-bold">}</span>
+        <span class="font-weight-bold">]</span>
+    <span class="font-weight-bold">}</span>
+    fontSizeInPixels:
+    <span class="font-weight-bold">{</span>
+        <span class="font-weight-bold">Value:</span> "6"
+        <span class="font-weight-bold">Display:</span> Cell Size
+        <span class="font-weight-bold">Description:</span> Determines the size of each cell.
+        <span class="font-weight-bold">Type:</span> Integer
+        <span class="font-weight-bold">Validation:</span>
+        <span class="font-weight-bold"></span>[
+            <span class="font-weight-bold">{ Expression:</span> "Value < 2", <span class="font-weight-bold">Message:</span> "[Name] must be greater than 1. Value received was [Value]." <span class="font-weight-bold">}</span>
+            <span class="font-weight-bold">{ Expression:</span> "Value > 24", <span class="font-weight-bold">Message:</span> "[Name] must be less than 24. Value received was [Value]." <span class="font-weight-bold">}</span>
+        <span class="font-weight-bold">]</span>
+    <span class="font-weight-bold">}</span>
+    format:
+    <span class="font-weight-bold">{</span>
+        <span class="font-weight-bold">Value:</span> Image
+        <span class="font-weight-bold">Display:</span> Format
+        <span class="font-weight-bold">Description:</span> The format to display the resulting maze in.
+        <span class="font-weight-bold">Type:</span> Text
+        <span class="font-weight-bold">Visible:</span> false
+    <span class="font-weight-bold">}</span>
+    showGrid:
+    <span class="font-weight-bold">{</span>
+        <span class="font-weight-bold">Value:</span> true
+        <span class="font-weight-bold">Display:</span> Show Grid
+        <span class="font-weight-bold">Description:</span> Draw a grid on the map
+        <span class="font-weight-bold">Type:</span> Boolean
+    <span class="font-weight-bold">}</span>
+<span class="font-weight-bold">}</span>
+<span class="font-weight-bold">GeneratorType:</span> DotNet
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+</div>

@@ -15,18 +15,20 @@ namespace Randomizer.Generator.Utility
         #region Constants
         private const String KEEP_HIGHEST = "KH";
         private const String KEEP_LOWEST = "KL";
+		private const String GREATER_THAN_OR_EQUAL_TO = "GE";
         private const String GREATER_THAN = "GT";
+		private const String LESS_THAN_OR_EQUAL_TO = "LE";
         private const String LESS_THAN = "LT";
         private const String EXPLODING_DICE = "EX";
         private const String COMPOUND_EXPLODING_DICE = "CEX";
         private const String RULE_OF_ONE = "R1";
-        #endregion
+		#endregion
 
-        #region Properties
-        /// <summary>
-        /// Keep the Highest n Rolls (KH)
-        /// </summary>
-        public Int32 KeepHighest { get; set; } = 0;
+		#region Properties
+		/// <summary>
+		/// Keep the Highest n Rolls (KH)
+		/// </summary>
+		public Int32 KeepHighest { get; set; } = 0;
         /// <summary>
         /// Keep the Lowest n Rolls (KL)
         /// </summary>
@@ -187,10 +189,20 @@ namespace Randomizer.Generator.Utility
                     KeepLowest = (Int32)args.Parameters[0].Evaluate();
                     args.Result = 0;
                     break;
-                case GREATER_THAN:
+				case GREATER_THAN_OR_EQUAL_TO:
+					GreaterThan = (Int32)args.Parameters[0].Evaluate();
+					GreaterThan--;
+					args.Result = 0;
+					break;
+				case GREATER_THAN:
                     GreaterThan = (Int32)args.Parameters[0].Evaluate();
                     args.Result = 0;
                     break;
+				case LESS_THAN_OR_EQUAL_TO:
+					LessThan = (Int32)args.Parameters[0].Evaluate();
+					LessThan++;
+					args.Result = 0;
+					break;
                 case LESS_THAN:
                     LessThan = (Int32)args.Parameters[0].Evaluate();
                     args.Result = 0;

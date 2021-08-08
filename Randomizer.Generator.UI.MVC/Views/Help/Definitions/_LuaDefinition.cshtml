@@ -1,0 +1,160 @@
+﻿<div class="col-12">
+    <h3>Definitions</h3>
+    <h5>Lua Definition</h5>
+    <div>
+        The Lua Definition uses the scripting language <a href="https://www.lua.org/">Lua</a> to generate content.
+        There are a number of registered methods available that are outlined below.
+        The resulting content is generated using the various <span class="font-italic">printX</span> methods.
+    </div>
+    <br />
+    <div class="card">
+        <div class="card-header">
+            <h5 class="card-title">
+                Properties
+            </h5>
+        </div>
+        <div class="card-body">
+            <h6 class="card-subtitle">In addition to the properties found in the <a asp-action="Index" asp-route-category="Definitions" asp-route-topic="BaseDefinition">Base Definition</a>, the following are specific to this definition type.</h6>
+            <br />
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Property</th>
+                        <th>Description</th>
+                        <th>&nbsp;</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Script</th>
+                        <td>
+                            The Lua script to execute.<br />
+                            Either a Script or ScriptPath is required.
+                        </td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <th>ScriptPath</th>
+                        <td>
+                            The path to a Lua script file.
+                        </td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <br />
+    <div class="card">
+        <div class="card-header">
+            <h5 class="card-title">
+                Registered Methods
+            </h5>
+        </div>
+        <div class="card-body">
+            <h6 class="card-subtitle">The following methods are available in the Lua script.</h6>
+            <br />
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Method</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>createTable()</th>
+                        <td>Returns an empty Lua table.</td>
+                    </tr>
+                    <tr>
+                        <th>calc(string expression)</th>
+                        <td>Runs the expression through the NCalc engine.</td>
+                    </tr>
+                    <tr>
+                        <th>print(object value)</th>
+                        <td>Prints the value to the results.</td>
+                    </tr>
+                    <tr>
+                        <th>printFormat(string format, params object[] values)</th>
+                        <td>Prints the format string with the values inserted.</td>
+                    </tr>
+                    <tr>
+                        <th>printIf(bool condition, object value)</th>
+                        <td>Prints the value to the results if condition is true.</td>
+                    </tr>
+                    <tr>
+                        <th>printLine()</th>
+                        <td>Prints a new line.</td>
+                    </tr>
+                    <tr>
+                        <th>printLine(object value)</th>
+                        <td>Prints the value to the results and a new line.</td>
+                    </tr>
+                    <tr>
+                        <th>printLineFormat(string format, params object[] values)</th>
+                        <td>Prints the format string with the values inserted and a new line.</td>
+                    </tr>
+                    <tr>
+                        <th>printLineIf(bool condition, object value)</th>
+                        <td>Prints the value to the results and a new line if condition is true.</td>
+                    </tr>
+                    <tr>
+                        <th>rnd()</th>
+                        <td>Returns a non-negative random integer.</td>
+                    </tr>
+                    <tr>
+                        <th>rnd(int maxValue)</th>
+                        <td>Returns a non-negative random integer that is less than the specified maximum.</td>
+                    </tr>
+                    <tr>
+                        <th>rnd(int minValue, int maxValue)</th>
+                        <td>Returns a random integer within the specified range.</td>
+                    </tr>
+                    <tr>
+                        <th>selectFromTable(LuaTable table)</th>
+                        <td>Selects a single item from the provided table and returns it.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <br />
+    <div class="card">
+        <div class="card-header">
+            <h5 class="card-title">
+                Example
+            </h5>
+        </div>
+        <div class="card-body">
+            <div class="card-text">
+                <pre>
+                    <code>
+<span class="font-weight-bold">Name:</span> Lua Sample Generator
+<span class="font-weight-bold">Author:</span> Lance Boudreaux
+<span class="font-weight-bold">Description:</span> Demonstrates the Lua generator type
+<span class="font-weight-bold">Version:</span> "2.0"
+<span class="font-weight-bold">Tags:</span>
+<span class="font-weight-bold">[</span>
+    Test
+<span class="font-weight-bold">]</span>
+<span class="font-weight-bold">OutputFormat:</span> Html
+<span class="font-weight-bold">Parameters:</span>
+<span class="font-weight-bold">{</span>
+    name:
+    <span class="font-weight-bold">{</span>
+        <span class="font-weight-bold">Display:</span> Name
+        <span class="font-weight-bold">Type:</span> Text
+    <span class="font-weight-bold">}</span>
+<span class="font-weight-bold">}</span>
+<span class="font-weight-bold">Script:</span>
+'''
+<span class="keyword">local</span> greeting <span class="operator">=</span> <span class="method">selectFromTable</span><span class="operator">({</span><span class="string">"Hello"</span><span class="operator">,</span><span class="string"> "Bonjour"</span><span class="operator">,</span> <span class="string">"Aloha"</span><span class="operator">,</span> <span class="string">"Hola"</span><span class="operator">,</span> <span class="string">"S'up"</span><span class="operator">,</span> <span class="string">"Aang"</span><span class="operator">,</span> <span class="string">"Ciao"</span><span class="operator">})</span>
+<span style="color: blue">printFormat</span><span class="operator">(</span> <span class="string">"{0} {1}"</span><span class="operator">,</span> greeting<span class="operator">,</span> name<span class="operator">)</span>
+'''
+<span class="font-weight-bold">GeneratorType:</span> Lua
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,131 @@
+﻿<div class="col-12">
+    <h3>Definitions</h3>
+    <h5>Phonotactics Definition</h5>
+    <div>
+        The Phonotactics Definition uses the concept of <a href="https://en.wikipedia.org/wiki/Phonotactics">Phonotactics</a> to generate content.
+    </div>
+    <br />
+    <div class="card">
+        <div class="card-header">
+            <h5 class="card-title">
+                Properties
+            </h5>
+        </div>
+        <div class="card-body">
+            <h6 class="card-subtitle">In addition to the properties found in the <a asp-action="Index" asp-route-category="Definitions" asp-route-topic="BaseDefinition">Base Definition</a>, the following are specific to this definition type.</h6>
+            <br />
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Property</th>
+                        <th>Description</th>
+                        <th>&nbsp;</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Definitions</th>
+                        <td>
+                            A list of phonotactic definitions.
+                        </td>
+                        <td><span class="bi-exclamation-circle-fill text-center" data-toggle="tooltip" data-html="true" data-placement="top" title="Required"></span></td>
+                    </tr>
+                    <tr>
+                        <th>Patterns</th>
+                        <td>
+                            A list of pattern collections the generator will select from as <a href="#patterns">outlined below</a>.
+                        </td>
+                        <td><span class="bi-exclamation-circle-fill text-center" data-toggle="tooltip" data-html="true" data-placement="top" title="Required"></span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <br />
+    <div class="card">
+        <div class="card-header">
+            <h5 class="card-title">
+                <a id="patterns" />
+                Patterns
+            </h5>
+        </div>
+        <div class="card-body">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Property</th>
+                        <th>Description</th>
+                        <th>&nbsp;</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>[Name]</th>
+                        <td>
+                            Name given to the collection of patterns.
+                        </td>
+                        <td><span class="bi-exclamation-circle-fill text-center" data-toggle="tooltip" data-html="true" data-placement="top" title="Required"></span></td>
+                    </tr>
+                    <tr>
+                        <th>Pattern</th>
+                        <td>
+                            The pattern to use generating content.  Each character maps to a definition or is outputed as is.
+                        </td>
+                        <td><span class="bi-exclamation-circle-fill text-center" data-toggle="tooltip" data-html="true" data-placement="top" title="Required"></span></td>
+                    </tr>
+                    <tr>
+                        <th>Weight</th>
+                        <td>
+                            The weight to give this particular option has when selecting a pattern at random.
+                        </td>
+                        <td><span class="bi-exclamation-circle-fill text-center" data-toggle="tooltip" data-html="true" data-placement="top" title="Required"></span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <br />
+    <div class="card">
+        <div class="card-header">
+            <h5 class="card-title">
+                Example
+            </h5>
+        </div>
+        <div class="card-body">
+            <div class="card-text">
+                <pre>
+                    <code>
+<span class="font-weight-bold">Name:</span> Phonotactics Test
+<span class="font-weight-bold">Author:</span> Lance Boudreaux
+<span class="font-weight-bold">Description:</span> Tests the phonotactics definition
+<span class="font-weight-bold">Tags:</span>
+<span class="font-weight-bold">[</span>
+    Test
+<span class="font-weight-bold">]</span>
+<span class="font-weight-bold">OutputFormat:</span> Text
+<span class="font-weight-bold">Definitions:</span>
+<span class="font-weight-bold">{</span>
+    C: <span class="font-weight-bold">[</span> "B", "C", "D", "F", "G", "H", "J", "K", "L", "M", "N", "P", "Q", "R", "S", "T", "V", "W", "X", "Y", "Z" <span class="font-weight-bold">]</span>
+    V: <span class="font-weight-bold">[</span> "A", "E", "I", "O", "U" <span class="font-weight-bold">]</span>
+<span class="font-weight-bold">}</span>
+<span class="font-weight-bold">Patterns:</span>
+<span class="font-weight-bold">{</span>
+    Only:
+    <span class="font-weight-bold">[</span>
+        <span class="font-weight-bold">{</span>
+            <span class="font-weight-bold">Pattern:</span> "CVC"
+            <span class="font-weight-bold">Weight:</span> 50
+        <span class="font-weight-bold">}</span>
+        <span class="font-weight-bold">{</span>
+            <span class="font-weight-bold">Pattern:</span> "CCV"
+            <span class="font-weight-bold">Weight:</span> 50
+        <span class="font-weight-bold">}</span>
+    <span class="font-weight-bold">]</span>
+<span class="font-weight-bold">}</span>
+<span class="font-weight-bold">GeneratorType:</span> Phonotactics
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+</div>

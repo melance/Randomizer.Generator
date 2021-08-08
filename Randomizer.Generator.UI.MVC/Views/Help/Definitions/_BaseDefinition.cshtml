@@ -1,0 +1,162 @@
+﻿<div class="col-12">
+    <h3>Definitions</h3>
+    <h5>Base Definition</h5>
+    <div>
+        All definition types are derived from the base definition.  Because of this, the following properties are shared between all definitions.
+    </div>
+    <br />
+    <div class="card">
+        <div class="card-header">
+            <h5 class="card-title">
+                Descriptive Properties
+            </h5>
+        </div>
+        <div class="card-body">
+            <h6 class="card-subtitle">
+                The following properties are used to describe the definition
+            </h6>
+            <br />
+            <div class="card-text">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Property</th>
+                            <th>Description</th>
+                            <th>&nbsp;</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Name</th>
+                            <td>The name of the definition.</td>
+                            <td><span class="bi-exclamation-circle-fill text-center" data-toggle="tooltip" data-html="true" data-placement="top" title="Required"></span></td>
+                        </tr>
+                        <tr>
+                            <th>Version</th>
+                            <td>
+                                The version of the definition.<br />
+                                <span class="font-weight-bold">Format:</span> Major.Minor.Build.Revision<br />
+                                <span class="font-weight-bold">Examples:</span> 1.0, 1.0.2, 2.0.1.3<br />
+                                <span class="font-weight-bold">Default:</span> 1.0
+                            </td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <th>Author</th>
+                            <td>The name of the author of the definition.</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <th>Description</th>
+                            <td>A description of what the definition produces.</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <th>URL</th>
+                            <td>A URL included in the details of the definition.</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <th>Remarks</th>
+                            <td>Additional remarks about the definition or the version of the definition.</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <th>OutputFormat</th>
+                            <td>
+                                The format of the output of the definition.<br />
+                                <span class="font-weight-bold">Values:</span> Text, HTML, Image
+                            </td>
+                            <td><span class="bi-exclamation-circle-fill text-center" data-toggle="tooltip" data-html="true" data-placement="top" title="Required"></span></td>
+                        </tr>
+                        <tr>
+                            <th>Tags</th>
+                            <td>A list of tags used to categorize the definition.</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <th>ShowInList</th>
+                            <td>
+                                Determines if the definition should appear in the generator list.  Useful for excluding library definitions.<br />
+                                <span class="font-weight-bold">Default:</span> true
+                            </td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <th>TextCase</th>
+                            <td>
+                                The case to return the content with.<br />
+                                <span class="font-weight-bold">Default:</span> None<br />
+                                <span class="font-weight-bold">Values:</span><br />
+                                <span class="font-weight-bold">None</span> The case will be unchanged.<br />
+                                <span class="font-weight-bold">Lower</span> The result will be in <span class="font-italic">all lower case.</span><br />
+                                <span class="font-weight-bold">Upper</span> The result will be in <span class="font-italic">ALL UPPER CASE.</span><br />
+                                <span class="font-weight-bold">Title</span> The result will be in <span class="font-italic">Title Case.</span><br />
+                                <span class="font-weight-bold">Sentence</span> The result will be in <span class="font-italic">Sentence case.</span>
+                            </td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <th>GeneratorType</th>
+                            <td>
+                                The type of generator the definition describes.<br />
+                                <span class="font-weight-bold">Values:</span> <a asp-action="Index" asp-route-category="Definitions" asp-route-topic="AssignmentDefinition">Assignment</a>, <a asp-action="Index" asp-route-category="Definitions" asp-route-topic="DotNetDefinition">DotNet</a>, <a asp-action="Index" asp-route-category="Definitions" asp-route-topic="ListDefinition">List</a>, <a asp-action="Index" asp-route-category="Definitions" asp-route-topic="LuaDefinition">Lua</a>, <a asp-action="Index" asp-route-category="Definitions" asp-route-topic="PhonotacticsDefinition">Phonotactics</a>, <a asp-action="Index" asp-route-category="Definitions" asp-route-topic="TableDefinition">Table</a>
+                            </td>
+                            <td><span class="bi-exclamation-circle-fill text-center" data-toggle="tooltip" data-html="true" data-placement="top" title="Required"></span></td>
+                        </tr>
+                        <tr>
+                            <th>Parameters</th>
+                            <td>Parameters used in generating the content. Not applicable to the <a asp-action="Index" asp-route-category="Definitions" asp-route-topic="ListDefinition">List</a> definition type. Details about parameters can be found in the <a asp-action="Index" asp-route-category="Definitions" asp-route-topic="Parameters">Parameters</a> topic.</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="card">
+        <div class="card-header">
+            <h5 class="card-title">
+                Example
+            </h5>
+        </div>
+        <div class="card-body">
+            <div class="card-text">
+                <pre>
+                    <code>
+<span class="font-weight-bold">Name:</span> Adventure Hooks
+<span class="font-weight-bold">Author:</span> Lance Boudreaux
+<span class="font-weight-bold">Description:</span> Generates adventure hooks for the selected genre.
+<span class="font-weight-bold">Version:</span> "1.0"
+<span class="font-weight-bold">URL:</span> https://github.com/melance/Randomizer.Generator
+<span class="font-weight-bold">Remarks:</span> This is an example based on an existing definition.
+<span class="font-weight-bold">Tags:</span>
+<span class="font-weight-bold">[</span>
+    Encounter
+    Fantasy
+    Post Apocalyptic
+<span class="font-weight-bold">]</span>
+<span class="font-weight-bold">OutputFormat:</span> Html
+<span class="font-weight-bold">ShowInList:</span> true
+<span class="font-weight-bold">Parameters:</span>
+<span class="font-weight-bold">{</span>
+    Genre:
+    <span class="font-weight-bold">{</span>
+        <span class="font-weight-bold">Value:</span> Fantasy
+        <span class="font-weight-bold">Display:</span> Genre
+        <span class="font-weight-bold">Type:</span> List
+        <span class="font-weight-bold">Options:</span>
+        <span class="font-weight-bold">[</span>
+            Fantasy:Fantasy
+            PostApocalyptic:Post Apocalyptic
+        <span class="font-weight-bold">]</span>
+    <span class="font-weight-bold">}</span>
+<span class="font-weight-bold">}</span>
+<span class="font-weight-bold">GeneratorType:</span> Assignment
+</code>
+                </pre>
+            </div>
+        </div>
+    </div>
+</div>

@@ -104,3 +104,31 @@ body {
 .tooltip-inner {
     max-width: 400px;
 }
+
+.table td.fit,
+.table th.fit {
+    white-space: nowrap;
+    width: 1%;
+}
+
+/* Formats for code examples in the help documentation */
+span.string {
+    color: darkred;
+}
+
+span.keyword {
+    color: darkgreen;
+}
+
+span.operator {
+    color: saddlebrown;
+}
+
+span.method {
+    color: blue;
+}
+
+span.simple-code {
+    font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    font-size: 87.5%;
+}

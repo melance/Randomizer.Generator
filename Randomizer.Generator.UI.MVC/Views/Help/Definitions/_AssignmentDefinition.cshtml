@@ -1,0 +1,177 @@
+﻿<div class="col-12">
+    <h3>Definitions</h3>
+    <h5>Assignment Definition</h5>
+    <div>
+        Assignment definition is the most flexible and feature rich definition that the Randomizer has.  It was initially inspired by Markov Chains but has grown far beyond.
+    </div>
+    <br />
+    <div class="card">
+        <div class="card-header">
+            <h5 class="card-title">
+                Properties
+            </h5>
+        </div>
+        <div class="card-body">
+            <h6 class="card-subtitle">In addition to the properties found in the <a asp-action="Index" asp-route-category="Definitions" asp-route-topic="BaseDefinition">Base Definition</a>, the following are specific to this definition type.</h6>
+            <br />
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Property</th>
+                        <th>Description</th>
+                        <th>&nbsp;</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>LineItems</th>
+                        <td>The list of items to use for generating content as <a href="#lineitems">outlined below</a>.</td>
+                        <td><span class="bi-exclamation-circle-fill text-center" data-toggle="tooltip" data-html="true" data-placement="top" title="Required"></span></td>
+                    </tr>
+                    <tr>
+                        <th>Imports</th>
+                        <td>The name of another definition which LineItems will be included in the definition.</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <br />
+    <div class="card">
+        <div class="card-header">
+            <h5 class="card-title">
+                <a id="lineitems" />
+                Line Item Properties
+            </h5>
+        </div>
+        <div class="card-body">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Property</th>
+                        <th>Description</th>
+                        <th>&nbsp;</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>[Name]</th>
+                        <td>
+                            The name of the line item collection<br />
+                            Every definition that is not used as a library must have a LineItem named "Start"
+                        </td>
+                        <td><span class="bi-exclamation-circle-fill text-center" data-toggle="tooltip" data-html="true" data-placement="top" title="Required"></span></td>
+                    </tr>
+                    <tr>
+                        <th>Content</th>
+                        <td>The content of the line item.  The content can be simple or very complex.  Below can be found more <a href="#lineItemContent">below</a>.</td>
+                        <td><span class="bi-exclamation-circle-fill text-center" data-toggle="tooltip" data-html="true" data-placement="top" title="Required"></span></td>
+                    </tr>
+                    <tr>
+                        <th>Weight</th>
+                        <td>
+                            The weight used when selecting this particular item from the collection at random.<br />
+                            <span class="font-weight-bold">Default:</span> 1
+                        </td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <th>Next</th>
+                        <td>Determines the next item collection to use in the content generation.</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <th>Repeat</th>
+                        <td>The number of times to repeat this line item.</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <th>Variable</th>
+                        <td>A variable name to assign the result of this line item to.</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <br />
+    <div class="card">
+        <div class="card-header">
+            <h5 class="card-title">
+                <a id="lineitemcontent" />
+                Content
+            </h5>
+        </div>
+        <div class="card-body">
+            <div class="card-text">
+                The content of a line item can have a number of different parts:
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <th>Text</th>
+                            <td>Text is kept as is.</td>
+                            <td>"This is some text."</td>
+                        </tr>
+                        <tr>
+                            <th>Item</th>
+                            <td>Returns the content from another item.</td>
+                            <td>"You can put an item <span class="font-weight-bold">[anywhere]</span> in the content."</td>
+                        </tr>
+                        <tr>
+                            <th>Variable/Parameter</th>
+                            <td>Returns the value of a variable or parameter.</td>
+                            <td>"Variables look <span class="font-weight-bold">[just]</span> like items."</td>
+                        </tr>
+                        <tr>
+                            <th>Expression</th>
+                            <td>Returns the result of the expression. More information on expressions can be found at its <a asp-action="Index" asp-route-category="Definitions" asp-route-topic="Expression">topic</a></td>
+                            <td>"This will roll a die and return the result <span class="font-weight-bold">[=Dice(1,6)]</span>"</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="card">
+        <div class="card-header">
+            <h5 class="card-title">
+                Example
+            </h5>
+        </div>
+        <div class="card-body">
+            <div class="card-text">
+                <pre>
+                    <code>
+<span class="font-weight-bold">Name:</span> Adventure Hooks (Fantasy)
+<span class="font-weight-bold">Author:</span> Lance Boudreaux
+<span class="font-weight-bold">Description:</span> A fantasy adventure hook generator.
+<span class="font-weight-bold">Version:</span> "2.0"
+<span class="font-weight-bold">Tags:</span>
+<span class="font-weight-bold">[</span>
+    Encounters
+    Fantasy
+<span class="font-weight-bold">]</span>
+<span class="font-weight-bold">OutputFormat:</span> Text
+<span class="font-weight-bold">Parameters:</span> {}
+<span class="font-weight-bold">TextCase:</span> Sentence
+<span class="font-weight-bold">ShowInList:</span> false
+<span class="font-weight-bold">Imports:</span>
+<span class="font-weight-bold">[</span>
+    DnD Monsters by Size
+<span class="font-weight-bold">]</span>
+<span class="font-weight-bold">LineItems:</span>
+<span class="font-weight-bold">{</span>
+    Start:
+    <span class="font-weight-bold">[</span>
+        <span class="font-weight-bold">{ Content:</span> "A(n) [LargeMonster] [Action]s a nearby [Settlement]." <span class="font-weight-bold">}</span>
+        <span class="font-weight-bold">{ Content:</span> "Forbidden lovers from a nearby [Settlement] run away to a [DangerousLocation]." <span class="font-weight-bold">}</span>
+    <span class="font-weight-bold">]</span>
+<span class="font-weight-bold">GeneratorType:</span> Assignment
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+</div>

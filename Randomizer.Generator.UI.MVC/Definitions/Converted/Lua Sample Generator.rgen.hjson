@@ -1,31 +1,23 @@
+Name: Lua Sample Generator
+Author: Lance Boudreaux
+Description: Demonstrates the Lua generator type
+Version: "2.0"
+Tags:
+[
+	Test
+]
+OutputFormat: Html
+Parameters:
 {
-  Script:
-    '''
-
-      
-      local greeting = selectFromTable({"Hello","Bonjour","Aloha","Hola","S'up","Aang","Ciao"})
-      printFormat("{0} {1}", greeting, name)
-      
-      
-    '''
-  Name: Lua Sample Generator
-  Author: Lance Boudreaux
-  Description: Demonstrates the Lua generator type
-  Version: "2.0"
-  Tags:
-  [
-    Test
-  ]
-  OutputFormat: Html
-  Parameters:
-  {
-    name:
-    {
-      Display: Name
-      Aliases: []
-      Type: Text
-      Options: []
-    }
-  }
-  GeneratorType: Lua
+	name:
+	{
+	  Display: Name
+	  Type: Text
+	}
 }
+Script:
+'''  
+  local greeting = selectFromTable({"Hello","Bonjour","Aloha","Hola","S'up","Aang","Ciao"})
+  printFormat("{0} {1}", greeting, name)  
+'''
+GeneratorType: Lua

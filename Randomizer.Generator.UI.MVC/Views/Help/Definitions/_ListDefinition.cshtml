@@ -1,0 +1,78 @@
+﻿<div class="col-12">
+    <h3>Definitions</h3>
+    <h5>List Definition</h5>
+    <div>
+        List definition is the simplest definition that the Randomizer has.  It simply picks an item at random from a list of values.
+    </div>
+    <br />
+    <div class="card">
+        <div class="card-header">
+            <h5 class="card-title">
+                Properties
+            </h5>
+        </div>
+        <div class="card-body">
+            <h6 class="card-subtitle">In addition to the properties found in the <a asp-action="Index" asp-route-category="Definitions" asp-route-topic="BaseDefinition">Base Definition</a>, the following are specific to this definition type.</h6>
+            <br />
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Property</th>
+                        <th>Description</th>
+                        <th>&nbsp;</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Items</th>
+                        <td>The list of items to select from.</td>
+                        <td><span class="bi-exclamation-circle-fill text-center" data-toggle="tooltip" data-html="true" data-placement="top" title="Required"></span></td>
+                    </tr>
+                    <tr>
+                        <th>KeepWhitespace</th>
+                        <td>
+                            Determines if whitespace should be trimmed from the beginning and end of the selected item.<br />
+                            <span class="font-weight-bold">Default:</span> false
+                        </td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <br />
+    <div class="card">
+        <div class="card-header">
+            <h5 class="card-title">
+                Example
+            </h5>
+        </div>
+        <div class="card-body">
+            <div class="card-text">
+                <pre>
+                <code>
+<span class="font-weight-bold">Name:</span> List Definition Example
+<span class="font-weight-bold">Author:</span> Lance Boudreaux
+<span class="font-weight-bold">Description:</span> Shows an example of a list definition
+<span class="font-weight-bold">Version:</span> "1.0"
+<span class="font-weight-bold">URL:</span> https://github.com/melance/Randomizer.Generator
+<span class="font-weight-bold">Tags:</span>
+<span class="font-weight-bold">[</span>
+    List
+    Example
+<span class="font-weight-bold">]</span>
+<span class="font-weight-bold">OutputFormat:</span> Text
+<span class="font-weight-bold">KeepWhitespace:</span> true
+<span class="font-weight-bold">Items:</span>
+<span class="font-weight-bold">[</span>
+    Item One
+    Item Two
+    Item Three
+<span class="font-weight-bold">]</span>
+<span class="font-weight-bold">GeneratorType:</span> List
+</code>
+                </pre>
+            </div>
+        </div>
+    </div>
+</div>

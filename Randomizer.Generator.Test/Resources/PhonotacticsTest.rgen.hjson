@@ -1,0 +1,28 @@
+Name: Phonotactics Test
+Author: Lance Boudreaux
+Description: Testes the phonotactics definition
+Tags: 
+[
+	Test
+]
+OutputFormat: Text
+Definitions: 
+{
+	C: [ "B", "C", "D", "F", "G", "H", "J", "K", "L", "M", "N", "P", "Q", "R", "S",	"T", "V", "W", "X", "Y", "Z" ]
+	V: [ "A", "E", "I", "O", "U" ]
+},
+Patterns: 
+{
+	Only: 
+	[
+		{
+			Pattern: "CVC"
+			Weight: 50
+		},
+		{
+			Pattern: "CCV"
+			Weight: 50
+		}
+	]
+}
+GeneratorType: Phonotactics

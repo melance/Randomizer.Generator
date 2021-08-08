@@ -1,0 +1,171 @@
+﻿<div class="col-12">
+    <h3>Definitions</h3>
+    <h5>Parameters</h5>
+    <div>
+        Parameters are used in allowing a user to specifiy certain aspects of the generated content.  All definition type excluding <a asp-action="Index" asp-route-category="Definitions" asp-route-topic="ListDefinition">List</a> can use parameters.
+    </div>
+    <br />
+    <div class="card">
+        <div class="card-header">
+            <h5 class="card-title">
+                Properties
+            </h5>
+        </div>
+        <div class="card-body">
+            <h6 class="card-subtitle">
+                The following properties are used to describe a parameter
+            </h6>
+            <br />
+            <div class="card-text">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Property</th>
+                            <th>Description</th>
+                            <th>&nbsp;</th>
+                            <th>&nbsp;</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>[Name]</th>
+                            <td>The name of the parameter as referenced in the definition.</td>
+                            <td><span class="bi-exclamation-circle-fill text-center" data-toggle="tooltip" data-html="true" data-placement="top" title="Required"></span></td>
+                        </tr>
+                        <tr>
+                            <th>Display</th>
+                            <td>
+                                The value to display to the user for the parameter's name.<br />
+                                <span class="font-weight-bold">Default:</span> [Name]
+                            </td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <th>Description</th>
+                            <td>A description of what the parameter is for.</td>
+                        </tr>
+                        <tr>
+                            <th>Type</th>
+                            <td>
+                                The type of value the parameter uses.<br />
+                                <span class="font-weight-bold">Values:</span> Text, Integer, Decimal, List, Date, Boolean<br />
+                                <span class="font-weight-bold">Default:</span> Text
+                            </td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <th>Value</th>
+                            <td>The default value of the parameter.</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <th>Visible</th>
+                            <td>
+                                Determines if the parameter is displayed to the user.<br />
+                                <span class="font-weight-bold">Default:</span> true
+                            </td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <th>Options</th>
+                            <td>
+                                The list of options available for List type variables.<br />
+                                <span class="font-weight-bold">Format:</span> value:display<br />
+                                <span class="font-weight-bold">Example:</span> PostApocalyptic:Post Apocalyptic
+                            </td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <th>Validation</th>
+                            <td>Enables validation rules for parameter values as <a href="#validation">outlined below</a>.</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="card">
+        <div class="card-header">
+            <h5 class="card-title">
+                <a id="validation" />Validation
+            </h5>
+        </div>
+        <div class="card-body">
+            <div class="card-text">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Property</th>
+                            <th>Description</th>
+                            <th>&nbsp;</th>
+                            <th>&nbsp;</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Expression</th>
+                            <td>
+                                An NCalc calculation expression that evaluates to a boolean where <code>Value</code> is the value selected by the user.<br />
+                                <span class="font-weight-bold">Examples:</span> Value < 10, Value = ''
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Message</th>
+                            <td>
+                                The message to display to the user when the expression returns false.<br />
+                                <span class="font-weight-bold">Variables:</span><br />
+                                <span class="ml-5">[Name] will be replaced by the name of the parameter</span><br />
+                                <span class="ml-5">[Value] will be replaced by the value that was selected by the user.</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="card">
+        <div class="card-header">
+            <h5 class="card-title">
+                Example
+            </h5>
+        </div>
+        <div class="card-body">
+            <div class="card-text">
+                <pre>
+                    <code>
+<span class="font-weight-bold">Parameters:</span>
+<span class="font-weight-bold">{</span>
+    width:
+    <span class="font-weight-bold">{</span>
+        <span class="font-weight-bold">Value:</span> "20"
+        <span class="font-weight-bold">Display:</span> Width
+        <span class="font-weight-bold">Description:</span> Determines the width of the map.  The value must be greater than or equal to 10.
+        <span class="font-weight-bold">Type:</span> Integer
+        <span class="font-weight-bold">Validation:</span>
+        <span class="font-weight-bold">[</span>
+            <span class="font-weight-bold">{ Expression:</span> "Value < 10", <span class="font-weight-bold">Message:</span> "[Name] must be greater than or equal to 10. Value received was [Value]." <span class="font-weight-bold">}</span>
+            <span class="font-weight-bold">{ Expression:</span> "Value > 250", <span class="font-weight-bold">Message:</span> "[Name] must be less than or equal to 250. Value received was [Value]." <span class="font-weight-bold">}</span>
+        <span class="font-weight-bold">]</span>
+    <span class="font-weight-bold">}</span>
+    genre:
+    <span class="font-weight-bold">{</span>
+        <span class="font-weight-bold">Value:</span> Fantasy
+        <span class="font-weight-bold">Display:</span> Genre
+        <span class="font-weight-bold">Type:</span> List
+        <span class="font-weight-bold">Options:</span>
+        <span class="font-weight-bold">[</span>
+	        Fantasy:Fantasy
+	        PostApocalyptic:Post Apocalyptic
+        <span class="font-weight-bold">]</span>
+    <span class="font-weight-bold">}</span>
+<span class="font-weight-bold">}</span>
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+</div>
+

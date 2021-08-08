@@ -2,6 +2,60 @@
     <h3>Definitions</h3>
     <h5>Overview</h5>
     <div>
-        Coming soon...
-    </div>    
+        In previous versions of the Randomizer, files used to generate content were referred to as Grammar files and were in XML format.
+        In the latest edition the term has been changed to Definition files to differentiate them and they are now in HJSON format.
+        The change in format was done to make the files smaller and to make them more human readable.
+    </div>
+    <br />
+    <div class="card">
+        <div class="card-header">
+            HJSON Format
+        </div>
+        <div class="card-body">
+            Hjson is a syntax extension to JSON. It allows for JSON to be easier to use for humans and includes comments and a more forgiving format.
+            For more information, see the HJSON information located on their <a href="https://hjson.github.io/">HJSON Github Page</a>.
+        </div>
+    </div>
+    <br />
+    <div class="card">
+        <div class="card-header">
+            Definition Types
+        </div>
+        <div class="card-body">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th><a asp-action="Index" asp-route-category="Definitions" asp-route-topic="AssignmentDefinition">Assignment</a></th>
+                        <td>Assignment definition is the most flexible and feature rich definition that the Randomizer has.  It was initially inspired by <a href="https://en.wikipedia.org/wiki/Markov_chain">Markov Chains</a> but has grown far beyond.</td>
+                    </tr>
+                    <tr>
+                        <th><a asp-action="Index" asp-route-category="Definitions" asp-route-topic="DotNetDefinition">DotNet</a></th>
+                        <td>DotNet definition is the most recent addition.  It requires both a definition file and a .NET DLL.  I do not recommend downloading these definitions from other sources than the official <a href="https://github.com/melance/TheRandomizerCustomizations">Randomizer Customizations</a> because they can be dangerous.</td>
+                    </tr>
+                    <tr>
+                        <th><a asp-action="Index" asp-route-category="Definitions" asp-route-topic="ListDefinition">List</a></th>
+                        <td>List definition is the simplest definition that the Randomizer has.  It simply picks an item at random from a list of values.</td>
+                    </tr>
+                    <tr>
+                        <th><a asp-action="Index" asp-route-category="Definitions" asp-route-topic="LuaDefinition">Lua</a></th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th><a asp-action="Index" asp-route-category="Definitions" asp-route-topic="PhonotacticsDefinition">Phonotactics</a></th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th><a asp-action="Index" asp-route-category="Definitions" asp-route-topic="TableDefinition">Table</a></th>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 </div>

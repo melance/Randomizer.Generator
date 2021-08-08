@@ -1,0 +1,556 @@
+﻿<div class="col-12">
+    <h3>Definitions</h3>
+    <h5>Expression</h5>
+    <div>
+        Expressions are calculation strings evaluated by the <a href="https://github.com/ncalc/ncalc">NCalc</a> engine.  
+        All functionality of that engine are available as well as the methods outlined below.
+    </div>
+    <br />
+    <div class="card">
+        <div class="card-header">
+            <h5 class="card-title">Parameters &amp; Variables</h5>
+        </div>
+        <div class="card-body">
+            <div class="card-text">
+                The parameters defined in a definition are available in expressions by using their name.  The same applies to definitions that have variables.
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="card">
+        <div class="card-header">
+            <h5 class="card-title">Custom Methods</h5>
+        </div>
+        <div class="card-body">
+            <div class="card">
+                <div class="card-header">
+                    <span class="font-weight-bold">Cast</span><br />
+                    <span class="simple-code">object Cast(object value, string typeName)</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-text">
+                        Converts the provided value to the named .Net type.<br />
+                        <span class="font-weight-bold">Example:</span> <code>Cast(10, 'System.Single')</code> <span class="bi-arrow-right"></span> <span class="simple-code">'10'</span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <span class="bi-diagram-2-fill" data-toggle="tooltip" title="Assignment Definitions"></span>
+                    <span class="bi-moon-fill" data-toggle="tooltip" title="Lua Definitions"></span>
+                    <span class="bi-table" data-toggle="tooltip" title="Table Definitions"></span>
+                </div>
+            </div>
+            <br />
+            <div class="card">
+                <div class="card-header">
+                    <span class="font-weight-bold">CBool</span><br />
+                    <span class="simple-code">bool CBool(object value)</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-text">
+                        Converts the value to a boolean.<br />
+                        <span class="font-weight-bold">Example:</span> <code>CBool(1)</code> <span class="bi-arrow-right"></span> <span class="simple-code">true</span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <span class="bi-diagram-2-fill" data-toggle="tooltip" title="Assignment Definitions"></span>
+                    <span class="bi-moon-fill" data-toggle="tooltip" title="Lua Definitions"></span>
+                    <span class="bi-table" data-toggle="tooltip" title="Table Definitions"></span>
+                </div>
+            </div>
+            <br />
+            <div class="card">
+                <div class="card-header">
+                    <span class="font-weight-bold">CDate</span><br />
+                    <span class="simple-code">date CDate(object value)</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-text">
+                        Converts the value to a date.<br />
+                        <span class="font-weight-bold">Example:</span> <code>CDate('1999-12-31')</code> <span class="bi-arrow-right"></span> <span class="simple-code">12/31/1999 12:00:00 AM</span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <span class="bi-diagram-2-fill" data-toggle="tooltip" title="Assignment Definitions"></span>
+                    <span class="bi-moon-fill" data-toggle="tooltip" title="Lua Definitions"></span>
+                    <span class="bi-table" data-toggle="tooltip" title="Table Definitions"></span>
+                </div>
+            </div>
+            <br />
+            <div class="card">
+                <div class="card-header">
+                    <span class="font-weight-bold">CDbl</span><br />
+                    <span class="simple-code">double CDbl(object value)</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-text">
+                        Converts the value to a double.<br />
+                        <span class="font-weight-bold">Example:</span> <code>CDbl('3.14')</code> <span class="bi-arrow-right"></span> <span class="simple-code">3.14</span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <span class="bi-diagram-2-fill" data-toggle="tooltip" title="Assignment Definitions"></span>
+                    <span class="bi-moon-fill" data-toggle="tooltip" title="Lua Definitions"></span>
+                    <span class="bi-table" data-toggle="tooltip" title="Table Definitions"></span>
+                </div>
+            </div>
+            <br />
+            <div class="card">
+                <div class="card-header">
+                    <span class="font-weight-bold">CInt</span><br />
+                    <span class="simple-code">int CInt(object value)</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-text">
+                        Converts the value to an integer.<br />
+                        <span class="font-weight-bold">Example:</span> <code>CInt(3.14)</code> <span class="bi-arrow-right"></span> <span class="simple-code">3</span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <span class="bi-diagram-2-fill" data-toggle="tooltip" title="Assignment Definitions"></span>
+                    <span class="bi-moon-fill" data-toggle="tooltip" title="Lua Definitions"></span>
+                    <span class="bi-table" data-toggle="tooltip" title="Table Definitions"></span>
+                </div>
+            </div>
+            <br />
+            <div class="card">
+                <div class="card-header">
+                    <span class="font-weight-bold">CStr</span><br />
+                    <span class="simple-code">string CStr(object value)</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-text">
+                        Returns the string representation of the value.<br />
+                        <span class="font-weight-bold">Example:</span> <code>CStr(3.14)</code> <span class="bi-arrow-right"></span> <span class="simple-code">'3.14'</span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <span class="bi-diagram-2-fill" data-toggle="tooltip" title="Assignment Definitions"></span>
+                    <span class="bi-moon-fill" data-toggle="tooltip" title="Lua Definitions"></span>
+                    <span class="bi-table" data-toggle="tooltip" title="Table Definitions"></span>
+                </div>
+            </div>
+            <br />
+            <div class="card">
+                <div class="card-header">
+                    <span class="font-weight-bold">Format</span><br />
+                    <span class="simple-code">string Format(date value, string format)</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-text">
+                        Formats a date using the given format.<br />
+                        For more info see <a href="https://docs.microsoft.com/en-us/dotnet/standard/base-types/formatting-types">Formatting Types</a>.<br />
+                        <span class="font-weight-bold">Example:</span> <code>Format(#12/31/1999#, "MMM yyyy")</code> <span class="bi-arrow-right"></span> <span class="simple-code">'Dec 1999'</span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <span class="bi-diagram-2-fill" data-toggle="tooltip" title="Assignment Definitions"></span>
+                    <span class="bi-moon-fill" data-toggle="tooltip" title="Lua Definitions"></span>
+                    <span class="bi-table" data-toggle="tooltip" title="Table Definitions"></span>
+                </div>
+            </div>
+            <br />
+            <div class="card">
+                <div class="card-header">
+                    <span class="font-weight-bold">Format</span><br />
+                    <span class="simple-code">string Format(double value, string format)</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-text">
+                        Formats a double using the given format.<br />
+                        For more info see <a href="https://docs.microsoft.com/en-us/dotnet/standard/base-types/formatting-types">Formatting Types</a>.<br />
+                        <span class="font-weight-bold">Example:</span> <code>Format(2.2, "#,##0.00")</code> <span class="bi-arrow-right"></span> <span class="simple-code">'2.20'</span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <span class="bi-diagram-2-fill" data-toggle="tooltip" title="Assignment Definitions"></span>
+                    <span class="bi-moon-fill" data-toggle="tooltip" title="Lua Definitions"></span>
+                    <span class="bi-table" data-toggle="tooltip" title="Table Definitions"></span>
+                </div>
+            </div>
+            <br />
+            <div class="card">
+                <div class="card-header">
+                    <span class="font-weight-bold">Format</span><br />
+                    <span class="simple-code">string Format(int value, string format)</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-text">
+                        Formats an integer using the given format.<br />
+                        For more info see <a href="https://docs.microsoft.com/en-us/dotnet/standard/base-types/formatting-types">Formatting Types</a>.<br />
+                        <span class="font-weight-bold">Example:</span> <code>Format(21000, "#,##0")</code> <span class="bi-arrow-right"></span> <span class="simple-code">'21,000'</span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <span class="bi-diagram-2-fill" data-toggle="tooltip" title="Assignment Definitions"></span>
+                    <span class="bi-moon-fill" data-toggle="tooltip" title="Lua Definitions"></span>
+                    <span class="bi-table" data-toggle="tooltip" title="Table Definitions"></span>
+                </div>
+            </div>
+            <br />
+            <div class="card">
+                <div class="card-header">
+                    <span class="font-weight-bold">Generate</span><br />
+                    <span class="simple-code">string Generate(string definitionName)</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-text">
+                        Formats an double using the given format.<br />
+                        Runs a generator with the given name.<br />
+                        <span class="font-weight-bold">Example:</span> <code>Generate('sampleDefinition')</code>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <span class="bi-diagram-2-fill" data-toggle="tooltip" title="Assignment Definitions"></span>
+                    <span class="bi-moon-fill" data-toggle="tooltip" title="Lua Definitions"></span>
+                    <span class="bi-table" data-toggle="tooltip" title="Table Definitions"></span>
+                </div>
+            </div>
+            <br />
+            <div class="card">
+                <div class="card-header">
+                    <span class="font-weight-bold">Generate</span><br />
+                    <span class="simple-code">string Generate(string definitionName, params string[] parameters)</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-text">
+                        Formats an double using the given format.<br />
+                        Runs a generator with the given name with the provided parameters.
+                        Parameters should be formatted as "name=value"<br />
+                        <span class="font-weight-bold">Example:</span> <code>Generate('sampleDefinition')</code>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <span class="bi-diagram-2-fill" data-toggle="tooltip" title="Assignment Definitions"></span>
+                    <span class="bi-moon-fill" data-toggle="tooltip" title="Lua Definitions"></span>
+                    <span class="bi-table" data-toggle="tooltip" title="Table Definitions"></span>
+                </div>
+            </div>
+            <br />
+            <div class="card">
+                <div class="card-header">
+                    <span class="font-weight-bold">LCase</span><br />
+                    <span class="simple-code">string LCase(string value)</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-text">
+                        Converts a string to lower case.<br />
+                        <span class="font-weight-bold">Example:</span> <code>LCase('Hello World')</code> <span class="bi-arrow-right"></span> <span class="simple-code">'hello world'</span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <span class="bi-diagram-2-fill" data-toggle="tooltip" title="Assignment Definitions"></span>
+                    <span class="bi-moon-fill" data-toggle="tooltip" title="Lua Definitions"></span>
+                    <span class="bi-table" data-toggle="tooltip" title="Table Definitions"></span>
+                </div>
+            </div>
+            <br />
+            <div class="card">
+                <div class="card-header">
+                    <span class="font-weight-bold">Pick</span><br />
+                    <span class="simple-code">string Pick(params string[] parameters)</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-text">
+                        Selects one item from the list of <span class="font-italic">parameters</span><br />
+                        <span class="font-weight-bold">Example:</span> <code>Pick('One','Two','Turtle','Frog')</code> <span class="bi-arrow-right"></span> <span class="simple-code">'Turtle'</span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <span class="bi-diagram-2-fill" data-toggle="tooltip" title="Assignment Definitions"></span>
+                    <span class="bi-moon-fill" data-toggle="tooltip" title="Lua Definitions"></span>
+                    <span class="bi-table" data-toggle="tooltip" title="Table Definitions"></span>
+                </div>
+            </div>
+            <br />
+            <div class="card">
+                <div class="card-header">
+                    <span class="font-weight-bold">PickW</span><br />
+                    <span class="simple-code">string PickW(params string[] parameters)</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-text">
+                        Selects one item from the list of weighted <span class="font-italic">parameters</span><br />
+                        <span class="font-weight-bold">Example:</span> <code>Pick('Hello:50','Goodbye:25')</code> <span class="bi-arrow-right"></span> <span class="simple-code">'Hello'</span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <span class="bi-diagram-2-fill" data-toggle="tooltip" title="Assignment Definitions"></span>
+                    <span class="bi-moon-fill" data-toggle="tooltip" title="Lua Definitions"></span>
+                    <span class="bi-table" data-toggle="tooltip" title="Table Definitions"></span>
+                </div>
+            </div>
+            <br />
+            <div class="card">
+                <div class="card-header">
+                    <span class="font-weight-bold">Random</span><br />
+                    <span class="simple-code">int Random(int max)</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-text">
+                        Generates a positive random integer less than or equal to <span class="font-italic">max</span>.<br />
+                        <span class="font-weight-bold">Example:</span> <code>Random(16)</code> <span class="bi-arrow-right"></span> <span class="simple-code">12</span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <span class="bi-diagram-2-fill" data-toggle="tooltip" title="Assignment Definitions"></span>
+                    <span class="bi-moon-fill" data-toggle="tooltip" title="Lua Definitions"></span>
+                    <span class="bi-table" data-toggle="tooltip" title="Table Definitions"></span>
+                </div>
+            </div>
+            <br />
+            <div class="card">
+                <div class="card-header">
+                    <span class="font-weight-bold">Random</span><br />
+                    <span class="simple-code">int Random(int min, int max)</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-text">
+                        Generates a random integer greater than or equal to <span class="font-italic">min</span> less than or equal to <span class="font-italic">max</span>.<br />
+                        <span class="font-weight-bold">Example:</span> <code>Random(-20, 20)</code> <span class="bi-arrow-right"></span> <span class="simple-code">-3</span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <span class="bi-diagram-2-fill" data-toggle="tooltip" title="Assignment Definitions"></span>
+                    <span class="bi-moon-fill" data-toggle="tooltip" title="Lua Definitions"></span>
+                    <span class="bi-table" data-toggle="tooltip" title="Table Definitions"></span>
+                </div>
+            </div>
+            <br />
+            <div class="card">
+                <div class="card-header">
+                    <span class="font-weight-bold">Roll</span><br />
+                    <span class="simple-code">int Roll(int sides)</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-text">
+                        Rolls a single die with the number of sides given.<br />
+                        <span class="font-weight-bold">Example:</span> <code>Roll(20)</code> <span class="text-black-50">Equivalent to 1d20</span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <span class="bi-diagram-2-fill" data-toggle="tooltip" title="Assignment Definitions"></span>
+                    <span class="bi-moon-fill" data-toggle="tooltip" title="Lua Definitions"></span>
+                    <span class="bi-table" data-toggle="tooltip" title="Table Definitions"></span>
+                </div>
+            </div>
+            <br />
+            <div class="card">
+                <div class="card-header">
+                    <span class="font-weight-bold">Roll</span><br />
+                    <span class="simple-code">int Roll(int count, int sides)</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-text">
+                        Rolls a number of dice equal to the count with the number of sides given.<br />
+                        <span class="font-weight-bold">Example:</span> <code>Roll(4, 6)</code> <span class="text-black-50">Equivalent to 4d6</span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <span class="bi-diagram-2-fill" data-toggle="tooltip" title="Assignment Definitions"></span>
+                    <span class="bi-moon-fill" data-toggle="tooltip" title="Lua Definitions"></span>
+                    <span class="bi-table" data-toggle="tooltip" title="Table Definitions"></span>
+                </div>
+            </div>
+            <br />
+            <div class="card">
+                <div class="card-header">
+                    <span class="font-weight-bold">Roll</span><br />
+                    <span class="simple-code">int Roll(int count, int sides, string options)</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-text">
+                        Rolls a number of dice equal to the count with the number of sides given and applies the options presented.<br />
+                        <span class="font-weight-bold">Example:</span> <code>Roll(5,10,'GE(6),R1')</code> <span class="text-black-50">Equivalent to 5d10 difficulty is 6 with Rule of One</span>
+                        <br />
+                        <br />
+                        <div class="card">
+                            <div class="card-header">
+                                <h6>Options</h6>
+                            </div>
+                            <div class="card-body">
+                                <table class="table">
+                                    <tr>
+                                        <th>CEX</th>
+                                        <td>Applies <span class="font-weight-bold">C</span>ompounding <span class="font-weight-bold">Ex</span>ploding dice.</td>
+                                    </tr>
+                                    <tr>
+                                        <th>EX</th>
+                                        <td>Applies <span class="font-weight-bold">Ex</span>ploding dice.</td>
+                                    </tr>
+                                    <tr>
+                                        <th>GE(number)</th>
+                                        <td>Counts rolls <span class="font-weight-bold">G</span>reater Than or <span class="font-weight-bold">E</span>qual to the given number.</td>
+                                    </tr>
+                                    <tr>
+                                        <th>GT(number)</th>
+                                        <td>Counts rolls <span class="font-weight-bold">G</span>reater <span class="font-weight-bold">T</span>han the given number.</td>
+                                    </tr>
+                                    <tr>
+                                        <th>KH</th>
+                                        <td><span class="font-weight-bold">K</span>eep <span class="font-weight-bold">H</span>ighest die result.</td>
+                                    </tr>
+                                    <tr>
+                                        <th>KH(number)</th>
+                                        <td><span class="font-weight-bold">K</span>eep <span class="font-weight-bold">H</span>ighest <span class="font-italic">number</span> of results.</td>
+                                    </tr>
+                                    <tr>
+                                        <th>KL</th>
+                                        <td><span class="font-weight-bold">K</span>eep <span class="font-weight-bold">L</span>owest die result.</td>
+                                    </tr>
+                                    <tr>
+                                        <th>KL(number)</th>
+                                        <td><span class="font-weight-bold">K</span>eep <span class="font-weight-bold">L</span>owest <span class="font-italic">number</span> of results.</td>
+                                    </tr>
+                                    <tr>
+                                        <th>LE(number)</th>
+                                        <td>Counts rolls <span class="font-weight-bold">L</span>ess Than or <span class="font-weight-bold">E</span>qual to the given <span class="font-italic">number</span>.</td>
+                                    </tr>
+                                    <tr>
+                                        <th>LT(number)</th>
+                                        <td>Counts rolls <span class="font-weight-bold">L</span>ess <span class="font-weight-bold">T</span>han the given <span class="font-italic">number</span>.</td>
+                                    </tr>
+                                    <tr>
+                                        <th>R1</th>
+                                        <td>Applies the <span class="font-weight-bold">R</span>ule of <span class="font-weight-bold">1</span> to GE, GT, LE, and LT.</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <span class="bi-diagram-2-fill" data-toggle="tooltip" title="Assignment Definitions"></span>
+                    <span class="bi-moon-fill" data-toggle="tooltip" title="Lua Definitions"></span>
+                    <span class="bi-table" data-toggle="tooltip" title="Table Definitions"></span>
+                </div>
+            </div>
+            <br />
+            <div class="card">
+                <div class="card-header">
+                    <span class="font-weight-bold">SCase</span><br />
+                    <span class="simple-code">string SCase(string value)</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-text">
+                        Converts a string to sentence case.<br />
+                        <span class="font-weight-bold">Example:</span> <code>SCase('hello world')</code> <span class="bi-arrow-right"></span> <span class="simple-code">'Hello world'</span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <span class="bi-diagram-2-fill" data-toggle="tooltip" title="Assignment Definitions"></span>
+                    <span class="bi-moon-fill" data-toggle="tooltip" title="Lua Definitions"></span>
+                    <span class="bi-table" data-toggle="tooltip" title="Table Definitions"></span>
+                </div>
+            </div>
+            <br />
+            <div class="card">
+                <div class="card-header">
+                    <span class="font-weight-bold">Switch</span><br />
+                    <span class="simple-code">object Switch(object value, object defaultValue, paramarray (object caseValue, object result))</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-text">
+                        Checks each <span class="font-italic">case</span> to find one that equals the <span class="font-italic">value</span> and returns the <span class="font-italic">result</span>.
+                        If not case matches, returns <span class="font-italic">defaultValue</span><br />
+                        <span class="font-weight-bold">Example:</span> <code>Switch(2, 'Nope', 1, 'This', 2, 'That')</code> <span class="bi-arrow-right"></span> <span class="simple-code">'That'</span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <span class="bi-diagram-2-fill" data-toggle="tooltip" title="Assignment Definitions"></span>
+                    <span class="bi-moon-fill" data-toggle="tooltip" title="Lua Definitions"></span>
+                    <span class="bi-table" data-toggle="tooltip" title="Table Definitions"></span>
+                </div>
+            </div>
+            <br />
+            <div class="card">
+                <div class="card-header">
+                    <span class="font-weight-bold">Table</span><br />
+                    <span class="simple-code">void Table(string value)</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-text">
+                        Processes a table in a <a asp-action="Index" asp-route-category="Definitions" asp-route-topic="TableDefinition"><span class="bi-file-text"></span>Table Definition</a><br />
+                        <span class="font-weight-bold">Example:</span> <code>Table('MyTableName')</code>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <span class="bi-table" data-toggle="tooltip" title="Available in Table definition types."></span>
+                </div>
+            </div>
+            <br />
+            <div class="card">
+                <div class="card-header">
+                    <span class="font-weight-bold">TCase</span><br />
+                    <span class="simple-code">strint TCase(string value)</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-text">
+                        Converts a string to title case.<br />
+                        <span class="font-weight-bold">Example:</span> <code>TCase('hello world')</code> <span class="bi-arrow-right"></span> <span class="simple-code">'Hello World'</span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <span class="bi-diagram-2-fill" data-toggle="tooltip" title="Assignment Definitions"></span>
+                    <span class="bi-moon-fill" data-toggle="tooltip" title="Lua Definitions"></span>
+                    <span class="bi-table" data-toggle="tooltip" title="Table Definitions"></span>
+                </div>
+            </div>
+            <br />
+            <div class="card">
+                <div class="card-header">
+                    <span class="font-weight-bold">ToOrdinal</span><br />
+                    <span class="simple-code">string ToOrdinal(int value)</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-text">
+                        Converts a number to an ordinal.<br />
+                        <span class="font-weight-bold">Example:</span> <code>ToOrdinal(8)</code> <span class="bi-arrow-right"></span> <span class="simple-code">'8th'</span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <span class="bi-diagram-2-fill" data-toggle="tooltip" title="Assignment Definitions"></span>
+                    <span class="bi-moon-fill" data-toggle="tooltip" title="Lua Definitions"></span>
+                    <span class="bi-table" data-toggle="tooltip" title="Table Definitions"></span>
+                </div>
+            </div>
+            <br />
+            <div class="card">
+                <div class="card-header">
+                    <span class="font-weight-bold">ToText</span><br />
+                    <span class="simple-code">string ToText(int value)</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-text">
+                        Converts a number to text.<br />
+                        <span class="font-weight-bold">Example:</span> <code>ToText(72)</code> <span class="bi-arrow-right"></span> <span class="simple-code">'seventy two'</span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <span class="bi-diagram-2-fill" data-toggle="tooltip" title="Assignment Definitions"></span>
+                    <span class="bi-moon-fill" data-toggle="tooltip" title="Lua Definitions"></span>
+                    <span class="bi-table" data-toggle="tooltip" title="Table Definitions"></span>
+                </div>
+            </div>
+            <br />
+            <div class="card">
+                <div class="card-header">
+                    <span class="font-weight-bold">UCase</span><br />
+                    <span class="simple-code">string UCase(string value)</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-text">
+                        Converts a string to upper case.<br />
+                        <span class="font-weight-bold">Example:</span> <code>UCase('Hello World')</code> <span class="bi-arrow-right"></span> <span class="simple-code">'HELLO WORLD'</span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <span class="bi-diagram-2-fill" data-toggle="tooltip" title="Assignment Definitions"></span>
+                    <span class="bi-moon-fill" data-toggle="tooltip" title="Lua Definitions"></span>
+                    <span class="bi-table" data-toggle="tooltip" title="Table Definitions"></span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <br />
+</div>
