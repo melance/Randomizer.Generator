@@ -28,11 +28,15 @@ namespace Randomizer.Generator.UI.MVC.Controllers
 		}
 
 		[HttpGet]
-        public IActionResult Index()
+        public IActionResult Index(String currentSearch = "", String tags = "", Int32 page = 1)
         {
 			try
 			{
-				var model = new IndexModel(DataAccess, 1);
+				var model = new IndexModel();
+				model.Search = currentSearch;
+				model.SelectedTags = tags;
+				model.Page = page;
+				model.GetDefinitions(DataAccess);
 				ViewBag.ErrorMessage = String.Empty;
 				return View(model);
 			}
@@ -49,8 +53,8 @@ namespace Randomizer.Generator.UI.MVC.Controllers
         }
 
 		[HttpPost]
-		public IActionResult Index(IndexModel model, Int32 page = 1)
-		{
+		public IActionResult Index(IndexModel model)
+		{			
 			model.GetDefinitions(DataAccess);
 			return View(model);
 		}

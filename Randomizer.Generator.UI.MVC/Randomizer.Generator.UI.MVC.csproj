@@ -26,202 +26,202 @@
 
   <ItemGroup>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\Adventure Hooks.rgen.hjson" Link="Definitions\Adventure Hooks.rgen.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\adventurehooks.fantasy.rgen.hjson" Link="Definitions\adventurehooks.fantasy.rgen.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\adventurehooks.postapocalyptic.rgen.hjson" Link="Definitions\adventurehooks.postapocalyptic.rgen.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\Bars and Pubs Sci Fi.rgen.hjson" Link="Definitions\Bars and Pubs Sci Fi.rgen.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\Bars Pubs Taverns and Inns.rgen.hjson" Link="Definitions\Bars Pubs Taverns and Inns.rgen.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\CareersByIndustry.rlib.hjson" Link="Definitions\CareersByIndustry.rlib.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\Cave.rgen.hjson" Link="Definitions\Cave.rgen.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\Colors.rgen.hjson" Link="Definitions\Colors.rgen.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\Corporation Names.rgen.hjson" Link="Definitions\Corporation Names.rgen.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\Curses DnD.rgen.hjson" Link="Definitions\Curses DnD.rgen.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\Deck of Cards.rlib.hjson" Link="Definitions\Deck of Cards.rlib.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\Deck of Many Things.rlib.hjson" Link="Definitions\Deck of Many Things.rlib.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\DeckOfManyThings.rgen.hjson" Link="Definitions\DeckOfManyThings.rgen.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\Deity.rgen.hjson" Link="Definitions\Deity.rgen.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\DeityAztec.rlib.hjson" Link="Definitions\DeityAztec.rlib.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\DeityBaltic.rlib.hjson" Link="Definitions\DeityBaltic.rlib.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\DeityCeltic.rlib.hjson" Link="Definitions\DeityCeltic.rlib.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\DeityChinese.rlib.hjson" Link="Definitions\DeityChinese.rlib.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\DeityEgyptian.rlib.hjson" Link="Definitions\DeityEgyptian.rlib.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\DeityGreek.rlib.hjson" Link="Definitions\DeityGreek.rlib.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\DeityIndia.rlib.hjson" Link="Definitions\DeityIndia.rlib.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\DeityJapanese.rlib.hjson" Link="Definitions\DeityJapanese.rlib.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\DeityMayan.rlib.hjson" Link="Definitions\DeityMayan.rlib.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\DeityNativeAmerican.rlib.hjson" Link="Definitions\DeityNativeAmerican.rlib.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\DeityNorse.rlib.hjson" Link="Definitions\DeityNorse.rlib.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\DeityRoman.rlib.hjson" Link="Definitions\DeityRoman.rlib.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\DeitySlavic.rlib.hjson" Link="Definitions\DeitySlavic.rlib.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\DeityVoodoo.rlib.hjson" Link="Definitions\DeityVoodoo.rlib.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\Fantasy City Events.rgen.hjson" Link="Definitions\Fantasy City Events.rgen.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\Fantasy Tavern and Inn.rgen.hjson" Link="Definitions\Fantasy Tavern and Inn.rgen.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\FiveRoomDungeon.rgen.hjson" Link="Definitions\FiveRoomDungeon.rgen.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\Libraries\Maze.Rgen.dll" Link="Definitions\Libraries\Maze.Rgen.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\Maze.rgen.hjson" Link="Definitions\Maze.rgen.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\Medieval Occupations.rgen.hjson" Link="Definitions\Medieval Occupations.rgen.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\monsters by size.rlib.hjson" Link="Definitions\monsters by size.rlib.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\monsters by type.rlib.hjson" Link="Definitions\monsters by type.rlib.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\Names.DragonBorn.Fantasy.Clan.rgen.hjson" Link="Definitions\Names.DragonBorn.Fantasy.Clan.rgen.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\Names.DragonBorn.Fantasy.Female.rgen.hjson" Link="Definitions\Names.DragonBorn.Fantasy.Female.rgen.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\Names.Dragonborn.Fantasy.Male.rgen.hjson" Link="Definitions\Names.Dragonborn.Fantasy.Male.rgen.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\Names.Dwarf.Fantasy.Clan.rgen.hjson" Link="Definitions\Names.Dwarf.Fantasy.Clan.rgen.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\Names.Dwarf.Fantasy.Female.rgen.hjson" Link="Definitions\Names.Dwarf.Fantasy.Female.rgen.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\Names.Dwarf.Fantasy.Male.rgen.hjson" Link="Definitions\Names.Dwarf.Fantasy.Male.rgen.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\Names.Elf.Fantasy.Family.rgen.hjson" Link="Definitions\Names.Elf.Fantasy.Family.rgen.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\Names.Elf.Fantasy.Female.rgen.hjson" Link="Definitions\Names.Elf.Fantasy.Female.rgen.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\Names.Elf.Fantasy.Male.rgen.hjson" Link="Definitions\Names.Elf.Fantasy.Male.rgen.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\Names.Fantasy.rgen.hjson" Link="Definitions\Names.Fantasy.rgen.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\Names.Gnome.Fantasy.Clan.rgen.hjson" Link="Definitions\Names.Gnome.Fantasy.Clan.rgen.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\Names.Gnome.Fantasy.Female.rgen.hjson" Link="Definitions\Names.Gnome.Fantasy.Female.rgen.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\Names.Gnome.Fantasy.Male.rgen.hjson" Link="Definitions\Names.Gnome.Fantasy.Male.rgen.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\Names.Halfling.Fantasy.Family.rgen.hjson" Link="Definitions\Names.Halfling.Fantasy.Family.rgen.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\Names.Halfling.Fantasy.Female.rgen.hjson" Link="Definitions\Names.Halfling.Fantasy.Female.rgen.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\Names.Halfling.Fantasy.Male.rgen.hjson" Link="Definitions\Names.Halfling.Fantasy.Male.rgen.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\Names.HalfOrc.Fantasy.Female.rgen.hjson" Link="Definitions\Names.HalfOrc.Fantasy.Female.rgen.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\Names.HalfOrc.Fantasy.Male.rgen.hjson" Link="Definitions\Names.HalfOrc.Fantasy.Male.rgen.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\Names.Human.Fantasy.Family.rgen.hjson" Link="Definitions\Names.Human.Fantasy.Family.rgen.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\Names.Human.Fantasy.Female.rgen.hjson" Link="Definitions\Names.Human.Fantasy.Female.rgen.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\Names.Human.Fantasy.Male.rgen.hjson" Link="Definitions\Names.Human.Fantasy.Male.rgen.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\Names.Nickname.Fantasy.rgen.hjson" Link="Definitions\Names.Nickname.Fantasy.rgen.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\Names.Template.rtemp.hjson" Link="Definitions\Names.Template.rtemp.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\Names.Tiefling.Fantasy.Female.rgen.hjson" Link="Definitions\Names.Tiefling.Fantasy.Female.rgen.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\Names.Tiefling.Fantasy.Male.rgen.hjson" Link="Definitions\Names.Tiefling.Fantasy.Male.rgen.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\Resistances DnD 5e.rgen.hjson" Link="Definitions\Resistances DnD 5e.rgen.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\Spells DnD 5e PHB.rgen.hjson" Link="Definitions\Spells DnD 5e PHB.rgen.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\Treasure.dnd5e.rgen.hjson" Link="Definitions\Treasure.dnd5e.rgen.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\Weapons DnD 5e.rgen.hjson" Link="Definitions\Weapons DnD 5e.rgen.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\..\TheRandomizerCustomizations\Definitions\Weather Conditions.Descriptive.rgen.hjson" Link="Definitions\Weather Conditions.Descriptive.rgen.hjson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="..\License.md">
       <Pack>True</Pack>

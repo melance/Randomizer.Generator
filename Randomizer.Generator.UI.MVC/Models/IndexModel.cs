@@ -19,16 +19,14 @@ namespace Randomizer.Generator.UI.MVC.Models
 		public IndexModel(MVCDataAccess dataAccess, Int32 page)
 		{
 			Definitions = dataAccess.GetDefinitionInfoList().OrderBy(d => d.Name).ToPagedList(page, PAGE_SIZE);
-			foreach (var tag in dataAccess.GetTagList())
-			{
-				TagList.Add(tag, false);
-			}
+			dataAccess.GetTagList().ToList().ForEach(t => TagList.Add(t, false));
 		}
 		#endregion
 
 		#region Public Methods
 		public void GetDefinitions(MVCDataAccess dataAccess)
 		{
+			if (TagList == null || !TagList.Any()) dataAccess.GetTagList().ToList().ForEach(t => TagList.Add(t, false));
 			var definitions = new List<DefinitionInfo>();
 			var selectedTags = TagList.Where(t => t.Value).Select(t => t.Key);
 
@@ -53,6 +51,17 @@ namespace Randomizer.Generator.UI.MVC.Models
 		#region Properties
 		public IPagedList<DefinitionInfo> Definitions { get; set; }
 		public String Search { get; set; }
+		public String SelectedTags 
+		{ 
+			get => String.Join(',', TagList.Where(t => t.Value));
+			set
+			{
+				foreach (var kvp in TagList)
+					TagList[kvp.Key] = false;
+				if (!String.IsNullOrWhiteSpace(value))
+					value.Split(',').ToList().ForEach(t => TagList[t] = true);
+			}
+		}
 		public Dictionary<String, Boolean> TagList { get; set; } = new();
 		public Int32 Page { get; set; } = 1;
 		public Boolean IsFiltered

@@ -4,25 +4,6 @@
     ViewData["Title"] = "Home Page";
 }
 
-@section Scripts
-{
-    <script>
-        $(document).ready(function () {
-            $(".pagination a").click(function () {
-                if (event.preventDefault) {
-                    event.preventDefault();
-                }
-                else {
-                    event.returnValue = false;
-                }
-                $('#page').val($(this).html());
-                $('#filterForm').submit();
-                event.returnValue = true;
-            });
-        });
-    </script>
-}
-
 <h3>Generators</h3>
 <span class="text-black-50">The Randomizer is a random content generator for roleplaying games and writers. To get started, select a generator from the list to begin generating content.</span>
 @if (String.IsNullOrWhiteSpace(ViewBag.ErrorMessage))
@@ -98,7 +79,7 @@
             <ul class="pagination justify-content-center">
                 @if (Model.Definitions.HasPreviousPage)
                 {
-                    <li class="page-item"><a class="page-link" asp-route-page="@(Model.Definitions.PageNumber - 1)">&laquo;</a></li>
+                    <li class="page-item"><a class="page-link" asp-route-page="@(Model.Definitions.PageNumber - 1)" asp-route-currentSearch="@Model.Search" asp-route-tags="@Model.SelectedTags">&laquo;</a></li>
                 }
                 else
                 {
@@ -113,12 +94,12 @@
                     }
                     else
                     {
-                        <li class="page-item"><a class="page-link" asp-route-page="@i">@i</a></li>
+                        <li class="page-item"><a class="page-link" asp-route-page="@i" asp-route-currentSearch="@Model.Search" asp-route-tags="@Model.SelectedTags">@i</a></li>
                     }
                 }
                 @if (Model.Definitions.HasNextPage)
                 {
-                    <li class="page-item"><a class="page-link" asp-route-page="@(Model.Definitions.PageNumber + 1)">&raquo;</a></li>
+                    <li class="page-item"><a class="page-link" asp-route-page="@(Model.Definitions.PageNumber + 1)" asp-route-currentSearch="@Model.Search" asp-route-tags="@Model.SelectedTags">&raquo;</a></li>
                 }
                 else
                 {
