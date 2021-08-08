@@ -5,12 +5,15 @@ The infinitely customizable random content generator.
 ---
 * The Randomizer is the Infinitely Customizeable Random Content Generator.  It was designed with role playing game players and writers in mind though it is far from limited to those folks.
 * There are several different components to The Randomizer:
-  * **Randomizer.Generator** the engine behind The Randomizer.  It contains a number of classes for generating content using different types of generators.
-  * **Randomizer.Generator.Test** unit tests for the Randomizer.Generator project
-  * **Randomizer.Generator.CmdLine** a command line tool to generate content.
-  * **Randomizer.Generator.UI.MVC** an MVC Core web application for generating content.
-  * **Randomizer.Generator.UI.Terminal** a terminal gui to generate content.  Designed to work on Windows, Mac, Unix, and Linux.
-  * **Randomizer.Generator.DefinitionConverter** a command line tool to convert old grammar files to the new dictionary format
+
+| Component | Use | File |
+| -- | -- | -- |
+| **Randomizer.Generator** | the engine behind The Randomizer.  It contains a number of classes for generating content using different types of generators. | Rnd.Gen.dll |
+| **Randomizer.Generator.Test** | unit tests for the Randomizer.Generator project | _N/A_ |
+| **Randomizer.Generator.CmdLine** | a command line tool to generate content. | Rnd.Gen.CLI.exe |
+| **Randomizer.Generator.UI.MVC** | an MVC Core web application for generating content. Available here: https://randomizergeneratoruimvc.azurewebsites.net/ | _N/A_ |
+| **Randomizer.Generator.UI.Terminal** | a terminal gui to generate content.  Designed to work on Windows, Mac, Unix, and Linux. | Rnd.Gen.UIT.exe |
+| **Randomizer.Generator.DefinitionConverter** | a command line tool to convert old grammar files to the new dictionary format | Rnd.Gen.Conv.exe |
 
 ### Community ###
 ---
@@ -20,12 +23,12 @@ There is a small but great community on reddit that I personally moderate under 
 ---
 Customizations can be found in the following repository:
 
-*Coming Soon*
+[Randomizer Customizations](https://github.com/melance/TheRandomizerCustomizations)
 
 ### Contributing ###
 ---
 **Everyone**
-I love seeing custom grammars and libraries written by users to add to the growing list.  If you develop a new grammar that you think anyone else might like, please submit it to the [Customizations Repository](https://github.com/melance/TheRandomizerWPFCustomizations) or send it to me a message here via my [GitHub profile](https://github.com/melance).
+I love seeing custom definitions written by users to add to the growing list.  If you develop a new definition that you think anyone else might like, please submit it to the [Customizations Repository](https://github.com/melance/TheRandomizerCustomizations) or send it to me a message here via my [GitHub profile](https://github.com/melance).
 
 **Translators**
 Planned for the future.
