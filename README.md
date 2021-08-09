@@ -30,6 +30,8 @@ Customizations can be found in the following repository:
 **Everyone**
 I love seeing custom definitions written by users to add to the growing list.  If you develop a new definition that you think anyone else might like, please submit it to the [Customizations Repository](https://github.com/melance/TheRandomizerCustomizations) or send it to me a message here via my [GitHub profile](https://github.com/melance).
 
+For more information on how to create definitions and help in general, see the help section of the website: https://randomizergeneratoruimvc.azurewebsites.net/Help
+
 **Translators**
 Planned for the future.
 
