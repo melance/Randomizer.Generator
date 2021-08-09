@@ -275,7 +275,7 @@ namespace Randomizer.Generator.UI.Terminal.Views
 			for (Int32 i = 1; i <= intRepeat.Value; i++)
 				results.AppendLine(_generator.Generate());
 
-			txtResults.Text = results.ToString();
+			txtResults.Text = _generator.OutputFormat == OutputFormats.Html ? Randomizer.Generator.Utility.UtilityMethods.HTMLToText(results.ToString()) : results.ToString();
 		}
 		#endregion
 

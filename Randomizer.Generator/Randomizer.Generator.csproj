@@ -27,6 +27,7 @@
   <ItemGroup>
     <PackageReference Include="CoreCLR-NCalc" Version="2.2.92" />
     <PackageReference Include="Hjson" Version="3.0.0" />
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.34" />
     <PackageReference Include="JsonSubTypes" Version="1.8.0" />
     <PackageReference Include="NLua" Version="1.5.9" />
   </ItemGroup>
