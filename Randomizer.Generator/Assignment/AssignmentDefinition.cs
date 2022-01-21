@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 
 namespace Randomizer.Generator.Assignment
@@ -15,23 +16,23 @@ namespace Randomizer.Generator.Assignment
 	/// Using a series of line items containing line item references, equations, and variables generates random content
 	/// </summary>
 	public class AssignmentDefinition : BaseDefinition
-    {
+	{
 		#region Constants
 		/// <summary>The starting lineitem for generation</summary>
-		private const string START_ITEM = "Start"; 
+		private const String START_ITEM = "Start";
 		/// <summary>The maximum level of recursion to allow before aborting the generation process</summary>
-        private const Int32 MAX_RECURSION_DEPTH = 1000;
+		private const Int32 MAX_RECURSION_DEPTH = 1000;
 		/// <summary>The maximum number of loops to allow before aborting the generation process</summary>
 		private const Int32 MAX_LOOP_COUNT = 10000000;
-        #endregion
+		#endregion
 
-        #region Members
+		#region Members
 		/// <summary>Tracks the number of loops that have occured during generation</summary>
-        private Int32 _loopCount;
+		private Int32 _loopCount;
 		/// <summary>Tracks the recursion depth during generation</summary>
-        private Int32 _recursionDepth;
+		private Int32 _recursionDepth;
 		/// <summary>Is set to true when importing of <see cref="Imports"/> is complete</summary>
-		private Boolean _importComplete = false;
+		private Boolean _importComplete;
 		/// <summary>Denotes that pre processing is happening</summary>
 		private Boolean _preprocessing = true;
 		#endregion
@@ -39,16 +40,32 @@ namespace Randomizer.Generator.Assignment
 		#region Properties
 		/// <summary>A list of variables to populate</summary>
 		[JsonProperty(Order = 109)]
-		public PreProcessList PreProcessItems { get; set; } = new();
+		public PreProcessList PreProcessItems
+		{
+			get => GetProperty(new PreProcessList());
+			set => SetProperty(value);
+		}
 		/// <summary>List of line items used in the generator</summary>
 		[JsonProperty(Order = 110)]
-		public LineItemDictionary LineItems { get; set; } = new();
+		public LineItemDictionary LineItems
+		{
+			get => GetProperty(new LineItemDictionary());
+			set => SetProperty(value);
+		}
 		/// <summary>List of imported assignment generators</summary>
 		[JsonProperty(Order = 101)]
-		public List<String> Imports { get; set; } = new();
+		public List<String> Imports
+		{
+			get => GetProperty(new List<String>());
+			set => SetProperty(value);
+		}
 		/// <summary>The case to convert the text to</summary>
 		[JsonProperty(Order = 100)]
-		public TextCases TextCase { get; set; } = TextCases.None;
+		public TextCases TextCase
+		{
+			get => GetProperty(TextCases.None);
+			set => SetProperty(value);
+		}
 		/// <summary>Variables added during generation</summary>
 		private InsensitiveDictionary<String> Variables { get; set; } = new();
 		public override Boolean SupportsParameters => true;
@@ -59,9 +76,10 @@ namespace Randomizer.Generator.Assignment
 		/// Generates random content
 		/// </summary>
 		/// <returns>The generated content</returns>
-		public override string Generate() 
-        {
+		public override string Generate()
+		{
 			if (LineItems.Sum(li => li.Value.Count) == 0) throw new DefinitionException("Definition does not have any line items.");
+			ParseLineItems();
 			if (ValidateParameters())
 			{
 				PreProcess();
@@ -73,12 +91,12 @@ namespace Randomizer.Generator.Assignment
 				_recursionDepth = 0;
 
 				item = LineItems[next].SelectRandomItem();
-				var value = EvaluateLineItem(item);
+				var value = EvaluateLineItem(next, item);
 
 				return value.ToCase(TextCase);
 			}
 			return String.Empty;
-        }
+		}
 
 		public override String Analyze(AnalyzeOptions options)
 		{
@@ -146,6 +164,21 @@ namespace Randomizer.Generator.Assignment
 			return analysis.ToString();
 		}
 		#endregion
+
+		protected void ParseLineItems()
+		{
+			const String DECK = ".Deck";
+			var remove = new List<String>();
+			var decks = LineItems.Where(kvp => kvp.Key.EndsWith(DECK)).ToList();
+			foreach (var item in decks)
+			{
+				item.Value.Draw = true;
+				LineItems.Add(item.Key[0..^(DECK.Length)], item.Value);
+				remove.Add(item.Key);
+			}
+			foreach (var key in remove)
+				LineItems.Remove(key);
+		}
 
 		#region Protected Methods
 		/// <summary>
@@ -242,87 +275,102 @@ namespace Randomizer.Generator.Assignment
 		/// </summary>
 		/// <param name="item">The <see cref="LineItem"/> to evaluate</param>
 		/// <returns>The result of the evaluation</returns>
-        private string EvaluateLineItem(LineItem item)
-        {
-            var result = new StringBuilder();
-
-            _recursionDepth++;
-            _loopCount++;
-            if (_recursionDepth > MAX_RECURSION_DEPTH) throw new MaxRecursionDepthExceededException(MAX_RECURSION_DEPTH);
-            if (_loopCount > MAX_LOOP_COUNT) throw new MaxLoopCountException(MAX_LOOP_COUNT);
-
-            if (!String.IsNullOrWhiteSpace(item.Content))
-            {
-                var evaluated = EvaluateContent(item.Content);
-
-                if (!String.IsNullOrWhiteSpace(item.Variable))
-                {
-                    if (!Variables.ContainsKey(item.Variable.ToUpper()))
-                        Variables.Add(item.Variable.ToUpper(), String.Empty);
-                    Variables[item.Variable.ToUpper()] = evaluated;
-                }
-                else
-                {
-                    result.Append(evaluated);
-                }
-            }
-			if (!String.IsNullOrWhiteSpace(item.Next))
+		private string EvaluateLineItem(String name, LineItem item)
+		{
+			var result = new StringBuilder();
+			UInt32 repeat;
+			
+			if (String.IsNullOrWhiteSpace(item.Repeat))
+				repeat = 1;
+			else
 			{
-				var value = item.Next;
-				if (value.StartsWith("="))
-				{
-					value = Calculate(value[1..]);
-				}
-				if (!String.IsNullOrWhiteSpace(value))
-					result.Append(EvaluateLineItem(LineItems[value].SelectRandomItem()));
+				if (UInt32.TryParse(item.Repeat, out var number))
+					repeat = number;
+				else if (item.Repeat.StartsWith("=", StringComparison.CurrentCulture))
+					repeat = UInt32.Parse(Calculate(item.Repeat[1..]), System.Globalization.CultureInfo.CurrentCulture.NumberFormat);
+				else
+					throw new InvalidPropertyValueException(nameof(item.Repeat), item.Repeat);
 			}
-            _recursionDepth--;
-            return result.ToString();
-        }
+
+			_recursionDepth++;
+			_loopCount++;
+			if (_recursionDepth > MAX_RECURSION_DEPTH) throw new MaxRecursionDepthExceededException(MAX_RECURSION_DEPTH);
+			if (_loopCount > MAX_LOOP_COUNT) throw new MaxLoopCountException(MAX_LOOP_COUNT);
+
+			for (var i = 1; i <= repeat; i++)
+			{
+				if (!String.IsNullOrWhiteSpace(item.Content))
+				{
+					var evaluated = EvaluateContent(item.Content);
+
+					if (!String.IsNullOrWhiteSpace(item.Variable))
+					{
+						if (!Variables.ContainsKey(item.Variable.ToUpperInvariant()))
+							Variables.Add(item.Variable.ToUpperInvariant(), String.Empty);
+						Variables[item.Variable.ToUpperInvariant()] = evaluated;
+					}
+					else
+					{
+						result.Append(evaluated);
+					}
+				}
+				if (!String.IsNullOrWhiteSpace(item.Next))
+				{
+					var value = item.Next;
+					if (value.StartsWith("=", StringComparison.CurrentCultureIgnoreCase))
+						value = Calculate(value[1..]);
+					if (!String.IsNullOrWhiteSpace(value))
+						result.Append(EvaluateLineItem(value, LineItems[value].SelectRandomItem()));
+				}
+			}
+			_recursionDepth--;
+			return result.ToString();
+		}
 
 		/// <summary>
 		/// Processes <see cref="LineItem.Content"/>
 		/// </summary>
 		/// <param name="content">The content to process</param>
 		/// <returns>The result of the evaluation</returns>
-        private string EvaluateContent(String content)
-        {
-            var result = new StringBuilder();
-            var tokens = Tokenizer.Tokenize(content);
+		private string EvaluateContent(String content)
+		{
+			var result = new StringBuilder();
+			var tokens = Tokenizer.Tokenize(content);
 
-            foreach (var token in tokens)
-            {
-                switch (token.TokenType)
-                {
-                    case TokenTypes.Text:
-                        result.Append(token.Value);
-                        break;
-                    case TokenTypes.Variable:
-                        if (Variables.ContainsKey(token.Value))
-                            result.Append(Variables[token.Value]);
-                        else if (Parameters.ParameterExists(token.Value))
-                            result.Append(Parameters[token.Value].Value);
-                        break;
-                    case TokenTypes.Equation:
-                        result.Append(Calculate(token.Value));
-                        break;
-                    case TokenTypes.Item:
-                        var name = token.Value;
+			foreach (var token in tokens)
+			{
+				switch (token.TokenType)
+				{
+					case TokenTypes.Text:
+						result.Append(token.Value);
+						break;
+					case TokenTypes.Variable:
+						if (Variables.ContainsKey(token.Value))
+							result.Append(Variables[token.Value]);
+						else if (Parameters.ParameterExists(token.Value))
+							result.Append(Parameters[token.Value].Value);
+						break;
+					case TokenTypes.Equation:
+						result.Append(Calculate(token.Value));
+						break;
+					case TokenTypes.Item:
+						var name = token.Value;
 
 						// If there are more than on item names in the token, select one
 						var or = name.Split("|");
 						if (or.Length > 1)
 							name = or[Utility.Random.RandomNumber(0, or.Length - 1)];
 
-                        // If there is a parameter with this name, get the value
-                        if (Parameters.ContainsKey(token.Value))
-                            name = Parameters[token.Value].Value.ToString();
+						// If there is a parameter with this name, get the value
+						if (Parameters.ContainsKey(token.Value))
+							name = Parameters[token.Value].Value.ToString();
 
-                        // Reevaluate to allow nested items
-                        name = EvaluateContent(name);
+						// Reevaluate to allow nested items
+						name = EvaluateContent(name);
+						var value = String.Empty;
 
 						if (LineItems.ContainsKey(name))
-							result.Append(EvaluateLineItem(LineItems[name].SelectRandomItem()));
+							value = EvaluateLineItem(name, LineItems[name].SelectRandomItem());
 						else if (name.Contains('+'))
 						{
 							var and = name.Split('+');
@@ -332,37 +380,38 @@ namespace Randomizer.Generator.Assignment
 							{
 								andLineItems.AddRange(LineItems[part]);
 							}
-							result.Append(EvaluateLineItem(andLineItems.SelectRandomItem()));
+							value = EvaluateLineItem(name, andLineItems.SelectRandomItem());
 						}
 						else
 							result.Append(name);
-                        break;
-                }
-            }
+						result.Append(value);
+						break;
+				}
+			}
 
-            return result.ToString();
-        }
+			return result.ToString();
+		}
 
 		/// <summary>
 		/// Handles providing values for parameters requested by the <see cref="CalculationEngine"/>
 		/// </summary>
 		/// <param name="name">The name of the parameter</param>
 		/// <param name="args">The result of the parameter request</param>
-        protected override void EvaluateParameter(String name, ParameterArgs args)
-        {
-            if (Variables.ContainsKey(name))
-            {
-                args.Result = Variables[name];
-            }
-            else if (Parameters.ContainsKey(name))
-            {
-                args.Result = Parameters[name].Value;
-            }
+		protected override void EvaluateParameter(String name, ParameterArgs args)
+		{
+			if (Variables.ContainsKey(name))
+			{
+				args.Result = Variables[name];
+			}
+			else if (Parameters.ContainsKey(name))
+			{
+				args.Result = Parameters[name].Value;
+			}
 			else if (!_preprocessing && LineItems.ContainsKey(name))
 			{
-				args.Result = EvaluateLineItem(LineItems[name].SelectRandomItem());
+				args.Result = EvaluateLineItem(name, LineItems[name].SelectRandomItem());
 			}
-        }
-        #endregion
-    }
+		}
+		#endregion
+	}
 }

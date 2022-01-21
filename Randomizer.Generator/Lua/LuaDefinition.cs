@@ -24,9 +24,15 @@ namespace Randomizer.Generator.Lua
 		#region Properties
 		/// <summary>The Lua script to be run.</summary>
 		/// <remarks>If <see cref="ScriptPath"/> is set, this property is ignored</remarks>
-		public String Script { get; set; }
+		public String Script {
+			get => GetProperty(String.Empty);
+			set => SetProperty(value);
+		}
 		/// <summary>The path to the Lua script to be run.</summary>
-		public String ScriptPath { get; set; }
+		public String ScriptPath {
+			get => GetProperty(String.Empty);
+			set => SetProperty(value);
+		}
 		public override Boolean SupportsParameters => true;
 		/// <summary>Keeps the results that are printed as the generator is run.</summary>
 		private StringBuilder Result { get; set; } = new(); 

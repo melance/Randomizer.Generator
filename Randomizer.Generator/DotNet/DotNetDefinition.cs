@@ -12,11 +12,26 @@ namespace Randomizer.Generator.DotNet
 {
 	public class DotNetDefinition : BaseDefinition
 	{
-		public String DLLPath { get; set; }
-		public String ClassName { get; set; }
-		public String MethodName { get; set; }
+		#region Properties
+		public String DLLPath
+		{
+			get => GetProperty(String.Empty);
+			set => SetProperty(value);
+		}
+		public String ClassName
+		{
+			get => GetProperty(String.Empty);
+			set => SetProperty(value);
+		}
+		public String MethodName
+		{
+			get => GetProperty(String.Empty);
+			set => SetProperty(value);
+		}
 		public override Boolean SupportsParameters => true;
+		#endregion
 
+		#region Public Methods
 		public override String Generate()
 		{
 			ExceptionDispatchInfo edi = null;
@@ -55,12 +70,14 @@ namespace Randomizer.Generator.DotNet
 					ex.Data.Add(nameof(DLLPath), DLLPath);
 					ex.Data.Add(nameof(ClassName), ClassName);
 					ex.Data.Add(nameof(MethodName), MethodName);
-				} 
+				}
 			}
 			if (edi != null) edi.Throw();
 			return String.Empty;
 		}
+		#endregion
 
+		#region Private Methods
 		private String GetMethodName()
 		{
 			if (MethodName.StartsWith('[') && MethodName.EndsWith(']'))
@@ -68,6 +85,7 @@ namespace Randomizer.Generator.DotNet
 				return Parameters[MethodName[1..^1]].Value;
 			}
 			return MethodName;
-		}
+		} 
+		#endregion
 	}
 }

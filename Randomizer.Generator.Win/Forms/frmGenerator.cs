@@ -1,0 +1,196 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Diagnostics;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using Randomizer.Generator.Core;
+using Randomizer.Generator.UI.Win.Helpers;
+
+namespace Randomizer.Generator.UI.Win.Forms
+{
+	public partial class frmGenerator : Form
+	{
+		#region Constructor
+		public frmGenerator()
+		{
+			InitializeComponent();
+			
+			webBrowser.DocumentText = String.Empty;
+		}
+
+		#endregion
+
+		#region Constants
+		private const String REPEAT_CONTROL_NAME = "nudRepeat"; 
+		#endregion
+
+		#region Members
+		private BaseDefinition _generator;
+		private Classes.ParameterControlList _parameters;
+		#endregion
+
+		#region Properties
+		public BaseDefinition Generator 
+		{ 
+			get => _generator; 
+			set
+			{
+				_generator = value;
+				BindGenerator();
+			}
+		}
+
+		#endregion
+
+		#region Private Methods
+		private void BindGenerator()
+		{
+			pnlParameters.Controls.Clear();
+			_parameters = new();
+			if (_generator != null)
+			{
+				lblName.Text = _generator.Name;
+
+				// Add repeat label and control
+				var lblRepeat = new Label()
+				{
+					Text = "Repeat",
+					Dock = DockStyle.Top,
+					TextAlign = ContentAlignment.MiddleLeft
+				};
+				var nudRepeat = new NumericUpDown()
+				{
+					Minimum = 1,
+					Maximum = 100,
+					Value = Properties.Settings.Default.DefaultRepeat,
+					Dock = DockStyle.Top,
+					Name = REPEAT_CONTROL_NAME,
+					TextAlign = HorizontalAlignment.Right
+				};
+				pnlParameters.Controls.Add(nudRepeat);
+				pnlParameters.Controls.Add(lblRepeat);
+
+				// Add parameter controls
+				foreach (var parameter in _generator.Parameters.Where(p => p.Value.Visible).Reverse())
+				{
+					Control control;
+					Label label = null;
+					if (parameter.Value.Type != ParameterTypes.Boolean)
+					{
+						label = new Label()
+						{
+							Text = parameter.Value.Display,
+							AutoSize = false,
+							Dock = DockStyle.Top,
+							TextAlign = ContentAlignment.MiddleLeft
+						};
+					}
+					control = _parameters.Add(parameter.Key, parameter.Value);
+					control.Dock = DockStyle.Top;
+					pnlParameters.Controls.Add(control);
+					if (label != null)
+						pnlParameters.Controls.Add(label);
+				}
+			}
+			else
+			{
+				MessageBox.Show("Unable to load the generator");
+			}
+		}		
+		#endregion
+
+		private void btnGenerate_Click(Object sender, EventArgs e)
+		{
+			Cursor = Cursors.WaitCursor;
+			try
+			{
+				
+				foreach (var parameter in Generator.Parameters.Where(p => p.Value.Visible))
+				{
+					parameter.Value.Value = _parameters.GetValue(parameter.Key);
+				}
+
+				var result = String.Empty;
+				var repeat = ((NumericUpDown)pnlParameters.Controls[REPEAT_CONTROL_NAME]).Value;
+				for (var i = 1; i <= repeat; i++)
+				{
+					var current = Generate().Result;
+					switch (Generator.OutputFormat)
+					{
+						case OutputFormats.Text:
+							result += $"{current}\n\n";
+							break;
+						case OutputFormats.Html:
+							result += $"{current}{(i < repeat ? "<hr />" : String.Empty)}";
+							break;
+						case OutputFormats.Image:
+							result += $"<img src=\"data: image/png;base64, {current}\" />{(i < repeat ? "<hr />" : String.Empty)}";
+							break;
+					}
+				}
+				switch (Generator.OutputFormat)
+				{
+					case OutputFormats.Text:
+						webBrowser.DocumentText = $"<pre>{result}</pre>";
+						break;
+					case OutputFormats.Html:
+					case OutputFormats.Image:
+						webBrowser.DocumentText = result;
+						break;
+				}
+			}
+			catch (Exception ex)
+			{
+				webBrowser.DocumentText = ex.ToHTML();
+			}
+			finally
+			{
+				Cursor = Cursors.Default;
+			}
+		}
+
+		private async Task<string> Generate()
+		{
+			return await Generator.GenerateAsync();
+		}
+
+		private void btnEdit_Click(Object sender, EventArgs e)
+		{
+			var definitionPath = Program.DataAccess.GetDefinitionPath(_generator.Name);
+			Process.Start(Properties.Settings.Default.TextEditor, Properties.Settings.Default.TextEditorArgs.Replace("{filename}", definitionPath));		
+		}
+
+		private void btnClear_Click(Object sender, EventArgs e)
+		{
+			webBrowser.DocumentText = String.Empty;
+		}
+
+		private void btnSelectAll_Click(Object sender, EventArgs e)
+		{
+			webBrowser.Document.ExecCommand("SelectAll", true, null);
+		}
+
+		private void btnCopy_Click(Object sender, EventArgs e)
+		{
+			webBrowser.Document.ExecCommand("Copy", true, null);
+
+		}
+
+		private void btnSave_Click(Object sender, EventArgs e)
+		{
+			webBrowser.ShowSaveAsDialog();
+		}
+
+
+		private void btnReload_Click(Object sender, EventArgs e)
+		{
+			_generator = Program.DataAccess.GetDefinition(_generator.Name);
+			BindGenerator();
+		}
+	}
+}

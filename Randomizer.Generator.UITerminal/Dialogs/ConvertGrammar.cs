@@ -191,7 +191,7 @@ namespace Randomizer.Generator.UI.Terminal.Dialogs
 			try
 			{
 				var source = TheRandomizer.Generators.BaseGenerator.Deserialize(File.ReadAllText(sourceFile));
-				var target = DefinitionConverter.Converter.Convert(source);
+				var target = Randomizer.Generator.Utility.Converter.Convert(source);
 				File.WriteAllText(targetFile, Core.BaseDefinition.Serialize(target));
 
 				Program.RefreshGeneratorList?.Invoke();

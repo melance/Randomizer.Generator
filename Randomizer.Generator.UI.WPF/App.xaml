@@ -1,0 +1,36 @@
+﻿<Application x:Class="Randomizer.Generator.UI.WPF.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Randomizer.Generator.UI.WPF"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Button">
+                <Setter Property="Background" Value="White" />
+            </Style>
+            <Style x:Key="HeaderLabel" TargetType="Label">
+                <Setter Property="FontWeight" Value="Bold" />
+                <Setter Property="Background" Value="DimGray" />
+                <Setter Property="Foreground" Value="GhostWhite" />
+            </Style>
+
+            <DrawingImage x:Key="searchIcon">
+                <DrawingImage.Drawing>
+                    <DrawingGroup ClipGeometry="M0,0 V16 H16 V0 H0 Z">
+                        <DrawingGroup.Transform>
+                            <TranslateTransform X="0.00091814121697098017" Y="0" />
+                        </DrawingGroup.Transform>
+                        <GeometryDrawing Brush="#FF000000" Geometry="F1 M16,16z M0,0z M11.742,10.344A6.5,6.5,0,1,0,10.345,11.742L10.344,11.742C10.374,11.782,10.406,11.82,10.442,11.857L14.292,15.707A1,1,0,0,0,15.707,14.293L11.857,10.443A1.007,1.007,0,0,0,11.742,10.343z M12,6.5A5.5,5.5,0,1,1,1,6.5A5.5,5.5,0,0,1,12,6.5z" />
+                    </DrawingGroup>
+                </DrawingImage.Drawing>
+            </DrawingImage>
+            <DrawingImage x:Key="xIcon">
+                <DrawingImage.Drawing>
+                    <DrawingGroup ClipGeometry="M0,0 V16 H16 V0 H0 Z">
+                        <GeometryDrawing Brush="#FF000000" Geometry="F1 M16,16z M0,0z M4.646,4.646A0.5,0.5,0,0,1,5.354,4.646L8,7.293 10.646,4.646A0.5,0.5,0,0,1,11.354,5.354L8.707,8 11.354,10.646A0.5,0.5,0,0,1,10.646,11.354L8,8.707 5.354,11.354A0.5,0.5,0,0,1,4.646,10.646L7.293,8 4.646,5.354A0.5,0.5,0,0,1,4.646,4.646z" />
+                    </DrawingGroup>
+                </DrawingImage.Drawing>
+            </DrawingImage>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

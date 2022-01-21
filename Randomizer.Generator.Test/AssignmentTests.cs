@@ -31,8 +31,8 @@ namespace Randomizer.Generator.Test
 			});
 			generator.LineItems.Add("One", new LineItemList()
 			{
-				new LineItem() { Content = "One Test", Weight = 10, Repeat = 2, Variable = "Var"},
-				new LineItem() { Content = "Two Test", Weight = 20, Repeat = 2, Variable = "Var"}
+				new LineItem() { Content = "One Test", Weight = 10, Repeat = "2", Variable = "Var"},
+				new LineItem() { Content = "Two Test", Weight = 20, Repeat = "2", Variable = "Var"}
 			});
 			generator.PreProcessItems.Add(new PreProcessItem() { Variable = "One", Content = "My Content" });
             generator.Parameters.Add("Gender",

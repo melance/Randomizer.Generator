@@ -1,17 +1,12 @@
-﻿using System;
-using System.IO;
+﻿using Randomizer.Generator.Core;
+using System;
 using System.Linq;
 using TheRandomizer.Generators;
-using Randomizer.Generator.Core;
-using TheRandomizer.Utility;
 
-namespace Randomizer.Generator.DefinitionConverter
+namespace Randomizer.Generator.Utility
 {
-	/// <summary>
-	/// Used to convert generators into definitions
-	/// </summary>
-	public class Converter
-	{
+    public class Converter
+    {
 		/// <summary>
 		/// Converts the source generator into a definition
 		/// </summary>
@@ -30,6 +25,18 @@ namespace Randomizer.Generator.DefinitionConverter
 			};
 		}
 
+		/// <summary>
+		/// Converts the source generator into a definition
+		/// </summary>
+		/// <param name="generatorFilePath">The file path to the base generator to convert</param>
+		/// <param name="definitionFilePath">The file path to where the new definition will be saved</param>
+		public static void Convert(String generatorFilePath, String definitionFilePath)
+		{
+			var generator = BaseGenerator.Deserialize(System.IO.File.ReadAllText(generatorFilePath));
+			var definition = Convert(generator);
+			System.IO.File.WriteAllText(definitionFilePath, BaseDefinition.Serialize(definition, true));
+		}
+
 		private static Assignment.AssignmentDefinition ConvertAssignment(TheRandomizer.Generators.Assignment.AssignmentGenerator source)
 		{
 			var target = new Assignment.AssignmentDefinition()
@@ -45,7 +52,7 @@ namespace Randomizer.Generator.DefinitionConverter
 				{
 					Content = item.Expression,
 					Next = item.Next,
-					Repeat = UInt32.TryParse(item.Repeat, out _) ? UInt32.Parse(item.Repeat) : 1,
+					Repeat = item.Repeat,
 					Variable = item.Variable,
 					Weight = (UInt32)Math.Abs(item.Weight),
 				});

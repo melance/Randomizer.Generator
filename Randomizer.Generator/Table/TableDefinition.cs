@@ -16,9 +16,15 @@ namespace Randomizer.Generator.Table
 	{
 		#region Properties
 		[JsonProperty(Order = 102)]
-		public InsensitiveDictionary<BaseTable> Tables { get; set; } = new();
+		public InsensitiveDictionary<BaseTable> Tables {
+			get => GetProperty(new InsensitiveDictionary<BaseTable>());
+			set => SetProperty(value);
+		}
 		[JsonProperty(Order = 101)]
-		public String Output { get; set; }
+		public String Output {
+			get => GetProperty(String.Empty);
+			set => SetProperty(value);
+		}
 		private InsensitiveDictionary<Object> Values { get; } = new();
 		public override Boolean SupportsParameters => true;
 		#endregion

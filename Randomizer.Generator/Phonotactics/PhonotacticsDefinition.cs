@@ -19,11 +19,20 @@ namespace Randomizer.Generator.Phonotactics
 
         #region Properties
         /// <summary>The list of definitions for each pattern key</summary>
-        public DefinitionDictionary Definitions { get; set; } = new();
+        public DefinitionDictionary Definitions {
+			get => GetProperty(new DefinitionDictionary());
+			set => SetProperty(value);
+		}
         /// <summary>The patterns used to construct content</summary>
-        public PatternDictionary Patterns { get; set; } = new();
+        public PatternDictionary Patterns {
+			get => GetProperty(new PatternDictionary());
+			set => SetProperty(value);
+		}
 		/// <summary>The case to apply to the result</summary>
-        public TextCases TextCase { get; set; } = TextCases.None;
+        public TextCases TextCase {
+			get => GetProperty(TextCases.None);
+			set => SetProperty(value);
+		}
 		public override Boolean SupportsParameters => true;
 		#endregion
 

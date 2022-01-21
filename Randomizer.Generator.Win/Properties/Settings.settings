@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Randomizer.Generator.UI.Win.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="GeneratorDirectory" Type="System.String" Scope="User">
+      <Value Profile="(Default)">%AppData%\Randomizer.Generator\Definitions</Value>
+    </Setting>
+    <Setting Name="TextEditor" Type="System.String" Scope="User">
+      <Value Profile="(Default)">notepad.exe</Value>
+    </Setting>
+    <Setting Name="TextEditorArgs" Type="System.String" Scope="User">
+      <Value Profile="(Default)">"{filename}"</Value>
+    </Setting>
+    <Setting Name="DefaultRepeat" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

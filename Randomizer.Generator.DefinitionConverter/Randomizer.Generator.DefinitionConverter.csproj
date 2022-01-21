@@ -26,6 +26,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Randomizer.Generator.Converter\Randomizer.Generator.Converter.csproj" />
     <ProjectReference Include="..\Randomizer.Generator\Randomizer.Generator.csproj" />
   </ItemGroup>
 
@@ -43,6 +44,9 @@
   <ItemGroup>
     <Reference Include="LiteDB">
       <HintPath>..\LiteDB.dll</HintPath>
+    </Reference>
+    <Reference Include="SadConsole">
+      <HintPath>..\..\..\..\.nuget\packages\sadconsole\8.99.3\lib\netstandard2.0\SadConsole.dll</HintPath>
     </Reference>
     <Reference Include="TheRandomizer.Generators">
       <HintPath>..\TheRandomizer.Generators.dll</HintPath>

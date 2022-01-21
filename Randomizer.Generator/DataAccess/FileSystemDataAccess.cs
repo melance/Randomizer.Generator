@@ -60,6 +60,11 @@ namespace Randomizer.Generator.DataAccess
 			return GetDefinitionsRaw(SearchPattern, bd => bd.Name.Equals(name, StringComparison.CurrentCultureIgnoreCase)).FirstOrDefault();
 		}
 
+		public virtual String GetDefinitionPath(String name)
+		{
+			return GetDefinitionPaths(SearchPattern, bd => bd.Name.Equals(name, StringComparison.CurrentCultureIgnoreCase)).FirstOrDefault();
+		}
+
 		public virtual IEnumerable<BaseDefinition> GetDefinitionList()
 		{
 			return GetDefinitionList(null);
@@ -93,6 +98,11 @@ namespace Randomizer.Generator.DataAccess
 		public virtual IEnumerable<String> GetTagList()
 		{
 			return GetDefinitionList().Select(d => d.Tags).SelectMany(t => t).Distinct().OrderBy(t => t);
+		}
+
+		public virtual IEnumerable<String> GetTagList(Func<BaseDefinition, Boolean> filter)
+		{
+			return GetDefinitionList(filter).Select(d => d.Tags).SelectMany(t => t).Distinct().OrderBy(t => t);
 		}
 		#endregion
 
@@ -140,6 +150,28 @@ namespace Randomizer.Generator.DataAccess
 					yield return File.ReadAllText(file);
 			}
 		}
-		#endregion
+
+		private IEnumerable<String> GetDefinitionPaths(String searchPattern, Func<BaseDefinition, Boolean> filter)
+		{
+			var fullPath = Path.GetFullPath(RootPath);
+			foreach (var file in Directory.GetFiles(fullPath, searchPattern))
+			{
+				BaseDefinition definition = null;
+				ExceptionDispatchInfo exi = null;
+				try
+				{
+					definition = BaseDefinition.Deserialize(File.ReadAllText(file));
+				}
+				catch (Exception ex)
+				{
+					exi = ExceptionDispatchInfo.Capture(ex);
+					ex.Data.Add("File", file);
+				}
+				if (exi != null) exi.Throw();
+				if (filter == null || filter.Invoke(definition))
+					yield return file;
+			}
+		}
 	}
+		#endregion
 }

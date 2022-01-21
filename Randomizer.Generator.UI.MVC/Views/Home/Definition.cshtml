@@ -128,14 +128,34 @@
                             <span class="bi-x-circle"></span>
                             Reset
                         </a>
-                        <button id="btnPrint" class="btn float-right m-2 @(String.IsNullOrWhiteSpace(Model.Result) ? "disabled btn-outline-secondary" : "btn-secondary")" type="button" @(String.IsNullOrWhiteSpace(Model.Result) ? "disabled" : "") onclick="$('#results').printThis({removeInline: true, importCSS: false})">
-                            <span class="bi-printer"></span>
-                            Print Results
-                        </button>
-                        <button id="btnCopy" class="btn float-right m-2 @(String.IsNullOrWhiteSpace(Model.Result) ? "disabled btn-outline-secondary" : "btn-secondary")" type="button" @(String.IsNullOrWhiteSpace(Model.Result) ? "disabled" : "") onclick="CopyToClipboard('#results')">
-                            <span class="bi-file-text"></span>
-                            Copy Results
-                        </button>
+                        @if (String.IsNullOrWhiteSpace(Model.Result))
+                        {
+                            <button id="btnPrint" class="btn float-right m-2 disabled btn-outline-secondary" type="button" disabled>
+                                <span class="bi-printer"></span>
+                                Print Results
+                            </button>
+                        }
+                        else
+                        {
+                            <button id="btnPrint" class="btn float-right m-2 btn-secondary" type="button" onclick="$('#results').printThis({removeInline: true, importCSS: false})">
+                                <span class="bi-printer"></span>
+                                Print Results
+                            </button>
+                        }
+                        @if (String.IsNullOrWhiteSpace(Model.Result) || Model.OutputFormat == OutputFormats.Image)
+                        {
+                            <button id="btnCopy" class="btn float-right m-2 disabled btn-outline-secondary" type="button" disabled >
+                                <span class="bi-file-text"></span>
+                                Copy Results
+                            </button>
+                        }
+                        else
+                        {
+                            <button id="btnCopy" class="btn float-right m-2 btn-secondary" type="button" onclick="CopyToClipboard('#results')">
+                                <span class="bi-file-text"></span>
+                                Copy Results
+                            </button>
+                        }
                     </div>
                 </div>
             </div>
@@ -155,7 +175,7 @@
                     <div id="results">@Html.Raw(Model.Result)</div>
                     break;
                     case OutputFormats.Image:
-                    <img src="data:image/Png;base64,@Model.Result" />
+                    <img id="results" src="data:image/Png;base64,@Model.Result" />
                     break;
 
                 }

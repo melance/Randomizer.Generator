@@ -114,12 +114,12 @@ namespace Randomizer.Generator.Utility
             }
             else if (extended <= 19)
             {
-                value = new string[] { "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen" }[extended - 1];
+                value = new String[] { "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen" }[extended - 1];
             }
             else if (extended <= 99)
             {
-                var tens = new string[] { "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety" }[extended / 10 - 2];
-                value = $"{tens}{(extended % 10 == 0 ? String.Empty : ToText(extended % 10))}";
+                var tens = new String[] { "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety" }[extended / 10 - 2];
+                value = $"{tens}{(extended % 10 == 0 ? String.Empty : $"-{ToText(extended % 10)}")}";
             }
             else if (extended <= 999)
             {

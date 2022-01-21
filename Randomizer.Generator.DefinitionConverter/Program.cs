@@ -3,6 +3,7 @@ using System.IO;
 using System.Linq;
 using TheRandomizer.Generators;
 using Randomizer.Generator.Core;
+using Randomizer.Generator.Utility;
 using TheRandomizer.Utility;
 
 namespace Randomizer.Generator.DefinitionConverter
@@ -15,10 +16,10 @@ namespace Randomizer.Generator.DefinitionConverter
 		/// <param name="source">The source file</param>
 		/// <param name="target">The target file</param>
 		/// <param name="overwrite">Overwrite target file without prompting.</param>
-        static void Main(string source, string target = "", Boolean overwrite = false)
-        {
+		static void Main(string source, string target = "", Boolean overwrite = false)
+		{
 			var assembly = System.Reflection.Assembly.GetExecutingAssembly();
-			
+
 			Console.Title = "Randomizer Definition Converter";
 			Console.WriteLine(assembly.GetName().FullName);
 			Console.WriteLine();
@@ -26,19 +27,19 @@ namespace Randomizer.Generator.DefinitionConverter
 			if (String.IsNullOrWhiteSpace(source))
 			{
 				Console.ForegroundColor = ConsoleColor.Red;
-				Console.WriteLine($"Required argument missing: --{nameof(source)}");				
+				Console.WriteLine($"Required argument missing: --{nameof(source)}");
 				cont = false;
-			}			
+			}
 
 			Console.ResetColor();
 			Console.WriteLine($"Source: {Path.GetFileName(source)}");
 			Console.WriteLine($"Target: {Path.GetFileName(target)}");
-			
+
 			if (cont)
 			{
 				if (File.GetAttributes(source).HasFlag(FileAttributes.Directory))
 				{
-					foreach(var file in Directory.GetFiles(source, "*.rgen"))
+					foreach (var file in Directory.GetFiles(source, "*.rgen"))
 					{
 						var targetFile = Path.ChangeExtension(Path.GetFileName(file), "rgen.hjson");
 						if (Directory.Exists(target))
@@ -54,7 +55,7 @@ namespace Randomizer.Generator.DefinitionConverter
 						target = Path.ChangeExtension(source, "rgen.hjson");
 					else if (File.GetAttributes(target).HasFlag(FileAttributes.Directory))
 						target = Path.Combine(target, Path.ChangeExtension(Path.GetFileName(source), "rgen.hjson"));
-						
+
 					Convert(source, target, overwrite);
 				}
 				Console.WriteLine($"Process complete");
@@ -64,7 +65,7 @@ namespace Randomizer.Generator.DefinitionConverter
 				Console.WriteLine("Conversion aborted.");
 			}
 			Console.WriteLine();
-        }
+		}
 
 		private static void Convert(String sourcePath, String targetPath, Boolean overwrite)
 		{
@@ -90,7 +91,7 @@ namespace Randomizer.Generator.DefinitionConverter
 				var sourceGrammar = BaseGenerator.Deserialize(File.ReadAllText(sourcePath));
 				Console.WriteLine($"Source grammar loaded");
 				Console.WriteLine($"Converting to new definition");
-				dynamic targetDefinition = Converter.Convert(sourceGrammar);
+				dynamic targetDefinition = Utility.Converter.Convert(sourceGrammar);
 				if (targetDefinition != null)
 				{
 					Console.WriteLine($"Conversion complete");

@@ -12,6 +12,7 @@ using System.Text;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Options;
 using Randomizer.Generator.Exceptions;
+using Randomizer.Generator.UI.MVC.Utility;
 
 namespace Randomizer.Generator.UI.MVC.Controllers
 {
@@ -19,12 +20,14 @@ namespace Randomizer.Generator.UI.MVC.Controllers
     {
 		private static Utility.Settings Settings;
 		private static Utility.MVCDataAccess DataAccess => (Utility.MVCDataAccess)Generator.DataAccess.DataAccess.Instance;
+		private readonly ILogger<HomeController> _logger;
 
-		public HomeController(Utility.MVCDataAccess dataAccess, IOptions<Utility.Settings> settings)
+		public HomeController(Utility.MVCDataAccess dataAccess, IOptions<Utility.Settings> settings, ILogger<HomeController> logger)
 		{
 			Settings = settings.Value;
 			Utility.MVCDataAccess.DefinitionsPath = String.Empty;
 			Generator.DataAccess.DataAccess.Instance = new Utility.MVCDataAccess(Settings.DefinitionsPath);
+			_logger = logger;
 		}
 
 		[HttpGet]
@@ -42,6 +45,7 @@ namespace Randomizer.Generator.UI.MVC.Controllers
 			}
 			catch (Exception ex)
 			{
+				_logger.LogError(ex);
 				var model = new IndexModel();
 				ViewBag.ErrorMessage = ex.Message;
 				foreach (var key in ex.Data.Keys)
@@ -54,15 +58,36 @@ namespace Randomizer.Generator.UI.MVC.Controllers
 
 		[HttpPost]
 		public IActionResult Index(IndexModel model)
-		{			
-			model.GetDefinitions(DataAccess);
+		{	
+			try
+			{
+				model.GetDefinitions(DataAccess);
+			}
+			catch (Exception ex)
+			{
+				_logger.LogError(ex, "Error in Index(IndexModel)");
+				ViewBag.ErrorMessage = ex.Message;
+				foreach (var key in ex.Data.Keys)
+				{
+					ViewBag.ErrorMessage += $"<br/>{key}: {ex.Data[key]}";
+				}
+				return View(model);
+			}
 			return View(model);
 		}
 
 		[HttpGet]
 		public IActionResult Definition(String name)
 		{
-			var model = (GeneratorModel)DataAccess.GetDefinition(name);
+			var model = new GeneratorModel();
+			try
+			{
+				model = (GeneratorModel)DataAccess.GetDefinition(name);
+			}
+			catch (Exception ex)
+			{
+				_logger.LogError(ex);
+			}
 			return View(model);
 		}
 
@@ -93,6 +118,7 @@ namespace Randomizer.Generator.UI.MVC.Controllers
 			}
 			catch (Exception ex)
 			{
+				_logger.LogError(ex);
 				model.ErrorMessage = Utility.ExceptionHandling.GetExceptionDetails(ex, Settings.FullExceptions);				
 			}
 			return View(model);

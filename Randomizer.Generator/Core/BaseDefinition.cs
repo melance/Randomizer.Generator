@@ -13,7 +13,9 @@ using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Runtime.ExceptionServices;
+using System.Runtime.Serialization;
 using System.Text;
+using System.Threading.Tasks;
 
 [assembly: InternalsVisibleTo("Randomizer.Generator.Test")]
 
@@ -22,9 +24,11 @@ namespace Randomizer.Generator.Core
 	/// <summary>
 	/// The base class for all definitions
 	/// </summary>
-	public abstract class BaseDefinition
+	public abstract class BaseDefinition : BaseClass
 	{
+		#region Members
 		private CalculationEngine _calculator;
+		#endregion
 
 		#region Public Static Methods
 
@@ -105,35 +109,65 @@ namespace Randomizer.Generator.Core
 
 		/// <summary>Name of the generator definition</summary>
 		[JsonProperty(Order = 0)]
-		public String Name { get; set; }
+		public String Name {
+			get => GetProperty(String.Empty);
+			set => SetProperty(value); 
+		}
 		[JsonProperty(Order = 1)]
 		/// <summary>Author of the generator definition</summary>
-		public String Author { get; set; }
+		public String Author { 
+			get => GetProperty(String.Empty); 
+			set => SetProperty(value); 
+		}
 		/// <summary>Description of the generator definition</summary>
 		[JsonProperty(Order = 2)]
-		public String Description { get; set; }
+		public String Description {
+			get => GetProperty(String.Empty);
+			set => SetProperty(value);
+		}
 		/// <summary>Remarks for the definition</summary>
 		[JsonProperty(Order = 2)]
-		public String Remarks { get; set; }
+		public String Remarks {
+			get => GetProperty(String.Empty);
+			set => SetProperty(value);
+		}
 		/// <summary>Version of the generator definition</summary>
 		[JsonProperty(Order = 3)]
-		public Version Version { get; set; }
+		public Version Version {
+			get => GetProperty(new Version(1, 0));
+			set => SetProperty(value);
+		}
 		/// <summary>URL for more information about the generator definition</summary>
 		[JsonProperty(Order = 4)]
-		public String URL { get; set; }
+		public String URL {
+			get => GetProperty(String.Empty);
+			set => SetProperty(value);
+		}
 		/// <summary>A list of tags for the generator definition</summary>
 		[JsonProperty(Order = 5)]
-		public List<String> Tags { get; set; }
+		public List<String> Tags {
+			get => GetProperty(new List<String>());
+			set => SetProperty(value);
+		}
 		/// <summary>The format that the generator outputs</summary>
 		[JsonProperty(Order = 6)]
-		public OutputFormats OutputFormat { get; set; }
+		public OutputFormats OutputFormat {
+			get => GetProperty(OutputFormats.Text);
+			set => SetProperty(value);
+		}
 		/// <summary>If true, show in the list of generators</summary>
 		[JsonProperty(Order = 7)]
 		[DefaultValue(true)]
-		public Boolean ShowInList { get; set; } = true;
+		public Boolean ShowInList {
+			get => GetProperty(true);
+			set => SetProperty(value);
+		}
 		/// <summary>Parameters for the generator definition</summary>
 		[JsonProperty(Order = 8)]
-		public virtual ParameterDictionary Parameters { get; set; } = new();
+		public virtual ParameterDictionary Parameters {
+			get => GetProperty(new ParameterDictionary());
+			set => SetProperty(value);
+		}
 		/// <summary>If true, this definition type supports parameters</summary>
 		[JsonIgnore]
 		public abstract Boolean SupportsParameters { get; }
@@ -145,6 +179,15 @@ namespace Randomizer.Generator.Core
 		/// </summary>
 		/// <returns>The result of the definition process</returns>
 		public abstract String Generate();
+
+		/// <summary>
+		/// Calls the generate method asyncronously
+		/// </summary>
+		/// <returns>The result of the definition process</returns>
+		public virtual Task<String> GenerateAsync()
+		{
+			return Task.FromResult(Generate());
+		}
 
 		public virtual String Analyze(AnalyzeOptions options)
 		{
@@ -187,6 +230,34 @@ namespace Randomizer.Generator.Core
 			}
 
 			return analysis.ToString();
+		}
+
+
+		/// <summary>
+		/// Serializes the definition and returns the string result
+		/// </summary>
+		/// <returns>The serialized definition</returns>
+		public override String ToString()
+		{
+			return Serialize(this);
+		}
+
+		/// <summary>
+		/// Including explicit cast to <see cref="String"/> for convenience
+		/// </summary>
+		/// <param name="definition">The definition to serialize</param>
+		public static explicit operator String(BaseDefinition definition)
+		{
+			return definition.ToString();
+		}
+
+		/// <summary>
+		/// Including explicit cast from <see cref="String"/> for convenience
+		/// </summary>
+		/// <param name="definition">The hjson to deserialize</param>
+		public static explicit operator BaseDefinition(String hjson)
+		{
+			return Deserialize(hjson);
 		}
 		#endregion
 
@@ -251,10 +322,7 @@ namespace Randomizer.Generator.Core
 		/// </summary>
 		/// <param name="name">The name of the function found by the <see cref="CalculationEngine"/></param>
 		/// <param name="e">The parameters and result for the call</param>
-		protected virtual void OnEvaluateFunction(String name, FunctionArgs e)
-		{
-			EvaluateFunction(name, e);
-		}
+		protected virtual void OnEvaluateFunction(String name, FunctionArgs e) => EvaluateFunction(name, e);
 
 		/// <summary>
 		/// Called when the base generator isn't aware of the parameter named
@@ -282,34 +350,7 @@ namespace Randomizer.Generator.Core
 		/// <param name="name">The name of the parameter found by the <see cref="CalculationEngine"/></param>
 		/// <param name="e">The result for the call</param>
 		protected virtual void EvaluateParameter(String name, ParameterArgs e) { }
-
-		/// <summary>
-		/// Serializes the definition and returns the string result
-		/// </summary>
-		/// <returns>The serialized definition</returns>
-		public override String ToString()
-		{
-			return Serialize(this);
-		}
-
-		/// <summary>
-		/// Including explicit cast to <see cref="String"/> for convenience
-		/// </summary>
-		/// <param name="definition">The definition to serialize</param>
-		public static explicit operator String(BaseDefinition definition)
-		{
-			return definition.ToString();
-		}
-
-		/// <summary>
-		/// Including explicit cast from <see cref="String"/> for convenience
-		/// </summary>
-		/// <param name="definition">The hjson to deserialize</param>
-		public static explicit operator BaseDefinition(String hjson)
-		{
-			return Deserialize(hjson);
-		}
-		#endregion		
+		#endregion
 
 	}
 }

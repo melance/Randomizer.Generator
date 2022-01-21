@@ -19,12 +19,18 @@ namespace Randomizer.Generator.List
 		/// The list of items to be selected from
 		/// </summary>
 		[JsonProperty(Order = 101)]
-		public List<string> Items { get; set; }
+		public List<string> Items {
+			get => GetProperty(new List<String>());
+			set => SetProperty(value);
+		}
 		/// <summary>
 		/// Should any leading or trailing whitespace be removed from the result.  Default is <see cref="false"/>
 		/// </summary>
 		[JsonProperty(Order = 100)]
-		public bool KeepWhitespace { get; set; } = false; 
+		public bool KeepWhitespace {
+			get => GetProperty(false);
+			set => SetProperty(value);
+		}
 		/// <summary>
 		/// Parameters are not suppported in <see cref="ListDefinition"/>
 		/// </summary>
