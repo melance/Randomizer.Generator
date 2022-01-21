@@ -11,7 +11,7 @@ The infinitely customizable random content generator.
 | **Randomizer.Generator** | the engine behind The Randomizer.  It contains a number of classes for generating content using different types of generators. | Rnd.Gen.dll |
 | **Randomizer.Generator.Test** | unit tests for the Randomizer.Generator project | _N/A_ |
 | **Randomizer.Generator.CmdLine** | a command line tool to generate content. | Rnd.Gen.CLI.exe |
-| **Randomizer.Generator.UI.MVC** | an MVC Core web application for generating content. Available here: https://randomizergeneratoruimvc.azurewebsites.net/ | _N/A_ |
+| **Randomizer.Generator.UI.MVC** | an MVC Core web application for generating content. Currently not available. | _N/A_ |
 | **Randomizer.Generator.UI.Terminal** | a terminal gui to generate content.  Designed to work on Windows, Mac, Unix, and Linux. | Rnd.Gen.UIT.exe |
 | **Randomizer.Generator.DefinitionConverter** | a command line tool to convert old grammar files to the new dictionary format | Rnd.Gen.Conv.exe |
 
