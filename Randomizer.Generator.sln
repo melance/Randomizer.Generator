@@ -28,9 +28,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NSIS", "NSIS", "{BAB97826-E
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Randomizer.Generator.UI.MVC", "Randomizer.Generator.UI.MVC\Randomizer.Generator.UI.MVC.csproj", "{C66F2DEE-FE4D-463F-8E03-497D4D0717A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Randomizer.Generator.UI.Win", "Randomizer.Generator.Win\Randomizer.Generator.UI.Win.csproj", "{10A165E7-A834-4D4F-B2D5-3C05E23D574A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Randomizer.Generator.UI.Win", "Randomizer.Generator.Win\Randomizer.Generator.UI.Win.csproj", "{10A165E7-A834-4D4F-B2D5-3C05E23D574A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Randomizer.Generator.Converter", "Randomizer.Generator.Converter\Randomizer.Generator.Converter.csproj", "{64D77674-13C9-410A-A4F8-2227E188F565}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Randomizer.Generator.Converter", "Randomizer.Generator.Converter\Randomizer.Generator.Converter.csproj", "{64D77674-13C9-410A-A4F8-2227E188F565}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
