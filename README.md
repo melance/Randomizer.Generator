@@ -27,7 +27,7 @@ Customizations can be found in the following repository:
 
 ### Help ###
 ---
-A help section is available at the website: https://randomizergeneratoruimvc.azurewebsites.net/Help
+A help section is available on wikidot: http://randomizerhelp.wikidot.com/
 
 ### Contributing ###
 ---
