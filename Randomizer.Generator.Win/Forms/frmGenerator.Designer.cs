@@ -44,12 +44,14 @@
             this.btnCopy = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.spcMain)).BeginInit();
             this.spcMain.Panel1.SuspendLayout();
             this.spcMain.Panel2.SuspendLayout();
             this.spcMain.SuspendLayout();
             this.panel1.SuspendLayout();
             this.pnlCommands.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // lblName
@@ -94,7 +96,7 @@
             this.pnlParameters.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlParameters.Location = new System.Drawing.Point(0, 0);
             this.pnlParameters.Name = "pnlParameters";
-            this.pnlParameters.Padding = new System.Windows.Forms.Padding(6);
+            this.pnlParameters.Padding = new System.Windows.Forms.Padding(6, 6, 16, 6);
             this.pnlParameters.Size = new System.Drawing.Size(264, 531);
             this.pnlParameters.TabIndex = 3;
             // 
@@ -222,6 +224,10 @@
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
+            // errorProvider
+            // 
+            this.errorProvider.ContainerControl = this;
+            // 
             // frmGenerator
             // 
             this.AcceptButton = this.btnGenerate;
@@ -240,6 +246,7 @@
             this.spcMain.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.pnlCommands.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             this.ResumeLayout(false);
 
 		}
@@ -260,5 +267,6 @@
 		private WebBrowser webBrowser;
 		private Button btnReload;
 		private ToolTip toolTip;
+		private ErrorProvider errorProvider;
 	}
 }
