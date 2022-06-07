@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <ApplicationIcon>TheRandomizer.ico</ApplicationIcon>
     <Configurations>Debug;Release;Beta</Configurations>
     <VersionSuffix>4.0.$([System.DateTime]::Now.ToString(MMdd)).$([System.DateTime]::Now.ToString(mmff))</VersionSuffix>

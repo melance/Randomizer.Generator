@@ -57,6 +57,26 @@ namespace Randomizer.Generator.Core
 		}
 
 		/// <summary>
+		/// Tries to deserialize an HJSON string into a definition
+		/// </summary>
+		/// <param name="value">An HJSON formatted string</param>
+		/// <param name="definition">The definition instance</param>
+		/// <returns>True if successful; otherwise false</returns>
+		public static Boolean TryDeserialize(String value,out BaseDefinition definition)
+		{
+			definition = null;
+			try
+			{
+				definition = Deserialize(value);
+				return true;
+			}
+			catch
+			{
+				return false;
+			}
+		}
+
+		/// <summary>
 		/// Serializes a definition into HJSON
 		/// </summary>
 		/// <param name="value">The definition to serialize</param>
