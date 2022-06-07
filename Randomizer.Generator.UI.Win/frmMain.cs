@@ -118,7 +118,7 @@ namespace Randomizer.Generator.UI.Win
 
 		private void mnuOnlineHelp_Click(Object sender, EventArgs e)
 		{
-			//Todo
+			System.Diagnostics.Process.Start("explorer.exe", "http://randomizerhelp.wikidot.com/home:home");
 		}
 
 		private void mnuGithub_Click(Object sender, EventArgs e)

@@ -279,30 +279,47 @@ namespace Randomizer.Generator.Core
 		{
 			return Deserialize(hjson);
 		}
+
+		/// <summary>
+		/// Validates the named parameter
+		/// </summary>
+		public (Boolean Valid, String Message) ValidateParameter(String parameterName)
+		{
+			(Boolean Valid, String Message) result = (true, String.Empty);
+			var parameter = Parameters[parameterName];
+			if (parameter.Validation.Any())
+			{
+				foreach (var validation in parameter.Validation)
+				{
+					var calc = new Expression(validation.Expression, EvaluateOptions.MatchStringsWithIgnoreCase);
+					calc.Parameters.Add("Value", parameter.TypedValue);
+					if ((Boolean)calc.Evaluate())
+					{
+						var thisMessage = validation.Message.IsNullOrWhitespace() ? validation.Expression : validation.Message;
+						var message = thisMessage.MultiReplace(false, ("[Name]", parameter.Display),
+																	  ("[Value]", parameter.Value));
+						parameter.IsValid = false;
+						result.Valid = false;
+						result.Message = message;
+						parameter.ValidationMessage = message;
+					}
+				}
+			}
+			return result;
+		}
 		#endregion
 
 		#region Protected Methods
+		/// <summary>
+		/// Validates all parameters
+		/// </summary>
 		protected Boolean ValidateParameters()
 		{
 			var result = true;
 			foreach (var parameter in Parameters)
 			{
-				if (parameter.Value.Validation.Any())
-				{
-					foreach (var validation in parameter.Value.Validation)
-					{
-						var calc = new Expression(validation.Expression, EvaluateOptions.MatchStringsWithIgnoreCase);
-						calc.Parameters.Add("Value", parameter.Value.TypedValue);
-						if ((Boolean)calc.Evaluate())
-						{
-							var thisMessage = validation.Message.IsNullOrWhitespace() ? validation.Expression : validation.Message;
-							parameter.Value.ValidationMessage = thisMessage.MultiReplace(false, ("[Name]", parameter.Value.Display),
-																								("[Value]", parameter.Value.Value));
-							parameter.Value.IsValid = false;
-							result = false;
-						}
-					}
-				}
+				if (!ValidateParameter(parameter.Key).Valid)
+					result = false;
 			}
 			return result;
 		}

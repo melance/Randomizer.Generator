@@ -9,6 +9,8 @@ namespace Randomizer.Generator.UI.Win.Classes
 {
 	internal class ParameterControlList : List<Control>
 	{
+		public ToolTip ToolTip { get; } = new ToolTip();
+
 		public Control Add(String name, Parameter parameter)
 		{
 			var control = CreateControl(name, parameter);
@@ -35,7 +37,7 @@ namespace Randomizer.Generator.UI.Win.Classes
 			return null;
 		}
 
-		private static Control CreateControl(String name, Parameter parameter)
+		private Control CreateControl(String name, Parameter parameter)
 		{
 			Control control;
 			switch (parameter.Type)
@@ -92,8 +94,10 @@ namespace Randomizer.Generator.UI.Win.Classes
 				default:
 					return null;
 			}
+			ToolTip.SetToolTip(control, parameter.Description);
 			control.Name = name;
 			return control;
 		}
+
 	}
 }

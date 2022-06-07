@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.32014.148
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Randomizer.Generator", "Randomizer.Generator\Randomizer.Generator.csproj", "{DF21E4B9-0E88-4B84-A1FA-B5AC4202927E}"
 EndProject
@@ -17,7 +17,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Randomizer.Generator.UI.Terminal", "Randomizer.Generator.UITerminal\Randomizer.Generator.UI.Terminal.csproj", "{39AB0551-D656-43D7-80D7-91AD7A87B0BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Randomizer.Generator.UI.Terminal", "Randomizer.Generator.UI.Terminal\Randomizer.Generator.UI.Terminal.csproj", "{39AB0551-D656-43D7-80D7-91AD7A87B0BE}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Randomizer.Generator.DefinitionConverter", "Randomizer.Generator.DefinitionConverter\Randomizer.Generator.DefinitionConverter.csproj", "{CBF6A7FD-81B5-4BA6-8454-8AF6F9245171}"
 EndProject
@@ -28,9 +28,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NSIS", "NSIS", "{BAB97826-E
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Randomizer.Generator.UI.MVC", "Randomizer.Generator.UI.MVC\Randomizer.Generator.UI.MVC.csproj", "{C66F2DEE-FE4D-463F-8E03-497D4D0717A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Randomizer.Generator.UI.Win", "Randomizer.Generator.Win\Randomizer.Generator.UI.Win.csproj", "{10A165E7-A834-4D4F-B2D5-3C05E23D574A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Randomizer.Generator.UI.Win", "Randomizer.Generator.UI.Win\Randomizer.Generator.UI.Win.csproj", "{10A165E7-A834-4D4F-B2D5-3C05E23D574A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Randomizer.Generator.Converter", "Randomizer.Generator.Converter\Randomizer.Generator.Converter.csproj", "{64D77674-13C9-410A-A4F8-2227E188F565}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Randomizer.Generator.Converter", "Randomizer.Generator.Converter\Randomizer.Generator.Converter.csproj", "{64D77674-13C9-410A-A4F8-2227E188F565}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

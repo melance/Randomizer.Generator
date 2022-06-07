@@ -101,7 +101,27 @@ namespace Randomizer.Generator.UI.Win.Forms
 			{
 				MessageBox.Show("Unable to load the generator");
 			}
-		}		
+		}
+
+		private Boolean ValidateParameters()
+		{
+			var isValid = true;
+			foreach (var parameter in _parameters)
+			{
+				_generator.Parameters[parameter.Name].Value = _parameters.GetValue(parameter.Name);
+				var result = _generator.ValidateParameter(parameter.Name);
+				if (!result.Valid)
+				{
+					errorProvider.SetError(parameter, result.Message);
+					isValid = false;
+				}
+				else
+				{
+					errorProvider.SetError(parameter, String.Empty);
+				}
+			}
+			return isValid;
+		}
 		#endregion
 
 		private void btnGenerate_Click(Object sender, EventArgs e)
@@ -109,39 +129,36 @@ namespace Randomizer.Generator.UI.Win.Forms
 			Cursor = Cursors.WaitCursor;
 			try
 			{
-				
-				foreach (var parameter in Generator.Parameters.Where(p => p.Value.Visible))
+				if (ValidateParameters())
 				{
-					parameter.Value.Value = _parameters.GetValue(parameter.Key);
-				}
-
-				var result = String.Empty;
-				var repeat = ((NumericUpDown)pnlParameters.Controls[REPEAT_CONTROL_NAME]).Value;
-				for (var i = 1; i <= repeat; i++)
-				{
-					var current = Generate().Result;
+					var result = String.Empty;
+					var repeat = ((NumericUpDown)pnlParameters.Controls[REPEAT_CONTROL_NAME]).Value;
+					for (var i = 1; i <= repeat; i++)
+					{
+						var current = Generate().Result;
+						switch (Generator.OutputFormat)
+						{
+							case OutputFormats.Text:
+								result += $"{current}\n\n";
+								break;
+							case OutputFormats.Html:
+								result += $"{current}{(i < repeat ? "<hr />" : String.Empty)}";
+								break;
+							case OutputFormats.Image:
+								result += $"<img src=\"data: image/png;base64, {current}\" />{(i < repeat ? "<hr />" : String.Empty)}";
+								break;
+						}
+					}
 					switch (Generator.OutputFormat)
 					{
 						case OutputFormats.Text:
-							result += $"{current}\n\n";
+							webBrowser.DocumentText = $"<pre>{result}</pre>";
 							break;
 						case OutputFormats.Html:
-							result += $"{current}{(i < repeat ? "<hr />" : String.Empty)}";
-							break;
 						case OutputFormats.Image:
-							result += $"<img src=\"data: image/png;base64, {current}\" />{(i < repeat ? "<hr />" : String.Empty)}";
+							webBrowser.DocumentText = result;
 							break;
 					}
-				}
-				switch (Generator.OutputFormat)
-				{
-					case OutputFormats.Text:
-						webBrowser.DocumentText = $"<pre>{result}</pre>";
-						break;
-					case OutputFormats.Html:
-					case OutputFormats.Image:
-						webBrowser.DocumentText = result;
-						break;
 				}
 			}
 			catch (Exception ex)
@@ -185,7 +202,6 @@ namespace Randomizer.Generator.UI.Win.Forms
 		{
 			webBrowser.ShowSaveAsDialog();
 		}
-
 
 		private void btnReload_Click(Object sender, EventArgs e)
 		{
