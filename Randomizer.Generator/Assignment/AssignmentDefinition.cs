@@ -356,6 +356,15 @@ namespace Randomizer.Generator.Assignment
 					case TokenTypes.Item:
 						var name = token.Value;
 
+						var format = String.Empty;
+
+						var formatParts = name.Split(":");
+						if (formatParts.Length > 1)
+						{
+							name = formatParts[0];
+							format = formatParts[1];
+						}	
+
 						// If there are more than on item names in the token, select one
 						var or = name.Split("|");
 						if (or.Length > 1)
@@ -384,6 +393,14 @@ namespace Randomizer.Generator.Assignment
 						}
 						else
 							result.Append(name);
+						switch (format.ToLowerInvariant())
+						{
+							case "ucase": value = value.UCase(); break;
+							case "lcase": value = value.LCase(); break;
+							case "tcase": value = value.TCase(); break;
+							case "scase": value = value.SCase(); break;
+
+						}
 						result.Append(value);
 						break;
 				}

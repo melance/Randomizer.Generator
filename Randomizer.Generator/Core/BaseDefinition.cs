@@ -349,8 +349,7 @@ namespace Randomizer.Generator.Core
 				exi.SourceException.AddData(nameof(expression), expression);
 			}
 
-			if (exi != null)
-				exi.Throw();
+			exi?.Throw();
 			return String.Empty;
 		}
 

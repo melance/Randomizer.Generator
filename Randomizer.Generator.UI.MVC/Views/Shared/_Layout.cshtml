@@ -12,7 +12,7 @@
 </head>
 <body>
     <header class="fixed-top">
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark bg-gradient border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark bg-gradient border-bottom box-shadow">
             <div class="container">
                 <div class="navbar-brand"><a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/Randomizer 150.png" height="24" style="margin-left:12px; margin-top:-6px;" /> The Randomizer</a></div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -35,16 +35,18 @@
             </div>
         </nav>
     </header>
-
-    <div class="container" style="padding-top: 73px;">
-        <main role="main" class="col-12">
-            @RenderBody()
-        </main>
+    
+    <div class="row mt-5">
+        <div class="col container mt-4">
+            <main role="main" class="col-12 mt-3">
+                @RenderBody()
+            </main>
+        </div>
     </div>
 
     <footer class="border-top footer text-muted bg-dark bg-gradient">
         <div class="container">
-            &copy; 2021 - Lance Boudreaux<!-- - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>-->
+            &copy; 2021 - Lance Boudreaux
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

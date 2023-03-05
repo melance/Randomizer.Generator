@@ -31,8 +31,9 @@ namespace Randomizer.Generator.UI.MVC.Models
 				}
 			}
 		}
-
-
+				
 		public Dictionary<String, List<(String Name, String Path)>> TagList { get; private set; } = new();
+
+		
 	}
 }

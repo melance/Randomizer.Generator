@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <AssemblyName>Rnd.Gen.CLI</AssemblyName>
     <Configurations>Debug;Release;Beta</Configurations>
     <PackageLicenseFile>License.md</PackageLicenseFile>
@@ -29,7 +29,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Spectre.Console" Version="0.40.1-preview.0.11" />
+    <PackageReference Include="Spectre.Console" Version="0.45.0" />
     <PackageReference Include="System.CommandLine.DragonFruit" Version="0.3.0-alpha.21216.1" />
   </ItemGroup>
 

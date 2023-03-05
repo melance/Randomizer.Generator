@@ -4,7 +4,7 @@
   
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <AssemblyName>Rnd.Gen.UIT</AssemblyName>
     <RootNamespace>Randomizer.Generator.UI.Terminal</RootNamespace>
     <ApplicationIcon>TheRandomizer.ico</ApplicationIcon>
@@ -37,10 +37,10 @@
   <ItemGroup>
     <PackageReference Include="FIGlet.Net" Version="1.1.2" />
     <PackageReference Include="Hjson" Version="3.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Logging.EventLog" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.EventLog" Version="7.0.0" />
     <PackageReference Include="System.CommandLine.DragonFruit" Version="0.3.0-alpha.21216.1" />
-    <PackageReference Include="Terminal.Gui" Version="1.4.0" />
-    <PackageReference Include="TextCopy" Version="5.0.2" />
+    <PackageReference Include="Terminal.Gui" Version="1.8.2" />
+    <PackageReference Include="TextCopy" Version="6.2.0" />
   </ItemGroup>
 
   <ItemGroup>

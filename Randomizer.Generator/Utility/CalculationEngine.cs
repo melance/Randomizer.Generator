@@ -110,11 +110,7 @@ namespace Randomizer.Generator.Utility
 				paramTypes.Add(value.GetType());
 
 			}
-			var method = typeof(CalculationEngine).GetMethod(name, paramTypes.ToArray());
-
-			if (method == null)
-				method = typeof(CalculationEngine).GetMethod(name);
-
+			var method = typeof(CalculationEngine).GetMethod(name, paramTypes.ToArray()) ?? typeof(CalculationEngine).GetMethod(name);
 			if (method != null && method.GetCustomAttribute<NCalcFunctionAttribute>() != null)
 			{
 				args.Result = method.Invoke(null, paramValues.ToArray());
