@@ -20,6 +20,8 @@ namespace Randomizer.Generator.Assignment
         #region Properties
 		public Boolean Draw { get; set; }
 
+		public String Variable { get; set; } = String.Empty;
+
         /// <summary>
         /// The total weight of all line items in this list
         /// </summary>

@@ -55,6 +55,26 @@ namespace Randomizer.Generator.Core
 			using var reader = new JsonTextReader(sReader);
 			return serializer.Deserialize<BaseDefinition>(reader);
 		}
+		
+		/// <summary>
+		/// Deserializes an HJSON string into a definition
+		/// </summary>
+		/// <param name="value">An HJSON formatted string</param>
+		/// <returns>A definition instance</returns>
+		public static T Deserialize<T>(String value) where T : BaseDefinition
+		{
+			return (T)Deserialize(value);
+		}
+
+		/// <summary>
+		/// Deserializes an HJSON byte array into a definition
+		/// </summary>
+		/// <param name="value">A byte array in the default encoding</param>
+		/// <returns>A definition instance</returns>
+		public static T Deserialize<T>(Byte[] value) where T : BaseDefinition
+		{
+			return (T)Deserialize(value);
+		}
 
 		/// <summary>
 		/// Tries to deserialize an HJSON string into a definition

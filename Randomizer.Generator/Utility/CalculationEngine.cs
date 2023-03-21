@@ -11,7 +11,7 @@ using Pluralize.NET;
 
 namespace Randomizer.Generator.Utility
 {
-    class CalculationEngine : Expression
+    public class CalculationEngine : Expression
     {
         #region Constants
         
@@ -284,12 +284,12 @@ namespace Randomizer.Generator.Utility
 				}
 				var total = (Int32)parsed.Sum(i => i.Weight);
 				var index = Utility.Random.RandomNumber(1, total);
-				var current = 0;
+				var current = (UInt32)0;
 
 				foreach (var (Value, Weight) in parsed)
 				{
+					current += Weight;
 					if (index <= current) return Value;
-					current += (Int32)Weight;
 				}
 
 				throw new Exceptions.DefinitionException($"Error in {nameof(PickW)}");

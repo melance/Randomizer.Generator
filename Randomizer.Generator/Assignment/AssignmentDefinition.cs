@@ -5,9 +5,7 @@ using Randomizer.Generator.Exceptions;
 using Randomizer.Generator.Utility;
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Runtime.Serialization;
 using System.Text;
 
 namespace Randomizer.Generator.Assignment
@@ -278,6 +276,8 @@ namespace Randomizer.Generator.Assignment
 		private string EvaluateLineItem(String name, LineItem item)
 		{
 			var result = new StringBuilder();
+			var variable = String.IsNullOrEmpty(LineItems[name].Variable) ? item.Variable : String.Empty;
+
 			UInt32 repeat;
 			
 			if (String.IsNullOrWhiteSpace(item.Repeat))
@@ -303,11 +303,11 @@ namespace Randomizer.Generator.Assignment
 				{
 					var evaluated = EvaluateContent(item.Content);
 
-					if (!String.IsNullOrWhiteSpace(item.Variable))
+					if (!String.IsNullOrWhiteSpace(variable))
 					{
-						if (!Variables.ContainsKey(item.Variable.ToUpperInvariant()))
-							Variables.Add(item.Variable.ToUpperInvariant(), String.Empty);
-						Variables[item.Variable.ToUpperInvariant()] = evaluated;
+						if (!Variables.ContainsKey(variable))
+							Variables.Add(variable, String.Empty);
+						Variables[variable] = evaluated;
 					}
 					else
 					{
@@ -399,7 +399,6 @@ namespace Randomizer.Generator.Assignment
 							case "lcase": value = value.LCase(); break;
 							case "tcase": value = value.TCase(); break;
 							case "scase": value = value.SCase(); break;
-
 						}
 						result.Append(value);
 						break;
