@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Xml.Linq;
 
 namespace Randomizer.Generator.Assignment
 {
@@ -339,40 +340,38 @@ namespace Randomizer.Generator.Assignment
 
 			foreach (var token in tokens)
 			{
+				var formatParts = token.Value.Split(":");
+				var name = formatParts[0];
+				var format = String.Empty;
+
+				if (formatParts.Length > 1)
+				{
+					format = formatParts[1];
+				}
+
 				switch (token.TokenType)
 				{
 					case TokenTypes.Text:
 						result.Append(token.Value);
 						break;
 					case TokenTypes.Variable:
-						if (Variables.ContainsKey(token.Value))
-							result.Append(Variables[token.Value]);
-						else if (Parameters.ParameterExists(token.Value))
-							result.Append(Parameters[token.Value].Value);
+						if (Variables.ContainsKey(name))
+							result.Append(FormatValue(Variables[name], format));
+						else if (Parameters.ParameterExists(name))
+							result.Append(FormatValue(Parameters[name].Value, format));
 						break;
 					case TokenTypes.Equation:
-						result.Append(Calculate(token.Value));
+						result.Append(FormatValue(Calculate(name), format));
 						break;
 					case TokenTypes.Item:
-						var name = token.Value;
-
-						var format = String.Empty;
-
-						var formatParts = name.Split(":");
-						if (formatParts.Length > 1)
-						{
-							name = formatParts[0];
-							format = formatParts[1];
-						}	
-
 						// If there are more than on item names in the token, select one
 						var or = name.Split("|");
 						if (or.Length > 1)
 							name = or[Utility.Random.RandomNumber(0, or.Length - 1)];
 
 						// If there is a parameter with this name, get the value
-						if (Parameters.ContainsKey(token.Value))
-							name = Parameters[token.Value].Value.ToString();
+						if (Parameters.ContainsKey(name))
+							name = Parameters[name].Value.ToString();
 
 						// Reevaluate to allow nested items
 						name = EvaluateContent(name);
@@ -392,20 +391,26 @@ namespace Randomizer.Generator.Assignment
 							value = EvaluateLineItem(name, andLineItems.SelectRandomItem());
 						}
 						else
-							result.Append(name);
-						switch (format.ToLowerInvariant())
-						{
-							case "ucase": value = value.UCase(); break;
-							case "lcase": value = value.LCase(); break;
-							case "tcase": value = value.TCase(); break;
-							case "scase": value = value.SCase(); break;
-						}
-						result.Append(value);
+							result.Append(FormatValue(name, format));
+						
+						result.Append(FormatValue(value, format));
 						break;
 				}
 			}
 
 			return result.ToString();
+		}
+
+		private static String FormatValue(String value, String format)
+		{
+			return format.ToLowerInvariant() switch
+			{
+				"ucase" => value.UCase(),
+				"lcase" => value.LCase(),
+				"tcase" => value.TCase(),
+				"scase" => value.SCase(),
+				_ => value,
+			};
 		}
 
 		/// <summary>
