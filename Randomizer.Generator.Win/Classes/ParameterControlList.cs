@@ -28,7 +28,7 @@ namespace Randomizer.Generator.Win.Classes
 				else if (control is DateTimePicker picker)
 					return picker.Value.ToString();
 				else if (control is ComboBox comboBox)
-					return comboBox.Text;
+					return comboBox.SelectedValue.ToString();
 				else if (control is NumericUpDown numericUpDown)
 					return numericUpDown.Value.ToString();
 				else if (control is TextBox textBox)
