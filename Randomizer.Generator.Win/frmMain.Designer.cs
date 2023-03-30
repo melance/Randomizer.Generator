@@ -217,6 +217,7 @@
 			// 
 			lstGenerators.Dock = DockStyle.Fill;
 			lstGenerators.FormattingEnabled = true;
+			lstGenerators.IntegralHeight = false;
 			lstGenerators.ItemHeight = 15;
 			lstGenerators.Location = new Point(0, 48);
 			lstGenerators.Name = "lstGenerators";

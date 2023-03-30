@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Randomizer.Generator.Win": {
+      "commandName": "Project",
+      "commandLineArgs": "\"C:\\Users\\me_la\\AppData\\Roaming\\Randomizer.Generator\\Definitions\\Adventure Hooks.rgen.hjson\""
+    }
+  }
+}

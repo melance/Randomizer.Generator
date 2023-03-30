@@ -7,10 +7,14 @@ namespace Randomizer.Generator.Win
 	public partial class frmMain : Form
 	{
 		#region Constructor
-		public frmMain()
+		public frmMain(String generatorPath)
 		{
 			InitializeComponent();
 			LoadDefinitionList();
+			if (!String.IsNullOrEmpty(generatorPath))
+			{
+				OpenGenerator(generatorPath);
+			}
 		}
 		#endregion
 
@@ -35,19 +39,18 @@ namespace Randomizer.Generator.Win
 											  (d.Name.Contains(txtSearch.Text, StringComparison.CurrentCultureIgnoreCase) || String.IsNullOrWhiteSpace(txtSearch.Text))
 										select d).ToList();
 		}
-		#endregion
 
-		#region Event Handlers
-		private void lstGenerators_DoubleClick(Object sender, EventArgs e)
+		private void OpenGenerator(String generatorPath)
 		{
 			try
 			{
+				var generator = BaseDefinition.Deserialize(File.ReadAllText(generatorPath));
 				var form = new Forms.frmGenerator()
 				{
-					Text = ((BaseDefinition)lstGenerators.SelectedItem).Name,
+					Text = generator.Name,
 					WindowState = FormWindowState.Maximized,
 					MdiParent = this,
-					Generator = Program.DataAccess.GetDefinition(((BaseDefinition)lstGenerators.SelectedItems[0]).Name)
+					Generator = generator
 				};
 				var button = new GeneratorWindowButton()
 				{
@@ -63,8 +66,17 @@ namespace Randomizer.Generator.Win
 			}
 			catch (Exception ex)
 			{
-				MessageBox.Show($"Could not load the generator {((BaseDefinition)lstGenerators.SelectedItem).Name} due to the error {ex.Message}.");
+				MessageBox.Show($"Could not load the generator due to the error {ex.Message}.");
 			}
+		}
+		#endregion
+
+		#region Event Handlers
+		private void lstGenerators_DoubleClick(Object sender, EventArgs e)
+		{
+			var name = ((BaseDefinition)lstGenerators.SelectedItem).Name;
+			var path = ((DataAccess.FileSystemDataAccess)DataAccess.DataAccess.Instance).GetDefinitionPath(name);
+			OpenGenerator(path);
 		}
 
 		private void btnGeneratorWindow_Activated(Object sender, EventArgs e)

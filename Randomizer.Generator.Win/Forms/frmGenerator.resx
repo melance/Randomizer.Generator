@@ -58,6 +58,18 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnOpenDialog.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EgAACxIB0t1+/AAAAJxJREFUOE+lktENwyAMRDMHgzFFR+W3OyB1CHJnTOTEoFj0SVaE4R6CcDRPPgyl
+        lK/2p7wKME611l+f8ljBB5VRSbMX7K0kVnDb2YK5fQH64SM4AXouzLHtLQUYT8P4JNaYWwqev2+EdVo2
+        4JqQ4Bm+0ZcI7giUqGgeJhLtuEsMoWESFmAtL5KPLu8KGBasYDzlSHGtYAVb/Clo7QR5aIhf8l4KZwAA
+        AABJRU5ErkJggg==
+</value>
+  </data>
+  <metadata name="toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <data name="btnReload.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -68,9 +80,6 @@
         jq240J1k/Ux6RhGpuUAH/sJ2mnf1S9mx7motUbQACUJTJB8ErOYAAAAASUVORK5CYII=
 </value>
   </data>
-  <metadata name="toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <data name="btnEdit.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -121,6 +130,16 @@
         DAAACwwBP0AiyAAAAHxJREFUOE/NkMkKgDAMROuKNw/+/196cUHNQAKhE1q9+eCRxIx1Sb9iFe8PElEo
         ctFK5MGaRBQqSUShkkQU8l7iIZ46E/kNNQm/bMRBayv2OvsMYQsLbu4axCfgMJsJW3Ra8dRdexNvZD2B
         H4TFpHUW8wNG1xM++MZfkNIDCl+AqZbvDBQAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnInfo.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EQAACxEBf2RfkQAAAN9JREFUOE+Vkj0OwjAMhXuObCBOwGF6GzYuwwSCK6AiMWaoqg7tEfqDgDG8l7pV
+        MtAknxQ5kf3s2Em2hjFGtW37hLU0TfOAUeIOg+DcKn1ycYdh8KTxSEqg5NoW7O8w4RYYhMXqXHtnHxZr
+        rbd9378RbOm67lVV1Ubc6yBeueIZJoGJuvoyNPR7xhNe5EjCw0OQ1zsSnGBn4qdPKJh0CS3MMBjVr1YN
+        6ro+iCsOaJbq4zh+YeKrEwiWBGVZHmHc2aS9Bl8C6yZHEvcawzDw6h5JwyyKYodP9Zmk/35klv0AvCp5
+        GRJztpcAAAAASUVORK5CYII=
 </value>
   </data>
   <metadata name="errorProvider.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">

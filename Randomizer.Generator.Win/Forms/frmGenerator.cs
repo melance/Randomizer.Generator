@@ -19,14 +19,14 @@ namespace Randomizer.Generator.Win.Forms
 		public frmGenerator()
 		{
 			InitializeComponent();
-			
+
 			webBrowser.DocumentText = String.Empty;
 		}
 
 		#endregion
 
 		#region Constants
-		private const String REPEAT_CONTROL_NAME = "nudRepeat"; 
+		private const String REPEAT_CONTROL_NAME = "nudRepeat";
 		#endregion
 
 		#region Members
@@ -35,16 +35,15 @@ namespace Randomizer.Generator.Win.Forms
 		#endregion
 
 		#region Properties
-		public BaseDefinition Generator 
-		{ 
-			get => _generator; 
+		public BaseDefinition Generator
+		{
+			get => _generator;
 			set
 			{
 				_generator = value;
 				BindGenerator();
 			}
 		}
-
 		#endregion
 
 		#region Private Methods
@@ -179,7 +178,7 @@ namespace Randomizer.Generator.Win.Forms
 		private void btnEdit_Click(Object sender, EventArgs e)
 		{
 			var definitionPath = Program.DataAccess.GetDefinitionPath(_generator.Name);
-			Process.Start(Properties.Settings.Default.TextEditor, Properties.Settings.Default.TextEditorArgs.Replace("{filename}", definitionPath));		
+			Process.Start(Properties.Settings.Default.TextEditor, Properties.Settings.Default.TextEditorArgs.Replace("{filename}", definitionPath));
 		}
 
 		private void btnClear_Click(Object sender, EventArgs e)
@@ -207,6 +206,19 @@ namespace Randomizer.Generator.Win.Forms
 		{
 			_generator = Program.DataAccess.GetDefinition(_generator.Name);
 			BindGenerator();
+		}
+
+		private void btnOpenDialog_Click(Object sender, EventArgs e)
+		{
+			var path = ((DataAccess.FileSystemDataAccess)DataAccess.DataAccess.Instance).GetDefinitionPath(Generator.Name);
+			var info = new ProcessStartInfo(Application.ExecutablePath, $"\"{path}\"");
+			Process.Start(info);
+		}
+
+		private void btnInfo_Click(Object sender, EventArgs e)
+		{
+			var details = new Details(Generator.Name);
+			details.ShowDialog(this);
 		}
 	}
 }
