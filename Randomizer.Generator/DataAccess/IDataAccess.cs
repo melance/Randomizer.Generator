@@ -9,13 +9,13 @@ namespace Randomizer.Generator.DataAccess
 {
 	public interface IDataAccess
 	{
-		BaseDefinition GetDefinition(String name);
+		GetDefinitionResponse GetDefinition(String name);
 		String GetDefinitionRaw(String name);
-		BaseDefinition GetLibrary(String name);
+		GetDefinitionResponse GetLibrary(String name);
 		String GetText(String name);
 
-		IEnumerable<BaseDefinition> GetDefinitionList();
-		IEnumerable<BaseDefinition> GetLibraryList();
+		GetDefinitionListResponse GetDefinitionList();
+		GetDefinitionListResponse GetLibraryList();
 		IEnumerable<String> GetTagList();
 
 		Boolean DefinitionExists(String name);

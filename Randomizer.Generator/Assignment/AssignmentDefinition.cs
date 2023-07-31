@@ -16,6 +16,11 @@ namespace Randomizer.Generator.Assignment
 	/// </summary>
 	public class AssignmentDefinition : BaseDefinition
 	{
+		#region Events
+		public delegate void ProcessFunctionDelegate(String name, FunctionArgs e);
+		public ProcessFunctionDelegate ProcessFunction;
+		#endregion
+
 		#region Constants
 		/// <summary>The starting lineitem for generation</summary>
 		private const String START_ITEM = "Start";
@@ -68,6 +73,7 @@ namespace Randomizer.Generator.Assignment
 		/// <summary>Variables added during generation</summary>
 		private InsensitiveDictionary<String> Variables { get; set; } = new();
 		public override Boolean SupportsParameters => true;
+		public Boolean RemoveEmptyLines { get; set; }
 		#endregion
 
 		#region Public Methods
@@ -91,7 +97,11 @@ namespace Randomizer.Generator.Assignment
 
 				item = LineItems[next].SelectRandomItem();
 				var value = EvaluateLineItem(next, item);
-
+				if (RemoveEmptyLines)
+				{
+					var lines = value.Split("\n");
+					value = String.Join("\n", lines.Where(l => !String.IsNullOrWhiteSpace(l)));
+				}
 				return value.ToCase(TextCase);
 			}
 			return String.Empty;
@@ -164,6 +174,7 @@ namespace Randomizer.Generator.Assignment
 		}
 		#endregion
 
+		#region Protected Methods
 		protected void ParseLineItems()
 		{
 			const String DECK = ".Deck";
@@ -179,7 +190,6 @@ namespace Randomizer.Generator.Assignment
 				LineItems.Remove(key);
 		}
 
-		#region Protected Methods
 		/// <summary>
 		/// Loads a definition from the list of <see cref="Imports"/>
 		/// </summary>
@@ -188,9 +198,9 @@ namespace Randomizer.Generator.Assignment
 		protected virtual AssignmentDefinition LoadImport(String name)
 		{
 			if (DataAccess.DataAccess.Instance.LibraryExists(name))
-				return (AssignmentDefinition)DataAccess.DataAccess.Instance.GetLibrary(name);
+				return (AssignmentDefinition)DataAccess.DataAccess.Instance.GetLibrary(name).Definition;
 			else if (DataAccess.DataAccess.Instance.DefinitionExists(name))
-				return (AssignmentDefinition)DataAccess.DataAccess.Instance.GetDefinition(name);
+				return (AssignmentDefinition)DataAccess.DataAccess.Instance.GetDefinition(name).Definition;
 			else
 				throw new DefinitionNotFoundException(name);
 		}
@@ -261,8 +271,10 @@ namespace Randomizer.Generator.Assignment
 							break;
 					}
 				}
-
-				Variables.Add(item.Variable, value.ToString());
+				if (Variables.Any(i => i.Key == item.Variable))
+					Variables[item.Variable] = value.ToString();
+				else
+					Variables.Add(item.Variable, value.ToString());
 			}
 			_preprocessing = false;
 		}
@@ -277,18 +289,18 @@ namespace Randomizer.Generator.Assignment
 		private string EvaluateLineItem(String name, LineItem item)
 		{
 			var result = new StringBuilder();
-			var variable = String.IsNullOrEmpty(LineItems[name].Variable) ? item.Variable : String.Empty;
+			var variable = LineItems.Contains(name) && String.IsNullOrEmpty(LineItems[name].Variable) ? item.Variable : String.Empty;
 
-			UInt32 repeat;
+			Int32 repeat;
 			
 			if (String.IsNullOrWhiteSpace(item.Repeat))
 				repeat = 1;
 			else
 			{
-				if (UInt32.TryParse(item.Repeat, out var number))
+				if (Int32.TryParse(item.Repeat, out var number))
 					repeat = number;
 				else if (item.Repeat.StartsWith("=", StringComparison.CurrentCulture))
-					repeat = UInt32.Parse(Calculate(item.Repeat[1..]), System.Globalization.CultureInfo.CurrentCulture.NumberFormat);
+					repeat = Int32.Parse(Calculate(item.Repeat[1..]), System.Globalization.CultureInfo.CurrentCulture.NumberFormat);
 				else
 					throw new InvalidPropertyValueException(nameof(item.Repeat), item.Repeat);
 			}
@@ -426,7 +438,11 @@ namespace Randomizer.Generator.Assignment
 			}
 			else if (Parameters.ContainsKey(name))
 			{
-				args.Result = Parameters[name].Value;
+				var parameter = Parameters[name];
+				if (parameter.Type == ParameterTypes.Calculation)
+					args.Result = new CalculationEngine(parameter.Value).Evaluate();
+				else
+					args.Result = Parameters[name].Value;
 			}
 			else if (!_preprocessing && LineItems.ContainsKey(name))
 			{

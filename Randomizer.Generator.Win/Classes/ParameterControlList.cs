@@ -33,6 +33,8 @@ namespace Randomizer.Generator.Win.Classes
 					return numericUpDown.Value.ToString();
 				else if (control is TextBox textBox)
 					return textBox.Text;
+				else if (control is ListBox listBox)
+					return String.Join("+", listBox.SelectedItems.OfType<ListOption>().Select(o => o.Value));
 			}
 			return null;
 		}
@@ -43,6 +45,7 @@ namespace Randomizer.Generator.Win.Classes
 			switch (parameter.Type)
 			{
 				case ParameterTypes.Text:
+				case ParameterTypes.Calculation:
 					control = new TextBox()
 					{
 						Text = parameter.Value
@@ -76,6 +79,16 @@ namespace Randomizer.Generator.Win.Classes
 						ValueMember = "Value",
 						DisplayMember = "Display",
 						DropDownStyle = ComboBoxStyle.DropDownList
+					};
+					break;
+				case ParameterTypes.Flags:
+					control = new ListBox()
+					{
+						DataSource = parameter.Options,
+						SelectedValue = parameter.Value,
+						ValueMember = "Value",
+						DisplayMember = "Display",
+						SelectionMode = SelectionMode.MultiExtended
 					};
 					break;
 				case ParameterTypes.Date:

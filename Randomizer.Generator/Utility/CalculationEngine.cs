@@ -29,7 +29,7 @@ namespace Randomizer.Generator.Utility
 		/// <summary>
 		/// Evaluates the expression
 		/// </summary>
-		public T Evaluate<T>()
+		public T Evaluate<T>(Expression[] parameters)
         {
 			try
 			{
@@ -199,7 +199,7 @@ namespace Randomizer.Generator.Utility
 			ExceptionDispatchInfo edi;
 			try
 			{
-				var definition = DataAccess.DataAccess.Instance.GetDefinition(name);
+				var definition = DataAccess.DataAccess.Instance.GetDefinition(name).Definition;
 				if (parameters != null)
 				{
 					foreach (var parameter in parameters)
@@ -220,7 +220,7 @@ namespace Randomizer.Generator.Utility
 				edi = ExceptionDispatchInfo.Capture(ex);
 				ex.AddData(nameof(name), name);
 			}
-			if (edi != null) edi.Throw();
+			edi?.Throw();
 			return String.Empty;
 		}
 

@@ -11,6 +11,7 @@ namespace Randomizer.Generator.Assignment
     /// Contains a key and list of line items to select from
     /// </summary>
     public class LineItemDictionary : InsensitiveDictionary<LineItemList>
-    {        
+    {
+		public Boolean Contains(String name) => this.Any(i => i.Key.Equals(name, StringComparison.InvariantCultureIgnoreCase));
     }
 }

@@ -4,7 +4,6 @@ using NCalc;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using Randomizer.Generator.Converters;
-using Randomizer.Generator.Exceptions;
 using Randomizer.Generator.Utility;
 using System;
 using System.Collections.Generic;
@@ -13,7 +12,6 @@ using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Runtime.ExceptionServices;
-using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -388,7 +386,17 @@ namespace Randomizer.Generator.Core
 		protected virtual void OnEvaluateParameter(String name, ParameterArgs e)
 		{
 			if (Parameters != null && Parameters.ContainsKey(name))
-				e.Result = Parameters[name].Value;
+			{
+				var parameter = Parameters[name];
+				if (parameter.Type == ParameterTypes.Calculation)
+				{
+					e.Result = new CalculationEngine(parameter.Value).Evaluate();
+				}
+				else
+				{
+					e.Result = Parameters[name].Value;
+				}
+			}
 			else
 				EvaluateParameter(name, e);
 		}

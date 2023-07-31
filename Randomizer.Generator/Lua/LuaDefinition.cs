@@ -91,7 +91,7 @@ namespace Randomizer.Generator.Lua
 		/// <summary>
 		/// Prints a blank line to the Results
 		/// </summary>
-		[LuaGlobal(Name = "printLine", Description = "Appends a blank line to the output")]
+		[LuaMember(Name = "printLine")]
 		public void PrintLine()
 		{
 			Result.AppendLine();
@@ -101,7 +101,7 @@ namespace Randomizer.Generator.Lua
 		/// Prints a line of text to the Results
 		/// </summary>
 		/// <param name="value">The text to print</param>
-		[LuaGlobal(Name = "printLine", Description = "Appends text to the output followed by a new line")]
+		[LuaMember(Name = "printLine")]
 		public void PrintLine(object value)
 		{
 			Result.AppendLine(value.ToString());
@@ -112,7 +112,7 @@ namespace Randomizer.Generator.Lua
 		/// </summary>
 		/// <param name="condition">The condition to evaluate</param>
 		/// <param name="value">The text to print</param>
-		[LuaGlobal(Name = "printLineIf", Description = "Appends text to the output followed by a new line if the condition is true")]
+		[LuaMember(Name = "printLineIf")]
 		public void PrintLineIf(bool condition, object value)
 		{
 			if (condition) PrintLine(value);
@@ -123,7 +123,7 @@ namespace Randomizer.Generator.Lua
 		/// </summary>
 		/// <param name="format">A composite format string</param>
 		/// <param name="values">An array of objects to format</param>
-		[LuaGlobal(Name = "printLineFormat", Description = "Appends formatted text to the output followed by a new line")]
+		[LuaMember(Name = "printLineFormat")]
 		public void PrintLineFormat(string format, params object[] values)
 		{
 			Result.AppendFormat(format, values);
@@ -134,7 +134,7 @@ namespace Randomizer.Generator.Lua
 		/// Prints text to the Results
 		/// </summary>
 		/// <param name="value">The text to print</param>
-		[LuaGlobal(Name = "print", Description = "Appends text to the output")]
+		[LuaMember(Name = "print")]
 		public void Print(object value)
 		{
 			Result.Append(value.ToString());
@@ -145,7 +145,7 @@ namespace Randomizer.Generator.Lua
 		/// </summary>
 		/// <param name="condition">The condition to evaluate</param>
 		/// <param name="value">The text to print</param>
-		[LuaGlobal(Name = "printIf", Description = "Appends text to the output if the condition is true")]
+		[LuaMember(Name = "printIf")]
 		public void PrintIf(bool condition, object value)
 		{
 			if (condition) Print(value);
@@ -156,7 +156,7 @@ namespace Randomizer.Generator.Lua
 		/// </summary>
 		/// <param name="format">A composite format string</param>
 		/// <param name="values">An array of objects to format</param>
-		[LuaGlobal(Name = "printFormat", Description = "Appends formatted text to the output")]
+		[LuaMember(Name = "printFormat")]
 		public void PrintFormat(string format, params object[] values)
 		{
 			Result.AppendFormat(format, values);
@@ -166,7 +166,7 @@ namespace Randomizer.Generator.Lua
 		/// Creates an empty LuaTable
 		/// </summary>
 
-		[LuaGlobal(Name = "createTable", Description = "Creates a table")]
+		[LuaMember(Name = "createTable")]
 		public LuaTable CreateTable()
 		{
 			return (LuaTable)_lua.DoString("return {}")[0];
@@ -176,7 +176,7 @@ namespace Randomizer.Generator.Lua
 		/// Calls the NCalc engine to evaluate the provided expression
 		/// </summary>
 		/// <param name="expression">A string expression to evaluate</param>
-		[LuaGlobal(Name = "calc", Description = "Runs the expression through the NCalc engine.")]
+		[LuaMember(Name = "calc")]
 		public string NCalc(string expression)
 		{
 			return Calculate(expression);
@@ -186,7 +186,7 @@ namespace Randomizer.Generator.Lua
 		/// Returns a non-negative random <see cref="Int32"/>.
 		/// </summary>
 		/// <returns>A non-negative random <see cref="Int32"/>.</returns>
-		[LuaGlobal(Name = "rnd", Description = "Returns a non-negative random integer.")]
+		[LuaMember(Name = "rnd")]
 		public static Int32 GetRandomNumber()
 		{
 			return Utility.Random.RandomNumber();
@@ -197,7 +197,7 @@ namespace Randomizer.Generator.Lua
 		/// </summary>
 		/// <param name="maxValue">The maxiumum <see cref="Int32"/> to be generated</param>
 		/// <returns>A non-negative random <see cref="Int32"/> that is less than the specified maximum.</returns>
-		[LuaGlobal(Name = "rnd", Description = "Returns a non-negative random integer that is less than the specified maximum.")]
+		[LuaMember(Name = "rnd")]
 		public static Int32 GetRandomNumber(int maxValue)
 		{
 			return Utility.Random.RandomNumber(maxValue);
@@ -209,7 +209,7 @@ namespace Randomizer.Generator.Lua
 		/// <param name="minValue">The minimum <see cref="Int32"/> to be generated</param>
 		/// <param name="maxValue">The maximum <see cref="Int32"/> to be generated</param>
 		/// <returns>A random <see cref="Int32"/> that is within a specified range.</returns>
-		[LuaGlobal(Name = "rnd", Description = "Returns a random integer that is within a specified range.")]
+		[LuaMember(Name = "rnd")]
 		public static Int32 GetRandomNumber(int minValue, int maxValue)
 		{
 			return Utility.Random.RandomNumber(minValue, maxValue);
@@ -219,7 +219,7 @@ namespace Randomizer.Generator.Lua
 		/// Selects one item from the provided table
 		/// </summary>
 		/// <param name="table">The table to select from, must have an integer index</param>
-		[LuaGlobal(Name = "selectFromTable", Description = "Selects a single item from the provided table.")]
+		[LuaMember(Name = "selectFromTable")]
 		public static String SelectFromTable(LuaTable table)
 		{
 			var selected = GetRandomNumber(1, table.Keys.Count);

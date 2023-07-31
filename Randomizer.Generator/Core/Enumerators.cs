@@ -58,7 +58,11 @@ namespace Randomizer.Generator.Core
 		/// <summary>A date and/or time</summary>
         Date,
 		/// <summary>A boolean</summary>
-        Boolean
+        Boolean,
+		/// <summary>A list of options that allows multiple selections</summary>
+		Flags,
+		/// <summary>A calculation string</summary>
+		Calculation
     }
 
     /// <summary>

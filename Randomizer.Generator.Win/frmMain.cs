@@ -1,6 +1,7 @@
 using Randomizer.Generator;
 using Randomizer.Generator.Core;
 using Randomizer.Generator.Win.Controls;
+using Randomizer.Generator.Win.Forms;
 
 namespace Randomizer.Generator.Win
 {
@@ -26,10 +27,16 @@ namespace Randomizer.Generator.Win
 		#region Private Methods
 		private void LoadDefinitionList()
 		{
-			_definitions = Program.DataAccess.GetDefinitionList(d => d.ShowInList).ToList();
+			var response = Program.DataAccess.GetDefinitionList(d => d.ShowInList);
+			_definitions = response.Where(r => r.Definition != null).Select(r => r.Definition).ToList()!;
 			lstGenerators.DataSource = _definitions;
 			lstGenerators.DisplayMember = "Name";
 			tagList.LoadTags();
+			if (response.Any(r => r.Exception != null))
+			{
+				var exceptions = new frmExceptions(response.Where(r => r.Exception != null));
+				exceptions.Show(this);
+			}
 		}
 
 		private void FilterDefinitionList()

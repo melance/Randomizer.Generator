@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Westwind.AspNetCore.LiveReload" Version="0.3.7" />
+    <PackageReference Include="Westwind.AspNetCore.LiveReload" Version="0.4.2" />
   </ItemGroup>
 
   <ItemGroup>

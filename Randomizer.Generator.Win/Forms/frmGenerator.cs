@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Randomizer.Generator.Assignment;
 using Randomizer.Generator.Core;
 using Randomizer.Generator.Win.Helpers;
 
@@ -204,8 +205,18 @@ namespace Randomizer.Generator.Win.Forms
 
 		private void btnReload_Click(Object sender, EventArgs e)
 		{
-			_generator = Program.DataAccess.GetDefinition(_generator.Name);
-			BindGenerator();
+			var response = Program.DataAccess.GetDefinition(_generator.Name);
+			if (response.Definition != null)
+			{
+				_generator = response.Definition;
+				BindGenerator();
+			}
+			else
+			{
+				var dialog = new frmExceptions(response);
+				dialog.ShowDialog();
+				Close();
+			}
 		}
 
 		private void btnOpenDialog_Click(Object sender, EventArgs e)

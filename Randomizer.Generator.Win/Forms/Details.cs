@@ -16,15 +16,20 @@ namespace Randomizer.Generator.Win.Forms
 		public Details(String name)
 		{
 			InitializeComponent();
-			var def = DataAccess.DataAccess.Instance.GetDefinition(name);
-			Text = $"{def.Name} - Details";
-			lblName.Text = def.Name;
-			txtPath.Text = ((DataAccess.FileSystemDataAccess)DataAccess.DataAccess.Instance).GetDefinitionPath(name);
-			txtAuthor.Text = def.Author;
-			txtOutputFormat.Text = def.OutputFormat.ToString();
-			txtTags.Text = String.Join(", ", def.Tags.ToArray());
-			txtDescription.Text = !String.IsNullOrEmpty(def.Description) ? def.Description : "No description";
-			lnkURL.Text = def.URL;
+			var response = DataAccess.DataAccess.Instance.GetDefinition(name);
+
+			if (response.Definition != null)
+			{
+
+				Text = $"{response.Definition.Name} - Details";
+				lblName.Text = response.Definition.Name;
+				txtPath.Text = ((DataAccess.FileSystemDataAccess)DataAccess.DataAccess.Instance).GetDefinitionPath(name);
+				txtAuthor.Text = response.Definition.Author;
+				txtOutputFormat.Text = response.Definition.OutputFormat.ToString();
+				txtTags.Text = String.Join(", ", response.Definition.Tags.ToArray());
+				txtDescription.Text = !String.IsNullOrEmpty(response.Definition.Description) ? response.Definition.Description : "No description";
+				lnkURL.Text = response.Definition.URL;
+			}
 		}
 
 		private void btnOk_Click(Object sender, EventArgs e)
