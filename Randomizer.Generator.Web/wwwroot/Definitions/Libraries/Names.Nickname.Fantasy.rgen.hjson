@@ -1,0 +1,189 @@
+Name: Nickname Fantasy Names
+Author: Lance Boudreaux
+Description: A fantasy nickname generator.
+Version: "2.1"
+Tags:
+[
+	Name
+	Fantasy
+]
+OutputFormat: Text
+ShowInList: false
+Parameters:
+{
+}
+LineItems:
+{
+	Start:
+	[
+		{ Weight: "15", Content: "[Descriptor][Prefix][Suffix]" }
+		{ Weight: "85", Content: "[Prefix][Suffix]" }
+	]
+	Descriptor:
+	[
+		{ Content: "Ol'" }
+		{ Content: "Old " }
+		{ Content: "The " }
+		{ Content: "Ye " }
+		{ Content: "Lil " }
+		{ Content: "Little " }
+	]
+	Prefix:
+	[
+		{ Content: "Autumn" }
+		{ Content: "Big" }
+		{ Content: "Black" }
+		{ Content: "Blizzard" }
+		{ Content: "Blood" }
+		{ Content: "Blue" }
+		{ Content: "Bright" }
+		{ Content: "Calm" }
+		{ Content: "Cold" }
+		{ Content: "Dark" }
+		{ Content: "Dead" }
+		{ Content: "Eagle" }
+		{ Content: "Eternal" }
+		{ Content: "Fast" }
+		{ Content: "Fat" }
+		{ Content: "Fire" }
+		{ Content: "Fleet" }
+		{ Content: "Frozen" }
+		
+		{ Content: "Gray" }
+		
+		{ Content: "Hail" }
+		{ Content: "Hard" }
+		{ Content: "Hot" }
+		{ Content: "Iron" }
+		{ Content: "Lightning" }
+		{ Content: "Lion" }
+		{ Content: "Little" }
+		{ Content: "Long" }
+		{ Content: "Lost" }
+		{ Content: "Moon" }
+		{ Content: "Oak" }
+		{ Content: "Oaken" }
+		{ Content: "Odd" }
+		{ Content: "Pebble" }
+		
+		{ Content: "Running" }
+		{ Content: "Sand" }
+		{ Content: "Screaming" }
+		{ Content: "Short" }
+		{ Content: "Silent" }
+		
+		{ Content: "Smooth" }
+		{ Content: "Snow" }
+		{ Content: "Soft" }
+		{ Content: "Spring" }
+		{ Content: "Steel" }
+		{ Content: "Stone" }
+		{ Content: "Storm" }
+		{ Content: "Strong" }
+		{ Content: "Stump" }
+		{ Content: "Summer" }
+		{ Content: "Sun" }
+		{ Content: "Swamp" }
+		{ Content: "Tall" }
+		{ Content: "Tender" }
+		{ Content: "Thunder" }
+		{ Content: "Tiger" }
+		{ Content: "Torch" }
+		
+		{ Content: "War" }
+		{ Content: "Willow" }
+		{ Content: "Winter" }
+		{ Content: "[=Generate('Colors','Swatch=ColorSwatchAll')]" }
+	]
+	Suffix:
+	[
+		{ Content: "arcana" }
+		{ Content: "arrow" }
+		{ Content: "axe" }
+		{ Content: "back" }
+		{ Content: "bear" }
+		{ Content: "beard" }
+		{ Content: "bird" }
+		{ Content: "blade" }
+		{ Content: "body" }
+		{ Content: "bone" }
+		{ Content: "bringer" }
+		{ Content: "cave" }
+		{ Content: "cleaver" }
+		{ Content: "cock" }
+		{ Content: "day" }
+		{ Content: "dog" }
+		{ Content: "dragon" }
+		{ Content: "dream" }
+		{ Content: "earth" }
+		{ Content: "eye" }
+		{ Content: "face" }
+		{ Content: "feet" }
+		{ Content: "finger" }
+		{ Content: "fire" }
+		{ Content: "fist" }
+		{ Content: "foot" }
+		{ Content: "forge" }
+		{ Content: "forest" }
+		{ Content: "hammer" }
+		{ Content: "hand" }
+		{ Content: "hawk" }
+		{ Content: "head" }
+		{ Content: "heart" }
+		{ Content: "hill" }
+		{ Content: "horn" }
+		{ Content: "horse" }
+		{ Content: "hymn" }
+		{ Content: "killer" }
+		{ Content: "kiss" }
+		{ Content: "knot" }
+		{ Content: "leg" }
+		{ Content: "light" }
+		{ Content: "lock" }
+		{ Content: "magic" }
+		{ Content: "mine" }
+		{ Content: "mountain" }
+		{ Content: "mouth" }
+		{ Content: "night" }
+		{ Content: "pen" }
+		{ Content: "quiver" }
+		{ Content: "rabbit" }
+		{ Content: "rain" }
+		{ Content: "ram" }
+		{ Content: "rat" }
+		{ Content: "river" }
+		{ Content: "rock" }
+		{ Content: "rose" }
+		{ Content: "scroll" }
+		{ Content: "sea" }
+		{ Content: "shine" }
+		{ Content: "shoulder" }
+		{ Content: "sight" }
+		{ Content: "skies" }
+		{ Content: "snake" }
+		{ Content: "song" }
+		{ Content: "soul" }
+		{ Content: "smoke" }
+		{ Content: "spirit" }
+		{ Content: "staff" }
+		{ Content: "stone" }
+		{ Content: "sword" }
+		{ Content: "tail" }
+		{ Content: "tongue" }
+		{ Content: "touch" }
+		{ Content: "tree" }
+		{ Content: "trunk" }
+		{ Content: "voice" }
+		{ Content: "wall" }
+		{ Content: "warrior" }
+		{ Content: "watch" }
+		{ Content: "water" }
+		{ Content: "way" }
+		{ Content: "will" }
+		{ Content: "wind" }
+		{ Content: "wine" }
+		{ Content: "wolf" }
+		{ Content: "wood" }
+	]
+}
+GeneratorType: Assignment

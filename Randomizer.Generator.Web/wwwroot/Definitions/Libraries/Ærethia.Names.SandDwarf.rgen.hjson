@@ -1,0 +1,146 @@
+{
+	Name: Sand Dwarf Name
+	/* Hebrew */
+	Version: "2.0"
+	OutputFormat: Text
+    ShowInList: false
+	Parameters:
+	{
+	}
+	LineItems:
+	{
+		Start:
+		[
+			{ Content: "[GivenNamePrefix][GivenNameSuffix] [FamilyNamePrefix][FamilyNameSuffix]" }
+		]
+
+		GivenNamePrefix:
+		[
+			{ Content: "Ad" }
+            { Content: "Ag" }
+            { Content: "Ah" }
+            { Content: "Al" }
+            { Content: "Am" }
+            { Content: "An" }
+            { Content: "At" }
+            { Content: "Av" }
+            { Content: "Ay" }
+            { Content: "Ed" }
+            { Content: "Ef" }
+            { Content: "El" }
+            { Content: "Em" }
+            { Content: "Es" }
+            { Content: "Il" }
+            { Content: "In" }
+            { Content: "Ir" }
+            { Content: "Od" }
+            { Content: "Of" }
+            { Content: "Om" }
+            { Content: "Oph" }
+            { Content: "Or" }
+            { Content: "Osh" }
+            { Content: "Ur" }
+            { Content: "Ya" }
+            { Content: "Yo" }
+		]
+
+		GivenNameSuffix:
+		[
+            { Content: "ah" }
+            { Content: "afe" }
+            { Content: "ala" }
+            { Content: "am" }
+            { Content: "ana" }
+            { Content: "anit" }
+            { Content: "ara" }	
+            { Content: "at" }
+            { Content: "ava" }	
+            { Content: "bar" }	
+            { Content: "chna" }
+            { Content: "elia" }
+            { Content: "er" }
+            { Content: "ina" }
+            { Content: "ir[=Pick('','a')]" }
+            { Content: "ira" }
+            { Content: "it" }
+            { Content: "iva" }
+            { Content: "iya" }
+            { Content: "ly" }
+            { Content: "na" }
+            { Content: "nina" }
+            { Content: "nit" }
+            { Content: "rat" }
+            { Content: "red" }
+            { Content: "schin" }
+            { Content: "uva" }
+            { Content: "va" }
+		]
+
+        FamilyNamePrefix:
+        [
+            { Content: "Ba" } 
+            { Content: "Be" }   
+            { Content: "Bo" } 
+            { Content: "Cha" }  
+            { Content: "Che" }
+            { Content: "Da" }
+            { Content: "De" }
+            { Content: "Di" }
+            { Content: "Do" }
+            { Content: "Dvo" }
+            { Content: "Ga" }
+            { Content: "Ge" }
+            { Content: "Ha" }
+            { Content: "He" }
+            { Content: "Hi" }
+            { Content: "Ke" }
+            { Content: "Ki" }
+            { Content: "Le" }
+            { Content: "Li" }
+            { Content: "Me" }
+            { Content: "Mi" }
+            { Content: "Na" }
+            { Content: "Ne" }
+            { Content: "Ny" }
+            { Content: "Ra" }
+            { Content: "Re" }
+            { Content: "Sa" }
+            { Content: "Se" }
+            { Content: "So" }
+            { Content: "Te" }
+            { Content: "Ti" }
+        ]
+
+        FamilyNameSuffix:
+        [
+            { Content: "an" }
+            { Content: "asah" }
+            { Content: "dar" }
+            { Content: "dasha" }
+            { Content: "fen" }
+            { Content: "fna" } 
+            { Content: "kia" }           
+            { Content: "lia" }
+            { Content: "lit" }
+            { Content: "nah" }
+            { Content: "nerat" }
+            { Content: "or" }
+            { Content: "racha" }
+            { Content: "ren" }
+            { Content: "rit" }
+            { Content: "rort" }
+            { Content: "sed" }
+            { Content: "she" }        
+            { Content: "sia" }
+            { Content: "smat" }
+            { Content: "sya" }
+            { Content: "tel" }
+            { Content: "tya" }
+            { Content: "va" }
+            { Content: "vana" }
+            { Content: "vor" }
+        ]
+
+	}
+	GeneratorType: Assignment
+}

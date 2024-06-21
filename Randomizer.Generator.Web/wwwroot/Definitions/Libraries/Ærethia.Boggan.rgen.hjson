@@ -1,0 +1,139 @@
+{
+	Name: Boggan Name
+	/* Ethiopian */
+	Version: "2.0"
+	OutputFormat: Text
+    ShowInList: false
+	Parameters:
+	{
+	}
+	LineItems:
+	{
+		Start:
+		[
+			{ Content: "[GivenName]" }
+		]
+        		
+		GivenName:
+		[
+            { Content: "[GN1][GN2]" }			
+		]
+        
+		GN1:
+		[
+            { Content: "Ab" }            
+            { Content: "Abeb" }
+            { Content: "Add" }
+            { Content: "Afew" }
+            { Content: "Ajan" }
+            { Content: "Akl" }
+            { Content: "Alim" }
+            { Content: "Alit" }
+            { Content: "Amh" }
+            { Content: "Anb" }
+            { Content: "Ay" }
+            { Content: "Belk" }
+            { Content: "Bemn" }
+            { Content: "Bir" }
+            { Content: "Cher" }
+            { Content: "Dej" }
+            { Content: "Des" }
+            { Content: "Dink" }
+            { Content: "Esk" }
+            { Content: "Eten" }
+            { Content: "Fikr" }
+            { Content: "Geb" }
+            { Content: "Gel" }
+            { Content: "Genz" }
+            { Content: "Hab" }
+            { Content: "Hail" }
+            { Content: "Ham" }
+            { Content: "Haw" }
+            { Content: "Hir" }
+            { Content: "In" }
+            { Content: "Isay" }
+            { Content: "Jahz" }
+            { Content: "Jemb" }
+            { Content: "Kass" }
+            { Content: "Keb" }
+            { Content: "Kefy" }
+            { Content: "Kel" }
+            { Content: "Ker" }
+            { Content: "Kid" }
+            { Content: "Kok" }
+            { Content: "Lam" }
+            { Content: "Lish" }
+            { Content: "Lul" }
+            { Content: "Mahl" }
+            { Content: "Mak" }
+            { Content: "Mar" }
+            { Content: "Mar" }
+            { Content: "Maram" }
+            { Content: "Men" }
+            { Content: "Mesf" }
+            { Content: "Mesk" }
+            { Content: "Mihr" }
+            { Content: "Nah" }
+            { Content: "Neb" }
+            { Content: "Neb" }
+            { Content: "Neg" }
+            { Content: "Neg" }
+            { Content: "Nes" }
+            { Content: "Nets" }
+            { Content: "Rahw" }
+            { Content: "Rebk" }
+            { Content: "Samr" }
+            { Content: "Seb" }
+            { Content: "Sel" }
+            { Content: "Sel" }
+            { Content: "Shew" }
+            { Content: "Tad" }
+            { Content: "Taf" }
+            { Content: "Tamr" }
+            { Content: "Til" }
+            { Content: "Tirun" }
+            { Content: "Tiz" }
+            { Content: "Tseg" }
+            { Content: "Tseh" }
+            { Content: "Workn" }
+            { Content: "Yaf" }
+            { Content: "Yesh" }
+            { Content: "Yidn" }
+            { Content: "Zel" }
+            { Content: "Zewd" }
+            { Content: "Zuf" }
+		]
+
+		GN2:
+		[            
+            { Content: "ahun" }
+            { Content: "ai" }   
+            { Content: "alew" } 
+            { Content: "am" }
+            { Content: "an[=Pick('','a','et','g')]" }
+            { Content: "ar[=Pick('a','i')]" }
+            { Content: "as[=Pick('h','sa','si','sie')]" }
+            { Content: "at" } 
+            { Content: "awit" }
+            { Content: "ay[=Pick('','e','u')]" }
+            { Content: "ebe" }
+            { Content: "ede" }
+            { Content: "eh" }
+            { Content: "ekach" }
+            { Content: "el[=Pick('e','ik','mal')]" }
+            { Content: "em[=Pick('ariam','i')]" }
+            { Content: "en[=Pick('','der','et')]" }
+            { Content: "er[=Pick('','em','u')]" }
+            { Content: "es[=Pick('se','sh','sha')]" }
+            { Content: "et" }  
+            { Content: "ome" }
+            { Content: "onnen" }
+            { Content: "ork" }
+            { Content: "i[=Pick('','am','ki','la','lu','n','nesh','s','su','ta','ya')]" }
+            { Content: "ta" }
+            { Content: "u[=Pick('ha','k','s','t')]" }
+            { Content: "ye" }
+		]
+	}
+	GeneratorType: Assignment
+}

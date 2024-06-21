@@ -16,7 +16,7 @@ namespace Randomizer.Generator.Win.Controls
 		[Browsable(true)]
 		[Category("Action")]
 		public event EventHandler DialogOpened;
-		
+
 		[Browsable(true)]
 		[Category("Action")]
 		public new event EventHandler TextChanged;
@@ -29,10 +29,10 @@ namespace Randomizer.Generator.Win.Controls
 			set => txtFilePath.ReadOnly = !value;
 		}
 
-		public Boolean CheckFileExists 
-		{ 
-			get => dlgOpenFile.CheckFileExists; 
-			set => dlgOpenFile.CheckFileExists = value; 
+		public Boolean CheckFileExists
+		{
+			get => dlgOpenFile.CheckFileExists;
+			set => dlgOpenFile.CheckFileExists = value;
 		}
 
 		public String DefaultExtension
@@ -92,7 +92,7 @@ namespace Randomizer.Generator.Win.Controls
 			{
 				FileName = dlgOpenFile.FileName;
 			}
-		} 
+		}
 
 		private void txtFilePath_TextChanged(Object sender, EventArgs e)
 		{

@@ -38,6 +38,7 @@ namespace Randomizer.Generator.Core
         Text,
 		/// <summary>The generator will output text in HTML format</summary>
         Html,
+		Markdown,
 		Image
     }
 

@@ -1,0 +1,114 @@
+{
+	Name: Sapien Name
+	/* Old Germanic */
+	Version: "2.0"
+	OutputFormat: Text
+    ShowInList: false
+	Parameters:
+	{
+	}
+	LineItems:
+	{
+		Start:
+		[
+			{ Content: "[GivenName]" }
+		]
+        		
+		GivenName:
+		[
+            { Content: "[GN1][GN2]" }			
+		]
+        
+		GN1:
+		[
+            { Content: "Adal" }
+            { Content: "Ael" }            
+            { Content: "Ag" }
+            { Content: "Alo" }
+            { Content: "Amal" }
+            { Content: "Bad" }
+            { Content: "Bald" }
+            { Content: "Belt" }
+            { Content: "Brahn" }
+            { Content: "Burk" }
+            { Content: "Car" }
+            { Content: "Cead" }
+            { Content: "Ceol" }
+            { Content: "Cerd" }
+            { Content: "Chiod" }
+            { Content: "Cul" }
+            { Content: "Cyn" }
+            { Content: "Dag" }
+            { Content: "Dud" }
+            { Content: "Ead" }
+            { Content: "Eld" }
+            { Content: "Elg" }
+            { Content: "Ein" }
+            { Content: "Ermen" }
+            { Content: "Far" }
+            { Content: "Folk" }
+            { Content: "Frid" }
+            { Content: "Gail" }
+            { Content: "Greb" }
+            { Content: "Hard" }
+            { Content: "Hearg" }
+            { Content: "Hilg" }
+            { Content: "Holn" }
+            { Content: "Hrob" }
+            { Content: "Ing" }
+            { Content: "Kalf" }
+            { Content: "Ket" }
+            { Content: "Leo" }
+            { Content: "Lund" }
+            { Content: "Lut" }
+            { Content: "Mane" }
+            { Content: "Megin" }
+            { Content: "Odal" }
+            { Content: "Odur" }
+            { Content: "Ot" }
+            { Content: "Pep" }
+            { Content: "Rad" }
+            { Content: "Rag" }
+            { Content: "Rhem" }
+            { Content: "Sax" }
+            { Content: "Sig" }
+            { Content: "Sum" }
+            { Content: "Svan" }
+            { Content: "Theod" }
+            { Content: "Tred" }
+            { Content: "Vald" }
+            { Content: "Vegar" }
+            { Content: "Vik" }
+            { Content: "Walah" }
+            { Content: "War" }
+            { Content: "Wid" }
+            { Content: "Wulph" }
+		]
+
+		GN2:
+		[ 
+            { Content: "berh" }           
+            { Content: "bert" }
+            { Content: "drud" }
+            { Content: "faru" }
+            { Content: "frisc" }
+            { Content: "gard" }
+            { Content: "gifu" }
+            { Content: "gund" }
+            { Content: "haid" }
+            { Content: "heid" }
+            { Content: "heidis" }            
+            { Content: "ilha" }
+            { Content: "inda" }
+            { Content: "indis" }
+            { Content: "mahn" }
+            { Content: "ri" }
+            { Content: "swip" }
+            { Content: "ulf" }
+            { Content: "ust" }
+            { Content: "win" }
+            { Content: "wor" }
+		]
+	}
+	GeneratorType: Assignment
+}

@@ -32,8 +32,8 @@ namespace Randomizer.Generator.Win.Forms
 
 		private void selGenerator_TextChanged(Object sender, EventArgs e)
 		{
-			if (String.IsNullOrWhiteSpace(selDefinition.Text))
-				selDefinition.Text = Path.Combine(Program.GeneratorDirectory, Path.ChangeExtension(Path.GetFileName(selGenerator.Text), "rgen.hjson"));
+			//if (String.IsNullOrWhiteSpace(selDefinition.Text))
+				//selDefinition.Text = Path.Combine(Program.GeneratorDirectory, Path.ChangeExtension(Path.GetFileName(selGenerator.Text), "rgen.hjson"));
 		}
 	}
 }

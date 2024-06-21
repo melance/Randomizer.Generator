@@ -1,0 +1,192 @@
+Name: Life
+Author: Lance Boudreaux
+Description: A collection of mundane flora and fauna
+Version: "2.0"
+OutputFormat: Text
+ShowInList: True
+Parameters:
+{
+	Detail:
+	{
+		Value: Species
+		Display: Detail	  
+		Type: List
+		Options:
+		[
+			Domain:Domain
+			Kingdom:Kingdom
+			Phylum:Phylum
+			Class:Class
+			Order:Order
+			Family:Family
+			Genus:Genus
+			Species:Species
+		]
+	}
+	SciName:
+	{
+		Value: false
+		Display: Include Scientific Name
+		Type: Boolean
+	}
+}
+LineItems:
+{
+	Start:
+	[
+		{ Content: "[Life]" }
+	]
+
+	Life:
+	[
+		{ Content: "[=if(Detail='Domain', 'Eukarya', [Life.Eukarya])]" }
+		//{ Content: "[=if(Detail<=1,'flora', [Life.Flora])]" }
+		//{ Content: "[=if(Detail<=1,'flora', [Life.Fauna])]" }
+	]
+		
+	// region Domain Eukarya
+	"Life.Eukarya":
+	[
+		{ Content: "[=if(Detail='Kingdom', 'plants' + iif(SciName, ' (Eukarya.Plantae)'), [Life.Eukarya.Plantae])]" }
+	]
+			
+	// region Kingdom Plantae
+	"Life.Eukarya.Plantae":
+	[
+		{ Content: "[=if(Detail='Phylum', 'vascular plants' + iif(SciName, ' (Eukarya.Plantae.Tracheophyta)'), [Life.Eukarya.Plantae.Tracheophyta])]" }
+	]
+	
+	// region Division Tracheophyta
+	"Life.Eukarya.Plantae.Tracheophyta":
+	[
+		{ Content: "[=if(Detail='Class', 'seed plants' + iif(SciName, ' (Eukarya.Plantae.Tracheophyta.Spermatophytes)'), [Life.Eukarya.Plantae.Tracheophyta.Spermatophytes])]" }
+	]
+	
+	// region Class Spermatophytes
+	"Life.Eukarya.Plantae.Tracheophyta.Spermatophytes":
+	[
+		{ Content: "[=if(Detail='Order', 'holly' + iif(SciName, ' (Eukarya.Plantae.Tracheophyta.Spermatophytes.Aquifoliales)'), [Life.Eukarya.Plantae.Tracheophyta.Spermatophytes.Aquifoliales])]" }
+	]
+	
+	// region Order Aquifoliales
+	"Life.Eukarya.Plantae.Tracheophyta.Spermatophytes.Aquifoliales":
+	[
+		{ Content: "[=if(Detail='Family', 'holly' + iif(SciName, ' (Eukarya.Plantae.Tracheophyta.Spermatophytes.Aquifoliales.Aquifoliaceae)'), [Life.Eukarya.Plantae.Tracheophyta.Spermatophytes.Aquifoliales.Aquifoliaceae])]" }
+	]
+	
+	// region Family Aquifoliaceae
+	"Life.Eukarya.Plantae.Tracheophyta.Spermatophytes.Aquifoliales.Aquifoliaceae":
+	[
+		{ Content: "[=if(Detail='Genus', 'holly' + iif(SciName, ' (Life.Eukarya.Plantae.Tracheophyta.Spermatophytes.Aquifoliales.Aquifoliaceae.Ilex)'), [Life.Eukarya.Plantae.Tracheophyta.Spermatophytes.Aquifoliales.Aquifoliaceae.Ilex])]" }
+	]
+	
+	// region Genus Ilex
+	"Life.Eukarya.Plantae.Tracheophyta.Spermatophytes.Aquifoliales.Aquifoliaceae.Ilex":
+	[	
+		{ Content: "[=Pick('','common ', 'English ', 'European ', 'Christmas ')] holly[=iif(SciName, ' (Ilex aquifolium)')]" }
+		{ Content: "American holly[=iif(SciName, ' (Ilex opaca)')]" }
+		{ Content: "[=Pick('Appalachian tea','evergeen winterberry','Canadian winterberry','gallberry','inkberry','dye-leaves','houx gablre')][=iif(SciName, ' (Ilex glabra)')]" }
+		{ Content: "Chinese holly[=iif(SciName, ' (Ilex cornuta)')]" }
+		{ Content: "dahoon holly[=iif(SciName, ' (Ilex cassine)')]" }
+		{ Content: "finetooth holly[=iif(SciName, ' (Ilex serrata)')]" }
+		{ Content: "[=Pick('Hawaii holly','kawau')][=iif(SciName, ' (Ilex anomala)')]" }
+		{ Content: "[=Pick('Japanese', 'box-leaved')] holly[=iif(SciName, ' (Ilex crenata)')]" }
+		{ Content: "Kurogane holly[=iif(SciName, ' (Ilex rotunda)')]" }
+		{ Content: "longstalk holly[=iif(SciName, ' (Ilex pedunculosa)')]" }
+		{ Content: "lusterleaf holly[=iif(SciName, ' (Ilex latifolia)')]" }
+		{ Content: "[=Pick('catberry','mountain holly')][=iif(SciName, ' (Ilex mucronata)')]" }
+		{ Content: "winterberry[=iif(SciName, ' (Ilex verticillata)')]" }
+		{ Content: "yaupon holly[=iif(SciName, ' (Ilex vomitoria)')]" }
+		{ Content: "yerba mate[=iif(SciName, ' (Ilex paraguariensis)')]" }
+		{ Content: "myrtle-leaved holly[=iif(SciName, ' (Ilex myrtifolia)')]" }
+		{ Content: "small-leaved holly[=iif(SciName, ' (Ilex canariensis)')]" }
+		{ Content: "possumhaw[=iif(SciName, ' (Ilex decidua)')]" }
+		{ Content: "Cuthbert's holly[=iif(SciName, ' (Ilex cuthbertii)')]" }
+		{ Content: "[=Pick('evergreen oak','holly oak','holm oak')][=iif(SciName, ' (Ilex pedunculosa)')]" }
+		{ Content: "[=Pick('mountain winterberry','largeleaf holly')][=iif(SciName, ' (Ilex montana)')]" }
+	]
+	
+	// endregion Ilex
+	// endregion Aquifoliaceae
+	// endregion Aquifoliales	
+	// endregion Spermatophytes
+	// endregion Tracheophyta
+	
+	// region Order Eudicots
+	"Life.Eukarya.Plantae.Tracheophyta.Angiosperms.Eudicots":
+	[
+		{ Content: "[Life.Eukarya.Plantae.Tracheophyta.Angiosperms.Eudicots.Asterids]" }
+		{ Content: "[Life.Eukarya.Plantae.Tracheophyta.Angiosperms.Eudicots.Rosids]" }
+	]
+	
+	// region Family Asterids
+	"Life.Eukarya.Plantae.Tracheophyta.Angiosperms.Eudicots.Asterids":
+	[
+		{ Content: "[Life.Eukarya.Plantae.Tracheophyta.Angiosperms.Eudicots.Asterids.Asterales]" }
+	]
+	
+	// region Genus Asterales
+	"Life.Eukarya.Plantae.Tracheophyta.Angiosperms.Eudicots.Asterids.Asterales":
+	[
+		{ Content: "[Life.Eukarya.Plantae.Tracheophyta.Angiosperms.Eudicots.Asterids.Asterales.Asteraceae]" }
+	]
+	
+	"Life.Eukarya.Plantae.Tracheophyta.Angiosperms.Eudicots.Asterids.Asterales.Asteraceae":
+	[
+		{ Content: "[Life.Eukarya.Plantae.Tracheophyta.Angiosperms.Eudicots.Asterids.Asterales.Asteraceae.Pentzia]" }
+	]
+	
+	"Life.Eukarya.Plantae.Tracheophyta.Angiosperms.Eudicots.Asterids.Asterales.Asteraceae.Pentzia":
+	[
+		{ Content: "african sheepbush[=if(SciName, ' (Pentzia incana)', '')]" }
+	]
+	// endregion Asterales
+	// endregion Asterids
+	// endregion Eudicots
+	
+	
+	// endregion Asterids
+	
+	// region Rosids
+	"Life.Eukarya.Plantae.Tracheophyta.Angiosperms.Eudicots.Rosids":
+	[
+		{ Content: "[Life.Eukarya.Plantae.Tracheophyta.Angiosperms.Eudicots.Rosids.Fagales]" }
+	]
+	
+	"Life.Eukarya.Plantae.Tracheophyta.Angiosperms.Eudicots.Rosids.Fagales":
+	[
+		{ Content: "[Life.Eukarya.Plantae.Tracheophyta.Angiosperms.Eudicots.Rosids.Fagales.Batulaceae]" }
+	]
+	
+	"Life.Eukarya.Plantae.Tracheophyta.Angiosperms.Eudicots.Rosids.Fagales.Batulaceae":
+	[
+		{ Content: "[Life.Eukarya.Plantae.Tracheophyta.Angiosperms.Eudicots.Rosids.Fagales.Batulaceae.Alnus]" }
+	]
+	
+	"Life.Eukarya.Plantae.Tracheophyta.Angiosperms.Eudicots.Rosids.Fagales.Batulaceae.Alnus":
+	[
+		{ Content: "Arizona alder[=if(SciName, ' (Alnus oblongifolia)', '')]" }
+		{ Content: "[=pick('black','common','European','European black','just')] alder[=if(SciName, ' (Alnus glutinosa)', '')]" }
+		{ Content: "[=pick('gray','tag','speckled')] alder[=if(SciName, ' (Alnus incana)', '')]" }
+		{ Content: "Iberian alder[=if(SciName, ' (Alnus lusitanica)', '')]" }
+		{ Content: "Italian alder[=if(SciName, ' (Alnus cordata)', '')]" }
+		{ Content: "Japanese alder[=if(SciName, ' (Alnus japonica)', '')]" }
+		{ Content: "Japanese green alder[=if(SciName, ' (Alnus firma)', '')]" }
+		{ Content: "longpipe alder[=if(SciName, ' (Alnus cremastogyne)', '')]" }
+		{ Content: "matsumurae alder[=if(SciName, ' (Alnus matsumurae)', '')]" }
+		{ Content: "Mexican alder[=if(SciName, ' (Alnus jorullensis)', '')]" }
+		{ Content: "Oriental alder[=if(SciName, ' (Alnus orientalis)', '')]" }
+		{ Content: "red alder[=if(SciName, ' (Alnus rubra)', '')]" }
+		{ Content: "rohlenae alder[=if(SciName, ' (Alnus rohlenae)', '')]" }
+		{ Content: "[=pick('utis','Nepalese alder')][=if(SciName, ' (Alnus nepalensis)', '')]" }
+		{ Content: "white alder[=if(SciName, ' (Alnus rhombifolia)', '')]" }
+		
+	]
+	// endregion Rosids
+	// endregion Eudicots
+	// endregion Angiosperms	
+	// endregion Plantae
+	// endregion Eukarya
+	
+}  
+GeneratorType: Assignment

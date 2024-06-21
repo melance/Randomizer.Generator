@@ -144,6 +144,9 @@ namespace Randomizer.Generator.Win.Forms
 							case OutputFormats.Html:
 								result += $"{current}{(i < repeat ? "<hr />" : String.Empty)}";
 								break;
+							case OutputFormats.Markdown:
+								result += $"{current}{(i < repeat ? "\n\n----\n\n" : String.Empty)}";
+								break;
 							case OutputFormats.Image:
 								result += $"<img src=\"data: image/png;base64, {current}\" />{(i < repeat ? "<hr />" : String.Empty)}";
 								break;
@@ -153,6 +156,9 @@ namespace Randomizer.Generator.Win.Forms
 					{
 						case OutputFormats.Text:
 							webBrowser.DocumentText = $"<pre>{result}</pre>";
+							break;
+						case OutputFormats.Markdown:
+							webBrowser.DocumentText = result.ToHTML();
 							break;
 						case OutputFormats.Html:
 						case OutputFormats.Image:

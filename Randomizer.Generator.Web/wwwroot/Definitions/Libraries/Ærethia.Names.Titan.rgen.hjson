@@ -1,0 +1,137 @@
+{
+	Name: Titan Name
+	/* Scottish Gaelic & Old English Geographical Words */
+	Version: "2.0"
+	OutputFormat: Text
+    ShowInList: false
+	Parameters:
+	{
+	}
+	LineItems:
+	{
+		Start:
+		[
+			{ Content: "[GivenName] [FamilyName]" }
+		]
+        		
+		GivenName:
+		[
+            { Content: "[GN1][GN2]" }			
+		]
+        
+		GN1:
+		[
+            { Content: "Ail" }
+            { Content: "Aim" }
+            { Content: "Aing" }
+            { Content: "Anab" }
+            { Content: "Aif" }
+            { Content: "Bar" }
+            { Content: "Bear" }
+            { Content: "Beas" }
+            { Content: "Beil" }
+            { Content: "Beit" }
+            { Content: "Brigh" }
+            { Content: "Buaid" }
+            { Content: "Cair" }
+            { Content: "Cait" }
+            { Content: "Calam" }
+            { Content: "Catr" }
+            { Content: "Cean" }
+            { Content: "Cior" }
+            { Content: "Deor" }
+            { Content: "Dior" }
+            { Content: "Doil" }
+            { Content: "Elr" }
+            { Content: "Eith" }
+            { Content: "Eub" }
+            { Content: "Fion" }
+            { Content: "Floir" }
+            { Content: "Frang" }
+            { Content: "Giors" }
+            { Content: "Gorm" }
+            { Content: "Lab" }
+            { Content: "Leag" }
+            { Content: "Li" }
+            { Content: "Lucr" }
+            { Content: "Lios" }
+            { Content: "Maig" }
+            { Content: "Mair" }
+            { Content: "Malam" }
+            { Content: "Mars" }
+            { Content: "Mart" }
+            { Content: "Moir" }
+            { Content: "Mail" }
+            { Content: "Olib" }
+            { Content: "Peig" }
+            { Content: "Rag" }
+            { Content: "Raon" }
+            { Content: "Reig" }
+            { Content: "Seas" }
+            { Content: "Seon" }
+            { Content: "Sin" }
+            { Content: "Siub" }
+            { Content: "Sorch" }            
+            { Content: "Tear" }
+		]
+
+		GN2:
+		[
+            { Content: "abal" }
+            { Content: "ag" }
+            { Content: "agail" }            
+            { Content: "ail" }
+            { Content: "ais" }
+            { Content: "all" }
+            { Content: "each" }
+            { Content: "eag" }
+            { Content: "ealog" }
+            { Content: "il" }
+            { Content: "inag" }
+            { Content: "ios" }
+            { Content: "ir" }
+            { Content: "iris" }
+            { Content: "is" }
+            { Content: "istiona" }
+            { Content: "la" }
+            { Content: "lag" }
+            { Content: "lin" }
+            { Content: "nas" }
+            { Content: "rion" }
+            { Content: "ris" }
+		]
+
+        FamilyName:
+        [
+            { Content: "[FN1][FN2]" }
+        ]
+
+        FN1:
+        [           
+            { Content: "B'" } /* Of */
+            { Content: "F'" } /* From */
+            { Content: "G'" } /* Like */
+            { Content: "O'" } /* Against */
+        ]
+
+        FN2:
+        [            
+            { Content: "Beorg" } /* Mountain */
+            { Content: "[=Pick('Broc','Burne')]" } /* Brook */
+            { Content: "[=Pick('Dael','Denu')]" } /* Valley */
+            { Content: "[=Pick('Dun','Hyll')]" } /* Hill */
+            { Content: "Ea" } /* River */
+            { Content: "Fenn" } /* Swamp */
+            { Content: "Grund" } /* Earth/Ground */
+            { Content: "Holt" } /* Forest */
+            { Content: "Lacu" } /* Pond */
+            { Content: "Lond" } /* Land */
+            { Content: "Mearc" } /* Boundry */
+            { Content: "Mere" } /* Lake or Sea */
+            { Content: "Orad" } /* Toward the Mouth */
+            { Content: "Weald" } /* Forest */
+        ]
+
+	}
+	GeneratorType: Assignment
+}

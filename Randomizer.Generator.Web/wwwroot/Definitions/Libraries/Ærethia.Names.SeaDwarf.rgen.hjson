@@ -1,0 +1,143 @@
+{
+	Name: Sea Dwarf Name
+	/* Scandinavian */
+	Version: "2.0"
+	OutputFormat: Text
+    ShowInList: false
+	Parameters:
+	{
+	}
+	LineItems:
+	{
+		Start:
+		[
+			{ Content: "[GivenNamePrefix][GivenNameSuffix]" }
+		]
+
+		GivenNamePrefix:
+		[
+            { Content: "Aeg" }	
+            { Content: "Ag" }	
+            { Content: "Ail" }	
+            { Content: "Alv" }
+            { Content: "Amun" }
+            { Content: "Arn" }
+            { Content: "Ast" }
+            { Content: "Bra" }
+            { Content: "Bry" }
+            { Content: "Can" }
+            { Content: "Car" }
+            { Content: "Dag" }
+            { Content: "Die" }
+            { Content: "Don" }
+            { Content: "Dy" }
+            { Content: "Eb" }
+            { Content: "Edv" }
+            { Content: "Ein" }
+            { Content: "El" }
+            { Content: "Eng" }
+            { Content: "Er" }
+            { Content: "Esp" }
+            { Content: "Fil" }
+            { Content: "Fre" }
+            { Content: "Ga" }
+            { Content: "Gef" }
+            { Content: "Ger" }
+            { Content: "Git" }
+            { Content: "Gun" }
+            { Content: "Hal" }
+            { Content: "He" }
+            { Content: "Ido" }
+            { Content: "Lim" }
+            { Content: "Ing" }
+            { Content: "Iv" }
+            { Content: "Jaa" }
+            { Content: "Jen" }
+            { Content: "Joh" }
+            { Content: "Kai" }
+            { Content: "Kaj" }
+            { Content: "Kat" }
+            { Content: "Ki" }
+            { Content: "Kris" }
+            { Content: "Lar" }
+            { Content: "Lei" }
+            { Content: "Lin" }
+            { Content: "Lo" }
+            { Content: "Mad" }
+            { Content: "Mag" }
+            { Content: "Maj" }
+            { Content: "Mar" }
+            { Content: "Met" }
+            { Content: "Nan" }
+            { Content: "Od" }
+            { Content: "Ola" }
+            { Content: "Odi" }            
+            { Content: "Ot" }
+            { Content: "Rag" }
+            { Content: "Ran" }
+            { Content: "Ras" }
+            { Content: "Run" }
+            { Content: "Sa" }
+            { Content: "Sig" }
+            { Content: "Si[=Pick('s','x')]" }
+            { Content: "Spu" }
+            { Content: "Tho" }
+            { Content: "Tor" }
+            { Content: "Tov" }
+            { Content: "Tyr" }
+            { Content: "Urs" }
+            { Content: "Val" }
+            { Content: "Vid" }
+            { Content: "Yiv" }            
+            { Content: "Yor" }
+		]
+
+		GivenNameSuffix:
+		[
+            { Content: "ar[=Pick('','d')]" }
+            { Content: "bior" }
+            { Content: "da" }
+            { Content: "den" }
+            { Content: "deric" }
+            { Content: "dix" }
+            { Content: "dride" }
+            { Content: "gan" }
+            { Content: "gen" }
+            { Content: "ha" }
+            { Content: "ice" }
+            { Content: "ik" }
+            { Content: "ir" }  
+            { Content: "ix" }
+            { Content: "ken" }
+            { Content: "kla" }
+            { Content: "kyr" }
+            { Content: "la" }
+            { Content: "le" }
+            { Content: "lsa" }
+            { Content: "jun" }
+            { Content: "mar[=Pick('','a')]" }
+            { Content: "nar" }
+            { Content: "ndle" }
+            { Content: "netha" }  
+            { Content: "nrik" }
+            { Content: "ny" }
+            { Content: "of" }
+            { Content: "ot" }    
+            { Content: "rbion" }
+            { Content: "rd" }
+            { Content: "re" } 
+            { Content: "rid" } 
+            { Content: "sa" }
+            { Content: "sel" }
+            { Content: "so" }
+            { Content: "st" }
+            { Content: "ta" }
+            { Content: "tin" }
+            { Content: "ula" }
+            { Content: "ute" }
+            { Content: "ux" }
+            { Content: "vard" }
+		]
+	}
+	GeneratorType: Assignment
+}

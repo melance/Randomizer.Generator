@@ -1,0 +1,241 @@
+{
+    Name: Cloud Elf Name
+    /* Roman & Persian */
+    Version: "2.0"
+    OutputFormat: Text
+    ShowInList: false
+    Parameters:
+    {        
+    }
+    LineItems:
+    {
+        Start:
+        [
+            { Content: "[GivenName] [FamilyName]" }
+        ]
+
+        GivenName:
+        [
+            { Content: "[GivenNamePrefix][GivenNameSuffix]" }
+        ]
+
+        FamilyName:
+        [
+            { Content: "[FamilyNamePrefix][FamilyNameSuffix]"}
+        ]
+
+        GivenNamePrefix:
+        [
+            { Content: "Aeli" }
+            { Content: "Aemi" }
+            { Content: "Aet" }
+            { Content: "Agrip" }
+            { Content: "Aheno[GivenNameMiddle]" }
+            { Content: "Alb" }
+            { Content: "Anto" }
+            { Content: "App" }
+            { Content: "Aquil" }
+            { Content: "Asun" }
+            { Content: "Atil" }
+            { Content: "Aul" }
+            { Content: "Aure" }
+            { Content: "Aus" }
+            { Content: "Avil" }
+            { Content: "Balb" }
+            { Content: "Blas" }            
+            { Content: "Brut" }
+            { Content: "Caecil" }
+            { Content: "Cael" }
+            { Content: "Caes" }
+            { Content: "Cai" }
+            { Content: "Cal[GivenNameMiddle]" }
+            { Content: "Camil" }
+            { Content: "Carac" }
+            { Content: "Cass" }
+            { Content: "Cat" }
+            { Content: "Cic" }
+            { Content: "Cisp" }
+            { Content: "Claud" }
+            { Content: "Cloe" }
+            { Content: "Caern" }
+            { Content: "Corn" }
+            { Content: "Diad[GivenNameMiddle]" }
+            { Content: "Dio" }
+            { Content: "Dom" }
+            { Content: "Dru" }
+            { Content: "Dui" }
+            { Content: "Egn" }
+            { Content: "Enn" }
+            { Content: "Fab" }
+            { Content: "Faus" }
+            { Content: "Fel" }
+            { Content: "Ful" }
+            { Content: "Gai" }
+            { Content: "Gal" }
+            { Content: "Germ" }
+            { Content: "Gnae" }
+            { Content: "Gor" }
+            { Content: "Grat" }
+            { Content: "Hadr" }            
+            { Content: "Hel" }            
+            { Content: "Herm" }
+            { Content: "Hila" }
+            { Content: "Hor" }
+            { Content: "Ianu" }
+            { Content: "Iov" }
+            { Content: "Iul" }
+            { Content: "Jan" }
+            { Content: "Jov" }
+            { Content: "Jul" }
+            { Content: "Jun" }
+            { Content: "Lael" }
+            { Content: "Laur[GivenNameMiddle]" }
+            { Content: "Liv" }
+            { Content: "Lon" }            
+            { Content: "Luc" }
+            { Content: "Lup" }
+            { Content: "Man" }
+            { Content: "Mar" }
+            { Content: "Max" }
+            { Content: "Nae" }
+            { Content: "Ner" }        
+            { Content: "Non" }
+            { Content: "Oct" }
+            { Content: "Ovid" }
+            { Content: "Pert" }
+            { Content: "Plin" }
+            { Content: "Pomp" }
+            { Content: "Pont" }
+            { Content: "Por" }            
+            { Content: "Post" }
+            { Content: "Prisc" }
+            { Content: "Pub" }
+            { Content: "Quin" }
+            { Content: "Reg" }
+            { Content: "Romil" }
+            { Content: "Ruf" }
+            { Content: "Rust" }
+            { Content: "Sab" }
+            { Content: "Sal" }
+            { Content: "Sat" }
+            { Content: "Secund" }
+            { Content: "Sen" }
+            { Content: "Serg" }
+            { Content: "Serv" }
+            { Content: "Sil" }
+            { Content: "Spur" }
+            { Content: "Tacit" }
+            { Content: "Tarqu" }
+            { Content: "Tat" }
+            { Content: "Ter" }
+            { Content: "Thrac" }
+            { Content: "Tiber" }
+            { Content: "Tit" }
+            { Content: "Tull" }
+            { Content: "Urs" }
+            { Content: "Val" }
+            { Content: "Verg" }
+            { Content: "Vesp[GivenNameMiddle]" }
+            { Content: "Vib" }
+            { Content: "Vin" }
+            { Content: "Vir" }
+            { Content: "Vit" }
+        ]
+
+        GivenNameMiddle:
+        [    
+            { Content: "" }
+            { Content: "asp" }
+            { Content: "barb" }
+            { Content: "clet" }
+            { Content: "ent" }
+            { Content: "purn" }
+            { Content: "till" }
+            { Content: "umeni" }
+        ]
+
+        GivenNameSuffix: 
+        [
+            { Content: "a" }
+            { Content: "alla" }
+            { Content: "an" }
+            { Content: "ana" }
+            { Content: "av" }
+            { Content: "cel" }
+            { Content: "cia" }
+            { Content: "el" }
+            { Content: "ero" }
+            { Content: "ina" }
+            { Content: "i" }
+            { Content: "li" }
+            { Content: "lian" }
+            { Content: "oni" }
+            { Content: "pin" }
+            { Content: "os" }
+            { Content: "sa" }
+            { Content: "ta" }
+            { Content: "ten" }
+            { Content: "van" }
+            { Content: "vos" }            
+        ]
+
+        FamilyNamePrefix:
+        [
+            { Content: "Aba" }
+            { Content: "Abi" }
+            { Content: "Abti" }
+            { Content: "Ada" }
+            { Content: "Afla" }
+            { Content: "Afra" }
+            { Content: "Afsa" }
+            { Content: "Asha" }
+            { Content: "Airi" }
+            { Content: "Ama" }
+            { Content: "Andi" }
+            { Content: "Ara" }
+            { Content: "Arsha" }
+            { Content: "Arta" }
+            { Content: "Arvi" }
+            { Content: "Arya" }
+            { Content: "Aura" }
+            { Content: "Aza" }
+            { Content: "Bada" }
+            { Content: "Baghra" }
+            { Content: "Baha" }
+            { Content: "Baka" }
+            { Content: "Bara" }
+            { Content: "Bari" }
+            { Content: "Bashu" }
+            { Content: "Bava" }
+            { Content: "Bendu" }
+            { Content: "Beza" }
+            { Content: "Buro" }
+            { Content: "Burza" }
+            { Content: "Paro" }
+            { Content: "Pra" }
+            { Content: "Po" }
+            { Content: "Pey" }
+            { Content: "Tha" }
+            { Content: "Jaha" }
+            { Content: "Jama" }
+            { Content: "Hou" }
+            { Content: "Ram" }
+            { Content: "Saha" }
+            { Content: "Sohe" }
+            { Content: "Shay" }        
+        ]
+
+        FamilyNameSuffix:
+        [
+            { Content: "dar" }
+            { Content: "n" }
+            { Content: "rab" }
+            { Content: "rad" }
+            { Content: "rah" }
+            { Content: "ran" }
+            { Content: "sheh" }
+        
+        ]
+    }
+    GeneratorType: Assignment
+}

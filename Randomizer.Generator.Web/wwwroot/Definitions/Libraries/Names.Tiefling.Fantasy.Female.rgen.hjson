@@ -1,0 +1,456 @@
+Name: Tiefling Fantasy Names Female
+Author: Lance Boudreaux
+Description: Generates fantasy style feminine names for tiefling
+Version: "1.0"
+Tags: 
+[	
+	Fantasy
+	Name
+]
+OutputFormat: Text
+ShowInList: 0
+Parameters:
+{
+}
+LineItems:
+{
+	Start:
+	[
+		{ Content: "Ak[AK]" }
+		{ Content: "An[AN]" }
+		{ Content: "Ar[AR]" }
+		{ Content: "As[AS]" }
+		{ Content: "Ay[AY]" }
+		{ Content: "Az[AZ]" }
+		
+		{ Content: "Be[BE]" }
+		{ Content: "Br[BR]" }
+		{ Content: "Bu[BU]" }
+		
+		{ Content: "Cr[CR]" }
+		
+		{ Content: "Da[DA]" }
+		{ Content: "De[DE]" }
+		
+		{ Content: "Ea" }
+		
+		{ Content: "Ga[GA]" }
+		{ Content: "Go[GO]" }
+		
+		{ Content: "He[HE]" }
+		
+		{ Content: "Is[IS]" }
+		
+		{ Content: "Je[JE]" }
+		
+		{ Content: "Ka[KA]" }
+		
+		{ Content: "Le[LE]" }
+		{ Content: "Li[LI]" }
+		
+		{ Content: "Ma[MA]" }
+		
+		{ Content: "Na[NA]" }
+		{ Content: "Ne[NE]" }
+		{ Content: "Ni[NI]" }
+		
+		{ Content: "Or[OR]" }
+		{ Content: "Os[OS]" }
+		
+		{ Content: "Ph[PH]" }
+		{ Content: "Pr[PR]" }
+		{ Content: "Pu[PU]" }
+		{ Content: "Py[PY]" }
+		
+		{ Content: "Ri[RI]" }
+		{ Content: "Ro[RO]" }
+		
+		{ Content: "Se[SE]" }
+		{ Content: "Sh[SH]" }
+		{ Content: "So[SO]" }
+		
+		{ Content: "Uz[UZ]" }
+		
+		{ Content: "Va[VA]" }
+		{ Content: "Ve[VE]" }
+	]
+	
+	## A ##
+	AI:
+	[
+		{ Content: "a" }
+	]
+	AK:
+	[
+		{ Content: "is" }
+		{ Content: "ta" }
+	]
+	AM:
+	[
+		{ Content: "ah" }
+	]
+	AN:
+	[
+		{ Content: "ak[AK]" }
+	]
+	AR:
+	[
+		{ Content: "ma[MA]" }
+	]
+	AS:
+	[
+		{ Content: "ta[TA]" }
+	]
+	AV:
+	[
+		{ Content: "a" }
+	]
+	AY:
+	[
+		{ Content: "m" }
+	]
+	AZ:
+	[
+		{ Content: "a" }
+		{ Content: "za" }
+	]
+	
+	## B ##
+	BE:
+	[
+		{ Content: "le[LE]" }
+		{ Content: "th" }
+	]
+	BI:
+	[
+		{ Content: "a" }
+	]
+	BR:
+	[
+		{ Content: "ys[YS]" }
+	]
+	BU:
+	[
+		{ Content: "ne" }
+	]
+		
+	## C ##
+	CA:
+	[
+		{ Content: "ra[RA]" }
+		{ Content: "t" }
+	]
+	CR:
+	[
+		{ Content: "ie[IE]" }
+	]
+	
+	## D ##
+	DA:
+	[
+		{ Content: "ma[MA]" }
+	]
+	DD:
+	[
+		{ Content: "it" }
+	]
+	DE:
+	[
+		{ Content: "ca[CA]" }
+	]
+	DR:
+	[
+		{ Content: "ee[EE]" }
+	]
+	
+	## E ##
+	EE:
+	[
+		{ Content: "l" }
+	]
+	EI:
+	[
+		{ Content: "s" }
+	]
+	EL:
+	[
+		{ Content: "ai[AI]" }
+	]
+	EM:
+	[
+		{ Content: "a" }
+	]
+	ER:
+	[
+		{ Content: "e" }
+	]
+	ET:
+	[
+		{ Content: "a" }
+	]
+	EY:
+	[
+		{ Content: "a" }
+	]
+		
+	## F ##
+	
+	## G ##
+	GA:
+	[
+		{ Content: "dr[DR]" }
+	]
+	GO:
+	[
+		{ Content: "mo[MO]" }
+	]
+	
+	## H ##
+	HE:
+	[
+		{ Content: "ca[CA]" }
+	]
+	HT:
+	[
+		{ Content: "e" }
+	]
+	
+	## I ##
+	IA:
+	[
+		{ Content: "n" }
+		{ Content: "nn[NN]" }
+	]
+	IE:
+	[
+		{ Content: "ll[LL]" }
+	]
+	IS:
+	[
+		{ Content: "ht[HT]" }
+		{ Content: "ta" }
+	]
+	
+	## J ##
+	JE:
+	[
+		{ Content: "ze[ZE]" }
+	]
+	
+	## K ##
+	KA:
+	[
+		{ Content: "li" }
+		{ Content: "ll[LL]" }
+		{ Content: "ri[RI]" }
+		{ Content: "sd[SD]" }
+	]
+	KH:
+	[
+		{ Content: "me[ME]" }
+	]
+	
+	## L ##
+	LE:
+	[
+		{ Content: "ri[RI]" }
+		{ Content: "th" }
+	]
+	LI:
+	[
+		{ Content: "li[LL]" }
+	]
+	LL:
+	[
+		{ Content: "a" }
+		{ Content: "is[IS]" }
+		{ Content: "th" }
+	]
+	
+	## M ##
+	MA:
+	[
+		{ Content: "ia" }
+		{ Content: "ka[KA]" }
+		{ Content: "ne[NE]" }
+		{ Content: "ra" }
+		{ Content: "rk[RK]" }
+		{ Content: "st[ST]" }
+	]
+	ME:
+	[
+		{ Content: "ia" }
+		{ Content: "t" }
+	]
+	MO:
+	[
+		{ Content: "ry" }
+	]
+	MY:
+	[
+		{ Content: "az[AZ]" }
+	]
+	
+	## N ##
+	NA:
+	[
+		{ Content: "am[AM]" }
+	]
+	NE:
+	[
+		{ Content: "a" }
+		{ Content: "me[ME]" }
+	]
+	NI:
+	[
+		{ Content: "ja" }
+	]
+	NN:
+	[
+		{ Content: "a" }
+	]
+	NO:
+	[
+		{ Content: "be" }
+	]
+	NW:
+	[
+		{ Content: "e" }
+	]
+	
+	## O ##
+	OR:
+	[
+		{ Content: "ia[IA]" }
+	]
+	OS:
+	[
+		{ Content: "ah" }
+		{ Content: "ia[IA]" }
+		{ Content: "pe[PE]" }
+	]
+	
+	## P ##
+	PA:
+	[
+		{ Content: "r" }
+	]
+	PE:
+	[
+		{ Content: "ri[RI]" }
+	]
+	PH:
+	[
+		{ Content: "el[EL]" }
+	]
+	PR:
+	[
+		{ Content: "os[OS]" }
+	]
+	PU:
+	[
+		{ Content: "la" }
+		{ Content: "ra[RA]" }
+	]
+	PY:
+	[
+		{ Content: "ra" }
+	]
+	
+	## Q ##
+	
+	## R ##
+	RA:
+	[
+		{ Content: "bi[BI]" }
+		{ Content: "h" }
+		{ Content: "th" }
+	]
+	RI:
+	[
+		{ Content: "a" }
+		{ Content: "et[ET]" }
+		{ Content: "n" }
+		{ Content: "ne" }
+		{ Content: "ss[SS]" }
+	]
+	RK:
+	[
+		{ Content: "os[OS]" }
+	]
+	RO:
+	[
+		{ Content: "no[NO]" }
+		{ Content: "nw[NW]" }
+	]
+	
+	## S ##
+	SD:
+	[
+		{ Content: "ey[EY]" }
+	]
+	SE:
+	[
+		{ Content: "dd[DD]" }
+		{ Content: "er[ER]" }
+		{ Content: "kh[KH]" }
+		{ Content: "my[MY]" }
+	]
+	SH:
+	[
+		{ Content: "av[AV]" }
+		{ Content: "ax" }
+	]
+	SO:
+	[
+		{ Content: "ra[RA]" }
+	]
+	SS:
+	[
+		{ Content: "a" }
+	]
+	ST:
+	[
+		{ Content: "em[EM]" }
+	]
+	
+	## T ##
+	TA:
+	[
+		{ Content: "ro" }
+	]
+	
+	## U ##
+	UZ:
+	[
+		{ Content: "za" }
+	]
+	
+	## V ##
+	VA:
+	[
+		{ Content: "pu[PU]" }
+	]
+	VE:
+	[
+		{ Content: "pa[PA]" }
+		{ Content: "ri[RI]" }
+	]
+	
+	## W ##
+	
+	## X ##
+	
+	## Y ##
+	YS:
+	[
+		{ Content: "ei[EI]" }
+	]
+	
+	## Z ##
+	ZE:
+	[
+		{ Content: "be[BE]" }
+	]
+}
+GeneratorType: Assignment

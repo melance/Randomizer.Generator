@@ -1,0 +1,240 @@
+{
+	Name: Orc Name
+	/* Slovak & Serbo-Croatian */
+	Version: "2.0"
+	OutputFormat: Text
+    ShowInList: false
+	Parameters:
+	{
+		Gender:
+		{
+			Value: ""
+			Type: Text
+		}
+	}
+	LineItems:
+	{
+		Start:
+		[
+			{ Content: "[[Gender]GivenName] [FamilyName]", Weight: 20 }
+            { Content: "[[Gender]GivenName]", Weight: 80 }
+		]
+
+        AnyGender:
+        [
+            { Content: "Male" }
+			{ Content: "Female" }
+        ]
+
+		NonBinaryGivenName:
+		[
+		    { Content: "Male" }
+            { Content: "Female" }
+		]
+		
+		MaleGivenName:
+		[
+            { Content: "[MGN1][MGN2]" }			
+		]
+        
+		MGN1:
+		[
+            { Content: "Ad" }
+            { Content: "Alex" }
+            { Content: "Bed" }
+            { Content: "Ben" }
+            { Content: "Cen" }
+            { Content: "Ctib" }
+            { Content: "Dal" }
+            { Content: "Dobr" }
+            { Content: "Drah" }
+            { Content: "Dus" }
+            { Content: "Ev" }
+            { Content: "Fil" }
+            { Content: "Furm" }
+            { Content: "Han" }
+            { Content: "Hav" }
+            { Content: "Hen" }
+            { Content: "Hol" }
+            { Content: "Hon" }
+            { Content: "Im" }
+            { Content: "Ir" }
+            { Content: "Jak" }
+            { Content: "Jar" }
+            { Content: "Jind" }
+            { Content: "Kat" }
+            { Content: "Kiv" }
+            { Content: "Klem" }
+            { Content: "Kol" }
+            { Content: "Kr[=Pick('','i','y')]st" }
+            { Content: "Ladis" }
+            { Content: "Lib" }
+            { Content: "Lub" }
+            { Content: "Luk" }
+            { Content: "Mad[=Pick('d','l')]" }
+            { Content: "Mar[=Pick('','t')]" }
+            { Content: "Mat" }
+            { Content: "Mil" }            
+            { Content: "Mik" }
+            { Content: "Nad" }
+            { Content: "Nast" }
+            { Content: "Nat" }
+            { Content: "Nel" }
+            { Content: "Nin" }
+            { Content: "Nit" }
+            { Content: "Oen" }
+            { Content: "Oez" }
+            { Content: "Otok" }
+            { Content: "Rad" }
+            { Content: "Rost" }
+            { Content: "Seb" }
+            { Content: "Sil" }
+            { Content: "Sob" }
+            { Content: "Tib" }
+            { Content: "Upr" }
+            { Content: "Val" }
+            { Content: "Vavr" }
+            { Content: "Vek" }
+            { Content: "Vil" }
+            { Content: "Vin" }
+            { Content: "Vlast" }
+            { Content: "Vond" }
+            { Content: "Wenc" }
+            { Content: "Yarm" }
+            { Content: "Zen" }
+            { Content: "Ziv" }
+            { Content: "Zof" }
+            { Content: "Zor" }
+		]
+
+		MGN2:
+		[
+            { Content: "al" }
+            { Content: "ali" }
+            { Content: "am" }			
+            { Content: "an" }
+            { Content: "anek" }
+            { Content: "ar" }
+            { Content: "ast" }
+            { Content: "avd" }
+            { Content: "az" }
+            { Content: "ej" }
+            { Content: "el" }
+            { Content: "eck" }
+            { Content: "ej" }
+            { Content: "ek" }
+            { Content: "em" }
+            { Content: "enk" }
+            { Content: "ent" }
+            { Content: "eoin" }
+            { Content: "es" }
+            { Content: "esk" }
+            { Content: "iam" }
+            { Content: "ian" }
+            { Content: "ic" }
+            { Content: "im" }
+            { Content: "in" }
+            { Content: "ink" }
+            { Content: "ip" }
+            { Content: "isek" }
+            { Content: "ko" }
+            { Content: "od" }
+            { Content: "oich" }
+            { Content: "oisk" }
+            { Content: "oman" }
+            { Content: "omil" }
+            { Content: "or" }
+            { Content: "os" }
+            { Content: "oslav" }
+            { Content: "ous" }
+            { Content: "rich" }
+            { Content: "ub" }
+            { Content: "ul" }
+            { Content: "ulk" }
+            { Content: "use" }
+            { Content: "usk" }
+		]
+
+		FemaleGivenName:
+		[
+            { Content: "[MaleGivenName]a" }			
+		]
+
+
+        FamilyName:
+        [
+            { Content: "[FN1][FN2]" }
+        ]
+
+        FN1:
+        [
+            { Content: "Ad" }
+            { Content: "Ant" }
+            { Content: "Bab" }
+            { Content: "Blaz" }
+            { Content: "Bogd" }
+            { Content: "Boz" }
+            { Content: "Brank" }
+            { Content: "Broz" }
+            { Content: "Cos" }
+            { Content: "Dav" }
+            { Content: "Dem" }
+            { Content: "Dord" }
+            { Content: "Drag" }
+            { Content: "Dur" }
+            { Content: "Dur" }
+            { Content: "Filip" }
+            { Content: "Fran" }
+            { Content: "Gavril" }
+            { Content: "Gol" }
+            { Content: "Hadz" }
+            { Content: "Herc" }
+            { Content: "Horv" }
+            { Content: "Ibram" }
+            { Content: "Il" }
+            { Content: "Jank" }
+            { Content: "Jerk" }
+            { Content: "Jur" }
+            { Content: "Kas" }
+            { Content: "Kol" }
+            { Content: "Kok" }
+            { Content: "Kov" }
+            { Content: "Kral" }
+            { Content: "Lov" }
+            { Content: "Luk" }
+            { Content: "Mar" }
+            { Content: "Marj" }
+            { Content: "Mat" }
+            { Content: "Med" }
+            { Content: "Mihaj" }
+            { Content: "Milo" }
+            { Content: "Nov" }
+            { Content: "Pav" }
+            { Content: "Perk" }
+            { Content: "Petr" }
+            { Content: "Stan" }
+            { Content: "Stoj" }
+            { Content: "Tad" }
+            { Content: "Ter" }
+            { Content: "Tom" }
+            { Content: "Zor" }
+        ]
+
+        FN2:
+        [
+            { Content: "amic" }
+            { Content: "anic" }
+            { Content: "anovic" }
+            { Content: "aric" }
+            { Content: "evic" }
+            { Content: "ic" }
+            { Content: "idic" }
+            { Content: "irovic" }
+            { Content: "isa" }
+            { Content: "ovic" }
+            { Content: "ub" }
+        ]
+
+	}
+	GeneratorType: Assignment
+}

@@ -28,46 +28,45 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FileSelector));
-            this.txtFilePath = new System.Windows.Forms.TextBox();
-            this.btnOpenDialog = new System.Windows.Forms.Button();
-            this.dlgOpenFile = new System.Windows.Forms.OpenFileDialog();
-            this.SuspendLayout();
-            // 
-            // txtFilePath
-            // 
-            this.txtFilePath.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtFilePath.Location = new System.Drawing.Point(0, 0);
-            this.txtFilePath.Name = "txtFilePath";
-            this.txtFilePath.Size = new System.Drawing.Size(99, 23);
-            this.txtFilePath.TabIndex = 0;
-            this.txtFilePath.TextChanged += new System.EventHandler(this.txtFilePath_TextChanged);
-            // 
-            // btnOpenDialog
-            // 
-            this.btnOpenDialog.BackColor = System.Drawing.SystemColors.Window;
-            this.btnOpenDialog.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnOpenDialog.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOpenDialog.Image = ((System.Drawing.Image)(resources.GetObject("btnOpenDialog.Image")));
-            this.btnOpenDialog.Location = new System.Drawing.Point(99, 0);
-            this.btnOpenDialog.Margin = new System.Windows.Forms.Padding(0);
-            this.btnOpenDialog.Name = "btnOpenDialog";
-            this.btnOpenDialog.Size = new System.Drawing.Size(24, 23);
-            this.btnOpenDialog.TabIndex = 1;
-            this.btnOpenDialog.UseVisualStyleBackColor = false;
-            this.btnOpenDialog.Click += new System.EventHandler(this.btnOpenDialog_Click);
-            // 
-            // FileSelector
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.txtFilePath);
-            this.Controls.Add(this.btnOpenDialog);
-            this.Name = "FileSelector";
-            this.Size = new System.Drawing.Size(123, 23);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+			var resources = new System.ComponentModel.ComponentResourceManager(typeof(FileSelector));
+			txtFilePath = new TextBox();
+			btnOpenDialog = new Button();
+			dlgOpenFile = new OpenFileDialog();
+			SuspendLayout();
+			// 
+			// txtFilePath
+			// 
+			txtFilePath.Dock = DockStyle.Fill;
+			txtFilePath.Location = new Point(0, 0);
+			txtFilePath.Name = "txtFilePath";
+			txtFilePath.Size = new Size(99, 23);
+			txtFilePath.TabIndex = 0;
+			txtFilePath.TextChanged += txtFilePath_TextChanged;
+			// 
+			// btnOpenDialog
+			// 
+			btnOpenDialog.BackColor = SystemColors.Window;
+			btnOpenDialog.Dock = DockStyle.Right;
+			btnOpenDialog.FlatStyle = FlatStyle.Flat;
+			btnOpenDialog.Image = (Image)resources.GetObject("btnOpenDialog.Image");
+			btnOpenDialog.Location = new Point(99, 0);
+			btnOpenDialog.Margin = new Padding(0);
+			btnOpenDialog.Name = "btnOpenDialog";
+			btnOpenDialog.Size = new Size(24, 23);
+			btnOpenDialog.TabIndex = 1;
+			btnOpenDialog.UseVisualStyleBackColor = false;
+			btnOpenDialog.Click += btnOpenDialog_Click;
+			// 
+			// FileSelector
+			// 
+			AutoScaleDimensions = new SizeF(7F, 15F);
+			AutoScaleMode = AutoScaleMode.Font;
+			Controls.Add(txtFilePath);
+			Controls.Add(btnOpenDialog);
+			Name = "FileSelector";
+			Size = new Size(123, 23);
+			ResumeLayout(false);
+			PerformLayout();
 		}
 
 		#endregion

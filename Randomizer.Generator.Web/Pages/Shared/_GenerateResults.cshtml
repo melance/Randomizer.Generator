@@ -1,0 +1,12 @@
+﻿@model System.Collections.Generic.List<String>
+@{
+}
+
+<div id="results" class="list-group list-group-flush">
+    @foreach (var result in Model)
+    {
+        <div class="list-group-item">
+            @Html.Raw(result)
+        </div>            
+    }
+</div>

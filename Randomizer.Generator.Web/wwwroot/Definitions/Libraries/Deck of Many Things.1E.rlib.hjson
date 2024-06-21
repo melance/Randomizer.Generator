@@ -1,0 +1,30 @@
+Name: Deck of Many Things 1E
+Author: Lance Boudreaux
+Version: "1.0"
+OutputFormat: Html
+ShowInList: false
+LineItems:
+{	
+	"greyhawk.Deck":
+    [
+		{ Content: "<table><tr><td class='px-2'><span style='Font-Size: [cardSize]</span>;'>[AofHearts]</span></td><td>Immediately gain 50,000 experience points</td></tr></table>" }
+		{ Content: "<table><tr><td class='px-2'><span style='Font-Size: [cardSize]</span>;'>[KofHearts]</span></td><td>Gain Miscellaneous Magic item from the Table of your choice</td></tr></table>" }
+		{ Content: "<table><tr><td class='px-2'><span style='Font-Size: [cardSize]</span>;'>[QofHearts]</span></td><td>Gain 1-3 wishes to be taken when you like</td></tr></table>" }
+		{ Content: "<table><tr><td class='px-2'><span style='Font-Size: [cardSize]</span>;'>[JofHearts]</span></td><td>Help from a Superhero with +3 armor, shield, and sword for one hour when you call for him</td></tr></table>" }
+		{ Content: "<table><tr><td class='px-2'><span style='Font-Size: [cardSize]</span>;'>[AofDiamonds]</span></td><td>Immediately gain map to richest treasure on any dungeon level</td></tr></table>" }
+		{ Content: "<table><tr><td class='px-2'><span style='Font-Size: [cardSize]</span>;'>[KofDiamonds]</span></td><td>Gain 5-30 pieces of jewelry immediately</td></tr></table>" }
+		{ Content: "<table><tr><td class='px-2'><span style='Font-Size: [cardSize]</span>;'>[QofDiamonds]</span></td><td>Gain Scroll of 7 Spells, no 1st level spells on it</td></tr></table>" }
+		{ Content: "<table><tr><td class='px-2'><span style='Font-Size: [cardSize]</span>;'>[JofDiamonds]</span></td><td>Add 1 point to any ability score you wish, i.e., strength, intelligence, wisdom, dexterity, etc.</td></tr></table>" }
+		{ Content: "<table><tr><td class='px-2'><span style='Font-Size: [cardSize]</span>;'>[AofSpades]</span></td><td>Lose one experience level immediately</td></tr></table>" }
+		{ Content: "<table><tr><td class='px-2'><span style='Font-Size: [cardSize]</span>;'>[KofSpades]</span></td><td>Lord with +4 armor, shield, and sword attacks you* (*all magic items disappear when attacker is defeated)</td></tr></table>" }
+		{ Content: "<table><tr><td class='px-2'><span style='Font-Size: [cardSize]</span>;'>[QofSpades]</span></td><td>Immediate death, no saving throw</td></tr></table>" }
+		{ Content: "<table><tr><td class='px-2'><span style='Font-Size: [cardSize]</span>;'>[JofSpades]</span></td><td>Monster from the 5th Level Underworld Monster Table attacks you by surprise</td></tr></table>" }
+		{ Content: "<table><tr><td class='px-2'><span style='Font-Size: [cardSize]</span>;'>[AofClubs]</span></td><td>Change alignment immediately</td></tr></table>" }
+		{ Content: "<table><tr><td class='px-2'><span style='Font-Size: [cardSize]</span>;'>[KofClubs]</span></td><td>Lose your most prized magic item immediately</td></tr></table>" }
+		{ Content: "<table><tr><td class='px-2'><span style='Font-Size: [cardSize]</span>;'>[QofClubs]</span></td><td>Turn to stone, no saving throw</td></tr></table>" }
+		{ Content: "<table><tr><td class='px-2'><span style='Font-Size: [cardSize]</span>;'>[JofClubs]</span></td><td>Lose 1 point from your Prime Requisite</td></tr></table>" }
+		{ Content: "<table><tr><td class='px-2'><span style='Font-Size: [cardSize]</span>;'>[JokerBlack]</span></td><td>Gain 25,000 experience points immediately or select two additional cards</td></tr></table>" }
+		{ Content: "<table><tr><td class='px-2'><span style='Font-Size: [cardSize]</span>;'>[JokerRed]</span></td><td>Gain 25,000 experience points immediately or select two additional cards</td></tr></table>" }
+    ]
+}
+GeneratorType: Assignment

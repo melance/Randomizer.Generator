@@ -34,7 +34,6 @@
 			spcMain = new SplitContainer();
 			pnlParameters = new Panel();
 			panel1 = new Panel();
-			btnOpenDialog = new Button();
 			btnReload = new Button();
 			btnEdit = new Button();
 			btnGenerate = new Button();
@@ -44,6 +43,7 @@
 			btnClear = new Button();
 			btnCopy = new Button();
 			btnSave = new Button();
+			btnOpenDialog = new Button();
 			toolTip = new ToolTip(components);
 			btnInfo = new Button();
 			errorProvider = new ErrorProvider(components);
@@ -58,10 +58,10 @@
 			// 
 			// lblName
 			// 
-			lblName.BackColor = SystemColors.ControlDarkDark;
+			lblName.BackColor = SystemColors.Control;
 			lblName.Dock = DockStyle.Top;
 			lblName.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-			lblName.ForeColor = SystemColors.ButtonFace;
+			lblName.ForeColor = SystemColors.ControlText;
 			lblName.Location = new Point(0, 0);
 			lblName.Name = "lblName";
 			lblName.Size = new Size(800, 24);
@@ -111,21 +111,6 @@
 			panel1.Name = "panel1";
 			panel1.Size = new Size(264, 36);
 			panel1.TabIndex = 4;
-			// 
-			// btnOpenDialog
-			// 
-			btnOpenDialog.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-			btnOpenDialog.BackColor = SystemColors.ControlDarkDark;
-			btnOpenDialog.FlatAppearance.BorderSize = 0;
-			btnOpenDialog.FlatStyle = FlatStyle.Flat;
-			btnOpenDialog.Image = (Image)resources.GetObject("btnOpenDialog.Image");
-			btnOpenDialog.Location = new Point(745, 0);
-			btnOpenDialog.Name = "btnOpenDialog";
-			btnOpenDialog.Size = new Size(24, 24);
-			btnOpenDialog.TabIndex = 5;
-			toolTip.SetToolTip(btnOpenDialog, "Open the generator in a seperate window");
-			btnOpenDialog.UseVisualStyleBackColor = false;
-			btnOpenDialog.Click += btnOpenDialog_Click;
 			// 
 			// btnReload
 			// 
@@ -233,10 +218,25 @@
 			btnSave.UseVisualStyleBackColor = true;
 			btnSave.Click += btnSave_Click;
 			// 
+			// btnOpenDialog
+			// 
+			btnOpenDialog.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+			btnOpenDialog.BackColor = SystemColors.Control;
+			btnOpenDialog.FlatAppearance.BorderSize = 0;
+			btnOpenDialog.FlatStyle = FlatStyle.Flat;
+			btnOpenDialog.Image = (Image)resources.GetObject("btnOpenDialog.Image");
+			btnOpenDialog.Location = new Point(745, 0);
+			btnOpenDialog.Name = "btnOpenDialog";
+			btnOpenDialog.Size = new Size(24, 24);
+			btnOpenDialog.TabIndex = 5;
+			toolTip.SetToolTip(btnOpenDialog, "Open the generator in a seperate window");
+			btnOpenDialog.UseVisualStyleBackColor = false;
+			btnOpenDialog.Click += btnOpenDialog_Click;
+			// 
 			// btnInfo
 			// 
 			btnInfo.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-			btnInfo.BackColor = SystemColors.ControlDarkDark;
+			btnInfo.BackColor = SystemColors.Control;
 			btnInfo.FlatAppearance.BorderSize = 0;
 			btnInfo.FlatStyle = FlatStyle.Flat;
 			btnInfo.Image = (Image)resources.GetObject("btnInfo.Image");

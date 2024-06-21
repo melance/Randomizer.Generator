@@ -1,0 +1,54 @@
+﻿@model Randomizer.Generator.Core.BaseDefinition
+@{
+}
+
+<div class="card">
+    <div class="card-header bg-secondary">
+        <div class="row">
+        <div class="card-title fw-bold text-light fs-5 col">@Model.Name</div>
+        @if (Model.Version != null)
+        {
+            <div class="card-subtitle text-light col text-end align-content-center">
+                v@(Model.Version)
+            </div>
+        }
+        </div>
+        <div class="row h-auto">
+            @if(!String.IsNullOrWhiteSpace(Model.Author))
+            {
+                <div class="card-subtitle text-light col">By @Model.Author</div>
+            }            
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-12">@Model.Description</div>
+        </div>
+        <div class="row">
+            <div class="col-2 text-muted">Output</div>
+            <div class="col">@Model.OutputFormat</div>
+        </div>
+        <div class="row">
+            <div class="col-2 text-muted">Tags</div>
+            <div class="col">
+                @foreach(var tag in Model.Tags)
+                {
+                    <span class="badge bg-primary">@tag</span>
+                }
+            </div>
+        </div>
+        @if(!String.IsNullOrWhiteSpace(Model.Remarks))
+        {
+        <div class="row">
+            <div class="col-2 text-muted">Remarks</div>
+            <div class="col">@Model.Remarks</div>
+        </div>
+        }
+    </div>
+    @if(!String.IsNullOrWhiteSpace(Model.URL))
+    {
+        <div class="card-footer">
+            URL: <a href="@Model.URL" target="_blank">@Model.URL</a>&nbsp;<sup class="bi-box-arrow-up-right"></sup>
+        </div>
+    }
+</div>

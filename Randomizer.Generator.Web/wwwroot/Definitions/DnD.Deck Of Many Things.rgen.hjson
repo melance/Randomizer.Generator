@@ -1,0 +1,59 @@
+{
+  Name: Deck of Many Things
+  Author: Lance Boudreaux
+  Description: Pulls a random card from the deck of many things.  Includes D&D 1e, AD&D 2e, 3e and 5e.
+  Version: "2.0"
+  Tags:
+  [
+    Magic Item
+    D&D
+    Fantasy
+  ]
+  OutputFormat: Html
+  Parameters:
+  {
+    Version:
+    {
+      Value: "5e13"
+      Display: Version
+      Aliases: []
+      Type: List
+      Options:
+      [
+        greyhawk:D&D 1e greyhawk
+        add2e:AD&D 2e
+        3e:D&D 3e
+		5e13:D&D 5e (13 Cards)
+		5e22:D&D 5e (22 Cards)
+      ]
+    }
+	Pull:
+	{
+	 Value: 1
+	 Display: Cards to Pull
+	 Type: Integer
+	}
+  }
+  Imports:
+  [
+	Deck of Cards
+	Deck of Many Things Images
+	Deck of Many Things 5E
+	Deck of Many Things 3E
+	Deck of Many Things 2E
+	Deck of Many Things 1E
+  ]
+  TextCase: None
+  LineItems:
+  {
+    Start:
+    [
+		{ Content: "[Version]", Repeat: "=Pull" }
+    ]
+	cardSize:
+	[
+		{ Content: "3em;" }
+	]    
+  }
+  GeneratorType: Assignment
+}

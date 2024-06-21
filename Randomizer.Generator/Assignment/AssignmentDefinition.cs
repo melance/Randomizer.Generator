@@ -7,7 +7,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Xml.Linq;
 
 namespace Randomizer.Generator.Assignment
 {
@@ -84,13 +83,13 @@ namespace Randomizer.Generator.Assignment
 		public override string Generate()
 		{
 			if (LineItems.Sum(li => li.Value.Count) == 0) throw new DefinitionException("Definition does not have any line items.");
-			ParseLineItems();
 			if (ValidateParameters())
 			{
 				PreProcess();
 				var next = START_ITEM;
 				LineItem item;
 				LoadImports();
+				ParseLineItems();
 
 				_loopCount = 0;
 				_recursionDepth = 0;
@@ -425,6 +424,31 @@ namespace Randomizer.Generator.Assignment
 			};
 		}
 
+		private static Object CastValue(String value)
+		{
+			if (Double.TryParse(value, out var d))
+				return d;
+			else if (Boolean.TryParse(value, out var b))
+				return b;
+			else
+				return value;
+		}
+
+		protected override void EvaluateFunction(String name, FunctionArgs args)
+		{
+			if (!_preprocessing &&
+				name.Equals("item", StringComparison.InvariantCultureIgnoreCase))
+			{				
+				var key = args.Parameters[0].Evaluate().ToString(); 
+				if (key == null && LineItems.ContainsKey(key))
+					args.Result = EvaluateLineItem(key, LineItems[key].SelectRandomItem());
+			}
+			else
+			{
+				base.EvaluateFunction(name, args);
+			}
+		}
+
 		/// <summary>
 		/// Handles providing values for parameters requested by the <see cref="CalculationEngine"/>
 		/// </summary>
@@ -434,7 +458,7 @@ namespace Randomizer.Generator.Assignment
 		{
 			if (Variables.ContainsKey(name))
 			{
-				args.Result = Variables[name];
+				args.Result = CastValue(Variables[name]);
 			}
 			else if (Parameters.ContainsKey(name))
 			{
@@ -442,7 +466,7 @@ namespace Randomizer.Generator.Assignment
 				if (parameter.Type == ParameterTypes.Calculation)
 					args.Result = new CalculationEngine(parameter.Value).Evaluate();
 				else
-					args.Result = Parameters[name].Value;
+					args.Result = CastValue(Parameters[name].Value);
 			}
 			else if (!_preprocessing && LineItems.ContainsKey(name))
 			{

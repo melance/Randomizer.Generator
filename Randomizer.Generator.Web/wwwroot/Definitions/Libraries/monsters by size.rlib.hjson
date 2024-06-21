@@ -1,0 +1,691 @@
+{
+	Name: DnD Monsters by Size
+	Author: Lance Boudreaux
+	Description: null
+	Version: "2.0"
+	URL: null
+	Tags: []
+	OutputFormat: Html
+	Parameters: {}
+	Imports: []
+	LineItems:
+	{
+		Monster:
+		[
+			{ Content: "[Dimunitive]" }
+			{ Content: "[Tiny]" }
+			{ Content: "[Small]" }
+			{ Content: "[Medium]" }
+			{ Content: "[Large]" }
+			{ Content: "[Huge]" }
+			{ Content: "[Gargantuan]" }
+			{ Content: "[Colossal]" }
+		]
+		Dimunitive:
+		[
+			{ Content: "[DimunitiveAnimal]" }
+		]
+		DimunitiveAnimal:
+		[
+			{ Content: "bat" }
+			{ Content: "toad" }
+		]
+		Tiny:
+		[
+			{ Content: "quasit" }
+			{ Content: "imp" }
+			{ Content: "[TinyDragon]" }
+			{ Content: "homunculus" }
+			{ Content: "psuedodragon" }
+			{ Content: "tiny skeleton" }
+			{ Content: "grig" }
+			{ Content: "stirge" }
+			{ Content: "tiny zombie" }
+			{ Content: "[TinyAnimal]" }
+			{ Content: "[TinyVermin]" }
+		]
+		TinyAnimal:
+		[
+			{ Content: "badger" }
+			{ Content: "cat" }
+			{ Content: "hawk" }
+			{ Content: "lizard" }
+			{ Content: "monkey" }
+			{ Content: "owl" }
+			{ Content: "rat" }
+			{ Content: "raven" }
+			{ Content: "tiny viper snake" }
+			{ Content: "weasel" }
+		]
+		TinyDragon:
+		[
+			{ Content: "wyrmling black dragon" }
+			{ Content: "wyrmling white dragon" }
+			{ Content: "wyrmling brass dragon" }
+			{ Content: "wyrmling copper dragon" }
+		]
+		TinyVermin:
+		[
+			{ Content: "tiny monstrous centipede" }
+			{ Content: "tiny monstrous scorpion" }
+			{ Content: "tiny monstrous spider" }
+		]
+		Small:
+		[
+			{ Content: "juvenile arrowhawk" }
+			{ Content: "lantern archon celestial" }
+			{ Content: "choker" }
+			{ Content: "cockatrice" }
+			{ Content: "darkmantle" }
+			{ Content: "dretch" }
+			{ Content: "dire rat" }
+			{ Content: "[SmallDragon]" }
+			{ Content: "[SmallElemental]" }
+			{ Content: "formian worker" }
+			{ Content: "gnome" }
+			{ Content: "goblin" }
+			{ Content: "halfling" }
+			{ Content: "kobold" }
+			{ Content: "magmin" }
+			{ Content: "[SmallMephit]" }
+			{ Content: "flamebrother" }
+			{ Content: "shocker lizard" }
+			{ Content: "small skeleton" }
+			{ Content: "nixie" }
+			{ Content: "pixie" }
+			{ Content: "juvenile tojanida" }
+			{ Content: "vargouille" }
+			{ Content: "will-o'-wisp" }
+			{ Content: "minor xorn" }
+			{ Content: "small zombie" }
+			{ Content: "[SmallAnimal]" }
+			{ Content: "[SmallVermin]" }
+		]
+		SmallAnimal:
+		[
+			{ Content: "dog" }
+			{ Content: "eagle" }
+			{ Content: "octopus" }
+			{ Content: "small viper snake" }
+		]
+		SmallDragon:
+		[
+			{ Content: "very young black dragon" }
+			{ Content: "wyrmling blue dragon" }
+			{ Content: "wyrmling green dragon" }
+			{ Content: "very young white dragon" }
+			{ Content: "very young brass dragon" }
+			{ Content: "wyrmling bronze dragon" }
+			{ Content: "very young copper dragon" }
+			{ Content: "wyrmling silver dragon" }
+		]
+		SmallElemental:
+		[
+			{ Content: "small air elemental" }
+			{ Content: "small earth elemental" }
+			{ Content: "small fire elemental" }
+			{ Content: "small water elemental" }
+		]
+		SmallMephit:
+		[
+			{ Content: "air mephit" }
+			{ Content: "dust mephit" }
+			{ Content: "earth mephit" }
+			{ Content: "fire mephit" }
+			{ Content: "ice mephit" }
+			{ Content: "magma mephit" }
+			{ Content: "ooze mephit" }
+			{ Content: "salt mephit" }
+			{ Content: "steam mephit" }
+			{ Content: "water mephit" }
+		]
+		SmallVermin:
+		[
+			{ Content: "giant fire beetle" }
+			{ Content: "small monstrous centipede" }
+			{ Content: "small monstrous scorpion" }
+			{ Content: "small monstrous spider" }
+		]
+		Medium:
+		[
+			{ Content: "adult arrowhawk" }
+			{ Content: "azer" }
+			{ Content: "barghest" }
+			{ Content: "aranea" }
+			{ Content: "allip" }
+			{ Content: "bodak" }
+			{ Content: "blink dog" }
+			{ Content: "bugbear" }
+			{ Content: "basilisk" }
+			{ Content: "hound archon celestial" }
+			{ Content: "avoral celestial" }
+			{ Content: "ghaele celestial" }
+			{ Content: "trumper archon celestial" }
+			{ Content: "astral deva celestial" }
+			{ Content: "chaos beast" }
+			{ Content: "succubus" }
+			{ Content: "lemure" }
+			{ Content: "kyton" }
+			{ Content: "barbazu" }
+			{ Content: "erinyes" }
+			{ Content: "hamatula" }
+			{ Content: "digester" }
+			{ Content: "dire weasel" }
+			{ Content: "dire badger" }
+			{ Content: "[MediumDragon]" }
+			{ Content: "dryad" }
+			{ Content: "dwarf" }
+			{ Content: "[MediumElemental]" }
+			{ Content: "elf" }
+			{ Content: "ethereal filcher" }
+			{ Content: "ethereal marauder" }
+			{ Content: "ettercap" }
+			{ Content: "formian warrior" }
+			{ Content: "formian taskmaster" }
+			{ Content: "shrieker" }
+			{ Content: "violet fungus" }
+			{ Content: "gargoyle" }
+			{ Content: "janni" }
+			{ Content: "ghoul" }
+			{ Content: "ghast" }
+			{ Content: "gibbering mound" }
+			{ Content: "gnoll" }
+			{ Content: "grick" }
+			{ Content: "grimlock" }
+			{ Content: "green hag" }
+			{ Content: "harpy" }
+			{ Content: "hell hound" }
+			{ Content: "hobgoblin" }
+			{ Content: "krenshar" }
+			{ Content: "kuo-toa" }
+			{ Content: "lamia" }
+			{ Content: "lizardfolk" }
+			{ Content: "locathah" }
+			{ Content: "medusa" }
+			{ Content: "merfolk" }
+			{ Content: "mind flayer" }
+			{ Content: "mohrg" }
+			{ Content: "mummy" }
+			{ Content: "night hag" }
+			{ Content: "nymph" }
+			{ Content: "grey ooze" }
+			{ Content: "orc" }
+			{ Content: "phantom fungus" }
+			{ Content: "phasm" }
+			{ Content: "aasimar" }
+			{ Content: "tiefling" }
+			{ Content: "rahshasa" }
+			{ Content: "rast" }
+			{ Content: "ravid" }
+			{ Content: "rust monster" }
+			{ Content: "sahuagin" }
+			{ Content: "average salamander" }
+			{ Content: "satyr" }
+			{ Content: "shadow" }
+			{ Content: "shadow mastiff" }
+			{ Content: "medium skeleton" }
+			{ Content: "skum" }
+			{ Content: "[MediumSlaad]" }
+			{ Content: "spectre" }
+			{ Content: "thoqqua" }
+			{ Content: "adult tojanida" }
+			{ Content: "triton" }
+			{ Content: "troglodyte" }
+			{ Content: "vamire spawn" }
+			{ Content: "wight" }
+			{ Content: "worg" }
+			{ Content: "wraith" }
+			{ Content: "xill" }
+			{ Content: "average xorn" }
+			{ Content: "yeth hound" }
+			{ Content: "pureblood yuan-ti" }
+			{ Content: "halfblood yuan-ti" }
+			{ Content: "medium zombie" }
+			{ Content: "[MediumAnimal]" }
+			{ Content: "[MediumVermin]" }
+		]
+		MediumAnimal:
+		[
+			{ Content: "black bear" }
+			{ Content: "baboon" }
+			{ Content: "boar" }
+			{ Content: "cheetah" }
+			{ Content: "crocodile" }
+			{ Content: "riding dog" }
+			{ Content: "donkey" }
+			{ Content: "leopard" }
+			{ Content: "giant lizard" }
+			{ Content: "pony" }
+			{ Content: "war pony" }
+			{ Content: "porpoise" }
+			{ Content: "medium shark" }
+			{ Content: "constrictor snake" }
+			{ Content: "medium viper snake" }
+			{ Content: "squid" }
+			{ Content: "wolf" }
+			{ Content: "wolverine" }
+		]
+		MediumDragon:
+		[
+			{ Content: "young black dragon" }
+			{ Content: "juvenile black dragon" }
+			{ Content: "very young blue dragon" }
+			{ Content: "young blue dragon" }
+			{ Content: "very young green dragon" }
+			{ Content: "young green dragon" }
+			{ Content: "wyrmling red dragon" }
+			{ Content: "young white dragon" }
+			{ Content: "juvenile white dragon" }
+			{ Content: "young brass dragon" }
+			{ Content: "juvenile brass dragon" }
+			{ Content: "very young bronze dragon" }
+			{ Content: "young bronze dragon" }
+			{ Content: "young copper dragon" }
+			{ Content: "juvenile copper dragon" }
+			{ Content: "wyrmling gold dragon" }
+			{ Content: "very young silver dragon" }
+			{ Content: "young silver dragon" }
+		]
+		MediumElemental:
+		[
+			{ Content: "medium air elemental" }
+			{ Content: "medium earth elemental" }
+			{ Content: "medium fire elemental" }
+			{ Content: "medium water elemental" }
+		]
+		MediumSlaad:
+		[
+			{ Content: "gray slaad" }
+			{ Content: "death slaad" }
+		]
+		MediumVermin:
+		[
+			{ Content: "giant worker ant" }
+			{ Content: "giant soldier ant" }
+			{ Content: "giant bee" }
+			{ Content: "giant bombadier beetle" }
+			{ Content: "medium giant centipede" }
+			{ Content: "medium monstrous scorpion" }
+			{ Content: "medium monstrous spider" }
+		]
+		Large:
+		[
+			{ Content: "achaierai" }
+			{ Content: "ankheg" }
+			{ Content: "beholder" }
+			{ Content: "belker" }
+			{ Content: "elder arrowhawk" }
+			{ Content: "greater barghest" }
+			{ Content: "assassin vine" }
+			{ Content: "carrion crawler" }
+			{ Content: "planetar celestial" }
+			{ Content: "solar celestial" }
+			{ Content: "centaur" }
+			{ Content: "chimera" }
+			{ Content: "chuul" }
+			{ Content: "cloaker" }
+			{ Content: "couatl" }
+			{ Content: "vrock" }
+			{ Content: "hezrou" }
+			{ Content: "marilith" }
+			{ Content: "balor" }
+			{ Content: "destrachan" }
+			{ Content: "osyluth" }
+			{ Content: "hellcat" }
+			{ Content: "cornugon" }
+			{ Content: "gelugon" }
+			{ Content: "pit fiend" }
+			{ Content: "devourer" }
+			{ Content: "deinonychus" }
+			{ Content: "dire bat" }
+			{ Content: "dire ape" }
+			{ Content: "dire wolvering" }
+			{ Content: "dire wolf" }
+			{ Content: "dire boar" }
+			{ Content: "dire lion" }
+			{ Content: "dire bear" }
+			{ Content: "displacer beast" }
+			{ Content: "[LargeDragon]" }
+			{ Content: "dragonne" }
+			{ Content: "drider" }
+			{ Content: "[LargeElemental]" }
+			{ Content: "ettin" }
+			{ Content: "formian myrmarch" }
+			{ Content: "formian queen" }
+			{ Content: "djinni" }
+			{ Content: "efreeti" }
+			{ Content: "[LargeGiant]" }
+			{ Content: "giant eagle" }
+			{ Content: "giant owl" }
+			{ Content: "girallon" }
+			{ Content: "[LargeGolem]" }
+			{ Content: "gorgon" }
+			{ Content: "gray render" }
+			{ Content: "griffon" }
+			{ Content: "sea hag" }
+			{ Content: "annis hag" }
+			{ Content: "hippogriff" }
+			{ Content: "howler" }
+			{ Content: "invisible stalker" }
+			{ Content: "lammasu" }
+			{ Content: "lillend" }
+			{ Content: "mimic" }
+			{ Content: "minotaur" }
+			{ Content: "[LargeNaga]" }
+			{ Content: "nightmare" }
+			{ Content: "ogre" }
+			{ Content: "ogre mage" }
+			{ Content: "ochre jelly" }
+			{ Content: "otyugh" }
+			{ Content: "owlbear" }
+			{ Content: "pegasus" }
+			{ Content: "phase spider" }
+			{ Content: "roper" }
+			{ Content: "noble salamander" }
+			{ Content: "sea lion" }
+			{ Content: "shambling mound" }
+			{ Content: "shield guardian" }
+			{ Content: "large skeleton" }
+			{ Content: "[LargeSlaad]" }
+			{ Content: "[LargeSphinx]" }
+			{ Content: "elder tojanida" }
+			{ Content: "troll" }
+			{ Content: "umberhulk" }
+			{ Content: "unicorn" }
+			{ Content: "winter wolf" }
+			{ Content: "elder xorn" }
+			{ Content: "abomination yuan-ti" }
+			{ Content: "large zombie" }
+			{ Content: "[LargeAnimal]" }
+			{ Content: "[LargeVermin]" }
+		]
+		LargeAnimal:
+		[
+			{ Content: "ape" }
+			{ Content: "brown bear" }
+			{ Content: "polar bear" }
+			{ Content: "bison" }
+			{ Content: "camel" }
+			{ Content: "heavy horse" }
+			{ Content: "heavy war horse" }
+			{ Content: "light horse" }
+			{ Content: "light war horse" }
+			{ Content: "lion" }
+			{ Content: "mule" }
+			{ Content: "giant octopus" }
+			{ Content: "rhinoceros" }
+			{ Content: "large shark" }
+			{ Content: "large viper snake" }
+			{ Content: "tiger" }
+		]
+		LargeDragon:
+		[
+			{ Content: "adult black dragon" }
+			{ Content: "mature adult black dragon" }
+			{ Content: "juvenile blue dragon" }
+			{ Content: "young adult blue dragon" }
+			{ Content: "juvenile green dragon" }
+			{ Content: "young adult green dragon" }
+			{ Content: "young adult white dragon" }
+			{ Content: "adult white dragon" }
+			{ Content: "young adult brass dragon" }
+			{ Content: "adult brass dragon" }
+			{ Content: "juvenile bronze dragon" }
+			{ Content: "young adult bronze dragon" }
+			{ Content: "young adult copper dragon" }
+			{ Content: "adult copper dragon" }
+			{ Content: "very young gold dragon" }
+			{ Content: "young gold dragon" }
+			{ Content: "juvenile gold dragon" }
+			{ Content: "juvenile silver dragon" }
+			{ Content: "young adult dragon" }
+		]
+		LargeElemental:
+		[
+			{ Content: "large air elemental" }
+			{ Content: "large earth elemental" }
+			{ Content: "large fire elemental" }
+			{ Content: "large water elemental" }
+		]
+		LargeGiant:
+		[
+			{ Content: "hill giant" }
+			{ Content: "stone giant" }
+			{ Content: "frost giant" }
+			{ Content: "fire giant" }
+		]
+		LargeGolem:
+		[
+			{ Content: "flesh golem" }
+			{ Content: "clay golem" }
+			{ Content: "stone golem" }
+			{ Content: "iron golem" }
+		]
+		LargeNaga:
+		[
+			{ Content: "water naga" }
+			{ Content: "spirit naga" }
+			{ Content: "dark naga" }
+		]
+		LargeSlaad:
+		[
+			{ Content: "red slaad" }
+			{ Content: "blue slaad" }
+			{ Content: "green slaad" }
+		]
+		LargeSphinx:
+		[
+			{ Content: "androsphinx" }
+			{ Content: "criosphinx" }
+			{ Content: "gynosphinx" }
+			{ Content: "hieracosphinx" }
+		]
+		LargeVermin:
+		[
+			{ Content: "giant queen ant" }
+			{ Content: "giant stag beelte" }
+			{ Content: "giant praying mantis" }
+			{ Content: "giant wasp" }
+			{ Content: "large monstrous centipede" }
+			{ Content: "large monstrous scoprion" }
+			{ Content: "large monstrous spider" }
+		]
+		Huge:
+		[
+			{ Content: "aboleth" }
+			{ Content: "athach" }
+			{ Content: "behir" }
+			{ Content: "bulette" }
+			{ Content: "delver" }
+			{ Content: "bebilith" }
+			{ Content: "retriever demon" }
+			{ Content: "glabrezue" }
+			{ Content: "nalfeshnee" }
+			{ Content: "elasmosaurus" }
+			{ Content: "megaraptor" }
+			{ Content: "triceratops" }
+			{ Content: "tyrannosaurus" }
+			{ Content: "dire tiger" }
+			{ Content: "dire shark" }
+			{ Content: "[HugeDragon]" }
+			{ Content: "dragon turtle" }
+			{ Content: "[HugeElemental]" }
+			{ Content: "frost worm" }
+			{ Content: "[HugeGiant]" }
+			{ Content: "[HugeHydra]" }
+			{ Content: "manticore" }
+			{ Content: "[HugeNightshade]" }
+			{ Content: "gelatinous cube" }
+			{ Content: "black pudding" }
+			{ Content: "remorhaz" }
+			{ Content: "huge skeleton" }
+			{ Content: "spider eater" }
+			{ Content: "tendriculos" }
+			{ Content: "titan" }
+			{ Content: "treant" }
+			{ Content: "wyvern" }
+			{ Content: "yrthak" }
+			{ Content: "huge zombie" }
+			{ Content: "[HugeAnimal]" }
+			{ Content: "[HugeVermin]" }
+		]
+		HugeAnimal:
+		[
+			{ Content: "giant crocodile" }
+			{ Content: "elephant" }
+			{ Content: "huge shark" }
+			{ Content: "huge viper snake" }
+			{ Content: "giant squid" }
+			{ Content: "giant constrictor snake" }
+			{ Content: "orca" }
+		]
+		HugeDragon:
+		[
+			{ Content: "old black dragon" }
+			{ Content: "very old black dragon" }
+			{ Content: "ancient black dragon" }
+			{ Content: "adult blue dragon" }
+			{ Content: "mature adult blue dragon" }
+			{ Content: "old blue dragon" }
+			{ Content: "very old blue dragon" }
+			{ Content: "adult green dragon" }
+			{ Content: "mature adult green dragon" }
+			{ Content: "old green dragon" }
+			{ Content: "very old green dragon" }
+			{ Content: "mature adult white dragon" }
+			{ Content: "old white dragon" }
+			{ Content: "very old white dragon" }
+			{ Content: "ancient white dragon" }
+			{ Content: "mature adult brass dragon" }
+			{ Content: "old brass dragon" }
+			{ Content: "very old brass dragon" }
+			{ Content: "ancient brass dragon" }
+			{ Content: "adult bronze dragon" }
+			{ Content: "mature adult bronze dragon" }
+			{ Content: "old bronze dragon" }
+			{ Content: "very old bronze dragon" }
+			{ Content: "mature adult copper dragon" }
+			{ Content: "old copper dragon" }
+			{ Content: "very old copper dragon" }
+			{ Content: "ancient copper dragon" }
+			{ Content: "young adult gold dragon" }
+			{ Content: "adult gold dragon" }
+			{ Content: "mature adult gold dragon" }
+			{ Content: "adult silver dragon" }
+			{ Content: "mature adult silver dragon" }
+			{ Content: "old silver dragon" }
+			{ Content: "very old silver dragon" }
+		]
+		HugeElemental:
+		[
+			{ Content: "huge air elemental" }
+			{ Content: "greater air elemental" }
+			{ Content: "elder air elemental" }
+			{ Content: "huge earth elemental" }
+			{ Content: "greater earth elemental" }
+			{ Content: "elder earth elemental" }
+			{ Content: "huge fire elemental" }
+			{ Content: "greater fire elemental" }
+			{ Content: "elder fire elemental" }
+			{ Content: "huge water elemental" }
+			{ Content: "greater water elemental" }
+			{ Content: "elder water elemental" }
+		]
+		HugeGiant:
+		[
+			{ Content: "cloud giant" }
+			{ Content: "storm giant" }
+		]
+		HugeHydra:
+		[
+			{ Content: "five-headed hydra" }
+			{ Content: "six-headed hydra" }
+			{ Content: "seven-headed hydra" }
+			{ Content: "eight-headed hydra" }
+			{ Content: "nine-headed hydra" }
+			{ Content: "ten-headed hydra" }
+			{ Content: "eleven-headed hydra" }
+			{ Content: "twelve-headed hydra" }
+		]
+		HugeVermin:
+		[
+			{ Content: "huge monstrous centipede" }
+			{ Content: "huge monstrous scorpion" }
+			{ Content: "huge monstrous spider" }
+		]
+		HugeNightShade:
+		[
+			{ Content: "nightwing" }
+			{ Content: "nightwalker" }
+			{ Content: "nightcrawler" }
+		]
+		Gargantuan:
+		[
+			{ Content: "[GargantuanDragon]" }
+			{ Content: "kraken" }
+			{ Content: "purple worm" }
+			{ Content: "roc" }
+			{ Content: "gargantuan skeleton" }
+			{ Content: "gargantuan zombie" }
+			{ Content: "[GargantuanAnimal]" }
+			{ Content: "[GargantuanVermin]" }
+		]
+		GargantuanAnimal:
+		[
+			{ Content: "baleen whale" }
+			{ Content: "cachalot whale" }
+		]
+		GargantuanDragon:
+		[
+			{ Content: "wyrm black dragon" }
+			{ Content: "great wyrm black dragon" }
+			{ Content: "ancient blue dragon" }
+			{ Content: "wyrm blue dragon" }
+			{ Content: "great wyrm blue dragon" }
+			{ Content: "ancient green dragon" }
+			{ Content: "wyrm green dragon" }
+			{ Content: "great wyrm green dragon" }
+			{ Content: "wyrm white dragon" }
+			{ Content: "great wyrm white dragon" }
+			{ Content: "wyrm brass dragon" }
+			{ Content: "great wyrm brass dragon" }
+			{ Content: "ancient bronze dragon" }
+			{ Content: "wyrm bronze dragon" }
+			{ Content: "great wyrm bronze dragon" }
+			{ Content: "wyrm copper dragon" }
+			{ Content: "great wyrm copper dragon" }
+			{ Content: "old gold dragon" }
+			{ Content: "very old gold dragon" }
+			{ Content: "ancient gold dragon" }
+			{ Content: "ancient silver dragon" }
+			{ Content: "wyrm silver dragon" }
+		]
+		GargantuanVermin:
+		[
+			{ Content: "gargantuan monstrous centipede" }
+			{ Content: "gargantuan monstrous scorpion" }
+			{ Content: "gargantuan monstrous spider" }
+		]
+		Colossal:
+		[
+			{ Content: "[ColossalDragon]" }
+			{ Content: "colossal skeleton" }
+			{ Content: "tarrasque" }
+			{ Content: "colossal zombie" }
+			{ Content: "[ColossalVermin]" }
+		]
+		ColossalDragon:
+		[
+			{ Content: "wyrm gold dragon" }
+			{ Content: "great wyrm gold dragon" }
+			{ Content: "great wyrm silver dragon" }
+		]
+		ColossalVermin:
+		[
+			{ Content: "colossal monstrous centipede" }
+			{ Content: "colossal monstrous scorpion" }
+			{ Content: "colossal monstrous spider" }
+		]
+	}
+	GeneratorType: Assignment
+}

@@ -1,0 +1,42 @@
+Name: Adventure Hooks
+Author: Lance Boudreaux
+Description: Generates adventure hooks for the selected genre.
+Version: "1.0"
+Tags:
+[
+	Encounter
+	Fantasy
+	Post Apocalyptic
+]
+OutputFormat: Html
+ShowInList: true
+Parameters:
+{
+	Genre:
+	{
+		Value: Fantasy
+		Display: Genre
+		Type: List
+		Options:
+		[
+			Fantasy:Fantasy
+			PostApocalyptic:Post Apocalyptic
+		]
+	}
+}
+LineItems:
+{
+	Start:
+	[
+		{ Content: "[Genre]" }
+	]
+	Fantasy:
+	[
+		{ Content: "[=Generate('Adventure Hooks (Fantasy)')]" }
+	]
+	PostApocalyptic:
+	[
+		{ Content: "[=Generate('Adventure Hooks (Post Apocalyptic)')]" }
+	]
+}
+GeneratorType: Assignment

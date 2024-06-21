@@ -72,7 +72,7 @@ namespace Randomizer.Generator.DotNet
 					ex.Data.Add(nameof(MethodName), MethodName);
 				}
 			}
-			if (edi != null) edi.Throw();
+			edi?.Throw();
 			return String.Empty;
 		}
 		#endregion

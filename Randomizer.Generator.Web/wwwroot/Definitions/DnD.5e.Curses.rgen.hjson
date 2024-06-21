@@ -1,0 +1,136 @@
+{
+  Name: Curses D&D 5e
+  Author: Lance Boudreaux
+  Description: A random curse generator for D&D 5e
+  Version: "2.0"
+  URL: http://rpgcharacters.wordpress.com/2011/03/03/random-thursday-random-curses/
+  Tags:
+  [    
+    D&D
+    Fantasy
+  ]
+  OutputFormat: Html
+  Parameters:
+  {
+    Severity:
+    {
+      Value: Any
+      Display: Severity
+      Aliases: []
+      Type: List
+      Options:
+      [
+        Any:Any
+        Weak:Inconsequential
+        Minor:Minor
+        Major:Major
+        Severe:Severe
+      ]
+    }
+  }
+  TextCase: None
+  Imports: 
+  [
+	DnD Monsters by Type
+	Phobias
+  ]
+  LineItems:
+  {
+    Start:
+    [
+		{ Content: "[Severity]" }
+    ]
+    Any:
+    [
+		{ Content: "[Weak]" }
+		{ Content: "[Minor]" }
+		{ Content: "[Major]" }
+		{ Content: "[Severe]" }
+    ]
+	CursedName:
+	[
+		{ Content: "accursed" }
+		{ Content: "afflicted" }
+		{ Content: "bedeviled" }
+		{ Content: "cursed" }
+		{ Content: "doomed" }
+		{ Content: "hexed" }
+		{ Content: "ill-fated" }
+	]
+	
+    Weak:
+    [
+		{ Content: "The [CursedName] is overcome by irritating skin prickling causes them to suffer disadvantage on attack rolls while wearing armor." }		
+		{ Content: "Whenever the [CursedName] moves their full speed in a single turn they trip and fall prone at the end of the movement." }
+		{ Content: "An item of little to no value becomes the [CursedName]'s obsession.  They will do anything necessary to prevent being parted from it." }
+		{ Content: "The [CursedName] begins losing their hair in large chunks starting with their head and proceeding to their body hair until completely hairless." }
+		{ Content: "The skin color of the [CursedName] begins to cycle through the rainbow, changing colors about twice a day." }
+		{ Content: "During combat they are active in, the [CursedName] becomes fixated on the first opponent to attack them."}
+		{ Content: "The [CursedName] is overcome with hunger, eating double their normal portion at all meals." }
+		{ Content: "The [CursedName] does not get the benefit of natural 20 rolls." }
+		{ Content: "The [CursedName] becomes mute." }
+		{ Content: "The [CursedName] begins to emit a foul odor causing them to roll with disadvantage on Charisma (Persuasion) checks and advantage on Charisma (Intimidation) checks." }
+		{ Content: "The [CursedName] begins hoarding wealth.  They must roll a Wisdom Saving Throw in order to spend money. DC is 10 + the number of GP." }
+    ]
+	
+    Minor:
+    [
+		{ Content: "The [CursedName]'s movement speed is reduced halved." }
+		{ Content: "The [CursedName] has disadvantage on [=Pick('strength','dexterity','consititution','intelligence','wisdom','charisma')] saving throws." }
+		{ Content: "The [CursedName] loses one of their highest spell slots or one of their expendable class resources (rage, bardic inspiration, ki points, etc)." }
+		{ Content: "The [CursedName] has disadvantage on all saving throws." }
+		{ Content: "The [CursedName] is compelled to always [=Pick('tell the truth','lie')]. They can try to resist each time by rolling a DC 16 Wisdom saving throw.  On a failure they gain one level of exhaustion." }
+		{ Content: "The [CursedName] has disadvantage on all attack rolls." }
+		{ Content: "The [CursedName] is unable to use reactions during the first round of combat." }
+		{ Content: "Anytime the [CursedName] rolls a natural 1 on a skill check, saving throw, or attack they drop everything that they are holding in their hands." }
+		{ Content: "The [CursedName] wakes up each day with at least one level of exhaustion." }
+		{ Content: "The [CursedName] becomes afraid of [Phobia.Source].  Anytime they are faced with the source of their fear they must succeed on a DC 16 Wisdom saving throw or become fightened for 1d4 minutes." }
+		{ Content: "Every hit from an attack is a critical hit to the [CursedName]." }
+		{ Content: "The [CursedName] becomes mute. If they are a spellcaster they cannot case spells that require a verbal component." }
+		{ Content: "The [CursedName] is unable to stay awake during the day." }
+		{ Content: "The [CursedName] becomes paranoid of everyone. They will take actions to undermine what they perceive to be actions against them." }		
+		{ Content: "The [CursedName] becomes vulnerable to [=Generate('Resistance DnD 5e')] damage." }
+		{ Content: "Empathy fills the [CursedName] making it incredibly difficult to harm or mislead others. Attempting to attack a creature requires a DC 15 Wisdom Saving Throw to complete the attack. Lying to a creature requires the same roll or they must confess." }
+		{ Content: "The [CursedName] cannot speak [=Pick('the truth','a lie')]." }
+		{ Content: "The [CursedName] is haunted by guilt about a past action (deserved or not), affecting their morale and decision-making." }
+		{ Content: "The [CursedName] is shunned and despised by animals and children, who run or attack them on sight." }
+    ]
+	
+    Major:
+    [
+		{ Content: "Every hit from an attack causes maximum damage to the [CursedName]." }
+		{ Content: "During times of high stress such as social situations and combat the [CursedName] *True Polymorphs* into a [Animal|Beast|Vermin] and attacks any creature within sight." }
+		{ Content: "The [CursedName]'s [=Pick('Strength','Dexterity','Constitution','Intelligence','Wisdom','Charisma')] is halved." }
+		{ Content: "The [CursedName]'s appearance is changed to look like an enemy of their allies or a powerful faction." }
+		{ Content: "The [CursedName]'s appearance shifts to someone nearby.  When that person is no longer within eyeshot, they shift to a new person within eyeshot." }
+		{ Content: "The [CursedName] ages one year per day." }
+		{ Content: "One of the [CursedName]'s magic items becomes mundane." }
+		{ Content: "Each time the [CursedName] is in a stressful situation they have a 50% chance of falling unconscious for 1d20 minutes." }
+		{ Content: "Wounds on the [CursedName] take twice as long to heal, healing spells are only half as effective." }
+		{ Content: "The [CursedName] is turned into a [=Pick('frog','sheep','gerbil','hamster','turtle')]." }
+		{ Content: "The [CursedName] has double vision.  When they hit with an attack, there is a 50% chance that they hit a double doing no damage." }
+		{ Content: "The [CursedName] becomes deaf, blind, and mute." }
+		{ Content: "The [CursedName]'s [=Pick('left','right')] [=Pick('arm','leg')] becomes paralyzed." }
+		{ Content: "Whispering shadows follow the [CursedName] sowing doubt and fear into their mind." }
+		{ Content: "A powerful entity relentlessly hunts the [CursedName] continuously harassing and ambushing them." }
+		{ Content: "Memories begin fading from the [CursedName]'s mind starting with their newest memories and moving backward in time." }
+		{ Content: "Any living thing that the [CursedName] touches immediately shrivels and dies. Clothing like gloves, gauntlets, and boots do not dampen the effect." }
+    ]
+		
+    Severe:
+    [
+		{ Content: "Every hit from an attack causes double maximum damage to the [CursedName]." }
+		{ Content: "Sleep evades the [CursedName] causing them to gain a level of exhaustion every morning and spellcasters are unable to learn or prepare spells." }
+		{ Content: "All magic items possessed by the [CursedName] disappears." }
+		{ Content: "Every time the [CursedName] hits a target, they take half the damage the deal." }
+		{ Content: "When the [CursedName] kills a creature, they must roll a DC 15 Constitution Saving Throw or join the creature in death." }
+		{ Content: "The [CursedName] automatically fails all saving throws." }
+		{ Content: "If the [CursedName] breathes air, they can only breath water.  If they breathe water, they can only breathe air." }
+		{ Content: "The [CursedName] cannot wear armor or clothing or use weapons or any devices." }
+		{ Content: "All valuables and equipment owned by the [CursedName] are turned into a sticy paste." }
+		{ Content: "The world forgets who the [CursedName] is." }
+		{ Content: "[=TCase(ToText(Roll(1,6)+1))] companions, family, and/or friends are subject to the curse: [Major]." }
+    ]	
+  }
+  GeneratorType: Assignment
+}

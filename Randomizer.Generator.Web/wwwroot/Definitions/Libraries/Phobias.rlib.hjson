@@ -1,0 +1,347 @@
+Name: Phobias
+Author: Lance Boudreaux
+Description: null
+Version: "1.0"
+OutputFormat: Text
+LineItems:{
+
+	"Phobia.Name":
+	[
+		{ Content: "achluophobia" }						// darkness
+		{ Content: "acousticophobia" }					// noise (branch of Phonophobia)
+		{ Content: "acrophobia" }						// heights
+		{ Content: "aerophobia" }						// aircraft or flying
+		{ Content: "agoraphobia" }						// inescapable/unsafe situations
+		{ Content: "aibohphobia" }						// palindromes
+		{ Content: "aichmophobia" }						// sharp or pointed objects
+		{ Content: "algophobia" }						// pain
+		{ Content: "alliumphobia" }						// scent of allium
+		{ Content: "ancraophobia" }						// wind or drafts
+		{ Content: "androphobia" }						// adult men
+		{ Content: "anthropophobia" }					// human beings
+		{ Content: "apeirophobia" }						// infinity, eternity, and the uncountable
+		{ Content: "aphenphosmphobia" }					// being touched
+		{ Content: "apotemnophobia" }					// amputees
+		{ Content: "aquaphobia" }						// water
+		{ Content: "astraphobia" }						// thunder and lightning
+		{ Content: "atelophobia" }						// imperfection
+		{ Content: "atychiphobia" }						// thunder and lightning
+		{ Content: "autophobia" }						// isolation
+				
+		{ Content: "basophobia" }						// walking or standing, falling
+		{ Content: "belonephobia" }						// needles or pins
+		{ Content: "bibliophobia" }						// books
+		{ Content: "[Phobia.Name.Botanophobia]" }		// plants
+				
+		{ Content: "cacophobia" }						// ugliness
+		{ Content: "carcinophobia" }					// cancer
+		{ Content: "catoptrophobia" } 					// mirrors
+		{ Content: "cephalalgiaphobia" } 				// headaches
+		{ Content: "chemophobia" }						// chemicals
+		{ Content: "cherophobia" }						// happiness
+		{ Content: "[Phobia.Name.Chromophobia]" }		// colors
+		{ Content: "chronophobia" }						// time and time moving forward
+		{ Content: "chronomentrophobia" }				// clocks	
+		{ Content: "cibophobia" }						// food
+		{ Content: "claustrophobia" }					// no escape
+		{ Content: "coimetrophobia" }					// cemeteries
+		{ Content: "coprophobia" }						// feces
+		{ Content: "coulrophobia" }						// clowns
+														
+		{ Content: "dentophobia" }						// dentists
+		{ Content: "domatophobia" }						// houses
+		{ Content: "dystichiphobia" }					// accidents
+															
+		{ Content: "ecophobia" }						// cataclysmic environmental change
+		{ Content: "emetophobia" }						// vomiting
+		{ Content: "enochlophobia" }					// crowds
+		{ Content: "ephebiphobia" }						// youth
+		{ Content: "ergophobia" }						// work
+		{ Content: "erotophobia" }						// sexual love		
+		{ Content: "eurotophobia" }						// female genitals
+		
+		{ Content: "frigophobia" }						// being too cold
+				
+		{ Content: "gamophobia" }						// marriage
+		{ Content: "gelotophobia" }						// being laughed at
+		{ Content: "gephyrophobia" }					// bridges
+		{ Content: "genophobia" } 						// sexual intercourse
+		{ Content: "genuphobia" }						// knees or kneeling
+		{ Content: "gerascophobia" }					// growing old or aging
+		{ Content: "glossophobia" }						// speaking in public
+		{ Content: "gymnophobia" }						// nudity
+		{ Content: "gynophobia" }						// adult women
+		
+		{ Content: "halitophobia" }						// bad breath		
+		{ Content: "hedonophobia" }						// obtaining pleasure
+		{ Content: "heliophobia" }						// sun or sunlight
+		{ Content: "hemophobia" }						// blood		
+		{ Content: "hippopotomonstrosesquipedaliophobia" } // long words
+		{ Content: "hodophobia" }						// travel
+		{ Content: "hypnophobia" }						// sleep or nightmares
+		{ Content: "hypochondria" }						// illness
+		
+		{ Content: "koumpounophobia" }					// buttons on clothing
+		
+		{ Content: "lilapsophobia" }					// tornadoes or hurricanes
+			
+		{ Content: "mageiricophobia" }					// cooking
+		{ Content: "masklophobia" }						// masks or costumes
+		{ Content: "megalophobia" }						// large objects		
+		{ Content: "monophobia" }						// being alone or isolated
+		{ Content: "mysophobia" }						// germs, contamination, or dirt
+		
+		{ Content: "necrophobia" }						// death
+		{ Content: "neophobia" }						// newness, novelty, change, or progress
+		{ Content: "noctiphobia" }						// night
+		{ Content: "nosocomephobia" }					// hospitals
+		{ Content: "nosophobia" }						// disease
+		{ Content: "nostophobia" }						// returning home
+		{ Content: "[Phobia.Name.Numerophobia]" }		// numbers
+		
+		{ Content: "obesophobia" }						// gaining weight
+		{ Content: "ommetaphobia" }						// eyes
+		{ Content: "oneirophobia" }						// dreams
+		{ Content: "ophthalmophobia" }					// being stared at
+		{ Content: "osmophobia" }						// odors
+		
+		{ Content: "panphobia" }						// everything
+		{ Content: "pedophobia" }						// babies and children
+		{ Content: "phagophobia" }						// swallowing
+		{ Content: "phallophobia" }						// erections or penises
+		{ Content: "pharmacophobia" }					// medicine
+		{ Content: "phasmophobia" }						// ghosts or phantoms
+		{ Content: "phyllophobia" }						// leaves
+		{ Content: "phobophobia" }						// fear itself or having phobias
+		{ Content: "phonophobia" }						// loud sounds or voices
+		{ Content: "pogonophobia" }						// beards
+		{ Content: "pyrophobia" } 						// fire
+		
+		{ Content: "radiophobia" }						// radiation
+
+		{ Content: "sexophobia" }						// sexual organs or sexual activities
+		{ Content: "somniphobia" }						// sleep
+		
+		{ Content: "taphophobia" }						// graves or being buried alive
+		{ Content: "technophobia" }						// technology
+		{ Content: "teratophobia" }						// giving birth to a monster or disfigured feotus
+		{ Content: "thalassophobia" }					// the sea
+		{ Content: "thanatophobia" }					// dying
+		{ Content: "thermophobia" }						// high temperatures
+		{ Content: "tokphobia" }						// child birth or pregnancy
+		{ Content: "tonitrophobia" }					// thunder
+		{ Content: "toxiphobia" }						// being poisoned
+		{ Content: "traumatophobia" }					// injury
+		{ Content: "trichophobia" }						// hair loss
+		{ Content: "trypanophobia " }					// needles or injections
+		{ Content: "trypophobia" }						// holes or pattern with holes
+		
+		{ Content: "[Phobia.Name.Zoophobia]" }			// animals
+	]
+	
+	"Phobia.Name.Botanophobia":
+	[
+		{ Content: "botanophobia" }						// plants
+		{ Content: "dendrophobia" }						// trees
+		{ Content: "mycophobia" }						// mushrooms
+	]
+	
+	"Phobia.Name.Chromophobia":
+	[
+		{ Content: "chromophobia" }						// colors
+		{ Content: "erythrophobia" }					// red or blushing
+		{ Content: "melanophobia" }						// black
+		{ Content: "porphyrophobia" } 					// purple
+		{ Content: "xanthaphobia" }						// yellow
+	]
+
+	"Phobia.Name.Numerophobia":
+	[
+		{ Content: "numerophobia" }						// numbers
+		{ Content: "heptadekaphobia" }					// 17
+		{ Content: "hexakosioihexekontahexaphobia" }	// 666
+		{ Content: "tatraphobia" }						// 4
+		{ Content: "triskaidekaphobia" }				// 13
+	]
+	
+	"Phobia.Name.Zoophobia":
+	[
+		{ Content: "zoophobia" }						// animals
+		{ Content: "ailurophobia" }						// cats
+		{ Content: "alektorophobia" }					// chickens
+		{ Content: "anatidaephobia" }					// ducks
+		{ Content: "apiphobia" }						// bees
+		{ Content: "arachnophobia" }					// arachnids
+		{ Content: "batrachophobia" }					// frogs and other amphibians
+		{ Content: "chiroptophobia" }					// bats
+		{ Content: "cynophobia" }						// dogs
+		{ Content: "entomophobia" }						// insects
+		{ Content: "equinophobia" }						// horses
+		{ Content: "galeophobia" }						// sharks
+		{ Content: "helminthophobia" }					// worms
+		{ Content: "herpetophobia" }					// reptiles or amphibians
+		{ Content: "ichthyophobia" }					// fish
+		{ Content: "lepidopterophobia" }				// butterflies and moths
+		{ Content: "musophobia" }						// mice or rats
+		{ Content: "myrmecophobia" }					// ants
+		{ Content: "ophidiophobia" }					// snakes
+		{ Content: "ornithophobia" }					// birds
+		{ Content: "ostraconophobia" }					// shellfish
+		{ Content: "spheksophobia" }					// wasps
+	]
+	
+	"Phobia.Source":
+	[
+		{ Content: "[=Pick('sharp','pointed')] objects" }
+		{ Content: "[=Pick('sun','sunlight')]" }
+		{ Content: "[=Pick('wind','drafts')]" } 
+		{ Content: "[Phobia.Source.Animals]" }
+		{ Content: "accidents" }
+		{ Content: "adult men" }
+		{ Content: "adult women" }
+		{ Content: "aging" }
+		{ Content: "allium (garlic, onions, chives, shallots)" }
+		{ Content: "amputees" }
+		{ Content: "babies and children" }
+		{ Content: "bad breath" }
+		{ Content: "beards" }
+		{ Content: "being alone" }
+		{ Content: "being buried alive" }
+		{ Content: "being laughed at" }
+		{ Content: "being stared at" }
+		{ Content: "being touched" }
+		{ Content: "blood" }
+		{ Content: "blushing" }
+		{ Content: "books" }
+		{ Content: "bridges" }
+		{ Content: "buttons" }
+		{ Content: "cancer" }
+		{ Content: "cataclysm" }		
+		{ Content: "cemeteries" }
+		{ Content: "chemicals" }
+		{ Content: "child birth" }
+		{ Content: "clocks" }
+		{ Content: "clothing" }
+		{ Content: "clowns" }
+		{ Content: "cold" }
+		{ Content: "colors" }
+		{ Content: "cooking" }
+		{ Content: "costumes" }
+		{ Content: "crowds" }
+		{ Content: "darkness" }
+		{ Content: "death" }
+		{ Content: "dentists" }
+		{ Content: "disease" }
+		{ Content: "dreams" }
+		{ Content: "dying" }
+		{ Content: "enclosed spaces" }
+		{ Content: "everything" }
+		{ Content: "eyes" }
+		{ Content: "failure" }
+		{ Content: "falling" }
+		{ Content: "fear itself" }
+		{ Content: "feces" }		
+		{ Content: "fire" }
+		{ Content: "flying" }
+		{ Content: "food" }	
+		{ Content: "gaining weight" }
+		{ Content: "germs" }
+		{ Content: "[=Pick('ghosts','phantoms','poltergeists')]" }
+		{ Content: "giving birth to [=Pick('a monster','a disfigured baby')]" }
+		{ Content: "graves" }
+		{ Content: "hair loss" }
+		{ Content: "happiness" }
+		{ Content: "headaches" }
+		{ Content: "heat" }
+		{ Content: "heights" }
+		{ Content: "holes" }
+		{ Content: "hospitals" }
+		{ Content: "houses" }
+		{ Content: "human beings" }
+		{ Content: "hurricanes" }
+		{ Content: "illness" }
+		{ Content: "imperfection" }
+		{ Content: "inescapable situations" }
+		{ Content: "infinity, eternity, and the uncountable" }
+		{ Content: "injury" }
+		{ Content: "isolation" }
+		{ Content: "kneeling" }
+		{ Content: "knees" }
+		{ Content: "large objects" }
+		{ Content: "leaves" }
+		{ Content: "long words" }
+		{ Content: "loud sounds" }
+		{ Content: "love" }
+		{ Content: "marriage" }
+		{ Content: "masks" }
+		{ Content: "medicine" }
+		{ Content: "mushrooms" }
+		{ Content: "mirrors" }
+		{ Content: "needles" }
+		{ Content: "newness" }
+		{ Content: "nightmares" }
+		{ Content: "nighttime" }
+		{ Content: "noise" }
+		{ Content: "nudity" }
+		{ Content: "numbers" }
+		{ Content: "odors" }
+		{ Content: "one's reflection" }
+		{ Content: "pain" }
+		{ Content: "palindromes" }
+		{ Content: "pleasure" }
+		{ Content: "poison" }
+		{ Content: "pregnancy" }
+		{ Content: "public speaking" }
+		{ Content: "radiation" }
+		{ Content: "repeating patterns" }
+		{ Content: "returning home" }
+		{ Content: "[=Pick('sexual organs','penises','erection','female genitals')]" }
+		{ Content: "sleep" }
+		{ Content: "swallowing" }
+		{ Content: "the color [=Pick('black','white','red','blue','yellow','green','orange','purple','brown')]" }
+		{ Content: "the dead" }
+		{ Content: "the number [=Roll(1,100)]" }
+		{ Content: "the number 666" }
+		{ Content: "[=Pick('the sea','the ocean')]" }
+		{ Content: "the unknown" }
+		{ Content: "thunder and lightning" }
+		{ Content: "time" }
+		{ Content: "tornadoes" }
+		{ Content: "travel" }
+		{ Content: "trees" }
+		{ Content: "ugliness" }
+		{ Content: "vomiting" }
+		{ Content: "water" }		
+		{ Content: "work" }
+		{ Content: "youth" }
+	]
+	
+	"Phobia.Source.Animals":
+	[
+		{ Content: "animals" }
+		{ Content: "ants" }
+		{ Content: "amphibians" }
+		{ Content: "arachnids" }
+		{ Content: "bats" }
+		{ Content: "bees" }
+		{ Content: "butterflies and moths" }
+		{ Content: "cats" }
+		{ Content: "chickens" }
+		{ Content: "dogs" }
+		{ Content: "ducks" }
+		{ Content: "fish" }
+		{ Content: "frogs" }
+		{ Content: "horses" }
+		{ Content: "insects" }
+		{ Content: "mice" }
+		{ Content: "rats" }
+		{ Content: "reptiles" }
+		{ Content: "scorpions" }
+		{ Content: "sharks" }
+		{ Content: "shellfish" }
+		{ Content: "snakes" }
+		{ Content: "spiders" }
+		{ Content: "worms" }
+	]
+}
+GeneratorType: Assignment

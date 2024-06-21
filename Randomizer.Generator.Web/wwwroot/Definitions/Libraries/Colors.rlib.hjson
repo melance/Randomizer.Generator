@@ -1,0 +1,67 @@
+Name: Colors
+Author: null
+Description: "A color generator, with themed swatches suitable for import."
+Version: "3.0"
+URL: null
+Tags:
+[
+	Generic
+]
+OutputFormat: Text
+ShowInList: false
+Parameters:
+{	
+	ColorLevel:
+	{
+		Value: ColorLevelPrimary
+		Display: Color Level
+		Type: List
+		Options:
+		[
+			ColorLevelPrimary:Primary
+			ColorLevelSecondary:Secondary
+			ColorLevelTertiary:Tertiary
+			ColorLevelQuaternary:Quaternary
+		]
+	}
+}
+TextCase: None
+LineItems:
+{
+	Start:
+	[
+	  { Content: "[ColorLevelPrimary]" }
+	]
+	
+	ColorLevelPrimary:
+	[
+		{ Content: "[=if(" }
+		{ Content: "[ColorSwatchBrown]" }
+		{ Content: "[ColorSwatchGreen]" }
+		{ Content: "[ColorSwatchGreyscale]" }
+		{ Content: "[ColorSwatchOrange]" }
+		{ Content: "[ColorSwatchPurple]" }
+		{ Content: "[ColorSwatchRed]" }
+		{ Content: "[ColorSwatchYellow]" }
+		{ Content: "[ColorSwatchMetal]" }
+		{ Content: "[ColorSwatchBasic]" }
+	]	
+	ColorLevelSecondary:
+	[
+		{ Content: "[ColorSwatchOrange]" }
+		{ Content: "[ColorSwatchYellow]" }
+		{ Content: "[ColorSwatchRed]" }
+	]
+	ColorLevelTertiary:
+	[
+		{ Content: "[ColorSwatchBlue]" }
+		{ Content: "[ColorSwatchGreen]" }
+		{ Content: "[ColorSwatchGrey]" }
+	]
+	ColorLevelQuaternary:
+	[
+		{ Content: "[ColorSwatchBrown]" }
+		{ Content: "[ColorSwatchGreen]" }
+	]	
+}
+GeneratorType: Assignment

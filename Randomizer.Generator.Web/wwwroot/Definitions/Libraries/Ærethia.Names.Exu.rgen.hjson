@@ -1,0 +1,190 @@
+{
+	Name: Exu Name
+	/* Baltic */
+	Version: "2.0"
+	OutputFormat: Text
+    ShowInList: false
+	Parameters:
+	{
+	}
+	LineItems:
+	{
+		Start:
+		[
+			{ Content: "[GivenName]" }
+		]
+        		
+		GivenName:
+		[
+            { Content: "[GN1][GN2]" }			
+		]
+        
+		GN1:
+		[
+            { Content: "Ad[=Pick('','r')]" }
+            { Content: "Agn" }          
+            { Content: "Ai[=Pick('n','s','v')]" }
+            { Content: "Akv" }
+            { Content: "Alb" }
+            { Content: "Ald" }
+            { Content: "Aleks" }
+            { Content: "Alfr" }
+            { Content: "Alg" }
+            { Content: "Ama[=Pick('l','n')]" }
+            { Content: "Amel" }
+            { Content: "Anast" }
+            { Content: "Andr" }
+            { Content: "Ant" }
+            { Content: "Anz" }
+            { Content: "Art" }
+            { Content: "Ar" }
+            { Content: "Barb" }
+            { Content: "Ben[=Pick('','d')]" }
+            { Content: "Bet" }
+            { Content: "Bir" }
+            { Content: "Brig" }
+            { Content: "Bron" }
+            { Content: "Dagn" }
+            { Content: "Dan" }
+            { Content: "Dar" }
+            { Content: "Daum" }
+            { Content: "Dmitr" }
+            { Content: "Dom" }
+            { Content: "Dor" }
+            { Content: "Dz" }
+            { Content: "Edg" }
+            { Content: "Ed[=Pick('m','v')]" }
+            { Content: "Egid" }
+            { Content: "Eim" }
+            { Content: "Ein" }
+            { Content: "Eleon" }
+            { Content: "Elij" }
+            { Content: "Elm" }
+            { Content: "Elz" }
+            { Content: "Filom" }
+            { Content: "Fri[=Pick('c','dr')]" }
+            { Content: "Gab[=Pick('','r')]" }
+            { Content: "Gen" }
+            { Content: "Geor" }
+            { Content: "Gint" }
+            { Content: "Gu[=Pick('n','st')]" }
+            { Content: "He[=Pick('l','nr','r')]" }
+            { Content: "Igl" }
+            { Content: "Ign" }
+            { Content: "In" }
+            { Content: "Izab" }
+            { Content: "Ja[=Pick('dv','n','r')]" }
+            { Content: "Jek" }
+            { Content: "Jevg" }
+            { Content: "Jo[=Pick('l','n')]" }
+            { Content: "Jul" }
+            { Content: "Juoz" }
+            { Content: "Jur[=Pick('','g')]" }
+            { Content: "Just" }
+            { Content: "Kar" }
+            { Content: "Katr" }
+            { Content: "Klar" }
+            { Content: "Laim" }
+            { Content: "Lar" }
+            { Content: "Lasm" }
+            { Content: "Leon" }
+            { Content: "Lian" }
+            { Content: "Lili[=Pick('j','ta')]" }
+            { Content: "Lind" }
+            { Content: "Lud[=Pick('m','v')]" }
+            { Content: "Luk" }
+            { Content: "Mad" }
+            { Content: "Magd" }
+            { Content: "Maij" }
+            { Content: "Mant" }
+            { Content: "Mar[=Pick('','g','t','ty')]" }
+            { Content: "Mel" }
+            { Content: "Mierv" }
+            { Content: "Mih" }
+            { Content: "Mik" }
+            { Content: "Mon" }
+            { Content: "Mort" }
+            { Content: "Myk" }
+            { Content: "Nat" }
+            { Content: "Nij" }
+            { Content: "Nik" }
+            { Content: "Od" }
+            { Content: "Olg" }
+            { Content: "Osk" }
+            { Content: "Pav" }
+            { Content: "Petr" }
+            { Content: "Pran" }
+            { Content: "Raim" }
+            { Content: "Ram" }
+            { Content: "Reg" }            
+            { Content: "Ren" }
+            { Content: "Ric" }
+            { Content: "Rok" }
+            { Content: "Roz" }
+            { Content: "Rug" }
+            { Content: "Sab" }
+            { Content: "Sand" }
+            { Content: "Sarm" }
+            { Content: "Saul" }
+            { Content: "Sim" }
+            { Content: "Skais" }
+            { Content: "Slim" }            
+            { Content: "Sof" }
+            { Content: "Stan" }
+            { Content: "Stef" }
+            { Content: "Svaj" }
+            { Content: "Svet" }
+            { Content: "Tam" }
+            { Content: "Tatj" }
+            { Content: "Teod" }
+            { Content: "Ter" }
+            { Content: "Urb" }
+            { Content: "Vak" }
+            { Content: "Vald" }
+            { Content: "Val" }
+            { Content: "Vas" }
+            { Content: "Ver" }
+            { Content: "Vidm" }
+            { Content: "Vilm" }
+            { Content: "Vit" }
+            { Content: "Vyg" }
+            { Content: "Zan" }
+            { Content: "Zuz" }
+            { Content: "Zydr" }
+		]
+
+		GN2:
+		[   
+            { Content: "al[=Pick('dis','ena')]" }
+            { Content: "an[=Pick('dra','as','ina','te','tus')]" }
+            { Content: "ar[=Pick('a','e','s')]" }
+            { Content: "as[=Pick('','ija')]" }
+            { Content: "ata" }
+            { Content: "edas" }
+            { Content: "ejs" }
+            { Content: "el[=Pick('e','elika','is')]" }
+            { Content: "emaras" }
+            { Content: "er[=Pick('ijas','tas')]" }
+            { Content: "ese" }
+            { Content: "ians" }
+            { Content: "idr[=Pick('a','is')]" }
+            { Content: "iel[=Pick('e','ius')]" }
+            { Content: "ij[=Pick('a','us')]" }
+            { Content: "ike" }
+            { Content: "il[=Pick('e','ius')]" }
+            { Content: "in[=Pick('a','e','tra')]" }
+            { Content: "irdas" }
+            { Content: "is[=Pick('','lova','lovas')]" }
+            { Content: "ita" }
+            { Content: "oflas" }
+            { Content: "olin" }
+            { Content: "omas" }
+            { Content: "on[=Pick('a','as','ija','ina')]" }
+            { Content: "ora" }
+            { Content: "ova[=Pick('','ite')]" }
+            { Content: "uras" }
+            { Content: "uta" }
+		]
+	}
+	GeneratorType: Assignment
+}

@@ -1,0 +1,361 @@
+{
+    Name: Blood Elf Name
+    /* Irish */
+    Version: "2.0"
+    OutputFormat: Text
+    ShowInList: false
+    Parameters:
+    {
+        Gender:
+        {
+            Value: ""
+            Type: Text
+        }
+    }
+    LineItems:
+    {
+        Start:
+        [
+            { Content: "[GivenName] [FamilyName]" }
+        ]
+
+        GivenName:
+        [
+            { Content: "[[Gender]Prefix][[Gender]Suffix]" }
+        ]
+
+        AnyGender:
+        [
+            { Content: "Male" }
+            { Content: "Female" }
+        ]
+
+        FamilyName:
+        [
+            { Content: "[MalePrefix][FemaleSuffix][[Gender]Tag]"}
+            { Content: "[FemalePrefix][MaleSuffix][[Gender]Tag]"}
+        ]
+
+        MaleTag:
+        [
+            { Content: "n" }
+        ]
+
+        FemaleTag:
+        [
+            { Content: "i" }
+        ]
+
+        AnyGenderTag:
+        [
+            { Content: "[MaleTag]" }
+            { Content: "[FemaleTag]" }
+        ]
+
+        NonBinaryTag:
+        [
+            { Content: "[AnyGenderTag]" }
+        ]
+
+        NonBinaryPrefix:
+        [
+            { Content: "[AnyGenderPrefix]" }
+        ]
+        
+        NonBinarySuffix:
+        [
+            { Content: "[AnyGenderSuffix]" }
+        ]
+
+        AnyGenderPrefix:
+        [
+            { Content: "[MalePrefix]" }
+            { Content: "[FemalePrefix]" }
+        ]
+
+        AnyGenderSuffix:
+        [
+            { Content: "[MaleSuffix]" }
+            { Content: "[FemaleSuffix]" }
+        ]
+
+        MalePrefix:
+        [
+            { Content: "Abham" }
+            { Content: "Ad" }
+            { Content: "Ain" }
+            { Content: "Anam" }
+            { Content: "Baud" }
+            { Content: "Bra" }
+            { Content: "Bro" }
+            { Content: "Cair" }
+            { Content: "Cath" }
+            { Content: "Ciar" }
+            { Content: "Cla" }
+            { Content: "Daim" }
+            { Content: "Dal" }
+            { Content: "Ean" }
+            { Content: "Earn" }
+            { Content: "Garb" }
+            { Content: "Gill" }
+            { Content: "Gob" }
+            { Content: "Iob" }
+            { Content: "Iomc" }
+            { Content: "Iri" }
+            { Content: "Kay" }
+            { Content: "Labhr" }
+            { Content: "Lach" }
+            { Content: "Lugh" }
+            { Content: "Main" }
+            { Content: "Mao" }
+            { Content: "Mar" }
+            { Content: "Meal" }
+            { Content: "Moch" }
+            { Content: "Muir" }
+            { Content: "Nai" }
+            { Content: "Neas" }
+            { Content: "Nuad" }
+            { Content: "Og" }
+            { Content: "Ois" }
+            { Content: "Ortha" }
+            { Content: "Osg" }
+            { Content: "Plen" }
+            { Content: "Rio" }
+            { Content: "Rob" }
+            { Content: "Ron" }
+            { Content: "Ruad" }
+            { Content: "Samhrad" }
+            { Content: "Scan" }
+            { Content: "Scat" }
+            { Content: "Scol" }
+            { Content: "Sea" }
+            { Content: "Sean" }
+            { Content: "Siol" }
+            { Content: "Sleib" }
+            { Content: "Tad" }
+            { Content: "Taich" }
+            { Content: "Tan" }
+            { Content: "Tess" }
+            { Content: "Teim" }
+            { Content: "Tigh" }
+            { Content: "Tio" }
+            { Content: "Tire" }
+            { Content: "Toird" }
+            { Content: "Taum" }
+            { Content: "Uall" }
+            { Content: "Ult" }
+            { Content: "Ur" }
+            { Content: "Ya" }
+        ]
+
+        MaleSuffix:
+        [
+            { Content: "achan" }
+            { Content: "aidh" }
+            { Content: "al" }
+            { Content: "an" }
+            { Content: "ban" }
+            { Content: "can" }
+            { Content: "cha" }
+            { Content: "con" }
+            { Content: "dorn" }
+            { Content: "eagan" }
+            { Content: "earnach" }
+            { Content: "earnan" }
+            { Content: "ell" }
+            { Content: "ern" }
+            { Content: "gan" }
+            { Content: "hach" }
+            { Content: "han" }
+            { Content: "hartach" }
+            { Content: "hin" }
+            { Content: "lan" }
+            { Content: "le" }
+            { Content: "lern" }
+            { Content: "na" }
+            { Content: "nileas" }
+            { Content: "sen" }
+            { Content: "ta" }
+            { Content: "tach" }
+            { Content: "ten" }
+            { Content: "thi" }
+            { Content: "ven" }
+        ]
+        
+        FemalePrefix:
+        [
+            { Content: "Aill" }
+            { Content: "Ainf" }
+            { Content: "Ainn" }
+            { Content: "Aith" }
+            { Content: "Almh" }
+            { Content: "Aodh" }
+            { Content: "Aoi" }                        
+            { Content: "Ba" }
+            { Content: "Ban" }
+            { Content: "Be" }
+            { Content: "Bear" }
+            { Content: "Blath" }
+            { Content: "Blin" }
+            { Content: "Br" }            
+            { Content: "Caoi" }
+            { Content: "Cath" }
+            { Content: "Cea" }
+            { Content: "Cliod" }
+            { Content: "Coin" }            
+            { Content: "Dair" }
+            { Content: "Damh" }
+            { Content: "Dearb" }
+            { Content: "Deir" }
+            { Content: "Dind" }            
+            { Content: "Ea[=Pick('d','sn')]" }
+            { Content: "Ech" }
+            { Content: "Ei" }
+            { Content: "Em" }            
+            { Content: "Fai" }
+            { Content: "Feid" }
+            { Content: "Fian" }
+            { Content: "Fion" }
+            { Content: "Gob" }
+            { Content: "Gor" }
+            { Content: "Gr" }
+            { Content: "Io" }
+            { Content: "Ir" }            
+            { Content: "Lab" }
+            { Content: "Lach" }
+            { Content: "Laoi" }
+            { Content: "Las" }
+            { Content: "Lean" }
+            { Content: "Lia" }
+            { Content: "Loch" }
+            { Content: "Lo" }
+            { Content: "Main" }
+            { Content: "Mao" }
+            { Content: "Mar" }
+            { Content: "Mea" }
+            { Content: "Mo[=Pick('in','ir','la')]" }
+            { Content: "Muir" }            
+            { Content: "Nai" }
+            { Content: "Nao" }
+            { Content: "Nar" }
+            { Content: "Nea" }
+            { Content: "Nia" }
+            { Content: "Nau" }            
+            { Content: "Oil" }
+            { Content: "Olc" }
+            { Content: "Or" }
+            { Content: "Os" }            
+            { Content: "Rath" }
+            { Content: "Rio" }
+            { Content: "Ro" }
+            { Content: "Rua" }            
+            { Content: "Sam" }
+            { Content: "Sar" }
+            { Content: "Sca" }
+            { Content: "Sco" }
+            { Content: "Sea" }
+            { Content: "Sio" }
+            { Content: "Sk" }
+            { Content: "Sla" }
+            { Content: "Sle" }
+            { Content: "Som" }
+            { Content: "Sua" }            
+            { Content: "Tad" }
+            { Content: "Tai" }
+            { Content: "Tan" }
+            { Content: "Tas" }
+            { Content: "Tea" }
+            { Content: "Tei" }
+            { Content: "Tig" }
+            { Content: "Toi" }
+            { Content: "Tor" }
+            { Content: "Treas" }
+            { Content: "Tua" }            
+            { Content: "Uain" }
+            { Content: "Uall" }
+            { Content: "Uas" }
+            { Content: "Yn" }            
+            { Content: "Zo" }
+        ]
+
+        FemaleSuffix:
+        [
+            { Content: "ach" }
+            { Content: "adh" }
+            { Content: "ag" }
+            { Content: "ainne" }
+            { Content: "air" }
+            { Content: "ait" }
+            { Content: "amair" }
+            { Content: "an" }
+            { Content: "ann" }
+            { Content: "ath" }
+            
+            { Content: "bha[=Pick('r','')]" }
+            { Content: "bhe[=Pick('ar','greine','ann')]" }
+            { Content: "bhinn" }
+            
+            { Content: "can" }
+            { Content: "che" }
+            { Content: "chin" }
+            
+            { Content: "dan" }
+            { Content: "dre" }
+            
+            { Content: "ean" }
+            { Content: "ela" }
+            { Content: "en" }
+            { Content: "er" }
+            { Content: "esta" }
+
+            { Content: "fe" }
+            
+            { Content: "ga" }
+            { Content: "greine" }
+            
+            { Content: "hail" }
+            { Content: "helm" }
+            { Content: "hile" }
+            { Content: "hlim" }
+            { Content: "hna" }
+            { Content: "huala" }
+            
+            { Content: "ial" }
+            { Content: "ian" }
+            { Content: "ighid" }
+            { Content: "in[=Pick('','e','n')]" }
+            
+            { Content: "lan[=Pick('n','')]" }
+            { Content: "le" }
+            { Content: "lionn" }
+            { Content: "llach" }
+            
+            { Content: "man" }
+            { Content: "mhain" }
+            { Content: "mhe" }
+            { Content: "mhin" }
+            { Content: "mlaith" }
+            
+            { Content: "na[=Pick('','id','it','n')]" }
+            { Content: "nche" }
+            { Content: "ne" }
+            { Content: "neach" }
+            
+            { Content: "onach" }
+            { Content: "ora" }
+
+            { Content: "ra[=Pick('idh','')]" }
+            { Content: "reann" }
+            { Content: "rin" }
+            { Content: "rne" }
+            { Content: "rnin" }
+            
+            { Content: "tach" }
+            { Content: "thne" }
+            { Content: "tna[=Pick('','n')]" }
+
+            { Content: "uir" }
+        ]
+    }
+    GeneratorType: Assignment
+}

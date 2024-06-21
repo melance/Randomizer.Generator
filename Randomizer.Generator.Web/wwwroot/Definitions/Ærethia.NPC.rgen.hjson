@@ -1,0 +1,1345 @@
+{
+    Name: Ærethia NPC
+    Version: "2.0"
+    OutputFormat: HTML
+	Author: Lance Boudreaux
+	URL: https://aerethia.com
+	Description: Generate NPCs for my homebrew world of Ærethia
+    Tags:
+    [
+        Ærethia
+        Fantasy
+        Names
+    ]
+    Parameters:
+    {
+	    Species:
+	    {
+		    Value: Any
+		    Type: List
+			Options:
+			[
+				AnySpecies:Any
+				AnyElf:Elf
+				BloodElf:Blood Elf
+				CloudElf:Cloud Elf
+				AnyDwarf:Dwarf
+				RockDwarf:Rock Dwarf
+				SandDwarf:Sand Dwarf
+				SeaDwarf:Sea Dwarf
+				AnyGerasky:Gerasky
+				Orc:Orc
+				Titan:Titan
+				Troll:Troll
+				AnyAdalor:Adalor
+				Boggan:Boggan
+				Exu:Exu
+				Slaugh:Slaugh
+				KZar:K'Zar
+				AnyHuman:Human
+				Deathling:Deathling
+				Sapien:Sapien				
+			]
+	    }
+        Gender:
+        {
+            Value: Any
+            Type: List
+            Options:
+            [
+                AnyGender:Any
+                Female:Female
+                Male:Male
+                NonBinary:Non-Binary
+            ]
+        }
+    }
+    LineItems:
+    {
+        Start:
+        [
+            { 
+                Content: 
+                '''
+                [Species][[@Species]Factor][Gender]
+                
+                <h2>[[@Species]Name]</h2>
+                <table>
+                    <tr>
+                        <th>Species:</th>
+                        <td>[[@Species]Text]</td>
+                    </tr>
+                    <tr>
+                        <th>Gender:</th>
+                        <td>[[@Gender]Text]</td>
+                    </tr>
+                    <tr>
+                        <th>Age:</th>
+                        <td>[[@Species]Age]</td>
+                    </tr>
+                    <tr>
+                        <th>Height:</th>
+                        <td>[[@Species]Height]</td>
+                    </tr>
+                    <tr>
+                        <th style='vertical-align: top; padding-right: 1em;'>Personality:</th>
+                        <td>[Personality]</td>
+                    </tr>
+					<tr>
+						<th>Quirks</th>
+						<td>[Quirk], [Quirk]</td>
+					</tr>
+                    <tr>
+                        <th>Weight:</th>
+                        <td>[[@Species]Weight]</td>
+                    </tr>
+                    <tr>
+                        <th>Hair:</th>
+                        <td>[[@Species]Hair]</td>
+                    </tr>
+                    <tr>
+                        <th>Skin:</th>
+                        <td>[[@Species]Skin]</td>
+                    </tr>
+                    <tr>
+                        <th>Eyes:</th>
+                        <td>[[@Species]Eyes]</td>
+                    </tr>
+                </table>
+                '''
+            }
+        ]
+		
+        /* Species */
+		AnySpecies:
+		[
+            { Content: "BloodElf", Weight: 1, Variable: "Species" }
+            { Content: "CloudElf", Weight: 50, Variable: "Species" }
+            { Content: "RockDwarf", Weight: 20, Variable: "Species" }
+            { Content: "SandDwarf", Weight: 20, Variable: "Species" }
+            { Content: "SeaDwarf", Weight: 25, Variable: "Species" }
+            { Content: "Orc", Weight: 8, Variable: "Species" }
+            { Content: "Titan", Weight: 5, Variable: "Species" }
+            { Content: "Troll", Weight: 10, Variable: "Species" }
+            { Content: "KZar", Weight: 8, Variable: "Species" }
+            { Content: "Deathling", Weight: 2, Variable: "Species" }
+            { Content: "Sapien", Weight: 10, Variable: "Species" }			
+		]
+		
+		AnyElf:
+		[
+            { Content: "BloodElf", Variable: "Species" }			
+            { Content: "CloudElf", Variable: "Species" }
+		]
+		
+		AnyDwarf:
+		[
+            { Content: "RockDwarf", Variable: "Species" }		
+            { Content: "SandDwarf", Variable: "Species" }
+            { Content: "SeaDwarf", Variable: "Species" }
+		]
+		
+		AnyGarasky:
+		[
+            { Content: "Orc", Variable: "Species" }
+            { Content: "Titan", Variable: "Species" }
+            { Content: "Troll", Variable: "Species" }
+		]
+		
+		AnyAdalor:
+		[
+            { Content: "Boggan", Variable: "Species" }		
+            { Content: "Exu", Variable: "Species" }
+            { Content: "Slaugh", Variable: "Species" }
+		]
+		
+		AnyHuman:
+		[
+            { Content: "Deathling", Variable: "Species" }
+            { Content: "Sapien", Variable: "Species" }
+		]
+
+        BloodElf: [ { Content: "BloodElf", Variable: "Species" }]
+        BloodElfText: [ { Content: "Blood Elf" } ]
+
+        CloudElf: [ { Content: "CloudElf", Variable: "Species" }]
+        CloudElfText: [ { Content: "Cloud Elf" } ]
+
+        RockDwarf: [ { Content: "RockDwarf", Variable: "Species" }]
+        RockDwarfText: [ { Content: "Rock Dwarf" } ]
+        
+        SandDwarf: [ { Content: "SandDwarf", Variable: "Species" }]
+        SandDwarfText: [ { Content: "Sand Dwarf" } ]
+        
+        SeaDwarf: [ { Content: "SeaDwarf", Variable: "Species" }]
+        SeaDwarfText: [ { Content: "Sea Dwarf" } ]
+
+        Orc: [ { Content: "Orc", Variable: "Species" }]
+        OrcText: [ { Content: "Orc" } ]
+        
+        Titan: [ { Content: "Titan", Variable: "Species" }]
+        TitanText: [ { Content: "Titan" } ]
+        
+        Troll: [ { Content: "Troll", Variable: "Species" }]
+        TrollText: [ { Content: "Troll" } ]
+        
+        Boggan: [ { Content: "Boggan", Variable: "Species" }]
+        BogganText: [ { Content: "Boggan" } ]
+                
+        Exu: [ { Content: "Exu", Variable: "Species" }]
+        ExuText: [ { Content: "Exu" } ]
+        
+        Slaugh: [ { Content: "Slaugh", Variable: "Species" }]
+        SlaughText: [ { Content: "Slaugh" } ]
+        
+        KZar: [ { Content: "KZar", Variable: "Species" }]
+        KZarText: [ { Content: "K'Zar" } ]
+        
+        Deathling: [ { Content: "Deathling", Variable: "Species" }]
+        DeathlingText: [ { Content: "Deathling" } ]
+
+        Sapien: [ { Content: "Sapien", Variable: "Species" }]
+        SapienText: [ { Content: "Sapien" } ]        
+
+        /* Gender */
+        AnyGender:
+        [
+            { Content: "Male", Weight: 20, Variable: "Gender" }
+            { Content: "Female", Weight: 20, Variable: "Gender" }
+            { Content: "NonBinary", Weight: 1, Variable: "Gender" }
+        ]
+
+        Male: [ {Content: "Male", Variable: "Gender" }]
+        MaleText: [ {Content: "Male" }]
+        Female: [ {Content: "Female", Variable: "Gender" }]
+        FemaleText: [ {Content: "Female" }]
+        NonBinary: [ {Content: "NonBinary", Variable: "Gender" }]
+        NonBinaryText: [ {Content: "Non-Binary" }]
+
+        /* Quirks */
+        Quirk:
+        [
+            { Content: "Smells like [=Pick('shit','roses','food')]" }            
+            { Content: "Bites their nails" }
+            { Content: "Has an eye twitch" }
+            { Content: "Eyes dart around" }
+            { Content: "ClosesEyes when talking" }
+            { Content: "Wears an obvious wig" }
+            { Content: "Fiddles with [=Pick('a ring','a coin','their hair')]" }
+            { Content: "Thinks aloud" }
+            { Content: "Taps their fingers" }
+            { Content: "Constantly scratching" }
+            { Content: "Impecably clean" }
+            { Content: "Always dirty" }
+            { Content: "Has a lisp" }
+            { Content: "Is missing teeth" }
+            { Content: "Has crooked teeth" }
+            { Content: "Has a hicky" }
+            { Content: "Has bruises and scapes" }
+            { Content: "Giggles after almost everything they say" }
+            { Content: "Is [=Pick('deaf','blind','mute')]" }
+            { Content: "Sucks on their lip" }
+            { Content: "Stares intently" }
+            { Content: "Moves their lips while others are talking" }
+            { Content: "Smokes a lot" }
+            { Content: "Chews on grass" }
+            { Content: "Swears constantly" }
+            { Content: "Flirts with everyone" }
+            { Content: "Is missing a finger" }
+            { Content: "Has a lazy eye" }
+            { Content: "Whistles all the time" }
+            { Content: "Makes a joke about everything" }
+            { Content: "Is mentally touched" }
+            { Content: "Speaks [=Pick('slowly','fast','without breathing','with a slur')]" }
+            { Content: "Has a poker face" }
+            { Content: "Licks their lips" }
+            { Content: "Constantly asks, 'what?'" }
+            { Content: "Can't keep their finger out of their nose" }
+            { Content: "Thinks long before responding" }
+            { Content: "Mumbles" }
+            { Content: "Sucks on their teeth" }
+            { Content: "Squints their eyes" }
+        ]
+
+        /* Personality Traits */
+        Personality:
+        [
+            { Content: "[PositivePersonalityTrait], [NegativePersonalityTrait]", Weight: 4 }  
+            { Content: "[PositivePersonalityTrait], [PositivePersonalityTrait], [NegativePersonalityTrait]" }  
+            { Content: "[PositivePersonalityTrait], [NegativePersonalityTrait], [NegativePersonalityTrait]" }  
+        ]
+
+        PositivePersonalityTrait:
+        [
+            { Content: "Adaptable" }
+            { Content: "Adventurous" }
+            { Content: "Aware" }
+            { Content: "Ambitious" }
+            { Content: "Approachable" }
+            { Content: "Articulate" }
+            { Content: "Attentive" }
+            { Content: "Bold" }
+            { Content: "Brave" }            
+            { Content: "Calm" }
+            { Content: "Cheerful" }
+            { Content: "Clean" }
+            { Content: "Clever" }
+            { Content: "Compassionate" }
+            { Content: "Confident" }
+            { Content: "Considerate" }
+            { Content: "Cooperative" }
+            { Content: "Courteous" }
+            { Content: "Creative" }
+            { Content: "Curious" }
+            { Content: "Dependable" }
+            { Content: "Determined" }
+            { Content: "Dignified" }
+            { Content: "Disciplined" }
+            { Content: "Earnest" }
+            { Content: "Easygoing" }
+            { Content: "Educated" }
+            { Content: "Efficient" }
+            { Content: "Elegant" }
+            { Content: "Eloquent" }
+            { Content: "Energetic" }
+            { Content: "Entertaining" }
+            { Content: "Enthusiastic" }
+            { Content: "Fair" }
+            { Content: "Faithful" }
+            { Content: "Fashionable" }
+            { Content: "Focused" }
+            { Content: "Forgiving" }
+            { Content: "Friendly" }
+            { Content: "Frugal" }
+            { Content: "Funny" }
+            { Content: "Generous" }
+            { Content: "Happy" }
+            { Content: "Hard-working" }
+            { Content: "Honest" }
+            { Content: "Humble" } 
+            { Content: "Independent" }
+            { Content: "Intuitive" }
+            { Content: "Lawful" }
+            { Content: "Logical" }
+            { Content: "Loyal" }
+            { Content: "Merciful" }
+            { Content: "Methodical" }
+            { Content: "Meticulous" }
+            { Content: "Musical" }
+            { Content: "Observant" }
+            { Content: "Optimistic" }
+            { Content: "Organized" }
+            { Content: "Passionate" }
+            { Content: "Patient" }
+            { Content: "Perceptive" }
+            { Content: "Persuasive" }
+            { Content: "Practical" }
+            { Content: "Prepared" }
+            { Content: "Prompt" }
+            { Content: "Prudent" }
+            { Content: "Quick" }
+            { Content: "Quiet" }
+            { Content: "Resilient" }
+            { Content: "Resourceful" }
+            { Content: "Self-aware" }
+            { Content: "Self-sacrificing" }
+            { Content: "Sober" }
+            { Content: "Sophisticated" }
+            { Content: "Spontaneous" }
+            { Content: "Stoic" }
+            { Content: "Studious" }
+            { Content: "Talkative" }
+            { Content: "Wise" }
+            { Content: "Witty" }
+        ]
+
+        NegativePersonalityTrait:
+        [
+            { Content: "Absent-minded" }
+            { Content: "Abusive" }
+            { Content: "Addicted" }
+            { Content: "Aimless" }
+            { Content: "Anxious" }
+            { Content: "Arrogant" }
+            { Content: "Audacious" }
+            { Content: "Bigmouth" }
+            { Content: "Bigot" }
+            { Content: "Blunt" }
+            { Content: "Boastful" }
+            { Content: "Bold" }
+            { Content: "Callous" }
+            { Content: "Chaotic" }
+            { Content: "Childish" }
+            { Content: "Cruel" }
+            { Content: "Dependant" }
+            { Content: "Deranged" }
+            { Content: "Dishonest" }
+            { Content: "Disloyal" }
+            { Content: "Disturbed" }
+            { Content: "Dubious" }
+            { Content: "Dyslexic" }
+            { Content: "Egotistical" }
+            { Content: "Envious" }
+            { Content: "Erratic" }
+            { Content: "Fanatical" }
+            { Content: "Fickle" }
+            { Content: "Fierce" }
+            { Content: "Finicky" }
+            { Content: "Fixated" }
+            { Content: "Flirt" }
+            { Content: "Gluttonous" }
+            { Content: "Gruff" }
+            { Content: "Gullible" }
+            { Content: "Hedonistic" }
+            { Content: "Hoity-toity" }
+            { Content: "Humorless" }
+            { Content: "Hypocritical" }
+            { Content: "Idiotic" }
+            { Content: "Illiterate" }
+            { Content: "Immature" }
+            { Content: "Impatient" }
+            { Content: "Impious" }
+            { Content: "Impish" }
+            { Content: "Incompetent" }
+            { Content: "Indecisive" }
+            { Content: "Indifferent" }
+            { Content: "Infamous" }
+            { Content: "Intolerant" }
+            { Content: "Judgemental" }
+            { Content: "Klutz" }
+            { Content: "Lazy" }
+            { Content: "Lewd" }
+            { Content: "Liar" }
+            { Content: "Lustful" }
+            { Content: "Meddlesome" }
+            { Content: "Meek" }
+            { Content: "Megalomaniac" }
+            { Content: "Naive" }
+            { Content: "Nervous" }
+            { Content: "Nosey" }
+            { Content: "Obsessive" }
+            { Content: "Oppressor" }
+            { Content: "Overambitious" }
+            { Content: "Overconfident" }
+            { Content: "Overemotional" }
+            { Content: "Overprotective" }
+            { Content: "Paranoid" }
+            { Content: "Peevish" }
+            { Content: "Perfectionist" }
+            { Content: "Pessimist" }
+            { Content: "Pest" }
+            { Content: "Phobic" }
+            { Content: "Predictable" }
+            { Content: "Proud" }
+            { Content: "Rebellious" }
+            { Content: "Reckless" }
+            { Content: "Remorseless" }
+            { Content: "Rigorous" }
+            { Content: "Sadist" }
+            { Content: "Sarcastic" }
+            { Content: "Sceptic" }
+            { Content: "Selfish" }
+            { Content: "Self-righteous" }
+            { Content: "Senile" }
+            { Content: "Shallow" }
+            { Content: "Shy" }
+            { Content: "Soft-hearted" }
+            { Content: "Solemn" }
+            { Content: "Spiteful" }
+            { Content: "Spoiled" }
+            { Content: "Squeamish" }
+            { Content: "Stubborn" }
+            { Content: "Superstitious" }
+            { Content: "Tactless" }
+            { Content: "Temperamental" }
+            { Content: "Theatrical" }
+            { Content: "Timid" }
+            { Content: "Troublemaker" }
+            { Content: "Unlucky" }
+            { Content: "Unpredictable" }
+            { Content: "Vain" }
+            { Content: "Weak-willed" }
+            { Content: "Withdrawn" }
+            { Content: "Zealous" }
+        ]
+
+        /* Names */
+        CloudElfName:
+        [
+            { Content: "[=Generate('Cloud Elf Name')]" }
+        ]
+
+        BloodElfName:
+        [
+            { Content: "[=Generate('Blood Elf Name', 'Gender=' + Gender)]" }
+        ]
+                
+        RockDwarfName:
+        [
+            { Content: "[=Generate('Rock Dwarf Name', 'Gender=' + Gender)]" }
+        ]
+                
+        SandDwarfName:
+        [
+            { Content: "[=Generate('Sand Dwarf Name')]" }
+        ]
+                
+        SeaDwarfName:
+        [
+            { Content: "[=Generate('Sea Dwarf Name')]" }
+        ]
+                
+        OrcName:
+        [
+            { Content: "[=Generate('Orc Name', 'Gender=' + Gender)]" }
+        ]
+                
+        TitanName:
+        [
+            { Content: "[=Generate('Titan Name')]" }
+        ]
+                        
+        TrollName:
+        [
+            { Content: "[=Generate('Troll Name')]" }
+        ]
+                
+        BogganName:
+        [
+            { Content: "[=Generate('Boggan Name')]" }
+        ]
+                
+        ExuName:
+        [
+            { Content: "[=Generate('Exu Name')]" }
+        ]
+                
+        SlaughName:
+        [
+            { Content: "[=Generate('Slaugh Name')]" }
+        ]
+                
+        KZarName:
+        [
+            { Content: "[=Generate('KZar Name', 'Gender=' + Gender)]" }
+        ]
+                
+        DeathlingName:
+        [
+            { Content: "[=Generate('Deathling Name', 'Gender=' + Gender)]" }
+        ]
+                
+        SapienName:
+        [
+            { Content: "[=Generate('Sapien Name')]" }
+        ]
+        
+        /* Age */
+        BloodElfAge:
+        [
+            { Content: "[=Random(15,138)]"}
+        ]
+
+        CloudElfAge:
+        [
+            { Content: "[=Random(20, 138)]"}
+        ]
+
+        RockDwarfAge:
+        [
+            { Content: "[=Random(12, 98)]" }        
+        ]
+        
+        SandDwarfAge:
+        [
+            { Content: "[=Random(12, 98)]" }        
+        ]
+
+        SeaDwarfAge:
+        [
+            { Content: "[=Random(12, 98)]" }        
+        ]
+
+        BogganAge:
+        [
+            { Content: "[=Random(8, 160)]" }        
+        ]
+
+        ExuAge:
+        [
+            { Content: "[=Random(8, 134)]" }        
+        ]
+
+        SlaughAge:
+        [
+            { Content: "[=Random(8, 134)]" }        
+        ]
+
+        OrcAge:
+        [
+            { Content: "[=Random(6, 60)]" }        
+        ]
+        
+        TitanAge:
+        [
+            { Content: "[=Random(18, 130)]" }        
+        ]
+        
+        TrollAge:
+        [
+            { Content: "[=Random(16, 110)]" }        
+        ]
+        
+        KZarAge:
+        [
+            { Content: "[=Random(10, 78)]" }        
+        ]
+
+        DeathlingAge:
+        [
+            { Content: "[=Random(14, 92)]" }        
+        ]
+
+        SapienAge:
+        [
+            { Content: "[=Random(12, 98)]" }        
+        ]
+
+        /* Size Factor : random(0, maxHeight - minHeight + 1); */
+        BloodElfFactor:
+        [
+            /* Male: Height = 72 - 78Weight = 140 MinWeight = 1 MaxWeight = 4 */
+            /* Female: Height = 66 - 72Weight = 130 MinWeight = 1 MaxWeight= 4 */
+            { Content: "[=Random(0,7)]", Variable: "Factor" }
+        ]
+
+        CloudElfFactor:
+        [
+            /* Height = 74 - 80Weight = 145 MinWeight = 1 MaxWeight = 4 */
+            { Content: "[=Random(0,7)]", Variable: "Factor" }
+        ]
+
+        RockDwarfFactor:
+        [
+            /* Height = 48 - 60Weight = 140 MinWeight = 2 MaxWeight = 8 */
+            { Content: "[=Random(0,13)]", Variable: "Factor" }
+        ]
+
+        SandDwarfFactor:
+        [
+            /* Height = 44 - 60Weight = 140 MinWeight = 2 MaxWeight = 8 */
+            { Content: "[=Random(0,17)]", Variable: "Factor" }
+        ]
+
+        SeaDwarfFactor:
+        [
+            /* Height = 46 - 58Weight = 138 MinWeight = 1 MaxWeight = 8 */
+            { Content: "[=Random(0,13)]", Variable: "Factor" }
+        ]
+
+        BogganFactor:
+        [
+            /* Height = 32 - 40Weight = 30 MinWeight = 1 MaxWeight = 3 */
+            { Content: "[=Random(0,13)]", Variable: "Factor" }
+        ]
+
+        ExuFactor:
+        [
+            /* Height = 70 - 78Weight = 155 MinWeight = 2 MaxWeight = 6 */
+            { Content: "[=Random(0,9)]", Variable: "Factor" }
+        ]
+
+        SlaughFactor:
+        [
+            /* Height = 66 - 72Weight = 115 MinWeight = 1 MaxWeight = 4 */
+            { Content: "[=Random(0,13)]", Variable: "Factor" }
+        ]
+
+        OrcFactor:
+        [
+            /* Height = 74 - 84Weight = 175 MinWeight = 2 MaxWeight = 6 */
+            { Content: "[=Random(0,11)]", Variable: "Factor" }
+        ]
+
+        TitanFactor:
+        [
+            /* Height = 82 - 96Weight = 245 MinWeight = 2 MaxWeight = 6 */
+            { Content: "[=Random(0,15)]", Variable: "Factor" }
+        ]
+
+        TrollFactor:
+        [
+            /* Height = 78 - 90Weight = 195 MinWeight = 1 MaxWeight = 10 */
+            { Content: "[=Random(0,13)]", Variable: "Factor" }
+        ]
+
+        KZarFactor:
+        [
+            /* Male: Height = 60 - 68Weight = 150 MinWeight = 1 MaxWeight = 6 */
+            /* Female: Height = 66 - 72Weight = 160 MinWeight = 1 MaxWeight = 6 */
+            { Content: "[=Random(0,9)]", Variable: "Factor" }
+        ]
+
+        DeathlingFactor:
+        [
+            /* Height = 42 - 56Weight = 65 MinWeight = 2 MaxWeight = 3 */
+            { Content: "[=Random(0,13)]", Variable: "Factor" }
+        ]
+
+        SapienFactor:
+        [
+            /* Male: Height = 62 - 72Weight = 120 MinWeight = 2 MaxWeight = 10 */
+            /* Female: Height = 59 - 70Weight = 110 MinWeight = 2 MaxWeight = 6 */
+            { Content: "[=Random(0,11)]", Variable: "Factor" }
+        ]
+
+        /* Height */
+        BloodElfHeight:
+        [
+            { Content: "[BloodElf[@Gender]Height]" }
+        ]
+
+        BloodElfMaleHeight:
+        [
+            { Content: "[=CInt(Factor)+72]" }
+        ]
+
+        BloodElfFemaleHeight:
+        [
+            { Content: "[=CInt(Factor)+66]" }
+        ]
+
+        BloodElfNonBinaryHeight:
+        [
+            { Content: "[BloodElfMaleHeight]" }
+            { Content: "[BloodElfFemaleHeight]" }
+        ]
+
+        CloudElfHeight:
+        [
+            { Content: "[=CInt(Factor)+74]" }
+        ]
+
+        RockDwarfHeight:
+        [
+            { Content: "[=CInt(Factor)+48]"}
+        ]
+        
+        SandDwarfHeight:
+        [
+            { Content: "[=CInt(Factor)+44]"}
+        ]
+        
+        SeaDwarfHeight:
+        [
+            { Content: "[=CInt(Factor)+46]"}
+        ]
+        
+        BogganHeight:
+        [
+            { Content: "[=CInt(Factor)+32]"}
+        ]
+        
+        ExuHeight:
+        [
+            { Content: "[=CInt(Factor)+70]"}
+        ]
+        
+        SlaughHeight:
+        [
+            { Content: "[=CInt(Factor)+66]"}
+        ]
+        
+        OrcHeight:
+        [
+            { Content: "[=CInt(Factor)+74]"}
+        ]
+        
+        TitanHeight:
+        [
+            { Content: "[=CInt(Factor)+82]"}
+        ]
+        
+        TrollHeight:
+        [
+            { Content: "[=CInt(Factor)+78]"}
+        ]
+        
+        KZarHeight:
+        [
+            { Content: "[KZar [@Gender]Height]"}
+        ]
+        
+        KZarMaleHeight:
+        [
+            { Content: "[=CInt(Factor)+60]"}
+        ]
+        
+        KZarFemaleHeight:
+        [
+            { Content: "[=CInt(Factor)+66]"}
+        ]
+        
+        KZarNonBinaryHeight:
+        [
+            { Content: "[KZarMaleHeight]"}
+            { Content: "[KZarFemaleHeight]"}
+        ]
+        
+        DeathlingHeight:
+        [
+            { Content: "[=CInt(Factor)+42]"}
+        ]
+        
+        SapienHeight:
+        [
+            { Content: "[Sapien[@Gender]Height]"}
+        ]
+        
+        SapienNonBinaryHeight:
+        [
+            { Content: "[SapienMaleHeight]"}
+            { Content: "[SapienFemaleHeight]"}
+        ]
+        
+        SapienMaleHeight:
+        [
+            { Content: "[=CInt(Factor)+62]"}
+        ]
+        
+        SapienFemaleHeight:
+        [
+            { Content: "[=CInt(Factor)+59]"}
+        ]
+
+        /*Weight : baseWeight + factor * random(minWeight, maxWeight) */
+        BloodElfWeight:
+        [
+            { Content: "[BloodElf[@Gender]Weight]" }
+        ]
+
+        BloodElfMaleWeight:
+        [
+            { Content: "[=140 + CInt(Factor) * Random(1, 4)]" }
+        ]
+
+        BloodElfFemaleWeight:
+        [
+            { Content: "[=130 + CInt(Factor) * Random(1, 4)]" }
+        ]
+
+        BloodElfNonBinaryWeight:
+        [
+            { Content: "[BloodElfMaleWeight]" }
+            { Content: "[BloodElfFemaleWeight]" }
+        ]
+
+        CloudElfWeight:
+        [
+            { Content: "[=145 + CInt(Factor) * Random(1, 4)]" }
+        ]
+
+        RockDwarfWeight:
+        [
+            { Content: "[=140 + CInt(Factor) * Random(2, 8)]" }
+        ]
+
+        SandDwarfWeight:
+        [
+            { Content: "[=140 + CInt(Factor) * Random(2, 8)]" }
+        ]
+
+        SeaDwarfWeight:
+        [
+            { Content: "[=138 + CInt(Factor) * Random(1, 8)]" }
+        ]
+
+        BogganWeight:
+        [
+            { Content: "[=30 + CInt(Factor) * Random(1, 3)]" }
+        ]
+
+        ExuWeight:
+        [
+            { Content: "[=155 + CInt(Factor) * Random(2, 6)]" }
+        ]
+
+        SlaughWeight:
+        [
+            { Content: "[=115 + CInt(Factor) * Random(1, 4)]" }
+        ]
+
+        OrcWeight:
+        [
+            { Content: "[=175 + CInt(Factor) * Random(2, 6)]" }
+        ]
+
+        TitanWeight:
+        [
+            { Content: "[=245 + CInt(Factor) * Random(2, 6)]" }
+        ]
+
+        TrollWeight:
+        [
+            { Content: "[=195 + CInt(Factor) * Random(1, 10)]" }
+        ]
+
+        KZarWeight:
+        [
+            { Content: "[KZar [@Gender]Weight]" }
+        ]
+
+        KZarNonBinaryWeight:
+        [
+            { Content: "[KZarMaleWeight]" }
+            { Content: "[KZarFemaleWeight]" }
+        ]
+
+        KZarMaleWeight:
+        [
+            { Content: "[=150 + CInt(Factor) * Random(1, 6)]" }
+        ]
+
+        KZarFemaleWeight:
+        [
+            { Content: "[=160 + CInt(Factor) * Random(1, 6)]" }
+        ]
+
+        DeathlingWeight:
+        [
+            { Content: "[=65 + CInt(Factor) * Random(2, 3)]" }
+        ]
+
+        SapienWeight:
+        [
+            { Content: "[Sapien[@Gender]Weight]" }
+        ]
+
+        SapienNonBinaryWeight:
+        [
+            { Content: "[SapienMaleWeight]" }
+            { Content: "[SapienFemaleWeight]" }
+        ]
+
+        SapienMaleWeight:
+        [
+            { Content: "[=120 + CInt(Factor) * Random(2, 10)]" }
+        ]
+
+        SapienFemaleWeight:
+        [
+            { Content: "[=110 + CInt(Factor) * Random(2, 6)]" }
+        ]
+
+        /* Hair */
+        HairStyle:
+        [
+            { Content: "Bald" }
+            { Content: "Medium" }
+            { Content: "Long" }
+        ]
+
+        BloodElfHair:
+        [
+            { Content: "[HairStyle] [BloodElfHairColor]" }
+        ]
+
+        BloodElfHairColor:
+        [
+            { Content: "Bright Red" }        
+            { Content: "Burgundy" }
+            { Content: "Charcoal Gray" }
+            { Content: "Black" }
+        ]
+
+        CloudElfHair:
+        [
+            { Content: "[HairStyle] [CloudElfHairColor]" }
+        ]
+
+        CloudElfHairColor:
+        [
+            { Content: "Copper" }
+            { Content: "Silver" }
+            { Content: "Platinum" }
+            { Content: "White" }
+            { Content: "Gray" }
+            { Content: "Black" }
+        ]        
+
+        RockDwarfHair:
+        [
+            { Content: "[HairStyle] [SapienHairColor]" }
+        ]
+
+        SandDwarfHair:
+        [
+            { Content: "[HairStyle] [DarkHairColor]" }
+        ]
+
+        SeaDwarfHair:
+        [
+            { Content: "[HairStyle] [DarkHairColor]" }
+        ]
+
+        BogganHair:
+        [
+            { Content: "[HairStyle] [BlondHairColor|RedHairColor|GrayHairColor]" }
+        ]
+
+        ExuHair:
+        [
+            { Content: "[HairStyle] [DarkHairColor]" }
+        ]
+
+        SlaughHair:
+        [
+            { Content: "[HairStyle] [=Pick('Dark Gray','Charcoal','Ash Gray','Black')]" }
+        ]
+
+        OrcHair:
+        [
+            { Content: "[HairStyle] [DarkHairColor]" }
+        ]
+
+        TitanHair:
+        [
+            { Content: "[HairStyle] [BlondHairColor|RedHairColor]" }
+        ]
+
+        TrollHair:
+        [
+            { Content: "[HairStyle] [DarkHairColor]" }
+        ]
+
+        KZarHair:
+        [
+            { Content: "N/A" }
+        ]
+
+        DeathlingHair:
+        [
+            { Content: "[HairStyle] [SapienHairColor]" }
+        ]
+        
+        SapienHair:
+        [
+            { Content: "[HairStyle] [SapienHairColor]" }
+        ]
+
+        SapienHairColor:
+        [            
+            { Content: "Black" }
+            { Content: "[BrownHairColor]" }
+            { Content: "[=Pick('', 'Dark', 'Light')] Auburn" }
+            { Content: "[RedHairColor]" }
+            { Content: "[BlondHairColor]" }
+            { Content: "[GrayHairColor]" }
+        ]
+
+        DarkHairColor:
+        [
+            { Content: "Chestnut" }
+            { Content: "Chocolate" }
+            { Content: "Dark Brown" }
+            { Content: "Black" }
+        ]
+
+        BlondHairColor:
+        [
+            { Content: "Light Blond" }        
+            { Content: "Platinum Blond" }
+            { Content: "Golden Blond" }
+            { Content: "Dirty Blond" }
+            { Content: "Dark Blond" }
+            { Content: "Caramel Blond" }
+        ]
+
+        BrownHairColor:
+        [
+            { Content: "Caramel Brown" }         
+            { Content: "Chestnut" }
+            { Content: "Dark Brown" }
+            { Content: "Chocolate" }
+            { Content: "Deep Chestnut" }
+            { Content: "Golden Brown" }
+            { Content: "Honey Brown" } 
+            { Content: "Light Brown" }  
+            { Content: "Mahogany" }
+            { Content: "Toffee" }
+            { Content: "Bronze" }
+        ]
+
+        GrayHairColor:
+        [
+            { Content: "Ash Gray" }        
+            { Content: "Platinum" }
+            { Content: "Silver" }
+            { Content: "Silver White" }
+            { Content: "Gray" }
+            { Content: "White" }
+        ]
+
+        RedHairColor:
+        [
+            { Content: "Burgundy" }
+            { Content: "Copper" }
+            { Content: "Crimson" }
+            { Content: "Maroon" }
+            { Content: "Orange Red" }
+            { Content: "Rasberry" }
+            { Content: "Red" } 
+            { Content: "Strawberry Blond" }
+            { Content: "Titian" }       
+        ]
+
+        /*Skin */
+        BloodElfSkin:
+        [
+            { Content: "Blush" } 
+            { Content: "Redwood" } 
+            { Content: "Rose" }    
+            { Content: "Berry" } 
+            { Content: "Sangria" } 
+            { Content: "Merlot" } 
+            { Content: "Vermilion" }
+            { Content: "Blood" }
+            { Content: "Deep Puce" }
+            { Content: "Burgundy" }
+        ]
+
+        CloudElfSkin:
+        [
+            { Content: "[SkinColor]" }            
+        ]
+        
+        RockDwarfSkin:
+        [
+            { Content: "[SkinColorPale|SkinColorMedium]" }
+        ]
+        
+        SandDwarfSkin:
+        [
+            { Content: "[SkinColorMedium|SkinColorDark]" }
+        ]
+        
+        SeaDwarfSkin:
+        [
+            { Content: "[SkinColorMedium|SkinColorDark]" }
+        ]
+        
+        BogganSkin:
+        [
+            { Content: "[SkinColorPale]" }
+        ]
+        
+        ExuSkin:
+        [
+            { Content: "[SkinColor]" }
+        ]
+        
+        SlaughSkin:
+        [
+            { Content: "[SkinColorPale]" }
+        ]
+        
+        OrcSkin:
+        [
+            { Content: "Pistachio" }
+            { Content: "Sage" }
+            { Content: "Moss" }
+            { Content: "Basil" }
+            { Content: "Olive Green" }
+        ]
+        
+        TitanSkin:
+        [
+            { Content: "[SkinColorPale]" }
+        ]
+        
+        TrollSkin:
+        [
+            { Content: "Pistachio" }
+            { Content: "Sage" }
+            { Content: "Olive Green" }
+            { Content: "Moss" }
+            { Content: "Basil" }
+            { Content: "Juniper" }
+            { Content: "Pine" }
+            { Content: "Phthalo" }            
+        ]
+        
+        KZarSkin:
+        [
+            { Content: "[SkinColor]" }
+            { Content: "[BloodElfSkin]" }
+            { Content: "[TrollSkin]" }
+        ]
+
+        SapienSkin:
+        [
+            { Content: "[SkinColor]" }
+        ]
+
+        DeathlingSkin:
+        [
+            { Content: "[SkinColorPale]" }
+        ]
+
+       SkinTexture:
+        [
+            { Content: "Clear" }
+            { Content: "Bloomed" }
+            { Content: "Rosy" }
+            { Content: "Blotchy" }
+            { Content: "Calloused" }
+            { Content: "Freckled" }
+            { Content: "Glowing" }
+            { Content: "Firm" }
+            { Content: "Scarred" }
+            { Content: "Waxen" }
+            { Content: "Ashy" }
+            { Content: "Wrinkled" }
+        ]
+
+       SkinColor:
+        [
+            { Content: "[SkinColorPale]" }
+            { Content: "[SkinColorMedium]" }
+            { Content: "[SkinColorDark]" }
+        ]
+
+       SkinColorPale:
+        [
+            { Content: "Ivory" }
+            { Content: "Alabaster" }
+            { Content: "Cream" }
+            { Content: "Albino" }
+        ]
+
+       SkinColorMedium:
+        [
+            { Content: "Olive" }                
+            { Content: "Beige" }
+            { Content: "Honey" }
+            { Content: "Praline" }
+            { Content: "Cafe au lait" }
+            { Content: "Sand" }
+            { Content: "Caramel" }
+        ]
+
+       SkinColorDark:
+        [
+            { Content: "Umber" }
+            { Content: "Expresso" }
+            { Content: "Ebony" }
+            { Content: "Bronze" }
+            { Content: "Chestnut" }
+        ]
+
+        /*Eyes */
+        BloodElfEyes:
+        [
+            { Content: "[EyeColors]",Weight: 1000 }
+            { Content: "Heterochromia [EyeColors]/[EyeColors]" }
+        ]
+
+        CloudElfEyes:
+        [
+            { Content: "[MetallicEyes]",Weight: 1000 }
+            { Content: "Heterochromia [MetallicEyes]/[MetallicEyes]" }
+        ]
+
+        RockDwarfEyes:
+        [
+            { Content: "[EyeColors]",Weight: 1000 }
+            { Content: "Heterochromia [EyeColors]/[EyeColors]" }
+        ]
+        
+        SandDwarfEyes:
+        [
+            { Content: "[=Pick('Blue','Green','Amber','Hazel')]" }
+        ]
+        
+        SeaDwarfEyes:
+        [
+            { Content: "[EyeColors]",Weight: 1000 }
+            { Content: "Heterochromia [EyeColors]/[EyeColors]" }
+        ]
+        
+        BogganEyes:
+        [
+            { Content: "[EyeColors|UnusualEyeColors]",Weight: 1000 }
+            { Content: "Heterochromia [EyeColors|UnusualEyeColors]/[EyeColors|UnusualEyeColors]" }
+        ]
+        
+        ExuEyes:
+        [
+            { Content: "[=Pick('Brown','Orange','Yellow')]" }
+        ]
+        
+        SlaughEyes:
+        [
+            { Content: "[=Pick('Brown','Gray')]" }
+        ]
+        
+        OrcEyes:
+        [
+            { Content: "[=Pick('Black','Charcoal','Gray')]" }
+        ]
+        
+        TitanEyes:
+        [
+            { Content: "[EyeColors]",Weight: 1000 }
+            { Content: "Heterochromia [EyeColors]/[EyeColors]" }
+        ]
+        
+        TrollEyes:
+        [
+            { Content: "[=Pick('Green','Gray')]" }
+        ]
+        
+        KZarEyes:
+        [
+            { Content: "Black" }
+        ]
+        
+        DeathlingEyes:
+        [
+            { Content: "[=Pick('Pink','Red','Burgundy')]" }
+        ]
+        
+        SapienEyes:
+        [
+            { Content: "[EyeColors]",Weight: 1000 }
+            { Content: "Heterochromia [EyeColors]/[EyeColors]" }
+        ]
+
+        MetallicEyes:
+        [
+            { Content: "Silver" }
+            { Content: "Copper" }
+            { Content: "Gold" }
+            { Content: "Bronze" }
+        ]
+
+        EyeColors:
+        [
+            { Content: "Amber" }
+            { Content: "Blue" }
+            { Content: "Brown" }
+            { Content: "Gray" }
+            { Content: "Green" }
+            { Content: "Hazel" }
+        ]
+
+        UnusualEyeColors:
+        [
+            { Content: "Red" }
+            { Content: "Orange" }
+            { Content: "Purple" }
+            { Content: "Yellow" }
+        ]
+    }
+    GeneratorType: Assignment
+}

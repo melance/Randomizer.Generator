@@ -12,9 +12,9 @@ namespace Randomizer.Generator.Win
 		#endregion
 
 		#region Properties
-		internal static String GeneratorDirectory
+		internal static IEnumerable<String> GeneratorDirectories
 		{
-			get => Environment.ExpandEnvironmentVariables(Properties.Settings.Default.GeneratorDirectory);
+			get => Properties.Settings.Default.GeneratorDirectory.Cast<String>().Select(s => Environment.ExpandEnvironmentVariables(s));
 		}
 
 		internal static DataAccess.FileSystemDataAccess DataAccess
@@ -23,8 +23,8 @@ namespace Randomizer.Generator.Win
 			{
 				if (_fileSystemDataAccess == null)
 				{
-					_fileSystemDataAccess = new DataAccess.FileSystemDataAccess(GeneratorDirectory);
-					Randomizer.Generator.DataAccess.DataAccess.Instance = _fileSystemDataAccess;
+					_fileSystemDataAccess = new DataAccess.FileSystemDataAccess(GeneratorDirectories);
+					Generator.DataAccess.DataAccess.Instance = _fileSystemDataAccess;
 				}
 				return _fileSystemDataAccess;
 			}

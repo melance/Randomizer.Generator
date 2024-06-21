@@ -24,26 +24,30 @@ namespace Randomizer.Generator.DataAccess
 		#region Properties
 		public String SearchPattern { get; set; } = DEFAULT_SEARCH_PATTERN;
 		public String LibrarySearchPattern { get; set; } = DEFAULT_LIBRARY_SEARCH_PATTERN;
+		public SearchOption SearchOption { get; set; } = SearchOption.TopDirectoryOnly;
 
-		public virtual String RootPath { get; }
+		public virtual IEnumerable<String> RootPaths { get; }
 		#endregion
 
 		#region Public Methods
-		public FileSystemDataAccess() => RootPath = Assembly.GetExecutingAssembly().Location;
+		public FileSystemDataAccess() => RootPaths = new List<String>(){ Assembly.GetExecutingAssembly().Location };
 
-		public FileSystemDataAccess(String rootPath) => RootPath = rootPath;
+		public FileSystemDataAccess(String rootPath) => RootPaths = new List<String>() { rootPath };
+
+		public FileSystemDataAccess(IEnumerable<String> rootPaths) => RootPaths = rootPaths;
 
 		public virtual string ExpandFilePath(String path)
 		{
 			if (Path.IsPathRooted(path)) return path;
-			return Path.Combine(RootPath, path);
+			foreach(var root in RootPaths)
+			{
+				var fullPath = Path.Combine(root, path);
+				if (File.Exists(fullPath)) return fullPath;
+			}
+			return path;
 		}
 
-		public virtual String GetText(String path)
-		{
-			if (!Path.IsPathRooted(path)) path = Path.Combine(RootPath, path);
-			return File.ReadAllText(path);
-		}
+		public virtual String GetText(String path) => File.ReadAllText(ExpandFilePath(path));			
 
 		public virtual Boolean DefinitionExists(String name)
 		{
@@ -102,7 +106,7 @@ namespace Randomizer.Generator.DataAccess
 
 		public virtual IEnumerable<String> GetTagList(Func<BaseDefinition, Boolean> filter)
 		{
-			return GetDefinitionList(filter).Select(d => d.Definition.Tags).SelectMany(t => t).Distinct().OrderBy(t => t);
+			return GetDefinitionList(filter).Select(d => d.Definition?.Tags ?? new List<String>()).SelectMany(t => t).Distinct().OrderBy(t => t);
 		}
 		#endregion
 
@@ -110,19 +114,22 @@ namespace Randomizer.Generator.DataAccess
 		private GetDefinitionListResponse GetDefinitions(String searchPattern, Func<BaseDefinition, Boolean> filter)
 		{
 			var response = new GetDefinitionListResponse();
-			var fullPath = Path.GetFullPath(RootPath);
-			foreach (var file in Directory.GetFiles(fullPath, searchPattern))
+			foreach (var root in RootPaths)
 			{
-				try
+				var fullPath = Path.GetFullPath(root);
+				foreach (var file in Directory.GetFiles(fullPath, searchPattern, SearchOption))
 				{
-					BaseDefinition definition = null;
-					definition = BaseDefinition.Deserialize(File.ReadAllText(file));					
-					if (filter == null || filter.Invoke(definition))
-						response.Add(definition);
-				}
-				catch (Exception ex)
-				{
-					response.Add(file, ex);
+					try
+					{
+						BaseDefinition definition = null;
+						definition = BaseDefinition.Deserialize(File.ReadAllText(file));
+						if (filter == null || filter.Invoke(definition))
+							response.Add(definition);
+					}
+					catch (Exception ex)
+					{
+						response.Add(file, ex);
+					}
 				}
 			}
 			return response;
@@ -130,45 +137,51 @@ namespace Randomizer.Generator.DataAccess
 
 		private IEnumerable<String> GetDefinitionsRaw(String searchPattern, Func<BaseDefinition, Boolean> filter)
 		{
-			var fullPath = Path.GetFullPath(RootPath);
-			foreach (var file in Directory.GetFiles(fullPath, searchPattern))
+			foreach (var root in RootPaths)
 			{
-				BaseDefinition definition = null;
-				ExceptionDispatchInfo exi = null;
-				try
+				var fullPath = Path.GetFullPath(root);
+				foreach (var file in Directory.GetFiles(fullPath, searchPattern, SearchOption))
 				{
-					definition = BaseDefinition.Deserialize(File.ReadAllText(file));
+					BaseDefinition definition = null;
+					ExceptionDispatchInfo exi = null;
+					try
+					{
+						definition = BaseDefinition.Deserialize(File.ReadAllText(file));
+					}
+					catch (Exception ex)
+					{
+						exi = ExceptionDispatchInfo.Capture(ex);
+						ex.Data.Add("File", file);
+					}
+					if (exi != null) exi.Throw();
+					if (filter == null || filter.Invoke(definition))
+						yield return File.ReadAllText(file);
 				}
-				catch (Exception ex)
-				{
-					exi = ExceptionDispatchInfo.Capture(ex);
-					ex.Data.Add("File", file);
-				}
-				if (exi != null) exi.Throw();
-				if (filter == null || filter.Invoke(definition))
-					yield return File.ReadAllText(file);
 			}
 		}
 
 		private IEnumerable<String> GetDefinitionPaths(String searchPattern, Func<BaseDefinition, Boolean> filter)
 		{
-			var fullPath = Path.GetFullPath(RootPath);
-			foreach (var file in Directory.GetFiles(fullPath, searchPattern))
+			foreach (var root in RootPaths)
 			{
-				BaseDefinition definition = null;
-				ExceptionDispatchInfo exi = null;
-				try
+				var fullPath = Path.GetFullPath(root);
+				foreach (var file in Directory.GetFiles(fullPath, searchPattern))
 				{
-					definition = BaseDefinition.Deserialize(File.ReadAllText(file));
+					BaseDefinition definition = null;
+					ExceptionDispatchInfo exi = null;
+					try
+					{
+						definition = BaseDefinition.Deserialize(File.ReadAllText(file));
+					}
+					catch (Exception ex)
+					{
+						exi = ExceptionDispatchInfo.Capture(ex);
+						ex.Data.Add("File", file);
+					}
+					if (exi != null) exi.Throw();
+					if (filter == null || filter.Invoke(definition))
+						yield return file;
 				}
-				catch (Exception ex)
-				{
-					exi = ExceptionDispatchInfo.Capture(ex);
-					ex.Data.Add("File", file);
-				}
-				if (exi != null) exi.Throw();
-				if (filter == null || filter.Invoke(definition))
-					yield return file;
 			}
 		}
 	}

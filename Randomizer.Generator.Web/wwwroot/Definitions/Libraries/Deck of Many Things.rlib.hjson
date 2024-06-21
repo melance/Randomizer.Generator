@@ -1,0 +1,35 @@
+Name: Deck of Many Things Images
+Author: Lance Boudreaux
+Description: Icon size images for the deck of many things
+Version: "1.0"
+OutputFormat: Html
+ShowInList: false
+Parameters:
+{
+}
+LineItems:
+{
+	Balance: [ { Content: "<img src='../definitions/images/deck of many things/balance.svg' style='width: 32px; height 32px;' />" } ]
+	Comet: [ { Content: "<img src='../definitions/images/deck of many things/comet.svg' style='width: 32px; height 32px;' />" } ]
+	Donjon: [ { Content: "<img src='../definitions/images/deck of many things/donjon.svg' style='width: 32px; height 32px;' />" } ]
+	Euryale:[ { Content: "<img src='../definitions/images/deck of many things/euryale.svg' style='width: 32px; height 32px;' />" } ]
+	Fates: [ { Content: "<img src='../definitions/images/deck of many things/fates.svg' style='width: 32px; height 32px;' />" } ]
+	Flames: [ { Content: "<img src='../definitions/images/deck of many things/flames.svg' style='width: 32px; height 32px;' />" } ]
+	Fool: [ { Content: "<img src='../definitions/images/deck of many things/fool.svg' style='width: 32px; height 32px;' />" } ]
+	Gem: [ { Content: "<img src='../definitions/images/deck of many things/gem.svg' style='width: 32px; height 32px;' />" } ]
+	Idiot: [ { Content: "<img src='../definitions/images/deck of many things/idiot.svg' style='width: 32px; height 32px;' />" } ]
+	Jester: [ { Content: "<img src='../definitions/images/deck of many things/jester.svg' style='width: 32px; height 32px;' />" } ]
+	Key: [ { Content: "<img src='../definitions/images/deck of many things/key.svg' style='width: 32px; height 32px;' />" } ]
+	Knight: [ { Content: "<img src='../definitions/images/deck of many things/knight.svg' style='width: 32px; height 32px;' />" } ]
+	Moon: [ { Content: "<img src='../definitions/images/deck of many things/moon.svg' style='width: 32px; height 32px;' />" } ]
+	Rogue: [ { Content: "<img src='../definitions/images/deck of many things/rogue.svg' style='width: 32px; height 32px;' />" } ]
+	Ruin: [ { Content: "<img src='../definitions/images/deck of many things/ruin.svg' style='width: 32px; height 32px;' />" } ]
+	Skull: [ { Content: "<img src='../definitions/images/deck of many things/skull.svg' style='width: 32px; height 32px;' />" } ]
+	Star: [ { Content: "<img src='../definitions/images/deck of many things/star.svg' style='width: 32px; height 32px;' />" } ]
+	Sun: [ { Content: "<img src='../definitions/images/deck of many things/sun.svg' style='width: 32px; height 32px;' />" } ]
+	Talon: [ { Content: "<img src='../definitions/images/deck of many things/talon.svg' style='width: 32px; height 32px;' />" } ]
+	Throne: [ { Content: "<img src='../definitions/images/deck of many things/throne.svg' style='width: 32px; height 32px;' />" } ]
+	Vizier: [ { Content: "<img src='../definitions/images/deck of many things/vizier.svg' style='width: 32px; height 32px;' />" } ]
+	Void: [ { Content: "<img src='../definitions/images/deck of many things/void.svg' style='width: 32px; height 32px;' />" } ]
+}
+GeneratorType: Assignment

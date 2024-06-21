@@ -2,8 +2,11 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Randomizer.Generator.Win.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
-    <Setting Name="GeneratorDirectory" Type="System.String" Scope="User">
-      <Value Profile="(Default)">%AppData%\Randomizer.Generator\Definitions</Value>
+    <Setting Name="GeneratorDirectory" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;string&gt;%AppData%\Randomizer.Generator\Definitions&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
     </Setting>
     <Setting Name="TextEditor" Type="System.String" Scope="User">
       <Value Profile="(Default)">notepad.exe</Value>

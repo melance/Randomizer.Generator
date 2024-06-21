@@ -8,6 +8,7 @@ using Randomizer.Generator.Utility;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -47,11 +48,19 @@ namespace Randomizer.Generator.Core
 		/// <returns>A definition instance</returns>
 		public static BaseDefinition Deserialize(String value)
 		{
-			var json = HjsonValue.Parse(value).ToString();
-			var serializer = JsonSerializer.Create(SerializerSettings);
-			using var sReader = new StringReader(json);
-			using var reader = new JsonTextReader(sReader);
-			return serializer.Deserialize<BaseDefinition>(reader);
+			try
+			{
+				var json = HjsonValue.Parse(value).ToString();
+				var serializer = JsonSerializer.Create(SerializerSettings);
+				using var sReader = new StringReader(json);
+				using var reader = new JsonTextReader(sReader);
+				return serializer.Deserialize<BaseDefinition>(reader);
+			}
+			catch (Exception ex)
+			{
+				Debug.WriteLine(ex.ToString());
+				throw;
+			}
 		}
 		
 		/// <summary>
@@ -394,7 +403,7 @@ namespace Randomizer.Generator.Core
 				}
 				else
 				{
-					e.Result = Parameters[name].Value;
+					e.Result = Parameters[name].TypedValue;
 				}
 			}
 			else

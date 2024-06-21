@@ -28,7 +28,15 @@ namespace Randomizer.Generator.Win
 		private void LoadDefinitionList()
 		{
 			var response = Program.DataAccess.GetDefinitionList(d => d.ShowInList);
-			_definitions = response.Where(r => r.Definition != null).Select(r => r.Definition).ToList()!;
+			_definitions = (from d in response
+							where d != null &&
+								  d?.Definition != null &&
+								  d?.Definition?.ShowInList == true
+							group d by d?.Definition?.Name into g
+							select g.First().Definition)
+							.OrderBy(d => d.Name)
+							.ToList();
+			//_definitions = response.Where(r => r.Definition != null).Select(r => r.Definition).ToList()!;
 			lstGenerators.DataSource = _definitions;
 			lstGenerators.DisplayMember = "Name";
 			tagList.LoadTags();
@@ -44,7 +52,11 @@ namespace Randomizer.Generator.Win
 			lstGenerators.DataSource = (from d in _definitions
 										where d.Tags.Intersect(tagList.SelectedTags).Any() &&
 											  (d.Name.Contains(txtSearch.Text, StringComparison.CurrentCultureIgnoreCase) || String.IsNullOrWhiteSpace(txtSearch.Text))
-										select d).ToList();
+										select d)
+										.GroupBy(d => d.Name)
+										.Select(d => d.First())
+										.OrderBy(d => d.Name)
+										.ToList();
 		}
 
 		private void OpenGenerator(String generatorPath)
@@ -124,7 +136,7 @@ namespace Randomizer.Generator.Win
 		{
 			if (dlgImport.ShowDialog() == DialogResult.OK)
 			{
-				File.Copy(dlgImport.FileName, Path.Combine(Program.GeneratorDirectory, Path.GetFileName(dlgImport.FileName)));
+				//File.Copy(dlgImport.FileName, Path.Combine(Program.GeneratorDirectory, Path.GetFileName(dlgImport.FileName)));
 				LoadDefinitionList();
 			}
 		}

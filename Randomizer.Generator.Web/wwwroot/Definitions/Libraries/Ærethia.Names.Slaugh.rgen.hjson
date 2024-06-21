@@ -1,0 +1,157 @@
+{
+	Name: Slaugh Name
+	/* Old English */
+	Version: "2.0"
+	OutputFormat: Text
+    ShowInList: false
+	Parameters:
+	{
+	}
+	LineItems:
+	{
+		Start:
+		[
+			{ Content: "[GivenName]" }
+		]
+        		
+		GivenName:
+		[
+            { Content: "[GN1][GN2]" }			
+		]
+        
+		GN1:
+		[
+            { Content: "Ad" }    
+            { Content: "Aelf" }  
+            { Content: "Aeth" }   
+            { Content: "Ail" }  
+            { Content: "Ain" } 
+            { Content: "Ald" }
+            { Content: "Alf" }
+            { Content: "Alg" }
+            { Content: "Alv" }
+            { Content: "Ans" }
+            { Content: "Ash" }
+            { Content: "Ath" }
+            { Content: "Aud" }
+            { Content: "Aver" }
+            { Content: "Ba[=Pick('k','r','x')]" }
+            { Content: "Bent" }
+            { Content: "Beo" }
+            { Content: "Bev" }
+            { Content: "Blak" }
+            { Content: "Bost" }
+            { Content: "Brig" }
+            { Content: "Bro" }
+            { Content: "Bur" }
+            { Content: "Cas" }
+            { Content: "Cen" }
+            { Content: "Clev" }
+            { Content: "Colt" }
+            { Content: "Cuth" }
+            { Content: "Cyne" }
+            { Content: "Da[=Pick('l','n','r','y')]" }
+            { Content: "Dweor" }
+            { Content: "Dud" }
+            { Content: "Ead" }
+            { Content: "Ecg" }
+            { Content: "Edg" }
+            { Content: "Edm" }
+            { Content: "Elv" }
+            { Content: "Ethel" }
+            { Content: "Ever" }
+            { Content: "Freid" }
+            { Content: "Fult" }
+            { Content: "Glad" }
+            { Content: "God" }
+            { Content: "Gram" }
+            { Content: "Had" }
+            { Content: "Hal" }
+            { Content: "Ham" }
+            { Content: "Harld" }
+            { Content: "Hay" }
+            { Content: "Heath" }
+            { Content: "Here" }
+            { Content: "Hroth" }
+            { Content: "Ken" }
+            { Content: "Kim" }
+            { Content: "Leof" }
+            { Content: "Lond" }
+            { Content: "Lyn" }
+            { Content: "Mar" }
+            { Content: "Merl" }
+            { Content: "Milb" }
+            { Content: "Mon" }
+            { Content: "Nor" }
+            { Content: "Odg" }
+            { Content: "Osb" }
+            { Content: "Osk" }
+            { Content: "Osv" }
+            { Content: "Paeg" }
+            { Content: "Pey" }
+            { Content: "Prest" }
+            { Content: "Rad" }
+            { Content: "Rav" }
+            { Content: "Ril" }
+            { Content: "Ripl" }
+            { Content: "Ry[=Pick('d','l')]" }
+            { Content: "Sax" }
+            { Content: "Sew" }
+            { Content: "Sher" }
+            { Content: "Shir" }
+            { Content: "Sig" }
+            { Content: "Stan" }
+            { Content: "Star" }
+            { Content: "Sut" }
+            { Content: "Swioh" }
+            { Content: "Syn" }
+            { Content: "Tat" }
+            { Content: "Ted" }
+            { Content: "Ulr" }
+            { Content: "Vilf" }
+            { Content: "War" }
+            { Content: "Web" }
+            { Content: "Wig" }
+            { Content: "Wilb" }
+            { Content: "Wilf" }
+            { Content: "Wins" }
+            { Content: "Wynn" }
+		]
+
+		GN2:
+		[   
+            { Content: "air" } 	
+            { Content: "ar" }
+            { Content: "ber" }
+            { Content: "bur" }
+            { Content: "eiston" }
+            { Content: "elweald" }	
+            { Content: "er" }	
+            { Content: "frig" }
+            { Content: "gar" }
+            { Content: "in" }
+            { Content: "ith" }
+            { Content: "iva" }
+            { Content: "laed" }
+            { Content: "ley" }
+            { Content: "gifu" }
+            { Content: "heah" }
+            { Content: "mun" }
+            { Content: "nod" }
+            { Content: "ous" }
+            { Content: "read" }
+            { Content: "red[=Pick('','a','as')]" }
+            { Content: "rey" }
+            { Content: "ric" }
+            { Content: "sig" }
+            { Content: "stan" }
+            { Content: "stey" }
+            { Content: "thryth" }
+            { Content: "ton" }
+            { Content: "wig" }
+            { Content: "wine" }
+            { Content: "wulf" }
+		]
+	}
+	GeneratorType: Assignment
+}

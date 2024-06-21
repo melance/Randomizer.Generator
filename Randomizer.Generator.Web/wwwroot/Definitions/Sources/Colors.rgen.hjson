@@ -1,0 +1,528 @@
+Name: Colors
+Author: null
+Description: "A color generator, with themed swatches suitable for import."
+Version: "2.0"
+URL: null
+Tags:
+[
+	Generic
+]
+OutputFormat: Text
+ShowInList: false
+Parameters:
+{	
+	Swatch:
+	{
+		Value: ColorSwatchAll
+		Display: Swatch
+		Type: List
+		Options:
+		[
+			ColorSwatchAll:All
+			ColorSwatchBlue:Blue
+			ColorSwatchBrown:Brown
+			ColorSwatchGreen:Green
+			ColorSwatchGreyscale:Grey
+			ColorSwatchOrange:Orange
+			ColorSwatchPurple:Purple
+			ColorSwatchRed:Red
+			ColorSwatchYellow:Yellow
+			ColorSwatchMetal:Metal
+			ColorSwatchWarm:Warm
+			ColorSwatchCool:Cool
+			ColorSwatchNatural:Natural
+		]
+	}
+	Test:
+	{
+		Display: Testing
+		Type: Text
+	}
+}
+TextCase: None
+LineItems:
+{
+	Start:
+	[
+	  { Content: "[Swatch]" }
+	]
+	ColorSwatchAll:
+	[
+		{ Content: "[ColorSwatchBlue]" }
+		{ Content: "[ColorSwatchBrown]" }
+		{ Content: "[ColorSwatchGreen]" }
+		{ Content: "[ColorSwatchGreyscale]" }
+		{ Content: "[ColorSwatchOrange]" }
+		{ Content: "[ColorSwatchPurple]" }
+		{ Content: "[ColorSwatchRed]" }
+		{ Content: "[ColorSwatchYellow]" }
+		{ Content: "[ColorSwatchMetal]" }
+		{ Content: "[ColorSwatchBasic]" }
+	]	
+	ColorSwatchWarm:
+	[
+		{ Content: "[ColorSwatchOrange]" }
+		{ Content: "[ColorSwatchYellow]" }
+		{ Content: "[ColorSwatchRed]" }
+	]
+	ColorSwatchCool:
+	[
+		{ Content: "[ColorSwatchBlue]" }
+		{ Content: "[ColorSwatchGreen]" }
+		{ Content: "[ColorSwatchGrey]" }
+	]
+	ColorSwatchNatural:
+	[
+		{ Content: "[ColorSwatchBrown]" }
+		{ Content: "[ColorSwatchGreen]" }
+	]
+	ColorSwatchBlue:
+	[
+		{ Content: "blue gray" }
+		{ Content: "mist blue" }
+		{ Content: "marble blue" }
+		{ Content: "slate blue grey" }
+		{ Content: "light purple blue" }
+		{ Content: "azure blue" }
+		{ Content: "blue jay" }
+		{ Content: "dark slate" }
+		{ Content: "purple navy" }
+		{ Content: "night blue" }
+		{ Content: "midnight blue" }
+		{ Content: "navy" }
+		{ Content: "denim dark blue" }
+		{ Content: "dark blue" }
+		{ Content: "lapis blue" }
+		{ Content: "Earth blue" }
+		{ Content: "cobalt" }
+		{ Content: "medium blue" }
+		{ Content: "blueberry" }
+		{ Content: "canary blue" }
+		{ Content: "blue" }
+		{ Content: "blue orchid" }
+		{ Content: "sapphire blue" }
+		{ Content: "bright navy" }
+		{ Content: "royal blue" }
+		{ Content: "ocean blue" }
+		{ Content: "neon blue" }
+		{ Content: "glacial blue ice" }
+		{ Content: "steel blue" }
+		{ Content: "silk blue" }
+		{ Content: "blue ivy" }
+		{ Content: "blue koi" }
+		{ Content: "baby blue" }
+		{ Content: "cornflower blue" }
+		{ Content: "sky blue" }
+		{ Content: "iceberg" }
+		{ Content: "butterfly blue" }
+		{ Content: "deep sky blue" }
+		{ Content: "midday blue" }
+		{ Content: "crystal blue" }
+		{ Content: "denim blue" }
+		{ Content: "day sky blue" }
+		{ Content: "light sky blue" }
+		{ Content: "sky blue" }
+		{ Content: "jeans blue" }
+		{ Content: "pastel blue" }
+		{ Content: "light day blue" }
+		{ Content: "sea blue" }
+		{ Content: "heavenly blue" }
+		{ Content: "robin egg blue" }
+		{ Content: "powder blue" }
+		{ Content: "coral blue" }
+		{ Content: "light blue" }
+		{ Content: "light steel blue" }
+		{ Content: "lavender blue" }
+		{ Content: "water" }
+		{ Content: "alice blue" }		
+		{ Content: "azure" }
+	]
+	ColorSwatchGreyscale:
+	[
+		{ Content: "black" }
+		{ Content: "night" }
+		{ Content: "charcoal" }
+		{ Content: "oil" }
+		{ Content: "black cat" }
+		{ Content: "iridium" }
+		{ Content: "black eel" }
+		{ Content: "black cow" }
+		{ Content: "gray wolf" }
+		{ Content: "vampire gray" }
+		{ Content: "gray dolphin" }
+		{ Content: "carbon gray" }
+		{ Content: "ash gray" }
+		{ Content: "cloudy gray" }
+		{ Content: "dim gray" }
+		{ Content: "smokey gray" }
+		{ Content: "alien gray" }
+		{ Content: "granite" }
+		{ Content: "sonic silver" }
+		{ Content: "platinum gray" }
+		{ Content: "gray" }
+		{ Content: "battleship gray" }
+		{ Content: "dark gray" }
+		{ Content: "gray cloud" }
+		{ Content: "silver" }
+		{ Content: "pale silver" }
+		{ Content: "gray goose" }
+		{ Content: "platinum silver" }
+		{ Content: "light gray" }
+		{ Content: "gainsboro" }
+		{ Content: "platinum" }
+		{ Content: "metallic silver" }
+		{ Content: "blue gray" }
+		{ Content: "Roman silver" }
+		{ Content: "light slate gray" }
+		{ Content: "slate gray" }
+		{ Content: "rat gray" }
+		{ Content: "slate granite gray" }
+		{ Content: "jet gray" }
+		{ Content: "ghost white" }
+	]
+	ColorSwatchOrange:
+	[      
+		{ Content: "dark bisque" }
+		{ Content: "rust" }
+		{ Content: "copper" }
+		{ Content: "salmon orange" }
+		{ Content: "sedona" }
+		{ Content: "papaya orange" }
+		{ Content: "pumpkin orange" }
+		{ Content: "carrot orange" }
+		{ Content: "dark orange" }
+		{ Content: "sunrise orange" }
+		{ Content: "mango orange" }
+		{ Content: "coral" }
+		{ Content: "tangerine" }
+		{ Content: "light copper" }
+		{ Content: "orange red" }
+		{ Content: "orange" }
+		{ Content: "light orange" }
+		{ Content: "cantelope" }
+		{ Content: "saffron" }
+		{ Content: "beer" }
+		{ Content: "golden brown" }
+	]
+	ColorSwatchRed:
+	[
+		{ Content: "red" }
+		{ Content: "scarlet" }
+		{ Content: "ruby red" }
+		{ Content: "lava red" }
+		{ Content: "cherry red" }
+		{ Content: "chili pepper" }
+		{ Content: "fire brick" }
+		{ Content: "cranberry" }
+		{ Content: "wine red" }
+		{ Content: "dark red" }
+		{ Content: "maroon" }
+		{ Content: "burgundy" }
+		{ Content: "deep red" }
+		{ Content: "blood red" }
+		{ Content: "blood night red" }
+		{ Content: "red bean" }
+		{ Content: "candy apple red" }
+		{ Content: "carnation" }
+		{ Content: "cherry red" }
+		{ Content: "coral red" }
+		{ Content: "crimson" }
+		{ Content: "pink" }
+		{ Content: "raspberry red" }
+		{ Content: "rose red" }
+		{ Content: "ruby red" }	
+		{ Content: "puce" }
+		{ Content: "plum pie" }
+		{ Content: "lipstick red" }
+		{ Content: "lipstick pink" }
+		{ Content: "rose" }
+		{ Content: "pig pink" }
+		{ Content: "light rose" }
+		{ Content: "deep rose" }
+		{ Content: "light pink" }
+		{ Content: "donut pink" }
+		{ Content: "baby pink" }
+		{ Content: "flamingo pink" }
+		{ Content: "pink rose" }
+		{ Content: "carnation" }
+		{ Content: "blush" }
+		{ Content: "hot pink" }
+		{ Content: "neon pink" }
+		{ Content: "bright maroon" }
+		{ Content: "orchid" }
+		{ Content: "mauve" }
+		{ Content: "deep mauve" }
+		{ Content: "cinnamon" }
+	]
+	ColorSwatchYellow:
+	[      
+		{ Content: "harvest gold" }
+		{ Content: "sun yellow" }
+		{ Content: "corn yellow" }
+		{ Content: "canary yellow" }
+		{ Content: "banana yellow" }
+		{ Content: "mustard" }
+		{ Content: "gold" }
+		{ Content: "bright gold" }
+		{ Content: "yellow" }
+		{ Content: "ginger" }
+		{ Content: "sunflower" }
+		{ Content: "butter" }
+		{ Content: "daffodil" }
+		{ Content: "lemon" }
+		{ Content: "bumblebee" }
+		{ Content: "pineapple yellow" }		
+	]
+	ColorSwatchGreen:
+	[      
+		{ Content: "beetle green" }
+		{ Content: "green blue" }
+		{ Content: "aquamarine" }
+		{ Content: "sea turtle green" }
+		{ Content: "dull sea green" }
+		{ Content: "deep sea green" }
+		{ Content: "sea green" }
+		{ Content: "Earth green" }
+		{ Content: "emerald" }
+		{ Content: "mint" }
+		{ Content: "medium sea green" }
+		{ Content: "camouflage green" }
+		{ Content: "sage" }
+		{ Content: "hazel" }
+		{ Content: "venom green" }
+		{ Content: "olive drab" }
+		{ Content: "olive" }
+		{ Content: "dark olive" }
+		{ Content: "fern green" }
+		{ Content: "pine green" }
+		{ Content: "medium forest green" }
+		{ Content: "jungle green" }
+		{ Content: "forest green" }
+		{ Content: "green" }
+		{ Content: "dark green" }
+		{ Content: "deep emerald green" }
+		{ Content: "dark forest green" }
+		{ Content: "seaweed green" }
+		{ Content: "shamrock green" }
+		{ Content: "green onion" }
+		{ Content: "green pepper" }
+		{ Content: "dark lime green" }
+		{ Content: "clover green" }
+		{ Content: "green apple" }
+		{ Content: "lime" }
+		{ Content: "pea green" }
+		{ Content: "kelly green" }
+		{ Content: "zombie green" }
+		{ Content: "frog green" }
+		{ Content: "dark sea green" }
+		{ Content: "iquana green" }
+		{ Content: "acid green" }
+		{ Content: "avocado green" }
+		{ Content: "pistachio green" }
+		{ Content: "yellow green" }
+		{ Content: "neon green" }
+		{ Content: "jade" }
+		{ Content: "spring green" }
+		{ Content: "medium spring green" }
+		{ Content: "emerald green" }
+		{ Content: "lawn green" }
+		{ Content: "chartreuse" }
+		{ Content: "tea green" }
+		{ Content: "slime green" }
+		{ Content: "algae green" }
+		{ Content: "light green" }
+		{ Content: "dragon green" }
+		{ Content: "pale green" }
+		{ Content: "mint green" }
+		{ Content: "light jade" }
+	]
+	ColorSwatchPurple:
+	[
+		{ Content: "purple lily" }
+		{ Content: "purple maroon" }
+		{ Content: "magenta" }
+		{ Content: "Tyrian puple" }
+		{ Content: "medium orchid" }
+		{ Content: "orchid" }
+		{ Content: "eggplant" }
+		{ Content: "plum" }
+		{ Content: "grape" }
+		{ Content: "amethyst purple" }
+		{ Content: "indigo" }
+		{ Content: "dark magenta" }
+		{ Content: "purple" }
+		{ Content: "dark orchid" }
+		{ Content: "dark violet" }
+		{ Content: "purple violet" }
+		{ Content: "jasmine purple" }
+		{ Content: "blue violet" }
+		{ Content: "medium purple" }
+		{ Content: "light purple" }
+		{ Content: "crocus purple" }
+		{ Content: "pale lilac" }
+		{ Content: "mauve" }
+		{ Content: "bright lilac" }
+		{ Content: "rich lilac" }
+		{ Content: "lilac" }
+		{ Content: "plum" }
+		{ Content: "wisteria" }
+		{ Content: "fuchsia" }
+		{ Content: "heliotrope" }
+	]
+	ColorSwatchBrown:
+	[
+		{ Content: "wood" }
+		{ Content: "oak" }
+		{ Content: "antique bronze" }
+		{ Content: "sandstone" }
+		{ Content: "taupe" }
+		{ Content: "mocha" }
+		{ Content: "chocolate" }
+		{ Content: "milk chocolate" }
+		{ Content: "dark coffee" }
+		{ Content: "coffee" }
+		{ Content: "bear brown" }
+		{ Content: "dirt" }
+		{ Content: "red dirt" }
+		{ Content: "camel brown" }
+		{ Content: "sand" }
+		{ Content: "brown sand" }
+		{ Content: "deer brown" }
+		{ Content: "tan" }
+		{ Content: "bronze" }
+		{ Content: "brown" }
+		{ Content: "chestnut" }
+		{ Content: "cinnamon" }
+		{ Content: "cocoa" }
+		{ Content: "dark brown" }		
+	]
+	ColorSwatchMetal:
+	[		
+		{ Content: "aluminum" }
+		{ Content: "copper" }
+		{ Content: "silver" }
+		{ Content: "gunmetal" }
+		{ Content: "bronze" }
+		{ Content: "iron" }
+		{ Content: "steel" }
+		{ Content: "gold" }
+		{ Content: "platinum" }
+		{ Content: "electrum" }
+		{ Content: "brass" }
+		{ Content: "mercury" }
+		{ Content: "blue steel" }
+		{ Content: "tarnished brass" }
+		{ Content: "antique bronze" }
+		{ Content: "rose gold" }
+		{ Content: "copper patina" }
+		{ Content: "lead" }
+		{ Content: "chrome" }
+	]
+	ColorSwatchBasic:
+	[
+		{ Content: "apricot" }
+		{ Content: "black" }
+		{ Content: "blue" }
+		{ Content: "brown" }
+		{ Content: "gray" }
+		{ Content: "green" }
+		{ Content: "indigo" }
+		{ Content: "orange" }
+		{ Content: "pink" }
+		{ Content: "purple" }
+		{ Content: "red" }
+		{ Content: "scarlet" }
+		{ Content: "violet" }
+		{ Content: "white" }
+		{ Content: "yellow" }
+	]
+	ColorSwatchSingleWord:
+	[
+		{ Content: "aluminum" }
+		{ Content: "apricot" }
+		{ Content: "azure" }
+		{ Content: "black" }
+		{ Content: "blue" }
+		{ Content: "blueberry" }
+		{ Content: "brass" }
+		{ Content: "bronze" }
+		{ Content: "brown" }
+		{ Content: "bumblebee" }
+		{ Content: "burgundy" }
+		{ Content: "butter" }
+		{ Content: "cantelope" }
+		{ Content: "carnation" }
+		{ Content: "charcoal" }
+		{ Content: "chestnut" }
+		{ Content: "chocolate" }
+		{ Content: "chrome" }
+		{ Content: "cinnamon" }
+		{ Content: "cinnamon" }		
+		{ Content: "cobalt" }
+		{ Content: "cocoa" }
+		{ Content: "coffee" }
+		{ Content: "copper" }
+		{ Content: "coral" }
+		{ Content: "crimson" }
+		{ Content: "daffodil" }
+		{ Content: "eggplant" }
+		{ Content: "electrum" }
+		{ Content: "emerald" }
+		{ Content: "fuchsia" }
+		{ Content: "gainsboro" }
+		{ Content: "ginger" }
+		{ Content: "gold" }
+		{ Content: "gold" }		
+		{ Content: "granite" }
+		{ Content: "grape" }	
+		{ Content: "gray" }
+		{ Content: "green" }
+		{ Content: "gunmetal" }
+		{ Content: "hazel" }
+		{ Content: "heliotrope" }
+		{ Content: "indigo" }
+		{ Content: "iridium" }
+		{ Content: "iron" }
+		{ Content: "jade" }
+		{ Content: "lead" }
+		{ Content: "lemon" }
+		{ Content: "lilac" }
+		{ Content: "lime" }
+		{ Content: "maroon" }
+		{ Content: "mauve" }
+		{ Content: "mercury" }
+		{ Content: "mint" }
+		{ Content: "mocha" }
+		{ Content: "mustard" }
+		{ Content: "navy" }
+		{ Content: "night" }
+		{ Content: "oil" }
+		{ Content: "olive" }
+		{ Content: "orange" }
+		{ Content: "orchid" }
+		{ Content: "pink" }
+		{ Content: "platinum" }
+		{ Content: "plum" }
+		{ Content: "purple" }
+		{ Content: "red" }
+		{ Content: "rose" }
+		{ Content: "rust" }
+		{ Content: "saffron" }
+		{ Content: "sage" }
+		{ Content: "sand" }
+		{ Content: "sandstone" }
+		{ Content: "scarlet" }		
+		{ Content: "sedona" }
+		{ Content: "silver" }
+		{ Content: "steel" }
+		{ Content: "sunflower" }
+		{ Content: "tan" }
+		{ Content: "tangerine" }
+		{ Content: "taupe" }
+		{ Content: "violet" }
+		{ Content: "white" }
+		{ Content: "wisteria" }
+		{ Content: "yellow" }
+	]
+}
+GeneratorType: Assignment

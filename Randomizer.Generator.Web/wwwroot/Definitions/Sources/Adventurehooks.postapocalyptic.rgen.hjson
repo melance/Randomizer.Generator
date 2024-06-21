@@ -1,0 +1,223 @@
+Name: Adventure Hooks (Post Apocalyptic)
+Author: Lance Boudreaux
+Description: Generates adventure hooks for post-apocalyptic settings
+Version: "2.0"
+Tags:
+[
+	Encounters
+	Post Apocalyptic
+]
+OutputFormat: Html
+TextCase: Sentence
+ShowInList: false
+LineItems:
+{
+	Start:
+	[
+		{ Content: "Your [Settlement] is overrun by [EnemyGroup]." }
+		{ Content: "You're running low on [Supplies] and must get more soon." }
+		{ Content: "Supplies are being used to quickly because [SupplySap]." }
+		{ Content: "The local [Utility] has stopped working." }
+		{ Content: "You hear [RadioGroup] over [Radio]." }
+		{ Content: "You come across a [RaidLocation] and [RaidLocationState]." }
+		{ Content: "A [ExtortionGroup] is demanding tribute in exchange for protection." }
+		{ Content: "[Outbreak] has broken out in your group." }
+		{ Content: "One of your group went out to [MissingPersonJob] and has not returned." }
+		{ Content: "While [SettlementJob] one of your group [WorkerMishap]." }
+	]
+	SettlementJob:
+	[
+		{ Content: "building a food store" }
+		{ Content: "reinforcing the doors" }
+		{ Content: "reinforcing windows" }
+		{ Content: "standing guard" }
+		{ Content: "taking a break from working" }
+		{ Content: "cutting down a tree" }
+		{ Content: "gathering fire wood" }
+		{ Content: "setting up camp" }
+		{ Content: "scouting the area" }
+		{ Content: "hunting" }
+	]
+	WorkerMishap:
+	[
+		{ Content: "passed out" }
+		{ Content: "was attacked by an unknown assailant" }
+		{ Content: "disappeared" }
+		{ Content: "broke a bone in their [=Pick('leg','arm','hand','foot')]" }
+		{ Content: "injured their [=Pick('neck','back','leg','arm','hand','foot')]" }
+		{ Content: "was attacked by a [=Pick('rabid','wild')] animal" }
+		{ Content: "broke a rib" }
+		{ Content: "was approached by a member of a cult" }
+		{ Content: "killed a [=Pick('person','zombie')]" }
+		{ Content: "cut themselves with a rusted tool" }
+		{ Content: "received a large cut" }
+		{ Content: "ran away" }
+		{ Content: "saw a car drive by" }
+		{ Content: "saw another group of survivors in the distance" }
+		{ Content: "saw a pack of wolves staring them down" }
+		{ Content: "saw a pack of zombies" }
+		{ Content: "saw some mutated wildlife" }
+		{ Content: "received radiation poisoning" }
+		{ Content: "was shot by a stray bullet" }
+		{ Content: "was shot by someone who ran away" }
+		{ Content: "saw a plane fly over head" }
+		{ Content: "saw a helicopter over head" }
+		{ Content: "thought they heard a train whistle" }
+	]
+	MissingPersonJob:
+	[
+		{ Content: "scavenge for supplies" }
+		{ Content: "scavenge for food" }
+		{ Content: "hunt for food" }
+		{ Content: "fish for food" }
+		{ Content: "trade with a nearby [Settlement]" }
+		{ Content: "scout the area" }
+		{ Content: "scout ahead" }
+		{ Content: "spy on a nearby [Settlement]" }
+		{ Content: "look for other survivors" }
+		{ Content: "collect fire wood" }
+	]
+	Settlement:
+	[
+		{ Content: "camp" }
+		{ Content: "town" }
+		{ Content: "city" }
+		{ Content: "stronghold" }
+		{ Content: "encampment" }
+		{ Content: "village" }
+		{ Content: "home" }
+		{ Content: "house" }
+	]
+	EnemyGroup:
+	[
+		{ Content: "zombies" }
+		{ Content: "a band of raiders" }
+		{ Content: "a group of anarchists" }
+		{ Content: "a militia" }
+		{ Content: "an insect swarm" }
+		{ Content: "an unknown group striking at night" }
+		{ Content: "rats" }
+		{ Content: "scorpions" }
+		{ Content: "snakes" }
+	]
+	ExtortionGroup:
+	[
+		{ Content: "group of bandits" }
+		{ Content: "militia" }
+		{ Content: "band of gypsies" }
+		{ Content: "band of mutants" }
+		{ Content: "cult" }
+	]
+	Supplies:
+	[
+		{ Content: "food" }
+		{ Content: "medical supplies" }
+		{ Content: "medication" }
+		{ Content: "clean water" }
+		{ Content: "ammunition" }
+		{ Content: "tools" }
+		{ Content: "morale" }
+		{ Content: "wood" }
+		{ Content: "fuel" }
+	]
+	SupplySap:
+	[
+		{ Content: "there are too many survivors unable to pull their weight" }
+		{ Content: "someone is stealing them" }
+		{ Content: "something is stealing them" }
+		{ Content: "some survivors are being wasteful" }
+		{ Content: "pets are being provided with them" }
+	]
+	Utility:
+	[
+		{ Content: "power plant" }
+		{ Content: "water station" }
+		{ Content: "sewage station" }
+	]
+	RadioGroup:
+	[
+		{ Content: "another group of survivors who sound like they can help you" }
+		{ Content: "another group of survivors and they are in trouble" }
+		{ Content: "a garbled message" }
+		{ Content: "someone screaming" }
+		{ Content: "someone speaking in a language you do not understand" }
+		{ Content: "wild animal sounds" }
+		{ Content: "inhuman sounds" }
+		{ Content: "a voice discernible through the static" }
+		{ Content: "a voice say, 'Help me' through the static" }
+		{ Content: "music" }
+		{ Content: "faint music through the static" }
+		{ Content: "silence" }
+	]
+	Radio:
+	[
+		{ Content: "an FM radio" }
+		{ Content: "an AM radio" }
+		{ Content: "a HAM radio" }
+		{ Content: "a CB" }
+		{ Content: "a walkie-talkie" }
+		{ Content: "a shortwave radio" }
+		{ Content: "a police scanner" }
+		{ Content: "a cell phone" }
+		{ Content: "a telephone" }
+	]
+	RaidLocation:
+	[
+		{ Content: "gas station" }
+		{ Content: "grocery store" }
+		{ Content: "hospital" }
+		{ Content: "hospice" }
+		{ Content: "nursing home" }
+		{ Content: "funeral home" }
+		{ Content: "farm house" }
+		{ Content: "suburban neighborhood" }
+		{ Content: "prison" }
+		{ Content: "police station" }
+		{ Content: "hotel" }
+		{ Content: "motel" }
+		{ Content: "YMCA" }
+		{ Content: "gym" }
+		{ Content: "factory" }
+		{ Content: "warehouse" }
+		{ Content: "cabin" }
+		{ Content: "apartment complex" }
+		{ Content: "apartment building" }
+	]
+	RaidLocationState:
+	[
+		{ Content: "it appears completely abandoned" }
+		{ Content: "it appears to have been recently occupied" }
+		{ Content: "it is in ruins" }
+		{ Content: "it appears to be occupied" }
+		{ Content: "is being overgrown by plants" }
+		{ Content: "you can hear a low humming noise from within" }
+		{ Content: "you can hear talking" }
+		{ Content: "you hear someone inside scream" }
+		{ Content: "the doors and windows are boarded up" }
+		{ Content: "a single warning shot lands near you" }
+		{ Content: "several doors are open" }
+		{ Content: "you hear an unrecognizable noise from within" }
+	]
+	Outbreak:
+	[
+		{ Content: "The flu" }
+		{ Content: "A plague" }
+		{ Content: "Tuberculous" }
+		{ Content: "Mutiny" }
+		{ Content: "Mutation" }
+		{ Content: "An unknown disease" }
+		{ Content: "Hysteria" }
+		{ Content: "Mass delusion" }
+		{ Content: "Dysentery" }
+		{ Content: "Mad cow disease" }
+		{ Content: "Food poisoning" }
+		{ Content: "Typhoid fever" }
+		{ Content: "Chickenpox" }
+		{ Content: "Shingles" }
+		{ Content: "Panic" }
+		{ Content: "Low morale" }
+		{ Content: "Depression" }
+		{ Content: "Cheerfulness" }
+	]
+}
+GeneratorType: Assignment

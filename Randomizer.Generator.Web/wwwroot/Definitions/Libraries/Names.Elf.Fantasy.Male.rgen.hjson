@@ -1,0 +1,522 @@
+Name: Elf Fantasy Names Male
+Author: Lance Boudreaux
+Description: Generates fantasy style masculine names for Elves
+Version: "1.0"
+Tags: 
+[	
+	Fantasy
+	Name
+]
+OutputFormat: Text
+ShowInList: 0
+Parameters:
+{
+}
+LineItems:
+{
+	Start:
+	[
+		{ Content: "Ad[AD]" }
+		{ Content: "Ae[AE]" }
+		{ Content: "Ah[AH]" }
+		{ Content: "Al[AL]" }
+		{ Content: "Ar[AR]" }
+		{ Content: "Au[AU]" }
+		{ Content: "Az[AZ]" }
+		
+		{ Content: "Ba[BA]" }
+		{ Content: "Be[BE]" }
+		
+		{ Content: "Ca[CA]" }
+		
+		{ Content: "Da[DA]" }
+		{ Content: "Dr[DR]" }
+		
+		{ Content: "Ef[EF]" }
+		{ Content: "Ei[EI]" }
+		{ Content: "El[EL]" }
+		{ Content: "En[EN]" }
+		{ Content: "Er[ER]" }
+		
+		{ Content: "Fi[FI]" }
+		
+		{ Content: "Ga[GA]" }
+		{ Content: "Ge[GE]" }
+		
+		{ Content: "Ha[HA]" }		
+		{ Content: "He[HE]" }
+		{ Content: "Hi[HI]" }
+		
+		{ Content: "Im[IM]" }
+		{ Content: "Is[IS]" }
+		{ Content: "Iv[IV]" }
+		
+		{ Content: "Ko[KO]" }
+		
+		{ Content: "La[LA]" }
+		{ Content: "Li[LI]" }
+		{ Content: "Lu[LU]" }
+		
+		{ Content: "Mi[MI]" }
+		
+		{ Content: "Na[NA]" }
+		{ Content: "Nu[NU]" }
+		
+		{ Content: "Pa[PA]" }
+		{ Content: "Pe[PE]" }
+		
+		{ Content: "Qu[QU]" }
+		
+		{ Content: "Ri[RI]" }
+		{ Content: "Ro[RO]" }
+		
+		{ Content: "So[SO]" }
+		{ Content: "Suh[SU]" }
+		
+		{ Content: "Th[TH]" }
+		
+		{ Content: "Uth[TH]" }
+		
+		{ Content: "Va[VA]" }
+	]
+	
+	## A ##
+	AD:
+	[
+		{ Content: "ra[RA]" }
+	]
+	AE:
+	[
+		{ Content: "la[LA]" }
+		{ Content: "rd[RD]" }
+	]
+	AH:
+	[
+		{ Content: "va[VA]" }
+	]
+	AK:
+	[
+		{ Content: "i" }
+	]
+	AL:
+	[
+		{ Content: "do[DO]" }
+		{ Content: "dw[DW]" }
+	]
+	AM:
+	[
+		{ Content: "il" }
+	]
+	AN:
+	[
+		{ Content: "na[NA]" }
+	]
+	AR:
+	[
+		{ Content: "am[AM]" }
+		{ Content: "an[AN]" }
+		{ Content: "do[DO]" }
+		{ Content: "io[IO]" }
+		{ Content: "iv[IV]" }
+		{ Content: "ti[TI]" }
+	]
+	AT:
+	[
+		{ Content: "h" }
+	]
+	AU:
+	[
+		{ Content: "st" }
+	]
+	AZ:
+	[
+		{ Content: "ak[AK]" }
+	]
+	
+	## B ##
+	BA:
+	[
+		{ Content: "li[LI]" }
+	]
+	BE:
+	[
+		{ Content: "ir[IR]" }
+		{ Content: "rr[RR]" }
+	]
+		
+	## C ##
+	CA:
+	[
+		{ Content: "el[EL]" }
+		{ Content: "ll[LL]" }
+		{ Content: "n" }
+		{ Content: "rr[RR]" }
+	]
+	CI:
+	[
+		{ Content: "an" }
+	]
+	
+	## D ##
+	DA:
+	[
+		{ Content: "n" }
+		{ Content: "ra[RA]" }
+		{ Content: "ye[YE]" }
+	]
+	DE:
+	[
+		{ Content: "n" }
+	]
+	DO:
+	[
+		{ Content: "n" }
+	]
+	DR:
+	[
+		{ Content: "ea[EA]" }
+		{ Content: "im" }
+	]
+	DW:
+	[
+		{ Content: "yn" }
+	]
+	
+	## E ##
+	EA:
+	[
+		{ Content: "li" }
+	]
+	EF:
+	[
+		{ Content: "fe[FE]" }
+	]
+	EI:
+	[
+		{ Content: "ra[RA]" }
+	]
+	EL:
+	[
+		{ Content: "dr[DR]" }
+		{ Content: "li[LI]" }
+		{ Content: "ia[IA]" }
+		{ Content: "ra[RA]" }
+	]
+	EM:
+	[
+		{ Content: "ar" }
+		{ Content: "io[IO]" }
+	]
+	EN:
+	[
+		{ Content: "ia[IA]" }
+	]
+	EO:
+	[
+		{ Content: "de[DE]" }
+	]
+	IO:
+	[
+		{ Content: "den" }
+	]
+	ER:
+	[
+		{ Content: "da[DA]" }
+		{ Content: "en" }
+		{ Content: "ev[EV]" }
+		{ Content: "ia[IA]" }
+		{ Content: "va[VA]" }
+	]
+	ET:
+	[
+		{ Content: "h" }
+	]
+	EV:
+	[
+		{ Content: "an" }
+	]
+		
+	## F ##
+	FE:
+	[
+		{ Content: "ri[RI]" }
+	]
+	FI:
+	[
+		{ Content: "vi[VI]" }
+	]
+	
+	## G ##
+	GA:
+	[
+		{ Content: "li[LI]" }
+	]
+	GE:
+	[
+		{ Content: "nn[NN]" }
+	]
+	GR:
+	[
+		{ Content: "in" }
+	]
+	
+	## H ##
+	HA:
+	[
+		{ Content: "da[DA]" }
+		{ Content: "ld[LD]" }
+		{ Content: "li[LI]" }
+		{ Content: "n" }
+	]
+	HE:
+	[
+		{ Content: "ia[IA]" }
+	]
+	HI:
+	[
+		{ Content: "mo" }
+	]
+	HT:
+	[
+		{ Content: "on" }
+	]
+	
+	## I ##
+	IA:
+	[
+		{ Content: "li[LI]" }
+		{ Content: "n" }
+		{ Content: "s" }
+		{ Content: "ti[TI]" }
+	]
+	IM:
+	[
+		{ Content: "me[ME]" }
+	]
+	IO:
+	[
+		{ Content: "n" }
+		{ Content: "r" }
+	]
+	IR:
+	[
+		{ Content: "o" }
+	]
+	IS:
+	[
+		{ Content: "ht[HT]" }
+	]
+	IV:
+	[
+		{ Content: "el[EL]" }
+		{ Content: "ol" }
+	]
+	
+	## J ##
+	
+	## K ##
+	KO:
+	[
+		{ Content: "rf[RF]" }
+	]
+	
+	## L ##
+	LA:
+	[
+		{ Content: "ml[ML]" }
+		{ Content: "n" }
+		{ Content: "r" }
+		{ Content: "uc[UC]" }
+	]
+	LD:
+	[
+		{ Content: "ir" }
+	]
+	LE:
+	[
+		{ Content: "n" }
+	]
+	LI:
+	[
+		{ Content: "ma[MA]" }
+		{ Content: "n" }
+		{ Content: "nd[ND]" }
+		{ Content: "nn[NN]" }
+		{ Content: "os" }
+		{ Content: "s" }
+		{ Content: "ss" }
+	]
+	LL:
+	[
+		{ Content: "on" }
+	]
+	LU:
+	[
+		{ Content: "ca[CA]" }
+		{ Content: "ci[CI]" }
+	]
+	
+	## M ##
+	MA:
+	[
+		{ Content: "th" }
+	]
+	ME:
+	[
+		{ Content: "ra[RA]" }
+	]
+	MI:
+	[
+		{ Content: "nd[ND]" }
+	]
+	ML:
+	[
+		{ Content: "li[LI]" }
+	]
+	
+	## N ##
+	NA:
+	[
+		{ Content: "al" }
+		{ Content: "is" }
+	]
+	ND:
+	[
+		{ Content: "ar[AR]" }
+		{ Content: "ir" }
+	]
+	NN:
+	[
+		{ Content: "al" }
+		{ Content: "da[DA]" }
+	]
+	NU:
+	[
+		{ Content: "at[AT]" }
+		{ Content: "ta[TA]" }		
+	]
+	
+	## O ##
+	
+	## P ##
+	PA:
+	[
+		{ Content: "el[EL]" }
+	]
+	PE:
+	[
+		{ Content: "re[RE]" }
+	]
+	
+	## Q ##
+	QU:
+	[
+		{ Content: "ar[AR]" }
+	]
+	
+	## R ##
+	RA:
+	[
+		{ Content: "l" }
+		{ Content: "n" }
+		{ Content: "nd" }
+		{ Content: "ve[VE]" }
+	]
+	RD:
+	[
+		{ Content: "et[ET]" }
+	]
+	RE:
+	[
+		{ Content: "gr[GR]" }
+		{ Content: "n" }
+		{ Content: "th" }
+	]
+	RF:
+	[
+		{ Content: "el" }
+	]
+	RI:
+	[
+		{ Content: "ar[AR]" }
+		{ Content: "l" }
+		{ Content: "s" }
+	]
+	RO:
+	[
+		{ Content: "ha[HA]" }
+		{ Content: "la[LA]" }
+		{ Content: "le[LE]" }
+	]
+	RR:
+	[
+		{ Content: "ia[IA]" }
+		{ Content: "ic" }
+	]
+	
+	## S ##
+	SO:
+	[
+		{ Content: "ve[VE]" }
+	]
+	SU:
+	[
+		{ Content: "nae" }
+	]
+	
+	## T ##
+	TA:
+	[
+		{ Content: "e" }
+	]
+	TH:
+	[
+		{ Content: "am[AM]" }
+		{ Content: "ar[AR]" }
+		{ Content: "em[EM]" }
+		{ Content: "eo[EO]" }
+		{ Content: "er[ER]" }
+	]
+	TI:
+	[
+		{ Content: "l" }
+		{ Content: "s" }
+	]
+	
+	## U ##
+	UC:
+	[
+		{ Content: "ia[IA]" }
+	]
+	
+	## V ##
+	VA:
+	[
+		{ Content: "in" }
+		{ Content: "n" }
+		{ Content: "nu[NU]" }
+		{ Content: "ri[RI]" }
+	]
+	VE:
+	[
+		{ Content: "l" }
+		{ Content: "li[LI]" }
+	]
+	VI:
+	[
+		{ Content: "n" }
+	]
+	
+	## W ##
+	
+	## X ##
+	
+	## Y ##
+	YE:
+	[
+		{ Content: "re[RE]" }
+	]
+	
+	## Z ##
+}
+GeneratorType: Assignment

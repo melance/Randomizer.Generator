@@ -1,0 +1,350 @@
+Name: Dwarf Fantasy Names Clan
+Author: Lance Boudreaux
+Description: Generates fantasy style clan names for dwarves
+Version: "1.0"
+Tags: 
+[	
+	Fantasy
+	Name
+]
+OutputFormat: Text
+ShowInList: false
+Parameters:
+{
+}
+LineItems:
+{
+	Start:
+	[
+		{ Content: "Battle[Suffix]" }
+		{ Content: "Big[Suffix]" }
+		{ Content: "Blood[Suffix]" }
+		{ Content: "Brawn[Suffix]" }
+		{ Content: "Brood[Suffix]" }
+		{ Content: "Burrow[Suffix]" }
+		{ Content: "Deep[Suffix]" }
+		{ Content: "Ever[Suffix]" }
+		{ Content: "Fire[Suffix]" }
+		{ Content: "Foam[Suffix]" }
+		{ Content: "Frost[Suffix]" }
+		{ Content: "Goblin[Suffix]" }
+		{ Content: "Gray[Suffix]" }
+		{ Content: "Hammer[Suffix]" }
+		{ Content: "Orc[Suffix]" }
+		{ Content: "Ruby[Suffix]" }
+		{ Content: "Stout[Suffix]" }
+		{ Content: "Strong[Suffix]" }
+		{ Content: "Troll[Suffix]" }
+		{ Content: "True[Suffix]" }
+		
+		{ Content: "[=TCase(Generate('Colors','Swatch=ColorSwatchMetal'))][Suffix]" }
+		
+		{ Content: "Ar[AR]" }
+		
+		{ Content: "Bo[BO]" }
+		{ Content: "Br[BR]" }
+		
+		{ Content: "Ca[CA]" }
+		
+		{ Content: "Da[DA]" }
+		{ Content: "Du[DU]" }
+		
+		{ Content: "Fa[FA]" }
+		
+		{ Content: "Gl[GL]" }
+		{ Content: "Go[GO]" }
+		
+		{ Content: "He[HE]" }
+		{ Content: "Holderhe[HE]" }
+		
+		{ Content: "Lo[LO]" }
+		{ Content: "Lu[LU]" }
+		
+		{ Content: "Mo[MO]" }
+		
+		{ Content: "Ra[RA]" }
+		{ Content: "Ru[RU]" }
+		
+		{ Content: "St[ST]" }
+		
+		{ Content: "Th[TH]" }
+		{ Content: "To[TO]" }
+		
+		{ Content: "Un[UN]" }
+	]
+	
+	Suffix:
+	[
+		{ Content: "ale" }
+		{ Content: "anvil" }
+		{ Content: "axe" }
+		{ Content: "bane" }
+		{ Content: "beard" }
+		{ Content: "bleeder" }
+		{ Content: "blood" }
+		{ Content: "delver" }
+		{ Content: "eye" }
+		{ Content: "finder" }
+		{ Content: "fist" }
+		{ Content: "foe" }
+		{ Content: "found" }
+		{ Content: "forge" }
+		{ Content: "hammer" }
+		{ Content: "hand" }
+		{ Content: "heart" }
+		{ Content: "kith" }
+		{ Content: "sharp" }
+		{ Content: "stone" }
+		{ Content: "tankard" }
+		{ Content: "toe" }
+	]
+	
+	## A ##
+	AC:
+	[
+		{ Content: "k" }
+	]
+	AH:
+	[
+		{ Content: "ei[EI]" }
+	]
+	AN:
+	[
+		{ Content: "hi[HI]" }
+		{ Content: "or[OR]" }
+	]
+	AR:
+	[
+		{ Content: "an[AN]" }
+	]
+	AZ:
+	[
+		{ Content: "za[ZA]" }
+	]
+	
+	## B ##
+	BO:
+	[
+		{ Content: "fd[FD]" }
+	]
+	BR:
+	[
+		{ Content: "az[AZ]" }
+	]
+		
+	## C ##
+	CA:
+	[
+		{ Content: "eb[EB]" }
+	]
+	
+	## D ##
+	DA:
+	[
+		{ Content: "er[ER]" }
+		{ Content: "hk" }
+		{ Content: "nk[NK]" }
+		{ Content: "ra[RA]" }
+	]
+	DE:
+	[
+		{ Content: "rr" }
+	]
+	DU:
+	[
+		{ Content: "rt[RT]" }
+	]
+	
+	## E ##
+	EB:
+	[
+		{ Content: "re[RE]" }
+	]
+	EH:
+	[
+		{ Content: "r" }
+	]
+	EI:
+	[
+		{ Content: "m" }
+	]
+	ER:
+	[
+		{ Content: "da[DA]" }
+	]
+		
+	## F ##
+	FA:
+	[
+		{ Content: "ll[LL]" }
+	]
+	FD:
+	[
+		{ Content: "an" }
+	]
+	
+	## G ##
+	GA:
+	[
+		{ Content: "k" }
+		{ Content: "rt" }
+	]
+	GL:
+	[
+		{ Content: "an[AN]" }
+	]
+	GO:
+	[
+		{ Content: "ru[RU]" }
+	]
+	
+	## H ##
+	HA:
+	[
+		{ Content: "k" }
+		{ Content: "ne" }
+	]
+	HE:
+	[
+		{ Content: "k" }
+		{ Content: "lc[LC]" }
+	]
+	HI:
+	[
+		{ Content: "g" }
+	]
+	
+	## I ##
+	
+	## J ##
+	
+	## K ##
+	KA:
+	[
+		{ Content: "nk[NK]" }
+	]
+	KE:
+	[
+		{ Content: "ln" }
+	]
+	
+	## L ##
+	LC:
+	[
+		{ Content: "ra[RA]" }
+	]
+	LL:
+	[
+		{ Content: "ac[AC]" }
+	]
+	LO:
+	[
+		{ Content: "de[DE]" }
+	]
+	LU:
+	[
+		{ Content: "tg[TG]" }
+	]
+	
+	## M ##
+	MN:
+	[
+		{ Content: "ah[AH]" }
+	]
+	MO:
+	[
+		{ Content: "ri[RI]" }
+	]
+	
+	## N ##
+	NK:
+	[
+		{ Content: "il" }
+		{ Content: "ra[RA]" }
+	]
+	
+	## O ##
+	OR:
+	[
+		{ Content: "e" }
+	]
+	
+	## P ##
+	
+	## Q ##
+	
+	## R ##
+	RA:
+	[
+		{ Content: "ha[HA]" }
+		{ Content: "k" }
+		{ Content: "ka[KA]" }
+		{ Content: "ke[KE]" }
+		{ Content: "l" }
+		{ Content: "ln" }
+	]
+	RE:
+	[
+		{ Content: "k" }
+		{ Content: "vi[VI]" }
+	]
+	RI:
+	[
+		{ Content: "ga[GA]" }
+	]
+	RT:
+	[
+		{ Content: "ha[HA]" }
+	]
+	RU:
+	[
+		{ Content: "mn[MN]" }
+		{ Content: "nn" }
+	]
+	
+	## S ##
+	ST:
+	[
+		{ Content: "ra[RA]" }
+	]
+	
+	## T ##
+	TG:
+	[
+		{ Content: "eh[EH]" }
+	]
+	TH:
+	[
+		{ Content: "ra[RA]" }
+	]
+	TO:
+	[
+		{ Content: "re[RE]" }
+		{ Content: "ru[RU]" }
+	]
+	
+	## U ##
+	UN:
+	[
+		{ Content: "ga[GA]" }
+	]
+	
+	## V ##
+	VI:
+	[
+		{ Content: "r" }
+	]
+	
+	## W ##
+	
+	## X ##
+	
+	## Y ##
+	
+	## Z ##
+	ZA:
+	[
+		{ Content: "ik" }
+	]
+}
+GeneratorType: Assignment

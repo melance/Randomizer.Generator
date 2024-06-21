@@ -1,0 +1,60 @@
+﻿@page
+@model Randomizer.Generator.Web.Pages.GenerateModel
+@{
+}
+
+@if (Model == null)
+{
+    <h1 class="text-danger">Error loading generator.</h1>
+}
+else if (!String.IsNullOrWhiteSpace(Model.ErrorMessage))
+{
+    <h1 class="text-danger">@Html.Raw(Model.ErrorMessage)</h1>
+}
+else
+{
+    <h1>@Model.Definition.Name</h1>
+    <div class="collapse-toggle" data-bs-toggle="collapse" data-bs-target="#definition" aria-expanded="false">
+        <span class="bi-caret-down-fill collapsed"></span>
+        <span class="bi-caret-up-fill expanded"></span>
+        <span class="fw-bold">Details</span>
+    </div>
+    <div id="definition" class="container collapse">
+        <partial name="_DefinitionDetails" for="Definition" />
+    </div>
+    <form asp-page-handler="generate" method="post">
+        <input type="hidden" asp-for="@Model.Generator.Name" />
+        <div class="row">
+            <div id="parameters" class="container col-3">
+                <h2>Parameters</h2>
+                <div class="row">
+                    <div class="col-12">
+                        @for (var i = 0; i < Model.Generator.Parameters.Count; i++)
+                        {
+                            <div class="input-group mb-1">
+                                <input asp-for="Generator.Parameters[i].Name" type="hidden" />
+                                <label class="input-group-text">@Model.Generator.Parameters[i].GetDisplay()</label>
+                                <parameter name="@($"Generator.Parameters[{i}].Value")" id="@($"Generator_Parameters_{i}_Value")" parameter="Model.Generator.Parameters[i]"></parameter>
+                            </div>
+                        }
+                        <div class="input-group mb-1">
+                            <label class="input-group-text">Repeat</label>
+                            <input type="number" asp-for="Generator.Repeat" min="1" max="100" step="1" />
+                        </div>
+                    </div>
+                </div>
+                <div id="actions" class="row mt-1">
+                    <div class="col-2">
+                        <button id="generate" type="submit" class="btn btn-primary">Generate</button>
+                    </div>
+                </div>
+            </div>
+            <div id="results" class="col">
+                <h2>Results</h2>
+                <div class="border">
+                    <partial name="_GenerateResults" model="Model.Results" />
+                </div>
+            </div>
+        </div>
+    </form>
+}

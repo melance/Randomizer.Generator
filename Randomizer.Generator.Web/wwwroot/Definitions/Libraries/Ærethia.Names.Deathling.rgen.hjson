@@ -1,0 +1,104 @@
+{
+    Name: Deathling Name
+    /* Indian */
+    Version: "2.0"
+    OutputFormat: Text
+    ShowInList: false
+    Parameters:
+    {
+        Gender:
+        {
+            Value: ""
+            Type: Text
+        }
+    }
+    LineItems:
+    {
+        Start:
+        [
+            { Content: "[[Gender]GivenName]" }
+        ]
+
+        AnyGender:
+        [
+            { Content: "Male" }
+            { Content: "Female" }
+        ]
+
+        "NonBinaryGivenName":
+        [
+            { Content: "[MaleGivenName|FemaleGivenName]" }
+        ]
+
+        MaleGivenName:
+        [
+            { Content: "[GN][MGN]" }            
+        ]
+
+        GN:
+        [
+            { Content: "Ab" }
+            { Content: "Af" }
+            { Content: "Ak" }
+            { Content: "Am" }
+            { Content: "Ar" }
+            { Content: "Ash" }
+            { Content: "Ed" }
+            { Content: "Eer" }
+            { Content: "Ej" }
+            { Content: "Ek" }
+            { Content: "Et" }
+            { Content: "Ib" }            
+            { Content: "Il" }
+            { Content: "Ip" }
+            { Content: "Ob" }
+            { Content: "Oed" }
+            { Content: "Ov" }
+            { Content: "Ox" }
+        ]
+
+        MGN:
+        [
+            { Content: "afar" }
+            { Content: "akim" }
+            { Content: "alik" }
+            { Content: "am" }
+            { Content: "bia" }
+            { Content: "hani" }
+            { Content: "lenu" }
+            { Content: "genya" }
+            { Content: "ralo" }
+            { Content: "shab" }
+            { Content: "tar" }
+            { Content: "tix" }
+            { Content: "za" }
+            { Content: "zu" }
+        ]
+
+        FemaleGivenName:
+        [        
+            { Content: "[GN][FGN]" }
+        ]
+
+        FGN:
+        [
+            { Content: "ha" }
+            { Content: "har" }
+            { Content: "ya" }
+            { Content: "fia" }
+            { Content: "frin" }
+            { Content: "lada" }
+            { Content: "isha" }
+            { Content: "khana" }
+            { Content: "kriti" }
+            { Content: "rah" }
+            { Content: "rathi" }
+            { Content: "sia" }
+            { Content: "thira" }
+            { Content: "yva" }
+            { Content: "xia" }
+        ]
+        
+    }
+    GeneratorType: Assignment
+}

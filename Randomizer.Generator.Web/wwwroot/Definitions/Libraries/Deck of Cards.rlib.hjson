@@ -1,0 +1,226 @@
+{
+	Name: Deck of Cards
+	Author: Lance Boudreaux
+	Version: "2.0"
+	OutputFormat: Html
+	LineItems:
+	{	
+		AofSpades: 
+		[ 
+			{ Content: "&#127137;" }
+		]
+		2ofSpades:
+		[
+			{ Content: "&#127138;" }
+		]
+		3ofSpades:
+		[
+			{ Content: "&#127139;" }
+		]
+		4ofSpades:
+		[
+			{ Content: "&#127140;" }
+		]
+		5ofSpades:
+		[
+			{ Content: "&#127141;" }
+		]
+		6ofSpades:
+		[
+			{ Content: "&#127142;" }
+		]
+		7ofSpades:
+		[
+			{ Content: "&#127143;" }
+		]
+		8ofSpades:
+		[
+			{ Content: "&#127144;" }
+		]
+		9ofSpades:
+		[
+			{ Content: "&#127145;" }
+		]
+		10ofSpades:
+		[
+			{ Content: "&#127146;" }
+		]
+		JofSpades:
+		[
+			{ Content: "&#127147;" }
+		]
+		QofSpades:
+		[
+			{ Content: "&#127149;" }
+		]
+		KofSpades:
+		[
+			{ Content: "&#127150;" }
+		]
+		AofHearts:
+		[ 
+			{ Content: "&#127153;" }
+		]
+		2ofHearts:
+		[
+			{ Content: "&#127154;" }
+		]
+		3ofHearts:
+		[
+			{ Content: "&#127155;" }
+		]
+		4ofHearts:
+		[
+			{ Content: "&#127156;" }
+		]
+		5ofHearts:
+		[
+			{ Content: "&#127157;" }
+		]
+		6ofHearts:
+		[
+			{ Content: "&#127158;" }
+		]
+		7ofHearts:
+		[
+			{ Content: "&#127159;" }
+		]
+		8ofHearts:
+		[
+			{ Content: "&#127160;" }
+		]
+		9ofHearts:
+		[
+			{ Content: "&#127161;" }
+		]
+		10ofHearts:
+		[
+			{ Content: "&#127162;" }
+		]
+		JofHearts:
+		[
+			{ Content: "&#127163;" }
+		]
+		QofHearts:
+		[
+			{ Content: "&#127165;" }
+		]
+		KofHearts:
+		[
+			{ Content: "&#127166;" }
+		]
+		AofDiamonds:
+		[ 
+			{ Content: "&#127169;" }
+		]
+		2ofDiamonds:
+		[
+			{ Content: "&#127170;" }
+		]
+		3ofDiamonds:
+		[
+			{ Content: "&#127171;" }
+		]
+		4ofDiamonds:
+		[
+			{ Content: "&#127172;" }
+		]
+		5ofDiamonds:
+		[
+			{ Content: "&#127173;" }
+		]
+		6ofDiamonds:
+		[
+			{ Content: "&#127174;" }
+		]
+		7ofDiamonds:
+		[
+			{ Content: "&#127175;" }
+		]
+		8ofDiamonds:
+		[
+			{ Content: "&#127176;" }
+		]
+		9ofDiamonds:
+		[
+			{ Content: "&#127177;" }
+		]
+		10ofDiamonds:
+		[
+			{ Content: "&#127178;" }
+		]
+		JofDiamonds:
+		[
+			{ Content: "&#127179;" }
+		]
+		QofDiamonds:
+		[
+			{ Content: "&#127181;" }
+		]
+		KofDiamonds:
+		[
+			{ Content: "&#127182;" }
+		]
+		AofClubs:
+		[ 
+			{ Content: "&#127185;" }
+		]
+		2ofClubs:
+		[
+			{ Content: "&#127186;" }
+		]
+		3ofClubs:
+		[
+			{ Content: "&#127187;" }
+		]
+		4ofClubs:
+		[
+			{ Content: "&#127188;" }
+		]
+		5ofClubs:
+		[
+			{ Content: "&#127189;" }
+		]
+		6ofClubs:
+		[
+			{ Content: "&#127190;" }
+		]
+		7ofClubs:
+		[
+			{ Content: "&#127191;" }
+		]
+		8ofClubs:
+		[
+			{ Content: "&#127192;" }
+		]
+		9ofClubs:
+		[
+			{ Content: "&#127193;" }
+		]
+		10ofClubs:
+		[
+			{ Content: "&#127194;" }
+		]
+		JofClubs:
+		[
+			{ Content: "&#127195;" }
+		]
+		QofClubs:
+		[
+			{ Content: "&#127197;" }
+		]
+		KofClubs:
+		[
+			{ Content: "&#127198;" }
+		]
+		JokerRed:
+		[
+			{ Content: "&#127167;" }
+		]
+		JokerBlack:
+		[
+			{ Content: "&#127183;" }
+		]
+	}
+	GeneratorType: Assignment
+}

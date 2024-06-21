@@ -7,6 +7,7 @@ using System.Reflection;
 using System.Collections.Generic;
 using System.Runtime.ExceptionServices;
 using Pluralize.NET;
+using Randomizer.Generator.Core;
 
 
 namespace Randomizer.Generator.Utility
@@ -26,6 +27,11 @@ namespace Randomizer.Generator.Utility
 		#endregion
 
 		#region Public Methods
+		public T Evaluate<T>()
+		{
+			return Evaluate<T>(new Expression[0]);
+		}
+
 		/// <summary>
 		/// Evaluates the expression
 		/// </summary>
@@ -92,7 +98,7 @@ namespace Randomizer.Generator.Utility
 				ex.AddData(nameof(name), name);
 				ex.AddData(nameof(args), args);
 			}
-			if (exi != null) exi.Throw();
+			exi?.Throw();
 			return false;
 		}
 
@@ -110,7 +116,7 @@ namespace Randomizer.Generator.Utility
 				paramTypes.Add(value.GetType());
 
 			}
-			var method = typeof(CalculationEngine).GetMethod(name, paramTypes.ToArray()) ?? typeof(CalculationEngine).GetMethod(name);
+			var method = typeof(CalculationEngine).GetMethod(name, BindingFlags.Public | BindingFlags.Static | BindingFlags.IgnoreCase, paramTypes.ToArray()) ?? typeof(CalculationEngine).GetMethod(name, BindingFlags.Public | BindingFlags.Static | BindingFlags.IgnoreCase);
 			if (method != null && method.GetCustomAttribute<NCalcFunctionAttribute>() != null)
 			{
 				args.Result = method.Invoke(null, paramValues.ToArray());
@@ -225,6 +231,12 @@ namespace Randomizer.Generator.Utility
 		}
 
 		/// <summary>
+		/// Returns result if value is true otherwise returns empty string
+		/// </summary>
+		[NCalcFunction]
+		public static String IIF(Boolean value, String result) => value ? result : String.Empty;
+
+		/// <summary>
 		/// Simulates rolling a single die
 		/// </summary>
 		[NCalcFunction]
@@ -313,6 +325,29 @@ namespace Randomizer.Generator.Utility
 		public static Int32 Random(Int32 min, Int32 max) => Utility.Random.RandomNumber(min, max);
 
 		/// <summary>
+		/// Determines if the article should be A or An
+		/// </summary>
+		/// <param name="value"></param>
+		/// <returns></returns>
+		[NCalcFunction]
+		public static String AddIndefiniteArticle(String value)
+		{
+			return value.AddIndefiniteArticle();
+		}
+
+		/// <summary>
+		/// Adds a random article
+		/// </summary>
+		[NCalcFunction]
+		public static String RandomArticle(String value)
+		{
+			var i = Random(100);
+
+			if (i < 50) return $"the {value}";
+			else return value.AddIndefiniteArticle();
+		}
+
+		/// <summary>
 		/// Pluralizes the provided English word
 		/// </summary>
 		[NCalcFunction]
@@ -339,10 +374,24 @@ namespace Randomizer.Generator.Utility
 		public static String ToOrdinal(Int32 value) => value.ToOrdinal();
 
 		/// <summary>
+		/// Converts a number to Roman numerals
+		/// </summary>
+		/// <param name="value"></param>
+		/// <returns></returns>
+		[NCalcFunction]
+		public static String ToRoman(Double value) => ((Int32)value).ToRomanNumerals();
+
+		/// <summary>
 		/// Converts a number to a text string
 		/// </summary>
 		[NCalcFunction]
         public static String ToText(Int32 value) => value.ToText();
+
+		/// <summary>
+		/// Converts a number to a text string
+		/// </summary>
+		[NCalcFunction]
+		public static String ToText(Int32 value, TextCases textCase) => value.ToText(textCase);
 
         /// <summary>
         /// Converts a string to lower case
@@ -375,6 +424,9 @@ namespace Randomizer.Generator.Utility
 			public Object Case { get; set; }
 			public Object Value { get; set; }
 		}
+
+		[NCalcFunction]
+		public static String Trim(String value) => value.Trim();
 
 		[NCalcFunction]
 		public static Object Switch(Object value, Object defaultValue, List<SwitchCase> cases)

@@ -1,0 +1,258 @@
+{
+	Name: Rock Dwarf Name
+	/* Yiddish & Anglo-Saxon */
+	Version: "2.0"
+	OutputFormat: Text
+    ShowInList: false
+	Parameters:
+	{
+		Gender:
+		{
+			Value: ""
+			Type: Text
+		}
+	}
+	LineItems:
+	{
+		Start:
+		[
+			{ Content: "[[Gender]GivenName] [FamilyName]" }
+		]
+
+        AnyGenderGivenName:
+        [
+        	{ Content: "[MaleGivenName]" }
+			{ Content: "[FemaleGivenName]" }
+        ]
+
+		"NonBinaryGivenName":
+		[
+			{ Content: "[AnyGenderGivenName]" }
+		]
+		
+		MaleGivenName:
+		[
+			{ Content: "Ab", Next: "MGN1" }
+            { Content: "Ai", Next: "MGN1" }
+            { Content: "An", Next: "MGN1" }
+            { Content: "Ar", Next: "MGN1" }
+            { Content: "Av", Next: "MGN1" }
+            { Content: "Ba", Next: "MGN1" }
+            { Content: "Bey", Next: "MGN1" }
+            { Content: "Bi", Next: "MGN1" }
+            { Content: "Bre", Next: "MGN1" }
+            { Content: "Ch[=Pick('a','e')]", Next: "MGN1" }
+            { Content: "Dov", Next: "MGN1" }
+            { Content: "Fay", Next: "MGN1" }
+            { Content: "Fr", Next: "MGN1" }
+            { Content: "H[=Pick('e','i')]r", Next: "MGN1" }
+            { Content: "I[=Pick('s','z')]", Next: "MGN1" }
+            { Content: "Jo", Next: "MGN1" }
+            { Content: "Lan", Next: "MGN1" }
+            { Content: "Mal", Next: "MGN1" }
+            { Content: "Men", Next: "MGN1" }
+            { Content: "Moi", Next: "MGN1" }
+            { Content: "Ne", Next: "MGN1" }
+            { Content: "Ray", Next: "MGN1" }
+            { Content: "Schmu", Next: "MGN1" }
+            { Content: "Sha", Next: "MGN1" }
+            { Content: "Shel", Next: "MGN1" }
+            { Content: "Te", Next: "MGN1" }
+            { Content: "Vel", Next: "MGN1" }
+            { Content: "Yank", Next: "MGN1" }
+            { Content: "Ye", Next: "MGN1" }
+            { Content: "Yitz", Next: "MGN1" }
+            { Content: "Yoc", Next: "MGN1" }
+            { Content: "Zal", Next: "MGN1" }
+            { Content: "Ze", Next: "MGN1" }
+            { Content: "Zin", Next: "MGN1" }
+		]
+
+		MGN1:
+		[
+            { Content: "cel" }
+            { Content: "da" }
+            { Content: "dane" }
+            { Content: "del", next: "MGN2" }
+            { Content: "el[=Pick('','e')]" }
+			{ Content: "er", Next: "MGN2" } 
+            { Content: "grim" }
+            { Content: "hak" }
+            { Content: "hanan", Next: "MGN1" }
+            { Content: "hosh", Next: "MGN2" }
+            { Content: "hudi" }
+            { Content: "id[=Pick('','e')]" }
+            { Content: "ik" }
+            { Content: "ila" }
+            { Content: "ile" }
+            { Content: "in[=Pick('a','e')]" }
+            { Content: "ive" }
+            { Content: "ke" }
+            { Content: "lig" }
+            { Content: "mel" }
+            { Content: "ne" }
+            { Content: "nish" }
+            { Content: "oim" }
+            { Content: "om", Next: "MGN2" }
+			{ Content: "ra", Next: "MGN2" }
+            { Content: "rna" }
+            { Content: "rom" }
+            { Content: "sch", Next: "MGN2" }
+            { Content: "se[=Pick('f','l')]" }
+            { Content: "she[=Pick('l','')]" }
+            { Content: "sya" }
+            { Content: "sur" }
+            { Content: "sz" }
+            { Content: "tz[=Pick('kel','')]" }
+            { Content: "vel" }
+            { Content: "vish" }
+            { Content: "yna" }
+            { Content: "zik" }
+		]
+
+		MGN2:
+		[
+			{ Content: "" }
+            { Content: "el" }
+            { Content: "ey" }
+			{ Content: "lin" }
+            { Content: "oh" }
+			{ Content: "sha" }
+            { Content: "ua" }
+		]
+
+		FemaleGivenName:
+		[
+			{ Content: "Al", Next: "FGN1" }
+            { Content: "Ba", Next: "FGN1" }
+            { Content: "Bi", Next: "FGN1" }
+            { Content: "Blu", Next: "FGN1" }
+            { Content: "Ch[=Pick('a','e')]", Next: "FGN1" }
+            { Content: "Di", Next: "FGN1" }
+            { Content: "Dvo", Next: "FGN1" }
+            { Content: "El", Next: "FGN1" }
+            { Content: "Fe", Next: "FGN1" }
+            { Content: "Fr[=Pick('e','a')]y", Next: "FGN1" }
+            { Content: "Fru", Next: "FGN1" }
+            { Content: "Gel", Next: "FGN1" }
+            { Content: "Glu", Next: "FGN1" }
+            { Content: "Gold", Next: "FGN1" }
+            { Content: "Hen", Next: "FGN1" }
+            { Content: "Her", Next: "FGN1" }
+            { Content: "Hin", Next: "FGN1" }
+            { Content: "H[=Pick('o','u')]d", Next: "FGN1" }
+            { Content: "Lib", Next: "FGN1" }
+            { Content: "Min", Next: "FGN1" }
+            { Content: "Pe", Next: "FGN1" }
+            { Content: "Sha", Next: "FGN1" }
+            { Content: "To", Next: "FGN1" }
+		]
+
+        FGN1:
+        [
+            { Content: "cke" }
+            { Content: "da[=Pick('','ne')]" }
+            { Content: "eburga" }
+            { Content: "eheve" }
+            { Content: "i[=Pick('a','e')]" }
+            { Content: "iba" }
+            { Content: "iga" }
+            { Content: "il[=Pick('a','e')]" }
+            { Content: "ina" }
+            { Content: "ire" }
+            { Content: "kie" }
+            { Content: "leia" }
+            { Content: "lsta" }
+            { Content: "m[=Pick('a','ah','e')]" }
+            { Content: "n[=Pick('a','e')]" }
+            { Content: "rle" }
+            { Content: "rna" }
+            { Content: "sh[=Pick('','a','el')]" }
+            { Content: "sy[=Pick('a','e')]" }
+            { Content: "te" }
+            { Content: "tzkel" }
+            { Content: "ye" }
+            { Content: "yn[=Pick('a','e')]" }
+        ]
+
+        FamilyName:
+        [
+            { Content: "[FNPrefix][FNSuffix]"}
+        ]
+
+        FNPrefix:
+        [
+            { Content: "Ack" }
+            { Content: "Ald" }
+            { Content: "Ash" }   
+            { Content: "Av" }
+            { Content: "Ayc" }
+            { Content: "Bab" }
+            { Content: "Balk" }
+            { Content: "Bar" }
+            { Content: "Bay" }
+            { Content: "Beek" }
+            { Content: "Blag" }
+            { Content: "Bot" }
+            { Content: "Burn" }
+            { Content: "Cal" }
+            { Content: "Car" }
+            { Content: "Cat" }
+            { Content: "Cla" }
+            { Content: "Cle" }
+            { Content: "Co" }
+            { Content: "Cr" }
+            { Content: "Dew" }
+            { Content: "Doa" }
+            { Content: "Dut" }
+            { Content: "Eam" }
+            { Content: "Em" }
+            { Content: "Fis" }
+            { Content: "Fol" }
+            { Content: "Hen" }
+            { Content: "Imm" }
+            { Content: "Keb" }
+            { Content: "Law" }
+            { Content: "Lever" }
+            { Content: "Mill" }
+            { Content: "Mor" }
+            { Content: "Over" }
+            { Content: "Rug" }
+            { Content: "Sath" }
+            { Content: "Tra" }            
+            { Content: "Tum" }
+            { Content: "Woll" }
+            { Content: "Yard" }
+        ]
+
+        FNSuffix:
+        [
+            { Content: "ane" }
+            { Content: "bit" }
+            { Content: "cher" }
+            { Content: "den" }
+            { Content: "ell" }
+            { Content: "ern" }
+            { Content: "ert" }
+            { Content: "fee" }
+            { Content: "gade" }
+            { Content: "gent" }
+            { Content: "gy" }
+            { Content: "ish" }
+            { Content: "kes" }
+            { Content: "les" }
+            { Content: "man" }
+            { Content: "mill" }
+            { Content: "ock" }
+            { Content: "or" }
+            { Content: "stead" }
+            { Content: "tell" }
+            { Content: "tum" }
+            { Content: "will" }
+            { Content: "xon" }
+            { Content: "ven" }
+            { Content: "wood" }
+        ]
+	}
+	GeneratorType: Assignment
+}

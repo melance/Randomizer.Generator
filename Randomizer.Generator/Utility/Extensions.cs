@@ -187,7 +187,7 @@ namespace Randomizer.Generator.Utility
         /// <summary>
         /// Determines if the indeterminite article before the string should be A or An
         /// </summary>
-        public static string AOrAn(this string value)
+        public static string AddIndefiniteArticle(this string value)
         {
             if (String.IsNullOrWhiteSpace(value) || value[0].IsVowel()) return $"an {value}";
             return $"a {value}";

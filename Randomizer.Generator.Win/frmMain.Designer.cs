@@ -204,6 +204,7 @@
 			// btnClearSearch
 			// 
 			btnClearSearch.Dock = DockStyle.Right;
+			btnClearSearch.FlatStyle = FlatStyle.Flat;
 			btnClearSearch.Image = (Image)resources.GetObject("btnClearSearch.Image");
 			btnClearSearch.Location = new Point(176, 0);
 			btnClearSearch.Name = "btnClearSearch";
@@ -251,6 +252,7 @@
 			// 
 			btnHideGeneratorList.BackColor = SystemColors.Control;
 			btnHideGeneratorList.Dock = DockStyle.Right;
+			btnHideGeneratorList.FlatStyle = FlatStyle.Flat;
 			btnHideGeneratorList.Image = (Image)resources.GetObject("btnHideGeneratorList.Image");
 			btnHideGeneratorList.Location = new Point(176, 0);
 			btnHideGeneratorList.Name = "btnHideGeneratorList";
@@ -272,6 +274,8 @@
 			// 
 			btnSelectAllTags.BackColor = SystemColors.Control;
 			btnSelectAllTags.Dock = DockStyle.Right;
+			btnSelectAllTags.FlatAppearance.BorderSize = 0;
+			btnSelectAllTags.FlatStyle = FlatStyle.Flat;
 			btnSelectAllTags.Image = (Image)resources.GetObject("btnSelectAllTags.Image");
 			btnSelectAllTags.Location = new Point(882, 0);
 			btnSelectAllTags.Name = "btnSelectAllTags";
@@ -285,6 +289,8 @@
 			// 
 			btnDeselectAllTags.BackColor = SystemColors.Control;
 			btnDeselectAllTags.Dock = DockStyle.Right;
+			btnDeselectAllTags.FlatAppearance.BorderSize = 0;
+			btnDeselectAllTags.FlatStyle = FlatStyle.Flat;
 			btnDeselectAllTags.Image = (Image)resources.GetObject("btnDeselectAllTags.Image");
 			btnDeselectAllTags.Location = new Point(906, 0);
 			btnDeselectAllTags.Name = "btnDeselectAllTags";
@@ -298,6 +304,8 @@
 			// 
 			btnToggleSelectedTags.BackColor = SystemColors.Control;
 			btnToggleSelectedTags.Dock = DockStyle.Right;
+			btnToggleSelectedTags.FlatAppearance.BorderSize = 0;
+			btnToggleSelectedTags.FlatStyle = FlatStyle.Flat;
 			btnToggleSelectedTags.Image = (Image)resources.GetObject("btnToggleSelectedTags.Image");
 			btnToggleSelectedTags.Location = new Point(930, 0);
 			btnToggleSelectedTags.Name = "btnToggleSelectedTags";
@@ -311,6 +319,8 @@
 			// 
 			btnHideTags.BackColor = SystemColors.Control;
 			btnHideTags.Dock = DockStyle.Right;
+			btnHideTags.FlatAppearance.BorderSize = 0;
+			btnHideTags.FlatStyle = FlatStyle.Flat;
 			btnHideTags.Image = (Image)resources.GetObject("btnHideTags.Image");
 			btnHideTags.Location = new Point(954, 0);
 			btnHideTags.Name = "btnHideTags";
@@ -324,6 +334,8 @@
 			// 
 			btnShowTags.BackColor = SystemColors.Control;
 			btnShowTags.Dock = DockStyle.Right;
+			btnShowTags.FlatAppearance.BorderSize = 0;
+			btnShowTags.FlatStyle = FlatStyle.Flat;
 			btnShowTags.Image = (Image)resources.GetObject("btnShowTags.Image");
 			btnShowTags.Location = new Point(978, 0);
 			btnShowTags.Name = "btnShowTags";
@@ -355,6 +367,7 @@
 			tagList.AutoScroll = true;
 			tagList.AutoSize = true;
 			tagList.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+			tagList.BorderStyle = BorderStyle.FixedSingle;
 			tagList.Dock = DockStyle.Top;
 			tagList.Location = new Point(0, 48);
 			tagList.MaximumSize = new Size(100000, 94);
@@ -380,10 +393,10 @@
 			// 
 			// lblTags
 			// 
-			lblTags.BackColor = SystemColors.ControlDarkDark;
+			lblTags.BackColor = SystemColors.Control;
 			lblTags.Dock = DockStyle.Fill;
 			lblTags.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-			lblTags.ForeColor = SystemColors.ButtonFace;
+			lblTags.ForeColor = SystemColors.ControlText;
 			lblTags.Location = new Point(0, 0);
 			lblTags.Name = "lblTags";
 			lblTags.Size = new Size(1002, 24);
@@ -394,6 +407,7 @@
 			// btnShowGeneratorList
 			// 
 			btnShowGeneratorList.Dock = DockStyle.Top;
+			btnShowGeneratorList.FlatStyle = FlatStyle.Flat;
 			btnShowGeneratorList.Image = (Image)resources.GetObject("btnShowGeneratorList.Image");
 			btnShowGeneratorList.Location = new Point(0, 0);
 			btnShowGeneratorList.Name = "btnShowGeneratorList";

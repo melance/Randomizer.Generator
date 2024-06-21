@@ -28,166 +28,190 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            this.components = new System.ComponentModel.Container();
-            this.lblGeneratorDirectory = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtTextEditorArgs = new System.Windows.Forms.TextBox();
-            this.lblTextEditorArgs = new System.Windows.Forms.Label();
-            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.nudDefaultRepeat = new System.Windows.Forms.NumericUpDown();
-            this.label2 = new System.Windows.Forms.Label();
-            this.btnOk = new System.Windows.Forms.Button();
-            this.btnCancel = new System.Windows.Forms.Button();
-            this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
-            this.folderBrowserDialog = new System.Windows.Forms.FolderBrowserDialog();
-            this.selTextEditor = new Randomizer.Generator.Win.Controls.FileSelector();
-            this.selGeneratorDirectory = new Randomizer.Generator.Win.Controls.FolderSelector();
-            ((System.ComponentModel.ISupportInitialize)(this.nudDefaultRepeat)).BeginInit();
-            this.SuspendLayout();
-            // 
-            // lblGeneratorDirectory
-            // 
-            this.lblGeneratorDirectory.AutoSize = true;
-            this.lblGeneratorDirectory.Location = new System.Drawing.Point(12, 9);
-            this.lblGeneratorDirectory.Name = "lblGeneratorDirectory";
-            this.lblGeneratorDirectory.Size = new System.Drawing.Size(110, 15);
-            this.lblGeneratorDirectory.TabIndex = 0;
-            this.lblGeneratorDirectory.Text = "Generator Directory";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 38);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 15);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Text Editor";
-            // 
-            // txtTextEditorArgs
-            // 
-            this.txtTextEditorArgs.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTextEditorArgs.Location = new System.Drawing.Point(128, 64);
-            this.txtTextEditorArgs.Name = "txtTextEditorArgs";
-            this.txtTextEditorArgs.Size = new System.Drawing.Size(262, 23);
-            this.txtTextEditorArgs.TabIndex = 7;
-            this.toolTip.SetToolTip(this.txtTextEditorArgs, "Arguments to send to the Text Editor.  {filename} will be replaced with the name " +
-        "of the definition file.");
-            // 
-            // lblTextEditorArgs
-            // 
-            this.lblTextEditorArgs.AutoSize = true;
-            this.lblTextEditorArgs.Location = new System.Drawing.Point(12, 67);
-            this.lblTextEditorArgs.Name = "lblTextEditorArgs";
-            this.lblTextEditorArgs.Size = new System.Drawing.Size(89, 15);
-            this.lblTextEditorArgs.TabIndex = 6;
-            this.lblTextEditorArgs.Text = "Text Editor Args";
-            // 
-            // nudDefaultRepeat
-            // 
-            this.nudDefaultRepeat.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.nudDefaultRepeat.Location = new System.Drawing.Point(128, 93);
-            this.nudDefaultRepeat.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.nudDefaultRepeat.Name = "nudDefaultRepeat";
-            this.nudDefaultRepeat.Size = new System.Drawing.Size(262, 23);
-            this.nudDefaultRepeat.TabIndex = 8;
-            this.nudDefaultRepeat.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.nudDefaultRepeat.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 95);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 15);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Default Repeat";
-            // 
-            // btnOk
-            // 
-            this.btnOk.Location = new System.Drawing.Point(315, 122);
-            this.btnOk.Name = "btnOk";
-            this.btnOk.Size = new System.Drawing.Size(75, 23);
-            this.btnOk.TabIndex = 10;
-            this.btnOk.Text = "Ok";
-            this.btnOk.UseVisualStyleBackColor = true;
-            this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.Location = new System.Drawing.Point(234, 122);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
-            this.btnCancel.TabIndex = 11;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
-            // 
-            // openFileDialog
-            // 
-            this.openFileDialog.FileName = "openFileDialog";
-            this.openFileDialog.Filter = "Executable (*.exe)|*.exe|All Files (*.*)|*.*";
-            // 
-            // selTextEditor
-            // 
-            this.selTextEditor.AllowManualEntry = true;
-            this.selTextEditor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.selTextEditor.CheckFileExists = true;
-            this.selTextEditor.DefaultExtension = "";
-            this.selTextEditor.FileName = "";
-            this.selTextEditor.Filter = "";
-            this.selTextEditor.Location = new System.Drawing.Point(128, 34);
-            this.selTextEditor.Name = "selTextEditor";
-            this.selTextEditor.Size = new System.Drawing.Size(262, 23);
-            this.selTextEditor.TabIndex = 12;
-            // 
-            // selGeneratorDirectory
-            // 
-            this.selGeneratorDirectory.AllowManualEntry = true;
-            this.selGeneratorDirectory.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.selGeneratorDirectory.Location = new System.Drawing.Point(129, 7);
-            this.selGeneratorDirectory.Name = "selGeneratorDirectory";
-            this.selGeneratorDirectory.SelectedFolder = "";
-            this.selGeneratorDirectory.ShowNewFolderButton = true;
-            this.selGeneratorDirectory.Size = new System.Drawing.Size(261, 23);
-            this.selGeneratorDirectory.TabIndex = 13;
-            // 
-            // frmSettings
-            // 
-            this.AcceptButton = this.btnOk;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(396, 152);
-            this.Controls.Add(this.selGeneratorDirectory);
-            this.Controls.Add(this.selTextEditor);
-            this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.btnOk);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.nudDefaultRepeat);
-            this.Controls.Add(this.txtTextEditorArgs);
-            this.Controls.Add(this.lblTextEditorArgs);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.lblGeneratorDirectory);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "frmSettings";
-            this.Text = "Settings";
-            ((System.ComponentModel.ISupportInitialize)(this.nudDefaultRepeat)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+			components = new System.ComponentModel.Container();
+			var resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSettings));
+			lblGeneratorDirectory = new Label();
+			label1 = new Label();
+			txtTextEditorArgs = new TextBox();
+			lblTextEditorArgs = new Label();
+			toolTip = new ToolTip(components);
+			nudDefaultRepeat = new NumericUpDown();
+			label2 = new Label();
+			btnOk = new Button();
+			btnCancel = new Button();
+			openFileDialog = new OpenFileDialog();
+			folderBrowserDialog = new FolderBrowserDialog();
+			selTextEditor = new Controls.FileSelector();
+			lstDefinitionFolders = new ListBox();
+			btnAddFolder = new Button();
+			btnRemoveFolder = new Button();
+			((System.ComponentModel.ISupportInitialize)nudDefaultRepeat).BeginInit();
+			SuspendLayout();
+			// 
+			// lblGeneratorDirectory
+			// 
+			lblGeneratorDirectory.AutoSize = true;
+			lblGeneratorDirectory.Location = new Point(12, 9);
+			lblGeneratorDirectory.Name = "lblGeneratorDirectory";
+			lblGeneratorDirectory.Size = new Size(118, 15);
+			lblGeneratorDirectory.TabIndex = 0;
+			lblGeneratorDirectory.Text = "Definition Directories";
+			// 
+			// label1
+			// 
+			label1.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+			label1.AutoSize = true;
+			label1.Location = new Point(12, 86);
+			label1.Name = "label1";
+			label1.Size = new Size(62, 15);
+			label1.TabIndex = 3;
+			label1.Text = "Text Editor";
+			// 
+			// txtTextEditorArgs
+			// 
+			txtTextEditorArgs.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+			txtTextEditorArgs.Location = new Point(136, 112);
+			txtTextEditorArgs.Name = "txtTextEditorArgs";
+			txtTextEditorArgs.Size = new Size(310, 23);
+			txtTextEditorArgs.TabIndex = 7;
+			toolTip.SetToolTip(txtTextEditorArgs, "Arguments to send to the Text Editor.  {filename} will be replaced with the name of the definition file.");
+			// 
+			// lblTextEditorArgs
+			// 
+			lblTextEditorArgs.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+			lblTextEditorArgs.AutoSize = true;
+			lblTextEditorArgs.Location = new Point(12, 115);
+			lblTextEditorArgs.Name = "lblTextEditorArgs";
+			lblTextEditorArgs.Size = new Size(89, 15);
+			lblTextEditorArgs.TabIndex = 6;
+			lblTextEditorArgs.Text = "Text Editor Args";
+			// 
+			// nudDefaultRepeat
+			// 
+			nudDefaultRepeat.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+			nudDefaultRepeat.BorderStyle = BorderStyle.FixedSingle;
+			nudDefaultRepeat.Location = new Point(136, 141);
+			nudDefaultRepeat.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
+			nudDefaultRepeat.Name = "nudDefaultRepeat";
+			nudDefaultRepeat.Size = new Size(310, 23);
+			nudDefaultRepeat.TabIndex = 8;
+			nudDefaultRepeat.TextAlign = HorizontalAlignment.Right;
+			nudDefaultRepeat.ThousandsSeparator = true;
+			nudDefaultRepeat.Value = new decimal(new int[] { 1, 0, 0, 0 });
+			// 
+			// label2
+			// 
+			label2.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+			label2.AutoSize = true;
+			label2.Location = new Point(12, 143);
+			label2.Name = "label2";
+			label2.Size = new Size(84, 15);
+			label2.TabIndex = 9;
+			label2.Text = "Default Repeat";
+			// 
+			// btnOk
+			// 
+			btnOk.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+			btnOk.Location = new Point(370, 170);
+			btnOk.Name = "btnOk";
+			btnOk.Size = new Size(75, 23);
+			btnOk.TabIndex = 10;
+			btnOk.Text = "Ok";
+			btnOk.UseVisualStyleBackColor = true;
+			btnOk.Click += btnOk_Click;
+			// 
+			// btnCancel
+			// 
+			btnCancel.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+			btnCancel.Location = new Point(289, 170);
+			btnCancel.Name = "btnCancel";
+			btnCancel.Size = new Size(75, 23);
+			btnCancel.TabIndex = 11;
+			btnCancel.Text = "Cancel";
+			btnCancel.UseVisualStyleBackColor = true;
+			// 
+			// openFileDialog
+			// 
+			openFileDialog.FileName = "openFileDialog";
+			openFileDialog.Filter = "Executable (*.exe)|*.exe|All Files (*.*)|*.*";
+			// 
+			// selTextEditor
+			// 
+			selTextEditor.AllowManualEntry = true;
+			selTextEditor.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+			selTextEditor.CheckFileExists = true;
+			selTextEditor.DefaultExtension = "";
+			selTextEditor.FileName = "";
+			selTextEditor.Filter = "";
+			selTextEditor.Location = new Point(136, 82);
+			selTextEditor.Name = "selTextEditor";
+			selTextEditor.Size = new Size(310, 23);
+			selTextEditor.TabIndex = 12;
+			// 
+			// lstDefinitionFolders
+			// 
+			lstDefinitionFolders.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+			lstDefinitionFolders.BorderStyle = BorderStyle.FixedSingle;
+			lstDefinitionFolders.FormattingEnabled = true;
+			lstDefinitionFolders.IntegralHeight = false;
+			lstDefinitionFolders.ItemHeight = 15;
+			lstDefinitionFolders.Location = new Point(136, 9);
+			lstDefinitionFolders.Name = "lstDefinitionFolders";
+			lstDefinitionFolders.Size = new Size(287, 67);
+			lstDefinitionFolders.TabIndex = 13;
+			// 
+			// btnAddFolder
+			// 
+			btnAddFolder.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+			btnAddFolder.FlatStyle = FlatStyle.Flat;
+			btnAddFolder.Image = (Image)resources.GetObject("btnAddFolder.Image");
+			btnAddFolder.Location = new Point(422, 9);
+			btnAddFolder.Name = "btnAddFolder";
+			btnAddFolder.Size = new Size(24, 23);
+			btnAddFolder.TabIndex = 14;
+			btnAddFolder.UseVisualStyleBackColor = true;
+			btnAddFolder.Click += btnAddFolder_Click;
+			// 
+			// btnRemoveFolder
+			// 
+			btnRemoveFolder.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+			btnRemoveFolder.FlatStyle = FlatStyle.Flat;
+			btnRemoveFolder.Image = (Image)resources.GetObject("btnRemoveFolder.Image");
+			btnRemoveFolder.Location = new Point(422, 31);
+			btnRemoveFolder.Name = "btnRemoveFolder";
+			btnRemoveFolder.Size = new Size(24, 23);
+			btnRemoveFolder.TabIndex = 15;
+			btnRemoveFolder.UseVisualStyleBackColor = true;
+			btnRemoveFolder.Click += btnRemoveFolder_Click;
+			// 
+			// frmSettings
+			// 
+			AcceptButton = btnOk;
+			AutoScaleDimensions = new SizeF(7F, 15F);
+			AutoScaleMode = AutoScaleMode.Font;
+			CancelButton = btnCancel;
+			ClientSize = new Size(451, 199);
+			Controls.Add(btnRemoveFolder);
+			Controls.Add(btnAddFolder);
+			Controls.Add(lstDefinitionFolders);
+			Controls.Add(selTextEditor);
+			Controls.Add(btnCancel);
+			Controls.Add(btnOk);
+			Controls.Add(label2);
+			Controls.Add(nudDefaultRepeat);
+			Controls.Add(txtTextEditorArgs);
+			Controls.Add(lblTextEditorArgs);
+			Controls.Add(label1);
+			Controls.Add(lblGeneratorDirectory);
+			FormBorderStyle = FormBorderStyle.SizableToolWindow;
+			MaximizeBox = false;
+			MinimizeBox = false;
+			MinimumSize = new Size(450, 225);
+			Name = "frmSettings";
+			Text = "Settings";
+			((System.ComponentModel.ISupportInitialize)nudDefaultRepeat).EndInit();
+			ResumeLayout(false);
+			PerformLayout();
 		}
 
 		#endregion
@@ -204,6 +228,8 @@
 		private OpenFileDialog openFileDialog;
 		private FolderBrowserDialog folderBrowserDialog;
 		private Controls.FileSelector selTextEditor;
-		private Controls.FolderSelector selGeneratorDirectory;
+		private ListBox lstDefinitionFolders;
+		private Button btnAddFolder;
+		private Button btnRemoveFolder;
 	}
 }

@@ -1,0 +1,431 @@
+Name: Deck of Many Things 2E
+Author: Lance Boudreaux
+Version: "1.0"
+OutputFormat: Html
+ShowInList: false
+LineItems:
+{	
+	"add2e.Deck":
+    [
+		{ Content: "[2e_Balance]" }
+		{ Content: "[2e_Comet]" }
+		{ Content: "[2e_Donjon]" }
+		{ Content: "[2e_Euryale]" }
+		{ Content: "[2e_Fates]" }
+		{ Content: "[2e_Flames]" }
+		{ Content: "[2e_Fool]" }
+		{ Content: "[2e_Gem]" }
+		{ Content: "[2e_Idiot]" }
+		{ Content: "[2e_Jester]" }
+		{ Content: "[2e_Key]" }
+		{ Content: "[2e_Knight]" }
+		{ Content: "[2e_Moon] " }
+		{ Content: "[2e_Rogue]" }
+		{ Content: "[2e_Ruin]" }
+		{ Content: "[2e_Skull]" }
+		{ Content: "[2e_Star]" }
+		{ Content: "[2e_Sun]" }
+		{ Content: "[2e_Talons]" }
+		{ Content: "[2e_Throne]" }
+		{ Content: "[2e_Vizier]" }
+		{ Content: "[2e_Void]" }
+    ]   	
+
+	2e_Balance:
+	[
+		{
+			Content:
+			'''
+			<div class='border p-2'>
+				<div class='row'>
+					<h4 class='col-12'>Balance</h4>
+				</div>
+				<div class='row'>
+					<div class='col-auto'>[Balance]</div>
+					<div class='col'>Change alignment or be judged.</div>
+				</div>
+			</div>
+			'''
+		}
+	]
+
+	2e_Comet:
+	[
+		{
+			Content:
+			'''
+			<div class='border p-2'>
+				<div class='row'>
+					<h4 class='col-12'>Comet</h4>
+				</div>
+				<div class='row'>
+					<div class='col-auto'>[Comet]</div>
+					<div class='col'>Defeat next monster you meet to gain 1 level.</div>
+				</div>
+			</div>
+			'''
+		}
+	]
+
+	2e_Donjon:
+	[
+		{
+			Content:
+			'''
+			<div class='border p-2'>
+				<div class='row'>
+					<h4 class='col-12'>Donjon</h4>
+				</div>
+				<div class='row'>
+					<div class='col-auto'>[Donjon]</div>
+					<div class='col'>You are imprisoned.</div>
+				</div>
+			</div>
+			'''
+		}
+	]
+
+	2e_Euryale:
+	[
+		{ 
+			Content: 
+			'''
+			<div class='border p-2'>
+				<div class='row'>
+					<h4 class='col-12'>Euryale</h4>
+				</div>
+				<div class='row'>
+					<div class='col-auto'>[Euryale]</div>
+					<div class='col'>Minus 3 on all saving throws vs. petrification.</div>
+				</div>
+			</div>
+			'''
+		}
+	]
+
+	2e_Fates:
+	[
+		{
+			Content:
+			'''
+			<div class='border p-2'>
+				<div class='row'>
+					<h4 class='col-12'>Fates</h4>
+				</div>
+				<div class='row'>
+					<div class='col-auto'>[Fates]</div>
+					<div class='col'>Avoid any situation you choose … once.</div>
+				</div>
+			</div>
+			'''
+		}
+	]
+	
+	2e_Flames:
+	[
+		{ 
+			Content: 
+			'''
+			<div class='border p-2'>
+				<div class='row'>
+					<h4 class='col-12'>Flames</h4>
+				</div>
+				<div class='row'>
+					<div class='col-auto'>[Flames]</div>
+					<div class='col'>Enmity between you and a devil.</div>
+				</div>
+			</div>
+			'''
+		}
+	]
+
+	2e_Fool:
+	[
+		{
+			Content:
+			'''
+			<div class='border p-2'>
+				<div class='row'>
+					<h4 class='col-12'>Fool</h4>
+				</div>
+				<div class='row'>
+					<div class='col-auto'>[Fool]</div>
+					<div class='col'>Lose 10,000 experience points; draw again.</div>
+				</div>
+			</div>
+			'''
+			Next: add2e
+		}
+	]
+
+	2e_Gem:
+	[
+		{
+			Content:
+			'''
+			<div class='border p-2'>
+				<div class='row'>
+					<h4 class='col-12'>Gem</h4>
+				</div>
+				<div class='row'>
+					<div class='col-auto'>[Gem]</div>
+					<div class='col'>Gain your choice of 50 jewelry or 50 gems.</div>
+				</div>
+			</div>
+			'''
+		}
+	]
+
+	2e_Idiot:
+	[
+		{
+			Content:
+			'''
+			<div class='border p-2'>
+				<div class='row'>
+					<h4 class='col-12'>Idiot</h4>
+				</div>
+				<div class='row'>
+					<div class='col-auto'>[Idiot]</div>
+					<div class='col'>Lose 1-4 points of intelligence, you may draw again.</div>
+				</div>
+			</div>
+			'''
+		}
+	]
+		
+	2e_Jester:
+	[
+		{
+			Content:
+			'''
+			<div class='border p-2'>
+				<div class='row'>
+					<h4 class='col-12'>Jester</h4>
+				</div>
+				<div class='row'>
+					<div class='col-auto'>[Jester]</div>
+					<div class='col'>Gain 10,000 experience points or 2 more draws from the deck.</div>
+				</div>
+			</div>
+			'''
+		}
+	]
+
+	2e_Key:
+	[
+		{
+			Content:
+			'''
+			<div class='border p-2'>
+				<div class='row'>
+					<h4 class='col-12'>Key</h4>
+				</div>
+				<div class='row'>
+					<div class='col-auto'>[Key]</div>
+					<div class='col'>Gain a treasure map plus 1 magic weapon.</div>
+				</div>
+			</div>
+			'''
+		}
+	]
+
+	2e_Knight:
+	[
+		{
+			Content:
+			'''
+			<div class='border p-2'>
+				<div class='row'>
+					<h4 class='col-12'>Knight</h4>
+				</div>
+				<div class='row'>
+					<div class='col-auto'>[Knight]</div>
+					<div class='col'>Gain service of a 4<sup>th</sup> level fighter.</div>
+				</div>
+			</div>
+			'''
+		}
+	]
+
+	2e_Moon:
+	[
+		{
+			Content:
+			'''
+			<div class='border p-2'>
+				<div class='row'>
+					<h4 class='col-12'>Moon</h4>
+				</div>
+				<div class='row'>
+					<div class='col-auto'>[Moon]</div>
+					<div class='col'>You are granted [=Roll(1,4)] wish(es).</div>
+				</div>
+			</div>
+			'''
+		}
+	]
+
+	2e_Rogue:
+	[
+		{
+			Content:
+			'''
+			<div class='border p-2'>
+				<div class='row'>
+					<h4 class='col-12'>Rogue</h4>
+				</div>
+				<div class='row'>
+					<div class='col-auto'>[Rogue]</div>
+					<div class='col'>One of your henchmen turns against you.</div>
+				</div>
+			</div>
+			'''
+		}
+	]
+
+	2e_Ruin:
+	[
+		{
+			Content:
+			'''
+			<div class='border p-2'>
+				<div class='row'>
+					<h4 class='col-12'>Ruin</h4>
+				</div>
+				<div class='row'>
+					<div class='col-auto'>[Ruin]</div>
+					<div class='col'>Immediately lose all wealth and real property.</div>
+				</div>
+			</div>
+			'''
+		}
+	]
+
+	2e_Skull:
+	[
+		{
+			Content:
+			'''
+			<div class='border p-2'>
+				<div class='row'>
+					<h4 class='col-12'>Skull</h4>
+				</div>
+				<div class='row'>
+					<div class='col-auto'>[Skull]</div>
+					<div class='col'>Defeat Death or be forever destroyed.</div>
+				</div>
+			</div>
+			'''
+		}
+	]
+
+	2e_Star:
+	[
+		{
+			Content:
+			'''
+			<div class='border p-2'>
+				<div class='row'>
+					<h4 class='col-12'>Star</h4>
+				</div>
+				<div class='row'>
+					<div class='col-auto'>[Star]</div>
+					<div class='col'>Immediately gain 2 points on your major ability.</div>
+				</div>
+			</div>
+			'''
+		}
+	]
+
+	2e_Sun:
+	[
+		{
+			Content:
+			'''
+			<div class='border p-2'>
+				<div class='row'>
+					<h4 class='col-12'>Sun</h4>
+				</div>
+				<div class='row'>
+					<div class='col-auto'>[Sun]</div>
+					<div class='col'>Gain beneficial miscellaneous magic item and 50,000 experience points.</div>
+				</div>
+			</div>
+			'''
+		}
+	]
+
+	2e_Talons:
+	[
+		{
+			Content:
+			'''
+			<div class='border p-2'>
+				<div class='row'>
+					<h4 class='col-12'>Talons</h4>
+				</div>
+				<div class='row'>
+					<div class='col-auto'>[Talons]</div>
+					<div class='col'>All magic items you possess are torn from you.</div>
+				</div>
+			</div>
+			'''
+		}
+	]
+
+	2e_Throne:
+	[
+		{
+			Content:
+			'''
+			<div class='border p-2'>
+				<div class='row'>
+					<h4 class='col-12'>Throne</h4>
+				</div>
+				<div class='row'>
+					<div class='col-auto'>[Throne]</div>
+					<div class='col'>Gain charisma of 18 and a small keep.</div>
+				</div>
+			</div>
+			'''
+		}
+	]
+
+	2e_Vizier:
+	[
+		{
+			Content:
+			'''
+			<div class='border p-2'>
+				<div class='row'>
+					<h4 class='col-12'>Vizier</h4>
+				</div>
+				<div class='row'>
+					<div class='col-auto'>[Vizier]</div>
+					<div class='col'>Know the answer to your next dilemma.</div>
+				</div>
+			</div>
+			'''
+		}
+	]
+
+	2e_Void:
+	[
+		{
+			Content:
+			'''
+			<div class='border p-2'>
+				<div class='row'>
+					<h4 class='col-12'>Void</h4>
+				</div>
+				<div class='row'>
+					<div class='col-auto'>[Void]</div>
+					<div class='col'>Body functions but soul is trapped elsewhere.</div>
+				</div>
+			</div>
+			'''
+		}
+	]
+}
+GeneratorType: Assignment

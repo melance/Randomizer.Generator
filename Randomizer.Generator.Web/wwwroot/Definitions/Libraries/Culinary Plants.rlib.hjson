@@ -1,0 +1,364 @@
+{
+  Name: Culinary Plants
+  Author: Lance Boudreaux
+  Description: A list of culinary plants categorized by type
+  Version: "1.0"
+  OutputFormat: Text
+  LineItems:
+  {
+    Vegetable:
+	[
+		{ Content: "[AmaryllisVegetable]" }
+		{ Content: "[CarrotVegetable]" }
+		{ Content: "[GoosefootVegetable]" }
+		{ Content: "[GourdVegetable]" }
+		{ Content: "[GrassVegetable]" }
+		{ Content: "[KnotweedVegetable]" }
+		{ Content: "[MustardVegetable]" }
+		{ Content: "[NightshadeVegetable]" }
+		{ Content: "[PeaVegetable]" }
+		{ Content: "[SunflowerVegetable]" }
+	]
+	
+	Fruit:
+	[
+		{ Content: "[AppleFruit]" }
+		{ Content: "[BananaFruit]" }
+		{ Content: "[BerryFruit]" }
+		{ Content: "[CactusFruit]" }
+		{ Content: "[CitrusFruit]" }
+		{ Content: "[DurioFruit]" }
+		{ Content: "[EbonyFruit]" }
+		{ Content: "[GourdFruit]" }
+		{ Content: "[GrapeFruit]" }
+		{ Content: "[HeathFruit]" }
+		{ Content: "[MulberryFruit]" }
+		{ Content: "[MyrtleFruit]" }
+		{ Content: "[NightshadeFruit]" }
+		{ Content: "[PalmFruit]" }
+		{ Content: "[SaxifrageFruit]" }
+		{ Content: "[SoapberryFruit]" }
+	]
+	
+	Nut:
+	[
+		{ Content: "almond" }
+		{ Content: "beechnut" }
+		{ Content: "cashew" }
+		{ Content: "castanha" }
+		{ Content: "chestnut" }
+		{ Content: "cocoa" }
+		{ Content: "hazelnut" }
+		{ Content: "macadamia" }
+		{ Content: "peanut" }
+		{ Content: "pecan" }
+		{ Content: "pine Nut" }
+		{ Content: "pistachio" }
+		{ Content: "walnut" }
+	]
+	
+	Seed:
+	[
+		{ Content: "barley" }
+		{ Content: "corn" }
+		{ Content: "maize" }
+		{ Content: "oat" }
+		{ Content: "rice" }
+		{ Content: "rye" }
+		{ Content: "sorghum" }
+		{ Content: "sunflower seed" }
+		{ Content: "wheat" }
+	]
+	
+	#region Fruit
+	
+	##Maloideae & Annonaceae
+	AppleFruit:
+	[
+		{ Content: "apple" }
+		{ Content: "crabapple" }
+		{ Content: "cherimoya" }
+		{ Content: "loquat" }
+		{ Content: "pawpaw" }
+		{ Content: "pear" }
+		{ Content: "quince" }
+		{ Content: "rose hip" }
+	]
+	
+	##Musaceae
+	BananaFruit:
+	[
+		{ Content: "banana" }
+		{ Content: "plantain" }
+	]
+	
+	##Rubus & Fragaria
+	BerryFruit:
+	[
+		{ Content: "blackberry" }
+		{ Content: "boysenberry" }
+		{ Content: "dewberry" }
+		{ Content: "loganberry" }
+		{ Content: "raspberry" }
+		{ Content: "strawberry" }
+		{ Content: "youngberry" }
+	]
+	
+	##Cactaceae
+	CactusFruit:
+	[
+		{ Content: "dragon fruit" }
+		{ Content: "pitaya" }
+		{ Content: "prickly pear" }
+	]
+	
+	##Rutaceae		
+	CitrusFruit:
+	[
+		{ Content: "citron" }
+		{ Content: "clementine" }
+		{ Content: "grapefruit" }
+		{ Content: "kumquat" }
+		{ Content: "lemon" }
+		{ Content: "lime" }
+		{ Content: "orange" }
+		{ Content: "pomelo" }
+		{ Content: "satsuma" }
+		{ Content: "tangelo" }
+		{ Content: "tangerine" }
+		{ Content: "uglifruit" }
+	]
+	
+	##Durio
+	DurioFruit:
+	[
+		{ Content: "durian" }
+	]
+	
+	##Ebenacaceae
+	EbonyFruit:
+	[
+		{ Content: "persimmon" }
+		{ Content: "black sapote" }
+		{ Content: "kaki" }
+	]
+	
+	##Cucurbitaceae
+	GourdFruit:
+	[
+		{ Content: "cantaloupe" }
+		{ Content: "casaba" }
+		{ Content: "crenshaw" }
+		{ Content: "honeydew" }
+		{ Content: "watermelon" }
+	]
+	
+	##Vitaceae
+	GrapeFruit:
+	[
+		{ Content: "dried currant" }
+		{ Content: "grape" }
+		{ Content: "muscadine" }
+		{ Content: "raisin" }
+	]
+	
+	##Ericaceae
+	HeathFruit:
+	[
+		{ Content: "bearberry" }
+		{ Content: "bilberry" }
+		{ Content: "blueberry" }
+		{ Content: "cranberry" }
+		{ Content: "huckleberry" }
+	]
+	
+	##Moraceae
+	MulberryFruit:
+	[
+		{ Content: "breadfruit" }
+		{ Content: "jackfruit" }
+		{ Content: "fig" }
+		{ Content: "mulberry" }
+	]
+	
+	##Myrtaceae
+	MyrtleFruit:
+	[
+		{ Content: "camu-camu" }
+		{ Content: "feimoa" }
+		{ Content: "guava" }
+	]
+	
+	##Solanaceae
+	NightshadeFruit:
+	[
+		{ Content: "goji berry" }
+		{ Content: "golden berry" }
+		{ Content: "pepino" }
+		{ Content: "tamarillo" }
+	]
+	
+	##Arecaceae
+	PalmFruit:
+	[
+		{ Content: "acai" }
+		{ Content: "coconut" }
+		{ Content: "date" }
+	]
+	
+	##Prunus
+	PlumFruit:
+	[
+		{ Content: "apricot" }
+		{ Content: "cherry" }
+		{ Content: "nectarine" }
+		{ Content: "peach" }
+		{ Content: "plum" }
+		{ Content: "prune" }
+		{ Content: "sloe" }
+	]
+	
+	##Saxifragaceae
+	SaxifrageFruit:
+	[
+		{ Content: "blackcurrant" }
+		{ Content: "gooseberry" }
+	]
+	
+	##Sapindaceae
+	SoapberryFruit:
+	[
+		{ Content: "lychee" }
+		{ Content: "rambutan" }
+	]
+	
+	#endregion
+	
+	#region Vegetable
+		
+	##Amaryllidaceae
+	AmaryllisVegetable: 
+	[
+		{ Content: "chive" }
+		{ Content: "garlic" }
+		{ Content: "leek" }
+		{ Content: "onion" }	
+		{ Content: "shallot" }
+	]
+	
+	##Apiaceae
+	CarrotVegetable:
+	[
+		{ Content: "carrot" }
+		{ Content: "celeriac" }
+		{ Content: "celery" }
+		{ Content: "fennel" }
+		{ Content: "parsley" }
+		{ Content: "parsnip" }
+	]
+	    
+	##Chenopodiaceae
+	GoosefootVegetable:
+	[
+		{ Content: "amaranth" }
+		{ Content: "beet" }
+		{ Content: "chard" }
+		{ Content: "guinoa" }
+		{ Content: "spinach" }
+	]
+	
+	##Cucurbitaceae
+	GourdVegetable:
+	[
+		{ Content: "cucumber" }
+		{ Content: "gourd" }
+		{ Content: "melon" }
+		{ Content: "pumpkin" }
+		{ Content: "squash" }
+		{ Content: "summer squash" }
+		{ Content: "watermelon" }
+		{ Content: "zucchini" }
+	]
+	
+	##Pocaceae
+	GrassVegetable:
+	[
+		{ Content: "barley" }
+		{ Content: "corn" }
+		{ Content: "millet" }
+		{ Content: "oats" }
+		{ Content: "rice" }
+		{ Content: "rye" }
+		{ Content: "sorghum" }
+		{ Content: "wheat" }
+	]
+	
+	##Lauraceae
+	LaurelVegetable:
+	[
+		{ Content: "avocado" }
+	]
+	
+	##Polygonaceae
+	KnotweedVegetable:
+	[
+		{ Content: "buckwheat" }
+		{ Content: "rhubarb" }
+	]
+	
+	##Brassicaceae
+	MustardVegetable:
+	[
+		{ Content: "broccoli" }
+		{ Content: "brussels sprout" }
+		{ Content: "cabbage" }
+		{ Content: "cauliflower" }
+		{ Content: "collard" }
+		{ Content: "horseradish" }
+		{ Content: "kale" }
+		{ Content: "kohlrabi" }
+		{ Content: "radish" }
+		{ Content: "rutabaga" }
+		{ Content: "turnip" }
+		{ Content: "watercress" }
+	]
+	
+	##Solanaceae
+	NightshadeVegetable:
+	[
+		{ Content: "eggplant" }
+		{ Content: "pepper" }
+		{ Content: "potato" }
+		{ Content: "tomato" }
+		{ Content: "tomatillo" }
+	]
+	
+	##Fabaceae
+	PeaVegetable:
+	[
+		{ Content: "alfalfa" }
+		{ Content: "bean" }
+		{ Content: "cowpea" }
+		{ Content: "lentil" }
+		{ Content: "peanut" }
+		{ Content: "pea" }
+		{ Content: "soyben" }
+	]
+	
+	##Asteraceae
+	SunflowerVegetable:
+	[
+		{ Content: "artichoke" }
+		{ Content: "celtuce" }
+		{ Content: "chicory" }
+		{ Content: "dandelion" }
+		{ Content: "endive" }
+		{ Content: "lettuce" }
+		{ Content: "radicchio" }
+		{ Content: "salsify" }
+		{ Content: "sunflower" }
+	]
+	#endregion
+  }
+  GeneratorType: Assignment
+}

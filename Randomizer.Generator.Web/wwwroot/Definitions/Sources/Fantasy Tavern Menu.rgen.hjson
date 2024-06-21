@@ -1,0 +1,205 @@
+Name: Fantasy Menu
+KeepWhitespace: true
+Author: Lance Boudreaux
+Description: Generates a fantasy tavern menu
+Version: "1.0"
+Tags:
+[
+	Fantasy
+]
+OutputFormat: HTML
+ShowInList: false
+Parameters:
+{
+	Type:
+	{
+		Display: Type
+		Value: FnD
+		Type: List
+		Options:
+		[
+			FnD: Food and Drink
+			F: Food
+			D: Drink
+		]
+	}
+}
+Imports:
+[
+	DnD Monsters by Type
+	Culinary Plants
+]
+LineItems:
+{
+	Start:
+	[
+		{ 
+			Content: 
+			'''
+			<div>
+			[Type]
+			</div>
+			'''
+		}
+	]
+	
+	F:
+	[
+		{ 
+			Content: 
+			'''
+			<div>
+				<div style="font-weight:bold; border-bottom: 1px solid black;">Food</div>
+				<div>
+					[FoodItems]
+				</div>
+			</div>
+			'''
+		}
+	]
+	
+	D:
+	[
+		{ 
+			Content: 
+			'''
+			<div>
+				<div style="font-weight:bold; border-bottom: 1px solid black;">Drinks</div>
+				<div>
+					[DrinkItems]
+				</div>				
+			</div>	
+			'''
+		}
+	]
+	
+	FnD:
+	[
+		{ 
+			Content: 
+			'''
+			[F]
+			[D]
+			'''
+		}
+	]
+	
+	FoodItems:
+	[
+		{ Content: "[Food]<br />", Repeat: "=Roll(3,4)" }
+	]
+	
+	DrinkItems:
+	[
+		{ Content: "[Drinks]<br />", Repeat: "=Roll(2,2)", Draw: true }
+	]
+	
+	Food:
+	[
+		{ Content: "Roast [=TCase(Meat)]" }
+		{ Content: "[=TCase(Meat)] Stew With [=Pick('Root','Leaf')] Vegetables" }
+		{ Content: "[=TCase(Meat)] And [=TCase(Vegetable)] Stew" }
+		{ Content: "[CookingMethod] [=TCase(Meat)] Served With [CookingMethod] [=TCase(Vegetable)]" }
+		{ Content: "[=TCase(Ooze)] Served [=TCase(ToText(Roll(2,2)))] Ways" }
+		{ Content: "[=TCase(Meat)] Steak and [=TCase(Vegetable)] Pie" }
+		{ Content: "[CookingMethod] [=TCase(Meat)] With a Side of Roasted [=TCase(Vegetable)]" }
+		{ Content: "[=TCase(Vegetable)] [CookingMethod] to Perfection with Glazed [=TCase(Fruit)] for Desert" }
+		{ Content: "[CookingMethod] [=TCase(Savory)] in a [=Pick('Savory','Spicy','Sweet')] Sauce" }
+		{ Content: "[=TCase(Savory)] Poached with Broiled [Oviparous] Eggs" }
+		{ Content: "[CookingMethod] [=TCase(Savory)] with [=TCase(Sweet)] Cake" }
+		{ Content: "[=TCase(Seed)] Bread with Warm Butter and [=TCase(Fruit)] Jam" }
+		{ Content: "[=CookingMethod] Mystery Meat Served Warm" }
+	]
+	
+	Drinks.Deck:
+	[
+		{ Content: "Ale" }
+		{ Content: "Barley Tea" }
+		{ Content: "Beer" }
+		{ Content: "[=Pick('Apple','Pear')] Cider" }
+		{ Content: "[=Pick('Coriander', 'Lavender', 'Lemon', 'Mint', 'Rose', 'Sage')] Water" }
+		{ Content: "Dancha" }
+		{ Content: "Granatus" }
+		{ Content: "Mead" }
+		{ Content: "[=Pick('Cow','Goat','Almond')] Milk" }
+		{ Content: "Rum" }
+		{ Content: "Tea" }
+		{ Content: "Water" }
+		{ Content: "Whiskey" }
+		{ Content: "Wine" }
+	]
+	
+	CookingMethod:
+	[
+		{ Content: "Baked" }
+		{ Content: "Barbequed" }
+		{ Content: "Boiled" }
+		{ Content: "Boiled" }
+		{ Content: "Braised" }
+		{ Content: "Broiled" }
+		{ Content: "Deep Fried" }
+		{ Content: "Fried" }
+		{ Content: "Grilled" }
+		{ Content: "Poached" }
+		{ Content: "Roasted" }
+		{ Content: "Sautéed" }
+		{ Content: "Simmered" }
+		{ Content: "Slow Cooked" }
+		{ Content: "Steamed" }
+		{ Content: "Stewed" }
+	]
+	
+	Savory:
+	[
+		{ Content: "[Meat]" }
+		{ Content: "[Vegetable]" }
+	]
+	
+	Meat:
+	[
+		{ Content: "[Beast]", Weight: 20 }
+		{ Content: "[Animal]", Weight: 20 }
+		{ Content: "[Plant]", Weight: 10 }
+		{ Content: "[Aberration+Vermin]", Weight: 2 }
+	]
+
+	Oviparous:
+	[
+		{ Content: "Alligator" }
+		{ Content: "Axe Beak" }
+		{ Content: "Chicken" }
+		{ Content: "Cockatrice" }
+		{ Content: "Crocodile" }
+		{ Content: "Dragon" }
+		{ Content: "Duck" }
+		{ Content: "Eagle" }
+		{ Content: "Emu" }
+		{ Content: "Giant Eagle" }
+		{ Content: "Giant Lizard" }
+		{ Content: "Goose" }
+		{ Content: "Griffon" }
+		{ Content: "Lizard" }
+		{ Content: "Ostrich" }
+		{ Content: "Owlbear" }
+		{ Content: "Roc" }
+		{ Content: "Salmon" }
+		{ Content: "Tortoise" }
+		{ Content: "Tuna" }
+		{ Content: "Wyvern" }		
+	]
+	
+	Sweet:
+	[
+		{ Content: "Vanilla" }
+		{ Content: "Mint" }
+		{ Content: "Chocolate" }
+		{ Content: "Cane Sugar" }
+		{ Content: "Caramel" }
+		{ Content: "Cinnamon" }
+		{ Content: "Hazelnut" }
+		{ Content: "Maple" }
+		{ Content: "Sweet Cream" }
+		{ Content: "[Fruit]" }
+	]
+}
+GeneratorType: Assignment

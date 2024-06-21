@@ -70,7 +70,7 @@ namespace Randomizer.Generator.Win.Controls
 			{
 				SelectedFolder = dlgFolderBrowser.SelectedPath;
 			}
-		} 
+		}
 		#endregion
 	}
 }

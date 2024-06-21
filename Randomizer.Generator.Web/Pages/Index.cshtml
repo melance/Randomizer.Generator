@@ -1,0 +1,85 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<form asp-page-handler="search">
+    <div class="">
+        <div class="row">
+            <div class="col-2">
+                <!-- Tags -->
+                <div class="row">
+                    <h2 class="col-12">Tags</h2>
+                    <div class="col-12">
+                        @for (var i = 0; i < Model.Tags.Count; i++)
+                        {
+                            <input type="hidden" asp-for="Tags[i].Name" />
+                            <input type="checkbox" class="btn-check" asp-for="Tags[i].Selected" autocomplete="off">
+                            <label class="btn btn-sm btn-outline-primary mb-1" for="Tags_@(i)__Selected">@Model.Tags[i].Name</label>
+                        }
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <h2 class="col-12">Search</h2>
+                    <div class="col-12">
+                        <div class="row">
+                            <!-- Search -->
+                            <div class="input-group col">
+                                <label asp-for="Criteria" class="input-group-text"></label>
+                                <input asp-for="Criteria" class="form-control" />
+                                <button type="submit" class="btn btn-primary btn-sm">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-12">
+                        <!-- Results -->
+                        <table class="table">
+                            <tr>
+                                <th class="col-3">Name</th>
+                                <th>Description</th>
+                                <th>Author</th>
+                                <th>Details</th>
+                            </tr>
+                            @if (Model.Definitions.Count == 0)
+                            {
+                                <tr>
+                                    <th colspan="4" class="text-center">No definitions found.</th>
+                                </tr>
+                            }
+                            else
+                            {
+                                for (var i = 0; i < Model.Definitions.Count; i++)
+                                {
+                                    var definition = Model.Definitions[i];
+
+                                    <tr>
+                                        <td><a asp-page="Generate" asp-route-definition="@definition.Name">@definition.Name</a></td>
+                                        <td class="text-wrap">@definition.Description</td>
+                                        <td>@definition.Author</td>
+                                        <td>
+                                            <div class="d-flex collapse-toggle justify-content-center" data-bs-toggle="collapse" data-bs-target="#definition_@i" aria-expanded="false">
+                                                <span class="bi-caret-down-fill collapsed"></span>
+                                                <span class="bi-caret-up-fill expanded"></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr id="definition_@i" class="collapse">
+                                        <td colspan="4">
+                                            <!-- Details -->
+                                            <partial name="_DefinitionDetails" model="definition" />
+                                        </td>
+                                    </tr>
+                                }
+                            }
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

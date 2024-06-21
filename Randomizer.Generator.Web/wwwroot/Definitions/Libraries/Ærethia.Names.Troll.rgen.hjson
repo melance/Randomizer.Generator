@@ -1,0 +1,154 @@
+{
+	Name: Troll Name
+	/* Indigenous Brazilian */
+	Version: "2.0"
+	OutputFormat: Text
+    ShowInList: false
+	Parameters:
+	{
+	}
+	LineItems:
+	{
+		Start:
+		[
+			{ Content: "[GivenName]" }
+		]
+        		
+		GivenName:
+		[
+            { Content: "[GN1][GN2]" }			
+		]
+        
+		GN1:
+		[
+            { Content: "Alk" }     
+            { Content: "Aim" }   
+            { Content: "Aj" }    
+            { Content: "Ak" }
+            { Content: "Amah" }
+            { Content: "Aman" }
+            { Content: "Amond" }
+            { Content: "Apar" }
+            { Content: "Arap" }
+            { Content: "Arar" }
+            { Content: "Assur" }
+            { Content: "Bak" }
+            { Content: "Ban" }
+            { Content: "Bar" }
+            { Content: "Bor" }
+            { Content: "Can" }
+            { Content: "Cat" }
+            { Content: "Cham" }
+            { Content: "Cin" }
+            { Content: "Des" }
+            { Content: "Enaw" }
+            { Content: "Guaj" }
+            { Content: "Guar" }
+            { Content: "Hupd" }
+            { Content: "Ikp" }
+            { Content: "Ing" }
+            { Content: "Jam" }
+            { Content: "Jur" }
+            { Content: "Kaap" }
+            { Content: "Kad" }
+            { Content: "Kal" }
+            { Content: "Kamb" }
+            { Content: "Kan" }
+            { Content: "Kar" }
+            { Content: "Kam" }
+            { Content: "Kax" }
+            { Content: "Kok" }
+            { Content: "Kren" }
+            { Content: "Kwaz" }
+            { Content: "Mak" }
+            { Content: "Mar" }
+            { Content: "Mats" }
+            { Content: "Mb" }
+            { Content: "Mund" }
+            { Content: "Nand" }
+            { Content: "Nar" }
+            { Content: "Oft" }
+            { Content: "Pait" }
+            { Content: "Pan" }
+            { Content: "Palik" }
+            { Content: "Paum" }
+            { Content: "Pit" }
+            { Content: "Poy" }
+            { Content: "Rikb" }
+            { Content: "Sakur" }
+            { Content: "Sat" }
+            { Content: "Shan" }
+            { Content: "Sur" }
+            { Content: "Tabaj" }
+            { Content: "Tap" }
+            { Content: "Tapay" }
+            { Content: "Teren" }
+            { Content: "Tic" }
+            { Content: "Ting" }
+            { Content: "Tuk" }
+            { Content: "Tup" }
+            { Content: "Umut" }
+            { Content: "Waim" }
+            { Content: "Waj" }
+            { Content: "Wapix" }
+            { Content: "Warek" }
+            { Content: "Wit" }
+            { Content: "Xakr" }
+            { Content: "Xamb" }
+            { Content: "Xav" }
+            { Content: "Xerent" }
+            { Content: "Xip" }
+            { Content: "Xuk" }
+            { Content: "Yamin" }
+            { Content: "Yawan" }
+            { Content: "Ye'k" }
+            { Content: "Zor" }
+		]
+
+		GN2:
+		[            
+            { Content: "acoco" }
+            { Content: "ai" }
+            { Content: "aira" }
+            { Content: "aiura" }
+            { Content: "aja" }
+            { Content: "ama" }
+            { Content: "amadi" }
+            { Content: "amari" }
+            { Content: "ano" }
+            { Content: "anya" }
+            { Content: "apanya" }
+            { Content: "ara" }
+            { Content: "ariko" }
+            { Content: "asna" }
+            { Content: "aso" }
+            { Content: "aua" }
+            { Content: "auxi" }
+            { Content: "awa" }
+            { Content: "aye" }
+            { Content: "eba" }
+            { Content: "ela" }
+            { Content: "enawa" }
+            { Content: "ene" }
+            { Content: "eng" }
+            { Content: "eva" }
+            { Content: "inamba" }
+            { Content: "ini[=Pick('','quim')]" }
+            { Content: "iri[=Pick('','-atoari')]" }
+            { Content: "iwa" }
+            { Content: "iweu" }
+            { Content: "orey" }
+            { Content: "ta" }
+            { Content: "uaca" }
+            { Content: "uba" }
+            { Content: "ui[=Pick('','-boto')]" }
+            { Content: "una" }
+            { Content: "untsu" }
+            { Content: "urap" }
+            { Content: "uru" }
+            { Content: "uruku" }
+            { Content: "uvoto" }
+		]
+	}
+	GeneratorType: Assignment
+}

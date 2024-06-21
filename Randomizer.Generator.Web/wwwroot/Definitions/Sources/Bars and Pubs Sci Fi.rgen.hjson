@@ -1,0 +1,253 @@
+Name: Bars and Pubs Sci-Fi
+Author: Lance Boudreaux
+Description: Generates a random futuristic drinking hole.
+Version: "2.0"
+Tags:
+[
+	Environment
+	Generic
+	Sci-Fi
+]
+OutputFormat: Html
+ShowInList: false
+LineItems:
+{
+	Start:
+	[
+	  {
+		Content:
+			'''
+			<h5 style="margin:0;">[Name]</h5>
+			<b>Location</b>:    [Location]<br />
+			<b>Description</b>: A [Stories]-story establishment with [Walls] walls that are [Decorations].<br />
+			<b>Barkeeper</b>:   A [Size] [Age] [Gender] [Trait].
+			'''
+	  }
+	]
+	Name:
+	[
+	  { Content: "The [Noun] & [Noun]" }
+	  { Content: "The [Adjective] [Noun]" }
+	  { Content: "[Owner]'s [Type]" }
+	  { Content: "[Owner]'s [Noun] [Type]" }
+	  { Content: "[Type] [Noun]" }
+	  { Content: "[Type] [Adjective] [Noun]" }
+	]
+	Location:
+	[
+	  { Content: "In the slums" }
+	  { Content: "Alleyway" }
+	  { Content: "Inside a hotel" }
+	  { Content: "downtown" }
+	  { Content: "In a rural area" }
+	  { Content: "On skid row" }
+	  { Content: "In the red light district" }
+	  { Content: "Uptown" }
+	  { Content: "Underground" }
+	  { Content: "In the suburbs" }
+	  { Content: "At the top of a skyscraper" }
+	]
+	Size:
+	[
+	  { Content: "diminutive" }
+	  { Content: "tiny", Weight: "2" }
+	  { Content: "small", Weight: "5" }
+	  { Content: "average height", Weight: "10" }
+	  { Content: "tall", Weight: "5" }
+	  { Content: "very tall", Weight: "2" }
+	  { Content: "towering" }
+	  { Content: "giant" }
+	]
+	Age:
+	[
+	  { Content: "young" }
+	  { Content: "twenty-something" }
+	  { Content: "thirty-something" }
+	  { Content: "middle age" }
+	  { Content: "old" }
+	  { Content: "very old" }
+	  { Content: "forty-something" }
+	]
+	Gender:
+	[
+	  { Content: "male" }
+	  { Content: "female" }
+	  { Content: "androgynous" }
+	  { Content: "trans-gender" }
+	  { Content: "transsexual" }
+	]
+	Trait:
+	[
+	  { Content: "who is unremarkable" }
+	  { Content: "with a facial scar" }
+	  { Content: "with a missing eye" }
+	  { Content: "with a misshapen hand" }
+	  { Content: "with long hair" }
+	  { Content: "with [Color] hair" }
+	  { Content: "with alopecia" }
+	  { Content: "with a slight limp" }
+	  { Content: "with a bad limp" }
+	  { Content: "with dark skin" }
+	  { Content: "with pale skin" }
+	  { Content: "albino" }
+	  { Content: "wearing coke-bottle glasses" }
+	  { Content: "wearing neon clothing" }
+	  { Content: "with 9 fingers" }
+	  { Content: "wearing earphones" }
+	  { Content: "cleaning glasses" }
+	  { Content: "moving fluidly" }
+	  { Content: "with [Color] eyes" }
+	  { Content: "who is barefoot" }
+	  { Content: "with a broken nose" }
+	  { Content: "with a black eye" }
+	  { Content: "with a lazy eye" }
+	  { Content: "who is cross-eyed" }
+	  { Content: "with a cleft lip" }
+	  { Content: "with a hare lip" }
+	  { Content: "sporting a mohawk" }
+	  { Content: "sporting liberty spikes" }
+	  { Content: "carrying a sidearm" }
+	]
+	Stories:
+	[
+	  { Content: "single", Weight: "15" }
+	  { Content: "double", Weight: "5" }
+	  { Content: "triple" }
+	]
+	Walls:
+	[
+	  { Content: "steel" }
+	  { Content: "wood" }
+	  { Content: "plastic" }
+	  { Content: "plaster" }
+	  { Content: "brick" }
+	]
+	Decorations:
+	[
+	  { Content: "bare" }
+	  { Content: "decorated with local art" }
+	  { Content: "covered in dirt" }
+	  { Content: "exceptionally clean" }
+	  { Content: "full of random items" }
+	  { Content: "covered in televisions" }
+	  { Content: "decorated with cliché posters" }
+	  { Content: "windowless" }
+	  { Content: "painted [Color]" }
+	  { Content: "graffitied" }
+	  { Content: "lined with pool tables" }
+	  { Content: "lined with patrons" }
+	]
+	Color:
+	[
+	  { Content: "blue" }
+	  { Content: "red" }
+	  { Content: "green" }
+	  { Content: "purple" }
+	  { Content: "yellow" }
+	  { Content: "orange" }
+	  { Content: "brown" }
+	  { Content: "white" }
+	  { Content: "black" }
+	  { Content: "tan" }
+	  { Content: "beige" }
+	  { Content: "camouflage" }
+	  { Content: "silver" }
+	  { Content: "bronze" }
+	  { Content: "burgundy" }
+	  { Content: "maroon" }
+	  { Content: "navy" }
+	  { Content: "olive" }
+	]
+	Type:
+	[
+	  { Content: "Club" }
+	  { Content: "Café" }
+	  { Content: "Pub" }
+	  { Content: "Bistro" }
+	  { Content: "Bar" }
+	  { Content: "Tavern" }
+	  { Content: "Lounge" }
+	]
+	Adjective:
+	[
+	  { Content: "Dead" }
+	  { Content: "Short" }
+	  { Content: "Off" }
+	  { Content: "Hard" }
+	  { Content: "Tech" }
+	  { Content: "Dark" }
+	  { Content: "Blue" }
+	  { Content: "Red" }
+	  { Content: "Green" }
+	  { Content: "Black" }
+	  { Content: "Blind" }
+	  { Content: "South" }
+	  { Content: "North" }
+	  { Content: "East" }
+	  { Content: "West" }
+	  { Content: "Urban" }
+	  { Content: "Cyber" }
+	  { Content: "Blank" }
+	  { Content: "Titanium" }
+	  { Content: "Steel" }
+	  { Content: "Bone" }
+	]
+	Noun:
+	[
+	  { Content: "Matrix" }
+	  { Content: "Charge" }
+	  { Content: "Circuit" }
+	  { Content: "Beat" }
+	  { Content: "Rocker" }
+	  { Content: "Illusion" }
+	  { Content: "Phantasia" }
+	  { Content: "Phantasm" }
+	  { Content: "Pony" }
+	  { Content: "Horse" }
+	  { Content: "Fire" }
+	  { Content: "Body" }
+	  { Content: "Dance" }
+	  { Content: "Squad" }
+	  { Content: "Time" }
+	  { Content: "Noir" }
+	  { Content: "Town" }
+	  { Content: "Light" }
+	  { Content: "Line" }
+	  { Content: "Mice" }
+	  { Content: "Straight" }
+	  { Content: "Stone" }
+	  { Content: "Haven" }
+	  { Content: "Heaven" }
+	  { Content: "Hell" }
+	  { Content: "Wanted" }
+	  { Content: "Runner" }
+	  { Content: "Shadow" }
+	  { Content: "House" }
+	  { Content: "Yard" }
+	]
+	Owner:
+	[
+	  { Content: "Killroy" }
+	  { Content: "Henry" }
+	  { Content: "Bone" }
+	  { Content: "Bob" }
+	  { Content: "Dante" }
+	  { Content: "Crystal" }
+	  { Content: "Lance" }
+	  { Content: "Ashe" }
+	  { Content: "Brenna" }
+	  { Content: "Lizzie" }
+	  { Content: "Country" }
+	  { Content: "Dallas" }
+	  { Content: "Texas" }
+	  { Content: "Paris" }
+	  { Content: "London" }
+	  { Content: "Glenda" }
+	  { Content: "Robin" }
+	  { Content: "Bruce" }
+	  { Content: "Layne" }
+	  { Content: "Lisa" }
+	  { Content: "Raven" }
+	]
+}
+GeneratorType: Assignment

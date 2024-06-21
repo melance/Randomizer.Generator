@@ -1,0 +1,881 @@
+Name: Human Fantasy Names Female
+KeepWhitespace: false
+Author: Lance Boudreaux
+Version: "1.0"
+Tags: 
+[ 
+	Fantasy
+	Name
+]
+OutputFormat: Text
+ShowInList: false
+LineItems:
+{
+	Start:
+	[
+		{ Content: "A[A]" }
+		{ Content: "Ac[AC]" }
+		{ Content: "Ad[AD]" }
+		{ Content: "Ag[AG]" }
+		{ Content: "Al[AL]" }
+		{ Content: "Ald[ALD]" }
+		{ Content: "Am[AM]" }
+		{ Content: "An[AN]" }
+		{ Content: "Art[ART]" }
+		{ Content: "At[AT]" }
+		{ Content: "Au[AU]" }
+		{ Content: "Av[AV]" }
+		
+		{ Content: "Bar[BAR]" }
+		{ Content: "Be[BE]" }
+		{ Content: "Bet[BET]" }
+		{ Content: "Bl[BL]" }
+		{ Content: "Bo[BO]" }
+		{ Content: "Br[BR]" }
+		
+		{ Content: "Ca[CA]" }
+		{ Content: "Ce[CE]" }
+		{ Content: "Cl[CL]" }
+		{ Content: "Con[CON]" }
+		{ Content: "Cr[CR]" }
+		
+		{ Content: "Da[DA]" }
+		{ Content: "De[DE]" }
+		{ Content: "Di[DI]" }
+		{ Content: "Dr[DR]" }
+		{ Content: "Dye" }
+		
+		{ Content: "Ed[ED]" }
+		{ Content: "Ev[EV]" }
+		{ Content: "Eg[EG]" }
+		{ Content: "El[EL]" }
+		{ Content: "Em[EM]" }
+		{ Content: "Eth[ETH]" }
+		{ Content: "Eva[EVA]" }
+		
+		{ Content: "Fe[FE]" }
+		{ Content: "Fl[FL]" }
+		
+		{ Content: "Ge[GE]" }
+		{ Content: "Gi[GI]" }
+		{ Content: "Gu[GU]" }
+		{ Content: "Gw[GW]" }
+		
+		{ Content: "Ha[HA]" }
+		{ Content: "He[HE]" }
+		
+		{ Content: "Ibb" }
+		{ Content: "Ida" }
+		{ Content: "In[IN]" }
+		{ Content: "Is[IS]" }
+		{ Content: "Iv[IV]" }
+		
+		{ Content: "Jo[JO]" }
+		{ Content: "Ju[JU]" }
+		
+		{ Content: "Kin[KIN]" }
+		
+		{ Content: "La[LA]" }
+		{ Content: "Le[LE]" }
+		{ Content: "Li[LI]" }
+		{ Content: "Lo[LO]" }
+		{ Content: "Lu[LU]" }
+		
+		{ Content: "Ma[MA]" }
+		{ Content: "Mi[MI]" }
+		{ Content: "Mo[MO]" }
+		{ Content: "Mu[MU]" }
+		
+		{ Content: "Ne[NE]" }
+		{ Content: "Ni[NI]" }
+		
+		{ Content: "Od[OD]" }
+		{ Content: "Ol[OL]" }
+		{ Content: "Or[OR]" }
+		
+		{ Content: "Pa[PA]" }
+		{ Content: "Pet[PET]" }
+		
+		{ Content: "Ra[RA]" }
+		{ Content: "Re[RE]" }
+		{ Content: "Ric[RIC]" }
+		{ Content: "Ro[RO]" }
+		
+		{ Content: "Sa[SA]" }
+		{ Content: "Se[SE]" }
+		{ Content: "So[SO]" }
+		{ Content: "St[ST]" }
+		{ Content: "Su[SU]" }
+		{ Content: "Sw[SW]" }
+		{ Content: "Sy[SY]" }
+		
+		{ Content: "Te[TE]" }
+		{ Content: "Th[TH]" }
+		{ Content: "To[TO]" }
+		
+		{ Content: "Wi[WI]" }
+		
+		{ Content: "Ys[YS]" }
+	]
+	
+	## A ##
+	
+	A:
+	[
+		{ Content: "al[AL]" }
+		{ Content: "el[EL]" }
+	]
+	AB:
+	[
+		{ Content: "be[BE]" }
+	]
+	AC:
+	[
+		{ Content: "el[EL]" }
+	]
+	AD:
+	[
+		{ Content: "el[EL]" }
+	]
+	AG:
+	[
+		{ Content: "eis" }
+		{ Content: "nes" }
+		{ content: "o[O]" }
+	]
+	AI:
+	[
+		{ Content: "ne" }
+	]
+	AL:
+	[
+		{ Content: "en" }
+		{ Content: "ic[IC]" }
+		{ Content: "is" }
+		{ Content: "ma" }
+		{ Content: "th[TH]" }
+		{ Content: "y[Y]" }
+	]
+	ALD:
+	[
+		{ Content: "a" }
+		{ Content: "it[IT]" }
+		{ Content: "re[RE]" }
+		{ Content: "us" }
+	]
+	AM:
+	[
+		{ Content: "ée" }
+		{ Content: "el[EL]" }
+		{ Content: "ic[IC]" }
+	]
+	AN:
+	[
+		{ Content: "ais" }
+		{ Content: "ce" }
+		{ Content: "che" }
+		{ Content: "de" }
+		{ Content: "dra" }
+		{ Content: "dy[DY]" }
+		{ Content: "g[G]" }
+		{ Content: "hi[HI]" }
+		{ Content: "ic[IC]" }
+		{ Content: "ne" }
+		{ Content: "ni[NI]" }
+	]
+	AR:
+	[
+		{ Content: "e" }
+		{ Content: "eg" }
+		{ Content: "ia" }
+		{ Content: "ic[IC]" }
+	]
+	ART:
+	[
+		{ Content: "em[EM]" }
+	]
+	AT:
+	[
+		{ Content: "el[EL]" }
+		{ Content: "he[HE]" }
+		{ Content: "ri[RI]" }
+	]
+	AU:
+	[
+		{ Content: "dr[DR]" }
+		{ Content: "gus[GUS]" }
+	]
+	AV:
+	[
+		{ Content: "ina" }
+	]
+	
+	## B ##
+	BAR:
+	[
+		{ Content: "bet[BET]" }
+	]
+	BE:
+	[
+		{ Content: "at[AT]" }
+		{ Content: "eau" }
+		{ Content: "lla" }
+		{ Content: "th" }
+	]
+	BET:
+	[
+		{ Content: "ta" }
+		{ Content: "ty" }
+	]
+	BI:
+	[
+		{ Content: "na" }
+	]
+	BL:
+	[
+		{ Content: "an[AN]" }
+	]
+	BO:
+	[
+		{ Content: "gd[GD]" }
+		{ Content: "ro[RO]" }
+		{ Content: "zh[ZH]" }
+	]
+	BR:
+	[
+		{ Content: "an[AN]" }
+	]
+	
+	## C ##
+	CA:
+	[
+		{ Content: "es[ES]" }
+		{ Content: "ss[SS]" }
+		{ Content: "te[TE]" }
+	]
+	CE:
+	[
+		{ Content: "les[LES]" }
+		{ Content: "ci[CI]" }
+		{ Content: "nt" }
+	]
+	CI:
+	[
+		{ Content: "ly" }
+	]
+	CL:
+	[
+		{ Content: "ar[AR]" }
+	]
+	CO:
+	[
+		{ Content: "la" }
+		{ Content: "sa" }
+	]
+	CON:
+	[
+		{ Content: "st[ST]" }
+	]
+	CR:
+	[
+		{ Content: "is[IS]" }
+	]
+	
+	## D ##
+	DA:
+	[
+		{ Content: "me[ME]" }
+	]
+	DE:
+	[
+		{ Content: "li[LI]" }
+		{ Content: "si[SI]" }
+	]
+	DI:
+	[
+		{ Content: "on[ON]" }
+		{ Content: "ot" }
+	]
+	DO:
+	[
+		{ Content: "len" }
+		{ Content: "sla[SLA]" }
+	]
+	DR:
+	[
+		{ Content: "ag[AG]" }
+		{ Content: "ey" }
+		{ Content: "y" }
+	]
+	DY:
+	[
+		{ Content: "" }
+		{ Content: "wi[WI]" }
+	]
+	
+	## E ##
+	EA:
+	[
+		{ Content: "nor" }
+	]
+	ED:
+	[
+		{ Content: "a" }
+		{ Content: "ev" }
+		{ Content: "ith" }
+		{ Content: "red" }
+	]
+	EG:
+	[
+		{ Content: "le[LE]" }
+	]
+	EL:
+	[
+		{ Content: "ai[AI]" }
+		{ Content: "da" }
+		{ Content: "ea[EA]" }
+		{ Content: "ena" }
+		{ Content: "ia" }
+		{ Content: "ina" }
+		{ Content: "ine" }
+		{ Content: "iza" }
+		{ Content: "la" }
+		{ Content: "le" }
+		{ Content: "lie" }
+		{ Content: "ys[YS]" }
+		{ Content: "una" }
+		{ Content: "une" }
+	]
+	ELD:
+	[
+		{ Content: "red" }
+		{ Content: "reda" }
+	]
+	EM:
+	[
+		{ Content: "ay" }
+		{ Content: "el[EL]" }
+		{ Content: "ily" }
+		{ Content: "is[IS]" }
+		{ Content: "ma" }
+	]
+	EN:
+	[
+		{ Content: "ce" }
+		{ Content: "do[DO]" }
+	]
+	ER:
+	[
+		{ Content: "y" }
+	]
+	ES:
+	[
+		{ Content: "ar[AR]" }
+	]
+	ET:
+	[
+		{ Content: "te" }
+	]
+	ETH:
+	[
+		{ Content: "ed[ED]" }
+		{ Content: "eld[ELD]" }
+	]
+	EV:
+	[
+		{ Content: "a" }
+		{ Content: "ere" }
+		{ Content: "ina" }			
+	]
+	EVA:
+	[
+		{ Content: "ine" }
+		{ Content: "el[EL]" }
+	]
+	
+	## F ##
+	FE:
+	[
+		{ Content: "li[LI]" }
+	]
+	FL:
+	[
+		{ Content: "or[OR]" }
+	]
+	
+	## G ##
+	G:
+	[
+		{ Content: "wi[WI]" }
+	]
+	GD:
+	[
+		{ Content: "al[AL]" }
+		{ Content: "ana" }
+	]
+	GE:
+	[
+		{ Content: "ne[NE]" }
+		{ Content: "ri[RI]" }
+	]
+	GI:
+	[
+		{ Content: "na" }
+		{ Content: "se[SE]" }
+	]
+	GU:
+	[
+		{ Content: "in[IN]" }
+		{ Content: "nd[ND]" }
+	]
+	GUS:
+	[
+		{ Content: "ta" }
+	]
+	GW:
+	[
+		{ Content: "en[EN]" }
+	]
+	
+	## H ##
+	HA:
+	[
+		{ Content: "nna" }
+		{ Content: "nne" }
+		{ Content: "wi[WI]" }
+	]
+	HE:
+	[
+		{ Content: "le[LE]" }
+		{ Content: "li[LI]" }
+		{ Content: "se" }
+		{ Content: "sia" }
+	]
+	HI:
+	[
+		{ Content: "ld" }
+		{ Content: "ra" }
+		{ Content: "re" }
+	]
+	
+	## I ##
+	IC:
+	[
+		{ Content: "e" }
+		{ Content: "ia" }
+	]
+	IG:
+	[
+		{ Content: "ga" }
+	]
+	IN:
+	[
+		{ Content: "ev[EV]" }
+		{ Content: "ge[GE]" }
+	]
+	IS:
+	[
+		{ Content: "ab[AB]" }
+		{ Content: "em[EM]" }
+		{ Content: "eut" }
+		{ Content: "ia" }
+		{ Content: "ol[OL]" }
+		{ Content: "ti[TI]" }
+	]		
+	IT:
+	[
+		{ Content: "h" }
+	]
+	IV:
+	[
+		{ Content: "et[ET]" }
+		{ Content: "ia" }
+	]
+	IZA:
+	[
+		{ Content: "" }
+		{ Content: "be[BE]" }
+	]
+	
+	## J ##
+	JO:
+	[
+		{ Content: "an" }
+		{ Content: "co[CO]" }
+		{ Content: "ha[HA]" }
+		{ Content: "ya" }
+		{ Content: "yce" }
+	]
+	JU:
+	[
+		{ Content: "li[LI]" }
+		{ Content: "st[ST]" }
+	]
+	
+	## K ##
+	KIN:
+	[
+		{ Content: "bo[BO]" }
+	]
+	
+	## L ##
+	LA:
+	[
+		{ Content: "ud[UD]" }
+		{ Content: "vi[VI]" }
+		{ Content: "ve[VE]" }
+	]
+	LE:
+	[
+		{ Content: "n" }
+		{ Content: "na" }
+		{ Content: "nti" }
+		{ Content: "tia" }
+		{ Content: "ti[TI]" }
+		{ Content: "wi[WI]" }
+	]
+	LES:
+	[
+		{ Content: "tr[TR]" }
+	]
+	LI:
+	[
+		{ Content: "a" }
+		{ Content: "ana" }
+		{ Content: "ce[CE]" }
+		{ Content: "cia" }
+		{ Content: "la" }
+		{ Content: "ll[LL]" }
+		{ Content: "n" }
+		{ Content: "na" }
+		{ Content: "ne" }
+		{ Content: "no[NO]" }
+		{ Content: "sa[SA]" }
+		{ Content: "tsa" }
+	]
+	LL:
+	[
+		{ Content: "a" }
+		{ Content: "e" }
+		{ Content: "ian" }
+		{ Content: "y" }
+	]
+	LM:
+	[
+		{ Content: "a" }
+		{ Content: "ot" }
+	]
+	LO:
+	[
+		{ Content: "sla[SLA]" }
+		{ Content: "vo[VO]" }
+	]
+	LU:
+	[
+		{ Content: "cia" }
+		{ Content: "ne[NE]" }
+	]
+	
+	## M ##
+	MA:
+	[
+		{ Content: "gd[GD]" }
+		{ Content: "ggy" }
+		{ Content: "ll[LL]" }
+		{ Content: "ri[RI]" }
+		{ Content: "rtha" }
+		{ Content: "rg[RG]" }
+		{ Content: "ry" }
+		{ Content: "th[TH]" }
+		{ Content: "tty" }
+		{ Content: "ud" }
+		{ Content: "ude" }
+	]
+	ME:
+	[
+		{ Content: "ina" }
+		{ Content: "ine" }
+		{ Content: "ta" }
+	]
+	MI:
+	[
+		{ Content: "li[LI]" }
+		{ Contnet: "lo[LO]" }
+		{ Content: "ri[RI]" }
+		{ Content: "sla[SLA]" }
+	]
+	MO:
+	[
+		{ Content: "ll[LL]" }
+	]
+	MU:
+	[
+		{ Content: "nd" }
+		{ Content: "ri[RI]" }
+	]
+	
+	## N ##
+	ND:
+	[
+		{ Content: "red" }
+	]
+	NE:
+	[
+		{ Content: "sta" }
+		{ Content: "te" }
+		{ Content: "vi[VI]" }
+	]
+	NI:
+	[
+		{ Content: "co[CO]" }
+		{ Content: "ll[LL]" }
+		{ Content: "sla[SLA]" }
+	]
+	NN:
+	[
+		{ Content: "ifa" }
+	]
+	NO:
+	[
+		{ Content: "ta" }
+	]
+	
+	## O ##
+	O:
+	[
+		{ Content: "sla[SLA]" }
+	]
+	OD:
+	[
+		{ Content: "el[EL]" }
+	]
+	OL:
+	[
+		{ Content: "da" }
+		{ Content: "iva" }
+		{ Content: "iv[IV]" }
+	]
+	ON:
+	[
+		{ Content: "" }
+		{ Content: "a" }
+		{ Content: "is[IS]" }
+	]
+	OR:
+	[
+		{ Content: "el[EL]" }
+		{ Content: "en[EN]" }
+		{ Content: "ia" }
+	]
+	
+	## P ##
+	PA:
+	[
+		{ Content: "ul[UL]" }
+	]
+	PET:
+	[
+		{ Content: "ro[RO]" }
+		{ Content: "un[UN]" }
+	]
+	PH:
+	[
+		{ Content: "an[AN]" }
+		{ Content: "ia" }
+		{ Content: "ro[RO]" }
+	]
+	PP:
+	[
+		{ Content: "hi[HI]" }
+	]
+	
+	## Q ##
+	
+	## R ##
+	RA:
+	[
+		{ Content: "do[DO]" }
+	]
+	RE:
+	[
+		{ Content: "da" }
+		{ Content: "gi[GI]" }
+	]
+	RG:
+	[
+		{ Content: "ar[AR]" }
+		{ Content: "er[ER]" }
+	]
+	RI:
+	[
+		{ Content: "a" }
+		{ Content: "an" }
+		{ Content: "ce" }
+		{ Content: "d" }
+		{ Content: "el" }
+		{ Content: "el[EL]" }
+		{ Content: "na" }
+		{ Content: "on" }
+		{ Content: "th" }
+	]
+	RIC:
+	[
+		{ Content: "hol[OL]" }
+		{ Content: "ol[OL]" }
+	]
+	RO:
+	[
+		{ Content: "ana" }
+		{ Content: "he[HE]" }
+		{ Content: "ni[NI]" }
+		{ Content: "sa" }
+		{ Content: "sa[SA]" }
+		{ Content: "ugh" }
+		{ Content: "yse" }
+	]
+	
+	## S ##
+	SA:
+	[
+		{ Content: "bi[BI]" }
+		{ Content: "mu[MU]" }
+		{ Content: "na" }
+		{ Content: "nt" }
+		{ Content: "pp[PP]" }
+		{ Content: "rah" }
+	]
+	SE:
+	[
+		{ Content: "la" }
+		{ Content: "li[LI]" }
+		{ Content: "lla" }
+		{ Content: "lle" }
+		{ Content: "ig[IG]" }
+		{ Content: "nse" }
+	]
+	SI:
+	[
+		{ Content: "sla[SLA]" }
+	]
+	SLA:
+	[
+		{ Content: "va" }
+	]
+	SO:
+	[
+		{ Content: "ph[PH]" }
+	]
+	SS:
+	[
+		{ Content: "an[AN]" }
+	]
+	ST:
+	[
+		{ Content: "ace" }
+		{ Content: "an[AN]" }
+		{ Content: "ina" }
+	]
+	SU:
+	[
+		{ Content: "nn[NN]" }
+		{ Content: "sa[SA]" }
+	]
+	SW:
+	[
+		{ Content: "an[AN]" }
+	]
+	SY:
+	[
+		{ Content: "bil" }
+	]
+	
+	## T ##
+	TE:
+	[
+		{ Content: "li[LI]" }
+		{ Content: "ph[PH]" }
+		{ Content: "ri[RI]" }
+	]
+	TH:
+	[
+		{ Content: "ea" }
+		{ Content: "eda" }
+		{ Content: "ild" }
+		{ Content: "ilda" }
+		{ Content: "ilde" }
+		{ Content: "ora" }
+	]
+	TI:
+	[
+		{ Content: "cia" }
+		{ Content: "na" }
+		{ Content: "ne" }
+	]
+	TO:
+	[
+		{ Content: "mi[MI]" }
+	]
+	TR:
+	[
+		{ Content: "ia" }
+	]
+	
+	## U ##
+	UD:
+	[
+		{ Content: "ina" }
+		{ Content: "ine" }
+	]
+	UL:
+	[
+		{ Content: "ina" }
+	]
+	UN:
+	[
+		{ Content: "ia" }
+	]
+	
+	## V ##
+	VE:
+	[
+		{ Content: "ina" }
+	]
+	VI:
+	[
+		{ Content: "eve" }
+		{ Content: "ina" }
+	]
+	VO:
+	[
+		{ Content: "ta" }
+	]
+	
+	## W ##
+	WI:
+	[
+		{ Content: "lm[LM]" }
+		{ Content: "ne" }
+		{ Content: "sa" }
+		{ Content: "se" }
+	]
+	
+	## X ##
+	
+	## Y ##
+	Y:
+	[
+		{ Content: "son" }
+	]
+	YS:
+	[
+		{ Content: "an[AN]" }
+		{ Content: "me[ME]" }
+	]
+	
+	## Z ##
+	ZH:
+	[
+		{ Content: "ena" }
+	]
+}
+GeneratorType: Assignment

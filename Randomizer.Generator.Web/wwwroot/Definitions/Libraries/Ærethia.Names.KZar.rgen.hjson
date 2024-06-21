@@ -1,0 +1,161 @@
+{
+	Name: KZar Name
+	/* Apache */
+	Version: "2.0"
+	OutputFormat: Text
+    ShowInList: false
+	Parameters:
+	{
+        Gender:
+        {
+            Value: ""
+            Type: Text
+        }
+	}
+	LineItems:
+	{
+		Start:
+		[
+			{ Content: "[[Gender]GivenName]" }
+		]
+
+        AnyGender:
+        [
+            { Content: "Male" }
+            { Content: "Female" }
+        ]
+
+        "Non-BinaryGivenName":
+        [
+            { Content: "[MaleGivenName]" }
+            { Content: "[FemaleGivenName]" }
+        ]
+        		
+		MaleGivenName:
+		[
+            { Content: "[MGN1][MGN2]" }			
+		]
+        
+		MGN1:
+		[
+            { Content: "Aclhe" }
+            { Content: "Bay" }
+            { Content: "Bai" }   
+            { Content: "Bidu" }
+            { Content: "Cha" }
+            { Content: "Co" }  
+            { Content: "Daso" }      
+            { Content: "Gia" }
+            { Content: "Gon" }
+            { Content: "Goya" }
+            { Content: "Haske" }
+            { Content: "Kanda" }
+            { Content: "Kastzi" }
+            { Content: "Kay" }
+            { Content: "Kla" }
+            { Content: "La" }
+            { Content: "Nai" }
+            { Content: "Nakai" }
+            { Content: "Nanta" }
+            { Content: "Nopo" }
+            { Content: "Sons-ee" }
+            { Content: "Ta" }
+            { Content: "Yano" }
+		]
+
+		MGN2:
+		[   
+            { Content: "ah[MGN3]" }
+            { Content: "che" }
+            { Content: "chen[MGN3]" }
+            { Content: "chise" }
+            { Content: "choy" }
+            { Content: "da[MGN3]" }
+            { Content: "dasil" }
+            { Content: "den" }
+            { Content: "doklini" }
+            { Content: "hesh" }
+            { Content: "nah[MGN3]" }
+            { Content: "ppo" }
+            { Content: "say" }
+            { Content: "shan" }  
+            { Content: "so" }
+            { Content: "tennae" } 
+            { Content: "thlay" } 
+            { Content: "to" } 
+            { Content: "waykla" }    
+            { Content: "ya" }
+            { Content: "za" }
+            { Content: "zis" }
+		]
+
+		MGN3:
+		[
+            { Content: "", Weight: 10 }		
+            { Content: "-daysen" }
+            { Content: "-hae" }	
+            { Content: "-ray" }		
+            { Content: "-seh" }
+            { Content: "-tah" }
+            { Content: "-teh" }
+		]
+
+        FemaleGivenName:
+		[
+            { Content: "[FGN1][FGN2]" }			
+		]
+
+        FGN1:
+        [
+            { Content: "Che" }
+            { Content: "Choo" }
+            { Content: "Dah" }
+            { Content: "Dos" }
+            { Content: "Gou" }
+            { Content: "Hao" }
+            { Content: "Hau" }
+            { Content: "Ihte" }
+            { Content: "Ilthgo" }
+            { Content: "Laya" }
+            { Content: "Lo" }
+            { Content: "Nai" }
+            { Content: "She" }
+            { Content: "Shtsha" }
+            { Content: "Sons" }
+            { Content: "Tsee" }
+            { Content: "Zi" }
+        ]
+
+        FGN2:
+        [
+            { Content: "bet" }
+            { Content: "dda" }
+            { Content: "e-ah[FGN3]" }
+            { Content: "gha" }
+            { Content: "hash[FGN3]" }
+            { Content: "li" }
+            { Content: "naadai[FGN3]" }
+            { Content: "she" }
+            { Content: "teh[FGN3]" }
+            { Content: "teste" }
+            { Content: "thlo[FGN3]" }
+            { Content: "yeh" }
+            { Content: "yen" }
+            { Content: "zay" }
+            { Content: "zen" }
+            { Content: "zini" }
+            { Content: "zinne" }
+        ]
+
+        FGN3:
+        [
+            { Content: "" }
+            { Content: "bi'zhaa" }
+            { Content: "kish" }
+            { Content: "ray" }
+            { Content: "seh" }
+            { Content: "tonz" }
+        ]
+	}
+	GeneratorType: Assignment
+}
